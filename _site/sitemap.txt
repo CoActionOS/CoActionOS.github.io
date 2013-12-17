@@ -1,0 +1,13 @@
+
+http://Coactionos.github.io/archive.html
+http://Coactionos.github.io/atom.xml
+http://Coactionos.github.io/categories.html
+http://Coactionos.github.io/index.html
+http://Coactionos.github.io/pages.html
+http://Coactionos.github.io/rss.xml
+http://Coactionos.github.io/sitemap.txt
+http://Coactionos.github.io/tags.html
+
+http://Coactionos.github.io/2013/12/14/Using-Op-Amps-in-Embedded-Design
+http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Controlling-a-Solenoid
+http://Coactionos.github.io/lessons/2011/12/29/jekyll-introduction
