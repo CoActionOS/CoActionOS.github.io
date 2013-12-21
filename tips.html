@@ -1,0 +1,14 @@
+---
+layout: page
+title : Embedded Design Tips
+category: embedded
+header : Post Archive
+group: navigation
+---
+{% include JB/setup %}
+
+{% for post in site.categories.embedded limit: 20 %}
+
+	<h2><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date:"%Y-%m-%d" }}</small></h2>
+	<p>{{ post.excerpt }}</p>
+{% endfor %}
