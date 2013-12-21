@@ -2,13 +2,14 @@
 layout: post
 title: Using Op Amps in Embedded Design
 tagline: Embedded Design Tips
+category: embedded
 tags : [embedded, tips]
 ---
-{% include JB/setup %}
 
 Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems.
-
 ![Inverting Op Amp]({{ BASE_PATH }}/images/inverting-opamp.png "Inverting Op Amp")
+
+{{ excerpt_separator }}
 
 ## Introduction to Op-Amps
 
@@ -23,12 +24,11 @@ Ideal op-amps are a good first order approximation of op-amp behavior and are us
 
 To apply these two rules to op-amp circuit analysis, it is important to be familiar with two electrical laws: Ohm's Law and Kirchhoff's Current Law. Ohm's law is defined by the equation:
 
-![Ohm's Law]({{ BASE_PATH }}/images/ohms-law.svg "Ohm's Law")
+<img class="post_equation" src="{{ BASE_PATH }}/images/ohms-law.svg" />
 
 That is, voltage is equal to current times resistance. Ohm's law can be used to calculate the current through the resistor in the diagram below.
 
 ![Ohm's Law Circuit]({{ BASE_PATH }}/images/ohms-law-circuit.png "Ohm's Law Circuit")
-
 
 Kirchhoff's current law states that the sum of all currents entering a node is zero. The law implies that all currents entering the node are equal to the currents leaving the node. This law can be applied to the op-amp circuit above (first in the article).
 
