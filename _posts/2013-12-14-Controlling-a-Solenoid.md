@@ -29,4 +29,4 @@ Many products use solenoids to open and close valves. A microcontroller can cont
 
 ## Conclusion
 
-p. Controlling solenoids with microcontrollers is simple. Remember to ensure the MOSFET has sufficient current capability to activate the solenoid, include the protection diode to prevent the solenoid from damaging the MOSFET, and include a pull-down resistor on the GPIO line if the microcontroller doesn't drive the line low at startup.
+Controlling solenoids with microcontrollers is simple. Remember to ensure the MOSFET has sufficient current capability to activate the solenoid, include the protection diode to prevent the solenoid from damaging the MOSFET, and include a pull-down resistor on the GPIO line if the microcontroller doesn't drive the line low at startup.

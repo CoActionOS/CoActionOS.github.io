@@ -2,7 +2,7 @@
 layout: post
 title: Hello World
 category: c-tutorial
-tagline: First C Program
+tagline: Embedded C Tutorial
 tags : [embedded, tips, c-tutorial]
 ---
 

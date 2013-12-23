@@ -11,4 +11,12 @@ http://Coactionos.github.io/tips.html
 
 http://Coactionos.github.io/c-tutorial/2013/12/20/Embedded-C-Tutorial-Hello-World
 http://Coactionos.github.io/embedded/2013/12/14/Using-Op-Amps-in-Embedded-Design
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Raw-Types
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Preprocessor
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Pointers-and-Arrays
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Operators
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Keyword-Reference
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Functions
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Flow-Control
+http://Coactionos.github.io/c-tutorial/2013/12/14/Embedded-C-Tutorial-Compound-Data-Types
 http://Coactionos.github.io/embedded/2013/12/14/Controlling-a-Solenoid

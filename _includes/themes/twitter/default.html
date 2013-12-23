@@ -74,11 +74,9 @@
 			<div class="row">
 				<div class="col-md-offset-1 col-md-7">{{ content }}</div>
 				<div class="col-md-4">
-					{% for tag in site.tags %}
-					<h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-					<ul>{% assign pages_list = tag[1] %} {% include JB/pages_list %}
+					<h2>Embedded C Tutorial</h2>
+					<ul>{% assign pages_list = site.categories.c-tutorial %} {% include JB/pages_list %}
 					</ul>
-					{% endfor %}
 				</div>
 			</div>
 
