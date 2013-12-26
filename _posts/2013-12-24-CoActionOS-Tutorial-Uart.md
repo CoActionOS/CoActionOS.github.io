@@ -5,7 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-
 A UART is used to transmit data serially. CoActionOS Applib makes 
 configuring and using a [UART](/projects/coactionos-applib/embedded/class_uart.html) on 
 CoActionOS both simple and flexible.

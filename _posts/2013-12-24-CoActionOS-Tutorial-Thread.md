@@ -5,8 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-h1. CoActionOS Thread Tutorial
-
 CoActionOS Applib includes a Thread class for easily initializing 
 and running threads. For more details on using this class, please 
 see the [Thread Applib documentation](/redmine/projects/coactionos-applib/embedded/class_thread.html).

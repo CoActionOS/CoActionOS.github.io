@@ -5,7 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-h1. CoActionOS Tutorial--Files
 
 Files can be accessed in several ways in CoActionOS:
 * standard C library (fopen(), fread(), etc)

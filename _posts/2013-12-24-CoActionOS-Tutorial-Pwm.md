@@ -5,8 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-h1. CoActionOS PWM Tutorial
-
 PWM is used to output a pulse signal. It can be used to dim an LED or 
 apply a variable voltage to a motor.
 

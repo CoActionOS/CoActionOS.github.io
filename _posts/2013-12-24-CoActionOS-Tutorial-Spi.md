@@ -5,7 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-
 SPI is a a full duplex serial protocol. It uses four lines:
 
 - MISO: Master Input/Slave Output (driven by slave when CS is low)

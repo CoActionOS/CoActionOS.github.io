@@ -12,14 +12,17 @@ p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\i
 
 ## Windows 8.1
 
-p. When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf.  However, Windows 8 is not able to automatically install the drivers.  To install the drivers follow the following steps:
+When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf.  
+However, Windows 8 is not able to automatically install the drivers.  To install 
+the drivers follow the following steps:
 
-# After installing CoActionOS Link, connect the CoActionOS powered  device
-# Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)
-# Start the device manager
-# You should see "CoActionOS" under other; right click on it and select "Update Driver Software"
-# Select the option to specify a location for the driver
-# Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)
-# Windows 8 should successfully install the driver
+1. After installing CoActionOS Link, connect the CoActionOS powered  device
+1. Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)
+1. Start the device manager
+1. You should see "CoActionOS" under other; right click on it and select "Update Driver Software"
+1. Select the option to specify a location for the driver
+1. Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)
+1. Windows 8 should successfully install the driver
 
-These steps only need to be taken the first time a device is connected.  Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1
+These steps only need to be taken the first time a device is connected.  Subsequently, 
+other CoActionOS devices should be automatically loaded by Windows 8.1.

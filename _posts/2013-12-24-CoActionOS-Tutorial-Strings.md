@@ -5,8 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-h1. CoActionOS Tutorial--Strings
-
 The CoActionOS Applib includes a 
 [String class](/projects/coactionos-applib/embedded/class_string.html) 
 similar to the C++ STL string class.  The Applib String class avoids 

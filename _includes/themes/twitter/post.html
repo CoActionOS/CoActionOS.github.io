@@ -11,17 +11,8 @@
       {{ content }}
     </div>
 
-  {% unless page.categories == empty %}
-    <ul class="list-inline">
-      <li><i class="fa fa-folder-open"></i></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
-  {% endunless %}  
-
   {% unless page.tags == empty %}
-    <ul class="list-inline">
-      <li><i class="fa fa-tags"></i></li>
+    <ul class="nav nav-pills">
       {% assign tags_list = page.tags %}
       {% include JB/tags_list %}
     </ul>

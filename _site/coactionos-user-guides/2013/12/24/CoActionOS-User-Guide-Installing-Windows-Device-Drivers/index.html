@@ -57,8 +57,7 @@
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
 							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
-							<li><a href="/tutorials.html"><i class="fa fa-file-text-o"></i> Tutorials</a></li>
-							<li><a href="/tips.html"><i class="fa fa-tags"></i> Tips</a></li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
@@ -71,8 +70,8 @@
 
 	<div class="content" id="content">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-1 col-md-7">
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-md-offset-1 col-md-7 panel panel-default"><div class="panel-body">
 <div class="page-header">
   <h1>Installing Windows Device Drivers <small>CoActionOS User Guide</small></h1>
 </div>
@@ -83,55 +82,35 @@
       <span>24 December 2013</span>
     </div>
     <div class="content">
-      <p>h1. Installing Windows Device Drivers</p>
-
-<p>h2. Windows XP/Vista/7</p>
+      <h2 id="windows_xpvista7">Windows XP/Vista/7</h2>
 
 <p>p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is). When a CoActionOS device is connected, Windows 7 automatically installs the driver.</p>
 
-<p>h2. Windows 8.1</p>
+<h2 id="windows_81">Windows 8.1</h2>
 
-<p>p. When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf. However, Windows 8 is not able to automatically install the drivers. To install the drivers follow the following steps:</p>
+<p>When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf.<br />However, Windows 8 is not able to automatically install the drivers. To install the drivers follow the following steps:</p>
 
-<h1 id="after_installing_coactionos_link_connect_the_coactionos_powered_device">After installing CoActionOS Link, connect the CoActionOS powered device</h1>
+<ol>
+<li>After installing CoActionOS Link, connect the CoActionOS powered device</li>
 
-<h1 id="move_coactionoscdcacminf_and_coactionoscdcacmcat_from_cwindowsinf_to_the_desktop_or_another_easily_accessible_location">Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)</h1>
+<li>Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)</li>
 
-<h1 id="start_the_device_manager">Start the device manager</h1>
+<li>Start the device manager</li>
 
-<h1 id="you_should_see_coactionos_under_other_right_click_on_it_and_select_update_driver_software">You should see “CoActionOS” under other; right click on it and select “Update Driver Software”</h1>
+<li>You should see “CoActionOS” under other; right click on it and select “Update Driver Software”</li>
 
-<h1 id="select_the_option_to_specify_a_location_for_the_driver">Select the option to specify a location for the driver</h1>
+<li>Select the option to specify a location for the driver</li>
 
-<h1 id="specify_to_installed_from_the_desktop_eg_cusersyoudesktop">Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)</h1>
+<li>Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)</li>
 
-<h1 id="windows_8_should_successfully_install_the_driver">Windows 8 should successfully install the driver</h1>
+<li>Windows 8 should successfully install the driver</li>
+</ol>
 
-<p>These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1</p>
+<p>These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1.</p>
     </div>
 
   
-    <ul class="list-inline">
-      <li><i class="fa fa-folder-open"></i></li>
-      
-      
-
-
-  
-     
-    	<li><a href="/categories.html#coactionos-user-guides-ref">
-    		coactionos-user-guides <span class="badge">6</span>
-    	</a></li>
-    
-  
-
-
-    </ul>
-    
-
-  
-    <ul class="list-inline">
-      <li><i class="fa fa-tags"></i></li>
+    <ul class="nav nav-pills">
       
       
 
@@ -163,17 +142,21 @@
   </div>
 </div>
 
-</div>
+</div></div>
 				<div class="col-md-4">
-					<h2>Embedded C Tutorial</h2>
-					<ul> 
+				
+
+					<h3>coactionos-user-guides</h3>
+					<ul>
+						  
+						
 
 
   
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/20/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
+      	<li class="active"><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers" class="active">Installing Windows Device Drivers</a></li>
       	
       
     
@@ -181,7 +164,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
       	
       
     
@@ -189,7 +172,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Preprocessor">Preprocessor</a></li>
+      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
       	
       
     
@@ -197,7 +180,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines">Designing Applications using State Machines</a></li>
       	
       
     
@@ -205,7 +188,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
       	
       
     
@@ -213,31 +196,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Functions">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/14/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
       	
       
     
@@ -246,6 +205,8 @@
 
 
 					</ul>
+ 
+ 				  
 				</div>
 			</div>
 

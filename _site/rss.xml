@@ -5,8 +5,8 @@
         <description>CoActionOS - CoActionOS, Inc</description>
         <link>http://Coactionos.github.io</link>
         <link>http://Coactionos.github.io</link>
-        <lastBuildDate>2013-12-25T14:57:19-07:00</lastBuildDate>
-        <pubDate>2013-12-25T14:57:19-07:00</pubDate>
+        <lastBuildDate>2013-12-25T21:18:24-07:00</lastBuildDate>
+        <pubDate>2013-12-25T21:18:24-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -62,31 +62,31 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
         <item>
                 <title>Installing Windows Device Drivers</title>
-                <description>&lt;p&gt;h1. Installing Windows Device Drivers&lt;/p&gt;
-
-&lt;p&gt;h2. Windows XP/Vista/7&lt;/p&gt;
+                <description>&lt;h2 id=&quot;windows_xpvista7&quot;&gt;Windows XP/Vista/7&lt;/h2&gt;
 
 &lt;p&gt;p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is). When a CoActionOS device is connected, Windows 7 automatically installs the driver.&lt;/p&gt;
 
-&lt;p&gt;h2. Windows 8.1&lt;/p&gt;
+&lt;h2 id=&quot;windows_81&quot;&gt;Windows 8.1&lt;/h2&gt;
 
-&lt;p&gt;p. When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf. However, Windows 8 is not able to automatically install the drivers. To install the drivers follow the following steps:&lt;/p&gt;
+&lt;p&gt;When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf.&lt;br /&gt;However, Windows 8 is not able to automatically install the drivers. To install the drivers follow the following steps:&lt;/p&gt;
 
-&lt;h1 id=&quot;after_installing_coactionos_link_connect_the_coactionos_powered_device&quot;&gt;After installing CoActionOS Link, connect the CoActionOS powered device&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;After installing CoActionOS Link, connect the CoActionOS powered device&lt;/li&gt;
 
-&lt;h1 id=&quot;move_coactionoscdcacminf_and_coactionoscdcacmcat_from_cwindowsinf_to_the_desktop_or_another_easily_accessible_location&quot;&gt;Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)&lt;/h1&gt;
+&lt;li&gt;Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)&lt;/li&gt;
 
-&lt;h1 id=&quot;start_the_device_manager&quot;&gt;Start the device manager&lt;/h1&gt;
+&lt;li&gt;Start the device manager&lt;/li&gt;
 
-&lt;h1 id=&quot;you_should_see_coactionos_under_other_right_click_on_it_and_select_update_driver_software&quot;&gt;You should see “CoActionOS” under other; right click on it and select “Update Driver Software”&lt;/h1&gt;
+&lt;li&gt;You should see “CoActionOS” under other; right click on it and select “Update Driver Software”&lt;/li&gt;
 
-&lt;h1 id=&quot;select_the_option_to_specify_a_location_for_the_driver&quot;&gt;Select the option to specify a location for the driver&lt;/h1&gt;
+&lt;li&gt;Select the option to specify a location for the driver&lt;/li&gt;
 
-&lt;h1 id=&quot;specify_to_installed_from_the_desktop_eg_cusersyoudesktop&quot;&gt;Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)&lt;/h1&gt;
+&lt;li&gt;Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)&lt;/li&gt;
 
-&lt;h1 id=&quot;windows_8_should_successfully_install_the_driver&quot;&gt;Windows 8 should successfully install the driver&lt;/h1&gt;
+&lt;li&gt;Windows 8 should successfully install the driver&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1&lt;/p&gt;</description>
+&lt;p&gt;These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1.&lt;/p&gt;</description>
                 <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
                 <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
@@ -94,9 +94,7 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
         <item>
                 <title>Getting Started</title>
-                <description>&lt;p&gt;h1. Getting Started User Guide&lt;/p&gt;
-
-&lt;p&gt;h3. Buy Hardware&lt;/p&gt;
+                <description>&lt;h3 id=&quot;buy_hardware&quot;&gt;Buy Hardware&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;“Buy the CoAction Hero”:http://www.coactionos.com/opencart/index.php?route=product/product&amp;amp;product_id=58 (easiest way to get started)&lt;/li&gt;
@@ -104,15 +102,15 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;li&gt;“Install CoActionOS on mbed”:/redmine/projects/mbed-lpc1768&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;h3. Install Eclipse IDE&lt;/p&gt;
+&lt;h3 id=&quot;install_eclipse_ide&quot;&gt;Install Eclipse IDE&lt;/h3&gt;
 
 &lt;p&gt;The Eclipse IDE is used for editing and building CoActionOS applications. You can download the “Eclipse IDE”:http://www.eclipse.org/cdt/downloads.php for free.&lt;/p&gt;
 
-&lt;p&gt;h3. Install the SDK&lt;/p&gt;
+&lt;h3 id=&quot;install_the_sdk&quot;&gt;Install the SDK&lt;/h3&gt;
 
 &lt;p&gt;To build and install applications on CoActionOS, you will need to [[Get the Software|download and install the compiler and CoActionOS Link]]&lt;/p&gt;
 
-&lt;p&gt;h3. Build and Install Your First Application&lt;/p&gt;
+&lt;h3 id=&quot;build_and_install_your_first_application&quot;&gt;Build and Install Your First Application&lt;/h3&gt;
 
 &lt;p&gt;Read the [[CoActionOS Tutorial–First Project|first project tutorial]].&lt;/p&gt;</description>
                 <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</link>
@@ -499,9 +497,7 @@ all three ports.&lt;/div&gt;
 
         <item>
                 <title>Thread Tutorial</title>
-                <description>&lt;p&gt;h1. CoActionOS Thread Tutorial&lt;/p&gt;
-
-&lt;p&gt;CoActionOS Applib includes a Thread class for easily initializing and running threads. For more details on using this class, please see the &lt;a href=&quot;/redmine/projects/coactionos-applib/embedded/class_thread.html&quot;&gt;Thread Applib documentation&lt;/a&gt;.&lt;/p&gt;
+                <description>&lt;p&gt;CoActionOS Applib includes a Thread class for easily initializing and running threads. For more details on using this class, please see the &lt;a href=&quot;/redmine/projects/coactionos-applib/embedded/class_thread.html&quot;&gt;Thread Applib documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Thread.hpp&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for Thread class&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Timer.hpp&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for printf&lt;/span&gt;
@@ -555,9 +551,7 @@ done
 
         <item>
                 <title>Strings Tutorial</title>
-                <description>&lt;p&gt;h1. CoActionOS Tutorial–Strings&lt;/p&gt;
-
-&lt;p&gt;The CoActionOS Applib includes a &lt;a href=&quot;/projects/coactionos-applib/embedded/class_string.html&quot;&gt;String class&lt;/a&gt; similar to the C++ STL string class. The Applib String class avoids using dynamic memory allocation so that it can run well on systems with very little memory. It is based on standard C string manipulation (such as strcpy(), strcmp()) but gives the ease of use of the STL string class.&lt;/p&gt;
+                <description>&lt;p&gt;The CoActionOS Applib includes a &lt;a href=&quot;/projects/coactionos-applib/embedded/class_string.html&quot;&gt;String class&lt;/a&gt; similar to the C++ STL string class. The Applib String class avoids using dynamic memory allocation so that it can run well on systems with very little memory. It is based on standard C string manipulation (such as strcpy(), strcmp()) but gives the ease of use of the STL string class.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/String.hpp&amp;gt;&lt;/span&gt;
 
@@ -766,9 +760,7 @@ done
 
         <item>
                 <title>PWM Tutorial</title>
-                <description>&lt;p&gt;h1. CoActionOS PWM Tutorial&lt;/p&gt;
-
-&lt;p&gt;PWM is used to output a pulse signal. It can be used to dim an LED or apply a variable voltage to a motor.&lt;/p&gt;
+                <description>&lt;p&gt;PWM is used to output a pulse signal. It can be used to dim an LED or apply a variable voltage to a motor.&lt;/p&gt;
 
 &lt;p&gt;The basic steps to use the PWM are to:&lt;/p&gt;
 
@@ -1101,9 +1093,7 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
 
         <item>
                 <title>Files Tutorial</title>
-                <description>&lt;p&gt;h1. CoActionOS Tutorial–Files&lt;/p&gt;
-
-&lt;p&gt;Files can be accessed in several ways in CoActionOS:&lt;/p&gt;
+                <description>&lt;p&gt;Files can be accessed in several ways in CoActionOS:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;standard C library (fopen(), fread(), etc)&lt;/li&gt;

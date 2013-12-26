@@ -58,8 +58,7 @@
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
 							<li><a href="{{ BASE_PATH }}/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
-							<li><a href="{{ BASE_PATH }}/tutorials.html"><i class="fa fa-file-text-o"></i> Tutorials</a></li>
-							<li><a href="{{ BASE_PATH }}/tips.html"><i class="fa fa-tags"></i> Tips</a></li>
+							<li><a href="{{ BASE_PATH }}/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
@@ -72,12 +71,18 @@
 
 	<div class="content" id="content">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-offset-1 col-md-7">{{ content }}</div>
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-md-offset-1 col-md-7 panel panel-default"><div class="panel-body">{{ content }}</div></div>
 				<div class="col-md-4">
-					<h2>Embedded C Tutorial</h2>
-					<ul>{% assign pages_list = site.categories.c-tutorial %} {% include JB/pages_list %}
+				{% unless page.categories == empty %}
+
+					<h3>{{ page.category }}</h3>
+					<ul>
+						{% assign pages_list = site.categories[page.category] %}  
+						{% include JB/pages_list %}
 					</ul>
+ 
+ 				{% endunless %}  
 				</div>
 			</div>
 
