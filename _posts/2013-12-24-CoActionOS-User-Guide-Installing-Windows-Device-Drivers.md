@@ -1,0 +1,25 @@
+---
+layout: post
+title: Installing Windows Device Drivers
+category: coactionos-user-guides
+tagline: CoActionOS User Guide
+tags : [coaction, user-guide]
+---
+
+## Windows XP/Vista/7
+
+p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is).  When a CoActionOS device is connected, Windows 7 automatically installs the driver.
+
+## Windows 8.1
+
+p. When CoActionOS Link is installed, it copes the driver files to C:\Windows\inf.  However, Windows 8 is not able to automatically install the drivers.  To install the drivers follow the following steps:
+
+# After installing CoActionOS Link, connect the CoActionOS powered  device
+# Move CoActionOS-cdc-acm.inf and coactionos-cdc-acm.cat from C:\Windows\inf to the Desktop (or another easily accessible location)
+# Start the device manager
+# You should see "CoActionOS" under other; right click on it and select "Update Driver Software"
+# Select the option to specify a location for the driver
+# Specify to installed from the Desktop (e.g., C:\Users\you\Desktop)
+# Windows 8 should successfully install the driver
+
+These steps only need to be taken the first time a device is connected.  Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1
