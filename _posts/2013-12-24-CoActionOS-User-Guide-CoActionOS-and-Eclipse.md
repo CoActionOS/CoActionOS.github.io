@@ -43,15 +43,15 @@ Once Eclipse starts, you will want to open the C/C++ perspective by:
 
 To add a new project to Eclipse, first import the Hello World sample project. You then rename the project to whatever you wish (but don't use any spaces or CoActionOS will reject the binary that is created).
 
-"This youtube video":http://www.youtube.com/watch?feature=player_embedded&v=6-rbEx6AV6A walks through importing a project in Eclipse.
+[This youtube video](http://www.youtube.com/watch?feature=player_embedded&v=6-rbEx6AV6A) walks through importing a project in Eclipse.
 
 ### Updating the Include Paths and Rebuilding the Index
 
 If you are getting code errors in the default Hello World program, you may need to re-initialize the include paths and re-build the index. To do this:
 
-# Right click on the project and click "Properties"
-# In the left pane, browser to "C/C++ General -> Preprocessor Include Paths"
-# In the center of the window, click "Providers"
-# Highlight "CDT GCC Builtin Compilter Settings" and then click the "Clear Entries" button in the right pane
-# Hit "Apply" then "OK"
-# Right click on the project and click "Index -> Rebuild"
+1. Right click on the project and click "Properties"
+1. In the left pane, browser to "C/C++ General -> Preprocessor Include Paths"
+1. In the center of the window, click "Providers"
+1. Highlight "CDT GCC Builtin Compilter Settings" and then click the "Clear Entries" button in the right pane
+1. Hit "Apply" then "OK"
+1. Right click on the project and click "Index -> Rebuild"

@@ -5,8 +5,8 @@
         <description>CoActionOS - CoActionOS, Inc</description>
         <link>http://Coactionos.github.io</link>
         <link>http://Coactionos.github.io</link>
-        <lastBuildDate>2013-12-25T21:18:24-07:00</lastBuildDate>
-        <pubDate>2013-12-25T21:18:24-07:00</pubDate>
+        <lastBuildDate>2013-12-25T21:21:51-07:00</lastBuildDate>
+        <pubDate>2013-12-25T21:21:51-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -388,23 +388,25 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
 &lt;p&gt;To add a new project to Eclipse, first import the Hello World sample project. You then rename the project to whatever you wish (but don’t use any spaces or CoActionOS will reject the binary that is created).&lt;/p&gt;
 
-&lt;p&gt;“This youtube video”:http://www.youtube.com/watch?feature=player_embedded&amp;amp;v=6-rbEx6AV6A walks through importing a project in Eclipse.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?feature=player_embedded&amp;v=6-rbEx6AV6A&quot;&gt;This youtube video&lt;/a&gt; walks through importing a project in Eclipse.&lt;/p&gt;
 
 &lt;h3 id=&quot;updating_the_include_paths_and_rebuilding_the_index&quot;&gt;Updating the Include Paths and Rebuilding the Index&lt;/h3&gt;
 
 &lt;p&gt;If you are getting code errors in the default Hello World program, you may need to re-initialize the include paths and re-build the index. To do this:&lt;/p&gt;
 
-&lt;h1 id=&quot;right_click_on_the_project_and_click_properties&quot;&gt;Right click on the project and click “Properties”&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Right click on the project and click “Properties”&lt;/li&gt;
 
-&lt;h1 id=&quot;in_the_left_pane_browser_to_cc_general__preprocessor_include_paths&quot;&gt;In the left pane, browser to “C/C++ General -&amp;gt; Preprocessor Include Paths”&lt;/h1&gt;
+&lt;li&gt;In the left pane, browser to “C/C++ General -&amp;gt; Preprocessor Include Paths”&lt;/li&gt;
 
-&lt;h1 id=&quot;in_the_center_of_the_window_click_providers&quot;&gt;In the center of the window, click “Providers”&lt;/h1&gt;
+&lt;li&gt;In the center of the window, click “Providers”&lt;/li&gt;
 
-&lt;h1 id=&quot;highlight_cdt_gcc_builtin_compilter_settings_and_then_click_the_clear_entries_button_in_the_right_pane&quot;&gt;Highlight “CDT GCC Builtin Compilter Settings” and then click the “Clear Entries” button in the right pane&lt;/h1&gt;
+&lt;li&gt;Highlight “CDT GCC Builtin Compilter Settings” and then click the “Clear Entries” button in the right pane&lt;/li&gt;
 
-&lt;h1 id=&quot;hit_apply_then_ok&quot;&gt;Hit “Apply” then “OK”&lt;/h1&gt;
+&lt;li&gt;Hit “Apply” then “OK”&lt;/li&gt;
 
-&lt;h1 id=&quot;right_click_on_the_project_and_click_index__rebuild&quot;&gt;Right click on the project and click “Index -&amp;gt; Rebuild”&lt;/h1&gt;</description>
+&lt;li&gt;Right click on the project and click “Index -&amp;gt; Rebuild”&lt;/li&gt;
+&lt;/ol&gt;</description>
                 <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
                 <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
