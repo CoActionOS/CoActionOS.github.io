@@ -27,6 +27,9 @@ $( document ).ready(function() {
 	
 	$("table.params").addClass("table");
 	$("div.ingroups").wrapInner("<small></small>");
+	$("div.levels").addClass("btn-group");
+	$("div.levels").css("margin", "0.5em");
+	$("div.levels > span").addClass("btn btn-default btn-xs");
 	$("table.directory").addClass("table table-striped");
 	$("div.summary > a").addClass("btn btn-default btn-xs");
 	$("table.fieldtable").addClass("table");
