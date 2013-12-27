@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="__fstat_8c" kind="file">
+    <compoundname>_fstat.c</compoundname>
+    <includes refid="unistd__fs_8h" local="yes">unistd_fs.h</includes>
+    <includes refid="unistd__flags_8h" local="yes">unistd_flags.h</includes>
+    <incdepgraph>
+      <node id="2543">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2539">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c</label>
+        <link refid="_fstat.c"/>
+        <childnode refid="2540" relation="include">
+        </childnode>
+        <childnode refid="2558" relation="include">
+        </childnode>
+      </node>
+      <node id="2558">
+        <label>unistd_flags.h</label>
+        <link refid="unistd__flags_8h_source"/>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2543" relation="include">
+        </childnode>
+        <childnode refid="2552" relation="include">
+        </childnode>
+        <childnode refid="2547" relation="include">
+        </childnode>
+        <childnode refid="2559" relation="include">
+        </childnode>
+      </node>
+      <node id="2548">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2540">
+        <label>unistd_fs.h</label>
+        <link refid="unistd__fs_8h_source"/>
+        <childnode refid="2541" relation="include">
+        </childnode>
+        <childnode refid="2542" relation="include">
+        </childnode>
+        <childnode refid="2543" relation="include">
+        </childnode>
+        <childnode refid="2544" relation="include">
+        </childnode>
+        <childnode refid="2545" relation="include">
+        </childnode>
+        <childnode refid="2546" relation="include">
+        </childnode>
+        <childnode refid="2547" relation="include">
+        </childnode>
+      </node>
+      <node id="2557">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="2550">
+        <label>stdint.h</label>
+      </node>
+      <node id="2560">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2546">
+        <label>errno.h</label>
+      </node>
+      <node id="2559">
+        <label>hwpl.h</label>
+        <link refid="hwpl_8h"/>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2560" relation="include">
+        </childnode>
+        <childnode refid="2561" relation="include">
+        </childnode>
+        <childnode refid="2544" relation="include">
+        </childnode>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2562" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2554" relation="include">
+        </childnode>
+      </node>
+      <node id="2551">
+        <label>stddef.h</label>
+      </node>
+      <node id="2542">
+        <label>sys/fcntl.h</label>
+      </node>
+      <node id="2549">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2555">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="2561">
+        <label>string.h</label>
+      </node>
+      <node id="2541">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2545">
+        <label>unistd.h</label>
+      </node>
+      <node id="2553">
+        <label>device.h</label>
+        <link refid="device_8h_source"/>
+        <childnode refid="2543" relation="include">
+        </childnode>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2554" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+        <childnode refid="2556" relation="include">
+        </childnode>
+      </node>
+      <node id="2554">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2548" relation="include">
+        </childnode>
+      </node>
+      <node id="2562">
+        <label>hwpl/fault.h</label>
+      </node>
+      <node id="2556">
+        <label>dev/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2557" relation="include">
+        </childnode>
+        <childnode refid="2555" relation="include">
+        </childnode>
+      </node>
+      <node id="2547">
+        <label>sysfs.h</label>
+        <link refid="sysfs_8h_source"/>
+        <childnode refid="2548" relation="include">
+        </childnode>
+        <childnode refid="2549" relation="include">
+        </childnode>
+        <childnode refid="2550" relation="include">
+        </childnode>
+        <childnode refid="2551" relation="include">
+        </childnode>
+        <childnode refid="2543" relation="include">
+        </childnode>
+        <childnode refid="2552" relation="include">
+        </childnode>
+        <childnode refid="2553" relation="include">
+        </childnode>
+      </node>
+      <node id="2544">
+        <label>stdio.h</label>
+      </node>
+      <node id="2552">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1gac1759a877da2f37512096f3a491e4112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fstat</definition>
+        <argsstring>(int fildes, struct stat *buf)</argsstring>
+        <name>fstat</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets various file statistics for the specified file descriptor.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is invalid</para></listitem><listitem><para>EINVAL: <emphasis>buf</emphasis> is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga649d75c0ad1eb6ae029b723c26b66752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _fstat</definition>
+        <argsstring>(int fildes, struct stat *buf)</argsstring>
+        <name>_fstat</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c" bodystart="27" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#include<sp/><sp/>&quot;unistd_fs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;unistd_flags.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_n_i___f_i_l_d_e_s_1gac1759a877da2f37512096f3a491e4112" kindref="member">fstat</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fildes,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_fstat(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fildes,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref><sp/>*buf){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>handle;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sysfs_t<sp/>*<sp/>fs;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fildes<sp/>=<sp/>unistd_fildes_is_bad(fildes);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fildes<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>handle<sp/>=<sp/>get_handle(fildes);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>memset<sp/>(buf,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal"><sp/>(*<sp/>buf));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fs<sp/>=<sp/>get_fs(fildes);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fs<sp/>!=<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fs-&gt;fstat(fs-&gt;cfg,<sp/>handle,<sp/>buf);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EBADF;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c"/>
+  </compounddef>
+</doxygen>

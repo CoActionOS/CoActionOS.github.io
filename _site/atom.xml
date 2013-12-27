@@ -4,7 +4,7 @@
  <title>CoActionOS</title>
  <link href="http://Coactionos.github.io/" rel="self"/>
  <link href="http://Coactionos.github.io"/>
- <updated>2013-12-25T21:21:51-07:00</updated>
+ <updated>2013-12-26T19:30:23-07:00</updated>
  <id>http://Coactionos.github.io</id>
  <author>
    <name>CoActionOS, Inc</name>
@@ -253,7 +253,7 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
 &lt;p&gt;states.png&lt;/p&gt;
 
-&lt;p&gt;To implement the state machine, we use two Applib classes “SMach”:/projects/coactionos-applib/embedded/class_s_mach.html as the top level state machine and “State”:/projects/coactionos-applib/embedded/class_state.html for each individual state. Each state is implemented as it’s own class which inherits “State”:/projects/coactionos-applib/embedded/class_state.html and re-implements:&lt;/p&gt;
+&lt;p&gt;To implement the state machine, we use two Applib classes “SMach”:/coactionos-applib/html/class_s_mach.html as the top level state machine and “State”:/coactionos-applib/html/class_state.html for each individual state. Each state is implemented as it’s own class which inherits “State”:/coactionos-applib/html/class_state.html and re-implements:&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;name&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;();&lt;/span&gt;  &lt;span class=&#39;c1&#39;&gt;//unique state name&lt;/span&gt;
 &lt;span class=&#39;kt&#39;&gt;bool&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;entry_action&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//action to execute when entering the state&lt;/span&gt;
 &lt;span class=&#39;kt&#39;&gt;bool&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;action&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//action to execute while state is active&lt;/span&gt;
@@ -343,11 +343,11 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;As you can see in the action() method, we delay for 10ms. This will be called in the “home”, “timer”, and “alarm” states. Call it a “global” action. If a global state machine action is not used, you don’t need to re-implement the action() method at all.&lt;/p&gt;
 
-&lt;p&gt;Since this “SMach”:/projects/coactionos-applib/embedded/class_s_mach.html is a top level machine, we don’t implement the exit_condition() method. However, an “SMach”:/projects/coactionos-applib/embedded/class_s_mach.html is just a special type of “State”:/projects/coactionos-applib/embedded/class_state.html and can be part of a higher level SMach’s state list.&lt;/p&gt;
+&lt;p&gt;Since this “SMach”:/coactionos-applib/html/class_s_mach.html is a top level machine, we don’t implement the exit_condition() method. However, an “SMach”:/coactionos-applib/html/class_s_mach.html is just a special type of “State”:/coactionos-applib/html/class_state.html and can be part of a higher level SMach’s state list.&lt;/p&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;State machines are a great way of designing complex firmware programs. Using the Applib “SMach”:/projects/coactionos-applib/embedded/class_s_mach.html and “State”:/projects/coactionos-applib/embedded/class_state.html classes makes doing so quick and easy. You can get started now by downloading the attached “state machine project”:/attachments/download/367/state-machine.zip.&lt;/p&gt;</content>
+&lt;p&gt;State machines are a great way of designing complex firmware programs. Using the Applib “SMach”:/coactionos-applib/html/class_s_mach.html and “State”:/coactionos-applib/html/class_state.html classes makes doing so quick and easy. You can get started now by downloading the attached “state machine project”:/attachments/download/367/state-machine.zip.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -454,7 +454,7 @@ all three ports.&lt;/div&gt;
    <link href="http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Uart"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
    <id>http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Uart</id>
-   <content type="html">&lt;p&gt;A UART is used to transmit data serially. CoActionOS Applib makes configuring and using a &lt;a href=&quot;/projects/coactionos-applib/embedded/class_uart.html&quot;&gt;UART&lt;/a&gt; on CoActionOS both simple and flexible.&lt;/p&gt;
+   <content type="html">&lt;p&gt;A UART is used to transmit data serially. CoActionOS Applib makes configuring and using a &lt;a href=&quot;/coactionos-applib/html/class_uart.html&quot;&gt;UART&lt;/a&gt; on CoActionOS both simple and flexible.&lt;/p&gt;
 
 &lt;p&gt;The basic steps to use the UART are to:&lt;/p&gt;
 
@@ -468,7 +468,7 @@ all three ports.&lt;/div&gt;
 &lt;li&gt;Optionally Close the UART (power it down)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The following program demonstrates how to use the UART. The program assumes the TXD line is connected to the RXD line. For more details on using the UART, please see the &lt;a href=&quot;/projects/coactionos-applib/embedded/class_uart.html&quot;&gt;UART Applib documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following program demonstrates how to use the UART. The program assumes the TXD line is connected to the RXD line. For more details on using the UART, please see the &lt;a href=&quot;/coactionos-applib/html/class_uart.html&quot;&gt;UART Applib documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For printf&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdlib&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstring&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for strcpy and memset&lt;/span&gt;
@@ -504,7 +504,7 @@ all three ports.&lt;/div&gt;
    <link href="http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Thread"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
    <id>http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Thread</id>
-   <content type="html">&lt;p&gt;CoActionOS Applib includes a Thread class for easily initializing and running threads. For more details on using this class, please see the &lt;a href=&quot;/redmine/projects/coactionos-applib/embedded/class_thread.html&quot;&gt;Thread Applib documentation&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;CoActionOS Applib includes a Thread class for easily initializing and running threads. For more details on using this class, please see the &lt;a href=&quot;/coactionos-applib/html/class_thread.html&quot;&gt;Thread Applib documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Thread.hpp&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for Thread class&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Timer.hpp&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for printf&lt;/span&gt;
@@ -558,7 +558,7 @@ done
    <link href="http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Strings"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
    <id>http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Strings</id>
-   <content type="html">&lt;p&gt;The CoActionOS Applib includes a &lt;a href=&quot;/projects/coactionos-applib/embedded/class_string.html&quot;&gt;String class&lt;/a&gt; similar to the C++ STL string class. The Applib String class avoids using dynamic memory allocation so that it can run well on systems with very little memory. It is based on standard C string manipulation (such as strcpy(), strcmp()) but gives the ease of use of the STL string class.&lt;/p&gt;
+   <content type="html">&lt;p&gt;The CoActionOS Applib includes a &lt;a href=&quot;/coactionos-applib/html/class_string.html&quot;&gt;String class&lt;/a&gt; similar to the C++ STL string class. The Applib String class avoids using dynamic memory allocation so that it can run well on systems with very little memory. It is based on standard C string manipulation (such as strcpy(), strcmp()) but gives the ease of use of the STL string class.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/String.hpp&amp;gt;&lt;/span&gt;
 
@@ -604,7 +604,7 @@ done
 	&lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;That about covers the basics. You can read the &lt;a href=&quot;/projects/coactionos-applib/embedded/class_string.html&quot;&gt;String class API&lt;/a&gt; for more information.&lt;/p&gt;</content>
+&lt;p&gt;That about covers the basics. You can read the &lt;a href=&quot;/coactionos-applib/html/class_string.html&quot;&gt;String class API&lt;/a&gt; for more information.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -644,7 +644,7 @@ done
 &lt;li&gt;Optionally Close the SPI port (power it down)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The following program demonstrates how to use the SPI in CoActinOS. For more details on using the SPI, please see the &lt;a href=&quot;/projects/coactionos-applib/embedded/class_spi.html&quot;&gt;SPI Applib documentation&lt;/a&gt;.&lt;br /&gt;The &lt;a href=&quot;/projects/coactionos-applib/embedded/class_pin.html&quot;&gt;Pin class documentation&lt;/a&gt; may also be helpful.&lt;/p&gt;
+&lt;p&gt;The following program demonstrates how to use the SPI in CoActinOS. For more details on using the SPI, please see the &lt;a href=&quot;/coactionos-applib/html/class_spi.html&quot;&gt;SPI Applib documentation&lt;/a&gt;.&lt;br /&gt;The &lt;a href=&quot;/coactionos-applib/html/class_pin.html&quot;&gt;Pin class documentation&lt;/a&gt; may also be helpful.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For printf and perror&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdlib&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for NULL&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstring&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for memset&lt;/span&gt;
@@ -781,7 +781,7 @@ done
 &lt;li&gt;Optionally close the PWM (power it down)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The following program demonstrates using a PWM output. For more details on using PWM, please see the &lt;a href=&quot;/redmine/projects/coactionos-applib/embedded/class_pwm.html&quot;&gt;PWM Applib documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following program demonstrates using a PWM output. For more details on using PWM, please see the &lt;a href=&quot;/coactionos-applib/html/class_pwm.html&quot;&gt;PWM Applib documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for printf&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Pwm.hpp&amp;gt;&lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for PWM class&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Timer.hpp&amp;gt;&lt;/span&gt;
@@ -816,7 +816,7 @@ done
    <link href="http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Pio"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
    <id>http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-Pio</id>
-   <content type="html">&lt;p&gt;The original Flashing LED article discusses how to access IO on CoActionOS using C/C++. CoActionOS Applib provides C++ classes for easy IO access. The following program demonstrates using a pin to turn the CoAction Hero on-board LED on and off (error checking has been omitted for simplicity). See &lt;a href=&quot;/projects/coactionos-applib/embedded/class_pin.html&quot;&gt;Pin Class&lt;/a&gt; for more details.&lt;/p&gt;
+   <content type="html">&lt;p&gt;The original Flashing LED article discusses how to access IO on CoActionOS using C/C++. CoActionOS Applib provides C++ classes for easy IO access. The following program demonstrates using a pin to turn the CoAction Hero on-board LED on and off (error checking has been omitted for simplicity). See &lt;a href=&quot;/coactionos-applib/html/class_pin.html&quot;&gt;Pin Class&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Timer.hpp&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Pin.hpp&amp;gt;&lt;/span&gt;
@@ -1069,7 +1069,7 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
 &lt;li&gt;Optionally Close the I2C port (power it down)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;The following program demonstrates using the &lt;a href=&quot;/projects/coactionos-applib/embedded/class_i2c.html&quot;&gt;CoActionOS Applib I2C class&lt;/a&gt;. For more details on using the I2C, please see the &lt;a href=&quot;/projects/coactionos-applib/embedded/class_i2c.html&quot;&gt;I2C Applib documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following program demonstrates using the &lt;a href=&quot;/coactionos-applib/html/class_i2c.html&quot;&gt;CoActionOS Applib I2C class&lt;/a&gt;. For more details on using the I2C, please see the &lt;a href=&quot;/coactionos-applib/html/class_i2c.html&quot;&gt;I2C Applib documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For printf and perror&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/I2c.hpp&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For the I2C class&lt;/span&gt;
  
@@ -1107,10 +1107,10 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
 
 &lt;li&gt;POSIX API (open(), read(), etc)&lt;/li&gt;
 
-&lt;li&gt;&lt;a href=&quot;/projects/coactionos-applib/embedded/class_file.html&quot;&gt;Applib File Class&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/coactionos-applib/html/class_file.html&quot;&gt;Applib File Class&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The program below demonstrates how to use the &lt;a href=&quot;/projects/coactionos-applib/embedded/class_file.html&quot;&gt;Applib File Class&lt;/a&gt;. It uses POSIX calls to access files but is easier to code than using POSIX.&lt;/p&gt;
+&lt;p&gt;The program below demonstrates how to use the &lt;a href=&quot;/coactionos-applib/html/class_file.html&quot;&gt;Applib File Class&lt;/a&gt;. It uses POSIX calls to access files but is easier to code than using POSIX.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For printf and perror&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdlib&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for exit()&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstring&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for strcpy and memset&lt;/span&gt;
@@ -1162,11 +1162,9 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
    <link href="http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-AIO"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
    <id>http://Coactionos.github.io/coactionos-tutorials/2013/12/24/CoActionOS-Tutorial-AIO</id>
-   <content type="html">&lt;p&gt;h1. CoActionOS Async IO Tutorial&lt;/p&gt;
+   <content type="html">&lt;p&gt;Asynchronous IO (AIO) is used when you want to start an operation and do other things while you wait until the operation completes. AIO is supported on all peripherals which support read() and write(). Simply pass an Aio object to read() or write(), and the operation will perform asynchronously.&lt;/p&gt;
 
-&lt;p&gt;Asynchronous IO (AIO) is used when you want to start an operation and do other things while you wait until the operation completes. AIO is supported on all peripherals which support read() and write(). Simply pass an Aio object to read() or write(), and the operation will perform asynchronously.&lt;/p&gt;
-
-&lt;p&gt;The following program demonstrates AIO using the DAC. See the &lt;a href=&quot;/redmine/projects/coactionos-applib/embedded/class_aio.html&quot;&gt;AIO class documenation&lt;/a&gt; and &lt;a href=&quot;/redmine/projects/coactionos-applib/embedded/class_dac.html&quot;&gt;DAC class documentation&lt;/a&gt; for more details.&lt;/p&gt;
+&lt;p&gt;The following program demonstrates AIO using the DAC. See the &lt;a href=&quot;/coactionos-applib/html/class_aio.html&quot;&gt;AIO class documenation&lt;/a&gt; and &lt;a href=&quot;/coactionos-applib/html/class_dac.html&quot;&gt;DAC class documentation&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/DbugStdout.hpp&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For the DbugStdout class (or just use printf() is you prefer)&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Dac.hpp&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//For the DbugStdout class&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Aio.hpp&amp;gt;&lt;/span&gt;

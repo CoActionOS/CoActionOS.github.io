@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevfifo__cfg__t" kind="struct" prot="public">
+    <compoundname>devfifo_cfg_t</compoundname>
+    <includes refid="devfifo_8h" local="no">devfifo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevfifo__cfg__t_1a284c15ed174401a250787cd3d631c62c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structdevice__t" kindref="compound">device_t</ref> *</type>
+        <definition>const device_t* devfifo_cfg_t::dev</definition>
+        <argsstring></argsstring>
+        <name>dev</name>
+        <briefdescription>
+<para>The underlying device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__cfg__t_1a6f93b7b15f07f0cc590852af8f104322" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* devfifo_cfg_t::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+<para>The buffer for the fifo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="103" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__cfg__t_1aa492bf9eb0e3868d168835aa5c97110b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int devfifo_cfg_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The size of the fifo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="104" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__cfg__t_1a7125b2cad3b8915296ccde563cb94e47" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int devfifo_cfg_t::req_getbyte</definition>
+        <argsstring></argsstring>
+        <name>req_getbyte</name>
+        <briefdescription>
+<para>The request used to get a byte from the device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="105" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__cfg__t_1a5ed27866d0ab5642b626681cd8a3f32e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int devfifo_cfg_t::req_setaction</definition>
+        <argsstring></argsstring>
+        <name>req_setaction</name>
+        <briefdescription>
+<para>The request to set the action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="106" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__cfg__t_1a0dfeca67bd72bbdcc0201789f242e8b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int devfifo_cfg_t::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+<para>The event to trigger on. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="107" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is used for the configuration of the device. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="227">
+        <label>device_uart_cfg_t</label>
+        <link refid="structdevice__uart__cfg__t"/>
+      </node>
+      <node id="230">
+        <label>device_adc_cfg_t</label>
+        <link refid="structdevice__adc__cfg__t"/>
+      </node>
+      <node id="225">
+        <label>device_driver_t</label>
+        <link refid="structdevice__driver__t"/>
+        <childnode refid="226" relation="usage">
+          <edgelabel>+write</edgelabel>
+          <edgelabel>+open</edgelabel>
+          <edgelabel>+ioctl</edgelabel>
+          <edgelabel>+close</edgelabel>
+          <edgelabel>+read</edgelabel>
+        </childnode>
+      </node>
+      <node id="223">
+        <label>devfifo_cfg_t</label>
+        <link refid="structdevfifo__cfg__t"/>
+        <childnode refid="224" relation="usage">
+          <edgelabel>+dev</edgelabel>
+        </childnode>
+      </node>
+      <node id="232">
+        <label>device_pwm_cfg_t</label>
+        <link refid="structdevice__pwm__cfg__t"/>
+      </node>
+      <node id="231">
+        <label>device_i2c_cfg_t</label>
+        <link refid="structdevice__i2c__cfg__t"/>
+      </node>
+      <node id="229">
+        <label>pio_t</label>
+        <link refid="structpio__t"/>
+      </node>
+      <node id="233">
+        <label>device_spi_cfg_t</label>
+        <link refid="structdevice__spi__cfg__t"/>
+        <childnode refid="229" relation="usage">
+          <edgelabel>+cs</edgelabel>
+        </childnode>
+      </node>
+      <node id="228">
+        <label>device_periph_t</label>
+        <link refid="structdevice__periph__t"/>
+      </node>
+      <node id="226">
+        <label>device_cfg_t</label>
+        <link refid="structdevice__cfg__t"/>
+        <childnode refid="227" relation="usage">
+          <edgelabel>+uart</edgelabel>
+        </childnode>
+        <childnode refid="228" relation="usage">
+          <edgelabel>+periph</edgelabel>
+        </childnode>
+        <childnode refid="229" relation="usage">
+          <edgelabel>+pio</edgelabel>
+        </childnode>
+        <childnode refid="230" relation="usage">
+          <edgelabel>+adc</edgelabel>
+        </childnode>
+        <childnode refid="231" relation="usage">
+          <edgelabel>+i2c</edgelabel>
+        </childnode>
+        <childnode refid="232" relation="usage">
+          <edgelabel>+pwm</edgelabel>
+        </childnode>
+        <childnode refid="233" relation="usage">
+          <edgelabel>+spi</edgelabel>
+        </childnode>
+      </node>
+      <node id="224">
+        <label>device_t</label>
+        <link refid="structdevice__t"/>
+        <childnode refid="225" relation="usage">
+          <edgelabel>+driver</edgelabel>
+        </childnode>
+        <childnode refid="226" relation="usage">
+          <edgelabel>+cfg</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="101" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="101" bodyend="108"/>
+    <listofallmembers>
+      <member refid="structdevfifo__cfg__t_1a6f93b7b15f07f0cc590852af8f104322" prot="public" virt="non-virtual"><scope>devfifo_cfg_t</scope><name>buffer</name></member>
+      <member refid="structdevfifo__cfg__t_1a284c15ed174401a250787cd3d631c62c" prot="public" virt="non-virtual"><scope>devfifo_cfg_t</scope><name>dev</name></member>
+      <member refid="structdevfifo__cfg__t_1a0dfeca67bd72bbdcc0201789f242e8b5" prot="public" virt="non-virtual"><scope>devfifo_cfg_t</scope><name>event</name></member>
+      <member refid="structdevfifo__cfg__t_1a7125b2cad3b8915296ccde563cb94e47" prot="public" virt="non-virtual"><scope>devfifo_cfg_t</scope><name>req_getbyte</name></member>
+      <member refid="structdevfifo__cfg__t_1a5ed27866d0ab5642b626681cd8a3f32e" prot="public" virt="non-virtual"><scope>devfifo_cfg_t</scope><name>req_setaction</name></member>
+      <member refid="structdevfifo__cfg__t_1aa492bf9eb0e3868d168835aa5c97110b" prot="public" virt="non-virtual"><scope>devfifo_cfg_t</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

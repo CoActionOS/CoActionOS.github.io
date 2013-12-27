@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__ioctl__t" kind="struct" prot="public">
+    <compoundname>link_ioctl_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__ioctl__t_1ac4a2a4fa9da7bd4d8b7847bf11a8fd44" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_ioctl_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="307" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__ioctl__t_1a4d0acba52c355ab3216c6f312645ed56" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_ioctl_t::fildes</definition>
+        <argsstring></argsstring>
+        <name>fildes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="308" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__ioctl__t_1a5e773ae1067f7f058ed44dcd1741fc84" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_ioctl_t::request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="309" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__ioctl__t_1a1bfdf3faed49b75723de74b3020cb50e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_ioctl_t::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="310" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="338">
+        <label>link_ioctl_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="306" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="306" bodyend="311"/>
+    <listofallmembers>
+      <member refid="structlink__ioctl__t_1a1bfdf3faed49b75723de74b3020cb50e" prot="public" virt="non-virtual"><scope>link_ioctl_t</scope><name>arg</name></member>
+      <member refid="structlink__ioctl__t_1ac4a2a4fa9da7bd4d8b7847bf11a8fd44" prot="public" virt="non-virtual"><scope>link_ioctl_t</scope><name>cmd</name></member>
+      <member refid="structlink__ioctl__t_1a4d0acba52c355ab3216c6f312645ed56" prot="public" virt="non-virtual"><scope>link_ioctl_t</scope><name>fildes</name></member>
+      <member refid="structlink__ioctl__t_1a5e773ae1067f7f058ed44dcd1741fc84" prot="public" virt="non-virtual"><scope>link_ioctl_t</scope><name>request</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

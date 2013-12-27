@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcdc__network__channel__terminal__func__desc__t" kind="struct" prot="public">
+    <compoundname>cdc_network_channel_terminal_func_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1a8f3780955ac50691d779dd0e3494e283" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::bFunctionLength</definition>
+        <argsstring></argsstring>
+        <name>bFunctionLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="172" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1aafd34fc510e0bf08f22c1af27e58da15" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="173" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1ad1e11a4a7a468e4a47c8bc5528b8a33b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="174" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1a7b48a59cccc5ed649123d988599d87a7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::bEntityId</definition>
+        <argsstring></argsstring>
+        <name>bEntityId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="175" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1a5a1a083f012ff7564508661a0a4fe8bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::iName</definition>
+        <argsstring></argsstring>
+        <name>iName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="176" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1acbd5fb4f907843f94455ec5a469b786c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::bChannelIndex</definition>
+        <argsstring></argsstring>
+        <name>bChannelIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="177" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__network__channel__terminal__func__desc__t_1a2e3bf1b18a8daaa2eac513fc37870a61" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_network_channel_terminal_func_desc_t::bPhysicalInterface</definition>
+        <argsstring></argsstring>
+        <name>bPhysicalInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="178" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="196">
+        <label>cdc_network_channel_terminal_func_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="171" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="171" bodyend="179"/>
+    <listofallmembers>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1acbd5fb4f907843f94455ec5a469b786c" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>bChannelIndex</name></member>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1ad1e11a4a7a468e4a47c8bc5528b8a33b" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>bDescriptorSubType</name></member>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1aafd34fc510e0bf08f22c1af27e58da15" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1a7b48a59cccc5ed649123d988599d87a7" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>bEntityId</name></member>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1a8f3780955ac50691d779dd0e3494e283" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>bFunctionLength</name></member>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1a2e3bf1b18a8daaa2eac513fc37870a61" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>bPhysicalInterface</name></member>
+      <member refid="structcdc__network__channel__terminal__func__desc__t_1a5a1a083f012ff7564508661a0a4fe8bc" prot="public" virt="non-virtual"><scope>cdc_network_channel_terminal_func_desc_t</scope><name>iName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

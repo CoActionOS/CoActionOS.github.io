@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i___p_r_o_c_e_s_s" kind="group">
+    <compoundname>UNI_PROCESS</compoundname>
+    <title>Processes</title>
+    <innerfile refid="__fork_8c">_fork.c</innerfile>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___p_r_o_c_e_s_s_1gad803eae96eec90aa3ef8c65f06d59009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _execve</definition>
+        <argsstring>(const char *path, char *const argv[], char *const envp[])</argsstring>
+        <name>_execve</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>argv</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char *const</type>
+          <declname>envp</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_execve.c" line="14" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_execve.c" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_r_o_c_e_s_s_1gaa4e4714e6e8927c80b2553a40094b6d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t fork</definition>
+        <argsstring>(void)</argsstring>
+        <name>fork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: function is not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fork.c" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_r_o_c_e_s_s_1ga1bbd8aee44468bfc796b6ceb3bf74d96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t _fork</definition>
+        <argsstring>(void)</argsstring>
+        <name>_fork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fork.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fork.c" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_r_o_c_e_s_s_1ga00de8c0545c31325a425f53371a56235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t vfork</definition>
+        <argsstring>(void)</argsstring>
+        <name>vfork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: function is not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fork.c" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_r_o_c_e_s_s_1gac3bd6e0b145837ffb275b86bf7ffaadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t _vfork</definition>
+        <argsstring>(void)</argsstring>
+        <name>_vfork</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fork.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fork.c" bodystart="37" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

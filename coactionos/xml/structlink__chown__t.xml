@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__chown__t" kind="struct" prot="public">
+    <compoundname>link_chown_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__chown__t_1aa0b688c86c074e9be9af8c98e3f0368c" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_chown_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="439" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__chown__t_1a7e2d23b91871951cfd7a9a14645de1d4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_chown_t::path_size</definition>
+        <argsstring></argsstring>
+        <name>path_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="440" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__chown__t_1a48899e48d740a0f9ca6ae42d1b0c99ed" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_chown_t::uid</definition>
+        <argsstring></argsstring>
+        <name>uid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="441" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__chown__t_1a255278cb96f7e9bdc38e52fd83781d41" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_chown_t::gid</definition>
+        <argsstring></argsstring>
+        <name>gid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="442" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="324">
+        <label>link_chown_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="438" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="438" bodyend="443"/>
+    <listofallmembers>
+      <member refid="structlink__chown__t_1aa0b688c86c074e9be9af8c98e3f0368c" prot="public" virt="non-virtual"><scope>link_chown_t</scope><name>cmd</name></member>
+      <member refid="structlink__chown__t_1a255278cb96f7e9bdc38e52fd83781d41" prot="public" virt="non-virtual"><scope>link_chown_t</scope><name>gid</name></member>
+      <member refid="structlink__chown__t_1a7e2d23b91871951cfd7a9a14645de1d4" prot="public" virt="non-virtual"><scope>link_chown_t</scope><name>path_size</name></member>
+      <member refid="structlink__chown__t_1a48899e48d740a0f9ca6ae42d1b0c99ed" prot="public" virt="non-virtual"><scope>link_chown_t</scope><name>uid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

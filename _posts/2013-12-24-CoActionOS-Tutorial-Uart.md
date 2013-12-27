@@ -6,7 +6,7 @@ tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
 A UART is used to transmit data serially. CoActionOS Applib makes 
-configuring and using a [UART](/projects/coactionos-applib/embedded/class_uart.html) on 
+configuring and using a [UART]({{ BASE_URL }}/coactionos-applib/html/class_uart.html) on 
 CoActionOS both simple and flexible.
 
 The basic steps to use the UART are to:
@@ -18,7 +18,7 @@ The basic steps to use the UART are to:
 
 The following program demonstrates how to use the UART. The program assumes 
 the TXD line is connected to the RXD line. For more details on using the UART, 
-please see the [UART Applib documentation](/projects/coactionos-applib/embedded/class_uart.html).
+please see the [UART Applib documentation]({{ BASE_URL }}/coactionos-applib/html/class_uart.html).
 
 {% highlight CPP %}
 #include <cstdio> //For printf

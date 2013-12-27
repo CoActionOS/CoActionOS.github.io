@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcdc__country__selection__func__desc__t" kind="struct" prot="public">
+    <compoundname>cdc_country_selection_func_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcdc__country__selection__func__desc__t_1a8a2c0a9659ffdfb18ee87f3c1840a617" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_country_selection_func_desc_t::bFunctionLength</definition>
+        <argsstring></argsstring>
+        <name>bFunctionLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="153" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__country__selection__func__desc__t_1a2c08f8fd8e6d6b349ee46ce9f8a14c3f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_country_selection_func_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="154" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__country__selection__func__desc__t_1af8242cd116dd973027d506429b6c1473" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_country_selection_func_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="155" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__country__selection__func__desc__t_1aff0a0475a014ad48e97a6579b14a08df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_country_selection_func_desc_t::iCountryCodeRelDate</definition>
+        <argsstring></argsstring>
+        <name>iCountryCodeRelDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="156" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__country__selection__func__desc__t_1ae3ca2c404e15169c83f64dc312622a43" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cdc_country_selection_func_desc_t::wCountryCode[]</definition>
+        <argsstring>[]</argsstring>
+        <name>wCountryCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="157" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="182">
+        <label>cdc_country_selection_func_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="152" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="152" bodyend="158"/>
+    <listofallmembers>
+      <member refid="structcdc__country__selection__func__desc__t_1af8242cd116dd973027d506429b6c1473" prot="public" virt="non-virtual"><scope>cdc_country_selection_func_desc_t</scope><name>bDescriptorSubType</name></member>
+      <member refid="structcdc__country__selection__func__desc__t_1a2c08f8fd8e6d6b349ee46ce9f8a14c3f" prot="public" virt="non-virtual"><scope>cdc_country_selection_func_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structcdc__country__selection__func__desc__t_1a8a2c0a9659ffdfb18ee87f3c1840a617" prot="public" virt="non-virtual"><scope>cdc_country_selection_func_desc_t</scope><name>bFunctionLength</name></member>
+      <member refid="structcdc__country__selection__func__desc__t_1aff0a0475a014ad48e97a6579b14a08df" prot="public" virt="non-virtual"><scope>cdc_country_selection_func_desc_t</scope><name>iCountryCodeRelDate</name></member>
+      <member refid="structcdc__country__selection__func__desc__t_1ae3ca2c404e15169c83f64dc312622a43" prot="public" virt="non-virtual"><scope>cdc_country_selection_func_desc_t</scope><name>wCountryCode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

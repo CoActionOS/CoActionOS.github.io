@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="eint_8h" kind="file">
+    <compoundname>eint.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includedby refid="link__protocol_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</includedby>
+    <incdepgraph>
+      <node id="1439">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h</label>
+        <link refid="eint.h"/>
+        <childnode refid="1440" relation="include">
+        </childnode>
+        <childnode refid="1441" relation="include">
+        </childnode>
+        <childnode refid="1442" relation="include">
+        </childnode>
+      </node>
+      <node id="1441">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1440">
+        <label>stdint.h</label>
+      </node>
+      <node id="1442">
+        <label>hwpl/arch.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1443">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h</label>
+        <link refid="eint.h"/>
+        <childnode refid="1444" relation="include">
+        </childnode>
+      </node>
+      <node id="1444">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</label>
+        <link refid="link__protocol_8h"/>
+        <childnode refid="1445" relation="include">
+        </childnode>
+      </node>
+      <node id="1445">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structeint__attr__t" prot="public">eint_attr_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___e_i_n_t_1gac87fa334c3271ac180aedf8a1bac838f" prot="public" static="no">
+        <name>EINT_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="78" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_i_n_t_1gaf63454446a977fa24c3b4501e096ef90" prot="public" static="no">
+        <name>I_EINT_GETATTR</name>
+        <briefdescription>
+<para>IOCTL request to get attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="115" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_i_n_t_1ga8ffe868c1b9a048d4a422102bb0d0494" prot="public" static="no">
+        <name>I_EINT_SETATTR</name>
+        <briefdescription>
+<para>IOCTL request to set the attributes (set pin assignment) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="119" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_i_n_t_1gafafdc3233a44f8e060b32de3560ffae8" prot="public" static="no">
+        <name>I_EINT_SETACTION</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This sets the action for an EINT channel. For example: <programlisting><codeline><highlight class="normal"><ref refid="structhwpl__action__t" kindref="compound">eint_action_t</ref><sp/>action;</highlight></codeline>
+<codeline><highlight class="normal">action.<ref refid="structhwpl__action__t_1ad64a81f8794209690a58c5edea69a670" kindref="member">channel</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//channel<sp/>if<sp/>used<sp/>on<sp/>the<sp/>architecture</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">action.<ref refid="structhwpl__action__t_1a93110fca833bdac575232fe9e86ce521" kindref="member">callback</ref><sp/>=<sp/>my_callback;<sp/></highlight><highlight class="comment">//function<sp/>to<sp/>execute<sp/>when<sp/>event<sp/>happens</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">action.<ref refid="structhwpl__action__t_1a696aef4afa2abe4e4b4fb72b1db27c0b" kindref="member">context</ref><sp/>=<sp/>NULL;<sp/><sp/></highlight><highlight class="comment">//passed<sp/>to<sp/>my_callback<sp/>as<sp/>first<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">action.<ref refid="structhwpl__action__t_1a135a14bbc27b1ea33cfaee0dc8302740" kindref="member">event</ref><sp/>=<sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848" kindref="member">EINT_ACTION_EVENT_RISING</ref>;<sp/></highlight><highlight class="comment">//Trigger<sp/>on<sp/>rising<sp/>edge</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(eint_fd,<sp/><ref refid="group___e_i_n_t_1gafafdc3233a44f8e060b32de3560ffae8" kindref="member">I_EINT_SETACTION</ref>,<sp/>&amp;action);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="132" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_i_n_t_1gad92edee8d4c27c9082e56369fc05acff" prot="public" static="no">
+        <name>I_EINT_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="134" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___e_i_n_t_1gadd1257260f1ba401df43dd34fa2d28d5" prot="public" static="no">
+        <name>eint_action_event_t</name>
+        <enumvalue id="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a7f362899eaa0583dccbdea0bbaf8f5a1" prot="public">
+          <name>EINT_ACTION_EVENT_UNCONFIGURED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>The trigger has not been set </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848" prot="public">
+          <name>EINT_ACTION_EVENT_RISING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trigger on the rising edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81" prot="public">
+          <name>EINT_ACTION_EVENT_FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trigger on the falling edge </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5aaab3f9601e94feb16265e6512ff683f4" prot="public">
+          <name>EINT_ACTION_EVENT_BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trigger on both edges </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5ac72b8d7c05b72a3917fd88c51a084146" prot="public">
+          <name>EINT_ACTION_EVENT_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trigger while low </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5aa169884effda9ecad418a5dab0f1ec40" prot="public">
+          <name>EINT_ACTION_EVENT_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trigger while high </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Lists the valid values for the external interrupt trigger. </para>        </briefdescription>
+        <detaileddescription>
+<para>This list defines the valid values for the external interrupt trigger value. <simplesect kind="return"><para>An HWPL Error code </para></simplesect>
+<simplesect kind="see"><para>ERR </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="86" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="86" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___e_i_n_t_1ga08630207822833a28b4f31d67bf75248" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t eint_action_t</definition>
+        <argsstring></argsstring>
+        <name>eint_action_t</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This defines a EINT action.</para><para>See <ref refid="group___e_i_n_t_1gadd1257260f1ba401df43dd34fa2d28d5" kindref="member">eint_action_event_t</ref> for events. There are no channel specific definitions for the EINT. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>External Interrupt Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">#ifndef<sp/>DEV_EINT_H_</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_EINT_H_</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EINT_IOC_IDENT_CHAR<sp/>&apos;e&apos;</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="86" refid="group___e_i_n_t_1gadd1257260f1ba401df43dd34fa2d28d5" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="87" refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a7f362899eaa0583dccbdea0bbaf8f5a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a7f362899eaa0583dccbdea0bbaf8f5a1" kindref="member">EINT_ACTION_EVENT_UNCONFIGURED</ref><sp/>,</highlight></codeline>
+<codeline lineno="88" refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a019f0c7c523b3f04b4a0e4905f31e848" kindref="member">EINT_ACTION_EVENT_RISING</ref><sp/>,</highlight></codeline>
+<codeline lineno="89" refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81" kindref="member">EINT_ACTION_EVENT_FALLING</ref><sp/>,</highlight></codeline>
+<codeline lineno="90" refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5aaab3f9601e94feb16265e6512ff683f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5aaab3f9601e94feb16265e6512ff683f4" kindref="member">EINT_ACTION_EVENT_BOTH</ref><sp/>,</highlight></codeline>
+<codeline lineno="91" refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5ac72b8d7c05b72a3917fd88c51a084146" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5ac72b8d7c05b72a3917fd88c51a084146" kindref="member">EINT_ACTION_EVENT_LOW</ref><sp/>,</highlight></codeline>
+<codeline lineno="92" refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5aa169884effda9ecad418a5dab0f1ec40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5aa169884effda9ecad418a5dab0f1ec40" kindref="member">EINT_ACTION_EVENT_HIGH</ref><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<sp/><ref refid="group___e_i_n_t_1gadd1257260f1ba401df43dd34fa2d28d5" kindref="member">eint_action_event_t</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="group___e_i_n_t_1ga08630207822833a28b4f31d67bf75248" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref><sp/><ref refid="group___e_i_n_t_1ga08630207822833a28b4f31d67bf75248" kindref="member">eint_action_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="structeint__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="109" refid="structeint__attr__t_1a29a20d1250f75e808af5b5b876027ea2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="110" refid="structeint__attr__t_1a3856c21e6184664c35cb6ee8cac3dc42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>value<sp/>;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}<sp/><ref refid="structeint__attr__t" kindref="compound">eint_attr_t</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="group___e_i_n_t_1gaf63454446a977fa24c3b4501e096ef90" refkind="member"><highlight class="preprocessor">#define<sp/>I_EINT_GETATTR<sp/>_IOCTLR(EINT_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>eint_attr_t)</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="119" refid="group___e_i_n_t_1ga8ffe868c1b9a048d4a422102bb0d0494" refkind="member"><highlight class="preprocessor">#define<sp/>I_EINT_SETATTR<sp/>_IOCTLW(EINT_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>eint_attr_t)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="132" refid="group___e_i_n_t_1gafafdc3233a44f8e060b32de3560ffae8" refkind="member"><highlight class="preprocessor">#define<sp/>I_EINT_SETACTION<sp/>_IOCTLW(EINT_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>eint_action_t)</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_EINT_TOTAL<sp/>0</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="139"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_EINT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h"/>
+  </compounddef>
+</doxygen>

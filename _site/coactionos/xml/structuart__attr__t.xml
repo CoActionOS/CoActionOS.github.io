@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structuart__attr__t" kind="struct" prot="public">
+    <compoundname>uart_attr_t</compoundname>
+    <includes refid="uart_8h" local="no">uart.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuart__attr__t_1a7a220446820d1cfc3287f903b4e50336" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uart_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+<para>The GPIO configuration to use (see <ref refid="group___l_p_c17_x_x_d_e_v" kindref="compound">LPC17xx Devices</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="134" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__attr__t_1a98b23501cd1f3ea4f81ca002757b07a2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uart_attr_t::start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+<para>The number of start bits. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="135" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__attr__t_1a8466176541ccb3d37308884f5672dca3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uart_attr_t::stop</definition>
+        <argsstring></argsstring>
+        <name>stop</name>
+        <briefdescription>
+<para>The number of stop bits. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="136" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__attr__t_1ab889f02ef7a8d761b9729feee9318450" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uart_attr_t::parity</definition>
+        <argsstring></argsstring>
+        <name>parity</name>
+        <briefdescription>
+<para>The type of parity. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="137" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__attr__t_1aa94e58584407d254bda954d37fd0ced3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t uart_attr_t::baudrate</definition>
+        <argsstring></argsstring>
+        <name>baudrate</name>
+        <briefdescription>
+<para>The UART baudrate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="138" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuart__attr__t_1a4bcff2760ca438cb9aac1844fd1efbd1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t uart_attr_t::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>The character width. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="139" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>UART Attribute Data Structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines how the control structure for opening or reconfiguring the UART port. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="480">
+        <label>uart_attr_t</label>
+        <link refid="structuart__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" line="133" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uart.h" bodystart="133" bodyend="140"/>
+    <listofallmembers>
+      <member refid="structuart__attr__t_1aa94e58584407d254bda954d37fd0ced3" prot="public" virt="non-virtual"><scope>uart_attr_t</scope><name>baudrate</name></member>
+      <member refid="structuart__attr__t_1ab889f02ef7a8d761b9729feee9318450" prot="public" virt="non-virtual"><scope>uart_attr_t</scope><name>parity</name></member>
+      <member refid="structuart__attr__t_1a7a220446820d1cfc3287f903b4e50336" prot="public" virt="non-virtual"><scope>uart_attr_t</scope><name>pin_assign</name></member>
+      <member refid="structuart__attr__t_1a98b23501cd1f3ea4f81ca002757b07a2" prot="public" virt="non-virtual"><scope>uart_attr_t</scope><name>start</name></member>
+      <member refid="structuart__attr__t_1a8466176541ccb3d37308884f5672dca3" prot="public" virt="non-virtual"><scope>uart_attr_t</scope><name>stop</name></member>
+      <member refid="structuart__attr__t_1a4bcff2760ca438cb9aac1844fd1efbd1" prot="public" virt="non-virtual"><scope>uart_attr_t</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

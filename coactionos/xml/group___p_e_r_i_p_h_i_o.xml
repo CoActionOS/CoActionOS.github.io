@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___p_e_r_i_p_h_i_o" kind="group">
+    <compoundname>PERIPHIO</compoundname>
+    <title>Peripheral Input/Output</title>
+    <innergroup refid="group___a_d_c">Analog to Digital Converter (ADC)</innergroup>
+    <innergroup refid="group___b_o_o_t_l_o_a_d_e_r___d_e_v">Bootloader Access</innergroup>
+    <innergroup refid="group___c_o_r_e">Core Microcontroller Access</innergroup>
+    <innergroup refid="group___d_e_v_i_c_e">Device Configuration</innergroup>
+    <innergroup refid="group___d_a_c">Digital to Analog Converter (DAC)</innergroup>
+    <innergroup refid="group___e_t_h___d_e_v">Ethernet Device Access</innergroup>
+    <innergroup refid="group___e_i_n_t">External Interrupts (EINT)</innergroup>
+    <innergroup refid="group___e_m_c">External Memory Controller (EMC)</innergroup>
+    <innergroup refid="group___f_l_a_s_h">Flash Memory</innergroup>
+    <innergroup refid="group___g_p_i_o">General Purpose Input/Output (GPIO)</innergroup>
+    <innergroup refid="group___i2_c">Inter-Integrated Circuit (I2C) Master</innergroup>
+    <innergroup refid="group___m_e_m">Memory (RAM/Flash)</innergroup>
+    <innergroup refid="group___p_i_o">Pin Input/Output (PIO)</innergroup>
+    <innergroup refid="group___p_w_m">Pulse Width Modulation (PWM)</innergroup>
+    <innergroup refid="group___q_e_i">Quadrature Encoder Interface (QEI)</innergroup>
+    <innergroup refid="group___r_t_c">Real Time Clock (RTC)</innergroup>
+    <innergroup refid="group___s_p_i">Serial Peripheral Interface (SPI) Master</innergroup>
+    <innergroup refid="group___s_y_s___d_e_v">System Devices</innergroup>
+    <innergroup refid="group___t_m_r">Timer (TMR)</innergroup>
+    <innergroup refid="group___u_a_r_t">Universal Asynchronous Receiver/Transmitter (UART)</innergroup>
+    <innergroup refid="group___u_s_b">Universal Serial Bus (USB)</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

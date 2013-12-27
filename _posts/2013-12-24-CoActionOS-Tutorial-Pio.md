@@ -10,7 +10,7 @@ The original Flashing LED article discusses how to access IO on CoActionOS using
 CoActionOS Applib provides C++ classes for easy IO access. The following 
 program demonstrates using a pin to turn the CoAction Hero on-board LED 
 on and off (error checking has been omitted for simplicity). 
-See [Pin Class](/projects/coactionos-applib/embedded/class_pin.html) for more details.
+See [Pin Class]({{ BASE_URL }}/coactionos-applib/html/class_pin.html) for more details.
 
 {% highlight CPP %}#include <cstdio>
 #include <applib/Timer.hpp>

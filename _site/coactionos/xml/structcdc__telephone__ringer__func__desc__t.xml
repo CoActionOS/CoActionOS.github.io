@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcdc__telephone__ringer__func__desc__t" kind="struct" prot="public">
+    <compoundname>cdc_telephone_ringer_func_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcdc__telephone__ringer__func__desc__t_1a55b1f8b5e2d77a82ad30876185aeba6e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_telephone_ringer_func_desc_t::bFunctionLength</definition>
+        <argsstring></argsstring>
+        <name>bFunctionLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="123" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__telephone__ringer__func__desc__t_1a652a56af03ed9960f1e5ee54e0c7d2c0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_telephone_ringer_func_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="124" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__telephone__ringer__func__desc__t_1aef6272a46abac87598fb1ba2147ed6f7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_telephone_ringer_func_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="125" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__telephone__ringer__func__desc__t_1aee2b845e1f1ea3d5a002d6b1585a64d5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_telephone_ringer_func_desc_t::bRingerVolSteps</definition>
+        <argsstring></argsstring>
+        <name>bRingerVolSteps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="126" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__telephone__ringer__func__desc__t_1ae85c3a8c42e85b3a6a8065b3dfe26642" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_telephone_ringer_func_desc_t::bNumRingerPatterns</definition>
+        <argsstring></argsstring>
+        <name>bNumRingerPatterns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="127" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="204">
+        <label>cdc_telephone_ringer_func_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="122" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="122" bodyend="128"/>
+    <listofallmembers>
+      <member refid="structcdc__telephone__ringer__func__desc__t_1aef6272a46abac87598fb1ba2147ed6f7" prot="public" virt="non-virtual"><scope>cdc_telephone_ringer_func_desc_t</scope><name>bDescriptorSubType</name></member>
+      <member refid="structcdc__telephone__ringer__func__desc__t_1a652a56af03ed9960f1e5ee54e0c7d2c0" prot="public" virt="non-virtual"><scope>cdc_telephone_ringer_func_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structcdc__telephone__ringer__func__desc__t_1a55b1f8b5e2d77a82ad30876185aeba6e" prot="public" virt="non-virtual"><scope>cdc_telephone_ringer_func_desc_t</scope><name>bFunctionLength</name></member>
+      <member refid="structcdc__telephone__ringer__func__desc__t_1ae85c3a8c42e85b3a6a8065b3dfe26642" prot="public" virt="non-virtual"><scope>cdc_telephone_ringer_func_desc_t</scope><name>bNumRingerPatterns</name></member>
+      <member refid="structcdc__telephone__ringer__func__desc__t_1aee2b845e1f1ea3d5a002d6b1585a64d5" prot="public" virt="non-virtual"><scope>cdc_telephone_ringer_func_desc_t</scope><name>bRingerVolSteps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

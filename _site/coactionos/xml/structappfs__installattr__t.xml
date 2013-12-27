@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structappfs__installattr__t" kind="struct" prot="public">
+    <compoundname>appfs_installattr_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structappfs__installattr__t_1a44bbc646f18e92ce72c61e86dab8e26d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t appfs_installattr_t::loc</definition>
+        <argsstring></argsstring>
+        <name>loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="114" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structappfs__installattr__t_1a9211bf63b8fa8a0a3011feda08ce29bb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t appfs_installattr_t::nbyte</definition>
+        <argsstring></argsstring>
+        <name>nbyte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="115" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structappfs__installattr__t_1a5f43a711218f8b3a2f20a3a8631e3bf5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t appfs_installattr_t::buffer[APPFS_PAGE_SIZE]</definition>
+        <argsstring>[APPFS_PAGE_SIZE]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="116" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="164">
+        <label>appfs_installattr_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="113" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="113" bodyend="117"/>
+    <listofallmembers>
+      <member refid="structappfs__installattr__t_1a5f43a711218f8b3a2f20a3a8631e3bf5" prot="public" virt="non-virtual"><scope>appfs_installattr_t</scope><name>buffer</name></member>
+      <member refid="structappfs__installattr__t_1a44bbc646f18e92ce72c61e86dab8e26d" prot="public" virt="non-virtual"><scope>appfs_installattr_t</scope><name>loc</name></member>
+      <member refid="structappfs__installattr__t_1a9211bf63b8fa8a0a3011feda08ce29bb" prot="public" virt="non-virtual"><scope>appfs_installattr_t</scope><name>nbyte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

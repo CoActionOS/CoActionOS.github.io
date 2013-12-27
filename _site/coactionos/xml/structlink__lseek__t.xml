@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__lseek__t" kind="struct" prot="public">
+    <compoundname>link_lseek_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__lseek__t_1a9cf27397ce210b7acacfeee0b511c484" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_lseek_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="342" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__lseek__t_1abbc6c1aa49554ffa1d19f421904c6c0f" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_lseek_t::fildes</definition>
+        <argsstring></argsstring>
+        <name>fildes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="343" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__lseek__t_1a17eeeaedac8899b2769d2606f54e7004" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_lseek_t::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="344" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__lseek__t_1a6c7a8cda48a8832d185a6e51fc5b064d" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_lseek_t::whence</definition>
+        <argsstring></argsstring>
+        <name>whence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="345" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="340">
+        <label>link_lseek_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="341" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="341" bodyend="346"/>
+    <listofallmembers>
+      <member refid="structlink__lseek__t_1a9cf27397ce210b7acacfeee0b511c484" prot="public" virt="non-virtual"><scope>link_lseek_t</scope><name>cmd</name></member>
+      <member refid="structlink__lseek__t_1abbc6c1aa49554ffa1d19f421904c6c0f" prot="public" virt="non-virtual"><scope>link_lseek_t</scope><name>fildes</name></member>
+      <member refid="structlink__lseek__t_1a17eeeaedac8899b2769d2606f54e7004" prot="public" virt="non-virtual"><scope>link_lseek_t</scope><name>offset</name></member>
+      <member refid="structlink__lseek__t_1a6c7a8cda48a8832d185a6e51fc5b064d" prot="public" virt="non-virtual"><scope>link_lseek_t</scope><name>whence</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structmq__t" kind="struct" prot="public">
+    <compoundname>mq_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmq__t_1ae86708fdcea169fcdbd8329a7b45b5cb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::max_size</definition>
+        <argsstring></argsstring>
+        <name>max_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="105" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1ab282247421baa6bced3c9641e4e8cd5a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::max_msgs</definition>
+        <argsstring></argsstring>
+        <name>max_msgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="106" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1a65341372591b8345200b6a7534f2f0f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::cur_msgs</definition>
+        <argsstring></argsstring>
+        <name>cur_msgs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="107" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1a7ce7ac575a783ab8357a2ffe77286e6b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::refs</definition>
+        <argsstring></argsstring>
+        <name>refs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="108" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1a967f815e096c90d31a7cf7f90cb95d26" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="109" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1a2502493ccc0ffd8090599d2e5f7c5473" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="110" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1aece976f93a7a552e8424043903c3260e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char mq_t::name[NAME_MAX]</definition>
+        <argsstring>[NAME_MAX]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="111" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1a44845b4137ab69181c7b1d34a74c2989" prot="public" static="no" mutable="no">
+        <type>struct message *</type>
+        <definition>struct message* mq_t::msg_table</definition>
+        <argsstring></argsstring>
+        <name>msg_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="112" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmq__t_1aee8330341855a9292496dfe6ae615db1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int mq_t::unlink_on_close</definition>
+        <argsstring></argsstring>
+        <name>unlink_on_close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="113" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="402">
+        <label>mq_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="104" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="104" bodyend="114"/>
+    <listofallmembers>
+      <member refid="structmq__t_1a967f815e096c90d31a7cf7f90cb95d26" prot="public" virt="non-virtual"><scope>mq_t</scope><name>age</name></member>
+      <member refid="structmq__t_1a65341372591b8345200b6a7534f2f0f7" prot="public" virt="non-virtual"><scope>mq_t</scope><name>cur_msgs</name></member>
+      <member refid="structmq__t_1ab282247421baa6bced3c9641e4e8cd5a" prot="public" virt="non-virtual"><scope>mq_t</scope><name>max_msgs</name></member>
+      <member refid="structmq__t_1ae86708fdcea169fcdbd8329a7b45b5cb" prot="public" virt="non-virtual"><scope>mq_t</scope><name>max_size</name></member>
+      <member refid="structmq__t_1a2502493ccc0ffd8090599d2e5f7c5473" prot="public" virt="non-virtual"><scope>mq_t</scope><name>mode</name></member>
+      <member refid="structmq__t_1a44845b4137ab69181c7b1d34a74c2989" prot="public" virt="non-virtual"><scope>mq_t</scope><name>msg_table</name></member>
+      <member refid="structmq__t_1aece976f93a7a552e8424043903c3260e" prot="public" virt="non-virtual"><scope>mq_t</scope><name>name</name></member>
+      <member refid="structmq__t_1a7ce7ac575a783ab8357a2ffe77286e6b" prot="public" virt="non-virtual"><scope>mq_t</scope><name>refs</name></member>
+      <member refid="structmq__t_1aee8330341855a9292496dfe6ae615db1" prot="public" virt="non-virtual"><scope>mq_t</scope><name>unlink_on_close</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

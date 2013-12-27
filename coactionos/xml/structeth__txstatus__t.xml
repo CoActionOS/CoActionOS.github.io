@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structeth__txstatus__t" kind="struct" prot="public">
+    <compoundname>eth_txstatus_t</compoundname>
+    <includes refid="eth_8h" local="no">eth.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeth__txstatus__t_1a483cd984338c762b24a33bb7c58e269d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t eth_txstatus_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="73" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeth__txstatus__t_1a1a190074b20dd2e2bea4e61d2b6c4eed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eth_txstatus_t::status[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="74" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the enc28j60 tx status attribute. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="290">
+        <label>eth_txstatus_t</label>
+        <link refid="structeth__txstatus__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="72" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="72" bodyend="75"/>
+    <listofallmembers>
+      <member refid="structeth__txstatus__t_1a483cd984338c762b24a33bb7c58e269d" prot="public" virt="non-virtual"><scope>eth_txstatus_t</scope><name>count</name></member>
+      <member refid="structeth__txstatus__t_1a1a190074b20dd2e2bea4e61d2b6c4eed" prot="public" virt="non-virtual"><scope>eth_txstatus_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

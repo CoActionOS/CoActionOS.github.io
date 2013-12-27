@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpriv__set__scheduling__param__t" kind="struct" prot="public">
+    <compoundname>priv_set_scheduling_param_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpriv__set__scheduling__param__t_1a389f052a1fd6dbd74e116c699427b778" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_set_scheduling_param_t::tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__set__scheduling__param__t_1a3f05a37d9e3ecffee95f692ab0bc1c45" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_set_scheduling_param_t::policy</definition>
+        <argsstring></argsstring>
+        <name>policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__set__scheduling__param__t_1abf117ebfbf9ea04522fb2dc828acff4a" prot="public" static="no" mutable="no">
+        <type>const struct sched_param *</type>
+        <definition>const struct sched_param* priv_set_scheduling_param_t::param</definition>
+        <argsstring></argsstring>
+        <name>param</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="435">
+        <label>priv_set_scheduling_param_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="21" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="21" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structpriv__set__scheduling__param__t_1abf117ebfbf9ea04522fb2dc828acff4a" prot="public" virt="non-virtual"><scope>priv_set_scheduling_param_t</scope><name>param</name></member>
+      <member refid="structpriv__set__scheduling__param__t_1a3f05a37d9e3ecffee95f692ab0bc1c45" prot="public" virt="non-virtual"><scope>priv_set_scheduling_param_t</scope><name>policy</name></member>
+      <member refid="structpriv__set__scheduling__param__t_1a389f052a1fd6dbd74e116c699427b778" prot="public" virt="non-virtual"><scope>priv_set_scheduling_param_t</scope><name>tid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcdc__atm__netorking__func__desc__t" kind="struct" prot="public">
+    <compoundname>cdc_atm_netorking_func_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a3f7a6f68b90098dc74f8289f0cf5fafb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_atm_netorking_func_desc_t::bFunctionLength</definition>
+        <argsstring></argsstring>
+        <name>bFunctionLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="226" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a95923085502c3fa9fe3db9b88fff3215" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_atm_netorking_func_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="227" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a40ba24e21982886ed6e075a6fa6adc91" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_atm_netorking_func_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="228" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1ac81d4da93114defac3e95440692df71a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_atm_netorking_func_desc_t::iEndSystemIdentifier</definition>
+        <argsstring></argsstring>
+        <name>iEndSystemIdentifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="229" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a3ab4b360b462a0e4a72d7cb1f7366153" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_atm_netorking_func_desc_t::bmDataCapabilities</definition>
+        <argsstring></argsstring>
+        <name>bmDataCapabilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="230" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1aaf62b0d35f230218b5af28112d8b1ab5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_atm_netorking_func_desc_t::bmATMDeviceStatistics</definition>
+        <argsstring></argsstring>
+        <name>bmATMDeviceStatistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="231" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a9f9a77c495ac6f41ed231054703fbf8a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cdc_atm_netorking_func_desc_t::wType2MaxSegmentSize</definition>
+        <argsstring></argsstring>
+        <name>wType2MaxSegmentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="232" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a63ce47a5ffe0694cd42e9c72da7b6a76" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cdc_atm_netorking_func_desc_t::wType3MaxSegmentSize</definition>
+        <argsstring></argsstring>
+        <name>wType3MaxSegmentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="233" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__atm__netorking__func__desc__t_1a01649134a6bbb90b784682348c7ddb52" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t cdc_atm_netorking_func_desc_t::wMaxVC</definition>
+        <argsstring></argsstring>
+        <name>wMaxVC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="234" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="176">
+        <label>cdc_atm_netorking_func_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="225" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="225" bodyend="235"/>
+    <listofallmembers>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a40ba24e21982886ed6e075a6fa6adc91" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>bDescriptorSubType</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a95923085502c3fa9fe3db9b88fff3215" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a3f7a6f68b90098dc74f8289f0cf5fafb" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>bFunctionLength</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1aaf62b0d35f230218b5af28112d8b1ab5" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>bmATMDeviceStatistics</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a3ab4b360b462a0e4a72d7cb1f7366153" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>bmDataCapabilities</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1ac81d4da93114defac3e95440692df71a" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>iEndSystemIdentifier</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a01649134a6bbb90b784682348c7ddb52" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>wMaxVC</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a9f9a77c495ac6f41ed231054703fbf8a" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>wType2MaxSegmentSize</name></member>
+      <member refid="structcdc__atm__netorking__func__desc__t_1a63ce47a5ffe0694cd42e9c72da7b6a76" prot="public" virt="non-virtual"><scope>cdc_atm_netorking_func_desc_t</scope><name>wType3MaxSegmentSize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

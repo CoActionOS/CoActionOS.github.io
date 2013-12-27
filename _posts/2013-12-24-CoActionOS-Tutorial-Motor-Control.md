@@ -14,7 +14,10 @@ motor-demo-diagram.jpg
 
 ## Source Code
 
-Here is the code. It uses eLib's PID and EMA functions. After the program initializes, it reads the value of the ADC. It uses this value to calculate the speed set point. It measures the speed of the motor by taking the number of encoder counts and dividing by the elapsed time. These values are fed in to the PID algorithm which computes the PWM value to apply to the motor.
+Here is the code. It uses eLib's PID and EMA functions. After the program initializes, it reads 
+the value of the ADC. It uses this value to calculate the speed set point. It measures 
+the speed of the motor by taking the number of encoder counts and dividing by the elapsed time. 
+These values are fed in to the PID algorithm which computes the PWM value to apply to the motor.
 
 {% highlight CPP %}
 #include <unistd.h>

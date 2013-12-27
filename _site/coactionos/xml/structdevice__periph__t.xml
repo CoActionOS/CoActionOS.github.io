@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevice__periph__t" kind="struct" prot="public">
+    <compoundname>device_periph_t</compoundname>
+    <includes refid="device_8h" local="no">device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevice__periph__t_1adedc9b84ff518702743e02e9723b4891" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t device_periph_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+<para>The port number for the peripheral. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="40" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for on-chip MCU peripherals. </para>    </briefdescription>
+    <detaileddescription>
+<para>This data structure is used for all on-chip MCU peripherals. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="260">
+        <label>device_periph_t</label>
+        <link refid="structdevice__periph__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="39" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="39" bodyend="41"/>
+    <listofallmembers>
+      <member refid="structdevice__periph__t_1adedc9b84ff518702743e02e9723b4891" prot="public" virt="non-virtual"><scope>device_periph_t</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

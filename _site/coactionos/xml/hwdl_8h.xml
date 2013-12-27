@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="hwdl_8h" kind="file">
+    <compoundname>hwdl.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="device_8h" local="yes">device.h</includes>
+    <incdepgraph>
+      <node id="1747">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="1748">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1752">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1745">
+        <label>stdint.h</label>
+      </node>
+      <node id="1750">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="1746">
+        <label>device.h</label>
+        <link refid="device_8h_source"/>
+        <childnode refid="1747" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1749" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+        <childnode refid="1751" relation="include">
+        </childnode>
+      </node>
+      <node id="1749">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1748" relation="include">
+        </childnode>
+      </node>
+      <node id="1751">
+        <label>dev/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="1748" relation="include">
+        </childnode>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1752" relation="include">
+        </childnode>
+        <childnode refid="1750" relation="include">
+        </childnode>
+      </node>
+      <node id="1744">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h</label>
+        <link refid="hwdl.h"/>
+        <childnode refid="1745" relation="include">
+        </childnode>
+        <childnode refid="1746" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___h_w_d_l_1ga136fd75620d21a2e048a7d72da226545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hwdl_check_adc_port</definition>
+        <argsstring>(const device_cfg_t *cfgp)</argsstring>
+        <name>hwdl_check_adc_port</name>
+        <param>
+          <type>const <ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref> *</type>
+          <declname>cfgp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_w_d_l_1ga3bfecf27e82754254470836a888201a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hwdl_check_spi_port</definition>
+        <argsstring>(const device_cfg_t *cfgp)</argsstring>
+        <name>hwdl_check_spi_port</name>
+        <param>
+          <type>const <ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref> *</type>
+          <declname>cfgp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_w_d_l_1ga9c0eb7efd3fa1c74bedd54ea0588bcd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hwdl_check_i2c_port</definition>
+        <argsstring>(const device_cfg_t *cfgp)</argsstring>
+        <name>hwdl_check_i2c_port</name>
+        <param>
+          <type>const <ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref> *</type>
+          <declname>cfgp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_w_d_l_1ga3c63371d6d3293e9e569c82761470227" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hwdl_check_pwm_port</definition>
+        <argsstring>(const device_cfg_t *cfgp)</argsstring>
+        <name>hwdl_check_pwm_port</name>
+        <param>
+          <type>const <ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref> *</type>
+          <declname>cfgp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___h_w_d_l_1gad4acfb027ac12a159979241f84db88fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hwdl_check_uart_port</definition>
+        <argsstring>(const device_cfg_t *cfgp)</argsstring>
+        <name>hwdl_check_uart_port</name>
+        <param>
+          <type>const <ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref> *</type>
+          <declname>cfgp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor">#ifndef<sp/>HWDL_H_</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWDL_H_</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;device.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hwdl_check_adc_port(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref><sp/>*<sp/>cfgp);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hwdl_check_spi_port(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref><sp/>*<sp/>cfgp);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hwdl_check_i2c_port(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref><sp/>*<sp/>cfgp);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hwdl_check_pwm_port(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref><sp/>*<sp/>cfgp);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hwdl_check_uart_port(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref><sp/>*<sp/>cfgp);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HWDL_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h"/>
+  </compounddef>
+</doxygen>

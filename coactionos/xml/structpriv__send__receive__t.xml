@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpriv__send__receive__t" kind="struct" prot="public">
+    <compoundname>priv_send_receive_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpriv__send__receive__t_1a6a0ccb516a801c8ea0b56b76028aa8cb" prot="public" static="no" mutable="no">
+        <type>mq_t *</type>
+        <definition>mq_t* priv_send_receive_t::mq</definition>
+        <argsstring></argsstring>
+        <name>mq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="179" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__send__receive__t_1aa56af0b9c0f36efa0791e7407d77e545" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t priv_send_receive_t::msg_len</definition>
+        <argsstring></argsstring>
+        <name>msg_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="180" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__send__receive__t_1abbeac9c322cf16fc191a84664a10b0c6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_send_receive_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="181" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__send__receive__t_1a5f8c0a03850c9760defa840d84090245" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_send_receive_t::entry_size</definition>
+        <argsstring></argsstring>
+        <name>entry_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="182" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__send__receive__t_1aeef477e62106667c01c82d13588d6e8d" prot="public" static="no" mutable="no">
+        <type>struct message *</type>
+        <definition>struct message* priv_send_receive_t::new_msg</definition>
+        <argsstring></argsstring>
+        <name>new_msg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="183" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="431">
+        <label>priv_send_receive_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="178" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="178" bodyend="184"/>
+    <listofallmembers>
+      <member refid="structpriv__send__receive__t_1a5f8c0a03850c9760defa840d84090245" prot="public" virt="non-virtual"><scope>priv_send_receive_t</scope><name>entry_size</name></member>
+      <member refid="structpriv__send__receive__t_1a6a0ccb516a801c8ea0b56b76028aa8cb" prot="public" virt="non-virtual"><scope>priv_send_receive_t</scope><name>mq</name></member>
+      <member refid="structpriv__send__receive__t_1aa56af0b9c0f36efa0791e7407d77e545" prot="public" virt="non-virtual"><scope>priv_send_receive_t</scope><name>msg_len</name></member>
+      <member refid="structpriv__send__receive__t_1aeef477e62106667c01c82d13588d6e8d" prot="public" virt="non-virtual"><scope>priv_send_receive_t</scope><name>new_msg</name></member>
+      <member refid="structpriv__send__receive__t_1abbeac9c322cf16fc191a84664a10b0c6" prot="public" virt="non-virtual"><scope>priv_send_receive_t</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

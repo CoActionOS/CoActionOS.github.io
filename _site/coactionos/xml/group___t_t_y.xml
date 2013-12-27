@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___t_t_y" kind="group">
+    <compoundname>TTY</compoundname>
+    <title>TTY (terminal devices)</title>
+    <innerfile refid="tty_8h">tty.h</innerfile>
+    <innerclass refid="structtty__state__t" prot="public">tty_state_t</innerclass>
+    <innerclass refid="structtty__cfg__t" prot="public">tty_cfg_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_t_y_1gab1a4a058e9abc5590b6750a50d84a71f" prot="public" static="no">
+        <name>TTY_IOC_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="32" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga2bbbef5fed749cf65a45751432ab800d" prot="public" static="no">
+        <name>I_TTY_SETATTR</name>
+        <briefdescription>
+<para>This request sets the terminal attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="37" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga48cd753d9124466d5e17f480cea29cf1" prot="public" static="no">
+        <name>I_TTY_GETATTR</name>
+        <briefdescription>
+<para>This request gets the terminal attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="42" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga4fc3fc5fff92c6fba854a9332e7f2bf3" prot="public" static="no">
+        <name>TTY_FLAG_ICRNL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="46" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga878e1572721f587a65f2b2a6625f70de" prot="public" static="no">
+        <name>TTY_FLAG_IGNBRK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="47" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaac1929f3a01f171f7b153213faf642df" prot="public" static="no">
+        <name>TTY_FLAG_IGNCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="48" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaf09c0a1b638e3b593137f85fce9f6825" prot="public" static="no">
+        <name>TTY_FLAG_IGNPAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaa3def987543c9d57eada0ff7efbbb3cf" prot="public" static="no">
+        <name>TTY_FLAG_ECHO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="50" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga722263d3dbf2a7849382d1100a3ef141" prot="public" static="no">
+        <name>TTY_FLAG_ECHOE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="51" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga64a37b44d93bf7d4e8a4f48f8d11ff59" prot="public" static="no">
+        <name>TTY_FLAG_ECHOK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaab93dd9ffa7f2f1050138f671907d481" prot="public" static="no">
+        <name>TTY_FLAG_ECHONL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gadaeb86a3c7119dc240393e6e4403275c" prot="public" static="no">
+        <name>TTY_FLAG_ICANON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="54" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gac1f8bd5c6fd768c754f0ae391b8438fc" prot="public" static="no">
+        <name>TTY_FLAG_IEXTEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="55" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga032c16422121904c80668ee0f123c865" prot="public" static="no">
+        <name>TTY_FLAG_ISIG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="56" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaf517b2824c74f9f6203bde576d1cecb8" prot="public" static="no">
+        <name>TTY_FLAG_NOFLSH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga65c3ae5b8738c6e091f12b6edabd3c3f" prot="public" static="no">
+        <name>TTY_FLAG_TOSTOP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="58" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the interface to accessing terminal devices. This driver is not implemented in this version. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

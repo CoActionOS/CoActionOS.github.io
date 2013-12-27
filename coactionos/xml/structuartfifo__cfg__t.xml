@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structuartfifo__cfg__t" kind="struct" prot="public">
+    <compoundname>uartfifo_cfg_t</compoundname>
+    <includes refid="uartfifo_8h" local="no">uartfifo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structuartfifo__cfg__t_1a8da3c5ea5bccc39e750bee003ee55f89" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int uartfifo_cfg_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The UART port associated with the device </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" line="73" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuartfifo__cfg__t_1a18192a832df2e3d55c5452750da2a13b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* uartfifo_cfg_t::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+<para>The buffer for the fifo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" line="74" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structuartfifo__cfg__t_1a55e017ef0105ad6f4bfe938e5b000577" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int uartfifo_cfg_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The size of the fifo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" line="75" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is used for the configuration of the device. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="482">
+        <label>uartfifo_cfg_t</label>
+        <link refid="structuartfifo__cfg__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" line="72" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h" bodystart="72" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structuartfifo__cfg__t_1a18192a832df2e3d55c5452750da2a13b" prot="public" virt="non-virtual"><scope>uartfifo_cfg_t</scope><name>buffer</name></member>
+      <member refid="structuartfifo__cfg__t_1a8da3c5ea5bccc39e750bee003ee55f89" prot="public" virt="non-virtual"><scope>uartfifo_cfg_t</scope><name>port</name></member>
+      <member refid="structuartfifo__cfg__t_1a55e017ef0105ad6f4bfe938e5b000577" prot="public" virt="non-virtual"><scope>uartfifo_cfg_t</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__open__t" kind="struct" prot="public">
+    <compoundname>link_open_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__open__t_1a32b6c6df8de94d5f4a277360a7620bb7" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_open_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="294" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__open__t_1a3d2f9b539ecc87b707bdd38b980e4182" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_open_t::path_size</definition>
+        <argsstring></argsstring>
+        <name>path_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="295" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__open__t_1aabd0a46473686f08333165f71d80b765" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_open_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="296" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__open__t_1a711caff7acb2ff5d8bf3b3687c2fe4d3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_open_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="297" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="350">
+        <label>link_open_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="293" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="293" bodyend="298"/>
+    <listofallmembers>
+      <member refid="structlink__open__t_1a32b6c6df8de94d5f4a277360a7620bb7" prot="public" virt="non-virtual"><scope>link_open_t</scope><name>cmd</name></member>
+      <member refid="structlink__open__t_1aabd0a46473686f08333165f71d80b765" prot="public" virt="non-virtual"><scope>link_open_t</scope><name>flags</name></member>
+      <member refid="structlink__open__t_1a711caff7acb2ff5d8bf3b3687c2fe4d3" prot="public" virt="non-virtual"><scope>link_open_t</scope><name>mode</name></member>
+      <member refid="structlink__open__t_1a3d2f9b539ecc87b707bdd38b980e4182" prot="public" virt="non-virtual"><scope>link_open_t</scope><name>path_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="__read_8c" kind="file">
+    <compoundname>_read.c</compoundname>
+    <includes refid="unistd__fs_8h" local="yes">unistd_fs.h</includes>
+    <includes refid="unistd__flags_8h" local="yes">unistd_flags.h</includes>
+    <incdepgraph>
+      <node id="2699">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2714">
+        <label>unistd_flags.h</label>
+        <link refid="unistd__flags_8h_source"/>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2715" relation="include">
+        </childnode>
+      </node>
+      <node id="2704">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2696">
+        <label>unistd_fs.h</label>
+        <link refid="unistd__fs_8h_source"/>
+        <childnode refid="2697" relation="include">
+        </childnode>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+      </node>
+      <node id="2713">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="2706">
+        <label>stdint.h</label>
+      </node>
+      <node id="2716">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2702">
+        <label>errno.h</label>
+      </node>
+      <node id="2695">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c</label>
+        <link refid="_read.c"/>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2714" relation="include">
+        </childnode>
+      </node>
+      <node id="2715">
+        <label>hwpl.h</label>
+        <link refid="hwpl_8h"/>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2716" relation="include">
+        </childnode>
+        <childnode refid="2717" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2718" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+        <childnode refid="2710" relation="include">
+        </childnode>
+      </node>
+      <node id="2707">
+        <label>stddef.h</label>
+      </node>
+      <node id="2698">
+        <label>sys/fcntl.h</label>
+      </node>
+      <node id="2705">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2711">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="2717">
+        <label>string.h</label>
+      </node>
+      <node id="2697">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2701">
+        <label>unistd.h</label>
+      </node>
+      <node id="2709">
+        <label>device.h</label>
+        <link refid="device_8h_source"/>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2710" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+        <childnode refid="2712" relation="include">
+        </childnode>
+      </node>
+      <node id="2710">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+      </node>
+      <node id="2718">
+        <label>hwpl/fault.h</label>
+      </node>
+      <node id="2712">
+        <label>dev/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2713" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+      </node>
+      <node id="2703">
+        <label>sysfs.h</label>
+        <link refid="sysfs_8h_source"/>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+        <childnode refid="2707" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+        <childnode refid="2709" relation="include">
+        </childnode>
+      </node>
+      <node id="2700">
+        <label>stdio.h</label>
+      </node>
+      <node id="2708">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaefe7609d91407014d94611912cc2b1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read</definition>
+        <argsstring>(int fildes, void *buf, size_t nbyte)</argsstring>
+        <name>read</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function reads <emphasis>nbyte</emphasis> bytes from <emphasis>fildes</emphasis> to the memory location pointed to by <emphasis>buf</emphasis>.</para><para><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaefe7609d91407014d94611912cc2b1a3" kindref="member">read()</ref> is always a synchronous call which is either blocking or non-blocking depending on the value of O_NONBLOCK for <emphasis>fildes</emphasis>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fildes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file descriptor returned by <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the destination memory (process must have write access) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbyte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes actually read of -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is bad</para></listitem><listitem><para>EACCESS: <emphasis>fildes</emphasis> is on in O_WRONLY mode</para></listitem><listitem><para>EIO: IO error</para></listitem><listitem><para>EAGAIN: O_NONBLOCK is set for <emphasis>fildes</emphasis> and no new data is available </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga104894d6b371a21a6244a730569e0c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _read</definition>
+        <argsstring>(int fildes, void *buf, size_t nbyte)</argsstring>
+        <name>_read</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c" bodystart="35" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/><sp/>&quot;unistd_fs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;unistd_flags.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaefe7609d91407014d94611912cc2b1a3" kindref="member">read</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fildes,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbyte);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_read(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fildes,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>nbyte){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>handle;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>bufp;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loc;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bytes_read;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sysfs_t<sp/>*<sp/>fs;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fildes<sp/>=<sp/>unistd_fildes_is_bad(fildes);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fildes<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//This<sp/>code<sp/>will<sp/>ensure<sp/>that<sp/>the<sp/>process<sp/>has<sp/>permissions<sp/>to<sp/>access<sp/>the<sp/>specified<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//because<sp/>reading<sp/>is<sp/>done<sp/>in<sp/>ISR<sp/>(privileged<sp/>mode)<sp/>it<sp/>will<sp/>override<sp/>the<sp/>MPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nbyte<sp/>&gt;<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bufp<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)buf;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loc<sp/>=<sp/>bufp[0];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loc<sp/>=<sp/>bufp[nbyte-1];</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(get_flags(fildes)<sp/>&amp;<sp/>O_ACCMODE)<sp/>==<sp/>O_WRONLY<sp/>){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EACCES;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fs<sp/>=<sp/>get_fs(fildes);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fs-&gt;priv_read<sp/>!=<sp/>NULL<sp/>){<sp/><sp/></highlight><highlight class="comment">//This<sp/>means<sp/>the<sp/>handle<sp/>is<sp/>not<sp/>a<sp/>regular<sp/>file<sp/>--<sp/>must<sp/>be<sp/>a<sp/>device</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>unistd_device_read(get_open_file(fildes),<sp/>buf,<sp/>nbyte);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>the<sp/>file<sp/>offset<sp/>location</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>loc<sp/>=<sp/>get_loc(fildes);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>flags<sp/>=<sp/>get_flags(fildes);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>handle<sp/>=<sp/>get_handle(fildes);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>bytes_read<sp/>=<sp/>fs-&gt;read(fs-&gt;cfg,<sp/>handle,<sp/>flags,<sp/>loc,<sp/>buf,<sp/>nbyte);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>bytes_read<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>bytes_read;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_loc(fildes,<sp/>loc<sp/>+<sp/>bytes_read);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>bytes_read;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c"/>
+  </compounddef>
+</doxygen>

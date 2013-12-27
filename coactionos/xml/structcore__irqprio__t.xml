@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcore__irqprio__t" kind="struct" prot="public">
+    <compoundname>core_irqprio_t</compoundname>
+    <includes refid="core_8h" local="no">core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore__irqprio__t_1a1d117741a6788df807e1b4276533f59b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t core_irqprio_t::periph</definition>
+        <argsstring></argsstring>
+        <name>periph</name>
+        <briefdescription>
+<para>The peripheral type (see <ref refid="group___c_o_r_e_1ga0cdc50382b3b72c2e4b983c2f2a6f99b" kindref="member">core_periph_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="172" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore__irqprio__t_1a7c70d93bc9ce088d5194a901380ede47" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t core_irqprio_t::prio</definition>
+        <argsstring></argsstring>
+        <name>prio</name>
+        <briefdescription>
+<para>The priority (lower number is higher priority on ARM CM3. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="173" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore__irqprio__t_1afad633e69da6afc7a10f8ec62a9ecb28" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t core_irqprio_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+<para>The peripheral port number (e.g. 0 for I2C0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="174" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure used for setting interrupt priorities. </para>    </briefdescription>
+    <detaileddescription>
+<para>This data structure is used with the I_CORE_SETIRQPRIO request to set the interrupt priority for peripherals. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="214">
+        <label>core_irqprio_t</label>
+        <link refid="structcore__irqprio__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="171" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="171" bodyend="175"/>
+    <listofallmembers>
+      <member refid="structcore__irqprio__t_1a1d117741a6788df807e1b4276533f59b" prot="public" virt="non-virtual"><scope>core_irqprio_t</scope><name>periph</name></member>
+      <member refid="structcore__irqprio__t_1afad633e69da6afc7a10f8ec62a9ecb28" prot="public" virt="non-virtual"><scope>core_irqprio_t</scope><name>port</name></member>
+      <member refid="structcore__irqprio__t_1a7c70d93bc9ce088d5194a901380ede47" prot="public" virt="non-virtual"><scope>core_irqprio_t</scope><name>prio</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__setup__pkt__t" kind="struct" prot="public">
+    <compoundname>usb_setup_pkt_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structusb__setup__pkt__t_1a28a97507060fa04c02a327fc167e974d" prot="public" static="no" mutable="no">
+        <type>usb_req_t</type>
+        <definition>usb_req_t usb_setup_pkt_t::bmRequestType</definition>
+        <argsstring></argsstring>
+        <name>bmRequestType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="33" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__setup__pkt__t_1a0ba5d53816414377fa19ad9be9558e4d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_setup_pkt_t::bRequest</definition>
+        <argsstring></argsstring>
+        <name>bRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="34" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__setup__pkt__t_1a47b5f56ea201153d51e0037e280cb29e" prot="public" static="no" mutable="no">
+        <type>uint16_union_t</type>
+        <definition>uint16_union_t usb_setup_pkt_t::wValue</definition>
+        <argsstring></argsstring>
+        <name>wValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__setup__pkt__t_1a1b309dbe4b94278507273ecb249b062d" prot="public" static="no" mutable="no">
+        <type>uint16_union_t</type>
+        <definition>uint16_union_t usb_setup_pkt_t::wIndex</definition>
+        <argsstring></argsstring>
+        <name>wIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="36" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__setup__pkt__t_1a110b02acbd19fe2319ff5645d0856a6b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_setup_pkt_t::wLength</definition>
+        <argsstring></argsstring>
+        <name>wLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="546">
+        <label>usb_setup_pkt_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="32" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="32" bodyend="38"/>
+    <listofallmembers>
+      <member refid="structusb__setup__pkt__t_1a28a97507060fa04c02a327fc167e974d" prot="public" virt="non-virtual"><scope>usb_setup_pkt_t</scope><name>bmRequestType</name></member>
+      <member refid="structusb__setup__pkt__t_1a0ba5d53816414377fa19ad9be9558e4d" prot="public" virt="non-virtual"><scope>usb_setup_pkt_t</scope><name>bRequest</name></member>
+      <member refid="structusb__setup__pkt__t_1a1b309dbe4b94278507273ecb249b062d" prot="public" virt="non-virtual"><scope>usb_setup_pkt_t</scope><name>wIndex</name></member>
+      <member refid="structusb__setup__pkt__t_1a110b02acbd19fe2319ff5645d0856a6b" prot="public" virt="non-virtual"><scope>usb_setup_pkt_t</scope><name>wLength</name></member>
+      <member refid="structusb__setup__pkt__t_1a47b5f56ea201153d51e0037e280cb29e" prot="public" virt="non-virtual"><scope>usb_setup_pkt_t</scope><name>wValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

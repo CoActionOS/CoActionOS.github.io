@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__readdir__t" kind="struct" prot="public">
+    <compoundname>link_readdir_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__readdir__t_1a9c7f2b1c27c97df5d757b45d88b22719" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_readdir_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="375" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__readdir__t_1af169a044ea26794c9c1f3572c37cccbd" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_readdir_t::dirp</definition>
+        <argsstring></argsstring>
+        <name>dirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="376" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="360">
+        <label>link_readdir_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="374" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="374" bodyend="377"/>
+    <listofallmembers>
+      <member refid="structlink__readdir__t_1a9c7f2b1c27c97df5d757b45d88b22719" prot="public" virt="non-virtual"><scope>link_readdir_t</scope><name>cmd</name></member>
+      <member refid="structlink__readdir__t_1af169a044ea26794c9c1f3572c37cccbd" prot="public" virt="non-virtual"><scope>link_readdir_t</scope><name>dirp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

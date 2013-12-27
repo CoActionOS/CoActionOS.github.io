@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___g_p_i_o" kind="group">
+    <compoundname>GPIO</compoundname>
+    <title>General Purpose Input/Output (GPIO)</title>
+    <innerfile refid="gpio_8h">gpio.h</innerfile>
+    <innerclass refid="structgpio__attr__t" prot="public">gpio_attr_t</innerclass>
+    <innerclass refid="structgpio__pinmode__req__t" prot="public">gpio_pinmode_req_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___g_p_i_o_1ga58afe68d92f686031ea2bfa3d8e30386" prot="public" static="no">
+        <name>gpio_pinmode_t</name>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a391bd36f93fac70554abaf6d661d6a76" prot="public">
+          <name>GPIO_PINMODE_PULLUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the built-in pullup </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a06a5a027c87f65754e95c1986c5442bc" prot="public">
+          <name>GPIO_PINMODE_REPEATER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386aabf34a45310d7883792287d021ea0a1a" prot="public">
+          <name>GPIO_PINMODE_FLOAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Leave the pin floating </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a504f1f780f1738a16aa3798b24cc2e43" prot="public">
+          <name>GPIO_PINMODE_PULLDOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the built-in pull-down </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a7881a69446525ada9ca3fbcfdd890511" prot="public">
+          <name>GPIO_PINMODE_OUTPUT_2MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max speed 2Mhz (stm32f only) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386ab669d13c257bc9ef4eeff60cb9572b70" prot="public">
+          <name>GPIO_PINMODE_OUTPUT_10MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max speed 10Mhz (stm32f only) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a242ef0795ca49a1c54fe42a58ecc052d" prot="public">
+          <name>GPIO_PINMODE_OUTPUT_50MHZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Max speed 50Mhz (stm32f only) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a5ce91661026b87d202e9e34c91a6e63c" prot="public">
+          <name>GPIO_PINMODE_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the PIN mode options. Not all options are supported on all architectures. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="115" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="115" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___g_p_i_o_1ga62155815bf9e14d8b08c40c25513ae68" prot="public" static="no">
+        <name>gpio_action_event_t</name>
+        <enumvalue id="group___g_p_i_o_1gga62155815bf9e14d8b08c40c25513ae68aa89be0909663772ff6bbf6f32ed0d83d" prot="public">
+          <name>GPIO_ACTION_EVENT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies No GPIO event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga62155815bf9e14d8b08c40c25513ae68ab0e52ee4061859de992f0a752cc622ad" prot="public">
+          <name>GPIO_ACTION_EVENT_RISING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies a rising edge on the GPIO </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga62155815bf9e14d8b08c40c25513ae68aeeb1bdb70913ebdcd80c16d0d513a85d" prot="public">
+          <name>GPIO_ACTION_EVENT_FALLING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies a falling edge on the GPIO </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___g_p_i_o_1gga62155815bf9e14d8b08c40c25513ae68a8f231c4455774d92fb9a7b4031659f63" prot="public">
+          <name>GPIO_ACTION_EVENT_BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies both edges on the GPIO </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists defines the values to use for the event when setting the action for a pin. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="139" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="139" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___g_p_i_o_1gad5bba12d58022b010776d35cc964a4f8" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t gpio_sample_t</definition>
+        <argsstring></argsstring>
+        <name>gpio_sample_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an MCU specific typedef of the GPIO sample size. For 32-bit MCU&apos;s this is typically a uint32_t. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="90" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___g_p_i_o_1ga4a5b68680a8bf05675f9b603101fdd39" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t gpio_action_t</definition>
+        <argsstring></argsstring>
+        <name>gpio_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines a GPIO action.</para><para>See <ref refid="group___g_p_i_o_1ga62155815bf9e14d8b08c40c25513ae68" kindref="member">gpio_action_event_t</ref> for GPIO specific events. There are no GPIO specific channel definitions. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="100" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___g_p_i_o_1ga81b50bcea9f583680e2abb08dc1b2b1c" prot="public" static="no">
+        <name>GPIO_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1gaff9a21a0fe2c5434572c461b552c56ad" prot="public" static="no">
+        <name>GPIO_SAMPLE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="85" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga47050f028e6756e9d04e500301fa97c2" prot="public" static="no">
+        <name>I_GPIO_GETATTR</name>
+        <briefdescription>
+<para>IOCTL request to get the attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="149" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga2a8c1f57fca0c3c3e41cfe9959d94152" prot="public" static="no">
+        <name>I_GPIO_SETATTR</name>
+        <briefdescription>
+<para>IOCTL request to set the attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="154" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga1e067f9e5aabc84e4bb17f31a17e057a" prot="public" static="no">
+        <name>I_GPIO_SETACTION</name>
+        <briefdescription>
+<para>IOCTL request to set the action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="159" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1gacff521ca6540796711677c5a67c9bf57" prot="public" static="no">
+        <name>I_GPIO_SETMASK</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the pins that are sets in the mask. The ctl argument is the mask. The following code sets bits 0 to 4 on port 4: <programlisting><codeline><highlight class="normal">gpio_fd<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open</ref>(</highlight><highlight class="stringliteral">&quot;/dev/gpio4&quot;</highlight><highlight class="normal">,<sp/>O_RDWR</highlight><highlight class="stringliteral">&quot;);</highlight></codeline>
+<codeline><highlight class="stringliteral">ioctl(gpio_fd,<sp/>I_GPIO_SETMASK,<sp/>0x0F);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="171" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1gabf0fb5bcfcd40e1e092bd178bfedc2c5" prot="public" static="no">
+        <name>I_GPIO_SET_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="172" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga48610e49336a90e4d9f07be8bbb7f91a" prot="public" static="no">
+        <name>I_GPIO_CLRMASK</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request clears the pins that are set in the mask. The ctl argument is the mask. This request works like <ref refid="group___g_p_i_o_1gacff521ca6540796711677c5a67c9bf57" kindref="member">I_GPIO_SETMASK</ref> but instead of setting pins, they are cleared.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(gpio_fd,<sp/><ref refid="group___g_p_i_o_1ga48610e49336a90e4d9f07be8bbb7f91a" kindref="member">I_GPIO_CLRMASK</ref>,<sp/>0x0F);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="186" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga5d37585b5f570b720f48aae5833f6ecc" prot="public" static="no">
+        <name>I_GPIO_CLR_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="187" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga9b564e6de319c35315399db4a5f122ab" prot="public" static="no">
+        <name>I_GPIO_GET</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the action to take when an event occurs on a GPIO port. The ctl argument should be of the form void (*callback)(int) where the &quot;int&quot; argument will have a bit set for each pin that has a pending event.</para><para>Example:<itemizedlist>
+<listitem><para><programlisting><codeline><highlight class="normal">uint32_t<sp/>value;</highlight></codeline>
+<codeline><highlight class="normal">value<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(gpio_fd,<sp/><ref refid="group___g_p_i_o_1ga9b564e6de319c35315399db4a5f122ab" kindref="member">I_GPIO_GET</ref>);</highlight></codeline>
+</programlisting> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="204" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1gaaaf80dc0fb16ded6c3bdae24ecbcd075" prot="public" static="no">
+        <name>I_GPIO_SET</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the action to take when an event occurs on a GPIO port. The ctl argument should be of the form void (*callback)(int) where the &quot;int&quot; argument will have a bit set for each pin that has a pending event.</para><para>Example:<itemizedlist>
+<listitem><para><programlisting><codeline><highlight class="normal">uint32_t<sp/>value;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(gpio_fd,<sp/><ref refid="group___g_p_i_o_1gaaaf80dc0fb16ded6c3bdae24ecbcd075" kindref="member">I_GPIO_SET</ref>,<sp/>value);</highlight></codeline>
+</programlisting> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="221" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1gabb93dce917b62e82cbe0cbeee5074ebe" prot="public" static="no">
+        <name>I_GPIO_SETPINMODE</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the pin mode. The following code snippet demonstrates how: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gpio_8h" kindref="compound">dev/gpio.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structgpio__pinmode__req__t" kindref="compound">gpio_pinmode_req_t</ref><sp/>req;</highlight></codeline>
+<codeline><highlight class="normal">req.<ref refid="structgpio__pinmode__req__t_1a536838a29a557b69c25bf5a1aa2c7f60" kindref="member">mode</ref><sp/>=<sp/><ref refid="group___g_p_i_o_1gga58afe68d92f686031ea2bfa3d8e30386a391bd36f93fac70554abaf6d661d6a76" kindref="member">GPIO_PINMODE_PULLUP</ref>;</highlight></codeline>
+<codeline><highlight class="normal">req.<ref refid="structgpio__pinmode__req__t_1a32646673625ad3149f2db94a551412cd" kindref="member">mask</ref><sp/>=<sp/>0x0F;<sp/></highlight><highlight class="comment">//the<sp/>bottom<sp/>4<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">req.open_drain<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal">req.<ref refid="structgpio__pinmode__req__t_1a55d5a5e4065068722f5798859f3c1cdc" kindref="member">hysteresis</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(gpio_fd,<sp/><ref refid="group___g_p_i_o_1gabb93dce917b62e82cbe0cbeee5074ebe" kindref="member">I_GPIO_SETPINMODE</ref>,<sp/>&amp;req);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="240" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___g_p_i_o_1ga7ae1f2c9493a323f77183a1a15bef823" prot="public" static="no">
+        <name>I_GPIO_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="242" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The GPIO module gives access the the GPIO pins including reading, writing, and configuring the direction register. The GPIO module does not allow the pin to be configured for another function (such as UART TX). The core module provides this functionality with core_set_pinsel_func(). The core module is also used to configure internal resistors and modes using core_wr_pinmode().</para><para>The following is an example of how to use the GPIO in an OS environment:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="hwpl_8h" kindref="compound">hwpl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gpio_example(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structgpio__attr__t" kindref="compound">gpio_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structhwpl__action__t" kindref="compound">gpio_action_t</ref><sp/>action;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fd<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open</ref>(</highlight><highlight class="stringliteral">&quot;/dev/gpio0&quot;</highlight><highlight class="normal">,<sp/>O_RDWR);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fd<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Error<sp/>opening<sp/>peripheral<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>errno);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr.<ref refid="structgpio__attr__t_1ae5802a95ffdc7d61e57161c2b5c664a1" kindref="member">output</ref><sp/>=<sp/>(1&lt;&lt;1)|(1&lt;&lt;0);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr.<ref refid="structgpio__attr__t_1acabb6aba050bacdb8385b78c239efee0" kindref="member">input</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>will<sp/>configure<sp/>pins<sp/>0<sp/>and<sp/>1<sp/>of<sp/>GPIO<sp/>Port<sp/>0<sp/>as<sp/>outputs</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fd,<sp/><ref refid="group___g_p_i_o_1ga2a8c1f57fca0c3c3e41cfe9959d94152" kindref="member">I_GPIO_SETATTR</ref>,<sp/>&amp;attr)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>configure<sp/>peripheral<sp/>pins<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>errno);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>will<sp/>set<sp/>pin<sp/>0<sp/>of<sp/>GPIO<sp/>Port<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fd,<sp/><ref refid="group___g_p_i_o_1gacff521ca6540796711677c5a67c9bf57" kindref="member">I_GPIO_SETMASK</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)((1&lt;&lt;0)))<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>set<sp/>pin<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>errno);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>will<sp/>clear<sp/>pin<sp/>1<sp/>of<sp/>GPIO<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fd,<sp/><ref refid="group___g_p_i_o_1ga48610e49336a90e4d9f07be8bbb7f91a" kindref="member">I_GPIO_CLRMASK</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)((1&lt;&lt;1)))<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>clear<sp/>pin<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>errno);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaacad1d135ca2779b583623678e36db7c" kindref="member">close</ref>(fd);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

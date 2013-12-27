@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="eth_8h" kind="file">
+    <compoundname>eth.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includes refid="types_8h" local="yes">hwpl/types.h</includes>
+    <incdepgraph>
+      <node id="1456">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1453">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1452">
+        <label>stdint.h</label>
+      </node>
+      <node id="1454">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="1455">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1456" relation="include">
+        </childnode>
+      </node>
+      <node id="1451">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h</label>
+        <link refid="eth.h"/>
+        <childnode refid="1452" relation="include">
+        </childnode>
+        <childnode refid="1453" relation="include">
+        </childnode>
+        <childnode refid="1454" relation="include">
+        </childnode>
+        <childnode refid="1455" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structeth__attr__t" prot="public">eth_attr_t</innerclass>
+    <innerclass refid="structeth__txstatus__t" prot="public">eth_txstatus_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1gab20ad26e87abeb625c359c81c81c40b9" prot="public" static="no">
+        <name>ETH_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga22dd39cc4b68f3f902695d8304dfb387" prot="public" static="no">
+        <name>I_ETH_GETATTR</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This requests reads the ADC attributes.</para><para>Example: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="eth_8h" kindref="compound">dev/eth.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structeth__attr__t" kindref="compound">eth_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eth_fd;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">ioctl(eth_fd,<sp/><ref refid="group___e_t_h___d_e_v_1ga22dd39cc4b68f3f902695d8304dfb387" kindref="member">I_ETH_GETATTR</ref>,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="90" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1gaba9bc550be16b7fce1fcba528f915d26" prot="public" static="no">
+        <name>I_ETH_SETATTR</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This requests writes the ETH attributes.</para><para>Example: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="eth_8h" kindref="compound">dev/eth.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structeth__attr__t" kindref="compound">eth_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eth_fd;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">ioctl(eth_fd,<sp/><ref refid="group___e_t_h___d_e_v_1gaba9bc550be16b7fce1fcba528f915d26" kindref="member">I_ETH_SETATTR</ref>,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="105" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga5e400a68678ad18d8325470effa11f88" prot="public" static="no">
+        <name>I_ETH_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="106" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga1c9146612934f92e865882fc6cdfab7e" prot="public" static="no">
+        <name>I_ETH_INITTXPKT</name>
+        <briefdescription>
+<para>This request starts a new packet (to be transmitted). Subsequent calls to <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gadd30ddeed4bdbf3c96fa36970c1ca778" kindref="member">write()</ref> will store data in the new packet. The I_ETH_SENDTXPKT request will send the packet. The ctl argument is NULL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="113" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga132cb275a74f444e5d93f160b8bd8e20" prot="public" static="no">
+        <name>I_ETH_INIT_TX_PKT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="114" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1gaf49e4783348012ba8cd1abe757e66f5a" prot="public" static="no">
+        <name>I_ETH_SENDTXPKT</name>
+        <briefdescription>
+<para>This request transmits the current packet in the transmit buffer. It returns 0 if the packet was successfully transmitted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="119" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga33e41c6d452e4ab15561db061ba83874" prot="public" static="no">
+        <name>I_ETH_SEND_TX_PKT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="120" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga8f3d0b94907c091d5a5f48ab8b9a67c5" prot="public" static="no">
+        <name>I_ETH_TXPKTBUSY</name>
+        <briefdescription>
+<para>This request checks to see if there is a packet currently being transmitted. It returns true if a packet is currently being transmitted and false otherwise (less than zero for an error). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="126" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga11d6a049ca25c0084e20db972c4192ca" prot="public" static="no">
+        <name>I_ETH_TX_PKT_BUSY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="127" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga3f87af45b40ab74852e3571e370ccd5a" prot="public" static="no">
+        <name>I_ETH_RXPKTRDY</name>
+        <briefdescription>
+<para>This request checks to see if a new packet is ready to be read from the device. It returns the number of bytes available in the packet or less than zero for an error. The ctl argument points to a memory destination for the pointer to the next packet. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="134" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga54f72f19e0ba837d76f0df765fef45e3" prot="public" static="no">
+        <name>I_ETH_RX_PKT_RDY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="135" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga3f92bb99197ca9ce688d4a8b2c54059e" prot="public" static="no">
+        <name>I_ETH_RXPKTCOMPLETE</name>
+        <briefdescription>
+<para>This request finalizes the reception of a packet. The ctl value is a pointer to the next packet address in the read buffer. This value is obtained when a packet is ready using the I_ETH_RXPKTRDY request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="141" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1gade07fc97bcbbdbdb74ebc616ea3b3de4" prot="public" static="no">
+        <name>I_ETH_RX_PKT_COMPLETE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="142" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_t_h___d_e_v_1ga1ab8cb0f41c488cc6f7f110bc16fb940" prot="public" static="no">
+        <name>I_ETH_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="144" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___e_t_h___d_e_v_1gac36f475ca5b446f4fde4c9b90bec77c8" prot="public" static="no">
+        <name>@12</name>
+        <enumvalue id="group___e_t_h___d_e_v_1ggac36f475ca5b446f4fde4c9b90bec77c8a01ce4d22899cc0551012e928b226f095" prot="public">
+          <name>ETH_MODE_FULLDUPLEX</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_t_h___d_e_v_1ggac36f475ca5b446f4fde4c9b90bec77c8ab57bf64b8a26f0a74691b93f5e13506d" prot="public">
+          <name>ETH_MODE_HALFDUPLEX</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" line="55" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Ethernet Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor">#ifndef<sp/>ETH_H_</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ETH_H_</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETH_IOC_IDENT_CHAR<sp/>&apos;e&apos;</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ETH_MODE_FULLDUPLEX<sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ETH_MODE_HALFDUPLEX<sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="structeth__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="65" refid="structeth__attr__t_1a80a082b824e168293550d89257dc312a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>mac_addr[8]<sp/>;</highlight></codeline>
+<codeline lineno="66" refid="structeth__attr__t_1a21affbeb78efabeb9aa35a220ac29bf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>mode<sp/>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structeth__attr__t" kindref="compound">eth_attr_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="structeth__txstatus__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>count;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>status[5];</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="structeth__txstatus__t" kindref="compound">eth_txstatus_t</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="group___e_t_h___d_e_v_1ga22dd39cc4b68f3f902695d8304dfb387" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_GETATTR<sp/>_IOCTLR(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>eth_attr_t)</highlight></codeline>
+<codeline lineno="91"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="105" refid="group___e_t_h___d_e_v_1gaba9bc550be16b7fce1fcba528f915d26" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_SETATTR<sp/>_IOCTLW(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>eth_attr_t)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_SETACTION<sp/>_IOCTLW(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>hwpl_action_t)</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="113" refid="group___e_t_h___d_e_v_1ga1c9146612934f92e865882fc6cdfab7e" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_INITTXPKT<sp/>_IOCTL(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>0)</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_INIT_TX_PKT<sp/>I_ETH_INITTXPKT</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="119" refid="group___e_t_h___d_e_v_1gaf49e4783348012ba8cd1abe757e66f5a" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_SENDTXPKT<sp/>_IOCTL(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_SEND_TX_PKT<sp/>I_ETH_SENDTXPKT</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="126" refid="group___e_t_h___d_e_v_1ga8f3d0b94907c091d5a5f48ab8b9a67c5" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_TXPKTBUSY<sp/>_IOCTL(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>2)</highlight></codeline>
+<codeline lineno="127"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_TX_PKT_BUSY<sp/>I_ETH_TXPKTBUSY</highlight></codeline>
+<codeline lineno="128"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="134" refid="group___e_t_h___d_e_v_1ga3f87af45b40ab74852e3571e370ccd5a" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_RXPKTRDY<sp/>_IOCTL(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>3)</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_RX_PKT_RDY<sp/>I_ETH_RXPKTRDY</highlight></codeline>
+<codeline lineno="136"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="141" refid="group___e_t_h___d_e_v_1ga3f92bb99197ca9ce688d4a8b2c54059e" refkind="member"><highlight class="preprocessor">#define<sp/>I_ETH_RXPKTCOMPLETE<sp/>_IOCTL(ETH_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>4)</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_RX_PKT_COMPLETE<sp/>I_ETH_RXPKTCOMPLETE</highlight></codeline>
+<codeline lineno="143"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_ETH_TOTAL<sp/>(I_GLOBAL_TOTAL<sp/>+<sp/>5)</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ETH_H_</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h"/>
+  </compounddef>
+</doxygen>

@@ -40,9 +40,9 @@ The steps to use the I2C are:
 1. Read and Write data
 1. Optionally Close the I2C port (power it down)
 
-The following program demonstrates using the [CoActionOS Applib I2C class](/projects/coactionos-applib/embedded/class_i2c.html). 
+The following program demonstrates using the [CoActionOS Applib I2C class]({{ BASE_URL }}/coactionos-applib/html/class_i2c.html). 
 For more details on using the I2C, please see the 
-[I2C Applib documentation](/projects/coactionos-applib/embedded/class_i2c.html).
+[I2C Applib documentation]({{ BASE_URL }}/coactionos-applib/html/class_i2c.html).
 
 {% highlight CPP %}
 #include <cstdio> //For printf and perror

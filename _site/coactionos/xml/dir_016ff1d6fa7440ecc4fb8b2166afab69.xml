@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_016ff1d6fa7440ecc4fb8b2166afab69" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/include</compoundname>
+    <innerdir refid="dir_e3e0adbd5aada40e511ad6d6c793c31b">/Users/tgil/git/CoActionOS/CoActionOS/include/dev</innerdir>
+    <innerdir refid="dir_693584abd1530a739d459104b7498178">/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl</innerdir>
+    <innerfile refid="cafs__lite_8h">cafs_lite.h</innerfile>
+    <innerfile refid="caos_8h">caos.h</innerfile>
+    <innerfile refid="device_8h">device.h</innerfile>
+    <innerfile refid="hwdl_8h">hwdl.h</innerfile>
+    <innerfile refid="hwpl_8h">hwpl.h</innerfile>
+    <innerfile refid="link_8h">link.h</innerfile>
+    <innerfile refid="link__protocol_8h">link_protocol.h</innerfile>
+    <innerfile refid="mqueue_8h">mqueue.h</innerfile>
+    <innerfile refid="semaphore_8h">semaphore.h</innerfile>
+    <innerfile refid="sysfs_8h">sysfs.h</innerfile>
+    <innerfile refid="usb__dev_8h">usb_dev.h</innerfile>
+    <innerfile refid="usb__dev__adc_8h">usb_dev_adc.h</innerfile>
+    <innerfile refid="usb__dev__cdc_8h">usb_dev_cdc.h</innerfile>
+    <innerfile refid="usb__dev__defs_8h">usb_dev_defs.h</innerfile>
+    <innerfile refid="usb__dev__hid_8h">usb_dev_hid.h</innerfile>
+    <innerfile refid="usb__dev__msc_8h">usb_dev_msc.h</innerfile>
+    <innerfile refid="usb__dev__runtime__dfu_8h">usb_dev_runtime_dfu.h</innerfile>
+    <innerfile refid="usb__dev__std_8h">usb_dev_std.h</innerfile>
+    <innerfile refid="usb__dev__std__inline_8h">usb_dev_std_inline.h</innerfile>
+    <innerfile refid="usb__dev__typedefs_8h">usb_dev_typedefs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/"/>
+  </compounddef>
+</doxygen>

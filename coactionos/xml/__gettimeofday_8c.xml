@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="__gettimeofday_8c" kind="file">
+    <compoundname>_gettimeofday.c</compoundname>
+    <includes local="no">sys/time.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes refid="hwpl_8h" local="yes">hwpl.h</includes>
+    <includes refid="rtc_8h" local="yes">dev/rtc.h</includes>
+    <includes local="yes">../sched/sched_flags.h</includes>
+    <incdepgraph>
+      <node id="2389">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2394">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="2385">
+        <label>stdint.h</label>
+      </node>
+      <node id="2386">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2381">
+        <label>errno.h</label>
+      </node>
+      <node id="2383">
+        <label>fcntl.h</label>
+      </node>
+      <node id="2384">
+        <label>hwpl.h</label>
+        <link refid="hwpl_8h"/>
+        <childnode refid="2385" relation="include">
+        </childnode>
+        <childnode refid="2386" relation="include">
+        </childnode>
+        <childnode refid="2387" relation="include">
+        </childnode>
+        <childnode refid="2388" relation="include">
+        </childnode>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2390" relation="include">
+        </childnode>
+        <childnode refid="2391" relation="include">
+        </childnode>
+        <childnode refid="2392" relation="include">
+        </childnode>
+      </node>
+      <node id="2393">
+        <label>dev/rtc.h</label>
+        <link refid="rtc_8h"/>
+        <childnode refid="2380" relation="include">
+        </childnode>
+        <childnode refid="2385" relation="include">
+        </childnode>
+        <childnode refid="2394" relation="include">
+        </childnode>
+        <childnode refid="2391" relation="include">
+        </childnode>
+      </node>
+      <node id="2391">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="2387">
+        <label>string.h</label>
+      </node>
+      <node id="2395">
+        <label>../sched/sched_flags.h</label>
+      </node>
+      <node id="2382">
+        <label>unistd.h</label>
+      </node>
+      <node id="2380">
+        <label>time.h</label>
+      </node>
+      <node id="2379">
+        <label>sys/time.h</label>
+      </node>
+      <node id="2392">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2385" relation="include">
+        </childnode>
+        <childnode refid="2389" relation="include">
+        </childnode>
+      </node>
+      <node id="2390">
+        <label>hwpl/fault.h</label>
+      </node>
+      <node id="2378">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c</label>
+        <link refid="_gettimeofday.c"/>
+        <childnode refid="2379" relation="include">
+        </childnode>
+        <childnode refid="2380" relation="include">
+        </childnode>
+        <childnode refid="2381" relation="include">
+        </childnode>
+        <childnode refid="2382" relation="include">
+        </childnode>
+        <childnode refid="2383" relation="include">
+        </childnode>
+        <childnode refid="2384" relation="include">
+        </childnode>
+        <childnode refid="2393" relation="include">
+        </childnode>
+        <childnode refid="2395" relation="include">
+        </childnode>
+      </node>
+      <node id="2388">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___t_i_m_e_1ga9ea51916fabb2ae47202ba987cb79fd2" prot="public" static="no" mutable="no">
+        <type>struct timeval time_of_day_offset</type>
+        <definition>struct timeval time_of_day_offset HWPL_SYS_MEM</definition>
+        <argsstring></argsstring>
+        <name>HWPL_SYS_MEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="54" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___t_i_m_e_1gac84a189c60f38145888a21228b2f0fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gettimeofday</definition>
+        <argsstring>(struct timeval *tp, void *tzp)</argsstring>
+        <name>gettimeofday</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tzp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the current time of day using the real time clock. The time is written to <emphasis>tp</emphasis>. In this implementation <emphasis>tzp</emphasis> is not used.</para><para><simplesect kind="return"><para>Zero </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gabf1659da0e02c80c0218d2ddd3113afc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gettimeofday_rtc</definition>
+        <argsstring>(struct timeval *ptimeval)</argsstring>
+        <name>gettimeofday_rtc</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>ptimeval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="34" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga5f2e1b4df745a055b71d2b844df11166" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gettimeofday_sched</definition>
+        <argsstring>(struct timeval *ptimeval)</argsstring>
+        <name>gettimeofday_sched</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>ptimeval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" bodystart="44" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga9407a5597c3642ba1440b12673ccf40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _gettimeofday</definition>
+        <argsstring>(struct timeval *ptimeval, void *ptimezone)</argsstring>
+        <name>_gettimeofday</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>ptimeval</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptimezone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" bodystart="37" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;sys/time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="hwpl_8h" kindref="compound">hwpl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rtc_8h" kindref="compound">dev/rtc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sched/sched_flags.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>time_of_day_offset<sp/>HWPL_SYS_MEM;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___t_i_m_e_1gac84a189c60f38145888a21228b2f0fd5" kindref="member">gettimeofday</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timeval<sp/>*<sp/>tp,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>tzp);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gettimeofday_rtc(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timeval<sp/>*<sp/>ptimeval);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gettimeofday_sched(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timeval<sp/>*<sp/>ptimeval);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_gettimeofday(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timeval<sp/>*<sp/>ptimeval,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>ptimezone){</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>gettimeofday_rtc(ptimeval)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gettimeofday_sched(ptimeval);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>gettimeofday_sched(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timeval<sp/>*<sp/>ptimeval){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sched_timeval<sp/>tv;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>div_t<sp/>d;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timeval<sp/>tmp;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>hwpl_core_privcall((core_privcall_t)sched_priv_get_realtime,<sp/>&amp;tv);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Convert<sp/>the<sp/>sched_timeval<sp/>to<sp/>a<sp/>timeval<sp/>struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>d<sp/>=<sp/>div(tv.tv_usec,<sp/>1000000);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tmp.tv_sec<sp/>=<sp/>tv.tv_sec<sp/>*<sp/>SCHED_TIMEVAL_SECONDS<sp/>+<sp/>d.quot;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>tmp.tv_usec<sp/>=<sp/>d.rem;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ptimeval-&gt;tv_sec<sp/>=<sp/>tmp.tv_sec<sp/>+<sp/>time_of_day_offset.tv_sec;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ptimeval-&gt;tv_usec<sp/>=<sp/>tmp.tv_usec<sp/>+<sp/>time_of_day_offset.tv_usec;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>ptimeval-&gt;tv_usec<sp/>&gt;=<sp/>1000000<sp/>){</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptimeval-&gt;tv_usec<sp/>-=<sp/>1000000;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptimeval-&gt;tv_sec++;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>gettimeofday_rtc(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timeval<sp/>*<sp/>ptimeval){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>cal_time;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fd<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open</ref>(</highlight><highlight class="stringliteral">&quot;/dev/rtc&quot;</highlight><highlight class="normal">,<sp/>O_RDWR);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fd<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fd,<sp/><ref refid="group___r_t_c_1gaeaf4abd917cc5d7b03ff96b2f563ed8c" kindref="member">I_RTC_GET</ref>,<sp/>&amp;cal_time)<sp/>&lt;<sp/>0){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaacad1d135ca2779b583623678e36db7c" kindref="member">close</ref>(fd);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ptimeval-&gt;tv_sec<sp/>=<sp/>mktime(&amp;cal_time);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>ptimeval-&gt;tv_usec<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaacad1d135ca2779b583623678e36db7c" kindref="member">close</ref>(fd);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c"/>
+  </compounddef>
+</doxygen>

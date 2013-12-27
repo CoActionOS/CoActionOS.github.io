@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="tmr_8h" kind="file">
+    <compoundname>tmr.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includedby refid="link__protocol_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</includedby>
+    <incdepgraph>
+      <node id="1648">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1647">
+        <label>stdint.h</label>
+      </node>
+      <node id="1646">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h</label>
+        <link refid="tmr.h"/>
+        <childnode refid="1647" relation="include">
+        </childnode>
+        <childnode refid="1648" relation="include">
+        </childnode>
+        <childnode refid="1649" relation="include">
+        </childnode>
+      </node>
+      <node id="1649">
+        <label>hwpl/arch.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1650">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h</label>
+        <link refid="tmr.h"/>
+        <childnode refid="1651" relation="include">
+        </childnode>
+      </node>
+      <node id="1651">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</label>
+        <link refid="link__protocol_8h"/>
+        <childnode refid="1652" relation="include">
+        </childnode>
+      </node>
+      <node id="1652">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structtmr__reqattr__t" prot="public">tmr_reqattr_t</innerclass>
+    <innerclass refid="structtmr__attr__t" prot="public">tmr_attr_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_m_r_1ga74947ab9b6a286b632eb50969474e977" prot="public" static="no">
+        <name>TMR_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="98" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga82a0b3813829f10495c43d5238e45a29" prot="public" static="no">
+        <name>TMR_SAMPLE_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="101" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaa9cb6aa0cba4db2a64241294dd5c7daf" prot="public" static="no">
+        <name>TMR_CLKSRC_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="120" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga2a06fa9be0898c5a27465d4407ef2517" prot="public" static="no">
+        <name>TMR_CLKSRC_EDGEMASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="121" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaeb94082355400363145390ae5efdda5c" prot="public" static="no">
+        <name>TMR_MODE_SETCLKSRC</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+<para>Specifies the timer clock source as part of the mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="169" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gab2c4a7e41ec7bf92db988eb9f3e85a04" prot="public" static="no">
+        <name>TMR_MODE_CLK_SRC</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="170" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gac6a5a1545ae8f42d6457c33f96f01249" prot="public" static="no">
+        <name>TMR_MODE_SETCOUNTER</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+<para>Is used to specify the timer counter mode when opening a timer port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="176" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaa6c2ac9c41323904832316f6fc98f502" prot="public" static="no">
+        <name>TMR_MODE_COUNTER</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="177" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gae51fb6b5704882a303710b534888b1aa" prot="public" static="no">
+        <name>TMR_MODE_GET_CLK_SRC</name>
+        <param><defname>mode</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="180" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga7029f061b176a28cf458928de995aaa3" prot="public" static="no">
+        <name>TMR_MODE_GET_COUNTER</name>
+        <param><defname>mode</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="181" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga019da11cefc626f1e3364bf33a170ee9" prot="public" static="no">
+        <name>I_TMR_GETATTR</name>
+        <briefdescription>
+<para>This request gets the timer attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="204" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaefe78a760425bd615ec9aae7c5c24166" prot="public" static="no">
+        <name>I_TMR_SETATTR</name>
+        <briefdescription>
+<para>This request sets the timer attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="208" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga6b2b84970c0419efbbaf1748b9e2d2c3" prot="public" static="no">
+        <name>I_TMR_SETACTION</name>
+        <briefdescription>
+<para>This request sets the timer interrupt action. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="212" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga3871e5d0dfcd5d2df1999bc7e731f167" prot="public" static="no">
+        <name>I_TMR_ON</name>
+        <briefdescription>
+<para>This request turns the timer on. After a timer is opened it must be turned on before it starts running. The ctl argument is NULL. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="219" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga061cffe54c3f7f31414dca0647c027c3" prot="public" static="no">
+        <name>I_TMR_OFF</name>
+        <briefdescription>
+<para>This request turns the timer off. After a timer is opened it is off. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="225" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga1d1975c0f529d6cdc1e15c0de5740114" prot="public" static="no">
+        <name>I_TMR_SETOC</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request writes the value of the current output compare channel. The ctl argument is a pointer to the <ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref> structure. For example:<itemizedlist>
+<listitem><para><programlisting><codeline><highlight class="normal"><ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref><sp/>chan_req;</highlight></codeline>
+<codeline><highlight class="normal">chan_req.<ref refid="structtmr__reqattr__t_1acdb25687f2bfa6965b5f8fa733d0198a" kindref="member">channel</ref><sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//write<sp/>to<sp/>OC<sp/>channel<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">chan_req.<ref refid="structtmr__reqattr__t_1ae02abe4a2ddbd1cdb1e17b46237a1acd" kindref="member">value</ref><sp/>=<sp/>1000000;<sp/></highlight><highlight class="comment">//write<sp/>1<sp/>million<sp/>to<sp/>the<sp/>OC<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(tmr_fd,<sp/><ref refid="group___t_m_r_1ga1d1975c0f529d6cdc1e15c0de5740114" kindref="member">I_TMR_SETOC</ref>,<sp/>&amp;chan_req<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//There<sp/>was<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="243" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga82116e95b6cb8fe53550a9c6a8ce8807" prot="public" static="no">
+        <name>I_TMR_SET_OC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="244" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga0fc056b76c426b5d4057e247e556a1b9" prot="public" static="no">
+        <name>I_TMR_GETOC</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request reads the value of the current output compare channel. The ctl argument is a pointer to a <ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref> structure. tmr_ioctl() will return zero on success. For example: <programlisting><codeline><highlight class="normal"><ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref><sp/>chan_req;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>oc_value;</highlight></codeline>
+<codeline><highlight class="normal">chan_req.<ref refid="structtmr__reqattr__t_1acdb25687f2bfa6965b5f8fa733d0198a" kindref="member">channel</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(tmr_fd,<sp/><ref refid="group___t_m_r_1ga0fc056b76c426b5d4057e247e556a1b9" kindref="member">I_TMR_GETOC</ref>,<sp/>&amp;chan_req<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//There<sp/>was<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">oc_value<sp/>=<sp/>chan_req.<ref refid="structtmr__reqattr__t_1ae02abe4a2ddbd1cdb1e17b46237a1acd" kindref="member">value</ref>;</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="263" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaee213d9b9548e735bd0332de26f7f117" prot="public" static="no">
+        <name>I_TMR_GET_OC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="264" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaa38dabc8bc8475b1a28f517522d9e9ca" prot="public" static="no">
+        <name>I_TMR_SETIC</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request writes the value of the input capture using the current channel. The ctl argument is a pointer to the <ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref> structure. For example:<itemizedlist>
+<listitem><para>For example:</para></listitem><listitem><para><programlisting><codeline><highlight class="normal"><ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref><sp/>chan_req;</highlight></codeline>
+<codeline><highlight class="normal">chan_req.<ref refid="structtmr__reqattr__t_1acdb25687f2bfa6965b5f8fa733d0198a" kindref="member">channel</ref><sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//write<sp/>to<sp/>OC<sp/>channel<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">chan_req.<ref refid="structtmr__reqattr__t_1ae02abe4a2ddbd1cdb1e17b46237a1acd" kindref="member">value</ref><sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//write<sp/>1<sp/>to<sp/>the<sp/>IC<sp/>channel</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(tmr_fd,<sp/><ref refid="group___t_m_r_1gaa38dabc8bc8475b1a28f517522d9e9ca" kindref="member">I_TMR_SETIC</ref>,<sp/>&amp;chan_req<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//There<sp/>was<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="283" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gafe38d85b9dceb2db75a31669ba00cdc6" prot="public" static="no">
+        <name>I_TMR_SET_IC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="284" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga84e81c0e7c9fe916daa9e1f1d92fc495" prot="public" static="no">
+        <name>I_TMR_GETIC</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request reads the value of the input capture using the current channel. The ctl argument is a pointer to the <ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref> structure. For example: <programlisting><codeline><highlight class="normal"><ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref><sp/>chan_req;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ic_value;</highlight></codeline>
+<codeline><highlight class="normal">chan_req.<ref refid="structtmr__reqattr__t_1acdb25687f2bfa6965b5f8fa733d0198a" kindref="member">channel</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(tmr_fd,<sp/><ref refid="group___t_m_r_1ga84e81c0e7c9fe916daa9e1f1d92fc495" kindref="member">I_TMR_GETIC</ref>,<sp/>&amp;chan_req<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//There<sp/>was<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">ic_value<sp/>=<sp/>chan_req.<ref refid="structtmr__reqattr__t_1ae02abe4a2ddbd1cdb1e17b46237a1acd" kindref="member">value</ref>;</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="302" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gaffd63cad909c6ed88f5b9c305da66ba4" prot="public" static="no">
+        <name>I_TMR_GET_IC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="303" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gad5917be06a3069c73fec5b2efbe094fd" prot="public" static="no">
+        <name>I_TMR_SET</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request writes the value of the timer. For example: <programlisting><codeline><highlight class="normal">uint32_t<sp/>value<sp/>=<sp/>1000000;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(tmr_fd,<sp/><ref refid="group___t_m_r_1gad5917be06a3069c73fec5b2efbe094fd" kindref="member">I_TMR_SET</ref>,<sp/>value);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="314" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1gab3dad8f32add45b25ab32f918b607d9e" prot="public" static="no">
+        <name>I_TMR_GET</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request reads the value of the timer. For example: <programlisting><codeline><highlight class="normal">uint32_t<sp/>value;</highlight></codeline>
+<codeline><highlight class="normal">value<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(tmr_fd,<sp/><ref refid="group___t_m_r_1gab3dad8f32add45b25ab32f918b607d9e" kindref="member">I_TMR_GET</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="325" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_m_r_1ga5a37fe2e6e2016807b4691a1aa8f724f" prot="public" static="no">
+        <name>I_TMR_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="327" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___t_m_r_1ga752e581dd80394311e122634680ece35" prot="public" static="no">
+        <name>tmr_clksrc_t</name>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35" prot="public">
+          <name>TMR_CLKSRC_CPU</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the CPU as the source for the clock (timer mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a3933e4497b943bc0722ef7033951fca4" prot="public">
+          <name>TMR_CLKSRC_IC0</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use input capture channel 0 for the clock source (counter mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35ad2ea59fe333f27d6bdc9da487c4c72f6" prot="public">
+          <name>TMR_CLKSRC_IC1</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use input capture channel 1 for the clock source (counter mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a2e5c982133dc1a6f795c84968cec1d01" prot="public">
+          <name>TMR_CLKSRC_IC2</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use input capture channel 2 for the clock source (counter mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a015a3600ae46137f09d06fb113995783" prot="public">
+          <name>TMR_CLKSRC_IC3</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use input capture channel 3 for the clock source (counter mode) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a2297f0ee2c2197fe99729267865dd6a7" prot="public">
+          <name>TMR_CLKSRC_EDGERISING</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Count rising edges </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35abd5e50b4088f9422b84d5cdffe9e5777" prot="public">
+          <name>TMR_CLKSRC_EDGEFALLING</name>
+          <initializer>= (2&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Count falling edges </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a9cc719060c8595411a6030bdabb77e89" prot="public">
+          <name>TMR_CLKSRC_EDGEBOTH</name>
+          <initializer>= (3&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Count both edges </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga752e581dd80394311e122634680ece35a5042929f4e1bcc8634324edf0e267f15" prot="public">
+          <name>TMR_CLKSRC_COUNTDOWN</name>
+          <initializer>= (1&lt;&lt;8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Count down (not up) </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the valid values for the clk_src member of the <ref refid="structtmr__attr__t" kindref="compound">tmr_attr_t</ref> data structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="108" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="108" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___t_m_r_1ga7d678038d5737ca6e05ef60e6ca788d6" prot="public" static="no">
+        <name>tmr_action_event_t</name>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a012f94da7c88cd58b06b09c96f3decc7" prot="public">
+          <name>TMR_ACTION_EVENT_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>no action </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a50bd71a86096a576520c8e7c4af61260" prot="public">
+          <name>TMR_ACTION_EVENT_INTERRUPT</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>enable interrupt on IC/OC event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62" prot="public">
+          <name>TMR_ACTION_EVENT_RESET</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>reset the timer on IC/OC event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a89ea0f12427c4cc7f129b55f7c98d1b4" prot="public">
+          <name>TMR_ACTION_EVENT_STOP</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>stop the timer on OC/IC event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6adc37fbdb7862d00df403acad539acc43" prot="public">
+          <name>TMR_ACTION_EVENT_SETOC</name>
+          <initializer>= (1&lt;&lt;3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>set the OC channel pin to logic 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a226d7bac1d981225639c6c82fc532e4b" prot="public">
+          <name>TMR_ACTION_EVENT_CLROC</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>clear the OC channel pin to logic 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ab566e6a0a36284f4f69b72c1a8757d12" prot="public">
+          <name>TMR_ACTION_EVENT_TOGGLEOC</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>toggle the OC channel pin </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ae8f09fda9578c5a6510d7bc9656845c0" prot="public">
+          <name>TMR_ACTION_EVENT_PWMMODE</name>
+          <initializer>= (1&lt;&lt;6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Execute OC channel in PWM Mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines no action for an OC/IC event. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="129" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="129" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___t_m_r_1ga3f45c39d7dcdced3980b3b2439d39cd4" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t tmr_sample_t</definition>
+        <argsstring></argsstring>
+        <name>tmr_sample_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___t_m_r_1gabaad52d591e2a6a10e4752b39822ca49" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t tmr_action_t</definition>
+        <argsstring></argsstring>
+        <name>tmr_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines the timer action structure.</para><para>See <ref refid="group___t_m_r_1ga7d678038d5737ca6e05ef60e6ca788d6" kindref="member">tmr_action_event_t</ref> for event values.</para><para>See the following for channel information:<itemizedlist>
+<listitem><para><ref refid="group___l_p_c17_x_x_d_e_v_1ga4446c5622012374fdca172a8600b6b53" kindref="member">lpc17xx_tmr_action_channel_t</ref></para></listitem><listitem><para><ref refid="group___l_p_c13_x_x_d_e_v_1gaa4bb58f20ad4a64f47564f48cb85f1eb" kindref="member">lpc13xx_tmr_action_channel_t</ref></para></listitem></itemizedlist>
+</para><para>for action channel information.</para><para><simplesect kind="see"><para><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" line="153" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Timer Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor">#ifndef<sp/>DEV_TMR_H_</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_TMR_H_</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="97"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMR_IOC_IDENT_CHAR<sp/>&apos;t&apos;</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TMR_SAMPLE_T</highlight></codeline>
+<codeline lineno="101"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TMR_SAMPLE_T</highlight></codeline>
+<codeline lineno="102"><highlight class="preprocessor"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/>tmr_sample_t;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="108" refid="group___t_m_r_1ga752e581dd80394311e122634680ece35" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="109" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a6928b4e5c83b959e37e3920a09123b35" kindref="member">TMR_CLKSRC_CPU</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="110" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a3933e4497b943bc0722ef7033951fca4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a3933e4497b943bc0722ef7033951fca4" kindref="member">TMR_CLKSRC_IC0</ref><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="111" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35ad2ea59fe333f27d6bdc9da487c4c72f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35ad2ea59fe333f27d6bdc9da487c4c72f6" kindref="member">TMR_CLKSRC_IC1</ref><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="112" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a2e5c982133dc1a6f795c84968cec1d01" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a2e5c982133dc1a6f795c84968cec1d01" kindref="member">TMR_CLKSRC_IC2</ref><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="113" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a015a3600ae46137f09d06fb113995783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a015a3600ae46137f09d06fb113995783" kindref="member">TMR_CLKSRC_IC3</ref><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="114" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a2297f0ee2c2197fe99729267865dd6a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a2297f0ee2c2197fe99729267865dd6a7" kindref="member">TMR_CLKSRC_EDGERISING</ref><sp/><sp/>=<sp/>(1&lt;&lt;4),</highlight></codeline>
+<codeline lineno="115" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35abd5e50b4088f9422b84d5cdffe9e5777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35abd5e50b4088f9422b84d5cdffe9e5777" kindref="member">TMR_CLKSRC_EDGEFALLING</ref><sp/><sp/>=<sp/>(2&lt;&lt;4),</highlight></codeline>
+<codeline lineno="116" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a9cc719060c8595411a6030bdabb77e89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a9cc719060c8595411a6030bdabb77e89" kindref="member">TMR_CLKSRC_EDGEBOTH</ref><sp/><sp/>=<sp/>(3&lt;&lt;4),</highlight></codeline>
+<codeline lineno="117" refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a5042929f4e1bcc8634324edf0e267f15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga752e581dd80394311e122634680ece35a5042929f4e1bcc8634324edf0e267f15" kindref="member">TMR_CLKSRC_COUNTDOWN</ref><sp/><sp/>=<sp/>(1&lt;&lt;8)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/><ref refid="group___t_m_r_1ga752e581dd80394311e122634680ece35" kindref="member">tmr_clksrc_t</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMR_CLKSRC_MASK<sp/>(0x0F)</highlight></codeline>
+<codeline lineno="121"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TMR_CLKSRC_EDGEMASK<sp/>(0xF0)</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="group___t_m_r_1ga7d678038d5737ca6e05ef60e6ca788d6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="130" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a012f94da7c88cd58b06b09c96f3decc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a012f94da7c88cd58b06b09c96f3decc7" kindref="member">TMR_ACTION_EVENT_NONE</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="131" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a50bd71a86096a576520c8e7c4af61260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a50bd71a86096a576520c8e7c4af61260" kindref="member">TMR_ACTION_EVENT_INTERRUPT</ref><sp/><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="132" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ae745d8c1cd8983024b950fef824bbd62" kindref="member">TMR_ACTION_EVENT_RESET</ref><sp/><sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="133" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a89ea0f12427c4cc7f129b55f7c98d1b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a89ea0f12427c4cc7f129b55f7c98d1b4" kindref="member">TMR_ACTION_EVENT_STOP</ref><sp/><sp/>=<sp/>(1&lt;&lt;2),</highlight></codeline>
+<codeline lineno="134" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6adc37fbdb7862d00df403acad539acc43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6adc37fbdb7862d00df403acad539acc43" kindref="member">TMR_ACTION_EVENT_SETOC</ref><sp/><sp/>=<sp/>(1&lt;&lt;3),</highlight></codeline>
+<codeline lineno="135" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a226d7bac1d981225639c6c82fc532e4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6a226d7bac1d981225639c6c82fc532e4b" kindref="member">TMR_ACTION_EVENT_CLROC</ref><sp/><sp/>=<sp/>(1&lt;&lt;4),</highlight></codeline>
+<codeline lineno="136" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ab566e6a0a36284f4f69b72c1a8757d12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ab566e6a0a36284f4f69b72c1a8757d12" kindref="member">TMR_ACTION_EVENT_TOGGLEOC</ref><sp/><sp/>=<sp/>(1&lt;&lt;5),</highlight></codeline>
+<codeline lineno="137" refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ae8f09fda9578c5a6510d7bc9656845c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___t_m_r_1gga7d678038d5737ca6e05ef60e6ca788d6ae8f09fda9578c5a6510d7bc9656845c0" kindref="member">TMR_ACTION_EVENT_PWMMODE</ref><sp/><sp/>=<sp/>(1&lt;&lt;6),</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}<sp/><ref refid="group___t_m_r_1ga7d678038d5737ca6e05ef60e6ca788d6" kindref="member">tmr_action_event_t</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="group___t_m_r_1gabaad52d591e2a6a10e4752b39822ca49" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref><sp/><ref refid="group___t_m_r_1gabaad52d591e2a6a10e4752b39822ca49" kindref="member">tmr_action_t</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="structtmr__reqattr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="161" refid="structtmr__reqattr__t_1acdb25687f2bfa6965b5f8fa733d0198a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___l_p_c17_x_x_d_e_v_1ga4446c5622012374fdca172a8600b6b53" kindref="member">tmr_action_channel_t</ref><sp/>channel<sp/>;</highlight></codeline>
+<codeline lineno="162" refid="structtmr__reqattr__t_1ae02abe4a2ddbd1cdb1e17b46237a1acd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>value<sp/>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}<sp/><ref refid="structtmr__reqattr__t" kindref="compound">tmr_reqattr_t</ref>;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="group___t_m_r_1gaeb94082355400363145390ae5efdda5c" refkind="member"><highlight class="preprocessor">#define<sp/>TMR_MODE_SETCLKSRC(x)<sp/>(<sp/>x<sp/>&amp;<sp/>0x0F<sp/>)</highlight></codeline>
+<codeline lineno="170"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TMR_MODE_CLK_SRC(x)<sp/>TMR_MODE_SETCLKSRC</highlight></codeline>
+<codeline lineno="171"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="176" refid="group___t_m_r_1gac6a5a1545ae8f42d6457c33f96f01249" refkind="member"><highlight class="preprocessor">#define<sp/>TMR_MODE_SETCOUNTER(x)<sp/>(<sp/>(x&amp;0x03)&lt;&lt;4<sp/>)</highlight></codeline>
+<codeline lineno="177"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TMR_MODE_COUNTER(x)<sp/>TMR_MODE_SETCOUNTER(x)</highlight></codeline>
+<codeline lineno="178"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TMR_MODE_GET_CLK_SRC(mode)<sp/>(<sp/>mode<sp/>&amp;<sp/>0x0F<sp/>)</highlight></codeline>
+<codeline lineno="181"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TMR_MODE_GET_COUNTER(mode)<sp/>(<sp/>(mode<sp/>&gt;&gt;<sp/>4)<sp/>&amp;<sp/>0x03<sp/>)</highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="187" refid="structtmr__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="188" refid="structtmr__attr__t_1a6ad5e4a6c786d35be35483cf0a7998b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="189" refid="structtmr__attr__t_1aca286608dbd9e77db08e8d694b547c16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>freq<sp/>;</highlight></codeline>
+<codeline lineno="190" refid="structtmr__attr__t_1a350c863adf6378c4b838a3585bc7fb6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>clksrc<sp/>;</highlight></codeline>
+<codeline lineno="191" refid="structtmr__attr__t_1a8441897a604a780771c4f1f0f86ede50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>counter_mode<sp/>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>enabled_oc_chans<sp/>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>enabled_ic_chans<sp/>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}<sp/><ref refid="structtmr__attr__t" kindref="compound">tmr_attr_t</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="group___t_m_r_1ga019da11cefc626f1e3364bf33a170ee9" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_GETATTR<sp/>_IOCTLR(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>tmr_attr_t)</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="208" refid="group___t_m_r_1gaefe78a760425bd615ec9aae7c5c24166" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_SETATTR<sp/>_IOCTLW(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>tmr_attr_t)</highlight></codeline>
+<codeline lineno="209"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="212" refid="group___t_m_r_1ga6b2b84970c0419efbbaf1748b9e2d2c3" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_SETACTION<sp/>_IOCTLW(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>tmr_action_t)</highlight></codeline>
+<codeline lineno="213"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="219" refid="group___t_m_r_1ga3871e5d0dfcd5d2df1999bc7e731f167" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_ON<sp/>_IOCTL(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>0)</highlight></codeline>
+<codeline lineno="220"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="225" refid="group___t_m_r_1ga061cffe54c3f7f31414dca0647c027c3" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_OFF<sp/>_IOCTL(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="243" refid="group___t_m_r_1ga1d1975c0f529d6cdc1e15c0de5740114" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_SETOC<sp/>_IOCTLW(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>2,<sp/>tmr_reqattr_t)</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_TMR_SET_OC<sp/>I_TMR_SETOC</highlight></codeline>
+<codeline lineno="245"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="263" refid="group___t_m_r_1ga0fc056b76c426b5d4057e247e556a1b9" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_GETOC<sp/>_IOCTLR(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>3,<sp/>tmr_reqattr_t)</highlight></codeline>
+<codeline lineno="264"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_TMR_GET_OC<sp/>I_TMR_GETOC</highlight></codeline>
+<codeline lineno="265"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="283" refid="group___t_m_r_1gaa38dabc8bc8475b1a28f517522d9e9ca" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_SETIC<sp/>_IOCTLW(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>4,<sp/>tmr_reqattr_t)</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_TMR_SET_IC<sp/>I_TMR_SETIC</highlight></codeline>
+<codeline lineno="285"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="302" refid="group___t_m_r_1ga84e81c0e7c9fe916daa9e1f1d92fc495" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_GETIC<sp/>_IOCTLR(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>5,<sp/>tmr_reqattr_t)</highlight></codeline>
+<codeline lineno="303"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_TMR_GET_IC<sp/>I_TMR_GETIC</highlight></codeline>
+<codeline lineno="304"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="314" refid="group___t_m_r_1gad5917be06a3069c73fec5b2efbe094fd" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_SET<sp/>_IOCTL(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>6)</highlight></codeline>
+<codeline lineno="315"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="325" refid="group___t_m_r_1gab3dad8f32add45b25ab32f918b607d9e" refkind="member"><highlight class="preprocessor">#define<sp/>I_TMR_GET<sp/>_IOCTL(TMR_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>7)</highlight></codeline>
+<codeline lineno="326"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_TMR_TOTAL<sp/>8</highlight></codeline>
+<codeline lineno="328"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="330"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="332"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DEV_TMR_H_</highlight></codeline>
+<codeline lineno="334"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tmr.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_62dc641eaa492813426a41da87add652" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pwd</compoundname>
+    <innerfile refid="pwd_8c">pwd.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pwd/"/>
+  </compounddef>
+</doxygen>

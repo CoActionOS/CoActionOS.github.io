@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="rtc_8h" kind="file">
+    <compoundname>rtc.h</compoundname>
+    <includes local="no">time.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includedby refid="link__protocol_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</includedby>
+    <includedby refid="__gettimeofday_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c</includedby>
+    <includedby refid="__settimeofday_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c</includedby>
+    <includedby refid="hibernate_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c</includedby>
+    <incdepgraph>
+      <node id="1623">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1622">
+        <label>stdint.h</label>
+      </node>
+      <node id="1620">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h</label>
+        <link refid="rtc.h"/>
+        <childnode refid="1621" relation="include">
+        </childnode>
+        <childnode refid="1622" relation="include">
+        </childnode>
+        <childnode refid="1623" relation="include">
+        </childnode>
+        <childnode refid="1624" relation="include">
+        </childnode>
+      </node>
+      <node id="1624">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="1621">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1630">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c</label>
+        <link refid="hibernate_8c"/>
+      </node>
+      <node id="1626">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</label>
+        <link refid="link__protocol_8h"/>
+        <childnode refid="1627" relation="include">
+        </childnode>
+      </node>
+      <node id="1625">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h</label>
+        <link refid="rtc.h"/>
+        <childnode refid="1626" relation="include">
+        </childnode>
+        <childnode refid="1628" relation="include">
+        </childnode>
+        <childnode refid="1629" relation="include">
+        </childnode>
+        <childnode refid="1630" relation="include">
+        </childnode>
+      </node>
+      <node id="1627">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+      <node id="1629">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c</label>
+        <link refid="__settimeofday_8c"/>
+      </node>
+      <node id="1628">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c</label>
+        <link refid="__gettimeofday_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrtc__time__t" prot="public">rtc_time_t</innerclass>
+    <innerclass refid="structrtc__alarm__t" prot="public">rtc_alarm_t</innerclass>
+    <innerclass refid="structrtc__attr__t" prot="public">rtc_attr_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___r_t_c_1ga1bfcf94789482e7e16829caf2565ec2f" prot="public" static="no">
+        <name>RTC_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="34" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga63dfaa10d55f5d2d51a18be6ecf39db4" prot="public" static="no">
+        <name>I_RTC_GETATTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="154" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga8df8e5b23d81bbe42837d2e984a74be7" prot="public" static="no">
+        <name>I_RTC_SETATTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="155" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga1c686ee453c942b3aaf6be0dc016bf0e" prot="public" static="no">
+        <name>I_RTC_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="156" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga4e0edc05fb0c989c5acf8b4927ae5d6d" prot="public" static="no">
+        <name>I_RTC_SETALARM</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request writes the alarm value. The ctl argument is a pointer to an <ref refid="structrtc__alarm__t" kindref="compound">rtc_alarm_t</ref> which contains the alarm.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="structrtc__alarm__t" kindref="compound">rtc_alarm_t</ref><sp/>alarm;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//set<sp/>alarm<sp/>members</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(rtc_fd,<sp/><ref refid="group___r_t_c_1ga4e0edc05fb0c989c5acf8b4927ae5d6d" kindref="member">I_RTC_SETALARM</ref>,<sp/>&amp;alarm);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="172" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1gaf20681fd3330c9a0b1e537442f6ba15f" prot="public" static="no">
+        <name>I_RTC_SET_ALARM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="173" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1gac0187ffba6245e88b438e7c893c39b37" prot="public" static="no">
+        <name>I_RTC_GETALARM</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request reads the alarm value. The ctl argument is a pointer to memory where the <ref refid="structrtc__alarm__t" kindref="compound">rtc_alarm_t</ref> will be stored.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="structrtc__alarm__t" kindref="compound">rtc_alarm_t</ref><sp/>alarm;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(rtc_fd,<sp/><ref refid="group___r_t_c_1gac0187ffba6245e88b438e7c893c39b37" kindref="member">I_RTC_GETALARM</ref>,<sp/>&amp;alarm);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//alarm<sp/>is<sp/>populated<sp/>with<sp/>the<sp/>current<sp/>alarm<sp/>values</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="188" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga25a0563bcfbf09cfe129444c74a020c9" prot="public" static="no">
+        <name>I_RTC_GET_ALARM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="189" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga04d1d524a9262ad0fe5e91702c762a7a" prot="public" static="no">
+        <name>I_RTC_DISABLEALARM</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request disable the alarm. The ctl argument is NULL.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(rtc_fd,<sp/><ref refid="group___r_t_c_1ga04d1d524a9262ad0fe5e91702c762a7a" kindref="member">I_RTC_DISABLEALARM</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="203" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga327e78da5780a6ed93c9c1a146b91dd8" prot="public" static="no">
+        <name>I_RTC_DISABLE_ALARM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="204" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga3d22fa73857a304762f6776fae261078" prot="public" static="no">
+        <name>I_RTC_SET</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request writes the value of the timer. For example: <programlisting><codeline><highlight class="normal"><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref><sp/>the_time;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(rtc_fd,<sp/><ref refid="group___r_t_c_1ga3d22fa73857a304762f6776fae261078" kindref="member">I_RTC_SET</ref>,<sp/>&amp;the_time);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="215" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1gaeaf4abd917cc5d7b03ff96b2f563ed8c" prot="public" static="no">
+        <name>I_RTC_GET</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request reads the value of the timer. For example: <programlisting><codeline><highlight class="normal"><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref><sp/>current_time;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(rtc_fd,<sp/><ref refid="group___r_t_c_1gaeaf4abd917cc5d7b03ff96b2f563ed8c" kindref="member">I_RTC_GET</ref>,<sp/>&amp;current_time<sp/>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="226" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1gac7ca674f40bdc951efb4355bc535655f" prot="public" static="no">
+        <name>I_RTC_SETCOUNTEVENT</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request controls when the count action is triggered. The ctl argument is a <ref refid="group___r_t_c_1gae2a9c3088277a56623c7d73f8e530702" kindref="member">rtc_event_count_t</ref>.</para><para><programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(rtc_fd,<sp/><ref refid="group___r_t_c_1gac7ca674f40bdc951efb4355bc535655f" kindref="member">I_RTC_SETCOUNTEVENT</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)<ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3" kindref="member">RTC_EVENT_COUNT_SECOND</ref><sp/>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="238" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1gaa27301989c2761430083c440d6a88db4" prot="public" static="no">
+        <name>I_RTC_SET_COUNT_EVENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="239" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___r_t_c_1ga1436afafc728fb7e3f5dc82914292570" prot="public" static="no">
+        <name>I_RTC_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="241" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___r_t_c_1ga10606f83fcd2315eb36b2ae3c03602d0" prot="public" static="no">
+        <name>rtc_clock_t</name>
+        <enumvalue id="group___r_t_c_1gga10606f83fcd2315eb36b2ae3c03602d0a3818a99ab8ddd9d696ecc285a5faefc9" prot="public">
+          <name>RTC_CLKSRC_EXTERNAL_32768</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External 32.768KHz Crystal </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga10606f83fcd2315eb36b2ae3c03602d0a665121a63cedc225f2865e70d5d16d2f" prot="public">
+          <name>RTC_CLKSRC_INTERNAL_40000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Internal 40KHz Oscillator </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>These are the values for <emphasis>clock</emphasis> of <ref refid="structrtc__attr__t" kindref="compound">rtc_attr_t</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="44" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___r_t_c_1gad2e192ed9a33b6c005c2c19ccbd6a21b" prot="public" static="no">
+        <name>rtc_event_t</name>
+        <enumvalue id="group___r_t_c_1ggad2e192ed9a33b6c005c2c19ccbd6a21ba049b16319195e469236d699bffa7d8e2" prot="public">
+          <name>RTC_EVENT_ALARM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggad2e192ed9a33b6c005c2c19ccbd6a21ba3a83f5f39948a793f542fc20a62bf68b" prot="public">
+          <name>RTC_EVENT_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the bit assignments when using the RTC interrupt callback. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="53" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___r_t_c_1gae2a9c3088277a56623c7d73f8e530702" prot="public" static="no">
+        <name>rtc_event_count_t</name>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a675a78d2a535580b6ad2005f582cc931" prot="public">
+          <name>RTC_EVENT_COUNT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not interrupt based on the count (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3" prot="public">
+          <name>RTC_EVENT_COUNT_SECOND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every second </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adc0af148d93bba5ff96a7a4af9f99906" prot="public">
+          <name>RTC_EVENT_COUNT_MINUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every minute </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a870fc262d71be6da443ff3b8f99af6ee" prot="public">
+          <name>RTC_EVENT_COUNT_HOUR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every hour </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a0de9a98b6ea51a595601127b0a478e5b" prot="public">
+          <name>RTC_EVENT_COUNT_DAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every day </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702af35802cceffa6243c496a1e14ae4dfe1" prot="public">
+          <name>RTC_EVENT_COUNT_WEEK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every week </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a249cf96b5a5ea7c8ddc8b2ef78c2d8bb" prot="public">
+          <name>RTC_EVENT_COUNT_MONTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every month </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702ae764f4357ddc3122b7db17bd0583e41f" prot="public">
+          <name>RTC_EVENT_COUNT_YEAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Interrupt every year </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the times when the count interrupt can be set. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="61" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="61" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___r_t_c_1ga70998fb17a899127e3b7544f053b89ba" prot="public" static="no">
+        <name>rtc_day_of_week_t</name>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baab87734c1e7ad9cf552e31cc67fc52a49" prot="public">
+          <name>RTC_DAY_SUNDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sunday </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa30f04ddc5d8a3c6e05bc3155abe1aa3d" prot="public">
+          <name>RTC_DAY_MONDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Monday </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa2099fb2efd535525aabed8f407d12637" prot="public">
+          <name>RTC_DAY_TUESDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tuesday </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa5197f6ade2f691e4dab5eb109430ce03" prot="public">
+          <name>RTC_DAY_WEDNESDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Wednesday </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa981074588073fbe08bda03c82a034ff8" prot="public">
+          <name>RTC_DAY_THURSDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Thursday </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa4d1f14b3b5c92aa6b25197a9fe952757" prot="public">
+          <name>RTC_DAY_FRIDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Friday </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baaa7ce740e53227212c77459208b90a7b6" prot="public">
+          <name>RTC_DAY_SATURDAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Saturday </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Lists the days of the week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a list of the valid days of the week. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="77" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___r_t_c_1ga1352508ef17e1a342ef93ec92e79960e" prot="public" static="no">
+        <name>rtc_mon_t</name>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea682a6c586ed68b7268c690e22b1820f5" prot="public">
+          <name>RTC_MON_JAN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea409d4e3fc743711dfa7e3e91dcb9a3af" prot="public">
+          <name>RTC_MON_FEB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>February </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9381db16432bcd834586a2196d794c9f" prot="public">
+          <name>RTC_MON_MAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>March </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960eaefb702b562824230bbec3202ed9e39f1" prot="public">
+          <name>RTC_MON_APR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>April </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9e35a5a301ade55ccbe76542b6dcd25c" prot="public">
+          <name>RTC_MON_MAY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>May </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea0fac900a339c0f004fd9616b043c155e" prot="public">
+          <name>RTC_MON_JUN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>June </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960eac50d01cb94b0f9d39c7eb86cd730b13c" prot="public">
+          <name>RTC_MON_JUL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>July </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9707bc6c69fabfa5e1ef94610bf96e0d" prot="public">
+          <name>RTC_MON_AUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>August </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9ebfd816c6aa35273259646c5acb572d" prot="public">
+          <name>RTC_MON_SEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>September </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea83b564a4e02f541a23b9e8ee875e3eb7" prot="public">
+          <name>RTC_MON_OCT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>October </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea97b6158e3c4a6b47525edd457a3f046f" prot="public">
+          <name>RTC_MON_NOV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>November </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea04e1a4c8171b0af9e5287442dc3ccd75" prot="public">
+          <name>RTC_MON_DEC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>December </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Lists the months of the year. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is a list of the valid months of the year. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="90" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="90" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___r_t_c_1gae65938264f8a116c77c92d7fab17ade2" prot="public" static="no">
+        <name>rtc_alarm_type_t</name>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a976059f900a12b9f02432ed0b6a28892" prot="public">
+          <name>RTC_ALARM_ONCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>One time alarm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2abd4217b9c181fb80434b4b0e807af176" prot="public">
+          <name>RTC_ALARM_MINUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Alarm every minute </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2ae81ff75817eaa48f57cc3ce6b0b63c7f" prot="public">
+          <name>RTC_ALARM_HOURLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Alarm every hour </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a378147facd1e8ab25c0387c6d0440d16" prot="public">
+          <name>RTC_ALARM_DAILY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Daily alarm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a6e6d0960e73f262cbd236e296491c850" prot="public">
+          <name>RTC_ALARM_WEEKLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Weekly alarm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a34d8089b1d93ba817b04bcfa61426236" prot="public">
+          <name>RTC_ALARM_MONTHLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Monthly alarm </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a1457b47302f3060cba5c2b71dfc94905" prot="public">
+          <name>RTC_ALARM_YEARLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Yearly alarm </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Lists the valid alarm types. </para>        </briefdescription>
+        <detaileddescription>
+<para>This enumerates the valid alarm types. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="121" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="121" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___r_t_c_1gade3de07db143c411fd92a01558877f5d" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t rtc_action_t</definition>
+        <argsstring></argsstring>
+        <name>rtc_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines a RTC action. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="39" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Real Time Clock Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor">#ifndef<sp/>DEV_RTC_H_</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_RTC_H_</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_IOC_IDENT_CHAR<sp/>&apos;r&apos;</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39" refid="group___r_t_c_1gade3de07db143c411fd92a01558877f5d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref><sp/><ref refid="group___r_t_c_1gade3de07db143c411fd92a01558877f5d" kindref="member">rtc_action_t</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group___r_t_c_1ga10606f83fcd2315eb36b2ae3c03602d0" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="group___r_t_c_1gga10606f83fcd2315eb36b2ae3c03602d0a3818a99ab8ddd9d696ecc285a5faefc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga10606f83fcd2315eb36b2ae3c03602d0a3818a99ab8ddd9d696ecc285a5faefc9" kindref="member">RTC_CLKSRC_EXTERNAL_32768</ref><sp/>,</highlight></codeline>
+<codeline lineno="46" refid="group___r_t_c_1gga10606f83fcd2315eb36b2ae3c03602d0a665121a63cedc225f2865e70d5d16d2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga10606f83fcd2315eb36b2ae3c03602d0a665121a63cedc225f2865e70d5d16d2f" kindref="member">RTC_CLKSRC_INTERNAL_40000</ref><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}<sp/><ref refid="group___r_t_c_1ga10606f83fcd2315eb36b2ae3c03602d0" kindref="member">rtc_clock_t</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="group___r_t_c_1gad2e192ed9a33b6c005c2c19ccbd6a21b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>RTC_EVENT_ALARM,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>RTC_EVENT_COUNT</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}<sp/><ref refid="group___r_t_c_1gad2e192ed9a33b6c005c2c19ccbd6a21b" kindref="member">rtc_event_t</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="group___r_t_c_1gae2a9c3088277a56623c7d73f8e530702" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="62" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a675a78d2a535580b6ad2005f582cc931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a675a78d2a535580b6ad2005f582cc931" kindref="member">RTC_EVENT_COUNT_NONE</ref><sp/>,</highlight></codeline>
+<codeline lineno="63" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adb9bf49a1b0c5fe580038408a5f4f7c3" kindref="member">RTC_EVENT_COUNT_SECOND</ref><sp/>,</highlight></codeline>
+<codeline lineno="64" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adc0af148d93bba5ff96a7a4af9f99906" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702adc0af148d93bba5ff96a7a4af9f99906" kindref="member">RTC_EVENT_COUNT_MINUTE</ref><sp/>,</highlight></codeline>
+<codeline lineno="65" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a870fc262d71be6da443ff3b8f99af6ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a870fc262d71be6da443ff3b8f99af6ee" kindref="member">RTC_EVENT_COUNT_HOUR</ref><sp/>,</highlight></codeline>
+<codeline lineno="66" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a0de9a98b6ea51a595601127b0a478e5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a0de9a98b6ea51a595601127b0a478e5b" kindref="member">RTC_EVENT_COUNT_DAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="67" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702af35802cceffa6243c496a1e14ae4dfe1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702af35802cceffa6243c496a1e14ae4dfe1" kindref="member">RTC_EVENT_COUNT_WEEK</ref><sp/>,</highlight></codeline>
+<codeline lineno="68" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a249cf96b5a5ea7c8ddc8b2ef78c2d8bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702a249cf96b5a5ea7c8ddc8b2ef78c2d8bb" kindref="member">RTC_EVENT_COUNT_MONTH</ref><sp/>,</highlight></codeline>
+<codeline lineno="69" refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702ae764f4357ddc3122b7db17bd0583e41f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae2a9c3088277a56623c7d73f8e530702ae764f4357ddc3122b7db17bd0583e41f" kindref="member">RTC_EVENT_COUNT_YEAR</ref><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}<sp/><ref refid="group___r_t_c_1gae2a9c3088277a56623c7d73f8e530702" kindref="member">rtc_event_count_t</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="group___r_t_c_1ga70998fb17a899127e3b7544f053b89ba" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baab87734c1e7ad9cf552e31cc67fc52a49" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baab87734c1e7ad9cf552e31cc67fc52a49" kindref="member">RTC_DAY_SUNDAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="79" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa30f04ddc5d8a3c6e05bc3155abe1aa3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa30f04ddc5d8a3c6e05bc3155abe1aa3d" kindref="member">RTC_DAY_MONDAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="80" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa2099fb2efd535525aabed8f407d12637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa2099fb2efd535525aabed8f407d12637" kindref="member">RTC_DAY_TUESDAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="81" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa5197f6ade2f691e4dab5eb109430ce03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa5197f6ade2f691e4dab5eb109430ce03" kindref="member">RTC_DAY_WEDNESDAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="82" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa981074588073fbe08bda03c82a034ff8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa981074588073fbe08bda03c82a034ff8" kindref="member">RTC_DAY_THURSDAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="83" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa4d1f14b3b5c92aa6b25197a9fe952757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baa4d1f14b3b5c92aa6b25197a9fe952757" kindref="member">RTC_DAY_FRIDAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="84" refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baaa7ce740e53227212c77459208b90a7b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga70998fb17a899127e3b7544f053b89baaa7ce740e53227212c77459208b90a7b6" kindref="member">RTC_DAY_SATURDAY</ref><sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}<sp/><ref refid="group___r_t_c_1ga70998fb17a899127e3b7544f053b89ba" kindref="member">rtc_day_of_week_t</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="group___r_t_c_1ga1352508ef17e1a342ef93ec92e79960e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>RTC_MON_JAN<sp/>=<sp/>0<sp/>,</highlight></codeline>
+<codeline lineno="92" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea409d4e3fc743711dfa7e3e91dcb9a3af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea409d4e3fc743711dfa7e3e91dcb9a3af" kindref="member">RTC_MON_FEB</ref><sp/>,</highlight></codeline>
+<codeline lineno="93" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9381db16432bcd834586a2196d794c9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9381db16432bcd834586a2196d794c9f" kindref="member">RTC_MON_MAR</ref><sp/>,</highlight></codeline>
+<codeline lineno="94" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960eaefb702b562824230bbec3202ed9e39f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960eaefb702b562824230bbec3202ed9e39f1" kindref="member">RTC_MON_APR</ref><sp/>,</highlight></codeline>
+<codeline lineno="95" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9e35a5a301ade55ccbe76542b6dcd25c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9e35a5a301ade55ccbe76542b6dcd25c" kindref="member">RTC_MON_MAY</ref><sp/>,</highlight></codeline>
+<codeline lineno="96" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea0fac900a339c0f004fd9616b043c155e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea0fac900a339c0f004fd9616b043c155e" kindref="member">RTC_MON_JUN</ref><sp/>,</highlight></codeline>
+<codeline lineno="97" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960eac50d01cb94b0f9d39c7eb86cd730b13c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960eac50d01cb94b0f9d39c7eb86cd730b13c" kindref="member">RTC_MON_JUL</ref><sp/>,</highlight></codeline>
+<codeline lineno="98" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9707bc6c69fabfa5e1ef94610bf96e0d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9707bc6c69fabfa5e1ef94610bf96e0d" kindref="member">RTC_MON_AUG</ref><sp/>,</highlight></codeline>
+<codeline lineno="99" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9ebfd816c6aa35273259646c5acb572d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea9ebfd816c6aa35273259646c5acb572d" kindref="member">RTC_MON_SEP</ref><sp/>,</highlight></codeline>
+<codeline lineno="100" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea83b564a4e02f541a23b9e8ee875e3eb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea83b564a4e02f541a23b9e8ee875e3eb7" kindref="member">RTC_MON_OCT</ref><sp/>,</highlight></codeline>
+<codeline lineno="101" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea97b6158e3c4a6b47525edd457a3f046f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea97b6158e3c4a6b47525edd457a3f046f" kindref="member">RTC_MON_NOV</ref><sp/>,</highlight></codeline>
+<codeline lineno="102" refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea04e1a4c8171b0af9e5287442dc3ccd75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1gga1352508ef17e1a342ef93ec92e79960ea04e1a4c8171b0af9e5287442dc3ccd75" kindref="member">RTC_MON_DEC</ref><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}<sp/><ref refid="group___r_t_c_1ga1352508ef17e1a342ef93ec92e79960e" kindref="member">rtc_mon_t</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structrtc__time__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="111" refid="structrtc__time__t_1ac2155b3641bef6ff8c9ad672c2e30fdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">link_tm<sp/>time<sp/>;</highlight></codeline>
+<codeline lineno="112" refid="structrtc__time__t_1a9ba34c8bbd37c123a0ba77ac34fd6366" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>useconds<sp/>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>time_t;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>use_time_t;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="group___r_t_c_1gae65938264f8a116c77c92d7fab17ade2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="122" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a976059f900a12b9f02432ed0b6a28892" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a976059f900a12b9f02432ed0b6a28892" kindref="member">RTC_ALARM_ONCE</ref><sp/>,</highlight></codeline>
+<codeline lineno="123" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2abd4217b9c181fb80434b4b0e807af176" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2abd4217b9c181fb80434b4b0e807af176" kindref="member">RTC_ALARM_MINUTE</ref><sp/>,</highlight></codeline>
+<codeline lineno="124" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2ae81ff75817eaa48f57cc3ce6b0b63c7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2ae81ff75817eaa48f57cc3ce6b0b63c7f" kindref="member">RTC_ALARM_HOURLY</ref><sp/>,</highlight></codeline>
+<codeline lineno="125" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a378147facd1e8ab25c0387c6d0440d16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a378147facd1e8ab25c0387c6d0440d16" kindref="member">RTC_ALARM_DAILY</ref><sp/>,</highlight></codeline>
+<codeline lineno="126" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a6e6d0960e73f262cbd236e296491c850" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a6e6d0960e73f262cbd236e296491c850" kindref="member">RTC_ALARM_WEEKLY</ref><sp/>,</highlight></codeline>
+<codeline lineno="127" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a34d8089b1d93ba817b04bcfa61426236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a34d8089b1d93ba817b04bcfa61426236" kindref="member">RTC_ALARM_MONTHLY</ref><sp/>,</highlight></codeline>
+<codeline lineno="128" refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a1457b47302f3060cba5c2b71dfc94905" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___r_t_c_1ggae65938264f8a116c77c92d7fab17ade2a1457b47302f3060cba5c2b71dfc94905" kindref="member">RTC_ALARM_YEARLY</ref><sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}<sp/><ref refid="group___r_t_c_1gae65938264f8a116c77c92d7fab17ade2" kindref="member">rtc_alarm_type_t</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="structrtc__alarm__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="138" refid="structrtc__alarm__t_1aabc689ef7dc89b6ef7d6339ca8dfbe4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structrtc__time__t" kindref="compound">rtc_time_t</ref><sp/>time<sp/>;</highlight></codeline>
+<codeline lineno="139" refid="structrtc__alarm__t_1ae9eb1ee28fcfb5bfc5561337827cf644" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>type<sp/>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}<sp/><ref refid="structrtc__alarm__t" kindref="compound">rtc_alarm_t</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structrtc__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="149" refid="structrtc__attr__t_1a392313f88f4010f2d75808003b6e781f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="150" refid="structrtc__attr__t_1a926c6ece8fab50b950daf68c90c3d0de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>clock<sp/>;</highlight></codeline>
+<codeline lineno="151" refid="structrtc__attr__t_1a911c7406ee51a5d5a0e904530c69710d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>freq<sp/>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/><ref refid="structrtc__attr__t" kindref="compound">rtc_attr_t</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_GETATTR<sp/>_IOCTLR(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>rtc_attr_t)</highlight></codeline>
+<codeline lineno="155"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_SETATTR<sp/>_IOCTLW(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>rtc_attr_t)</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_SETACTION<sp/>_IOCTLW(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>rtc_action_t)</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="172" refid="group___r_t_c_1ga4e0edc05fb0c989c5acf8b4927ae5d6d" refkind="member"><highlight class="preprocessor">#define<sp/>I_RTC_SETALARM<sp/>_IOCTLW(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>0,<sp/>rtc_alarm_t)</highlight></codeline>
+<codeline lineno="173"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_SET_ALARM<sp/>I_RTC_SETALARM</highlight></codeline>
+<codeline lineno="174"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="188" refid="group___r_t_c_1gac0187ffba6245e88b438e7c893c39b37" refkind="member"><highlight class="preprocessor">#define<sp/>I_RTC_GETALARM<sp/>_IOCTLR(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>1,<sp/>rtc_alarm_t)</highlight></codeline>
+<codeline lineno="189"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_GET_ALARM<sp/>I_RTC_GETALARM</highlight></codeline>
+<codeline lineno="190"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="group___r_t_c_1ga04d1d524a9262ad0fe5e91702c762a7a" refkind="member"><highlight class="preprocessor">#define<sp/>I_RTC_DISABLEALARM<sp/>_IOCTL(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>2)</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_DISABLE_ALARM<sp/>I_RTC_DISABLEALARM</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="215" refid="group___r_t_c_1ga3d22fa73857a304762f6776fae261078" refkind="member"><highlight class="preprocessor">#define<sp/>I_RTC_SET<sp/>_IOCTLW(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>3,<sp/>rtc_time_t)</highlight></codeline>
+<codeline lineno="216"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="226" refid="group___r_t_c_1gaeaf4abd917cc5d7b03ff96b2f563ed8c" refkind="member"><highlight class="preprocessor">#define<sp/>I_RTC_GET<sp/>_IOCTLR(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>4,<sp/>rtc_time_t)</highlight></codeline>
+<codeline lineno="227"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238" refid="group___r_t_c_1gac7ca674f40bdc951efb4355bc535655f" refkind="member"><highlight class="preprocessor">#define<sp/>I_RTC_SETCOUNTEVENT<sp/>_IOCTL(RTC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>7)</highlight></codeline>
+<codeline lineno="239"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_SET_COUNT_EVENT<sp/>I_RTC_SETCOUNTEVENT</highlight></codeline>
+<codeline lineno="240"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_RTC_TOTAL<sp/>8</highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="244"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="246"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_RTC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h"/>
+  </compounddef>
+</doxygen>

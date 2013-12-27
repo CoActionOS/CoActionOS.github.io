@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___p_t_h_r_e_a_d___m_u_t_e_x" kind="group">
+    <compoundname>PTHREAD_MUTEX</compoundname>
+    <title>Mutexes</title>
+    <innerfile refid="pthread__mutex_8c">pthread_mutex.c</innerfile>
+    <innerfile refid="pthread__mutexattr_8c">pthread_mutexattr.c</innerfile>
+    <innerfile refid="pthread__mutexattr__init_8c">pthread_mutexattr_init.c</innerfile>
+    <innerclass refid="structpriv__mutex__trylock__t" prot="public">priv_mutex_trylock_t</innerclass>
+    <innerclass refid="structpriv__mutex__unlock__t" prot="public">priv_mutex_unlock_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga72223b1b2fe8cae753f4b22264c74e9e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int check_initialized</definition>
+        <argsstring>(const pthread_mutex_t *mutex)</argsstring>
+        <name>check_initialized</name>
+        <param>
+          <type>const pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="28" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="436" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa44eb2373fee6f37bd90578594fc22b7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mutex_trylock</definition>
+        <argsstring>(pthread_mutex_t *mutex, bool trylock, const struct timespec *abs_timeout)</argsstring>
+        <name>mutex_trylock</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>trylock</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abs_timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="228" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga33fc38e8ecf1150d74a74a79a4989700" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_mutex_trylock</definition>
+        <argsstring>(priv_mutex_trylock_t *args)</argsstring>
+        <name>priv_mutex_trylock</name>
+        <param>
+          <type>priv_mutex_trylock_t *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="294" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa3a86fb781203b1086228e4f55ef0f37" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_mutex_unlock</definition>
+        <argsstring>(priv_mutex_unlock_t *args)</argsstring>
+        <name>priv_mutex_unlock</name>
+        <param>
+          <type>priv_mutex_unlock_t *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="43" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="315" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga7454d249ed94ad5d5e57ba1529d7a7f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_init</definition>
+        <argsstring>(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr)</argsstring>
+        <name>pthread_mutex_init</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>const pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes <emphasis>mutex</emphasis> with <emphasis>attr</emphasis>. <simplesect kind="return"><para>Zero on success or -1 with <emphasis>errno</emphasis> (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: mutex is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="50" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="50" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga12809c44718c21544ceb280dc1a53573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_lock</definition>
+        <argsstring>(pthread_mutex_t *mutex)</argsstring>
+        <name>pthread_mutex_lock</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function locks <emphasis>mutex</emphasis>. If <emphasis>mutex</emphasis> cannot be locked immediately, the thread is blocked until <emphasis>mutex</emphasis> is available.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: mutex is NULL</para></listitem><listitem><para>EDEADLK: the caller already holds the mutex</para></listitem><listitem><para>ETIMEDOUT: <emphasis>abstime</emphasis> passed before <emphasis>cond</emphasis> arrived </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="98" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="98" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga27da386211db1a7e9a3b2a0db4d22144" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_trylock</definition>
+        <argsstring>(pthread_mutex_t *mutex)</argsstring>
+        <name>pthread_mutex_trylock</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function tries to lock <emphasis>mutex</emphasis>. If <emphasis>mutex</emphasis> cannot be locked immediately, the function returns without the lock.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>mutex</emphasis> is NULL</para></listitem><listitem><para>EBUSY: <emphasis>mutex</emphasis> is locked by another thread </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="135" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="135" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga96184290ffb60e04c53a52869cf960a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_unlock</definition>
+        <argsstring>(pthread_mutex_t *mutex)</argsstring>
+        <name>pthread_mutex_unlock</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function unlocks <emphasis>mutex</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>mutex</emphasis> is NULL</para></listitem><listitem><para>EACCES: the caller does not have a lock on <emphasis>mutex</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="173" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="173" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga3cf620ff3a40af11d79cf28901dc55e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_destroy</definition>
+        <argsstring>(pthread_mutex_t *mutex)</argsstring>
+        <name>pthread_mutex_destroy</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function destroys <emphasis>mutex</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>mutex</emphasis> is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="210" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="210" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa0600641a04763d6393865951b3e4f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_force_unlock</definition>
+        <argsstring>(pthread_mutex_t *mutex)</argsstring>
+        <name>pthread_mutex_force_unlock</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="280" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="280" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa39e73f8f3f0b7a196d81c4c85791ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_timedlock</definition>
+        <argsstring>(pthread_mutex_t *mutex, const struct timespec *abs_timeout)</argsstring>
+        <name>pthread_mutex_timedlock</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abs_timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling thread to lock <emphasis>mutex</emphasis>. It <emphasis>mutex</emphasis> cannot be locked, the thread is block until either the mutex is locked or <emphasis>abs_timeout</emphasis> is greater than <emphasis>CLOCK_REALTIME</emphasis>.</para><para>Example: <programlisting><codeline><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timespec<sp/>abstime;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___t_i_m_e_1ga570b5d2b9e8b421674c8ba40199e3f51" kindref="member">clock_gettime</ref>(CLOCK_REALTIME,<sp/>&amp;abstime);</highlight></codeline>
+<codeline><highlight class="normal">abstime.tv_sec<sp/>+=<sp/>5;<sp/></highlight><highlight class="comment">//time<sp/>out<sp/>after<sp/>five<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa39e73f8f3f0b7a196d81c4c85791ad6" kindref="member">pthread_mutex_timedlock</ref>(mutex,<sp/>&amp;abstime)<sp/>==<sp/>-1<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>errno<sp/>==<sp/>ETIMEDOUT<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Timedout</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: mutex or abs_timeout is NULL</para></listitem><listitem><para>EDEADLK: the caller already holds the mutex</para></listitem><listitem><para>ETIMEDOUT: <emphasis>abstime</emphasis> passed before <emphasis>cond</emphasis> arrived </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="367" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="367" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga0abf118c0a2183ed89e3248e86193f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_getprioceiling</definition>
+        <argsstring>(pthread_mutex_t *mutex, int *prioceiling)</argsstring>
+        <name>pthread_mutex_getprioceiling</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>prioceiling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the mutex priority ceiling from <emphasis>mutex</emphasis> and stores it in <emphasis>prioceiling</emphasis>. <simplesect kind="return"><para>Zero on success or -1 with <emphasis>errno</emphasis> (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: mutex or prioceiling is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="407" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="407" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga769668dc6bde229374a5d30b9d2bc185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutex_setprioceiling</definition>
+        <argsstring>(pthread_mutex_t *mutex, int prioceiling, int *old_ceiling)</argsstring>
+        <name>pthread_mutex_setprioceiling</name>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prioceiling</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>old_ceiling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets <emphasis>mutex</emphasis> priority ceiling to prioceiling. If <emphasis>old_ceiling</emphasis> is not NULL, the old ceiling value is stored there.</para><para><simplesect kind="return"><para>Zero on success or -1 with <emphasis>errno</emphasis> (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: mutex is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" line="422" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c" bodystart="422" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa394b0b9cef3e094442addce172d0809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_check_initialized</definition>
+        <argsstring>(const pthread_mutexattr_t *attr)</argsstring>
+        <name>pthread_mutexattr_check_initialized</name>
+        <param>
+          <type>const pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="20" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c" bodystart="60" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaa3e933279a6bea662232701ba134d0bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_getprioceiling</definition>
+        <argsstring>(const pthread_mutexattr_t *attr, int *prioceiling)</argsstring>
+        <name>pthread_mutexattr_getprioceiling</name>
+        <param>
+          <type>const pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>prioceiling</declname>
+          <briefdescription><para>Destination pointer (cannot be NULL) </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the priority ceiling from <emphasis>attr</emphasis> and stores it in <emphasis>prioceiling</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga5e833d8dae2a5be4209fb92b196c9138" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_setprioceiling</definition>
+        <argsstring>(pthread_mutexattr_t *attr, int prio_ceiling)</argsstring>
+        <name>pthread_mutexattr_setprioceiling</name>
+        <param>
+          <type>pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prio_ceiling</declname>
+          <briefdescription><para>The priority ceiling to set </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the priority ceiling in <emphasis>attr</emphasis> to <emphasis>prio_ceiling</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="44" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="44" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga200fcbc9157e6183376f83bc0e5937dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_getprotocol</definition>
+        <argsstring>(const pthread_mutexattr_t *attr, int *protocol)</argsstring>
+        <name>pthread_mutexattr_getprotocol</name>
+        <param>
+          <type>const pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>protocol</declname>
+          <briefdescription><para>Pointer to the destination protocol </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the protocol from <emphasis>attr</emphasis> and stores it in <emphasis>protocol</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="60" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gae7e6584c2b2cf9b9ff061115d2342bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_setprotocol</definition>
+        <argsstring>(pthread_mutexattr_t *attr, int protocol)</argsstring>
+        <name>pthread_mutexattr_setprotocol</name>
+        <param>
+          <type>pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>protocol</declname>
+          <briefdescription><para>The new protocol </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets protocol in <emphasis>attr</emphasis> to <emphasis>protocol</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="75" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="75" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaf8d7f85a0d52d3560db6d36cf9b44ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_getpshared</definition>
+        <argsstring>(const pthread_mutexattr_t *attr, int *pshared)</argsstring>
+        <name>pthread_mutexattr_getpshared</name>
+        <param>
+          <type>const pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pshared</declname>
+          <briefdescription><para>The pointer to the destination pshared value </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the process shared value from <emphasis>attr</emphasis> and stores it in <emphasis>pshared</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga73bd8697b91e0ee9a63c30052ac9f72f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_setpshared</definition>
+        <argsstring>(pthread_mutexattr_t *attr, int pshared)</argsstring>
+        <name>pthread_mutexattr_setpshared</name>
+        <param>
+          <type>pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pshared</declname>
+          <briefdescription><para>The new pshared value (non-zero to share with other processes) </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the process shared value in <emphasis>attr</emphasis> to <emphasis>pshared</emphasis>. A non-zero <emphasis>pshared</emphasis> means the mutex is shared.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="118" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="118" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga7f064a4db96a009a5a9a7c7e5cc03599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_gettype</definition>
+        <argsstring>(const pthread_mutexattr_t *attr, int *type)</argsstring>
+        <name>pthread_mutexattr_gettype</name>
+        <param>
+          <type>const pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>type</declname>
+          <briefdescription><para>The destination pointer for the type </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the type from <emphasis>attr</emphasis> and stores it in <emphasis>type</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="134" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="134" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga8387c80e660e9426f801ac0217ecfae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_settype</definition>
+        <argsstring>(pthread_mutexattr_t *attr, int type)</argsstring>
+        <name>pthread_mutexattr_settype</name>
+        <param>
+          <type>pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Mutex Thread Attribute Object </para></briefdescription>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+          <briefdescription><para>The new type either PTHREAD_MUTEX_NORMAL or PTHREAD_MUTEX_RECURSIVE </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the type in <emphasis>attr</emphasis> to <emphasis>type</emphasis>. The <emphasis>type</emphasis> value should be on of:<itemizedlist>
+<listitem><para>PTHREAD_MUTEX_NORMAL</para></listitem><listitem><para>PTHREAD_MUTEX_RECURSIVE</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> does not refer to an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" line="156" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c" bodystart="156" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1gaf98f6b6c483077a39d1400b1de1577b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_init</definition>
+        <argsstring>(pthread_mutexattr_t *attr)</argsstring>
+        <name>pthread_mutexattr_init</name>
+        <param>
+          <type>pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes <emphasis>attr</emphasis> with default values.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000004"><xreftitle>Todo</xreftitle><xrefdescription><para>This should be a compile time define </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c" bodystart="29" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___m_u_t_e_x_1ga2321aabf58224b06021185708d0f9658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_mutexattr_destroy</definition>
+        <argsstring>(pthread_mutexattr_t *attr)</argsstring>
+        <name>pthread_mutexattr_destroy</name>
+        <param>
+          <type>pthread_mutexattr_t *</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function destroys <emphasis>attr</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>attr</emphasis> is not an initialized mutex attribute object </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c" line="48" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c" bodystart="48" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

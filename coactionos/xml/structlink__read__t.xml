@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__read__t" kind="struct" prot="public">
+    <compoundname>link_read_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__read__t_1a74e6302b377be38c463aa0fb5099a719" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_read_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="314" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__read__t_1a45fc814f1b7143e21890c77ea2a29153" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_read_t::fildes</definition>
+        <argsstring></argsstring>
+        <name>fildes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="316" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__read__t_1a2573b0ed6ce1011e8192cd6682b21d89" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_read_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="317" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__read__t_1a34672c68115dd291bee4f58b3b2f510a" prot="public" static="no" mutable="no">
+        <type>union link_read_t::@4</type>
+        <definition>union link_read_t::@4 link_read_t::@5</definition>
+        <argsstring></argsstring>
+        <name>@5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="318" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__read__t_1a0d2d2d659a30fb3269309c08c86d096e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_read_t::nbyte</definition>
+        <argsstring></argsstring>
+        <name>nbyte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="319" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="356">
+        <label>link_read_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="313" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="313" bodyend="320"/>
+    <listofallmembers>
+      <member refid="structlink__read__t_1a2573b0ed6ce1011e8192cd6682b21d89" prot="public" virt="non-virtual"><scope>link_read_t</scope><name>addr</name></member>
+      <member refid="structlink__read__t_1a74e6302b377be38c463aa0fb5099a719" prot="public" virt="non-virtual"><scope>link_read_t</scope><name>cmd</name></member>
+      <member refid="structlink__read__t_1a45fc814f1b7143e21890c77ea2a29153" prot="public" virt="non-virtual"><scope>link_read_t</scope><name>fildes</name></member>
+      <member refid="structlink__read__t_1a0d2d2d659a30fb3269309c08c86d096e" prot="public" virt="non-virtual"><scope>link_read_t</scope><name>nbyte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

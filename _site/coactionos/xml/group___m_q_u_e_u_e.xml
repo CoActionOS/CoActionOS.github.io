@@ -1,0 +1,624 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___m_q_u_e_u_e" kind="group">
+    <compoundname>MQUEUE</compoundname>
+    <title>Message Queue (mqueue)</title>
+    <innerfile refid="mqueue_8c">mqueue.c</innerfile>
+    <innerclass refid="structmessage" prot="public">message</innerclass>
+    <innerclass refid="structmq__t" prot="public">mq_t</innerclass>
+    <innerclass refid="structmq__list__t" prot="public">mq_list_t</innerclass>
+    <innerclass refid="structmsg__file__hdr__t" prot="public">msg_file_hdr_t</innerclass>
+    <innerclass refid="structpriv__block__on__mq__t" prot="public">priv_block_on_mq_t</innerclass>
+    <innerclass refid="structpriv__send__receive__t" prot="public">priv_send_receive_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___m_q_u_e_u_e_1ga29f73d17c24eb8b7af3cfff8bb8734ba" prot="public" static="yes" mutable="no">
+        <type>mq_list_t *</type>
+        <definition>mq_list_t* mq_first</definition>
+        <argsstring></argsstring>
+        <name>mq_first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="121" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga789cf4006fe11b1aaf1677f6e0c2285b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mq_t *</type>
+        <definition>static mq_t* mq_find_named</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>mq_find_named</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="123" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="123" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga8194470592be8087c311d6853cc7f48e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mq_t *</type>
+        <definition>static mq_t* mq_find_free</definition>
+        <argsstring>(void)</argsstring>
+        <name>mq_find_free</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="135" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="135" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga74e1fddcfdc424d1fd9b7caa0e520361" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void check_for_blocked_task</definition>
+        <argsstring>(void *block)</argsstring>
+        <name>check_for_blocked_task</name>
+        <param>
+          <type>void *</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="169" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="729" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga97ec8835b85a0c368dff1c1b3547b6d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int block_on_mq</definition>
+        <argsstring>(void *block, const struct timespec *abs_timeout)</argsstring>
+        <name>block_on_mq</name>
+        <param>
+          <type>void *</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abs_timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="170" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="710" bodyend="720"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gabbc27b8c69f6b6788594ff038e3c7e24" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_block_on_mq</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_block_on_mq</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="176" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="705" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gab5d75278c1591c77ddba46fe8d96459b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_receive</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_receive</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="185" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="458" bodyend="515"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gaa77c31d27a06094eca56dc8213118cb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_wake_blocked</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_wake_blocked</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="187" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="722" bodyend="727"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga5a55ce03d8466a53a36601aaca9ee328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_getattr</definition>
+        <argsstring>(mqd_t mqdes, struct mq_attr *mqstat)</argsstring>
+        <name>mq_getattr</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structmq__attr" kindref="compound">mq_attr</ref> *</type>
+          <declname>mqstat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the message queue attributes and stores them at <emphasis>mqstat</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>mqdes</emphasis> is not a valid message queue descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="195" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="195" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga83b7aa93cb6f1f5a4fd938baea5579a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_setattr</definition>
+        <argsstring>(mqd_t mqdes, const struct mq_attr *mqstat, struct mq_attr *omqstat)</argsstring>
+        <name>mq_setattr</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+        </param>
+        <param>
+          <type>const struct <ref refid="structmq__attr" kindref="compound">mq_attr</ref> *</type>
+          <declname>mqstat</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="structmq__attr" kindref="compound">mq_attr</ref> *</type>
+          <declname>omqstat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="227" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gaf5d8bf423701bd1783849119511381a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>mqd_t</type>
+        <definition>mqd_t mq_open</definition>
+        <argsstring>(const char *name, int oflag,...)</argsstring>
+        <name>mq_open</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <briefdescription><para>the full path to the message queue </para></briefdescription>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oflag</declname>
+          <briefdescription><para>the flags used for opening the message queue </para></briefdescription>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function opens or creates a new message queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the message queue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oflag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags to use when opening (O_CREAT, O_EXCL, O_RDWR, O_RDONLY) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The access mode settings for the queue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message queue attributes</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+If using O_CREAT, the following prototype is used: <programlisting><codeline><highlight class="normal">mqd_t<sp/><ref refid="group___m_q_u_e_u_e_1gaf5d8bf423701bd1783849119511381a5" kindref="member">mq_open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>oflag,<sp/>mode_t<sp/>mode,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmq__attr" kindref="compound">mq_attr</ref><sp/>*<sp/>attr);</highlight></codeline>
+</programlisting></para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: <emphasis>name</emphasis> length is greater than NAME_MAX</para></listitem><listitem><para>EEXIST: O_CREAT and O_EXCL are set in <emphasis>oflag</emphasis> but the queue already exists</para></listitem><listitem><para>ENOENT: O_CREAT is not set in <emphasis>oflag</emphasis> and the queue does not exist</para></listitem><listitem><para>ENOMEM: not enough memory for the queue</para></listitem><listitem><para>EACCES: permission to create <emphasis>name</emphasis> queue is denied</para></listitem><listitem><para>EINVAL: O_CREAT is set and <emphasis>attr</emphasis> is not null but <emphasis>mq_maxmsg</emphasis> or <emphasis>mq_msgsize</emphasis> is less than or equal to zero </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="255" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="255" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga3fbd3906296be63451c64d69be2bc371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_close</definition>
+        <argsstring>(mqd_t mqdes)</argsstring>
+        <name>mq_close</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+          <briefdescription><para>the message queue handler </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function closes the message queue.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>mqdes</emphasis> is not a valid descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="365" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="365" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gaccd8c5ee36e60d990963e1d544ef4140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_unlink</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>mq_unlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <briefdescription><para>the full path to the message queue </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function deletes a message queue if no other processes have it open. If another process has the queue open, the queue will be deleted when said process closes the queue using <ref refid="group___m_q_u_e_u_e_1ga3fbd3906296be63451c64d69be2bc371" kindref="member">mq_close()</ref>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: length of <emphasis>name</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>EACCES: write permission to <emphasis>name</emphasis> is denied</para></listitem><listitem><para>ENOENT: the queue does not exist</para></listitem><listitem><para>EIO: I/O error while deleting the queue </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="401" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="401" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga5eadbb82e0b9702d77f384a27827b334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_notify</definition>
+        <argsstring>(mqd_t mqdes, const struct sigevent *notification)</argsstring>
+        <name>mq_notify</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+        </param>
+        <param>
+          <type>const struct sigevent *</type>
+          <declname>notification</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: feature is not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="432" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="432" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga98eea38b09dabab5144afcaf109c82cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t mq_receive</definition>
+        <argsstring>(mqd_t mqdes, char *msg_ptr, size_t msg_len, unsigned *msg_prio)</argsstring>
+        <name>mq_receive</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+          <briefdescription><para>the message queue handle </para></briefdescription>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>msg_ptr</declname>
+          <briefdescription><para>a pointer to the destination memory for the message </para></briefdescription>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>msg_len</declname>
+          <briefdescription><para>the number of bytes available in <emphasis>msg_ptr</emphasis> (must be at least the size of the message size) </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>msg_prio</declname>
+          <briefdescription><para>if not NULL, the priority of the received message is stored here </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function removes a message from the queue and stores the message at <emphasis>msg_ptr</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EAGAIN: no message on the queue and O_NONBLOCK is set in the descriptor flags</para></listitem><listitem><para>EIO: I/O error while accessing the queue</para></listitem><listitem><para>EMSGSIZE: <emphasis>msg_len</emphasis> is less than the message size of the queue</para></listitem><listitem><para>EBADF: <emphasis>mqdes</emphasis> is not a valid message queue descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="449" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="449" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gaabb697e0e23bb8c4430091c5e1b58eaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ssize_t</type>
+        <definition>ssize_t mq_timedreceive</definition>
+        <argsstring>(mqd_t mqdes, char *msg_ptr, size_t msg_len, unsigned *msg_prio, const struct timespec *abs_timeout)</argsstring>
+        <name>mq_timedreceive</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga98eea38b09dabab5144afcaf109c82cd" kindref="member">mq_receive()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>msg_ptr</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga98eea38b09dabab5144afcaf109c82cd" kindref="member">mq_receive()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>msg_len</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga98eea38b09dabab5144afcaf109c82cd" kindref="member">mq_receive()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned *</type>
+          <declname>msg_prio</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga98eea38b09dabab5144afcaf109c82cd" kindref="member">mq_receive()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abs_timeout</declname>
+          <briefdescription><para>the absolute timeout value </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function removes a message from the queue and stores the message at <emphasis>msg_ptr</emphasis>. If no messages are available, the thread is blocked until either a messsage is available or the value of <emphasis>CLOCK_REALTIME</emphasis> is less then <emphasis>abs_timeout</emphasis>.</para><para>If O_NONBLOCK is set in <emphasis>mqdes</emphasis>, the function returns immediately whether a message is ready or not.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EAGAIN: no message on the queue and O_NONBLOCK is set in the descriptor flags</para></listitem><listitem><para>EIO: I/O error while accessing the queue</para></listitem><listitem><para>ETIMEDOUT: <emphasis>abs_timeout</emphasis> was exceeded by <emphasis>CLOCK_REALTIME</emphasis> </para></listitem><listitem><para>EMSGSIZE: <emphasis>msg_len</emphasis> is less than the message size of the queue</para></listitem><listitem><para>EBADF: <emphasis>mqdes</emphasis> is not a valid message queue descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="532" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="532" bodyend="581"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga753177f77f6eec2a80b57e8a68b36bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_send</definition>
+        <argsstring>(mqd_t mqdes, const char *msg_ptr, size_t msg_len, unsigned msg_prio)</argsstring>
+        <name>mq_send</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+          <briefdescription><para>the message queue handle </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg_ptr</declname>
+          <briefdescription><para>a pointer to the message to be sent </para></briefdescription>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>msg_len</declname>
+          <briefdescription><para>the message size (must be less than or equal to <emphasis>mq_msgsize</emphasis> associated with <emphasis>mqdes</emphasis> </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>msg_prio</declname>
+          <briefdescription><para>the priority of the message (see MQ_PRIO_MAX) </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sends a message pointed to by <emphasis>msg_ptr</emphasis>. If there is no room in the queue (and O_NONBLOCK is not set in <emphasis>mqdes</emphasis>), the thread is blocked until a message is removed from the queue.</para><para>If O_NONBLOCK is set in <emphasis>mqdes</emphasis>, the function returns immediately whether a message is sent or not.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EAGAIN: no room on the queue and O_NONBLOCK is set in the descriptor flags</para></listitem><listitem><para>EIO: I/O error while accessing the queue</para></listitem><listitem><para>EBADF: <emphasis>mqdes</emphasis> is not a valid message queue descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="596" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="596" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1ga29533bc9461bd2ad5e4bc3e285cf5c7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_send</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_send</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="604" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="604" bodyend="630"/>
+      </memberdef>
+      <memberdef kind="function" id="group___m_q_u_e_u_e_1gae456506b982aed3a6e621ed74c25e1f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mq_timedsend</definition>
+        <argsstring>(mqd_t mqdes, const char *msg_ptr, size_t msg_len, unsigned msg_prio, const struct timespec *abs_timeout)</argsstring>
+        <name>mq_timedsend</name>
+        <param>
+          <type>mqd_t</type>
+          <declname>mqdes</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga753177f77f6eec2a80b57e8a68b36bed" kindref="member">mq_send()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg_ptr</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga753177f77f6eec2a80b57e8a68b36bed" kindref="member">mq_send()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>msg_len</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga753177f77f6eec2a80b57e8a68b36bed" kindref="member">mq_send()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>msg_prio</declname>
+          <briefdescription><para>see <ref refid="group___m_q_u_e_u_e_1ga753177f77f6eec2a80b57e8a68b36bed" kindref="member">mq_send()</ref> </para></briefdescription>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abs_timeout</declname>
+          <briefdescription><para>the absolute timeout value </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sends a message pointed to by <emphasis>msg_ptr</emphasis>. If there is no room in the queue (and O_NONBLOCK is not set in <emphasis>mqdes</emphasis>), the thread is blocked until a message is removed from the queue or until the value of <emphasis>CLOCK_REALTIME</emphasis> exceeds <emphasis>abs_timeout</emphasis>.</para><para>If O_NONBLOCK is set in <emphasis>mqdes</emphasis>, the function returns immediately whether a message is sent or not.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EAGAIN: no message on the queue and O_NONBLOCK is set in the descriptor flags</para></listitem><listitem><para>EIO: I/O error while accessing the queue</para></listitem><listitem><para>ETIMEDOUT: <emphasis>abs_timeout</emphasis> was exceeded by <emphasis>CLOCK_REALTIME</emphasis> </para></listitem><listitem><para>EBADF: <emphasis>mqdes</emphasis> is not a valid message queue descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="647" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="647" bodyend="703"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1gaa127d4df0d635786ed7252e5bd45790c" prot="public" static="no">
+        <name>MSG_RD_ONLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="89" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1ga329e7b501f6e037f61a92eb8b65d0507" prot="public" static="no">
+        <name>MSG_RDWR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="90" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1gab6e3845dcf8fa8e5a184dbe4331c2e57" prot="public" static="no">
+        <name>MSG_NONBLOCK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="91" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1gabc96c8a6e8b29d136c5d47e8f9004d16" prot="public" static="no">
+        <name>MSG_FLAGS_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="92" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1ga45397b37747078f30cb0d3f188cde816" prot="public" static="no">
+        <name>MSG_FILE_HDR_SIGNATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="94" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1gaa463fcdc5a8f827ce26a305b3b4e5070" prot="public" static="no">
+        <name>MSG_FILE_HDR_NOT_SIGNATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="95" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___m_q_u_e_u_e_1ga164dfbbc66c8ca94a8485852fcb87b37" prot="public" static="no">
+        <name>GET_MQ_PTR</name>
+        <param><defname>mqdes</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="161" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This interface allows processes to share data by sending and receiving messages.</para><para>Here is an example of how to create a new message queue and put a message in the new queue:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;mqueue.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>create_queue_and_send_msg(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mqd_t<sp/>mdes;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmq__attr" kindref="compound">mq_attr</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>msg[32];</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr.mq_maxmsg<sp/>=<sp/>4;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr.mq_msgsize<sp/>=<sp/>32;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mdes<sp/>=<sp/><ref refid="group___m_q_u_e_u_e_1gaf5d8bf423701bd1783849119511381a5" kindref="member">mq_open</ref>(</highlight><highlight class="stringliteral">&quot;/path/to/queue&quot;</highlight><highlight class="normal">,<sp/>O_CREAT|O_EXCL|O_RDWR,<sp/>0666,<sp/>&amp;attr);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>mdes<sp/>==<sp/>(mqd_t)-1<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>create<sp/>queue&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//now<sp/>send<sp/>a<sp/>message<sp/>in<sp/>the<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>strcpy(msg,<sp/></highlight><highlight class="stringliteral">&quot;this<sp/>is<sp/>the<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___m_q_u_e_u_e_1ga753177f77f6eec2a80b57e8a68b36bed" kindref="member">mq_send</ref>(mdes,<sp/>msg,<sp/>strlen(msg),<sp/>0)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>send<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para>Another process can read the message in the queue my using the following code:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;mqueue.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>read_msg(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mqd_t<sp/>mdes;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>msg[32];</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>msg_prio;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>mdes<sp/>=<sp/><ref refid="group___m_q_u_e_u_e_1gaf5d8bf423701bd1783849119511381a5" kindref="member">mq_open</ref>(</highlight><highlight class="stringliteral">&quot;/path/to/queue&quot;</highlight><highlight class="normal">,<sp/>O_RDWR);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>mdes<sp/>==<sp/>(mqd_t)-1<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>create<sp/>queue&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//now<sp/>send<sp/>a<sp/>message<sp/>in<sp/>the<sp/>queue</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___m_q_u_e_u_e_1ga98eea38b09dabab5144afcaf109c82cd" kindref="member">mq_receive</ref>(mdes,<sp/>msg,<sp/>strlen(msg),<sp/>&amp;msg_prio)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>send<sp/>message&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;received:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>msg);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

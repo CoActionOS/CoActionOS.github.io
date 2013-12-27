@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__fstat__t" kind="struct" prot="public">
+    <compoundname>link_fstat_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__fstat__t_1a763369a5e8656b0f0cd10988338c8ae1" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_fstat_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="354" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__fstat__t_1a4e9e8d5cccec1b37ac13734690e3c100" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_fstat_t::fildes</definition>
+        <argsstring></argsstring>
+        <name>fildes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="355" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="336">
+        <label>link_fstat_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="353" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="353" bodyend="356"/>
+    <listofallmembers>
+      <member refid="structlink__fstat__t_1a763369a5e8656b0f0cd10988338c8ae1" prot="public" virt="non-virtual"><scope>link_fstat_t</scope><name>cmd</name></member>
+      <member refid="structlink__fstat__t_1a4e9e8d5cccec1b37ac13734690e3c100" prot="public" virt="non-virtual"><scope>link_fstat_t</scope><name>fildes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

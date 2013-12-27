@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="usbfifo_8h" kind="file">
+    <compoundname>usbfifo.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">dev/ioctl.h</includes>
+    <includes refid="usb_8h" local="yes">dev/usb.h</includes>
+    <includes refid="device_8h" local="yes">device.h</includes>
+    <includes refid="fifo_8h" local="yes">fifo.h</includes>
+    <includes refid="types_8h" local="yes">hwpl/types.h</includes>
+    <incdepgraph>
+      <node id="1693">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="1694">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1689">
+        <label>dev/ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1688">
+        <label>stdint.h</label>
+      </node>
+      <node id="1687">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h</label>
+        <link refid="usbfifo.h"/>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1690" relation="include">
+        </childnode>
+        <childnode refid="1692" relation="include">
+        </childnode>
+        <childnode refid="1697" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+      </node>
+      <node id="1690">
+        <label>dev/usb.h</label>
+        <link refid="usb_8h"/>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+      </node>
+      <node id="1691">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="1697">
+        <label>fifo.h</label>
+        <link refid="fifo_8h"/>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+      </node>
+      <node id="1692">
+        <label>device.h</label>
+        <link refid="device_8h_source"/>
+        <childnode refid="1693" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1695" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+        <childnode refid="1696" relation="include">
+        </childnode>
+      </node>
+      <node id="1695">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1694" relation="include">
+        </childnode>
+      </node>
+      <node id="1696">
+        <label>dev/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="1694" relation="include">
+        </childnode>
+        <childnode refid="1688" relation="include">
+        </childnode>
+        <childnode refid="1689" relation="include">
+        </childnode>
+        <childnode refid="1691" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structusbfifo__cfg__t" prot="public">usbfifo_cfg_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_y_s___u_a_r_t_f_i_f_o_1ga4db272ec6c5801e3201d8319c9ab3fb3" prot="public" static="no">
+        <name>USBFIFO_DEVICE</name>
+        <param><defname>device_name</defname></param>
+        <param><defname>cfg_ptr</defname></param>
+        <param><defname>state_ptr</defname></param>
+        <param><defname>mode_value</defname></param>
+        <param><defname>uid_value</defname></param>
+        <param><defname>gid_value</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines the configuration values for a FIFO that is connected to an underlying device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the device (e.g &quot;usb0-fifo&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cfg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the const <ref refid="structdevfifo__cfg__t" kindref="compound">devfifo_cfg_t</ref> data structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the state structure (see devfifo_state_t) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The access mode (usually 0666) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uid_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gid_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Group ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example: <programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__t" kindref="compound">device_t</ref><sp/>devices[DEVICES_TOTAL+1]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><ref refid="group___s_y_s___u_a_r_t_f_i_f_o_1ga4db272ec6c5801e3201d8319c9ab3fb3" kindref="member">USBFIFO_DEVICE</ref>(</highlight><highlight class="stringliteral">&quot;usb0-fifo&quot;</highlight><highlight class="normal">,<sp/>&amp;usbfifo_cfg,<sp/>0666,<sp/>USER_ROOT,<sp/>GROUP_ROOT),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>DEVICE_TERMINATOR</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___u_a_r_t_f_i_f_o_1ga9ae0f9743da5331f11e96a4871311bb6" prot="public" static="no">
+        <name>USBFIFO_DEVICE_CFG</name>
+        <param><defname>target_port</defname></param>
+        <param><defname>target_endpoint</defname></param>
+        <param><defname>target_endpoint_size</defname></param>
+        <param><defname>target_buffer</defname></param>
+        <param><defname>buffer_size</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h" line="61" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#ifndef<sp/>DEV_USBFIFO_H_</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_USBFIFO_H_</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dev/ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="usb_8h" kindref="compound">dev/usb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;device.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="fifo_8h" kindref="compound">fifo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="group___s_y_s___u_a_r_t_f_i_f_o_1ga4db272ec6c5801e3201d8319c9ab3fb3" refkind="member"><highlight class="preprocessor">#define<sp/>USBFIFO_DEVICE(device_name,<sp/>cfg_ptr,<sp/>state_ptr,<sp/>mode_value,<sp/>uid_value,<sp/>gid_value)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.name<sp/>=<sp/>device_name,<sp/>\</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEVICE_MODE(mode_value,<sp/>uid_value,<sp/>gid_value,<sp/>S_IFCHR),<sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEVICE_DRIVER(usbfifo),<sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfg.state<sp/>=<sp/>state_ptr,<sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfg.dcfg<sp/>=<sp/>cfg_ptr<sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USBFIFO_DEVICE_CFG(target_port,<sp/>target_endpoint,<sp/>target_endpoint_size,<sp/>target_buffer,<sp/>buffer_size)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>.port<sp/>=<sp/>target_port,<sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>.endpoint<sp/>=<sp/>target_endpoint,<sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>.endpoint_size<sp/>=<sp/>target_endpoint_size,<sp/>\</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>.buffer<sp/>=<sp/>target_buffer,<sp/>\</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/>.size<sp/>=<sp/>buffer_size,<sp/>\</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structusbfifo__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74" refid="structusbfifo__cfg__t_1a4eabb887c13e29a7305879b5e620e661" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port<sp/>;</highlight></codeline>
+<codeline lineno="75" refid="structusbfifo__cfg__t_1a5dc7013c3e05289a0746a129baaec6dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endpoint<sp/>;</highlight></codeline>
+<codeline lineno="76" refid="structusbfifo__cfg__t_1a755bcdbe4b4b1cf314edc72c5e753691" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endpoint_size<sp/>;</highlight></codeline>
+<codeline lineno="77" refid="structusbfifo__cfg__t_1a52542347bade3bd8fa29ea022bedf03b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>buffer<sp/>;</highlight></codeline>
+<codeline lineno="78" refid="structusbfifo__cfg__t_1a6d5b89a5c964dfe219c40d399f779478" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}<sp/><ref refid="structusbfifo__cfg__t" kindref="compound">usbfifo_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_USBFIFO_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h"/>
+  </compounddef>
+</doxygen>

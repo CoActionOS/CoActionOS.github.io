@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_dc992761663f67d9de03d69c9b9c457c" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal</compoundname>
+    <innerfile refid="__kill_8c">_kill.c</innerfile>
+    <innerfile refid="__wait_8c">_wait.c</innerfile>
+    <innerfile refid="pthread__kill_8c">pthread_kill.c</innerfile>
+    <innerfile refid="sig__local_8h">sig_local.h</innerfile>
+    <innerfile refid="sig__realtime_8c">sig_realtime.c</innerfile>
+    <innerfile refid="signal_8c">signal.c</innerfile>
+    <innerfile refid="signal__handler_8c">signal_handler.c</innerfile>
+    <innerfile refid="sigset_8c">sigset.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,501 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="config_8h" kind="file">
+    <compoundname>config.h</compoundname>
+    <includedby refid="usb__dev__runtime__dfu_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h</includedby>
+    <includedby refid="dirent_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c</includedby>
+    <includedby refid="pthread__attr_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr.c</includedby>
+    <includedby refid="pthread__attr__init_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c</includedby>
+    <includedby refid="pthread__cancel_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cancel.c</includedby>
+    <includedby refid="pthread__cleanup_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cleanup.c</includedby>
+    <includedby refid="pthread__cond_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c</includedby>
+    <includedby refid="pthread__condattr_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_condattr.c</includedby>
+    <includedby refid="pthread__create_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c</includedby>
+    <includedby refid="pthread__mutex_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c</includedby>
+    <includedby refid="pthread__mutexattr_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c</includedby>
+    <includedby refid="pthread__mutexattr__init_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c</includedby>
+    <includedby refid="pthread__schedparam_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c</includedby>
+    <includedby refid="sched__posix_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c</includedby>
+    <includedby refid="pthread__kill_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c</includedby>
+    <includedby refid="hibernate_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c</includedby>
+    <includedby refid="unistd__fs_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_fs.h</includedby>
+    <includedby refid="__exit_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c</includedby>
+    <includedby refid="__getpid_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getpid.c</includedby>
+    <includedby refid="__lseek_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c</includedby>
+    <includedby refid="ioctl_8c" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c</includedby>
+    <invincdepgraph>
+      <node id="2065">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cleanup.c</label>
+        <link refid="pthread__cleanup_8c"/>
+      </node>
+      <node id="2079">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c</label>
+        <link refid="__fstat_8c"/>
+      </node>
+      <node id="2076">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_fs.h</label>
+        <link refid="unistd__fs_8h_source"/>
+        <childnode refid="2077" relation="include">
+        </childnode>
+        <childnode refid="2078" relation="include">
+        </childnode>
+        <childnode refid="2079" relation="include">
+        </childnode>
+        <childnode refid="2080" relation="include">
+        </childnode>
+        <childnode refid="2081" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2083" relation="include">
+        </childnode>
+        <childnode refid="2084" relation="include">
+        </childnode>
+        <childnode refid="2085" relation="include">
+        </childnode>
+        <childnode refid="2086" relation="include">
+        </childnode>
+        <childnode refid="2087" relation="include">
+        </childnode>
+        <childnode refid="2088" relation="include">
+        </childnode>
+        <childnode refid="2089" relation="include">
+        </childnode>
+        <childnode refid="2090" relation="include">
+        </childnode>
+        <childnode refid="2091" relation="include">
+        </childnode>
+        <childnode refid="2092" relation="include">
+        </childnode>
+        <childnode refid="2093" relation="include">
+        </childnode>
+        <childnode refid="2094" relation="include">
+        </childnode>
+        <childnode refid="2095" relation="include">
+        </childnode>
+      </node>
+      <node id="2097">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getpid.c</label>
+        <link refid="__getpid_8c"/>
+      </node>
+      <node id="2094">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/rmdir.c</label>
+        <link refid="rmdir_8c"/>
+      </node>
+      <node id="2086">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_stat.c</label>
+        <link refid="__stat_8c"/>
+      </node>
+      <node id="2095">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c</label>
+        <link refid="unistd__data__transfer_8c"/>
+      </node>
+      <node id="2083">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c</label>
+        <link refid="__open_8c"/>
+      </node>
+      <node id="2089">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_write.c</label>
+        <link refid="__write_8c"/>
+      </node>
+      <node id="2061">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c</label>
+        <link refid="dirent_8c"/>
+      </node>
+      <node id="2092">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/lstat.c</label>
+        <link refid="lstat_8c"/>
+      </node>
+      <node id="2075">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c</label>
+        <link refid="hibernate_8c"/>
+      </node>
+      <node id="2082">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c</label>
+        <link refid="__lseek_8c"/>
+      </node>
+      <node id="2084">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c</label>
+        <link refid="__read_8c"/>
+      </node>
+      <node id="2077">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_close.c</label>
+        <link refid="__close_8c"/>
+      </node>
+      <node id="2078">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fcntl.c</label>
+        <link refid="__fcntl_8c"/>
+      </node>
+      <node id="2093">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/mkdir.c</label>
+        <link refid="mkdir_8c"/>
+      </node>
+      <node id="2064">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cancel.c</label>
+        <link refid="pthread__cancel_8c"/>
+      </node>
+      <node id="2090">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chmod.c</label>
+        <link refid="chmod_8c"/>
+      </node>
+      <node id="2060">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h</label>
+        <link refid="usb__dev__runtime__dfu_8h_source"/>
+      </node>
+      <node id="2069">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutex.c</label>
+        <link refid="pthread__mutex_8c"/>
+      </node>
+      <node id="2074">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c</label>
+        <link refid="pthread__kill_8c"/>
+      </node>
+      <node id="2068">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c</label>
+        <link refid="pthread__create_8c"/>
+      </node>
+      <node id="2059">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/config.h</label>
+        <link refid="config.h"/>
+        <childnode refid="2060" relation="include">
+        </childnode>
+        <childnode refid="2061" relation="include">
+        </childnode>
+        <childnode refid="2062" relation="include">
+        </childnode>
+        <childnode refid="2063" relation="include">
+        </childnode>
+        <childnode refid="2064" relation="include">
+        </childnode>
+        <childnode refid="2065" relation="include">
+        </childnode>
+        <childnode refid="2066" relation="include">
+        </childnode>
+        <childnode refid="2067" relation="include">
+        </childnode>
+        <childnode refid="2068" relation="include">
+        </childnode>
+        <childnode refid="2069" relation="include">
+        </childnode>
+        <childnode refid="2070" relation="include">
+        </childnode>
+        <childnode refid="2071" relation="include">
+        </childnode>
+        <childnode refid="2072" relation="include">
+        </childnode>
+        <childnode refid="2073" relation="include">
+        </childnode>
+        <childnode refid="2074" relation="include">
+        </childnode>
+        <childnode refid="2075" relation="include">
+        </childnode>
+        <childnode refid="2076" relation="include">
+        </childnode>
+        <childnode refid="2096" relation="include">
+        </childnode>
+        <childnode refid="2097" relation="include">
+        </childnode>
+        <childnode refid="2082" relation="include">
+        </childnode>
+        <childnode refid="2098" relation="include">
+        </childnode>
+      </node>
+      <node id="2081">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_link.c</label>
+        <link refid="__link_8c"/>
+      </node>
+      <node id="2067">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_condattr.c</label>
+        <link refid="pthread__condattr_8c"/>
+      </node>
+      <node id="2085">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_rename.c</label>
+        <link refid="__rename_8c"/>
+      </node>
+      <node id="2080">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_isatty.c</label>
+        <link refid="__isatty_8c"/>
+      </node>
+      <node id="2066">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c</label>
+        <link refid="pthread__cond_8c"/>
+      </node>
+      <node id="2087">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_symlink.c</label>
+        <link refid="__symlink_8c"/>
+      </node>
+      <node id="2091">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c</label>
+        <link refid="chown_8c"/>
+      </node>
+      <node id="2072">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c</label>
+        <link refid="pthread__schedparam_8c"/>
+      </node>
+      <node id="2096">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c</label>
+        <link refid="__exit_8c"/>
+      </node>
+      <node id="2062">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr.c</label>
+        <link refid="pthread__attr_8c"/>
+      </node>
+      <node id="2088">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_unlink.c</label>
+        <link refid="__unlink_8c"/>
+      </node>
+      <node id="2070">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr.c</label>
+        <link refid="pthread__mutexattr_8c"/>
+      </node>
+      <node id="2071">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_mutexattr_init.c</label>
+        <link refid="pthread__mutexattr__init_8c"/>
+      </node>
+      <node id="2098">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c</label>
+        <link refid="ioctl_8c"/>
+      </node>
+      <node id="2073">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c</label>
+        <link refid="sched__posix_8c"/>
+      </node>
+      <node id="2063">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c</label>
+        <link refid="pthread__attr__init_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_a_o_s_1ga1c6d5de492ac61ad29aec7aa9a436bbf" prot="public" static="no">
+        <name>VERSION</name>
+        <initializer>&quot;1.3.1&quot;</initializer>
+        <briefdescription>
+<para>Version. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="11" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_a_o_s_1ga73cb0db2d125d8006e0bc4349f532c73" prot="public" static="no">
+        <name>BCDVERSION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="12" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4faee4c00c27caddd8f2bbad63f8f70b" prot="public" static="no">
+        <name>PTHREAD_MAX_LOCKS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="41" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0df5523c8885d588fdf0362cdf0d1814" prot="public" static="no">
+        <name>PTHREAD_MUTEX_PRIO_CEILING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="42" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8b3dc1c5c1a165d6143b1dce950e8266" prot="public" static="no">
+        <name>PTHREAD_STACK_MIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="43" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a67542e03d0e1181fe28a0336d228bfea" prot="public" static="no">
+        <name>SCHED_LOWEST_PRIORITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="44" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a55d29b6027dd02c3bf025ddb219c9bbc" prot="public" static="no">
+        <name>SCHED_HIGHEST_PRIORITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="45" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a19f8060d2f3af40c4c59877b649574f5" prot="public" static="no">
+        <name>SCHED_DEFAULT_PRIORITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="46" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af80498f809ae6061689d8abfbcaf9037" prot="public" static="no">
+        <name>SCHED_RR_DURATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="47" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a77e6e5866bc46a3472a63f0aa9211684" prot="public" static="no">
+        <name>SINGLE_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0a00f5489053d7bec1ff8854cd83a321" prot="public" static="no">
+        <name>SINGLE_TASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="50" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8412a3c25d49cee5637408e60384ae2c" prot="public" static="no">
+        <name>USE_FILESYSTEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="51" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a250cdddad485380414cd282287fa5064" prot="public" static="no">
+        <name>USE_MEMORY_PROTECTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7526d4551f3a4723c4da433184b895bb" prot="public" static="no">
+        <name>USE_STDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af4c6d5de61156726b0c43c626e025d5f" prot="public" static="no">
+        <name>DEVICE_MAX_RAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="55" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aaae8aa095dce7c2ecf6c130007b95c43" prot="public" static="no">
+        <name>DEVICE_SYS_RAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="56" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4dc26a287d6b820c4a548ccb8d3cbd68" prot="public" static="no">
+        <name>DEVICE_RAM_PAGE_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="3"><highlight class="preprocessor">#ifndef<sp/>CONFIG_H_</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_H_</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="11" refid="group___c_a_o_s_1ga1c6d5de492ac61ad29aec7aa9a436bbf" refkind="member"><highlight class="preprocessor">#define<sp/>VERSION<sp/>&quot;1.3.1&quot;</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>BCDVERSION<sp/>0x131</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#ifdef<sp/>__lpc17xx</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ARCH<sp/>&quot;lpc17xx&quot;</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAOSLIB_USECOND_TMR_RESET_OC<sp/>0</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAOSLIB_USECOND_TMR_SLEEP_OC<sp/>1</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAOSLIB_USECOND_TMR_USBDFU_OC<sp/>3</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PTHREAD_DEFAULT_STACK_SIZE<sp/>1536</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MALLOC_CHUNK_SIZE<sp/>64</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MALLOC_SBRK_JUMP_SIZE<sp/>128</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_FIRST_THREAD_STACK_SIZE<sp/>2048</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_DEFAULT_STACKGUARD_SIZE<sp/>32</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__lpc177x_8x</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ARCH<sp/>&quot;lpc177x_8x&quot;</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAOSLIB_USECOND_TMR_RESET_OC<sp/>0</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAOSLIB_USECOND_TMR_SLEEP_OC<sp/>1</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CAOSLIB_USECOND_TMR_USBDFU_OC<sp/>3</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PTHREAD_DEFAULT_STACK_SIZE<sp/>1536</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MALLOC_CHUNK_SIZE<sp/>64</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MALLOC_SBRK_JUMP_SIZE<sp/>128</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_FIRST_THREAD_STACK_SIZE<sp/>2048</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_DEFAULT_STACKGUARD_SIZE<sp/>32</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PTHREAD_MAX_LOCKS<sp/>1024</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PTHREAD_MUTEX_PRIO_CEILING<sp/>0</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PTHREAD_STACK_MIN<sp/>128</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_LOWEST_PRIORITY<sp/>0</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_HIGHEST_PRIORITY<sp/>31</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_DEFAULT_PRIORITY<sp/>0</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SCHED_RR_DURATION<sp/>10</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SINGLE_PROCESS<sp/>0</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SINGLE_TASK<sp/>0</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_FILESYSTEM<sp/>1</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_MEMORY_PROTECTION<sp/>1</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USE_STDIO<sp/>1</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_MAX_RAM<sp/>65536</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_SYS_RAM<sp/>4096</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_RAM_PAGE_SIZE<sp/>1024</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/config.h"/>
+  </compounddef>
+</doxygen>

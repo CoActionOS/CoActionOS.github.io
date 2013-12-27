@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__audio__output__terminal__desc__t" kind="struct" prot="public">
+    <compoundname>usb_audio_output_terminal_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gafe089207c3071d0e16b4191e0f627264" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="439" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga6448820b98244d3d23293424003ad05a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="440" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga1c4f75c7b89c274ce40d80517a6c3f56" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="441" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab7f84558cb6d3b0c93436cd3dbe7508b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bTerminalID</definition>
+        <argsstring></argsstring>
+        <name>bTerminalID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="442" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaa8c8da53ae34df14bbd91d613d0dcf26" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_output_terminal_desc_t::wTerminalType</definition>
+        <argsstring></argsstring>
+        <name>wTerminalType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="443" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad66149905dde89bdf04723429139f3ad" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bAssocTerminal</definition>
+        <argsstring></argsstring>
+        <name>bAssocTerminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="444" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad703f81434f1233ffd80cfdc5a1e005a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bSourceID</definition>
+        <argsstring></argsstring>
+        <name>bSourceID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="445" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga5d04b60c07b1cea4a946de15a7459bfd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::iTerminal</definition>
+        <argsstring></argsstring>
+        <name>iTerminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="446" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="498">
+        <label>usb_audio_output_terminal_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="438" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="436" bodyend="447"/>
+    <listofallmembers>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gad66149905dde89bdf04723429139f3ad" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>bAssocTerminal</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga1c4f75c7b89c274ce40d80517a6c3f56" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>bDescriptorSubtype</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga6448820b98244d3d23293424003ad05a" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gafe089207c3071d0e16b4191e0f627264" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>bLength</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gad703f81434f1233ffd80cfdc5a1e005a" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>bSourceID</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gab7f84558cb6d3b0c93436cd3dbe7508b" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>bTerminalID</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga5d04b60c07b1cea4a946de15a7459bfd" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>iTerminal</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gaa8c8da53ae34df14bbd91d613d0dcf26" prot="public" virt="non-virtual"><scope>usb_audio_output_terminal_desc_t</scope><name>wTerminalType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___c_o_r_e" kind="group">
+    <compoundname>CORE</compoundname>
+    <title>Core Microcontroller Access</title>
+    <innerfile refid="core_8h">core.h</innerfile>
+    <innerclass refid="structcore__clkout__t" prot="public">core_clkout_t</innerclass>
+    <innerclass refid="structcore__attr__t" prot="public">core_attr_t</innerclass>
+    <innerclass refid="structcore__pinfunc__t" prot="public">core_pinfunc_t</innerclass>
+    <innerclass refid="structcore__irqprio__t" prot="public">core_irqprio_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___c_o_r_e_1gaf04fba81a1f0a6d59e921ebc87e8d5f8" prot="public" static="no">
+        <name>core_reset_src_t</name>
+        <enumvalue id="group___c_o_r_e_1ggaf04fba81a1f0a6d59e921ebc87e8d5f8ac6f2aef9da1ce5b696dad040f8bcbab6" prot="public">
+          <name>CORE_RESET_SRC_POR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Power on Reset </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggaf04fba81a1f0a6d59e921ebc87e8d5f8a018feec3645bf1bf424bfa28724fe1ca" prot="public">
+          <name>CORE_RESET_SRC_EXTERNAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External Reset signal </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggaf04fba81a1f0a6d59e921ebc87e8d5f8a4d630cff829eda2bb6a4b6c7bfafc61b" prot="public">
+          <name>CORE_RESET_SRC_WDT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Watchdog Timer Reset </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggaf04fba81a1f0a6d59e921ebc87e8d5f8a209b5045149f90eaac04b725e3810711" prot="public">
+          <name>CORE_RESET_SRC_BOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Brown Out Reset </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggaf04fba81a1f0a6d59e921ebc87e8d5f8ad0efde405a00c0036dbd92e6bc30be65" prot="public">
+          <name>CORE_RESET_SRC_SYSTEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Software System Reset </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>These are the possible values for <emphasis>reset_type</emphasis> in <ref refid="structcore__attr__t" kindref="compound">core_attr_t</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="41" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___c_o_r_e_1ga865263eb03a43700297f3eba0c085b88" prot="public" static="no">
+        <name>core_clkout_src_t</name>
+        <enumvalue id="group___c_o_r_e_1gga865263eb03a43700297f3eba0c085b88a3160a6cbffbdee1b81ce7d569da99d4d" prot="public">
+          <name>CORE_CLKOUT_CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the CPU Clock </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga865263eb03a43700297f3eba0c085b88af167725ce9ad98ead0a3d3871b326592" prot="public">
+          <name>CORE_CLKOUT_MAIN_OSC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the Main Oscillator </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga865263eb03a43700297f3eba0c085b88a08b98eb799bf5d81adac50c3b196fe3c" prot="public">
+          <name>CORE_CLKOUT_INTERNAL_OSC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the Internal Oscillator </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga865263eb03a43700297f3eba0c085b88aa154acb89b22a02a8e5cfa751692862b" prot="public">
+          <name>CORE_CLKOUT_USB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the USB Clock </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga865263eb03a43700297f3eba0c085b88a8a2942f4d7646b06229be812913b1917" prot="public">
+          <name>CORE_CLKOUT_RTC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Use the RTC Clock </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>THis lists the valid values for the clock output source clock. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="53" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___c_o_r_e_1gabc5c98fcc1211af2b80116dd6e0a035d" prot="public" static="no">
+        <name>@11</name>
+        <enumvalue id="group___c_o_r_e_1ggabc5c98fcc1211af2b80116dd6e0a035da8a4243d9ef0ebcd260a627f262c0ae8c" prot="public">
+          <name>CORE_FAULT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggabc5c98fcc1211af2b80116dd6e0a035dafb5fd5ce1c23420c97190981a18efb89" prot="public">
+          <name>CORE_FAULT_HARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggabc5c98fcc1211af2b80116dd6e0a035da2c206ffcc91533ebf541860fc75878f1" prot="public">
+          <name>CORE_FAULT_MEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggabc5c98fcc1211af2b80116dd6e0a035da3bda42fef90fd7b78440cd1b8bcf2e1e" prot="public">
+          <name>CORE_FAULT_BUS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggabc5c98fcc1211af2b80116dd6e0a035da4bba1ee2c409ac8cec405ed0df2da08c" prot="public">
+          <name>CORE_FAULT_USAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggabc5c98fcc1211af2b80116dd6e0a035daccab0c28fa6d97ccfc50b2a191717edc" prot="public">
+          <name>CORE_FAULT_ISR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="71" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="71" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___c_o_r_e_1ga0cdc50382b3b72c2e4b983c2f2a6f99b" prot="public" static="no">
+        <name>core_periph_t</name>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99baf43dbbcbfe5569ed2e872592cef13df4" prot="public">
+          <name>CORE_PERIPH_RESERVED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RESERVED </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba07ecdd54e3fc1a1b6c3b032119715d9b" prot="public">
+          <name>CORE_PERIPH_CORE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Core Functionality </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba8b1fec265af92efdea9a137ed0b68c33" prot="public">
+          <name>CORE_PERIPH_ADC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Analog to Digital Converter </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bac6b5af5fd04934ac9d9a18e1033e3dcf" prot="public">
+          <name>CORE_PERIPH_DAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Digital to Analog Converter </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba4ce3c786bd4359a4fa1c02e5e6ed6c48" prot="public">
+          <name>CORE_PERIPH_UART</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UART </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba8c385cfabc95da023eed5c3572a92c23" prot="public">
+          <name>CORE_PERIPH_SPI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba6a86f56719ae051524f844dbad3c8ae2" prot="public">
+          <name>CORE_PERIPH_USB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba2db9090fa9ca09654538eddfdc77abc1" prot="public">
+          <name>CORE_PERIPH_CAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba26b82cc24ba375173058f679ec2c067a" prot="public">
+          <name>CORE_PERIPH_ENET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ENET </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba0d32eb87d2f38d9358f77413b149491b" prot="public">
+          <name>CORE_PERIPH_I2C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba007f5cfc36aa05d372b38dbfe6c34ca6" prot="public">
+          <name>CORE_PERIPH_I2S</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2S </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bac3702904559d0a1f93c53434366f847a" prot="public">
+          <name>CORE_PERIPH_MEM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External memory interface </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba1b620a8143f82db81ab62a00418321f4" prot="public">
+          <name>CORE_PERIPH_RTC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RTC </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba7a659634c113e859937e7ccd3e7b24ed" prot="public">
+          <name>CORE_PERIPH_CEC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Consumer Electronic Control (Part of HDMI) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba004331757e5a4dcc03a3f73d1f9f036c" prot="public">
+          <name>CORE_PERIPH_QEI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Quadrature Encoder Interface </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bad8ac2ccd4dcd5c64181e5d807483e742" prot="public">
+          <name>CORE_PERIPH_PWM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PWM </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99baac4c4efe9d4524729f99eba5a0cd3744" prot="public">
+          <name>CORE_PERIPH_PIO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>GPIO </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99babddf71fed1144fed2e26c77df9c76707" prot="public">
+          <name>CORE_PERIPH_TMR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Timer (output compare and input capture) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bab85c0d30062a3ac82fd9997a4f9e4f9b" prot="public">
+          <name>CORE_PERIPH_EINT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External interrupts </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99babcfe50751194b1a7c53ef0ece221ceea" prot="public">
+          <name>CORE_PERIPH_WDT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Watch dog timer </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba1f9414b25a52fb4c170f006e8d1438a0" prot="public">
+          <name>CORE_PERIPH_BOD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Brown out detection </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bac9cd04e042a578075e9e8bcd4e2aa3a1" prot="public">
+          <name>CORE_PERIPH_DMA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Direct Memory Access </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba13e5ac02dbc3c5140d52e6152f7df05c" prot="public">
+          <name>CORE_PERIPH_JTAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>JTAG </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bab9ba0b20ca597620c704aac96664c99f" prot="public">
+          <name>CORE_PERIPH_RESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Reset </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba101848c7c67b1dace6a45d0aaeea3098" prot="public">
+          <name>CORE_PERIPH_CLKOUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Clockout </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba9012aca62e6ad103712c7d6b918c9635" prot="public">
+          <name>CORE_PERIPH_LCD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LCD </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bab8b893da595ba1327605e7d7fa85bf3a" prot="public">
+          <name>CORE_PERIPH_LCD1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LCD </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba28010c7f83d8cf5eed6fa665b11ed11d" prot="public">
+          <name>CORE_PERIPH_LCD2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LCD </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba515e6f43f73bdeef704defd9216b1e7d" prot="public">
+          <name>CORE_PERIPH_LCD3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LCD </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba98c6d5dac50c9029dd73bb8abc6a22f8" prot="public">
+          <name>CORE_PERIPH_EMC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Externa Memory Controller </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99baa860bac08ddd76af05febb50f74ac13f" prot="public">
+          <name>CORE_PERIPH_SDC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SD Card </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba168c3d648d5e845a45fe3165d37adf61" prot="public">
+          <name>CORE_PERIPH_SSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SSP </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba291d7d4073d929013cb198542662ee2b" prot="public">
+          <name>CORE_PERIPH_MCPWM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Motor Control PWM </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba6ad029568a400edc84b8427d6db33be3" prot="public">
+          <name>CORE_PERIPH_NMI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Non-maskable Interrupt </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba215d008a1cf5b84c0e60fa3d9d3505c5" prot="public">
+          <name>CORE_PERIPH_TRACE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trace data </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99bae248cbed6e5d45c0027269a5bb809314" prot="public">
+          <name>CORE_PERIPH_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This enumerates the valid peripherals supported by HWPL. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="83" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="83" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___c_o_r_e_1gae362c5b04fb1b6ea07f8bdaa21bc51f7" prot="public" static="no">
+        <name>core_sleep_t</name>
+        <enumvalue id="group___c_o_r_e_1ggae362c5b04fb1b6ea07f8bdaa21bc51f7af823b996b773f6ba9f25335667bb0028" prot="public">
+          <name>CORE_SLEEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sleep mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggae362c5b04fb1b6ea07f8bdaa21bc51f7a1a9f202f4a02d51817564ecb64883330" prot="public">
+          <name>CORE_DEEPSLEEP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Deep sleep (preserve SRAM) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggae362c5b04fb1b6ea07f8bdaa21bc51f7abdec31630a7b2a46bb60344530b8b9d9" prot="public">
+          <name>CORE_DEEPSLEEP_STOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Deep sleep (preserve SRAM, stop clocks) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___c_o_r_e_1ggae362c5b04fb1b6ea07f8bdaa21bc51f7a373788321a29fb5f9e3a3a5e6d838943" prot="public">
+          <name>CORE_DEEPSLEEP_STANDBY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Turn the device off (lose SRAM) </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the sleep modes supported by HWPL </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="127" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="127" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___c_o_r_e_1gaaf782fa68f17067c23b3560fc8c84aa9" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t core_action_t</definition>
+        <argsstring></argsstring>
+        <name>core_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___c_o_r_e_1ga2cc52560b580ca75f8aae5f9df79fc83" prot="public" static="no">
+        <name>CORE_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="33" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1gaa198b82bf40bb54f806a6a0c100d3250" prot="public" static="no">
+        <name>CORE_PERIPH_GPIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="122" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1gacc115354487b4b8c2c583daca96548de" prot="public" static="no">
+        <name>I_CORE_GETATTR</name>
+        <briefdescription>
+<para>This requests reads the core attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="148" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1ga5098e31f3fc6c096f1b30d6d88a73ad9" prot="public" static="no">
+        <name>I_CORE_SETATTR</name>
+        <briefdescription>
+<para>This requests writes the core attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="152" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1gaa4271dc8cd75ee3262e5db592b7761c3" prot="public" static="no">
+        <name>I_CORE_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="153" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1ga553cd81816094decf23ffd7070c3a274" prot="public" static="no">
+        <name>I_CORE_SETPINFUNC</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the functionality of the specified pin. The following example shows how to set P0.15 to be used with I2C0. If the port/pin combo does not match the peripheral function, the request will fail. This call is not necessary when using the set attribute request. For example, I_I2C_SETATTR will configure the pins according to the pin_assign member. <programlisting><codeline><highlight class="normal"><ref refid="structcore__pinfunc__t" kindref="compound">core_pinfunc_t</ref><sp/>pinfunc;</highlight></codeline>
+<codeline><highlight class="normal">pinfunc.<ref refid="structcore__pinfunc__t_1a7960f82a425d48e144519fdb9bcfac1a" kindref="member">periph_port</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">pinfunc.<ref refid="structcore__pinfunc__t_1abc5179131d158d963909b36aaffaa610" kindref="member">periph_func</ref><sp/>=<sp/><ref refid="group___c_o_r_e_1gga0cdc50382b3b72c2e4b983c2f2a6f99ba0d32eb87d2f38d9358f77413b149491b" kindref="member">CORE_PERIPH_I2C</ref>;</highlight></codeline>
+<codeline><highlight class="normal">pinfunc.<ref refid="structcore__pinfunc__t_1a6644650abd2581250c51af4ebb92954e" kindref="member">io</ref>.<ref refid="structpio__t_1a913556bdbd0e54ab9c2175a89b49ffe2" kindref="member">port</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">pinfunc.<ref refid="structcore__pinfunc__t_1a6644650abd2581250c51af4ebb92954e" kindref="member">io</ref>.<ref refid="structpio__t_1a65a2046418a17af232877bc411a8c9b5" kindref="member">pin</ref><sp/>=<sp/>15;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(core_fd,<sp/><ref refid="group___c_o_r_e_1ga553cd81816094decf23ffd7070c3a274" kindref="member">I_CORE_SETPINFUNC</ref>,<sp/>&amp;pinfunc);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="194" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1ga8f1705b30be917a00886af84a60f3e0c" prot="public" static="no">
+        <name>I_CORE_SLEEP</name>
+        <briefdescription>
+<para>This request powersdown the device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="198" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1ga4680cb894578ddd4242691d727e49654" prot="public" static="no">
+        <name>I_CORE_RESET</name>
+        <briefdescription>
+<para>This request resets the device. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="201" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1gae3e7592889371a041783fdc713dafe54" prot="public" static="no">
+        <name>I_CORE_INVOKEBOOTLOADER</name>
+        <briefdescription>
+<para>This request invokes the bootloader. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="204" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1gad4a6cc0f610397db5a44995e02e5c42f" prot="public" static="no">
+        <name>I_CORE_SETIRQPRIO</name>
+        <briefdescription>
+<para>This request sets the IRQ priority. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="207" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1gab18399788c0a6653e37c6b51ab2fa796" prot="public" static="no">
+        <name>I_CORE_SETCLKOUT</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This configures the clkout functionality. <programlisting><codeline><highlight class="normal"><ref refid="structcore__clkout__t" kindref="compound">core_clkout_t</ref><sp/>clkout;</highlight></codeline>
+<codeline><highlight class="normal">clkout.<ref refid="structcore__clkout__t_1add56e841fb8d2446c806651924fe76b4" kindref="member">src</ref><sp/>=<sp/><ref refid="group___c_o_r_e_1gga865263eb03a43700297f3eba0c085b88af167725ce9ad98ead0a3d3871b326592" kindref="member">CORE_CLKOUT_MAIN_OSC</ref>;</highlight></codeline>
+<codeline><highlight class="normal">clkout.<ref refid="structcore__clkout__t_1ae724b080cfc2ae5ffceb1d5cfc2c01c9" kindref="member">div</ref><sp/>=<sp/>8;<sp/></highlight><highlight class="comment">//output<sp/>will<sp/>be<sp/>the<sp/>src<sp/>divided<sp/>by<sp/>this<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(core_fd,<sp/><ref refid="group___c_o_r_e_1gab18399788c0a6653e37c6b51ab2fa796" kindref="member">I_CORE_SETCLKOUT</ref>,<sp/>&amp;clkout);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="219" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___c_o_r_e_1ga3215a7ab142545ce20ac72f4bdc9604d" prot="public" static="no">
+        <name>I_CORE_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="221" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Core peripheral gives access to the MCU clock and other core features. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

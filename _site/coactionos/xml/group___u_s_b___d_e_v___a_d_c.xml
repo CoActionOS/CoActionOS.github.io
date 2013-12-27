@@ -1,0 +1,3422 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_s_b___d_e_v___a_d_c" kind="group">
+    <compoundname>USB_DEV_ADC</compoundname>
+    <title>Audio Device Class</title>
+    <innerfile refid="usb__dev__adc_8h">usb_dev_adc.h</innerfile>
+    <innerclass refid="structusb__audio__interface__desc__t" prot="public">usb_audio_interface_desc_t</innerclass>
+    <innerclass refid="structusb__audio__channel__cluster__desc__t" prot="public">usb_audio_channel_cluster_desc_t</innerclass>
+    <innerclass refid="structusb__audio__input__terminal__desc__t" prot="public">usb_audio_input_terminal_desc_t</innerclass>
+    <innerclass refid="structusb__audio__output__terminal__desc__t" prot="public">usb_audio_output_terminal_desc_t</innerclass>
+    <innerclass refid="structusb__audio__feature__unit__desc__t" prot="public">usb_audio_feature_unit_desc_t</innerclass>
+    <innerclass refid="structusb__audio__streaming__interface__desc__t" prot="public">usb_audio_streaming_interface_desc_t</innerclass>
+    <innerclass refid="structusb__audio__streaming__ep__desc__t" prot="public">usb_audio_streaming_ep_desc_t</innerclass>
+    <innerclass refid="structusb__audio__type___i__format__desc__t" prot="public">usb_audio_type_I_format_desc_t</innerclass>
+    <innerclass refid="structusb__audio__ac3__format__desc__t" prot="public">usb_audio_ac3_format_desc_t</innerclass>
+    <innerclass refid="structusb__audio__type___i_i__format__desc__t" prot="public">usb_audio_type_II_format_desc_t</innerclass>
+    <innerclass refid="structusb__audio__type___i_i__format__discrete__desc__t" prot="public">usb_audio_type_II_format_discrete_desc_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga69b4a47dec3b2affd28c34407dab63b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>usb_audio_ep_desc_t</definition>
+        <argsstring></argsstring>
+        <name>usb_audio_ep_desc_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="397" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab69eaca8e6401dc6201dd9efc8099f90" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_interface_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="402" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gadd1a754c0e1f20660ea277eb37b7aa45" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_interface_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="403" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaadb184126d14f6192c8baba770729886" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_interface_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="404" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga421a5ed30afa805698f446407a188d75" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_interface_desc_t::bcdADC</definition>
+        <argsstring></argsstring>
+        <name>bcdADC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="405" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga118e4673e42f829aa6f9be718518c2ef" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_interface_desc_t::wTotalLength</definition>
+        <argsstring></argsstring>
+        <name>wTotalLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="406" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga6ddd4d6d181b015e7bfe14be3a07d712" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_interface_desc_t::bInCollection</definition>
+        <argsstring></argsstring>
+        <name>bInCollection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="407" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga8adeff414e1509fcb8c02e30f394fdf3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_interface_desc_t::baInterfaceNr</definition>
+        <argsstring></argsstring>
+        <name>baInterfaceNr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="408" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab0fa2cb355441feca931d803e50f5b2c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_channel_cluster_desc_t::bNrChannels</definition>
+        <argsstring></argsstring>
+        <name>bNrChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="415" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="415" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga633f79ee72ffbc2770b9643048fa0563" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_audio_channel_cluster_desc_t::bmChannelConfig</definition>
+        <argsstring></argsstring>
+        <name>bmChannelConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="416" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaf740216e063550a010ff47a0cc7cf8cb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_channel_cluster_desc_t::iChannelNames</definition>
+        <argsstring></argsstring>
+        <name>iChannelNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="417" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga393a5d00388b0b4d9e27235e768b9bb7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="424" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gabf619b431cb8fd94d86d84d8204f525d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="425" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gae3d54fda63b9905b455132aebb80f9c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="426" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga7dc734ecc57b2389713160c3c4bc1ece" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::bTerminalID</definition>
+        <argsstring></argsstring>
+        <name>bTerminalID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="427" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga004b0213b6c17631c09ea5d14c21ef65" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_input_terminal_desc_t::wTerminalType</definition>
+        <argsstring></argsstring>
+        <name>wTerminalType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="428" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga424f0079e5ef5c9b1f5edcbd816c69e6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::bAssocTerminal</definition>
+        <argsstring></argsstring>
+        <name>bAssocTerminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="429" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga0dce159f3cc02dae6aedb15364cf2aab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::bNrChannels</definition>
+        <argsstring></argsstring>
+        <name>bNrChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="430" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gae145c4b536cce32d26f1b9ec9ee250e7" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_input_terminal_desc_t::wChannelConfig</definition>
+        <argsstring></argsstring>
+        <name>wChannelConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="431" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga503c6b120619099ae5ec67113c105d01" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::iChannelNames</definition>
+        <argsstring></argsstring>
+        <name>iChannelNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="432" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad3da22a23c32ab0d28382b4b5bbf0c07" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_input_terminal_desc_t::iTerminal</definition>
+        <argsstring></argsstring>
+        <name>iTerminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="433" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="433" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gafe089207c3071d0e16b4191e0f627264" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="439" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="439" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga6448820b98244d3d23293424003ad05a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="440" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga1c4f75c7b89c274ce40d80517a6c3f56" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="441" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab7f84558cb6d3b0c93436cd3dbe7508b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bTerminalID</definition>
+        <argsstring></argsstring>
+        <name>bTerminalID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="442" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaa8c8da53ae34df14bbd91d613d0dcf26" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_output_terminal_desc_t::wTerminalType</definition>
+        <argsstring></argsstring>
+        <name>wTerminalType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="443" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad66149905dde89bdf04723429139f3ad" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bAssocTerminal</definition>
+        <argsstring></argsstring>
+        <name>bAssocTerminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="444" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad703f81434f1233ffd80cfdc5a1e005a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::bSourceID</definition>
+        <argsstring></argsstring>
+        <name>bSourceID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="445" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga5d04b60c07b1cea4a946de15a7459bfd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_output_terminal_desc_t::iTerminal</definition>
+        <argsstring></argsstring>
+        <name>iTerminal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="446" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga38a15ec583533c36fbcc4c8c10ab30fc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="452" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga65fcc624edef19576ba9abe4f1487544" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="453" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab13c658eb06099834e292746afb71d08" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="454" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga5a29cf858a6119d7b9ddf4d72b8dc19d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bUnitID</definition>
+        <argsstring></argsstring>
+        <name>bUnitID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="455" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga18db2f9c7e29d7a92b01c11561a81598" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bSourceID</definition>
+        <argsstring></argsstring>
+        <name>bSourceID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="456" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga09cb462bf1d1165e497e0086c228e15e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bControlSize</definition>
+        <argsstring></argsstring>
+        <name>bControlSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="457" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga4b6ff9b1bd9383f985e35ad27bd2470c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bmaControls[USB_AUDIO_FEATURE_UNIT_BMA_CONTROLS_SIZE]</definition>
+        <argsstring>[USB_AUDIO_FEATURE_UNIT_BMA_CONTROLS_SIZE]</argsstring>
+        <name>bmaControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="458" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad0061c999572bceb1bdf0b6e77d3d54c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::iFeature</definition>
+        <argsstring></argsstring>
+        <name>iFeature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="459" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga80c6011f3c38070432d0727c4e9e82cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_interface_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="465" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga38ed5d9c6f9774ee47ce9eef2e2856e1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_interface_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="466" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga3b2f512f0827bde5909449ba9228cb71" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_interface_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="467" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad7dc3f27bdc6ed3204e1c324d153d92d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_interface_desc_t::bTerminalLink</definition>
+        <argsstring></argsstring>
+        <name>bTerminalLink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="468" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga5dd2ef2752aee25b0fb356525cfb3e02" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_interface_desc_t::bDelay</definition>
+        <argsstring></argsstring>
+        <name>bDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="469" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga23a248f9d044781f6cf70ecf16808571" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_streaming_interface_desc_t::wFormatTag</definition>
+        <argsstring></argsstring>
+        <name>wFormatTag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="470" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga440f3e9e40e60e8cb0623b6164e2cf11" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_ep_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="476" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga4c9d5b98c542c27ccb77f45272859e51" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_ep_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="477" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga4a2da6040672c2514c128c4b8d86c43e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_ep_desc_t::bEndpointAddress</definition>
+        <argsstring></argsstring>
+        <name>bEndpointAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="478" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga39127b6d44f31b1415b999e8e9dd0ea9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_ep_desc_t::bmAttributes</definition>
+        <argsstring></argsstring>
+        <name>bmAttributes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="479" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga35e2ad53af8bad722ed878cc456e2a15" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_streaming_ep_desc_t::bLockDelayUnits</definition>
+        <argsstring></argsstring>
+        <name>bLockDelayUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="480" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaef88c3b9b58dfd12a536f52214f3664e" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_streaming_ep_desc_t::wLockDelay</definition>
+        <argsstring></argsstring>
+        <name>wLockDelay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="481" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaaa1bb848fd7a934156b2e50b5756a8ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="487" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga2b5e91a716a81fc86611969a5a78a846" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="488" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga408043c09e4fbed80d632c1302464654" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="489" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga6a1e4fc65dfe580d112e5f4ce7306bb5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bFormatType</definition>
+        <argsstring></argsstring>
+        <name>bFormatType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="490" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gabe4ac5f0590d7be409748e0d43fba9b1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bNrChannels</definition>
+        <argsstring></argsstring>
+        <name>bNrChannels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="491" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga8f10d7c7e4ddaf4f82261c01eaad92b2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bSubFrameSize</definition>
+        <argsstring></argsstring>
+        <name>bSubFrameSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="492" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gac0411aa50c33a84f5c1926e1ae36fa01" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bBitResolution</definition>
+        <argsstring></argsstring>
+        <name>bBitResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="493" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab65d23fd1da1626f3650393d1db40f19" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::bSamFreqType</definition>
+        <argsstring></argsstring>
+        <name>bSamFreqType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="494" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga90d62e04f8979539eb78f699cad89070" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_I_format_desc_t::tSamFreq[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>tSamFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="495" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga10ff2b0fe9d2e12a19556ca8f24b5fed" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_ac3_format_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="501" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gae0c6eae2ae2c5e4f3a38c2a91c07be88" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_ac3_format_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="502" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga99b94a0178ffa3aee79a54cefd9d39a9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_ac3_format_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="503" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaea89048ac44a2d70846c6822d94985f1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_ac3_format_desc_t::wFormatTag</definition>
+        <argsstring></argsstring>
+        <name>wFormatTag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="504" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaa35c795df72d45f2fb73576cfd7ead6e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_audio_ac3_format_desc_t::bmBSID</definition>
+        <argsstring></argsstring>
+        <name>bmBSID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="505" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gac95a2f5cd4560d99e42cc98c1a8a4728" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_ac3_format_desc_t::bmAC3Features</definition>
+        <argsstring></argsstring>
+        <name>bmAC3Features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="506" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga1ef7f3b1a44a4768dec745d2d8eacdd6" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="512" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga7502f2ffcec2d9a1e0043ca5363e70c4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="513" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gadc5b7b87addd93c059a046ff0d2d10ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="514" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gac4c82db533d8824512d15a93bc30c80b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::bFormatType</definition>
+        <argsstring></argsstring>
+        <name>bFormatType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="515" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaf46b0122b284c831fa88209cbc9ff999" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_type_II_format_desc_t::wMaxBitRate</definition>
+        <argsstring></argsstring>
+        <name>wMaxBitRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="516" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga62929fae392375511dcb86a6befb0e4d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_type_II_format_desc_t::wSamplesPerFrame</definition>
+        <argsstring></argsstring>
+        <name>wSamplesPerFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="517" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga2ef54587772b42cd656b57f9804f2a2f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::bSamFreqType</definition>
+        <argsstring></argsstring>
+        <name>bSamFreqType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="518" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga5fa622320ab6078f5d314ed8bbccd1c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::tLowerSamFreq[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>tLowerSamFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="519" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gacefb1e1bf4305e730a46cbb3f0b525c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_desc_t::tUpperSamFreq[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>tUpperSamFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="520" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaf5540d48499c06ebcd6811e993026c66" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_discrete_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="529" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab2e6b3b0fe30e92cdd4e0c6f484c6f99" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_discrete_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="530" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga6de1752e8b0c77e775d04899005a9bc4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_discrete_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="531" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gabf2a04ed911edb24e411ee0101645554" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_discrete_desc_t::bFormatType</definition>
+        <argsstring></argsstring>
+        <name>bFormatType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="532" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaf406f52c0a6354539e4d297f81d9ea65" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_type_II_format_discrete_desc_t::wMaxBitRate</definition>
+        <argsstring></argsstring>
+        <name>wMaxBitRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="533" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga73d7bfb5efe2637de333adcd5c3175f3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_audio_type_II_format_discrete_desc_t::wSamplesPerFrame</definition>
+        <argsstring></argsstring>
+        <name>wSamplesPerFrame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="534" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="534" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gaf40aae3b390f2bf54f536d1430aacd07" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_discrete_desc_t::bSamFreqType</definition>
+        <argsstring></argsstring>
+        <name>bSamFreqType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="535" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gafd839962e8810d3bad90b725ab46c322" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_type_II_format_discrete_desc_t::tSamFreq[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>tSamFreq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="536" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad373780bd52ddce51329d69f6c26bd89" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usbadc_mute</definition>
+        <argsstring></argsstring>
+        <name>usbadc_mute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="545" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab7bbb29ecda20067e2967932fbeaafb0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usbadc_current_vol</definition>
+        <argsstring></argsstring>
+        <name>usbadc_current_vol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="546" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_s_b___d_e_v___a_d_c_1gab898071398b359603a35c202e9c65f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct</type>
+        <definition>struct __attribute__</definition>
+        <argsstring>((packed))</argsstring>
+        <name>__attribute__</name>
+        <param>
+          <type>(packed)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="42" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="387" bodyend="397"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___a_d_c_1gaea18248888f544f12c304e0c8d6ea631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usbadc_if_get_request</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbadc_if_get_request</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="540" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___a_d_c_1ga23affdfff605d48509e60e1f697e1da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usb_dev_adc_if_set_request</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_adc_if_set_request</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="541" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___a_d_c_1ga3b0c758bd01fe299b0dd57ce7fc9482f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usbadc_ep_get_request</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbadc_ep_get_request</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="542" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___a_d_c_1ga5e1194857ce4bea9621e396a1d3d5ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usbadc_ep_set_request</definition>
+        <argsstring>(void)</argsstring>
+        <name>usbadc_ep_set_request</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="543" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad928294249be1621a550968d1c0806b7" prot="public" static="no">
+        <name>USB_AUDIO_FEATURE_UNIT_BMA_CONTROLS_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="25" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga1dc782b7da2e6de05cc7857456af5d8e" prot="public" static="no">
+        <name>USB_AUDIO_INTERFACE_BA_INTERFACE_NR_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="30" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga59f82ba0720d96b7a4a2182f14c3f438" prot="public" static="no">
+        <name>USB_AUDIO_DISCRETE_SAM_FREQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="34" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9bbadfa258a10dcc31eecabb0de783b9" prot="public" static="no">
+        <name>AUDIO_SUBCLASS_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="39" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga14dd9f9242ee8b24bcb510bab37c8fef" prot="public" static="no">
+        <name>AUDIO_SUBCLASS_AUDIOCONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="40" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaea94e7ffd8b90fbf211b1adade850d8e" prot="public" static="no">
+        <name>AUDIO_SUBCLASS_AUDIOSTREAMING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="41" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gae3faf2c70030e38c3899e2b052ab1f0c" prot="public" static="no">
+        <name>AUDIO_SUBCLASS_MIDISTREAMING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="42" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac6c73a80cb9d49487eeb8703cfbdf0cb" prot="public" static="no">
+        <name>AUDIO_PROTOCOL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="45" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0e727e0a37e27b37142e0eec92b8318d" prot="public" static="no">
+        <name>AUDIO_UNDEFINED_DESCRIPTOR_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="48" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac74d2f2ced274de1407e224c31ebfc66" prot="public" static="no">
+        <name>AUDIO_DEVICE_DESCRIPTOR_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaaa05f34105a8006f9214ce3067f20f0b" prot="public" static="no">
+        <name>AUDIO_CONFIGURATION_DESCRIPTOR_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="50" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga371b2312fa747d7d0f9f08e1f33b26ac" prot="public" static="no">
+        <name>AUDIO_STRING_DESCRIPTOR_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="51" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf25e342de1f3d1b2137925f70e10389a" prot="public" static="no">
+        <name>AUDIO_INTERFACE_DESCRIPTOR_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5c4ce8cb5027c037b802f97b5f66891e" prot="public" static="no">
+        <name>AUDIO_ENDPOINT_DESCRIPTOR_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa5293a1026d7885cfb60b6556746cdb0" prot="public" static="no">
+        <name>AUDIO_CONTROL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa5293a1026d7885cfb60b6556746cdb0" prot="public" static="no">
+        <name>AUDIO_CONTROL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="118" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf1a3d7b80b6bd3019d2c40eccf01da03" prot="public" static="no">
+        <name>AUDIO_CONTROL_HEADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="58" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2af14842f07bc6c3d5a9a470c428d83e" prot="public" static="no">
+        <name>AUDIO_CONTROL_INPUT_TERMINAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="59" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4e0c39de7f43d370bd23dbb5841a5a7a" prot="public" static="no">
+        <name>AUDIO_CONTROL_OUTPUT_TERMINAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="60" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5ea821786cfbb57376fb6a8521476fed" prot="public" static="no">
+        <name>AUDIO_CONTROL_MIXER_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="61" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab807fda41f55b04f3724d88c747dab85" prot="public" static="no">
+        <name>AUDIO_CONTROL_SELECTOR_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="62" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga1b8815a2dab4c0967bbe4d757ca87ae8" prot="public" static="no">
+        <name>AUDIO_CONTROL_FEATURE_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="63" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab584fdbb0e2a7bd4a4c3c453edc36187" prot="public" static="no">
+        <name>AUDIO_CONTROL_PROCESSING_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="64" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gadea74df7f0487e8de650d99fcef1f171" prot="public" static="no">
+        <name>AUDIO_CONTROL_EXTENSION_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="65" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga978a82906cb26fc1c248595146d011b3" prot="public" static="no">
+        <name>AUDIO_STREAMING_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="68" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga3515b7bddca28fce08d5d28e025c280c" prot="public" static="no">
+        <name>AUDIO_STREAMING_GENERAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="69" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0f7e8970aa4e0e19401783dffd74f5d0" prot="public" static="no">
+        <name>AUDIO_STREAMING_FORMAT_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="70" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab18c5dd3ef4d87e4d2b2c43daadbcde8" prot="public" static="no">
+        <name>AUDIO_STREAMING_FORMAT_SPECIFIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="71" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga7013614c4575d4ee5f18c32ebd09904c" prot="public" static="no">
+        <name>AUDIO_ENDPOINT_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="74" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga7ee0f9e7689a4b3a7ab8bbe4655992f1" prot="public" static="no">
+        <name>AUDIO_ENDPOINT_GENERAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="75" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga26f4bc0c75a725d7e2330920ed49358f" prot="public" static="no">
+        <name>AUDIO_CONTROL_INTERFACE_DESC_SZ</name>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="79" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga8fbefd291519546aba1f543c7392580d" prot="public" static="no">
+        <name>AUDIO_STREAMING_INTERFACE_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="80" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga46bbfc5fcaee6f94e560c4716cc1cf1a" prot="public" static="no">
+        <name>AUDIO_INPUT_TERMINAL_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="81" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga852b39f55902df80280f8b2cdff33e44" prot="public" static="no">
+        <name>AUDIO_OUTPUT_TERMINAL_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2e107052a3cf43907e4eac1dcf9ecad1" prot="public" static="no">
+        <name>AUDIO_MIXER_UNIT_DESC_SZ</name>
+        <param><defname>p</defname></param>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="83" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf1f93f68e58b3c7d613b283d2cac34ef" prot="public" static="no">
+        <name>AUDIO_SELECTOR_UNIT_DESC_SZ</name>
+        <param><defname>p</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="84" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga086655dc17fdce9583cc04ec9af283be" prot="public" static="no">
+        <name>AUDIO_FEATURE_UNIT_DESC_SZ</name>
+        <param><defname>ch</defname></param>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="85" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9383286843715ae9790e111463aba099" prot="public" static="no">
+        <name>AUDIO_PROCESSING_UNIT_DESC_SZ</name>
+        <param><defname>p</defname></param>
+        <param><defname>n</defname></param>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="86" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab1c5925a4f14d532e4e74b54f2e7122e" prot="public" static="no">
+        <name>AUDIO_EXTENSION_UNIT_DESC_SZ</name>
+        <param><defname>p</defname></param>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="87" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab34a2bc913fe89452fae9464dd1c9eda" prot="public" static="no">
+        <name>AUDIO_STANDARD_ENDPOINT_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="88" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaed40b3d6d4094028af63aeffad12119b" prot="public" static="no">
+        <name>AUDIO_STREAMING_ENDPOINT_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="89" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac163104ed0df64225534b32b31f5f956" prot="public" static="no">
+        <name>AUDIO_UNDEFINED_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="93" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga1a869cd434a25839401b157be0656674" prot="public" static="no">
+        <name>AUDIO_UP_DOWN_MIX_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="94" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga13de3adb686100649341c640c690b8c5" prot="public" static="no">
+        <name>AUDIO_DOLBY_PROLOGIC_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="95" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga62226f9d8842bc9cc6f25d0c550e99eb" prot="public" static="no">
+        <name>AUDIO_3D_STEREO_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="96" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga960c139563637d4cef932509e021eea2" prot="public" static="no">
+        <name>AUDIO_REVERBERATION_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="97" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac341dd88f0b048ac19fb040b5042fb8f" prot="public" static="no">
+        <name>AUDIO_CHORUS_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="98" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab4746d94f333cec53a6e09c28a25f4db" prot="public" static="no">
+        <name>AUDIO_DYN_RANGE_COMP_PROCESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="99" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad058cc9e00a3f77c065c035295a0ef3f" prot="public" static="no">
+        <name>AUDIO_REQUEST_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="103" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5bcbe246dca4560d65321a8cf25501b2" prot="public" static="no">
+        <name>AUDIO_REQUEST_SET_CUR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="104" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga181fd4d47391976bbc8001b5ec56780d" prot="public" static="no">
+        <name>AUDIO_REQUEST_GET_CUR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="105" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga3ad35ba90ef50f9be9bdd6b41af02403" prot="public" static="no">
+        <name>AUDIO_REQUEST_SET_MIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="106" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gabd2a437d2a9b758799d08196dbf820a9" prot="public" static="no">
+        <name>AUDIO_REQUEST_GET_MIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="107" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0e6ca28eaacb3fda7dc316a909ab88c9" prot="public" static="no">
+        <name>AUDIO_REQUEST_SET_MAX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="108" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab951c366fa1bfd9c785827d8c0b2efaf" prot="public" static="no">
+        <name>AUDIO_REQUEST_GET_MAX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="109" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaaa338f2537e3e4182c5b1744d925e6f4" prot="public" static="no">
+        <name>AUDIO_REQUEST_SET_RES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="110" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga95cb736e2c7297bfdada757dc445165b" prot="public" static="no">
+        <name>AUDIO_REQUEST_GET_RES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="111" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga16d16c700b8761ebc6756ce2fb29488c" prot="public" static="no">
+        <name>AUDIO_REQUEST_SET_MEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="112" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf7f813daca503ae2940d42e4c02141e1" prot="public" static="no">
+        <name>AUDIO_REQUEST_GET_MEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="113" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf85e3f69a52a2b74c46806a384857f78" prot="public" static="no">
+        <name>AUDIO_REQUEST_GET_STAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="114" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad77e7b668e87269744c1c9843734be4e" prot="public" static="no">
+        <name>AUDIO_COPY_PROTECT_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="121" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga402009bdfc71a16f454b7a6f7133343c" prot="public" static="no">
+        <name>AUDIO_MUTE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="124" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga7726e07eb7e1a792d9e6a8ef26c325fd" prot="public" static="no">
+        <name>AUDIO_VOLUME_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="125" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab0991577d86ef3df0dedffdf2185ad9e" prot="public" static="no">
+        <name>AUDIO_BASS_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="126" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9a1c5c98fbb358bf1158b190529a95be" prot="public" static="no">
+        <name>AUDIO_MID_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="127" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaafc8b4fcac8192e6a01da47757d5e297" prot="public" static="no">
+        <name>AUDIO_TREBLE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="128" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga79fd874bc384f91b0cfdbbdb4fc1d2b2" prot="public" static="no">
+        <name>AUDIO_GRAPHIC_EQUALIZER_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="129" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4e1a05bf8789779c1a0245705f837dd5" prot="public" static="no">
+        <name>AUDIO_AUTOMATIC_GAIN_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="130" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gacc54177ceb00278987ddd51b84dc0349" prot="public" static="no">
+        <name>AUDIO_DELAY_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="131" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9d8d1b04f87aa6d8b8c5873e945e56f2" prot="public" static="no">
+        <name>AUDIO_BASS_BOOST_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="132" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga40c5b02147d723f41661ddaae58f3697" prot="public" static="no">
+        <name>AUDIO_LOUDNESS_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="133" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0dd8f411912881dd7f054e4e54e082c0" prot="public" static="no">
+        <name>AUDIO_ENABLE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="136" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafbdb9e768bfee451e03027a6738fa002" prot="public" static="no">
+        <name>AUDIO_MODE_SELECT_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="137" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga011b2303d90a27c662b6ab6f1c011046" prot="public" static="no">
+        <name>AUDIO_SPACIOUSNESS_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="149" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga75acca89308b590c4ad5fd268a3e2653" prot="public" static="no">
+        <name>AUDIO_REVERB_LEVEL_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="153" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga7c2ad5328b0f5b4f95d1e66cbc331a75" prot="public" static="no">
+        <name>AUDIO_REVERB_TIME_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="154" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2d6e95f5efaf8cfa252420550437ce85" prot="public" static="no">
+        <name>AUDIO_REVERB_FEEDBACK_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="155" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaca8555d61fbf9b2f13f69f903cdbee78" prot="public" static="no">
+        <name>AUDIO_CHORUS_LEVEL_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="159" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga721a1904a7485d7c0a4e1f78a76b92d2" prot="public" static="no">
+        <name>AUDIO_SHORUS_RATE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="160" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga87a06bfcade8ae0d704aa59d9d285e50" prot="public" static="no">
+        <name>AUDIO_CHORUS_DEPTH_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="161" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga85565232a4c3651fa537093708f1867c" prot="public" static="no">
+        <name>AUDIO_COMPRESSION_RATE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="165" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga60b0e87a813f1a82d8fe3ae8b99bc55a" prot="public" static="no">
+        <name>AUDIO_MAX_AMPL_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="166" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafa0cce43f0f3e530e30cca4f04ce20aa" prot="public" static="no">
+        <name>AUDIO_THRESHOLD_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="167" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2ee70b4a22f0fed4418f149629ef264f" prot="public" static="no">
+        <name>AUDIO_ATTACK_TIME_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="168" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga30693dc52a62e5905825a663ffeed8c6" prot="public" static="no">
+        <name>AUDIO_RELEASE_TIME_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="169" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga61575b3b775cfd20761568ad637a45a2" prot="public" static="no">
+        <name>AUDIO_SAMPLING_FREQ_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="175" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga231eec19d4d740acdeb7b2b4a51e7b78" prot="public" static="no">
+        <name>AUDIO_PITCH_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="176" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gae4edd46b2253d8b3295cb82219375dc8" prot="public" static="no">
+        <name>AUDIO_MPEG_CONTROL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="182" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga97b6ae42da8e0f56f7b27a035c364603" prot="public" static="no">
+        <name>AUDIO_MPEG_DUAL_CHANNEL_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="183" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga7e918385ed7471e71b3655f2be78e6d3" prot="public" static="no">
+        <name>AUDIO_MPEG_SECOND_STEREO_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="184" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9124e7c095b0a884eae13aef6ccedc21" prot="public" static="no">
+        <name>AUDIO_MPEG_MULTILINGUAL_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="185" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaac9e14cc288275ba52a72190a7505e4a" prot="public" static="no">
+        <name>AUDIO_MPEG_DYN_RANGE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="186" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2353f59ca78372d25c4e977a0d420c4a" prot="public" static="no">
+        <name>AUDIO_MPEG_SCALING_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="187" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaed991a5a90e11263bdc217ccd47912aa" prot="public" static="no">
+        <name>AUDIO_MPEG_HILO_SCALING_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="188" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2e3f43726bef0749785d735be7c494d6" prot="public" static="no">
+        <name>AUDIO_AC3_CONTROL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="191" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4b237a77a2ab49dffebb04263c5334ad" prot="public" static="no">
+        <name>AUDIO_AC3_MODE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="192" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad74f7189c9e72a6e95db05c2bc71f378" prot="public" static="no">
+        <name>AUDIO_AC3_DYN_RANGE_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="193" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac223a5f1bed1739ceab09ecb77c55d29" prot="public" static="no">
+        <name>AUDIO_AC3_SCALING_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="194" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga1cedf0cbccb0c0b6b980be2c8ba0a2f5" prot="public" static="no">
+        <name>AUDIO_AC3_HILO_SCALING_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="195" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf181669b73bb95174420777a352be3dc" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="199" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5a6a0f89271cee8d5c619372705269fe" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_I</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="200" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga3cd1c519b2b6909a5623cc9e19d63b40" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_II</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="201" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad248b664772767f05c8e1464392e5a98" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_III</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="202" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafc93b076ea22374f621266c3eef054f6" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_I_DESC_SZ</name>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="206" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga807907b5f013efe1e2d8582e360874fc" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_II_DESC_SZ</name>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="207" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafc5386c8f550a94984cf19c71756e7cb" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_III_DESC_SZ</name>
+        <param><defname>n</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="208" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga316210ac7fe1a8be88fd1516f25b18ce" prot="public" static="no">
+        <name>AUDIO_FORMAT_MPEG_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="209" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab3a828b3a229aa9f3baf1e850a1bd9bc" prot="public" static="no">
+        <name>AUDIO_FORMAT_AC3_DESC_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="210" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga66d6cac4444049a67de7593f0d41b46d" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_I_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="216" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9ccaafa717b28a52b1019dc4c8b6bda4" prot="public" static="no">
+        <name>AUDIO_FORMAT_PCM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="217" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga29c1ede3370bc9103d94aef305d5ef5c" prot="public" static="no">
+        <name>AUDIO_FORMAT_PCM8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="218" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga765a1eb24d18bc600e0cbe42dcf3aa09" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEEE_FLOAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="219" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga45ca62b892a929ba1e253c4e74c001da" prot="public" static="no">
+        <name>AUDIO_FORMAT_ALAW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="220" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab560393b32b7ec1ec0ec42b4f926bfa5" prot="public" static="no">
+        <name>AUDIO_FORMAT_MULAW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="221" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga6a8bf4697aa4623b91372ab694eb646a" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_II_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="224" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf535fe4617889a795f947ce9887beb6c" prot="public" static="no">
+        <name>AUDIO_FORMAT_MPEG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="225" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga01519dfe142479bfa9180de96d2145d6" prot="public" static="no">
+        <name>AUDIO_FORMAT_AC3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="226" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga14fdc7d6e2f1fbfd5029375830887945" prot="public" static="no">
+        <name>AUDIO_FORMAT_TYPE_III_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="229" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga85c72f0112841b1d475161d8a6b59c59" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_AC3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="230" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga43b1ffa3cc8622e04605cce2795617a6" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_MPEG1_L1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="231" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5af19f7e16f9f2a7f08a9d0afd45257d" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_MPEG1_L2_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="232" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga07129694fda26289c59d9260e9d775d6" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_MPEG2_NOEXT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="233" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gacd1fb02d63d001060d042200857a1cf4" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_MPEG2_EXT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="234" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4eb907282ea4434be45589cbd80a08b4" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_MPEG2_L1_LS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="235" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9ebd0d5f40f83dcc67df4526e213629c" prot="public" static="no">
+        <name>AUDIO_FORMAT_IEC1937_MPEG2_L2_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="236" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga552f382d98631df096893d7e3293e45e" prot="public" static="no">
+        <name>AUDIO_CHANNEL_M</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="240" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gabbcf316ef88d6ebdc9a68ebd1a9a596f" prot="public" static="no">
+        <name>AUDIO_CHANNEL_L</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="241" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf3e73a517f47b821a12ba99f06d0b9ff" prot="public" static="no">
+        <name>AUDIO_CHANNEL_R</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="242" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafd9fe0a037dda1a7fc10311c81e3d5a2" prot="public" static="no">
+        <name>AUDIO_CHANNEL_C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="243" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad8660bc2984b4087078f088451cf1028" prot="public" static="no">
+        <name>AUDIO_CHANNEL_LFE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="244" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga3e75e7faeeac24b31074238ad95e6346" prot="public" static="no">
+        <name>AUDIO_CHANNEL_LS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="245" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga540bf27c67dedce0f7f9aedcdd47eaaa" prot="public" static="no">
+        <name>AUDIO_CHANNEL_RS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="246" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga00af678c6791ac7afed1f168e5ff7fcf" prot="public" static="no">
+        <name>AUDIO_CHANNEL_LC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="247" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga16efde16dd350b96531c7737d382a871" prot="public" static="no">
+        <name>AUDIO_CHANNEL_RC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="248" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga027b9fc5d743276f4a4d5f1a13b05254" prot="public" static="no">
+        <name>AUDIO_CHANNEL_S</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="249" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga6ee43eb0372a4bfc8a48cb49c6c62b8a" prot="public" static="no">
+        <name>AUDIO_CHANNEL_SL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="250" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga3ab36f249b6fe3f3eb69e0de3e5aec7d" prot="public" static="no">
+        <name>AUDIO_CHANNEL_SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="251" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab321bc3df9be6b6fe3fd89d5ccd970c4" prot="public" static="no">
+        <name>AUDIO_CHANNEL_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="252" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga719f014ec37f0165b6a6c87dfd03bca3" prot="public" static="no">
+        <name>AUDIO_CONTROL_MUTE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="256" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga64da519e51787edc899f8cd42d0b5ea5" prot="public" static="no">
+        <name>AUDIO_CONTROL_VOLUME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="257" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga280d3c4feef787f5f31d8e030582e23f" prot="public" static="no">
+        <name>AUDIO_CONTROL_BASS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="258" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9dad9a5eaa1c05ea26641aba2b9cf919" prot="public" static="no">
+        <name>AUDIO_CONTROL_MID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="259" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga956b1e9222b478df2a39d86123428f53" prot="public" static="no">
+        <name>AUDIO_CONTROL_TREBLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="260" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga965e13439d65977437b7cd0d182a1073" prot="public" static="no">
+        <name>AUDIO_CONTROL_GRAPHIC_EQUALIZER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="261" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa422b7a24cf5f5923932f7295e8dd899" prot="public" static="no">
+        <name>AUDIO_CONTROL_AUTOMATIC_GAIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="262" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad67bc25a7ec554fceb361f6186db405d" prot="public" static="no">
+        <name>AUDIO_CONTROL_DEALY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="263" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga8f407db9c8ae138db73aeee7b355426a" prot="public" static="no">
+        <name>AUDIO_CONTROL_BASS_BOOST</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="264" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga357dafc672fc0a20fc7f2d733551d815" prot="public" static="no">
+        <name>AUDIO_CONTROL_LOUDNESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="265" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5ba6f54a7acbf06dc45213c5f39fa37b" prot="public" static="no">
+        <name>AUDIO_CONTROL_ENABLE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="268" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab6f1f331f11716a67b96d5e8f57167f0" prot="public" static="no">
+        <name>AUDIO_CONTROL_MODE_SELECT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="269" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga404af4d60b91724e9eeae0e64c94ce0e" prot="public" static="no">
+        <name>AUDIO_CONTROL_SPACIOUSNESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="281" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga36ed09bf63e0513208462fc64774683c" prot="public" static="no">
+        <name>AUDIO_CONTROL_REVERB_TYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="285" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad939e103978d97e99f77ed48f78bcdec" prot="public" static="no">
+        <name>AUDIO_CONTROL_REVERB_LEVEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="286" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0ba92310e37931a29f747f16f6bd7c3a" prot="public" static="no">
+        <name>AUDIO_CONTROL_REVERB_TIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="287" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga05ea7cc7dfa49614d28680ea17556d10" prot="public" static="no">
+        <name>AUDIO_CONTROL_REVERB_FEEDBACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="288" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa453204d0aed43c7fc4551fb562b0d75" prot="public" static="no">
+        <name>AUDIO_CONTROL_CHORUS_LEVEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="292" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafb402c7a6c0ae7916c03f637ed5c7126" prot="public" static="no">
+        <name>AUDIO_CONTROL_SHORUS_RATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="293" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga61edd1003d06068a66b1a5272d3fb736" prot="public" static="no">
+        <name>AUDIO_CONTROL_CHORUS_DEPTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="294" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga6ec9d14ffff97854aeb07d43e6b4fb4f" prot="public" static="no">
+        <name>AUDIO_CONTROL_COMPRESSION_RATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="298" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2b0f602b0beb82255afcc85eeebee817" prot="public" static="no">
+        <name>AUDIO_CONTROL_MAX_AMPL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="299" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gae75ed31db7c5fe8d290e960437316fe9" prot="public" static="no">
+        <name>AUDIO_CONTROL_THRESHOLD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="300" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga6b54cc026dfebb7cbb6f8f61ae49b310" prot="public" static="no">
+        <name>AUDIO_CONTROL_ATTACK_TIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="301" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga8ce649230426a0eca7a9863c64405cca" prot="public" static="no">
+        <name>AUDIO_CONTROL_RELEASE_TIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="302" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab4c5f16d4fcb441583139cbc39c01ab2" prot="public" static="no">
+        <name>AUDIO_CONTROL_SAMPLING_FREQ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="308" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga8c07d7dda77f03ce51b7b0c9e7970a8c" prot="public" static="no">
+        <name>AUDIO_CONTROL_PITCH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="309" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga785ddbd1de071b65ddd566a26eb72392" prot="public" static="no">
+        <name>AUDIO_MAX_PACKETS_ONLY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="310" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga88095c50b8da00343175985136dabdf6" prot="public" static="no">
+        <name>AUDIO_TERMINAL_USB_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="316" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga596736b41d85280893dbff4b6df7b453" prot="public" static="no">
+        <name>AUDIO_TERMINAL_USB_STREAMING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="317" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac69809db332414cba9aaf3af528d1270" prot="public" static="no">
+        <name>AUDIO_TERMINAL_USB_VENDOR_SPECIFIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="318" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga36c02e4244d5d573283b8735d0313f98" prot="public" static="no">
+        <name>AUDIO_TERMINAL_INPUT_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="321" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab644dfa8f368ee829c76057535ec6548" prot="public" static="no">
+        <name>AUDIO_TERMINAL_MICROPHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="322" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0e5fbb43779c2410565cd1d7cb94ed0c" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DESKTOP_MICROPHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="323" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga2f597acfc41cd47d20de5491869873d5" prot="public" static="no">
+        <name>AUDIO_TERMINAL_PERSONAL_MICROPHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="324" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gadac9604ee591058e3e0a567b8ef5c84a" prot="public" static="no">
+        <name>AUDIO_TERMINAL_OMNI_DIR_MICROPHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="325" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gae47adfd75060b9d251b58281e358cee0" prot="public" static="no">
+        <name>AUDIO_TERMINAL_MICROPHONE_ARRAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="326" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gadbe92cfe6339d6b51d6fdd98c07fdcf8" prot="public" static="no">
+        <name>AUDIO_TERMINAL_PROCESSING_MIC_ARRAY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="327" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad5a75b28259fe9a0268ec85a8157f9bb" prot="public" static="no">
+        <name>AUDIO_TERMINAL_OUTPUT_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="330" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa9c47c96c8836930e2d9afa97e0e8d65" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SPEAKER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="331" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga18aa940089a47aec019cc6d7006d3d7d" prot="public" static="no">
+        <name>AUDIO_TERMINAL_HEADPHONES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="332" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gad7f2ef46837fb579bf544ee67151fe6a" prot="public" static="no">
+        <name>AUDIO_TERMINAL_HEAD_MOUNTED_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="333" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa99b52bfe1ffc02fb987c4429a7a3eb0" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DESKTOP_SPEAKER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="334" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf8ee8ff91e7a4c0d2c967554f3363178" prot="public" static="no">
+        <name>AUDIO_TERMINAL_ROOM_SPEAKER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="335" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4e079aa95e71fab8bcb7d4f664df6f5c" prot="public" static="no">
+        <name>AUDIO_TERMINAL_COMMUNICATION_SPEAKER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="336" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4a06c767bcb115d37f29069a55c62afa" prot="public" static="no">
+        <name>AUDIO_TERMINAL_LOW_FREQ_SPEAKER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="337" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga77d00eb9a6626dc79d5f14774dcaf895" prot="public" static="no">
+        <name>AUDIO_TERMINAL_BIDIRECTIONAL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="340" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga87f305120110eaffece57efc6734ff08" prot="public" static="no">
+        <name>AUDIO_TERMINAL_HANDSET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="341" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaeffa1ce5bf4172675e3f86c12d634c0f" prot="public" static="no">
+        <name>AUDIO_TERMINAL_HEAD_MOUNTED_HANDSET</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="342" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gae9374df6879dad0e3405086ce11cc4a9" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SPEAKERPHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="343" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga20199658a9a9b62edb3382edc8478be1" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SPEAKERPHONE_ECHOSUPRESS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="344" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga6df58db432ba005b3c4c395528add726" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SPEAKERPHONE_ECHOCANCEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="345" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga145f94cd38a52248d78100f67d4d8ec9" prot="public" static="no">
+        <name>AUDIO_TERMINAL_TELEPHONY_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="348" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga8d221fde089c80ba10e656119bd8c624" prot="public" static="no">
+        <name>AUDIO_TERMINAL_PHONE_LINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="349" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gafb940183773a42d6dfdd8da61b7e3106" prot="public" static="no">
+        <name>AUDIO_TERMINAL_TELEPHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="350" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga716edc97bf582e42a953ae7a6e58aafa" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DOWN_LINE_PHONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="351" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga8d2c28a711cc3668f0f6b017abc347d5" prot="public" static="no">
+        <name>AUDIO_TERMINAL_EXTERNAL_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="354" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga6e66e75ad7adfcc8569c755cd2b3b57b" prot="public" static="no">
+        <name>AUDIO_TERMINAL_ANALOG_CONNECTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="355" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga41d7c0e7b7de3287f7926cd80b090eef" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DIGITAL_AUDIO_INTERFACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="356" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga81d32b3e852cc23421681c2bd2fabd27" prot="public" static="no">
+        <name>AUDIO_TERMINAL_LINE_CONNECTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="357" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gadd4cfa9773364e9c99ba6b9e2121d30c" prot="public" static="no">
+        <name>AUDIO_TERMINAL_LEGACY_AUDIO_CONNECTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="358" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga4f01ddb2b0d9d9531a25339f654db1e5" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SPDIF_INTERFACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="359" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga1bdc8cabedfd13e637a56cf95221d18e" prot="public" static="no">
+        <name>AUDIO_TERMINAL_1394_DA_STREAM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="360" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga58dc021b550926013e26109cbf38e73f" prot="public" static="no">
+        <name>AUDIO_TERMINAL_1394_DA_STREAM_TRACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="361" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga0b748573f5ddc76965e1616a264cfcbf" prot="public" static="no">
+        <name>AUDIO_TERMINAL_EMBEDDED_UNDEFINED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="364" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga9f078781304d15a0655bdc66ec233f01" prot="public" static="no">
+        <name>AUDIO_TERMINAL_CALIBRATION_NOISE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="365" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaf7ec2cb86f342a973fc2ff1347aeed7d" prot="public" static="no">
+        <name>AUDIO_TERMINAL_EQUALIZATION_NOISE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="366" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gabb66309d49bd71c1fb68be4f24df0185" prot="public" static="no">
+        <name>AUDIO_TERMINAL_CD_PLAYER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="367" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga67b00951f69b12024db7ef604e9cd539" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="368" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga95d74898a7ec05af4fb20df20ac41624" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DCC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="369" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac00d92f13f6b8149737bf6d79503d528" prot="public" static="no">
+        <name>AUDIO_TERMINAL_MINI_DISK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="370" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gab304841d60bb57cb091df1df0cc527a5" prot="public" static="no">
+        <name>AUDIO_TERMINAL_ANALOG_TAPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="371" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5d47d6f23623fe9c751251487c58707d" prot="public" static="no">
+        <name>AUDIO_TERMINAL_PHONOGRAPH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="372" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga82e3db0b97d29b3fde05246c78d2647c" prot="public" static="no">
+        <name>AUDIO_TERMINAL_VCR_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="373" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga36940e425003fd49244bc07284544b17" prot="public" static="no">
+        <name>AUDIO_TERMINAL_VIDEO_DISC_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="374" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga07fe8ce3594357d6acb3f891202a410f" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DVD_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="375" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga92cb4a0d85012bd9ba07e1aeca93170d" prot="public" static="no">
+        <name>AUDIO_TERMINAL_TV_TUNER_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="376" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa710f0e0b54e8272e2526185a7ee3bbe" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SATELLITE_RECEIVER_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="377" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gac42ff4e174f7bf03f64c3a414d6b1d35" prot="public" static="no">
+        <name>AUDIO_TERMINAL_CABLE_TUNER_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="378" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga045af68f2f6e5de1085f0a26b1535a41" prot="public" static="no">
+        <name>AUDIO_TERMINAL_DSS_AUDIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="379" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga5fdc211a60c7d8944e5e5dfefdf46c7d" prot="public" static="no">
+        <name>AUDIO_TERMINAL_RADIO_RECEIVER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="380" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gaa9cd0bcc4cd1ca79184b14a0eee7aea0" prot="public" static="no">
+        <name>AUDIO_TERMINAL_RADIO_TRANSMITTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="381" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1ga68d73ec74676c5fecbafafb215f0d428" prot="public" static="no">
+        <name>AUDIO_TERMINAL_MULTI_TRACK_RECORDER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="382" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___a_d_c_1gadd9954365fd2960a53a0c8271359ebea" prot="public" static="no">
+        <name>AUDIO_TERMINAL_SYNTHESIZER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="383" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is not yet implemented. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

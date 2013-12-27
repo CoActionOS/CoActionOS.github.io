@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="device_8h" kind="file">
+    <compoundname>device.h</compoundname>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="types_8h" local="yes">hwpl/types.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includes refid="pio_8h" local="yes">dev/pio.h</includes>
+    <includedby refid="sysfs_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h</includedby>
+    <includedby refid="caos_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h</includedby>
+    <includedby refid="hwdl_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h</includedby>
+    <includedby refid="link_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</includedby>
+    <includedby refid="devfifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h</includedby>
+    <includedby refid="uartfifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h</includedby>
+    <includedby refid="usbfifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h</includedby>
+    <incdepgraph>
+      <node id="1700">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="1701">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1706">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1703">
+        <label>stdint.h</label>
+      </node>
+      <node id="1704">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="1699">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/device.h</label>
+        <link refid="device.h"/>
+        <childnode refid="1700" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1702" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+        <childnode refid="1705" relation="include">
+        </childnode>
+      </node>
+      <node id="1702">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1701" relation="include">
+        </childnode>
+      </node>
+      <node id="1705">
+        <label>dev/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="1701" relation="include">
+        </childnode>
+        <childnode refid="1703" relation="include">
+        </childnode>
+        <childnode refid="1706" relation="include">
+        </childnode>
+        <childnode refid="1704" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1716">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c</label>
+        <link refid="__fstat_8c"/>
+      </node>
+      <node id="1733">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_flags.h</label>
+        <link refid="unistd__flags_8h_source"/>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1734" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1731" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+      </node>
+      <node id="1714">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_fs.h</label>
+        <link refid="unistd__fs_8h_source"/>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1715" relation="include">
+        </childnode>
+        <childnode refid="1716" relation="include">
+        </childnode>
+        <childnode refid="1717" relation="include">
+        </childnode>
+        <childnode refid="1718" relation="include">
+        </childnode>
+        <childnode refid="1719" relation="include">
+        </childnode>
+        <childnode refid="1720" relation="include">
+        </childnode>
+        <childnode refid="1721" relation="include">
+        </childnode>
+        <childnode refid="1722" relation="include">
+        </childnode>
+        <childnode refid="1723" relation="include">
+        </childnode>
+        <childnode refid="1724" relation="include">
+        </childnode>
+        <childnode refid="1725" relation="include">
+        </childnode>
+        <childnode refid="1726" relation="include">
+        </childnode>
+        <childnode refid="1727" relation="include">
+        </childnode>
+        <childnode refid="1728" relation="include">
+        </childnode>
+        <childnode refid="1729" relation="include">
+        </childnode>
+        <childnode refid="1730" relation="include">
+        </childnode>
+        <childnode refid="1731" relation="include">
+        </childnode>
+        <childnode refid="1732" relation="include">
+        </childnode>
+      </node>
+      <node id="1731">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/rmdir.c</label>
+        <link refid="rmdir_8c"/>
+      </node>
+      <node id="1723">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_stat.c</label>
+        <link refid="__stat_8c"/>
+      </node>
+      <node id="1732">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c</label>
+        <link refid="unistd__data__transfer_8c"/>
+      </node>
+      <node id="1720">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c</label>
+        <link refid="__open_8c"/>
+      </node>
+      <node id="1726">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_write.c</label>
+        <link refid="__write_8c"/>
+      </node>
+      <node id="1710">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c</label>
+        <link refid="dirent_8c"/>
+      </node>
+      <node id="1709">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/cafs_lite.h</label>
+        <link refid="cafs__lite_8h_source"/>
+      </node>
+      <node id="1729">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/lstat.c</label>
+        <link refid="lstat_8c"/>
+      </node>
+      <node id="1719">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c</label>
+        <link refid="__lseek_8c"/>
+      </node>
+      <node id="1736">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c</label>
+        <link refid="access_8c"/>
+      </node>
+      <node id="1721">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c</label>
+        <link refid="__read_8c"/>
+      </node>
+      <node id="1713">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_close.c</label>
+        <link refid="__close_8c"/>
+      </node>
+      <node id="1743">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h</label>
+        <link refid="usbfifo_8h"/>
+      </node>
+      <node id="1715">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fcntl.c</label>
+        <link refid="__fcntl_8c"/>
+      </node>
+      <node id="1730">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/mkdir.c</label>
+        <link refid="mkdir_8c"/>
+      </node>
+      <node id="1727">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chmod.c</label>
+        <link refid="chmod_8c"/>
+      </node>
+      <node id="1741">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h</label>
+        <link refid="devfifo_8h"/>
+      </node>
+      <node id="1711">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c</label>
+        <link refid="mqueue_8c"/>
+      </node>
+      <node id="1738">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c</label>
+        <link refid="pthread__kill_8c"/>
+      </node>
+      <node id="1718">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_link.c</label>
+        <link refid="__link_8c"/>
+      </node>
+      <node id="1722">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_rename.c</label>
+        <link refid="__rename_8c"/>
+      </node>
+      <node id="1717">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_isatty.c</label>
+        <link refid="__isatty_8c"/>
+      </node>
+      <node id="1740">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+      <node id="1712">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c</label>
+        <link refid="sem_8c"/>
+      </node>
+      <node id="1724">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_symlink.c</label>
+        <link refid="__symlink_8c"/>
+      </node>
+      <node id="1728">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c</label>
+        <link refid="chown_8c"/>
+      </node>
+      <node id="1742">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h</label>
+        <link refid="uartfifo_8h"/>
+      </node>
+      <node id="1707">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/device.h</label>
+        <link refid="device.h"/>
+        <childnode refid="1708" relation="include">
+        </childnode>
+        <childnode refid="1737" relation="include">
+        </childnode>
+        <childnode refid="1739" relation="include">
+        </childnode>
+        <childnode refid="1740" relation="include">
+        </childnode>
+        <childnode refid="1741" relation="include">
+        </childnode>
+        <childnode refid="1742" relation="include">
+        </childnode>
+        <childnode refid="1743" relation="include">
+        </childnode>
+      </node>
+      <node id="1735">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c</label>
+        <link refid="__exit_8c"/>
+      </node>
+      <node id="1737">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h</label>
+        <link refid="caos_8h"/>
+        <childnode refid="1738" relation="include">
+        </childnode>
+      </node>
+      <node id="1725">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_unlink.c</label>
+        <link refid="__unlink_8c"/>
+      </node>
+      <node id="1708">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h</label>
+        <link refid="sysfs_8h_source"/>
+        <childnode refid="1709" relation="include">
+        </childnode>
+        <childnode refid="1710" relation="include">
+        </childnode>
+        <childnode refid="1711" relation="include">
+        </childnode>
+        <childnode refid="1712" relation="include">
+        </childnode>
+        <childnode refid="1713" relation="include">
+        </childnode>
+        <childnode refid="1714" relation="include">
+        </childnode>
+        <childnode refid="1733" relation="include">
+        </childnode>
+        <childnode refid="1735" relation="include">
+        </childnode>
+        <childnode refid="1736" relation="include">
+        </childnode>
+      </node>
+      <node id="1734">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c</label>
+        <link refid="ioctl_8c"/>
+      </node>
+      <node id="1739">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h</label>
+        <link refid="hwdl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structdevice__periph__t" prot="public">device_periph_t</innerclass>
+    <innerclass refid="structdevice__gpio__t" prot="public">device_gpio_t</innerclass>
+    <innerclass refid="structdevice__spi__cfg__t" prot="public">device_spi_cfg_t</innerclass>
+    <innerclass refid="structdevice__i2c__cfg__t" prot="public">device_i2c_cfg_t</innerclass>
+    <innerclass refid="structdevice__uart__cfg__t" prot="public">device_uart_cfg_t</innerclass>
+    <innerclass refid="structdevice__adc__cfg__t" prot="public">device_adc_cfg_t</innerclass>
+    <innerclass refid="structdevice__pwm__cfg__t" prot="public">device_pwm_cfg_t</innerclass>
+    <innerclass refid="structdevice__cfg__t" prot="public">device_cfg_t</innerclass>
+    <innerclass refid="structdevice__transfer__t" prot="public">device_transfer_t</innerclass>
+    <innerclass refid="structdevice__driver__t" prot="public">device_driver_t</innerclass>
+    <innerclass refid="structdevice__t" prot="public">device_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1ga08d004ab543e44cb940517e1b61e5ffd" prot="public" static="no">
+        <name>DEVICE_OP_CANCELLED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="31" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1gae564f28d3da3f9570e9fe9a10f3fc5ee" prot="public" static="no">
+        <name>DEVICE_GET_PORT</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="33" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1gac32db06aaae796b77832c68a4f11051b" prot="public" static="no">
+        <name>DEVICE_MAX_ADC_CHANNELS</name>
+        <briefdescription>
+<para>The maximum number of ADC channels in <ref refid="structdevice__adc__cfg__t" kindref="compound">device_adc_cfg_t</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="92" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1ga3be76be16dbb2e4f5b0fcf5d0d89b676" prot="public" static="no">
+        <name>DEVICE_MAX_PWM_CHANNELS</name>
+        <briefdescription>
+<para>The maximum number of PWM channels in <ref refid="structdevice__pwm__cfg__t" kindref="compound">device_pwm_cfg_t</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="107" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1ga6b433602d7271fbaeb0718e51ca8aeb5" prot="public" static="no">
+        <name>HWPL_CFG_SIZE_MAX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="121" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1ga165705932136733b510118528aaa3ea2" prot="public" static="no">
+        <name>DEVICE_MODE</name>
+        <param><defname>mode_value</defname></param>
+        <param><defname>uid_value</defname></param>
+        <param><defname>gid_value</defname></param>
+        <param><defname>type</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="199" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1ga6a0010ad129de4ba424373539fbee3e9" prot="public" static="no">
+        <name>DEVICE_DRIVER</name>
+        <param><defname>driver_name</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="203" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1gaf2dab6bcaaea877f754624fa0e10dbcf" prot="public" static="no">
+        <name>DEVICE_PERIPH</name>
+        <param><defname>device_name</defname></param>
+        <param><defname>periph_name</defname></param>
+        <param><defname>port_number</defname></param>
+        <param><defname>mode_value</defname></param>
+        <param><defname>uid_value</defname></param>
+        <param><defname>gid_value</defname></param>
+        <param><defname>device_type</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro is used to initialize an MCU peripheral in the devices table.</para><para>Example: <programlisting><codeline><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__t" kindref="compound">device_t</ref><sp/>devices[]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___d_e_v_i_c_e_1gaf2dab6bcaaea877f754624fa0e10dbcf" kindref="member">DEVICE_PERIPH</ref>(</highlight><highlight class="stringliteral">&quot;adc0&quot;</highlight><highlight class="normal">,<sp/>adc,<sp/>0,<sp/>0666,<sp/>USER_ROOT,<sp/>GROUP_ROOT,<sp/>S_IFCHR),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___d_e_v_i_c_e_1gaf2dab6bcaaea877f754624fa0e10dbcf" kindref="member">DEVICE_PERIPH</ref>(</highlight><highlight class="stringliteral">&quot;uart0&quot;</highlight><highlight class="normal">,<sp/>uart,<sp/>0,<sp/>0666,<sp/>USER_ROOT,<sp/>GROUP_ROOT,<sp/>S_IFCHR)</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="220" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_e_v_i_c_e_1gae71addb222cf93e92a8349b62ed19cf6" prot="public" static="no">
+        <name>DEVICE_TERMINATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="227" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___d_e_v_i_c_e_1ga0e45a1d482d98ae55004f12aab4cb1f4" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* device_driver_open_t)(const device_cfg_t *)</definition>
+        <argsstring>)(const device_cfg_t *)</argsstring>
+        <name>device_driver_open_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="163" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_e_v_i_c_e_1gad32fa1dff735ef28ac94841b4a229371" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* device_driver_ioctl_t)(const device_cfg_t *, int, void *)</definition>
+        <argsstring>)(const device_cfg_t *, int, void *)</argsstring>
+        <name>device_driver_ioctl_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="164" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_e_v_i_c_e_1ga92efcdf09c373daf3304ec769c2ce033" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* device_driver_read_t)(const device_cfg_t *, device_transfer_t *)</definition>
+        <argsstring>)(const device_cfg_t *, device_transfer_t *)</argsstring>
+        <name>device_driver_read_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="165" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_e_v_i_c_e_1gaddf41eb20d822ee7c42c4d74308fa546" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* device_driver_write_t)(const device_cfg_t *, device_transfer_t *)</definition>
+        <argsstring>)(const device_cfg_t *, device_transfer_t *)</argsstring>
+        <name>device_driver_write_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="166" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___d_e_v_i_c_e_1ga1e3c69d67e0ebe5e26f6b8abcbc3aab0" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* device_driver_close_t)(const device_cfg_t *)</definition>
+        <argsstring>)(const device_cfg_t *)</argsstring>
+        <name>device_driver_close_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="167" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_e_v_i_c_e_1gaa2d2428109ea58d994362199011b936d" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool device_is_terminator</definition>
+        <argsstring>(const device_t *dev)</argsstring>
+        <name>device_is_terminator</name>
+        <param>
+          <type>const <ref refid="structdevice__t" kindref="compound">device_t</ref> *</type>
+          <declname>dev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="233" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="234" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#ifndef<sp/>_DEVICE_H_</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_DEVICE_H_</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pio_8h" kindref="compound">dev/pio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_OP_CANCELLED<sp/>((void*)0xABCDEF)</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_GET_PORT(x)<sp/>(x-&gt;periph.port)</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39" refid="structdevice__periph__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="40" refid="structdevice__periph__t_1adedc9b84ff518702743e02e9723b4891" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>port<sp/>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}<sp/><ref refid="structdevice__periph__t" kindref="compound">device_periph_t</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structdevice__gpio__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structdevice__gpio__t_1a9bb35b19317168705fcd53e9a194bc8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>port<sp/>;</highlight></codeline>
+<codeline lineno="50" refid="structdevice__gpio__t_1a96f6360e25bcc4d3d52bc020cb991969" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>pin<sp/>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/><ref refid="structdevice__gpio__t" kindref="compound">device_gpio_t</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="structdevice__spi__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="62" refid="structdevice__spi__cfg__t_1a1f1501f53c517f0e7fc37aaf16b73601" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structpio__t" kindref="compound">pio_t</ref><sp/>cs<sp/>;</highlight></codeline>
+<codeline lineno="63" refid="structdevice__spi__cfg__t_1ad61948957d67e3ce6131e4b3699eaf0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>width<sp/>;</highlight></codeline>
+<codeline lineno="64" refid="structdevice__spi__cfg__t_1ad1c8bb0db40e9b270b4bf6b76e8d4dbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>format<sp/>;</highlight></codeline>
+<codeline lineno="65" refid="structdevice__spi__cfg__t_1a2bd30731bb834e27faeaaf0ce396e671" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>mode<sp/>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>reserved0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structdevice__spi__cfg__t" kindref="compound">device_spi_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structdevice__i2c__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="75" refid="structdevice__i2c__cfg__t_1a6b1de192eb2e0bebf5a107267e9d96b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>slave_addr<sp/>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><ref refid="structdevice__i2c__cfg__t" kindref="compound">device_i2c_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="structdevice__uart__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="84" refid="structdevice__uart__cfg__t_1ac8288d5496b6fa6ffb489240e5afc74d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>stop_bits<sp/>;</highlight></codeline>
+<codeline lineno="85" refid="structdevice__uart__cfg__t_1a9a65e5252126b669ed40765242315de0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>parity<sp/>;</highlight></codeline>
+<codeline lineno="86" refid="structdevice__uart__cfg__t_1ad7a7e5be02a3b7e09d536dd59be420c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>width<sp/>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}<sp/><ref refid="structdevice__uart__cfg__t" kindref="compound">device_uart_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="group___d_e_v_i_c_e_1gac32db06aaae796b77832c68a4f11051b" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_MAX_ADC_CHANNELS<sp/>8</highlight></codeline>
+<codeline lineno="93"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="99" refid="structdevice__adc__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="100" refid="structdevice__adc__cfg__t_1a592a7d37267bc87a20b2a38ed301374f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>reference<sp/>;</highlight></codeline>
+<codeline lineno="101" refid="structdevice__adc__cfg__t_1a8aa690de1236756225ade0b353863800" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>channels[<ref refid="group___d_e_v_i_c_e_1gac32db06aaae796b77832c68a4f11051b" kindref="member">DEVICE_MAX_ADC_CHANNELS</ref>]<sp/>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="structdevice__adc__cfg__t" kindref="compound">device_adc_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="group___d_e_v_i_c_e_1ga3be76be16dbb2e4f5b0fcf5d0d89b676" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_MAX_PWM_CHANNELS<sp/>8</highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="114" refid="structdevice__pwm__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115" refid="structdevice__pwm__cfg__t_1a781a02dc2bea9f6c2d3877bdeade4946" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6" kindref="member">pwm_duty_t</ref><sp/>top<sp/>;</highlight></codeline>
+<codeline lineno="116" refid="structdevice__pwm__cfg__t_1a76d9fecef7de908e1283aa56023cd913" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>freq<sp/>;</highlight></codeline>
+<codeline lineno="117" refid="structdevice__pwm__cfg__t_1ae87fdb84f78a84cbc5068105f2e4764a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>int8_t<sp/>channels[<ref refid="group___d_e_v_i_c_e_1ga3be76be16dbb2e4f5b0fcf5d0d89b676" kindref="member">DEVICE_MAX_PWM_CHANNELS</ref>]<sp/>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}<sp/><ref refid="structdevice__pwm__cfg__t" kindref="compound">device_pwm_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HWPL_CFG_SIZE_MAX<sp/>32</highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="127" refid="structdevice__cfg__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="128" refid="structdevice__cfg__t_1a224496a33b9dc315c1bedf149268a7f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__periph__t" kindref="compound">device_periph_t</ref><sp/>periph<sp/>;</highlight></codeline>
+<codeline lineno="129" refid="structdevice__cfg__t_1a33044448362ac8a6efe67f8f82c79f8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="130" refid="structdevice__cfg__t_1afef96c74a2c86f536de04d8499f272e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>bitrate<sp/>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132" refid="structdevice__cfg__t_1a1c75c04556a9e3442c5e8e561bdbf4cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__spi__cfg__t" kindref="compound">device_spi_cfg_t</ref><sp/>spi<sp/>;</highlight></codeline>
+<codeline lineno="133" refid="structdevice__cfg__t_1a77bbd9dbfe54f9e6ec7c7fd090541541" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__pwm__cfg__t" kindref="compound">device_pwm_cfg_t</ref><sp/>pwm<sp/>;</highlight></codeline>
+<codeline lineno="134" refid="structdevice__cfg__t_1a22e2b68e4e7cf8365d7d87fc42d4a4a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__adc__cfg__t" kindref="compound">device_adc_cfg_t</ref><sp/>adc<sp/>;</highlight></codeline>
+<codeline lineno="135" refid="structdevice__cfg__t_1a6327847fe1261cfa145b3fd5bab76b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__uart__cfg__t" kindref="compound">device_uart_cfg_t</ref><sp/>uart<sp/>;</highlight></codeline>
+<codeline lineno="136" refid="structdevice__cfg__t_1a213c4a0c65071ced87897ba314ba3ea6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__i2c__cfg__t" kindref="compound">device_i2c_cfg_t</ref><sp/>i2c<sp/>;</highlight></codeline>
+<codeline lineno="137" refid="structdevice__cfg__t_1a790c08be956c06db503418ac80f236f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structpio__t" kindref="compound">pio_t</ref><sp/>pio[4]<sp/>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/>pcfg;</highlight></codeline>
+<codeline lineno="139" refid="structdevice__cfg__t_1a1dd25afc5eba5444390bafc0303bc768" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>dcfg<sp/>;</highlight></codeline>
+<codeline lineno="140" refid="structdevice__cfg__t_1ab77e7f3c4f723597c63be1d182c2d77c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>state<sp/>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}<sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref>;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="structdevice__transfer__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="149" refid="structdevice__transfer__t_1a9ca5a40b9981746eadf87bec8465c811" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tid<sp/>;</highlight></codeline>
+<codeline lineno="150" refid="structdevice__transfer__t_1a26511d3ed637ac9227b96050a4669a24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags<sp/>;</highlight></codeline>
+<codeline lineno="151" refid="structdevice__transfer__t_1a9513ef7343f0343b66bb6e2b2ee05182" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loc<sp/>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153" refid="structdevice__transfer__t_1a0611c46dfceb2ac8e45088cfca9c7a9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>cbuf<sp/>;</highlight></codeline>
+<codeline lineno="154" refid="structdevice__transfer__t_1a33ab02f5be228631bc710c15449a984b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>buf<sp/>;</highlight></codeline>
+<codeline lineno="155" refid="structdevice__transfer__t_1a1b8486b32aff19a2c038e9f38a133493" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>cchbuf<sp/>;</highlight></codeline>
+<codeline lineno="156" refid="structdevice__transfer__t_1a5ce8d8586a48a1eb5e66fa3cb929d29d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>chbuf<sp/>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="158" refid="structdevice__transfer__t_1acbe4975923b1f26dbb7a6a1faa7d9df9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbyte<sp/>;</highlight></codeline>
+<codeline lineno="159" refid="structdevice__transfer__t_1a5e63ce2e547e2001b5f3b79a06996b06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>hwpl_callback_t<sp/>callback<sp/>;</highlight></codeline>
+<codeline lineno="160" refid="structdevice__transfer__t_1a20842ee8eb522337fd34f2fb4ef8be85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context<sp/>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}<sp/><ref refid="structdevice__transfer__t" kindref="compound">device_transfer_t</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*device_driver_open_t)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref>*);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*device_driver_ioctl_t)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__cfg__t" kindref="compound">device_cfg_t</ref>*,<sp/>int,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*device_driver_read_t)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>device_cfg_t*,<sp/><ref refid="structdevice__transfer__t" kindref="compound">device_transfer_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*device_driver_write_t)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>device_cfg_t*,<sp/><ref refid="structdevice__transfer__t" kindref="compound">device_transfer_t</ref><sp/>*);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*device_driver_close_t)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>device_cfg_t*);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="structdevice__driver__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="178" refid="structdevice__driver__t_1a1e0fae71c3279d067e7f42ab2124ea37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>device_driver_open_t<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open</ref><sp/>;</highlight></codeline>
+<codeline lineno="179" refid="structdevice__driver__t_1a636b06f827db50004930a7bc394aca68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>device_driver_ioctl_t<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref><sp/>;</highlight></codeline>
+<codeline lineno="180" refid="structdevice__driver__t_1a4381ca18baa18aefd5f840d65b3bb80c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>device_driver_read_t<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaefe7609d91407014d94611912cc2b1a3" kindref="member">read</ref><sp/>;</highlight></codeline>
+<codeline lineno="181" refid="structdevice__driver__t_1a7bbbf7fcec85485d058c095d2c96b744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>device_driver_write_t<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gadd30ddeed4bdbf3c96fa36970c1ca778" kindref="member">write</ref><sp/>;</highlight></codeline>
+<codeline lineno="182" refid="structdevice__driver__t_1acc1ab645a0be60b7ba17f37e99c1b4f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>device_driver_close_t<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaacad1d135ca2779b583623678e36db7c" kindref="member">close</ref><sp/>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}<sp/><ref refid="structdevice__driver__t" kindref="compound">device_driver_t</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="structdevice__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190" refid="structdevice__t_1a44b694d4926d675cabd252d3697c13fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>name[NAME_MAX]<sp/>;</highlight></codeline>
+<codeline lineno="191" refid="structdevice__t_1aed843d16a048af04589808c6ea18c393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>uid<sp/>;</highlight></codeline>
+<codeline lineno="192" refid="structdevice__t_1a1126a7a02bf7c2c47434f9d2bebcd2e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>gid<sp/>;</highlight></codeline>
+<codeline lineno="193" refid="structdevice__t_1a919b797dee37531a7932bf728d9208b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>mode<sp/>;</highlight></codeline>
+<codeline lineno="194" refid="structdevice__t_1a48a9820ff074f3ab35a895b0ea18584d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="structdevice__driver__t" kindref="compound">device_driver_t</ref><sp/>driver<sp/>;</highlight></codeline>
+<codeline lineno="195" refid="structdevice__t_1a737e31aabded1fbf8d35b94762a40115" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>device_cfg_t<sp/>cfg<sp/>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}<sp/><ref refid="structdevice__t" kindref="compound">device_t</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_MODE(mode_value,<sp/>uid_value,<sp/>gid_value,<sp/>type)<sp/>.mode<sp/>=<sp/>mode_value<sp/>|<sp/>type,<sp/>\</highlight></codeline>
+<codeline lineno="200"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.uid<sp/>=<sp/>uid_value,<sp/>\</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.gid<sp/>=<sp/>gid_value</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_DRIVER(driver_name)<sp/>.driver.open<sp/>=<sp/>driver_name##_open,<sp/>\</highlight></codeline>
+<codeline lineno="204"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.driver.close<sp/>=<sp/>driver_name##_close,<sp/>\</highlight></codeline>
+<codeline lineno="205"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.driver.ioctl<sp/>=<sp/>driver_name##_ioctl,<sp/>\</highlight></codeline>
+<codeline lineno="206"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.driver.read<sp/>=<sp/>driver_name##_read,<sp/>\</highlight></codeline>
+<codeline lineno="207"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.driver.write<sp/>=<sp/>driver_name##_write</highlight></codeline>
+<codeline lineno="208"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="220" refid="group___d_e_v_i_c_e_1gaf2dab6bcaaea877f754624fa0e10dbcf" refkind="member"><highlight class="preprocessor">#define<sp/>DEVICE_PERIPH(device_name,<sp/>periph_name,<sp/>port_number,<sp/>mode_value,<sp/>uid_value,<sp/>gid_value,<sp/>device_type)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="221"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.name<sp/>=<sp/>device_name,<sp/>\</highlight></codeline>
+<codeline lineno="222"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEVICE_MODE(mode_value,<sp/>uid_value,<sp/>gid_value,<sp/>device_type),<sp/>\</highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEVICE_DRIVER(periph_name),<sp/>\</highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.cfg.periph.port<sp/>=<sp/>port_number<sp/>\</highlight></codeline>
+<codeline lineno="225"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="226"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_TERMINATOR<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="228"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.driver.open<sp/>=<sp/>NULL<sp/>\</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor">}</highlight></codeline>
+<codeline lineno="230"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__link</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>device_is_terminator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__t" kindref="compound">device_t</ref><sp/>*<sp/>dev);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>device_is_terminator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__t" kindref="compound">device_t</ref><sp/>*<sp/>dev){</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>dev-&gt;<ref refid="structdevice__t_1a48a9820ff074f3ab35a895b0ea18584d" kindref="member">driver</ref>.<ref refid="structdevice__driver__t_1a1e0fae71c3279d067e7f42ab2124ea37" kindref="member">open</ref><sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="249"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="251"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_DEVICE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="254"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h"/>
+  </compounddef>
+</doxygen>

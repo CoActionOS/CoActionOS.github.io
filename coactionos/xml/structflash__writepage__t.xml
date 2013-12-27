@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structflash__writepage__t" kind="struct" prot="public">
+    <compoundname>flash_writepage_t</compoundname>
+    <includes refid="flash_8h" local="no">flash.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structflash__writepage__t_1a16dd68943e26f3a21b35aaf6bd97ab7e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t flash_writepage_t::addr</definition>
+        <argsstring></argsstring>
+        <name>addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The address to write to </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" line="136" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__writepage__t_1acad39d3514dd3a45a0f01c65e9e57a03" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t flash_writepage_t::nbyte</definition>
+        <argsstring></argsstring>
+        <name>nbyte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The number of bytes to write </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" line="137" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structflash__writepage__t_1ada65fc394b82ba0c36d1fc15f03eef58" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t flash_writepage_t::buf[FLASH_MAX_WRITE_SIZE]</definition>
+        <argsstring>[FLASH_MAX_WRITE_SIZE]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+<para>A buffer for writing to the flash. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" line="138" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Flash page write data using I_FLASH_WRITEPAGE. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure is used to write data to the flash using I_FLASH_WRITEPAGE. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="300">
+        <label>flash_writepage_t</label>
+        <link refid="structflash__writepage__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" line="135" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" bodystart="135" bodyend="139"/>
+    <listofallmembers>
+      <member refid="structflash__writepage__t_1a16dd68943e26f3a21b35aaf6bd97ab7e" prot="public" virt="non-virtual"><scope>flash_writepage_t</scope><name>addr</name></member>
+      <member refid="structflash__writepage__t_1ada65fc394b82ba0c36d1fc15f03eef58" prot="public" virt="non-virtual"><scope>flash_writepage_t</scope><name>buf</name></member>
+      <member refid="structflash__writepage__t_1acad39d3514dd3a45a0f01c65e9e57a03" prot="public" virt="non-virtual"><scope>flash_writepage_t</scope><name>nbyte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

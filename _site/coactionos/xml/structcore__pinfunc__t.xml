@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcore__pinfunc__t" kind="struct" prot="public">
+    <compoundname>core_pinfunc_t</compoundname>
+    <includes refid="core_8h" local="no">core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore__pinfunc__t_1a7960f82a425d48e144519fdb9bcfac1a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t core_pinfunc_t::periph_port</definition>
+        <argsstring></argsstring>
+        <name>periph_port</name>
+        <briefdescription>
+<para>Peripheral port value (e.g. 0 for I2C0) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="161" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore__pinfunc__t_1abc5179131d158d963909b36aaffaa610" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t core_pinfunc_t::periph_func</definition>
+        <argsstring></argsstring>
+        <name>periph_func</name>
+        <briefdescription>
+<para>Peripheral port function (see <ref refid="group___c_o_r_e_1ga0cdc50382b3b72c2e4b983c2f2a6f99b" kindref="member">core_periph_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="162" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore__pinfunc__t_1a6644650abd2581250c51af4ebb92954e" prot="public" static="no" mutable="no">
+        <type><ref refid="structpio__t" kindref="compound">pio_t</ref></type>
+        <definition>pio_t core_pinfunc_t::io</definition>
+        <argsstring></argsstring>
+        <name>io</name>
+        <briefdescription>
+<para>PIO port and pin (see <ref refid="structpio__t" kindref="compound">pio_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="163" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for setting the pin functionality. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure is used with I_CORE_SETPINFUNC to set the functionality of pins. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="217">
+        <label>pio_t</label>
+        <link refid="structpio__t"/>
+      </node>
+      <node id="216">
+        <label>core_pinfunc_t</label>
+        <link refid="structcore__pinfunc__t"/>
+        <childnode refid="217" relation="usage">
+          <edgelabel>+io</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="160" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="160" bodyend="164"/>
+    <listofallmembers>
+      <member refid="structcore__pinfunc__t_1a6644650abd2581250c51af4ebb92954e" prot="public" virt="non-virtual"><scope>core_pinfunc_t</scope><name>io</name></member>
+      <member refid="structcore__pinfunc__t_1abc5179131d158d963909b36aaffaa610" prot="public" virt="non-virtual"><scope>core_pinfunc_t</scope><name>periph_func</name></member>
+      <member refid="structcore__pinfunc__t_1a7960f82a425d48e144519fdb9bcfac1a" prot="public" virt="non-virtual"><scope>core_pinfunc_t</scope><name>periph_port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpio__attr__t" kind="struct" prot="public">
+    <compoundname>pio_attr_t</compoundname>
+    <includes refid="pio_8h" local="no">pio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpio__attr__t_1ab8ea033430b8f003c35ffd558bcef609" prot="public" static="no" mutable="no">
+        <type><ref refid="group___p_i_o_1gafca6496338c7821c25bd946055328197" kindref="member">pio_sample_t</ref></type>
+        <definition>pio_sample_t pio_attr_t::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+<para>Each bit set in the mask will be set to <emphasis>mode</emphasis> using I_PIO_SET_PINMODE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pio.h" line="135" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pio.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpio__attr__t_1ae3f16236d9d036d65dd5ae88afb14ba2" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t pio_attr_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>OR the pio_mode_t. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pio.h" line="136" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pio.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PIO Attribute Data Structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines how the control structure for configuring the PIO port. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="408">
+        <label>pio_attr_t</label>
+        <link refid="structpio__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pio.h" line="134" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pio.h" bodystart="134" bodyend="137"/>
+    <listofallmembers>
+      <member refid="structpio__attr__t_1ab8ea033430b8f003c35ffd558bcef609" prot="public" virt="non-virtual"><scope>pio_attr_t</scope><name>mask</name></member>
+      <member refid="structpio__attr__t_1ae3f16236d9d036d65dd5ae88afb14ba2" prot="public" virt="non-virtual"><scope>pio_attr_t</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

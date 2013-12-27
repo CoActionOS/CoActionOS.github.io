@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevice__gpio__t" kind="struct" prot="public">
+    <compoundname>device_gpio_t</compoundname>
+    <includes refid="device_8h" local="no">device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevice__gpio__t_1a9bb35b19317168705fcd53e9a194bc8d" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t device_gpio_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+<para>The GPIO port number (-1 means not used) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="49" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__gpio__t_1a96f6360e25bcc4d3d52bc020cb991969" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t device_gpio_t::pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <briefdescription>
+<para>The GPIO pin number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="50" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure defining a GPIO port/pin combination. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines a GPIO port/pin combination used in configuring devices. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="256">
+        <label>device_gpio_t</label>
+        <link refid="structdevice__gpio__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="48" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="48" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structdevice__gpio__t_1a96f6360e25bcc4d3d52bc020cb991969" prot="public" virt="non-virtual"><scope>device_gpio_t</scope><name>pin</name></member>
+      <member refid="structdevice__gpio__t_1a9bb35b19317168705fcd53e9a194bc8d" prot="public" virt="non-virtual"><scope>device_gpio_t</scope><name>port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

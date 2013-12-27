@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structmem__attr__t" kind="struct" prot="public">
+    <compoundname>mem_attr_t</compoundname>
+    <includes refid="mem_8h" local="no">mem.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmem__attr__t_1a555ead0d467cfbc8f271b6481ea25d52" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mem_attr_t::flash_pages</definition>
+        <argsstring></argsstring>
+        <name>flash_pages</name>
+        <briefdescription>
+<para>The total number of flash pages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" line="60" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmem__attr__t_1a4148b3139bfadcff4c3f3f02996d949d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mem_attr_t::flash_size</definition>
+        <argsstring></argsstring>
+        <name>flash_size</name>
+        <briefdescription>
+<para>The total size of the flash memory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" line="61" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmem__attr__t_1a77229587097bb7e6cb2749bf27ae4436" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mem_attr_t::ram_pages</definition>
+        <argsstring></argsstring>
+        <name>ram_pages</name>
+        <briefdescription>
+<para>The total number of RAM pages. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" line="62" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmem__attr__t_1a87d524a806d016db49510e8430390c2d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t mem_attr_t::ram_size</definition>
+        <argsstring></argsstring>
+        <name>ram_size</name>
+        <briefdescription>
+<para>The total size of the RAM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" line="63" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Holds the devices attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>This defines the attributes of the memory.</para><para>It is used with <ref refid="group___m_e_m_1ga14bd3264693fbe0bd29cfa33f049e340" kindref="member">I_MEM_GETATTR</ref>. The attributes are read-only so I_MEM_SETATTR has no effect. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="390">
+        <label>mem_attr_t</label>
+        <link refid="structmem__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" line="59" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/mem.h" bodystart="59" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structmem__attr__t_1a555ead0d467cfbc8f271b6481ea25d52" prot="public" virt="non-virtual"><scope>mem_attr_t</scope><name>flash_pages</name></member>
+      <member refid="structmem__attr__t_1a4148b3139bfadcff4c3f3f02996d949d" prot="public" virt="non-virtual"><scope>mem_attr_t</scope><name>flash_size</name></member>
+      <member refid="structmem__attr__t_1a77229587097bb7e6cb2749bf27ae4436" prot="public" virt="non-virtual"><scope>mem_attr_t</scope><name>ram_pages</name></member>
+      <member refid="structmem__attr__t_1a87d524a806d016db49510e8430390c2d" prot="public" virt="non-virtual"><scope>mem_attr_t</scope><name>ram_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

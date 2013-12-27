@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__reply__t" kind="struct" prot="public">
+    <compoundname>link_reply_t</compoundname>
+    <includes refid="link__protocol_8h" local="no">link_protocol.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__reply__t_1a37b00349e3b3f64397480f9683622c66" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_reply_t::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="536" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__reply__t_1af037b801c066d87801379515a1862ffe" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_reply_t::err_number</definition>
+        <argsstring></argsstring>
+        <name>err_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="537" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This defines the data structure of the reply received from the device. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="364">
+        <label>link_reply_t</label>
+        <link refid="structlink__reply__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="535" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="535" bodyend="538"/>
+    <listofallmembers>
+      <member refid="structlink__reply__t_1a37b00349e3b3f64397480f9683622c66" prot="public" virt="non-virtual"><scope>link_reply_t</scope><name>err</name></member>
+      <member refid="structlink__reply__t_1af037b801c066d87801379515a1862ffe" prot="public" virt="non-virtual"><scope>link_reply_t</scope><name>err_number</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

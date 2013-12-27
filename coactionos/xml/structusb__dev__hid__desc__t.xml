@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__dev__hid__desc__t" kind="struct" prot="public">
+    <compoundname>usb_dev_hid_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1gaf0fe0dbe3c3121c9f5440195006a9a88" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_hid_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="358" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1ga34325bd98e05d13de8c1fd190cd3b464" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_hid_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="359" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1ga189041b58a98ad777f7af81b79d60245" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_dev_hid_desc_t::bcdHID</definition>
+        <argsstring></argsstring>
+        <name>bcdHID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="360" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1ga80f318cc5d9971988fbbfbaa438675d7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_hid_desc_t::bCountryCode</definition>
+        <argsstring></argsstring>
+        <name>bCountryCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="361" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1ga39f68a0ff74dca5b7816a666d1a34976" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_hid_desc_t::bNumDescriptors</definition>
+        <argsstring></argsstring>
+        <name>bNumDescriptors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="362" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1ga752a3209f050e40a9020bcd17952a939" prot="public" static="no" mutable="no">
+        <type>usb_dev_hid_desc_entry_t</type>
+        <definition>usb_dev_hid_desc_entry_t usb_dev_hid_desc_t::entry0</definition>
+        <argsstring></argsstring>
+        <name>entry0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="363" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="534">
+        <label>usb_dev_hid_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="357" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="357" bodyend="364"/>
+    <listofallmembers>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1ga189041b58a98ad777f7af81b79d60245" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_t</scope><name>bcdHID</name></member>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1ga80f318cc5d9971988fbbfbaa438675d7" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_t</scope><name>bCountryCode</name></member>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1ga34325bd98e05d13de8c1fd190cd3b464" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1gaf0fe0dbe3c3121c9f5440195006a9a88" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_t</scope><name>bLength</name></member>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1ga39f68a0ff74dca5b7816a666d1a34976" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_t</scope><name>bNumDescriptors</name></member>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1ga752a3209f050e40a9020bcd17952a939" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_t</scope><name>entry0</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

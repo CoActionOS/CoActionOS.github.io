@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structqei__attr__t" kind="struct" prot="public">
+    <compoundname>qei_attr_t</compoundname>
+    <includes refid="qei_8h" local="no">qei.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structqei__attr__t_1a08df6093af38d31a0365d8d9a51d9899" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t qei_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+<para>The GPIO configuration to use (see <ref refid="group___l_p_c17_x_x_d_e_v" kindref="compound">LPC17xx Devices</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="75" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqei__attr__t_1adbe5237e6edbcc19e50b24780fa7c96a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qei_attr_t::max_pos</definition>
+        <argsstring></argsstring>
+        <name>max_pos</name>
+        <briefdescription>
+<para>The maximum position (QEI rolls over at this point) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="76" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqei__attr__t_1ab4e3ae40cad1f9a82298593a7495f736" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qei_attr_t::velocity_comp</definition>
+        <argsstring></argsstring>
+        <name>velocity_comp</name>
+        <briefdescription>
+<para>The Velocity compare value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="77" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqei__attr__t_1af711cf7bac7b010413cf00f11e19adb4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qei_attr_t::filter</definition>
+        <argsstring></argsstring>
+        <name>filter</name>
+        <briefdescription>
+<para>The filter coefficient (0 to disable) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="78" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqei__attr__t_1a54088afc96d55f75012a24e32137aa45" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qei_attr_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>The QEI mode (see <ref refid="group___q_e_i_1ga0b9ae3fe9d097d35283efa54afad29b4" kindref="member">qei_mode_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="79" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structqei__attr__t_1a947ba1abeda840e0f0433d7d5a0ae4bb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t qei_attr_t::vfreq</definition>
+        <argsstring></argsstring>
+        <name>vfreq</name>
+        <briefdescription>
+<para>The frequency at which to update the velocity in Hz. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="80" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>QEI IO Attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines how the control structure for opening or reconfiguring the QEI port. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="441">
+        <label>qei_attr_t</label>
+        <link refid="structqei__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" line="74" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/qei.h" bodystart="74" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structqei__attr__t_1af711cf7bac7b010413cf00f11e19adb4" prot="public" virt="non-virtual"><scope>qei_attr_t</scope><name>filter</name></member>
+      <member refid="structqei__attr__t_1adbe5237e6edbcc19e50b24780fa7c96a" prot="public" virt="non-virtual"><scope>qei_attr_t</scope><name>max_pos</name></member>
+      <member refid="structqei__attr__t_1a54088afc96d55f75012a24e32137aa45" prot="public" virt="non-virtual"><scope>qei_attr_t</scope><name>mode</name></member>
+      <member refid="structqei__attr__t_1a08df6093af38d31a0365d8d9a51d9899" prot="public" virt="non-virtual"><scope>qei_attr_t</scope><name>pin_assign</name></member>
+      <member refid="structqei__attr__t_1ab4e3ae40cad1f9a82298593a7495f736" prot="public" virt="non-virtual"><scope>qei_attr_t</scope><name>velocity_comp</name></member>
+      <member refid="structqei__attr__t_1a947ba1abeda840e0f0433d7d5a0ae4bb" prot="public" virt="non-virtual"><scope>qei_attr_t</scope><name>vfreq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structtty__state__t" kind="struct" prot="public">
+    <compoundname>tty_state_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structtty__state__t_1af50cea9a92cb86a9c32e163031fb93c5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tty_state_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="62" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="478">
+        <label>tty_state_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="61" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="61" bodyend="63"/>
+    <listofallmembers>
+      <member refid="structtty__state__t_1af50cea9a92cb86a9c32e163031fb93c5" prot="public" virt="non-virtual"><scope>tty_state_t</scope><name>flags</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

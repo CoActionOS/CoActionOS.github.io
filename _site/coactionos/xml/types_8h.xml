@@ -1,0 +1,804 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="types_8h" kind="file">
+    <compoundname>types.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includedby refid="device_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/device.h</includedby>
+    <includedby refid="hwpl_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl.h</includedby>
+    <includedby refid="adc_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h</includedby>
+    <includedby refid="bootloader_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/bootloader.h</includedby>
+    <includedby refid="core_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h</includedby>
+    <includedby refid="sys_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/sys.h</includedby>
+    <includedby refid="usb__dev__std_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h</includedby>
+    <includedby refid="devfifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h</includedby>
+    <includedby refid="eth_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h</includedby>
+    <includedby refid="fifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h</includedby>
+    <includedby refid="uartfifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h</includedby>
+    <includedby refid="usbfifo_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h</includedby>
+    <includedby refid="lpc17xx_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/arch/lpc17xx.h</includedby>
+    <includedby refid="lpc13xx_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/arch/lpc13xx.h</includedby>
+    <incdepgraph>
+      <node id="1819">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1818">
+        <label>stdint.h</label>
+      </node>
+      <node id="1817">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h</label>
+        <link refid="types.h"/>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1830">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c</label>
+        <link refid="__fstat_8c"/>
+      </node>
+      <node id="1847">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_flags.h</label>
+        <link refid="unistd__flags_8h_source"/>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+      </node>
+      <node id="1828">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_fs.h</label>
+        <link refid="unistd__fs_8h_source"/>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1839" relation="include">
+        </childnode>
+        <childnode refid="1840" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getpid.c</label>
+        <link refid="__getpid_8c"/>
+      </node>
+      <node id="1861">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_self.c</label>
+        <link refid="pthread__self_8c"/>
+      </node>
+      <node id="1845">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/rmdir.c</label>
+        <link refid="rmdir_8c"/>
+      </node>
+      <node id="1837">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_stat.c</label>
+        <link refid="__stat_8c"/>
+      </node>
+      <node id="1846">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c</label>
+        <link refid="unistd__data__transfer_8c"/>
+      </node>
+      <node id="1863">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c</label>
+        <link refid="sig__realtime_8c"/>
+      </node>
+      <node id="1834">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c</label>
+        <link refid="__open_8c"/>
+      </node>
+      <node id="1872">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h</label>
+        <link refid="core_8h"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_write.c</label>
+        <link refid="__write_8c"/>
+      </node>
+      <node id="1824">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c</label>
+        <link refid="dirent_8c"/>
+      </node>
+      <node id="1879">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/arch/lpc13xx.h</label>
+        <link refid="lpc13xx_8h"/>
+      </node>
+      <node id="1823">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/cafs_lite.h</label>
+        <link refid="cafs__lite_8h_source"/>
+      </node>
+      <node id="1843">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/lstat.c</label>
+        <link refid="lstat_8c"/>
+      </node>
+      <node id="1866">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c</label>
+        <link refid="hibernate_8c"/>
+      </node>
+      <node id="1869">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h</label>
+        <link refid="adc_8h"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c</label>
+        <link refid="__lseek_8c"/>
+      </node>
+      <node id="1850">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c</label>
+        <link refid="access_8c"/>
+      </node>
+      <node id="1835">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c</label>
+        <link refid="__read_8c"/>
+      </node>
+      <node id="1827">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_close.c</label>
+        <link refid="__close_8c"/>
+      </node>
+      <node id="1858">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl.h</label>
+        <link refid="hwpl_8h"/>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+        <childnode refid="1868" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+      </node>
+      <node id="1857">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usbfifo.h</label>
+        <link refid="usbfifo_8h"/>
+      </node>
+      <node id="1829">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fcntl.c</label>
+        <link refid="__fcntl_8c"/>
+      </node>
+      <node id="1875">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h</label>
+        <link refid="usb__dev__cdc_8h"/>
+      </node>
+      <node id="1844">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/mkdir.c</label>
+        <link refid="mkdir_8c"/>
+      </node>
+      <node id="1870">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</label>
+        <link refid="link__protocol_8h"/>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1841">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chmod.c</label>
+        <link refid="chmod_8c"/>
+      </node>
+      <node id="1855">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h</label>
+        <link refid="devfifo_8h"/>
+      </node>
+      <node id="1878">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/arch/lpc17xx.h</label>
+        <link refid="lpc17xx_8h"/>
+      </node>
+      <node id="1825">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c</label>
+        <link refid="mqueue_8c"/>
+      </node>
+      <node id="1860">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h</label>
+        <link refid="usb__dev__std__inline_8h_source"/>
+      </node>
+      <node id="1859">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev.h</label>
+        <link refid="usb__dev_8h_source"/>
+      </node>
+      <node id="1852">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c</label>
+        <link refid="pthread__kill_8c"/>
+      </node>
+      <node id="1832">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_link.c</label>
+        <link refid="__link_8c"/>
+      </node>
+      <node id="1836">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_rename.c</label>
+        <link refid="__rename_8c"/>
+      </node>
+      <node id="1831">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_isatty.c</label>
+        <link refid="__isatty_8c"/>
+      </node>
+      <node id="1854">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+      <node id="1826">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c</label>
+        <link refid="sem_8c"/>
+      </node>
+      <node id="1877">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h</label>
+        <link refid="fifo_8h"/>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1865">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c</label>
+        <link refid="__settimeofday_8c"/>
+      </node>
+      <node id="1838">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_symlink.c</label>
+        <link refid="__symlink_8c"/>
+      </node>
+      <node id="1842">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c</label>
+        <link refid="chown_8c"/>
+      </node>
+      <node id="1856">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/uartfifo.h</label>
+        <link refid="uartfifo_8h"/>
+      </node>
+      <node id="1821">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/device.h</label>
+        <link refid="device_8h_source"/>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+      </node>
+      <node id="1873">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/sys.h</label>
+        <link refid="sys_8h"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1820">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h</label>
+        <link refid="types.h"/>
+        <childnode refid="1821" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+        <childnode refid="1869" relation="include">
+        </childnode>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1873" relation="include">
+        </childnode>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+      </node>
+      <node id="1874">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h</label>
+        <link refid="usb__dev__std_8h_source"/>
+        <childnode refid="1859" relation="include">
+        </childnode>
+        <childnode refid="1875" relation="include">
+        </childnode>
+      </node>
+      <node id="1876">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eth.h</label>
+        <link refid="eth_8h"/>
+      </node>
+      <node id="1849">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c</label>
+        <link refid="__exit_8c"/>
+      </node>
+      <node id="1864">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c</label>
+        <link refid="__gettimeofday_8c"/>
+      </node>
+      <node id="1871">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/bootloader.h</label>
+        <link refid="bootloader_8h"/>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1851">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h</label>
+        <link refid="caos_8h"/>
+        <childnode refid="1852" relation="include">
+        </childnode>
+      </node>
+      <node id="1839">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_unlink.c</label>
+        <link refid="__unlink_8c"/>
+      </node>
+      <node id="1868">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getppid.c</label>
+        <link refid="__getppid_8c"/>
+      </node>
+      <node id="1822">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h</label>
+        <link refid="sysfs_8h_source"/>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+      </node>
+      <node id="1848">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c</label>
+        <link refid="ioctl_8c"/>
+      </node>
+      <node id="1862">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c</label>
+        <link refid="sched__posix_8c"/>
+      </node>
+      <node id="1853">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/hwdl.h</label>
+        <link refid="hwdl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhwpl__action__t" prot="public">hwpl_action_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="types_8h_1a7694173c0c28fce0c0abb6e09da0dfb1" prot="public" static="no">
+        <name>HWPL_TEST_BIT</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="15" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1aa1a69160cc28d5a3595aac70ffc391c2" prot="public" static="no">
+        <name>HWPL_SET_BIT</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="16" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a117047bd5bf51a7a82807983cbe3b741" prot="public" static="no">
+        <name>HWPL_SET_MASK</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="17" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a150ce52ed15922bd74e6f366e8f48ad1" prot="public" static="no">
+        <name>HWPL_CLR_BIT</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="18" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1afe0b5a1d32dea9d66d48285b65d67889" prot="public" static="no">
+        <name>HWPL_CLR_MASK</name>
+        <param><defname>x</defname></param>
+        <param><defname>y</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="19" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1aefe5dcc45577d94767dcf3a8c65fef4a" prot="public" static="no">
+        <name>HWPL_ALIAS</name>
+        <param><defname>f</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro defines how to declare a weakly-bound alias. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="28" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a9c7e4ccfddbfa9cce158412a15895412" prot="public" static="no">
+        <name>HWPL_WEAK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="30" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a3891c316056b76bcfdcf349a183c7a76" prot="public" static="no">
+        <name>HWPL_PACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro is used to specify that a structure should be packed rather than word aligned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="35" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a036aec5cb547799e3845a61522f2e98e" prot="public" static="no">
+        <name>HWPL_NAKED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="36" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a9488345e3b554a27756b602f94da4f3d" prot="public" static="no">
+        <name>HWPL_ALWAYS_INLINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro is used to specify functions which are always inline </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="41" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1aaae47c7a523fa879f56829fbbdf37fa9" prot="public" static="no">
+        <name>HWPL_NEVER_INLINE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro specifies to never inline a function. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="47" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1ae64a002d6f88f5f85af3834389fa1db8" prot="public" static="no">
+        <name>HWPL_SYS_MEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This attribute can be applied to RAM so that it is stored in system memory that is universally readable but can only be written in privileged mode.</para><para>Example: <programlisting><codeline><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[512]<sp/>HWPL_SYS_MEM;</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="69" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1ac36c48719b50b604c7e0acad9086819b" prot="public" static="no">
+        <name>I_GLOBAL_GETATTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines a global <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> request. It specifies to read the peripheral&apos;s attribute data structure. The data is written to the data pointed to by the third argument to <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref>. Example: <programlisting><codeline><highlight class="normal"><ref refid="structadc__attr__t" kindref="compound">adc_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(adc_fd,<sp/>I_GETATTR,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="104" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a2b0079b269ea4cbfa6044060f64d9291" prot="public" static="no">
+        <name>I_GLOBAL_SETATTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines a global <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> request. It specifies to write the peripheral&apos;s attribute data structure. The attribute structure is passed as a pointer in the third argument to <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref>.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="structadc__attr__t" kindref="compound">adc_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal">attr.<ref refid="structadc__attr__t_1ac57e591ff27636cd38c89b788a3d1a1a" kindref="member">pin_assign</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">attr.<ref refid="structadc__attr__t_1a1b3d3fde33a659eaa407875721b2e80c" kindref="member">freq</ref><sp/>=<sp/>200000;</highlight></codeline>
+<codeline><highlight class="normal">attr.<ref refid="structadc__attr__t_1a52ac5ff57cb395121181220492703e18" kindref="member">enabled_channels</ref><sp/>=<sp/>(1&lt;&lt;0);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(adc_fd,<sp/>I_SETATTR,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="122" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1aaf003b0580af7b3f35e5a383210089fb" prot="public" static="no">
+        <name>I_GLOBAL_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines a global <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> request. It sets an action to take when the operation completes.</para><para>The third argument to <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> is always a pointer to an <ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref> data structure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="133" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1adfbc5cf5303646c1f2c75a5928e8ffa4" prot="public" static="no">
+        <name>I_GLOBAL_CANCEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="134" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1af2626e1fa6fd89490d2c78ef07847911" prot="public" static="no">
+        <name>I_GLOBAL_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="136" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1abbeec6fb29aed36028439f66233558f7" prot="public" static="no">
+        <name>HWPL_PINASSIGN_USER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This specifies the value for pin_assign when opening a port on a peripheral. Most MCU&apos;s allow a port to be mapped to different GPIO locations. The standard locations are supported by using values 0, 1, 2, etc (see the device specific documentation for details). If none of the standard locations works for your application, you can configure the GPIO manually, then send this value to the driver to indicate the GPIO was already configured. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="149" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types_8h_1a0d4cdc960456a8f60c797d8149e2d7c3" prot="public" static="no">
+        <name>HWPL_GPIO_CFG_USER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="150" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="types_8h_1a76a59d006c6e406991e0318ad11c7e8c" prot="public" static="no">
+        <name>hwpl_sigcode_bitmask_t</name>
+        <enumvalue id="types_8h_1a76a59d006c6e406991e0318ad11c7e8caf3f06d1cc5d1c48e38f0db6726e0aa9c" prot="public">
+          <name>HWPL_SIGCODE_OP_COMPLETE</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Operation complete bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8h_1a76a59d006c6e406991e0318ad11c7e8cacb1ebf2a4d945fb63787ca6ed4f37364" prot="public">
+          <name>HWPL_SIGCODE_NEW_DATA</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>New data bit </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types_8h_1a76a59d006c6e406991e0318ad11c7e8ca79a1a5218edb1203dc8b0fda494f2306" prot="public">
+          <name>HWPL_SIGCODE_EVENT</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Event bit </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the bits used in the sigcode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="87" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="87" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="types_8h_1a98a95ba209d89e4aa7bdbf8c2b00de30" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* hwpl_callback_t)(void *, const void *)</definition>
+        <argsstring>)(void *, const void *)</argsstring>
+        <name>hwpl_callback_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a HWPL callback pointer. It is a member of the <ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref> structure.</para><para>See I_SETACTION for an example to use a HWPL callback. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="57" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>hwpl_types.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Created<sp/>on:<sp/>Dec<sp/>13,<sp/>2011</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/>Author:<sp/>tgil</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HWPL_TYPES_H_</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>_HWPL_TYPES_H_</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HWPL_TEST_BIT(x,y)<sp/>(x<sp/>&amp;<sp/>(1&lt;&lt;y))</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWPL_SET_BIT(x,y)<sp/>(x<sp/>|=<sp/>(1&lt;&lt;y))</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWPL_SET_MASK(x,y)<sp/>(x<sp/>|=<sp/>y)</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWPL_CLR_BIT(x,y)<sp/>(x<sp/>&amp;=<sp/>~(1&lt;&lt;y))</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWPL_CLR_MASK(x,y)<sp/>(x<sp/>&amp;=<sp/>~y)</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#define<sp/>HWPL_ALIAS(f)<sp/>__attribute__((weak,<sp/>alias<sp/>(#f)))</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HWPL_WEAK<sp/>__attribute__((weak))</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">#define<sp/>HWPL_PACK<sp/>__attribute__((packed))</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWPL_NAKED<sp/>__attribute__((naked))</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor">#define<sp/>HWPL_ALWAYS_INLINE<sp/>__attribute__((always_inline))</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor">#define<sp/>HWPL_NEVER_INLINE<sp/>__attribute__((noinline))</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*hwpl_callback_t)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor">#define<sp/>HWPL_SYS_MEM<sp/>__attribute__((section(&quot;.sysmem&quot;)));</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="77" refid="structhwpl__action__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78" refid="structhwpl__action__t_1ad64a81f8794209690a58c5edea69a670" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>channel<sp/>;</highlight></codeline>
+<codeline lineno="79" refid="structhwpl__action__t_1a135a14bbc27b1ea33cfaee0dc8302740" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="80" refid="structhwpl__action__t_1a93110fca833bdac575232fe9e86ce521" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>hwpl_callback_t<sp/>callback<sp/>;</highlight></codeline>
+<codeline lineno="81" refid="structhwpl__action__t_1a696aef4afa2abe4e4b4fb72b1db27c0b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>context<sp/>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}<sp/><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>HWPL_SIGCODE_OP_COMPLETE<sp/><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>HWPL_SIGCODE_NEW_DATA<sp/><sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>HWPL_SIGCODE_EVENT<sp/><sp/>=<sp/>(1&lt;&lt;2)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/>hwpl_sigcode_bitmask_t;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor">#define<sp/>I_GLOBAL_GETATTR<sp/>0</highlight></codeline>
+<codeline lineno="105"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="122"><highlight class="preprocessor">#define<sp/>I_GLOBAL_SETATTR<sp/>1</highlight></codeline>
+<codeline lineno="123"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor">#define<sp/>I_GLOBAL_SETACTION<sp/>2</highlight></codeline>
+<codeline lineno="134"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_GLOBAL_CANCEL<sp/>I_GLOBAL_SETACTION</highlight></codeline>
+<codeline lineno="135"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_GLOBAL_TOTAL<sp/>3</highlight></codeline>
+<codeline lineno="137"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor">#define<sp/>HWPL_PINASSIGN_USER<sp/>50</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>HWPL_GPIO_CFG_USER<sp/>HWPL_PINASSIGN_USER</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="154"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_HWPL_TYPES_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h"/>
+  </compounddef>
+</doxygen>

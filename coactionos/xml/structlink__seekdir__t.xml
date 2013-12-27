@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__seekdir__t" kind="struct" prot="public">
+    <compoundname>link_seekdir_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__seekdir__t_1af86678ec83ab15cdd9f0104188667b95" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_seekdir_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="402" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__seekdir__t_1aeb93654cb969c33c64c714472e0fa115" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_seekdir_t::dirp</definition>
+        <argsstring></argsstring>
+        <name>dirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="403" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__seekdir__t_1aa924d01e65efa0d5229e8e79b7c54fb9" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t link_seekdir_t::loc</definition>
+        <argsstring></argsstring>
+        <name>loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="404" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="370">
+        <label>link_seekdir_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="401" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="401" bodyend="405"/>
+    <listofallmembers>
+      <member refid="structlink__seekdir__t_1af86678ec83ab15cdd9f0104188667b95" prot="public" virt="non-virtual"><scope>link_seekdir_t</scope><name>cmd</name></member>
+      <member refid="structlink__seekdir__t_1aeb93654cb969c33c64c714472e0fa115" prot="public" virt="non-virtual"><scope>link_seekdir_t</scope><name>dirp</name></member>
+      <member refid="structlink__seekdir__t_1aa924d01e65efa0d5229e8e79b7c54fb9" prot="public" virt="non-virtual"><scope>link_seekdir_t</scope><name>loc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

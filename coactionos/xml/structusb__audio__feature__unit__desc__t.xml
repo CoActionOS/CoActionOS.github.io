@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__audio__feature__unit__desc__t" kind="struct" prot="public">
+    <compoundname>usb_audio_feature_unit_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga38a15ec583533c36fbcc4c8c10ab30fc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="452" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga65fcc624edef19576ba9abe4f1487544" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="453" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gab13c658eb06099834e292746afb71d08" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bDescriptorSubtype</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubtype</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="454" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga5a29cf858a6119d7b9ddf4d72b8dc19d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bUnitID</definition>
+        <argsstring></argsstring>
+        <name>bUnitID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="455" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga18db2f9c7e29d7a92b01c11561a81598" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bSourceID</definition>
+        <argsstring></argsstring>
+        <name>bSourceID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="456" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga09cb462bf1d1165e497e0086c228e15e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bControlSize</definition>
+        <argsstring></argsstring>
+        <name>bControlSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="457" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1ga4b6ff9b1bd9383f985e35ad27bd2470c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::bmaControls[USB_AUDIO_FEATURE_UNIT_BMA_CONTROLS_SIZE]</definition>
+        <argsstring>[USB_AUDIO_FEATURE_UNIT_BMA_CONTROLS_SIZE]</argsstring>
+        <name>bmaControls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="458" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___a_d_c_1gad0061c999572bceb1bdf0b6e77d3d54c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_audio_feature_unit_desc_t::iFeature</definition>
+        <argsstring></argsstring>
+        <name>iFeature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="459" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="492">
+        <label>usb_audio_feature_unit_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" line="451" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_adc.h" bodystart="449" bodyend="460"/>
+    <listofallmembers>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga09cb462bf1d1165e497e0086c228e15e" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bControlSize</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gab13c658eb06099834e292746afb71d08" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bDescriptorSubtype</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga65fcc624edef19576ba9abe4f1487544" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga38a15ec583533c36fbcc4c8c10ab30fc" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bLength</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga4b6ff9b1bd9383f985e35ad27bd2470c" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bmaControls</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga18db2f9c7e29d7a92b01c11561a81598" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bSourceID</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1ga5a29cf858a6119d7b9ddf4d72b8dc19d" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>bUnitID</name></member>
+      <member refid="group___u_s_b___d_e_v___a_d_c_1gad0061c999572bceb1bdf0b6e77d3d54c" prot="public" virt="non-virtual"><scope>usb_audio_feature_unit_desc_t</scope><name>iFeature</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

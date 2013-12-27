@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpwm__attr__t" kind="struct" prot="public">
+    <compoundname>pwm_attr_t</compoundname>
+    <includes refid="pwm_8h" local="no">pwm.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpwm__attr__t_1a1664fab32ed7e60a828101349e2068b7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t pwm_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+<para>The GPIO configuration to use (see <ref refid="group___l_p_c17_x_x_d_e_v" kindref="compound">LPC17xx Devices</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="121" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__attr__t_1afa6e533ed6cc37440087bd6014783ee9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t pwm_attr_t::enabled_channels</definition>
+        <argsstring></argsstring>
+        <name>enabled_channels</name>
+        <briefdescription>
+<para>Enabled channels bit-mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="122" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__attr__t_1a5b4eb669e021aa77c0c4ac3cdbc4e0af" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t pwm_attr_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attribute flags for configuring the PWM unit </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="123" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__attr__t_1abef1ea5b29606b756e293d9cb64e4e9a" prot="public" static="no" mutable="no">
+        <type><ref refid="group___p_w_m_1gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6" kindref="member">pwm_duty_t</ref></type>
+        <definition>pwm_duty_t pwm_attr_t::top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+<para>The top value of the PWM counter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="124" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpwm__attr__t_1a68cff709a9b708c1d7d0c90140fc76f7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t pwm_attr_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+<para>The PWM timer frequency (target value on write, actual value on read); The period is the &quot;top&quot; member divided by &quot;freq&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="125" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>PWM Attribute Data Structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines how the control structure for configuring the DAC port. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="437">
+        <label>pwm_attr_t</label>
+        <link refid="structpwm__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="120" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="120" bodyend="127"/>
+    <listofallmembers>
+      <member refid="structpwm__attr__t_1afa6e533ed6cc37440087bd6014783ee9" prot="public" virt="non-virtual"><scope>pwm_attr_t</scope><name>enabled_channels</name></member>
+      <member refid="structpwm__attr__t_1a5b4eb669e021aa77c0c4ac3cdbc4e0af" prot="public" virt="non-virtual"><scope>pwm_attr_t</scope><name>flags</name></member>
+      <member refid="structpwm__attr__t_1a68cff709a9b708c1d7d0c90140fc76f7" prot="public" virt="non-virtual"><scope>pwm_attr_t</scope><name>freq</name></member>
+      <member refid="structpwm__attr__t_1a1664fab32ed7e60a828101349e2068b7" prot="public" virt="non-virtual"><scope>pwm_attr_t</scope><name>pin_assign</name></member>
+      <member refid="structpwm__attr__t_1abef1ea5b29606b756e293d9cb64e4e9a" prot="public" virt="non-virtual"><scope>pwm_attr_t</scope><name>top</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

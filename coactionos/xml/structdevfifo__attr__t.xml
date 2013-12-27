@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevfifo__attr__t" kind="struct" prot="public">
+    <compoundname>devfifo_attr_t</compoundname>
+    <includes refid="devfifo_8h" local="no">devfifo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevfifo__attr__t_1aa78aa04c4b18bab027716ac3895093ac" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t devfifo_attr_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>The total number of bytes in the FIFO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="79" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__attr__t_1a9fd4813b01e1b37f2861450d773e5557" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t devfifo_attr_t::used</definition>
+        <argsstring></argsstring>
+        <name>used</name>
+        <briefdescription>
+<para>The number of bytes ready to be read from the FIFO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="80" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevfifo__attr__t_1a20e2c7ebb39dcb4755d33ceec877710c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t devfifo_attr_t::overflow</definition>
+        <argsstring></argsstring>
+        <name>overflow</name>
+        <briefdescription>
+<para>Non-zero if FIFO has dropped data because data is arriving faster than it is being read; this value is cleared when it is read using I_DEVFIFO_GETATTR. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="81" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure defines the attributes used in a device fifo. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="221">
+        <label>devfifo_attr_t</label>
+        <link refid="structdevfifo__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" line="78" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/devfifo.h" bodystart="78" bodyend="83"/>
+    <listofallmembers>
+      <member refid="structdevfifo__attr__t_1a20e2c7ebb39dcb4755d33ceec877710c" prot="public" virt="non-virtual"><scope>devfifo_attr_t</scope><name>overflow</name></member>
+      <member refid="structdevfifo__attr__t_1aa78aa04c4b18bab027716ac3895093ac" prot="public" virt="non-virtual"><scope>devfifo_attr_t</scope><name>size</name></member>
+      <member refid="structdevfifo__attr__t_1a9fd4813b01e1b37f2861450d773e5557" prot="public" virt="non-virtual"><scope>devfifo_attr_t</scope><name>used</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

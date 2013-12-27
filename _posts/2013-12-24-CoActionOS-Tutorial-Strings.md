@@ -6,7 +6,7 @@ tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
 The CoActionOS Applib includes a 
-[String class](/projects/coactionos-applib/embedded/class_string.html) 
+[String class]({{ BASE_URL }}/coactionos-applib/html/class_string.html) 
 similar to the C++ STL string class.  The Applib String class avoids 
 using dynamic memory allocation so that it can run well on systems 
 with very little memory.  It is based on standard C 
@@ -61,5 +61,5 @@ int main(int argc, char * argv[]){
 {% endhighlight %}
 
 That about covers the basics.  You can read the 
-[String class API](/projects/coactionos-applib/embedded/class_string.html) 
+[String class API]({{ BASE_URL }}/coactionos-applib/html/class_string.html) 
 for more information.

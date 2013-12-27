@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_s_b___d_e_v___c_d_c" kind="group">
+    <compoundname>USB_DEV_CDC</compoundname>
+    <title>Communications Device Class</title>
+    <innerfile refid="usb__dev__cdc_8h">usb_dev_cdc.h</innerfile>
+    <innerclass refid="structcdc__func__desc__t" prot="public">cdc_func_desc_t</innerclass>
+    <innerclass refid="structcdc__header__func__desc__t" prot="public">cdc_header_func_desc_t</innerclass>
+    <innerclass refid="structcdc__call__mgt__func__desc__t" prot="public">cdc_call_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__abstract__contorl__mgt__func__desc__t" prot="public">cdc_abstract_contorl_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__direct__line__mgt__func__desc__t" prot="public">cdc_direct_line_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__telephone__ringer__func__desc__t" prot="public">cdc_telephone_ringer_func_desc_t</innerclass>
+    <innerclass refid="structcdc__telephone__operational__modes__func__desc__t" prot="public">cdc_telephone_operational_modes_func_desc_t</innerclass>
+    <innerclass refid="structcdc__telephone__call__and__line__reporting__capabilities__func__desc__t" prot="public">cdc_telephone_call_and_line_reporting_capabilities_func_desc_t</innerclass>
+    <innerclass refid="structcdc__union__func__desc__t" prot="public">cdc_union_func_desc_t</innerclass>
+    <innerclass refid="structcdc__country__selection__func__desc__t" prot="public">cdc_country_selection_func_desc_t</innerclass>
+    <innerclass refid="structcdc__usb__terminal__func__desc__t" prot="public">cdc_usb_terminal_func_desc_t</innerclass>
+    <innerclass refid="structcdc__network__channel__terminal__func__desc__t" prot="public">cdc_network_channel_terminal_func_desc_t</innerclass>
+    <innerclass refid="structcdc__protocol__unit__func__desc__t" prot="public">cdc_protocol_unit_func_desc_t</innerclass>
+    <innerclass refid="structcdc__extension__unit__func__desc__t" prot="public">cdc_extension_unit_func_desc_t</innerclass>
+    <innerclass refid="structcdc__multi__channel__mgt__func__desc__t" prot="public">cdc_multi_channel_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__capi__control__mgt__func__desc__t" prot="public">cdc_capi_control_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__ethernet__netorking__func__desc__t" prot="public">cdc_ethernet_netorking_func_desc_t</innerclass>
+    <innerclass refid="structcdc__atm__netorking__func__desc__t" prot="public">cdc_atm_netorking_func_desc_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_s_b___d_e_v___c_d_c_1ga17b9e20eb5c101d58bed23608b6ced50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usb_dev_cdc_if_req</definition>
+        <argsstring>(int event)</argsstring>
+        <name>usb_dev_cdc_if_req</name>
+        <param>
+          <type>int</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="239" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gafe0ca40b5aacc5c750f952af952583d2" prot="public" static="no">
+        <name>CDC_CS_INTERFACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="26" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gae07e10978a48ff63df33c3aeedf84c3a" prot="public" static="no">
+        <name>CDC_CS_ENDPOINT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="27" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6d486e8708890d149c1090b3eea784ad" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_HEADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="30" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga3c1d6a3eb2938dadac9948334c2956d6" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_CALL_MGT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="31" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga0255469335ca398084a080f7f5b2af65" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_ABSTRACT_CONTROL_MGT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="32" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga1becddf5d65f66155e96bf729ce2c215" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_DIRECT_LINE_MGT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="33" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gad06009d46d045f55c6a813c4e98f348a" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_RINGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="34" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga9d4abd50966678957c0b2c7364a06b7e" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_CALL_AND_LINE_STATE_REPORTING_CAPABILITIES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="35" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga2b58d9d0e2f32cacc0698c95fdc73a30" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_UNION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="36" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gafe5ff5991a5700674ad4f39e668c4131" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_COUNTRY_SEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="37" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf9717c76419d8eca5b561feb18655b29" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_OPERATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="38" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gade526ba60fb4fd54a480e73b99109b22" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_USB_TERMINAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="39" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6e7b1fe7cb15a89344fec97c0f283df3" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_NETWORK_CHANNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="40" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaea2265d44f4a0716e3c7281397b1bb19" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_PROTOCOL_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="41" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gade91ab55665aefb2cc345ca9e71c1763" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_EXTENSION_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="42" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga20a788c36938b52cb91c9e60e26a278e" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_MULTI_CHANNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="43" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6de3dda33922779c7a09d0573aa8f751" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_CAPI_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="44" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gabb95bcc1cb5b51023fc5af27c71df178" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_ETHERNET_NETWORKING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="45" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga1d60d75385c4280327f1625718d0acbd" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_ATM_NETWORKING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="46" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf6eb2e11501b197edb3c6bc3f6b3edbc" prot="public" static="no">
+        <name>SEND_ENCAPSULATED_COMMAND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga82f6db248764860f737ab97db4cbdfc3" prot="public" static="no">
+        <name>GET_ENCAPSULATED_RESPONSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="50" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga96a98428a60e80787599adc8fad3a70b" prot="public" static="no">
+        <name>SET_COMM_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="51" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gab156c6a84346f885ecf44eed291fff35" prot="public" static="no">
+        <name>GET_COMM_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gad0be5fbdf6911ca9546e929984a01364" prot="public" static="no">
+        <name>CLEAR_COMM_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga22f86d847cab82af27eb136e6fa81165" prot="public" static="no">
+        <name>SET_AUX_LINE_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="54" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf891f75f99be51f7e5ac9b2106a7c2d5" prot="public" static="no">
+        <name>SET_HOOK_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="55" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga7c5efafd23efd9a3b577fe2d8d68daf1" prot="public" static="no">
+        <name>PULSE_SETUP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="56" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga0a5afe8487063eaa33512047112c5958" prot="public" static="no">
+        <name>SEND_PULSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf25ac476d795149a9a392da3b18f722b" prot="public" static="no">
+        <name>SET_PULSE_TIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="58" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga84a3511d7c477f94d9b36cf75240036c" prot="public" static="no">
+        <name>RING_AUX_JACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="59" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga91a9c047339a1a5918b6a923af6d1af6" prot="public" static="no">
+        <name>SET_LINE_CODING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="60" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6698d8d2ca56fafdc943aec2cede1daf" prot="public" static="no">
+        <name>GET_LINE_CODING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="61" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga437869c339749d5d011060cd5676659e" prot="public" static="no">
+        <name>SET_CONTROL_LINE_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="62" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gab22359d3d41b78ab1a9e634772b1ffbb" prot="public" static="no">
+        <name>SEND_BREAK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="63" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf4426afb0f95b9c6652fd218e674bb33" prot="public" static="no">
+        <name>SET_RINGER_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="64" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gab7d64060ce61a06a013dfd5ed6432dd0" prot="public" static="no">
+        <name>GET_RINGER_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="65" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga219149bb68ad34029d1fc7e6a150d5a1" prot="public" static="no">
+        <name>SET_OPERATION_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="66" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6bea619e51a88cdf4ebdf0fdb1dae0c2" prot="public" static="no">
+        <name>GET_OPERATION_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="67" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga9fabfa1c9e70f02e53119d81e323ef5e" prot="public" static="no">
+        <name>SET_LINE_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="68" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gac3a7aa22aa81cb3db744f7ed007e1d34" prot="public" static="no">
+        <name>GET_LINE_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="69" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga77239fd409858ff3437560882ecc5165" prot="public" static="no">
+        <name>DIAL_DIGITS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="70" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gad8aba840e5b555f41482f17b2a0391c5" prot="public" static="no">
+        <name>SET_UNIT_PARAMETER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="71" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaff4d4c80e03d3994ea3bc80fa9299b8f" prot="public" static="no">
+        <name>GET_UNIT_PARAMETER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="72" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6f4d610bbdf159997654a5825aa1d161" prot="public" static="no">
+        <name>CLEAR_UNIT_PARAMETER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="73" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gacf4c03ed1fbc6f2b1802e8d3e476d6d2" prot="public" static="no">
+        <name>GET_PROFILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="74" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga4dce35ee8cf2337bab3c90081200a9f6" prot="public" static="no">
+        <name>SET_ETHERNET_MULTICAST_FILTERS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="75" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gae7004b7a93f285f107f3957856d48b2b" prot="public" static="no">
+        <name>SET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="76" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga19246e4a3c92cffeda486069719b0c62" prot="public" static="no">
+        <name>GET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="77" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gadae019242224bbbc9d0f853da3733f1c" prot="public" static="no">
+        <name>SET_ETHERNET_PACKET_FILTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="78" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga7dffeba1576d6660fb930eabc5c515b7" prot="public" static="no">
+        <name>GET_ETHERNET_STATISTIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="79" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga886455cbacbb221159650697f6b6b4ad" prot="public" static="no">
+        <name>SET_ATM_DATA_FORMAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="80" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga0a521201eef82fb3d0b6c54331421e10" prot="public" static="no">
+        <name>GET_ATM_DEVICE_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="81" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf627aaac38b2ab259002b26a4d5c08e5" prot="public" static="no">
+        <name>SET_ATM_DEFAULT_VC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga4063c673a32b554bf16b8ebef31e5c31" prot="public" static="no">
+        <name>GET_ATM_VC_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="83" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is not yet implemented. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

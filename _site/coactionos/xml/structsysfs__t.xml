@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structsysfs__t" kind="struct" prot="public">
+    <compoundname>sysfs_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsysfs__t_1a0dbdb55112ad0ed36b3054a1a4654c69" prot="public" static="no" mutable="no">
+        <type>const char</type>
+        <definition>const char sysfs_t::mount_path[PATH_MAX]</definition>
+        <argsstring>[PATH_MAX]</argsstring>
+        <name>mount_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="31" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a045fc42b2d2c195fccfd42060ea43bd6" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int sysfs_t::access</definition>
+        <argsstring></argsstring>
+        <name>access</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="32" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1ab9bdaf59ab2c87c252a179e8bbd91639" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::init)(const void *)</definition>
+        <argsstring>)(const void *)</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="33" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a11912524b4c27107d18ea22c04fd0ce2" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::startup)(const void *)</definition>
+        <argsstring>)(const void *)</argsstring>
+        <name>startup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="34" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a83d6131053ffc3be228586ad0b0da3bc" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::mkfs)(const void *)</definition>
+        <argsstring>)(const void *)</argsstring>
+        <name>mkfs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a6b21a94e41acf0f73ab5258e359b0e26" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::open)(const void *, void **, const char *, int, int)</definition>
+        <argsstring>)(const void *, void **, const char *, int, int)</argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="36" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a4c7ffa740edd0b3805f73049edebc1e5" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::priv_read)(const void *, void *, device_transfer_t *)</definition>
+        <argsstring>)(const void *, void *, device_transfer_t *)</argsstring>
+        <name>priv_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1aa948e309878180833b3e47e11fe02e02" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::priv_write)(const void *, void *, device_transfer_t *)</definition>
+        <argsstring>)(const void *, void *, device_transfer_t *)</argsstring>
+        <name>priv_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="38" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a19efc58df42d4fd286c5bef87b5964de" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::priv_ioctl)(const void *, void *, int, void *)</definition>
+        <argsstring>)(const void *, void *, int, void *)</argsstring>
+        <name>priv_ioctl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="39" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a2214c21b8ee006aaa1a28d57f5686f6c" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::read)(const void *, void *, int, int, void *, int)</definition>
+        <argsstring>)(const void *, void *, int, int, void *, int)</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="40" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a134a22a4d72d780dd409c2393a6280cc" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::write)(const void *, void *, int, int, const void *, int)</definition>
+        <argsstring>)(const void *, void *, int, int, const void *, int)</argsstring>
+        <name>write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="41" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a2f3dd5ce813a3e293a9718af1eddb662" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::close)(const void *, void **)</definition>
+        <argsstring>)(const void *, void **)</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="42" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a095e2d09ea5d293f5c2f96c8d92e8725" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::fstat)(const void *, void *, struct stat *)</definition>
+        <argsstring>)(const void *, void *, struct stat *)</argsstring>
+        <name>fstat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="43" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a0ccdd47881b1033c13a0ee5aa8a44c11" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::rename)(const void *, const char *, const char *)</definition>
+        <argsstring>)(const void *, const char *, const char *)</argsstring>
+        <name>rename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="44" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a2d10c414da0c58f75e9369496ebba6cf" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::unlink)(const void *, const char *)</definition>
+        <argsstring>)(const void *, const char *)</argsstring>
+        <name>unlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="45" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a6ba7a35fa781bc483d43341bc49eaf4a" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::mkdir)(const void *, const char *, mode_t)</definition>
+        <argsstring>)(const void *, const char *, mode_t)</argsstring>
+        <name>mkdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="46" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a2230f939715cd374fa9821c5ab3fbb31" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::rmdir)(const void *, const char *)</definition>
+        <argsstring>)(const void *, const char *)</argsstring>
+        <name>rmdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="47" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1ac63b1ebcdbf8b9ae635bc1997383b64d" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::remove)(const void *, const char *)</definition>
+        <argsstring>)(const void *, const char *)</argsstring>
+        <name>remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="48" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a52994e35190d57fed9914e83d1986cee" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::opendir)(const void *, void **, const char *)</definition>
+        <argsstring>)(const void *, void **, const char *)</argsstring>
+        <name>opendir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="49" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a58d8261a6a7d3713fdf6b577a7f180bc" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::closedir)(const void *, void *)</definition>
+        <argsstring>)(const void *, void *)</argsstring>
+        <name>closedir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="50" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a1786e526ae94659a42da32e1cebcd14e" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::readdir_r)(const void *, void *, int, struct dirent *)</definition>
+        <argsstring>)(const void *, void *, int, struct dirent *)</argsstring>
+        <name>readdir_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="51" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1abb44994e288e20d9c57bd5289300d6d0" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::link)(const void *, const char *, const char *)</definition>
+        <argsstring>)(const void *, const char *, const char *)</argsstring>
+        <name>link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="52" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a56ce356bc3ad24f449493fbacbf283c4" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::symlink)(const void *, const char *, const char *)</definition>
+        <argsstring>)(const void *, const char *, const char *)</argsstring>
+        <name>symlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="53" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a41de033f2069e1275fc36ca1bc3b2e06" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::stat)(const void *, const char *, struct stat *)</definition>
+        <argsstring>)(const void *, const char *, struct stat *)</argsstring>
+        <name>stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="54" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1acc575a09476ad944f80940364c67a6f7" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::lstat)(const void *, const char *, struct stat *)</definition>
+        <argsstring>)(const void *, const char *, struct stat *)</argsstring>
+        <name>lstat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="55" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1af27621613bbe48d1e6c100358b3267e2" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::chmod)(const void *, const char *, int mode)</definition>
+        <argsstring>)(const void *, const char *, int mode)</argsstring>
+        <name>chmod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="56" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a996e34421017eea77f84a032e225a438" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* sysfs_t::chown)(const void *, const char *, uid_t uid, gid_t gid)</definition>
+        <argsstring>)(const void *, const char *, uid_t uid, gid_t gid)</argsstring>
+        <name>chown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="57" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a87c06e546011dbbfb08c2e41150a6754" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* sysfs_t::unlock)(const void *)</definition>
+        <argsstring>)(const void *)</argsstring>
+        <name>unlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="58" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsysfs__t_1a06b31794a9cf7f72d9ac7411bc6c08d8" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* sysfs_t::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="59" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="470">
+        <label>sysfs_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" line="30" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/sysfs.h" bodystart="30" bodyend="60"/>
+    <listofallmembers>
+      <member refid="structsysfs__t_1a045fc42b2d2c195fccfd42060ea43bd6" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>access</name></member>
+      <member refid="structsysfs__t_1a06b31794a9cf7f72d9ac7411bc6c08d8" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>cfg</name></member>
+      <member refid="structsysfs__t_1af27621613bbe48d1e6c100358b3267e2" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>chmod</name></member>
+      <member refid="structsysfs__t_1a996e34421017eea77f84a032e225a438" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>chown</name></member>
+      <member refid="structsysfs__t_1a2f3dd5ce813a3e293a9718af1eddb662" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>close</name></member>
+      <member refid="structsysfs__t_1a58d8261a6a7d3713fdf6b577a7f180bc" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>closedir</name></member>
+      <member refid="structsysfs__t_1a095e2d09ea5d293f5c2f96c8d92e8725" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>fstat</name></member>
+      <member refid="structsysfs__t_1ab9bdaf59ab2c87c252a179e8bbd91639" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>init</name></member>
+      <member refid="structsysfs__t_1abb44994e288e20d9c57bd5289300d6d0" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>link</name></member>
+      <member refid="structsysfs__t_1acc575a09476ad944f80940364c67a6f7" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>lstat</name></member>
+      <member refid="structsysfs__t_1a6ba7a35fa781bc483d43341bc49eaf4a" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>mkdir</name></member>
+      <member refid="structsysfs__t_1a83d6131053ffc3be228586ad0b0da3bc" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>mkfs</name></member>
+      <member refid="structsysfs__t_1a0dbdb55112ad0ed36b3054a1a4654c69" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>mount_path</name></member>
+      <member refid="structsysfs__t_1a6b21a94e41acf0f73ab5258e359b0e26" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>open</name></member>
+      <member refid="structsysfs__t_1a52994e35190d57fed9914e83d1986cee" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>opendir</name></member>
+      <member refid="structsysfs__t_1a19efc58df42d4fd286c5bef87b5964de" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>priv_ioctl</name></member>
+      <member refid="structsysfs__t_1a4c7ffa740edd0b3805f73049edebc1e5" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>priv_read</name></member>
+      <member refid="structsysfs__t_1aa948e309878180833b3e47e11fe02e02" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>priv_write</name></member>
+      <member refid="structsysfs__t_1a2214c21b8ee006aaa1a28d57f5686f6c" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>read</name></member>
+      <member refid="structsysfs__t_1a1786e526ae94659a42da32e1cebcd14e" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>readdir_r</name></member>
+      <member refid="structsysfs__t_1ac63b1ebcdbf8b9ae635bc1997383b64d" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>remove</name></member>
+      <member refid="structsysfs__t_1a0ccdd47881b1033c13a0ee5aa8a44c11" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>rename</name></member>
+      <member refid="structsysfs__t_1a2230f939715cd374fa9821c5ab3fbb31" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>rmdir</name></member>
+      <member refid="structsysfs__t_1a11912524b4c27107d18ea22c04fd0ce2" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>startup</name></member>
+      <member refid="structsysfs__t_1a41de033f2069e1275fc36ca1bc3b2e06" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>stat</name></member>
+      <member refid="structsysfs__t_1a56ce356bc3ad24f449493fbacbf283c4" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>symlink</name></member>
+      <member refid="structsysfs__t_1a2d10c414da0c58f75e9369496ebba6cf" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>unlink</name></member>
+      <member refid="structsysfs__t_1a87c06e546011dbbfb08c2e41150a6754" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>unlock</name></member>
+      <member refid="structsysfs__t_1a134a22a4d72d780dd409c2393a6280cc" prot="public" virt="non-virtual"><scope>sysfs_t</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

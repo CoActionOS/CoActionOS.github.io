@@ -16,7 +16,7 @@ The basic steps to use the PWM are to:
 1. Optionally close the PWM (power it down)
 
 The following program demonstrates using a PWM output. For more details on 
-using PWM, please see the [PWM Applib documentation](/redmine/projects/coactionos-applib/embedded/class_pwm.html).
+using PWM, please see the [PWM Applib documentation]({{ BASE_URL }}/coactionos-applib/html/class_pwm.html).
 
 {% highlight CPP %}
 #include <cstdio> //for printf

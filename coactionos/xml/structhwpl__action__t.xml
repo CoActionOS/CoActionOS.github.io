@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structhwpl__action__t" kind="struct" prot="public">
+    <compoundname>hwpl_action_t</compoundname>
+    <includes refid="types_8h" local="no">types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhwpl__action__t_1ad64a81f8794209690a58c5edea69a670" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t hwpl_action_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+<para>The channel (a GPIO pin or timer channel) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="78" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhwpl__action__t_1a135a14bbc27b1ea33cfaee0dc8302740" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int hwpl_action_t::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+<para>The peripheral specific event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="79" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhwpl__action__t_1a93110fca833bdac575232fe9e86ce521" prot="public" static="no" mutable="no">
+        <type>hwpl_callback_t</type>
+        <definition>hwpl_callback_t hwpl_action_t::callback</definition>
+        <argsstring></argsstring>
+        <name>callback</name>
+        <briefdescription>
+<para>The function to call. First argument is the context, second argument is peripheral specific. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="80" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhwpl__action__t_1a696aef4afa2abe4e4b4fb72b1db27c0b" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* hwpl_action_t::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
+        <briefdescription>
+<para>The context to execute the callback in. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="81" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure defines an action to take when an asynchronous event occurs (such as a pin change interrupt).</para><para><simplesect kind="see"><para>I_SETACTION </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="306">
+        <label>hwpl_action_t</label>
+        <link refid="structhwpl__action__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" line="77" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/hwpl/types.h" bodystart="77" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structhwpl__action__t_1a93110fca833bdac575232fe9e86ce521" prot="public" virt="non-virtual"><scope>hwpl_action_t</scope><name>callback</name></member>
+      <member refid="structhwpl__action__t_1ad64a81f8794209690a58c5edea69a670" prot="public" virt="non-virtual"><scope>hwpl_action_t</scope><name>channel</name></member>
+      <member refid="structhwpl__action__t_1a696aef4afa2abe4e4b4fb72b1db27c0b" prot="public" virt="non-virtual"><scope>hwpl_action_t</scope><name>context</name></member>
+      <member refid="structhwpl__action__t_1a135a14bbc27b1ea33cfaee0dc8302740" prot="public" virt="non-virtual"><scope>hwpl_action_t</scope><name>event</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

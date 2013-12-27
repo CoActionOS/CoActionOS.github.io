@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structsignal__callback__t" kind="struct" prot="public">
+    <compoundname>signal_callback_t</compoundname>
+    <includes refid="caos_8h" local="no">caos.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsignal__callback__t_1a70721830b80bba8fad570d225a053ed8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int signal_callback_t::tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" line="470" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsignal__callback__t_1a3e99eaae0e5b28f181a23e2029f7d469" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int signal_callback_t::si_signo</definition>
+        <argsstring></argsstring>
+        <name>si_signo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" line="471" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsignal__callback__t_1a28c57f9e24b336ec16e31abee7882d67" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int signal_callback_t::si_sigcode</definition>
+        <argsstring></argsstring>
+        <name>si_sigcode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" line="472" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsignal__callback__t_1a38d25d4c332fbc9ef2ac6e5145ea4723" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int signal_callback_t::sig_value</definition>
+        <argsstring></argsstring>
+        <name>sig_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" line="473" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsignal__callback__t_1a360d672c8271cda31c9b20e23755901f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int signal_callback_t::keep</definition>
+        <argsstring></argsstring>
+        <name>keep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" line="474" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure is for executing a function as a result of an interrupt in non-privileged mode. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="456">
+        <label>signal_callback_t</label>
+        <link refid="structsignal__callback__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" line="469" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/caos.h" bodystart="469" bodyend="475"/>
+    <listofallmembers>
+      <member refid="structsignal__callback__t_1a360d672c8271cda31c9b20e23755901f" prot="public" virt="non-virtual"><scope>signal_callback_t</scope><name>keep</name></member>
+      <member refid="structsignal__callback__t_1a28c57f9e24b336ec16e31abee7882d67" prot="public" virt="non-virtual"><scope>signal_callback_t</scope><name>si_sigcode</name></member>
+      <member refid="structsignal__callback__t_1a3e99eaae0e5b28f181a23e2029f7d469" prot="public" virt="non-virtual"><scope>signal_callback_t</scope><name>si_signo</name></member>
+      <member refid="structsignal__callback__t_1a38d25d4c332fbc9ef2ac6e5145ea4723" prot="public" virt="non-virtual"><scope>signal_callback_t</scope><name>sig_value</name></member>
+      <member refid="structsignal__callback__t_1a70721830b80bba8fad570d225a053ed8" prot="public" virt="non-virtual"><scope>signal_callback_t</scope><name>tid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="emc_8h" kind="file">
+    <compoundname>emc.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <incdepgraph>
+      <node id="1448">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1447">
+        <label>stdint.h</label>
+      </node>
+      <node id="1446">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h</label>
+        <link refid="emc.h"/>
+        <childnode refid="1447" relation="include">
+        </childnode>
+        <childnode refid="1448" relation="include">
+        </childnode>
+        <childnode refid="1449" relation="include">
+        </childnode>
+      </node>
+      <node id="1449">
+        <label>hwpl/arch.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structemc__attr__t" prot="public">emc_attr_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___e_m_c_1gabfef3f258545693ad493d8899f00c7b6" prot="public" static="no">
+        <name>EMC_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" line="36" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_m_c_1gac753c622342458f2171606e188544412" prot="public" static="no">
+        <name>I_EMC_GETATTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" line="78" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_m_c_1ga3b02910459277e081005e03e57faa32a" prot="public" static="no">
+        <name>I_EMC_SETATTR</name>
+        <briefdescription>
+<para>IOCTL request to set the attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_m_c_1ga4c69eda9672aa23e928c68e8d40446c6" prot="public" static="no">
+        <name>I_EMC_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" line="84" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___e_m_c_1gaf071cc5002f842ac968a9eb38802e9e7" prot="public" static="no">
+        <name>I_EMC_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" line="86" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___e_m_c_1gaa7dee96201d141f7723a7603fe910aba" prot="public" static="no">
+        <name>emc_mode_t</name>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa209dc560f2c38b7ca975591651428844" prot="public">
+          <name>EMC_MODE_BUS8</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>8-bit bus width </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaabadeac2bf8dbae7b4b8ea028b83a11f3" prot="public">
+          <name>EMC_MODE_BUS16</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>16-bit bus width </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa7798fb3e11420d984f012bc66a9708fd" prot="public">
+          <name>EMC_MODE_BUS32</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>32-bit bus width (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2899e1ce87674d43366b1c498f2c6b07" prot="public">
+          <name>EMC_MODE_STATIC</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static memory (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaae24abba5802801c4915668503399212d" prot="public">
+          <name>EMC_MODE_DYNAMIC</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dynamic memory </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa329de1dcf7651f76e371f6a5ffd4c720" prot="public">
+          <name>EMC_MODE_PAGEMODE</name>
+          <initializer>= (1&lt;&lt;3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Page mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf7409db1f2190eb8a6e59d205059624b" prot="public">
+          <name>EMC_MODE_CSPOL_HIGH</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Active high chip select </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa600b79c25a65664b838a816934c3d85e" prot="public">
+          <name>EMC_MODE_CSPOL_LOW</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Active high chip select (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa00d8b1a3a0ae288ab52f80fc25f87b04" prot="public">
+          <name>EMC_MODE_BYTELANE_HIGH</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Byte lane bytes are high for reads and low for writes (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2decab592ed582f0af7d3b7e2a8c5296" prot="public">
+          <name>EMC_MODE_BYTELANE_LOW</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Byte lane bytes are low for reads and writes </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf9fd3eef055ccd008cac57b6ceb472f2" prot="public">
+          <name>EMC_MODE_EXTWAIT</name>
+          <initializer>= (1&lt;&lt;6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable Extended wait </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2366ee3accfc6cbcd4c342e73c722368" prot="public">
+          <name>EMC_MODE_BUFFER</name>
+          <initializer>= (1&lt;&lt;7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable buffer </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaab55f9884364e02831550d92f44643b72" prot="public">
+          <name>EMC_MODE_WP</name>
+          <initializer>= (1&lt;&lt;8)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable write protect </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf87043fb0dc38e486d3b50da8395cd55" prot="public">
+          <name>EMC_MODE_LITTLE_ENDIAN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Little Endian mode (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaac255a07ca145689eb5b607ba913177c8" prot="public">
+          <name>EMC_MODE_BIT_ENDIAN</name>
+          <initializer>= (1&lt;&lt;9)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Little Endian mode (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaac1359179f1e159d2f1941b228916a49a" prot="public">
+          <name>EMC_MODE_ADDR_MIRROR</name>
+          <initializer>= (1&lt;&lt;10)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Address mirror </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa78893b3014da8af3897edfbed48a1027" prot="public">
+          <name>EMC_MODE_USEBLS</name>
+          <initializer>= (1&lt;&lt;11)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable BLS signal </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>These are the flags for mode in emc_attr_t </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" line="40" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h" bodystart="40" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>External Interrupt Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor">#ifndef<sp/>DEV_EMC_H_</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_EMC_H_</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMC_IOC_IDENT_CHAR<sp/>&apos;E&apos;</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="40" refid="group___e_m_c_1gaa7dee96201d141f7723a7603fe910aba" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="41" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa209dc560f2c38b7ca975591651428844" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa209dc560f2c38b7ca975591651428844" kindref="member">EMC_MODE_BUS8</ref><sp/><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="42" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaabadeac2bf8dbae7b4b8ea028b83a11f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaabadeac2bf8dbae7b4b8ea028b83a11f3" kindref="member">EMC_MODE_BUS16</ref><sp/><sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="43" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa7798fb3e11420d984f012bc66a9708fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa7798fb3e11420d984f012bc66a9708fd" kindref="member">EMC_MODE_BUS32</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="44" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2899e1ce87674d43366b1c498f2c6b07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2899e1ce87674d43366b1c498f2c6b07" kindref="member">EMC_MODE_STATIC</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="45" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaae24abba5802801c4915668503399212d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaae24abba5802801c4915668503399212d" kindref="member">EMC_MODE_DYNAMIC</ref><sp/><sp/>=<sp/>(1&lt;&lt;2),</highlight></codeline>
+<codeline lineno="46" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa329de1dcf7651f76e371f6a5ffd4c720" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa329de1dcf7651f76e371f6a5ffd4c720" kindref="member">EMC_MODE_PAGEMODE</ref><sp/><sp/>=<sp/>(1&lt;&lt;3),</highlight></codeline>
+<codeline lineno="47" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf7409db1f2190eb8a6e59d205059624b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf7409db1f2190eb8a6e59d205059624b" kindref="member">EMC_MODE_CSPOL_HIGH</ref><sp/><sp/>=<sp/>(1&lt;&lt;4),</highlight></codeline>
+<codeline lineno="48" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa600b79c25a65664b838a816934c3d85e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa600b79c25a65664b838a816934c3d85e" kindref="member">EMC_MODE_CSPOL_LOW</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="49" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa00d8b1a3a0ae288ab52f80fc25f87b04" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa00d8b1a3a0ae288ab52f80fc25f87b04" kindref="member">EMC_MODE_BYTELANE_HIGH</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="50" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2decab592ed582f0af7d3b7e2a8c5296" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2decab592ed582f0af7d3b7e2a8c5296" kindref="member">EMC_MODE_BYTELANE_LOW</ref><sp/><sp/>=<sp/>(1&lt;&lt;5),</highlight></codeline>
+<codeline lineno="51" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf9fd3eef055ccd008cac57b6ceb472f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf9fd3eef055ccd008cac57b6ceb472f2" kindref="member">EMC_MODE_EXTWAIT</ref><sp/><sp/>=<sp/>(1&lt;&lt;6),</highlight></codeline>
+<codeline lineno="52" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2366ee3accfc6cbcd4c342e73c722368" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa2366ee3accfc6cbcd4c342e73c722368" kindref="member">EMC_MODE_BUFFER</ref><sp/><sp/>=<sp/>(1&lt;&lt;7),</highlight></codeline>
+<codeline lineno="53" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaab55f9884364e02831550d92f44643b72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaab55f9884364e02831550d92f44643b72" kindref="member">EMC_MODE_WP</ref><sp/><sp/>=<sp/>(1&lt;&lt;8),</highlight></codeline>
+<codeline lineno="54" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf87043fb0dc38e486d3b50da8395cd55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaaf87043fb0dc38e486d3b50da8395cd55" kindref="member">EMC_MODE_LITTLE_ENDIAN</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="55" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaac255a07ca145689eb5b607ba913177c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaac255a07ca145689eb5b607ba913177c8" kindref="member">EMC_MODE_BIT_ENDIAN</ref><sp/><sp/>=<sp/>(1&lt;&lt;9),</highlight></codeline>
+<codeline lineno="56" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaac1359179f1e159d2f1941b228916a49a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaac1359179f1e159d2f1941b228916a49a" kindref="member">EMC_MODE_ADDR_MIRROR</ref><sp/><sp/>=<sp/>(1&lt;&lt;10),</highlight></codeline>
+<codeline lineno="57" refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa78893b3014da8af3897edfbed48a1027" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___e_m_c_1ggaa7dee96201d141f7723a7603fe910abaa78893b3014da8af3897edfbed48a1027" kindref="member">EMC_MODE_USEBLS</ref><sp/><sp/>=<sp/>(1&lt;&lt;11)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><ref refid="group___e_m_c_1gaa7dee96201d141f7723a7603fe910aba" kindref="member">emc_mode_t</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>port<sp/>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>channel<sp/>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_write_enable<sp/>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_output_enable<sp/>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_rd<sp/>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_page<sp/>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_wr<sp/>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>wait_turn<sp/>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>addr_width<sp/>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>mode<sp/>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>size<sp/>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>clock<sp/>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/>emc_attr_t;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_EMC_GETATTR<sp/>_IOCTLR(EMC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>eint_attr_t)</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="82" refid="group___e_m_c_1ga3b02910459277e081005e03e57faa32a" refkind="member"><highlight class="preprocessor">#define<sp/>I_EMC_SETATTR<sp/>_IOCTLW(EMC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>eint_attr_t)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_EMC_SETACTION<sp/>_IOCTLW(EMC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>eint_action_t)</highlight></codeline>
+<codeline lineno="85"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_EMC_TOTAL<sp/>0</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_EMC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="90"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/emc.h"/>
+  </compounddef>
+</doxygen>

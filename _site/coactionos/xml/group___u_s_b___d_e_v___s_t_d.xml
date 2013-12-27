@@ -1,0 +1,545 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_s_b___d_e_v___s_t_d" kind="group">
+    <compoundname>USB_DEV_STD</compoundname>
+    <title>USB Standard Device</title>
+    <innerclass refid="structusb__ep__data__t" prot="public">usb_ep_data_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1gaebf709c9b32798474bfebb3ea5003aec" prot="public" static="no" mutable="no">
+        <type>usb_setup_pkt_t</type>
+        <definition>usb_setup_pkt_t usb_setup_pkt</definition>
+        <argsstring></argsstring>
+        <name>usb_setup_pkt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="38" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1gacb42a9d097b856873328de4e7a0e214c" prot="public" static="no" mutable="no">
+        <type>usb_ep_data_t</type>
+        <definition>usb_ep_data_t usb_dev_std_ep0_data</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_ep0_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="39" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga5d86cfcf63f66326ef03380820b0ac32" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_dev_std_status</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga4f98b7e89cf9dc75eec50a17c5a57419" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_std_addr</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga33338b73d6bda792a942798854fa1673" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_std_cfg</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1gad9589dcbb24fa3663d3558de625c4ddb" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_ep_mask</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_ep_mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1gaafa47f38fa02eafb603b8c8fd95d8d6b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_ep_halt</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_ep_halt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga06ad0f670f08f5c1fe52a75d2990d929" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_ep_stall</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_ep_stall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga41fc86aed029a0351f195e651395d905" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_std_num_interfaces</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_std_num_interfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1gaf377a80e494cfe2679e7e4529a1d8624" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_std_ep0_buf[USB_MAX_PACKET0]</definition>
+        <argsstring>[USB_MAX_PACKET0]</argsstring>
+        <name>usb_dev_std_ep0_buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga75ab6079e2946d67759cdbfa89bfcc6f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_alt_setting[USB_DEV_ALT_SETTING_SIZE]</definition>
+        <argsstring>[USB_DEV_ALT_SETTING_SIZE]</argsstring>
+        <name>usb_alt_setting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1gacc72573afcaa0a7badeda28c0ad303a3" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* usb_dev_descriptor</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga1420c6fe3f36dbc897a918f72140e9f4" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* usb_cfg_descriptor</definition>
+        <argsstring></argsstring>
+        <name>usb_cfg_descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___s_t_d_1ga95fd3cc36397d9c2f6b44c4bab780dee" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* usb_string_descriptor</definition>
+        <argsstring></argsstring>
+        <name>usb_string_descriptor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gaa12d82ea2fee71ca93bf0e50ba0c2eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_std_reset_state</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_std_reset_state</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga3c89d219166d9a7e76514e3134cc7992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usb_dev_std_setup</definition>
+        <argsstring>(void *context, const void *data)</argsstring>
+        <name>usb_dev_std_setup</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga7a17f4073353ea642ed7ad51e94b9259" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_dfu_std_setup</definition>
+        <argsstring>(uint32_t event)</argsstring>
+        <name>usb_dev_dfu_std_setup</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga29f9fd4122e50506a9943699f81474b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_std_datain_stage</definition>
+        <argsstring>(void) HWPL_NEVER_INLINE</argsstring>
+        <name>usb_dev_std_datain_stage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga0e7db5f716599c90694acbee0742b198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_std_dataout_stage</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_std_dataout_stage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gaa11a40a8b6e84f07fb4d04eac1472f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_std_statusin_stage</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_std_statusin_stage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gaddf2ba1bfa5d8fa2b0ca99da55f2040b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_std_statusout_stage</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_std_statusout_stage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gac47e5a266ef3602dff42f51c16c53467" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int usb_dev_decode_ep</definition>
+        <argsstring>(int ep) 1</argsstring>
+        <name>usb_dev_decode_ep</name>
+        <param>
+          <type>int</type>
+          <declname>ep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="28" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga7c5f25cb51cc20e4c73f6542c5794fa1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * usb_dev_std_add_ptr</definition>
+        <argsstring>(void *ptr, uint32_t n) 1</argsstring>
+        <name>usb_dev_std_add_ptr</name>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga786fedde5085a63b15ca400a48fd0505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_std_init_ep</definition>
+        <argsstring>(void) HWPL_NEVER_INLINE</argsstring>
+        <name>usb_dev_std_init_ep</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="43" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gadf501ab4e83d242f13f946d0ccd288d5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_get_status</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_std_req_get_status</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="52" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="53" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gaa3830786778ca324f92984ecd8271d79" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_reg_set_clrfeature</definition>
+        <argsstring>(uint32_t sc) 1</argsstring>
+        <name>usb_dev_std_reg_set_clrfeature</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>sc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="91" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="92" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga699d824ba0b882e9d60e8d00fd28b10a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char htoc</definition>
+        <argsstring>(int nibble)</argsstring>
+        <name>htoc</name>
+        <param>
+          <type>int</type>
+          <declname>nibble</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga37b77d003459418b259d6eb85b84882a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void usb_dev_std_get_serialno</definition>
+        <argsstring>(void *dest)</argsstring>
+        <name>usb_dev_std_get_serialno</name>
+        <param>
+          <type>void *</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="145" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="145" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga41b0cca418d77bb7bc4b53b9f725e8fb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_getdesc</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_std_req_getdesc</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="165" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="166" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga31de8d7e65c613829584cba838f40e92" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_setaddr</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_std_req_setaddr</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="250" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="251" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga8d911639904006c0c813f8a191f0f640" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_getcfg</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_std_req_getcfg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="265" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="266" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1gafeab5d99cf1575cd65a07880dc02a416" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_setcfg</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_std_req_setcfg</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="280" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="281" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga78c8c6f0f5fd99fbc6cddcf58518f601" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_getinterface</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_std_req_getinterface</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="368" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="369" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___s_t_d_1ga4b97df8eaba6564257d619cf64e00b84" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t usb_dev_std_req_setinterface</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_std_req_setinterface</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="388" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="389" bodyend="459"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___d_e_v___s_t_d_1ga2ddc6f313e7ae00a695224282dd30d50" prot="public" static="no">
+        <name>USB_DEV_EP_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" line="26" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_std_inline.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

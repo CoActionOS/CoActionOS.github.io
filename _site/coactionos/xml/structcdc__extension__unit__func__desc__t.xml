@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcdc__extension__unit__func__desc__t" kind="struct" prot="public">
+    <compoundname>cdc_extension_unit_func_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1affd9bddba5d20a452fc085c059f7ddde" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::bFunctionLength</definition>
+        <argsstring></argsstring>
+        <name>bFunctionLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="191" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1a49e41eabe418e9d6c48ea4db3a472a5b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="192" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1abd11b5c5e14cef5c887d06fa1b113d3a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::bDescriptorSubType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorSubType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="193" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1a52bfdc5a3bad66ff2c7764199c74a5e1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::bEntityId</definition>
+        <argsstring></argsstring>
+        <name>bEntityId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="194" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1a9bc9236dd796c7615cdccc353bf24fe3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::bExtensionCode</definition>
+        <argsstring></argsstring>
+        <name>bExtensionCode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="195" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1a3b7a70f42a73e51fd1eb44e29635e158" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::iName</definition>
+        <argsstring></argsstring>
+        <name>iName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="196" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcdc__extension__unit__func__desc__t_1aa34077bbb9ba7572c8b6ff4273f7b519" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cdc_extension_unit_func_desc_t::bChildId[]</definition>
+        <argsstring>[]</argsstring>
+        <name>bChildId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="197" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="188">
+        <label>cdc_extension_unit_func_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="190" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="190" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structcdc__extension__unit__func__desc__t_1aa34077bbb9ba7572c8b6ff4273f7b519" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>bChildId</name></member>
+      <member refid="structcdc__extension__unit__func__desc__t_1abd11b5c5e14cef5c887d06fa1b113d3a" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>bDescriptorSubType</name></member>
+      <member refid="structcdc__extension__unit__func__desc__t_1a49e41eabe418e9d6c48ea4db3a472a5b" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structcdc__extension__unit__func__desc__t_1a52bfdc5a3bad66ff2c7764199c74a5e1" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>bEntityId</name></member>
+      <member refid="structcdc__extension__unit__func__desc__t_1a9bc9236dd796c7615cdccc353bf24fe3" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>bExtensionCode</name></member>
+      <member refid="structcdc__extension__unit__func__desc__t_1affd9bddba5d20a452fc085c059f7ddde" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>bFunctionLength</name></member>
+      <member refid="structcdc__extension__unit__func__desc__t_1a3b7a70f42a73e51fd1eb44e29635e158" prot="public" virt="non-virtual"><scope>cdc_extension_unit_func_desc_t</scope><name>iName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -57,6 +57,12 @@
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
 							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
 							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
@@ -82,11 +88,9 @@
       <span>24 December 2013</span>
     </div>
     <div class="content">
-      <p>h1. CoActionOS Async IO Tutorial</p>
+      <p>Asynchronous IO (AIO) is used when you want to start an operation and do other things while you wait until the operation completes. AIO is supported on all peripherals which support read() and write(). Simply pass an Aio object to read() or write(), and the operation will perform asynchronously.</p>
 
-<p>Asynchronous IO (AIO) is used when you want to start an operation and do other things while you wait until the operation completes. AIO is supported on all peripherals which support read() and write(). Simply pass an Aio object to read() or write(), and the operation will perform asynchronously.</p>
-
-<p>The following program demonstrates AIO using the DAC. See the <a href="/redmine/projects/coactionos-applib/embedded/class_aio.html">AIO class documenation</a> and <a href="/redmine/projects/coactionos-applib/embedded/class_dac.html">DAC class documentation</a> for more details.</p>
+<p>The following program demonstrates AIO using the DAC. See the <a href="/coactionos-applib/html/class_aio.html">AIO class documenation</a> and <a href="/coactionos-applib/html/class_dac.html">DAC class documentation</a> for more details.</p>
 <div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;applib/DbugStdout.hpp&gt; </span><span class='c1'>//For the DbugStdout class (or just use printf() is you prefer)</span>
 <span class='cp'>#include &lt;applib/Dac.hpp&gt; </span><span class='c1'>//For the DbugStdout class</span>
 <span class='cp'>#include &lt;applib/Aio.hpp&gt;</span>

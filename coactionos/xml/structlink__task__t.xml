@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__task__t" kind="struct" prot="public">
+    <compoundname>link_task_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__task__t_1aa4675da811520c12ed9d8a6770b610ee" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_task_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="427" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__t_1a2a0b9b6684413dc111d6721ba5e0c831" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_t::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="428" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__t_1a18b3d0414bf25161a53f7b6ce996921b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_t::tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="429" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="380">
+        <label>link_task_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="426" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="426" bodyend="430"/>
+    <listofallmembers>
+      <member refid="structlink__task__t_1aa4675da811520c12ed9d8a6770b610ee" prot="public" virt="non-virtual"><scope>link_task_t</scope><name>cmd</name></member>
+      <member refid="structlink__task__t_1a2a0b9b6684413dc111d6721ba5e0c831" prot="public" virt="non-virtual"><scope>link_task_t</scope><name>pid</name></member>
+      <member refid="structlink__task__t_1a18b3d0414bf25161a53f7b6ce996921b" prot="public" virt="non-virtual"><scope>link_task_t</scope><name>tid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

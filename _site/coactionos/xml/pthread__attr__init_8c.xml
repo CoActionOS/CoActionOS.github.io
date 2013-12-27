@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="pthread__attr__init_8c" kind="file">
+    <compoundname>pthread_attr_init.c</compoundname>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes local="no">pthread.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="2168">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2167">
+        <label>errno.h</label>
+      </node>
+      <node id="2166">
+        <label>pthread.h</label>
+      </node>
+      <node id="2165">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2164">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c</label>
+        <link refid="pthread_attr_init.c"/>
+        <childnode refid="2165" relation="include">
+        </childnode>
+        <childnode refid="2166" relation="include">
+        </childnode>
+        <childnode refid="2167" relation="include">
+        </childnode>
+        <childnode refid="2168" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___a_t_t_r_1ga0b85ebb1e3aac081a4c0a5e85ae3cbe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_attr_init</definition>
+        <argsstring>(pthread_attr_t *attr)</argsstring>
+        <name>pthread_attr_init</name>
+        <param>
+          <type>pthread_attr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>a pointer to the attributes structure </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes <emphasis>attr</emphasis> to the default values. <simplesect kind="return"><para>0 on success or -1 and errno set to:<itemizedlist>
+<listitem><para>ENOMEM: Could not allocate memory for the thread attribute </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___a_t_t_r_1ga4bcdbf47c17c7dcc51e9f05f5cb56d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_attr_destroy</definition>
+        <argsstring>(pthread_attr_t *attr)</argsstring>
+        <name>pthread_attr_destroy</name>
+        <param>
+          <type>pthread_attr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>a pointer to the attributes structure </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function destroys <emphasis>attr</emphasis>. <simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c" line="48" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c" bodystart="48" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___a_t_t_r_1ga0b85ebb1e3aac081a4c0a5e85ae3cbe9" kindref="member">pthread_attr_init</ref>(pthread_attr_t<sp/>*<sp/>attr<sp/>){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr-&gt;stacksize<sp/>=<sp/>PTHREAD_DEFAULT_STACK_SIZE;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr-&gt;stackaddr<sp/>=<sp/>malloc(attr-&gt;stacksize<sp/>+<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>_reent)<sp/>+<sp/>SCHED_DEFAULT_STACKGUARD_SIZE);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>attr-&gt;stackaddr<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>ENOMEM;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_IS_INITIALIZED((attr),<sp/>1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_CONTENTION_SCOPE((attr),<sp/>PTHREAD_SCOPE_SYSTEM);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_GUARDSIZE((attr),<sp/>SCHED_DEFAULT_STACKGUARD_SIZE);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_INHERIT_SCHED((attr),<sp/>PTHREAD_EXPLICIT_SCHED);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_DETACH_STATE((attr),<sp/>PTHREAD_CREATE_JOINABLE);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_SCHED_POLICY((attr),<sp/>SCHED_OTHER);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>attr-&gt;schedparam.sched_priority<sp/>=<sp/>SCHED_DEFAULT_PRIORITY;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___a_t_t_r_1ga4bcdbf47c17c7dcc51e9f05f5cb56d81" kindref="member">pthread_attr_destroy</ref>(pthread_attr_t<sp/>*<sp/>attr<sp/>){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>attr<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EINVAL;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>PTHREAD_ATTR_GET_IS_INITIALIZED(attr)<sp/>!=<sp/>1<sp/>){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>attr-&gt;stackaddr<sp/>){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(attr-&gt;stackaddr);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attr-&gt;stackaddr<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>PTHREAD_ATTR_SET_IS_INITIALIZED((attr),<sp/>0);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_attr_init.c"/>
+  </compounddef>
+</doxygen>

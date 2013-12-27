@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevice__i2c__cfg__t" kind="struct" prot="public">
+    <compoundname>device_i2c_cfg_t</compoundname>
+    <includes refid="device_8h" local="no">device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevice__i2c__cfg__t_1a6b1de192eb2e0bebf5a107267e9d96b4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t device_i2c_cfg_t::slave_addr</definition>
+        <argsstring></argsstring>
+        <name>slave_addr</name>
+        <briefdescription>
+<para>The I2C Slave address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="75" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for an I2C device (SCL and SDA lines) </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines the data structure for configuring a device driver that uses the I2C bus. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="258">
+        <label>device_i2c_cfg_t</label>
+        <link refid="structdevice__i2c__cfg__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="74" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="74" bodyend="76"/>
+    <listofallmembers>
+      <member refid="structdevice__i2c__cfg__t_1a6b1de192eb2e0bebf5a107267e9d96b4" prot="public" virt="non-virtual"><scope>device_i2c_cfg_t</scope><name>slave_addr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

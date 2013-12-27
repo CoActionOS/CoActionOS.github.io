@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__dev__hid__desc__entry__t" kind="struct" prot="public">
+    <compoundname>usb_dev_hid_desc_entry_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1ga7677f79450a6d2b5f31e8fde4f292c8c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_hid_desc_entry_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="352" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___h_i_d_1gae1069e93931ec822426bd7f5f64c7e7f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_dev_hid_desc_entry_t::wDescriptorLength</definition>
+        <argsstring></argsstring>
+        <name>wDescriptorLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="353" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="532">
+        <label>usb_dev_hid_desc_entry_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" line="351" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_hid.h" bodystart="351" bodyend="354"/>
+    <listofallmembers>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1ga7677f79450a6d2b5f31e8fde4f292c8c" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_entry_t</scope><name>bDescriptorType</name></member>
+      <member refid="group___u_s_b___d_e_v___h_i_d_1gae1069e93931ec822426bd7f5f64c7e7f" prot="public" virt="non-virtual"><scope>usb_dev_hid_desc_entry_t</scope><name>wDescriptorLength</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

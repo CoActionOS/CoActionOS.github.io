@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevice__cfg__t" kind="struct" prot="public">
+    <compoundname>device_cfg_t</compoundname>
+    <includes refid="device_8h" local="no">device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevice__cfg__t_1a224496a33b9dc315c1bedf149268a7f7" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice__periph__t" kindref="compound">device_periph_t</ref></type>
+        <definition>device_periph_t device_cfg_t::periph</definition>
+        <argsstring></argsstring>
+        <name>periph</name>
+        <briefdescription>
+<para>This is the configuration used for all peripherals. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="128" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a33044448362ac8a6efe67f8f82c79f8a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t device_cfg_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+<para>The GPIO pin configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="129" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1afef96c74a2c86f536de04d8499f272e9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t device_cfg_t::bitrate</definition>
+        <argsstring></argsstring>
+        <name>bitrate</name>
+        <briefdescription>
+<para>Specifies the max bit rate in bps. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="130" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a1c75c04556a9e3442c5e8e561bdbf4cd" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice__spi__cfg__t" kindref="compound">device_spi_cfg_t</ref></type>
+        <definition>device_spi_cfg_t device_cfg_t::spi</definition>
+        <argsstring></argsstring>
+        <name>spi</name>
+        <briefdescription>
+<para>The configuration for devices that are connected via SPI bus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="132" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a77bbd9dbfe54f9e6ec7c7fd090541541" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice__pwm__cfg__t" kindref="compound">device_pwm_cfg_t</ref></type>
+        <definition>device_pwm_cfg_t device_cfg_t::pwm</definition>
+        <argsstring></argsstring>
+        <name>pwm</name>
+        <briefdescription>
+<para>The configuration for devices connected via PWM. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="133" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a22e2b68e4e7cf8365d7d87fc42d4a4a5" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice__adc__cfg__t" kindref="compound">device_adc_cfg_t</ref></type>
+        <definition>device_adc_cfg_t device_cfg_t::adc</definition>
+        <argsstring></argsstring>
+        <name>adc</name>
+        <briefdescription>
+<para>The configuration for devices connected to ADC pins. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="134" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a6327847fe1261cfa145b3fd5bab76b70" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice__uart__cfg__t" kindref="compound">device_uart_cfg_t</ref></type>
+        <definition>device_uart_cfg_t device_cfg_t::uart</definition>
+        <argsstring></argsstring>
+        <name>uart</name>
+        <briefdescription>
+<para>The configuration for devices connected to UART pins. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="135" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a213c4a0c65071ced87897ba314ba3ea6" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice__i2c__cfg__t" kindref="compound">device_i2c_cfg_t</ref></type>
+        <definition>device_i2c_cfg_t device_cfg_t::i2c</definition>
+        <argsstring></argsstring>
+        <name>i2c</name>
+        <briefdescription>
+<para>The configuration for devices connected via I2C bus. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="136" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a790c08be956c06db503418ac80f236f4" prot="public" static="no" mutable="no">
+        <type><ref refid="structpio__t" kindref="compound">pio_t</ref></type>
+        <definition>pio_t device_cfg_t::pio[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>pio</name>
+        <briefdescription>
+<para>Used for generic GPIO devices such as LEDs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="137" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a6f97fc168fbe30d7ca359a0014bdef19" prot="public" static="no" mutable="no">
+        <type>union device_cfg_t::@0</type>
+        <definition>union device_cfg_t::@0  device_cfg_t::pcfg</definition>
+        <argsstring></argsstring>
+        <name>pcfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1a1dd25afc5eba5444390bafc0303bc768" prot="public" static="no" mutable="no">
+        <type>const void *</type>
+        <definition>const void* device_cfg_t::dcfg</definition>
+        <argsstring></argsstring>
+        <name>dcfg</name>
+        <briefdescription>
+<para>Pointer to device specific configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="139" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__cfg__t_1ab77e7f3c4f723597c63be1d182c2d77c" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* device_cfg_t::state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Pointer to device specific state (RAM) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="140" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for device configuration. </para>    </briefdescription>
+    <detaileddescription>
+<para>This defines the device configuration. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="238">
+        <label>device_uart_cfg_t</label>
+        <link refid="structdevice__uart__cfg__t"/>
+      </node>
+      <node id="241">
+        <label>device_adc_cfg_t</label>
+        <link refid="structdevice__adc__cfg__t"/>
+      </node>
+      <node id="243">
+        <label>device_pwm_cfg_t</label>
+        <link refid="structdevice__pwm__cfg__t"/>
+      </node>
+      <node id="242">
+        <label>device_i2c_cfg_t</label>
+        <link refid="structdevice__i2c__cfg__t"/>
+      </node>
+      <node id="240">
+        <label>pio_t</label>
+        <link refid="structpio__t"/>
+      </node>
+      <node id="244">
+        <label>device_spi_cfg_t</label>
+        <link refid="structdevice__spi__cfg__t"/>
+        <childnode refid="240" relation="usage">
+          <edgelabel>+cs</edgelabel>
+        </childnode>
+      </node>
+      <node id="239">
+        <label>device_periph_t</label>
+        <link refid="structdevice__periph__t"/>
+      </node>
+      <node id="237">
+        <label>device_cfg_t</label>
+        <link refid="structdevice__cfg__t"/>
+        <childnode refid="238" relation="usage">
+          <edgelabel>+uart</edgelabel>
+        </childnode>
+        <childnode refid="239" relation="usage">
+          <edgelabel>+periph</edgelabel>
+        </childnode>
+        <childnode refid="240" relation="usage">
+          <edgelabel>+pio</edgelabel>
+        </childnode>
+        <childnode refid="241" relation="usage">
+          <edgelabel>+adc</edgelabel>
+        </childnode>
+        <childnode refid="242" relation="usage">
+          <edgelabel>+i2c</edgelabel>
+        </childnode>
+        <childnode refid="243" relation="usage">
+          <edgelabel>+pwm</edgelabel>
+        </childnode>
+        <childnode refid="244" relation="usage">
+          <edgelabel>+spi</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="127" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="127" bodyend="141"/>
+    <listofallmembers>
+      <member refid="structdevice__cfg__t_1a22e2b68e4e7cf8365d7d87fc42d4a4a5" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>adc</name></member>
+      <member refid="structdevice__cfg__t_1afef96c74a2c86f536de04d8499f272e9" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>bitrate</name></member>
+      <member refid="structdevice__cfg__t_1a1dd25afc5eba5444390bafc0303bc768" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>dcfg</name></member>
+      <member refid="structdevice__cfg__t_1a213c4a0c65071ced87897ba314ba3ea6" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>i2c</name></member>
+      <member refid="structdevice__cfg__t_1a6f97fc168fbe30d7ca359a0014bdef19" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>pcfg</name></member>
+      <member refid="structdevice__cfg__t_1a224496a33b9dc315c1bedf149268a7f7" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>periph</name></member>
+      <member refid="structdevice__cfg__t_1a33044448362ac8a6efe67f8f82c79f8a" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>pin_assign</name></member>
+      <member refid="structdevice__cfg__t_1a790c08be956c06db503418ac80f236f4" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>pio</name></member>
+      <member refid="structdevice__cfg__t_1a77bbd9dbfe54f9e6ec7c7fd090541541" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>pwm</name></member>
+      <member refid="structdevice__cfg__t_1a1c75c04556a9e3442c5e8e561bdbf4cd" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>spi</name></member>
+      <member refid="structdevice__cfg__t_1ab77e7f3c4f723597c63be1d182c2d77c" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>state</name></member>
+      <member refid="structdevice__cfg__t_1a6327847fe1261cfa145b3fd5bab76b70" prot="public" virt="non-virtual"><scope>device_cfg_t</scope><name>uart</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

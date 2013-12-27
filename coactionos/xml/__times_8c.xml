@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="__times_8c" kind="file">
+    <compoundname>_times.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sys/times.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includes local="yes">hwpl/task.h</includes>
+    <incdepgraph>
+      <node id="2423">
+        <label>sys/times.h</label>
+      </node>
+      <node id="2422">
+        <label>stdlib.h</label>
+      </node>
+      <node id="2424">
+        <label>errno.h</label>
+      </node>
+      <node id="2421">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c</label>
+        <link refid="_times.c"/>
+        <childnode refid="2422" relation="include">
+        </childnode>
+        <childnode refid="2423" relation="include">
+        </childnode>
+        <childnode refid="2424" relation="include">
+        </childnode>
+        <childnode refid="2425" relation="include">
+        </childnode>
+        <childnode refid="2426" relation="include">
+        </childnode>
+      </node>
+      <node id="2426">
+        <label>hwpl/task.h</label>
+      </node>
+      <node id="2425">
+        <label>hwpl/arch.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___t_i_m_e_1gacea7c68e5517ffc20c7d7b735d23f9ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clock_t</type>
+        <definition>clock_t times</definition>
+        <argsstring>(struct tms *buffer)</argsstring>
+        <name>times</name>
+        <param>
+          <type>struct tms *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function populates <emphasis>buffer</emphasis> with the:<itemizedlist>
+<listitem><para>process user time</para></listitem><listitem><para>system time on behalf of the process</para></listitem><listitem><para>children process user time</para></listitem><listitem><para>children system time on behalf of the process</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: buffer is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga278ffb77806687cb6412761726af4326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clock_t</type>
+        <definition>clock_t _times</definition>
+        <argsstring>(struct tms *buffer)</argsstring>
+        <name>_times</name>
+        <param>
+          <type>struct tms *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c" line="32" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c" bodystart="32" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/times.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/task.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">clock_t<sp/><ref refid="group___t_i_m_e_1gacea7c68e5517ffc20c7d7b735d23f9ba" kindref="member">times</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tms<sp/>*buffer);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">clock_t<sp/>_times(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>tms<sp/>*buffer)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>clock_t<sp/>value;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pid;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pid<sp/>=<sp/>task_get_pid(<sp/>task_get_current()<sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;<sp/>i<sp/>&lt;<sp/>task_get_total();<sp/>i++){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>task_get_pid(i)<sp/>==<sp/>pid<sp/>){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>+=<sp/>task_gettime(i);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>buffer-&gt;tms_utime<sp/>=<sp/>value;<sp/></highlight><highlight class="comment">//user<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>buffer-&gt;tms_stime<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//system<sp/>time<sp/>on<sp/>behalf<sp/>of<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(i=0;<sp/>i<sp/>&lt;<sp/>task_get_total();<sp/>i++){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>task_get_pid(<sp/>task_get_parent(i)<sp/>)<sp/>==<sp/>pid<sp/>){</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>+=<sp/>task_gettime(i);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>buffer-&gt;tms_cutime<sp/>=<sp/>value;<sp/></highlight><highlight class="comment">//children<sp/>user<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>buffer-&gt;tms_cstime<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//children<sp/>system<sp/>time<sp/>on<sp/>behalf<sp/>of<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer-&gt;tms_cutime<sp/>+<sp/>buffer-&gt;tms_utime;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c"/>
+  </compounddef>
+</doxygen>

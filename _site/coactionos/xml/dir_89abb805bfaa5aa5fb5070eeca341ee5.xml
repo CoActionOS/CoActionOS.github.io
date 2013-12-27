@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_89abb805bfaa5aa5fb5070eeca341ee5" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/src</compoundname>
+    <innerdir refid="dir_4cb4dd0ceeef432129f4def47d758a44">/Users/tgil/git/CoActionOS/CoActionOS/src/sys</innerdir>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/"/>
+  </compounddef>
+</doxygen>

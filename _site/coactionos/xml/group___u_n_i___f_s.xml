@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i___f_s" kind="group">
+    <compoundname>UNI_FS</compoundname>
+    <title>Filesystem</title>
+    <innerfile refid="__link_8c">_link.c</innerfile>
+    <innerfile refid="__rename_8c">_rename.c</innerfile>
+    <innerfile refid="__stat_8c">_stat.c</innerfile>
+    <innerfile refid="__symlink_8c">_symlink.c</innerfile>
+    <innerfile refid="__unlink_8c">_unlink.c</innerfile>
+    <innerfile refid="mkdir_8c">mkdir.c</innerfile>
+    <innerfile refid="rmdir_8c">rmdir.c</innerfile>
+    <innergroup refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s">Access</innergroup>
+    <innergroup refid="group___u_n_i___f_i_l_d_e_s">Descriptor Handling</innergroup>
+    <innergroup refid="group___u_n_i___p_e_r_m_s">Permissions</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga84ea5b278f4012db4082e88a31634202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link</definition>
+        <argsstring>(const char *old, const char *new)</argsstring>
+        <name>link</name>
+        <param>
+          <type>const char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates a hard link between <emphasis>old</emphasis> and <emphasis>new</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: operation not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_link.c" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga431618dc889f0a6e46f9f9c714ea1220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _link</definition>
+        <argsstring>(const char *old, const char *new)</argsstring>
+        <name>_link</name>
+        <param>
+          <type>const char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_link.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_link.c" bodystart="23" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga2ce7c2db9fdb6aec06afaf3cfc5979c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rename</definition>
+        <argsstring>(const char *old, const char *new)</argsstring>
+        <name>rename</name>
+        <param>
+          <type>const char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This functions renames <emphasis>old</emphasis> to <emphasis>new</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EEXIST: <emphasis>new</emphasis> already exists</para></listitem><listitem><para>EIO: IO error</para></listitem><listitem><para>ENOENT: <emphasis>old</emphasis> does not exist</para></listitem><listitem><para>EACCESS: <emphasis>old</emphasis> or <emphasis>new</emphasis> cannot be written </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_rename.c" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga5e77cb00e8c7f04232dac0968ccb34f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _rename</definition>
+        <argsstring>(const char *old, const char *new)</argsstring>
+        <name>_rename</name>
+        <param>
+          <type>const char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_rename.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_rename.c" bodystart="24" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int stat</definition>
+        <argsstring>(const char *path, struct stat *buf)</argsstring>
+        <name>stat</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct stat *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets various file statistics for a given file name.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: <emphasis>path</emphasis> exceeds PATH_MAX or a component of <emphasis>path</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>path</emphasis> does not exist</para></listitem><listitem><para>EACCES: search permission is denied for a component of <emphasis>path</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_stat.c" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga29b9e1ac839e37164be59c384823418e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _stat</definition>
+        <argsstring>(const char *path, struct stat *buf)</argsstring>
+        <name>_stat</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_stat.c" line="25" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_stat.c" bodystart="25" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga891d38b93dac14c179ccfc3ed3f42a82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int symlink</definition>
+        <argsstring>(const char *old, const char *new)</argsstring>
+        <name>symlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates a hard link between <emphasis>old</emphasis> and <emphasis>new</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: operation not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_symlink.c" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga00934036c926931eca9ab2538b61ce4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _symlink</definition>
+        <argsstring>(const char *old, const char *new)</argsstring>
+        <name>_symlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_symlink.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_symlink.c" bodystart="23" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1gad599bf257f9250292653296049317388" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _unlink</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>_unlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_unlink.c" line="14" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_unlink.c" bodystart="14" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1ga548e5b744ca2e97beb61ad7aa41114e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mkdir</definition>
+        <argsstring>(const char *path, mode_t mode)</argsstring>
+        <name>mkdir</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates a new directory.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the new directory </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ignored</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOENT: <emphasis>path</emphasis> is an empty string or the parent directory cannot be found</para></listitem><listitem><para>EEXIST: <emphasis>path</emphasis> already exists</para></listitem><listitem><para>ENOSPC: Not enough space on the disk to add a new directory </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/mkdir.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/mkdir.c" bodystart="26" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_s_1gab2df76f2c62ae012c2e417813b5fe8ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int rmdir</definition>
+        <argsstring>(const char *path)</argsstring>
+        <name>rmdir</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function removes the directory specified by <emphasis>path</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOENT: <emphasis>path</emphasis> is an empty string or the parent directory cannot be found</para></listitem><listitem><para>EEXIST: <emphasis>path</emphasis> already exists</para></listitem><listitem><para>ENOTDIR: <emphasis>path</emphasis> is not a directory</para></listitem><listitem><para>ENOTEMPTY: <emphasis>path</emphasis> is not an empty directory </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/rmdir.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/rmdir.c" bodystart="24" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

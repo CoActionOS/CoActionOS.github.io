@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structdevice__adc__cfg__t" kind="struct" prot="public">
+    <compoundname>device_adc_cfg_t</compoundname>
+    <includes refid="device_8h" local="no">device.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevice__adc__cfg__t_1a592a7d37267bc87a20b2a38ed301374f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t device_adc_cfg_t::reference</definition>
+        <argsstring></argsstring>
+        <name>reference</name>
+        <briefdescription>
+<para>The reference voltage in millivolts. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="100" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice__adc__cfg__t_1a8aa690de1236756225ade0b353863800" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t device_adc_cfg_t::channels[DEVICE_MAX_ADC_CHANNELS]</definition>
+        <argsstring>[DEVICE_MAX_ADC_CHANNELS]</argsstring>
+        <name>channels</name>
+        <briefdescription>
+<para>The channels to use (-1) if not used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="101" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data structure for an analog input device (up to 16 channels) </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines the data for an analog input device with up to 16 inputs. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="235">
+        <label>device_adc_cfg_t</label>
+        <link refid="structdevice__adc__cfg__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" line="99" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/device.h" bodystart="99" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structdevice__adc__cfg__t_1a8aa690de1236756225ade0b353863800" prot="public" virt="non-virtual"><scope>device_adc_cfg_t</scope><name>channels</name></member>
+      <member refid="structdevice__adc__cfg__t_1a592a7d37267bc87a20b2a38ed301374f" prot="public" virt="non-virtual"><scope>device_adc_cfg_t</scope><name>reference</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

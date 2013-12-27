@@ -9,9 +9,9 @@ tags : [coaction, tutorial]
 Files can be accessed in several ways in CoActionOS:
 * standard C library (fopen(), fread(), etc)
 * POSIX API (open(), read(), etc)
-* [Applib File Class](/projects/coactionos-applib/embedded/class_file.html)
+* [Applib File Class]({{ BASE_URL }}/coactionos-applib/html/class_file.html)
 
-The program below demonstrates how to use the [Applib File Class](/projects/coactionos-applib/embedded/class_file.html).  It uses POSIX calls to access files but is easier to code than using POSIX.
+The program below demonstrates how to use the [Applib File Class]({{ BASE_URL }}/coactionos-applib/html/class_file.html).  It uses POSIX calls to access files but is easier to code than using POSIX.
 
 {% highlight CPP %}
 #include <cstdio> //For printf and perror

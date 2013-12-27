@@ -1,0 +1,967 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___s_i_g_n_a_l" kind="group">
+    <compoundname>SIGNAL</compoundname>
+    <title>Signal Handling</title>
+    <innerfile refid="__kill_8c">_kill.c</innerfile>
+    <innerfile refid="__wait_8c">_wait.c</innerfile>
+    <innerfile refid="pthread__kill_8c">pthread_kill.c</innerfile>
+    <innerfile refid="sig__realtime_8c">sig_realtime.c</innerfile>
+    <innerfile refid="signal_8c">signal.c</innerfile>
+    <innerfile refid="signal__handler_8c">signal_handler.c</innerfile>
+    <innerfile refid="sigset_8c">sigset.c</innerfile>
+    <innerclass refid="structpriv__check__for__zombie__child__t" prot="public">priv_check_for_zombie_child_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___s_i_g_n_a_l_1ga5a6cf169ce990bb02e61629855406024" prot="public" static="yes" mutable="no">
+        <type>void(*const</type>
+        <definition>void(* const default_handlers[SCHED_NUM_SIGNALS])(int, int)</definition>
+        <argsstring>[SCHED_NUM_SIGNALS])(int, int)</argsstring>
+        <name>default_handlers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="30" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gad1092f9f86576b9927f7caa394ee906a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int kill</definition>
+        <argsstring>(pid_t pid, int signo)</argsstring>
+        <name>kill</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sends the signal <emphasis>signo</emphasis> to the process <emphasis>pid</emphasis>.</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>signo</emphasis> is not a valid signal number</para></listitem><listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process id </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_kill.c" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga1d6d91c6a4d346ac99f80ca09cf3fb49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _kill</definition>
+        <argsstring>(pid_t pid, int signo)</argsstring>
+        <name>_kill</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000007"><xreftitle>Todo</xreftitle><xrefdescription><para>Add permission error checking </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_kill.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_kill.c" bodystart="27" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga360d251721e42dd8363bf001f78667eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_wait_child</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_wait_child</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" line="18" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" bodystart="109" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga4d172f9bc8fc69f5b12f7eb24970b1c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_check_for_zombie_child</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_check_for_zombie_child</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" bodystart="81" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga0c76030088b910f04784294648bbd025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t waitpid</definition>
+        <argsstring>(pid_t pid, int *stat_loc, int options)</argsstring>
+        <name>waitpid</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>stat_loc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" line="28" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" bodystart="28" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gab2c677f94db811a57e55060e7412f8db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t _wait</definition>
+        <argsstring>(int *stat_loc)</argsstring>
+        <name>_wait</name>
+        <param>
+          <type>int *</type>
+          <declname>stat_loc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" line="77" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/_wait.c" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga3a99433c818622d4128170a26b0b9b1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int signal_priv_forward</definition>
+        <argsstring>(int send_tid, int tid, int si_signo, int si_sigcode, int sig_value)</argsstring>
+        <name>signal_priv_forward</name>
+        <param>
+          <type>int</type>
+          <declname>send_tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_sigcode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="25" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="66" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga14ba21a6b40e6ab533221b0e50c50887" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void signal_forward_handler</definition>
+        <argsstring>(int send_tid, int signo, int sigcode, int sigvalue)</argsstring>
+        <name>signal_forward_handler</name>
+        <param>
+          <type>int</type>
+          <declname>send_tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sigcode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sigvalue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gad0437c4e7e4dd0b9779fab4c1de4a33d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void signal_priv_check_stack</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>signal_priv_check_stack</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="29" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga4393cbea94379cda8f528b741b5d49c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int signal_callback</definition>
+        <argsstring>(void *context, const void *data)</argsstring>
+        <name>signal_callback</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can be set as the callback for <ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref>. In this case, the context is pointing to a <ref refid="structsignal__callback__t" kindref="compound">signal_callback_t</ref>. When the event happens, it will send a signal to the specified task.</para><para>If keep is non-zero, the signal will be sent each time the interrupt happens. Otherwise, the signal is just sent one time.</para><para>In the example below, the thread below will receive a SIGUSR1 the next time the external interrupt goes low. The run_on_sigusr1() will execute when the signal is received.</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;signal.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;applib/Eint.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>run_on_sigusr1(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;got<sp/>sigusr1\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">Eint<sp/>intr(0);</highlight></codeline>
+<codeline><highlight class="normal">intr.init();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___s_i_g_n_a_l_1ga07e401f456a0156eba71562d79a76afa" kindref="member">signal</ref>(SIGUSR1,<sp/>(_sig_func_ptr)run_on_sigusr1);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structsignal__callback__t" kindref="compound">signal_callback_t</ref><sp/>sig;<sp/></highlight><highlight class="comment">//this<sp/>must<sp/>be<sp/>valid<sp/>when<sp/>the<sp/>interrupt<sp/>happens</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">sig.tid<sp/>=<sp/><ref refid="group___p_t_h_r_e_a_d_1ga4c4f5f3b4f8f45d9d897847d53b11aaa" kindref="member">pthread_self</ref>();</highlight></codeline>
+<codeline><highlight class="normal">sig.signo<sp/>=<sp/>SIGUSR1;</highlight></codeline>
+<codeline><highlight class="normal">sig.keep<sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">intr.setaction(0,<sp/><ref refid="group___e_i_n_t_1ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81" kindref="member">EINT_ACTION_EVENT_FALLING</ref>,<sp/><ref refid="group___c_a_o_s_1ga4393cbea94379cda8f528b741b5d49c2" kindref="member">signal_callback</ref>,<sp/>&amp;sig);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="52" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="52" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga8fd3dab8e187e6a92dbb44d5d678d234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int signal_priv_send</definition>
+        <argsstring>(int send_tid, int tid, int si_signo, int si_sigcode, int sig_value, int forward)</argsstring>
+        <name>signal_priv_send</name>
+        <param>
+          <type>int</type>
+          <declname>send_tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_sigcode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig_value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>forward</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="103" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="103" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga4617ca398544cad1d48237fbc401ae8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int signal_send</definition>
+        <argsstring>(int tid, int si_signo, int si_sigcode, int sig_value)</argsstring>
+        <name>signal_send</name>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_sigcode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="147" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="147" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga401869937d4e310d70fafea2bd67149a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_kill</definition>
+        <argsstring>(pthread_t thread, int signo)</argsstring>
+        <name>pthread_kill</name>
+        <param>
+          <type>pthread_t</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sends the signal <emphasis>signo</emphasis> to <emphasis>thread</emphasis>. The handler is executed in the context of <emphasis>thread</emphasis>, but the signal effects the entire process. For example, <programlisting><codeline><highlight class="normal"><ref refid="group___s_i_g_n_a_l_1ga401869937d4e310d70fafea2bd67149a" kindref="member">pthread_kill</ref>(8,<sp/>SIGKILL);</highlight></codeline>
+</programlisting> will kill the process that holds thread 8. The exit handler will be executed on thread 8&apos;s stack.</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>signo</emphasis> is not a valid signal number</para></listitem><listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process id </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="210" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="210" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga231e44700c4363c1b1b8d067a6634056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void signal_priv_activate</definition>
+        <argsstring>(int *thread)</argsstring>
+        <name>signal_priv_activate</name>
+        <param>
+          <type>int *</type>
+          <declname>thread</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" line="214" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/pthread_kill.c" bodystart="214" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga335e32a053815afeb5b7099bfca8cdb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int check_pending_set</definition>
+        <argsstring>(const sigset_t *set)</argsstring>
+        <name>check_pending_set</name>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" bodystart="169" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga68d08741d22c0e5f731d06d82d82a3e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigqueue</definition>
+        <argsstring>(pid_t pid, int signo, const union sigval value)</argsstring>
+        <name>sigqueue</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>const union sigval</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sends the signal <emphasis>signo</emphasis> to the process <emphasis>pid</emphasis>. The signal value is specified by <emphasis>value</emphasis>.</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>signo</emphasis> is not a valid signal number</para></listitem><listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process id </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" bodystart="37" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gadc0d6eabea5878a70fe1f97b002f5f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigwait</definition>
+        <argsstring>(const sigset_t *set, int *sig)</argsstring>
+        <name>sigwait</name>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks to see if any signals in set are pending. If a signal is pending, it is cleared and the signal number is written to <emphasis>*sig</emphasis>, and the thread is not blocked.</para><para>If no signals in set are pending, the thread is blocked until a signal becomes pending.</para><para>The signals defined by <emphasis>set</emphasis> should be blocked when this function is called (see <ref refid="group___s_i_g_n_a_l_1gac2530d4faf68aaab3605c92ea8e78a03" kindref="member">pthread_sigmask()</ref> and <ref refid="group___s_i_g_n_a_l_1ga8828f2feb6a31f0ee3df4948d57616e4" kindref="member">sigprocmask()</ref>).</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>set</emphasis> contains an invalid or unsupported signal </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" line="65" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" bodystart="65" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga46a4955896c3559e14d1b688ddc838c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigtimedwait</definition>
+        <argsstring>(const sigset_t *set, siginfo_t *info, const struct timespec *timeout)</argsstring>
+        <name>sigtimedwait</name>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>siginfo_t *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks to see if any signals in the set are pending. If a signal is pending, it is cleared and the signal information is written to info, and the function returns without blocking.</para><para>If no signals in set are pending, the task is blocked until a signal becomes pending or until the timeout expires.</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>set</emphasis> contains an invalid or unsupported signal</para></listitem><listitem><para>EAGAIN: <emphasis>timeout</emphasis> expired before any signals arrived</para></listitem><listitem><para>EINTR: a signal, not in <emphasis>set</emphasis>, was caught </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000008"><xreftitle>Todo</xreftitle><xrefdescription><para>the sigcault flag should not be in a protected area of memory </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" line="96" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" bodystart="96" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga07d2bcfd34c46fb3df88d771e342b105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigwaitinfo</definition>
+        <argsstring>(const sigset_t *set, siginfo_t *info)</argsstring>
+        <name>sigwaitinfo</name>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>siginfo_t *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks to see if any signals in set are pending. If a signal is pending, it is cleared and the signal info is written to info, and the function returns without blocking.</para><para>If no signals in set are pending, the task is blocked until a signal becomes pending.</para><para><xrefsect id="todo_1_todo000009"><xreftitle>Todo</xreftitle><xrefdescription><para>Add error checking</para></xrefdescription></xrefsect></para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>set</emphasis> contains an invalid or unsupported signal</para></listitem><listitem><para>EINTR: a signal, not in <emphasis>set</emphasis>, was caught </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" line="146" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" bodystart="146" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gade240ba7f3b823487d0e15cd7be62a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void signal_priv_wait</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>signal_priv_wait</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" line="187" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sig_realtime.c" bodystart="187" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gae6133d5649694191193a2bc4ee0c3bcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alloc_sigactions</definition>
+        <argsstring>(void)</argsstring>
+        <name>alloc_sigactions</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="219" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gad367774c315dbef737f3d9f50f59814d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int alloc_sigaction</definition>
+        <argsstring>(int sig)</argsstring>
+        <name>alloc_sigaction</name>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="235" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga07e401f456a0156eba71562d79a76afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>_sig_func_ptr</type>
+        <definition>_sig_func_ptr signal</definition>
+        <argsstring>(int sig, _sig_func_ptr func)</argsstring>
+        <name>signal</name>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <param>
+          <type>_sig_func_ptr</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the handler for <emphasis>sig</emphasis> to <emphasis>func</emphasis>.</para><para><simplesect kind="return"><para>Zero or SIG_ERR with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>sig</emphasis> is not a valid signal or is a signal that cannot be caught. </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="33" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="33" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gaca154d42054802e95c6f8019a8dcf4ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigaction</definition>
+        <argsstring>(int sig, const struct sigaction *act, struct sigaction *oact)</argsstring>
+        <name>sigaction</name>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <param>
+          <type>const struct sigaction *</type>
+          <declname>act</declname>
+        </param>
+        <param>
+          <type>struct sigaction *</type>
+          <declname>oact</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the action for <emphasis>sig</emphasis> to <emphasis>act</emphasis>. The previous action is written is <emphasis>oact</emphasis> if <emphasis>oact</emphasis> is not NULL. Using this function will override any handler previously set with <ref refid="group___s_i_g_n_a_l_1ga07e401f456a0156eba71562d79a76afa" kindref="member">signal()</ref>.</para><para><simplesect kind="return"><para>Zero or SIG_ERR with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>sig</emphasis> is not a valid signal or is a signal that cannot be caught.</para></listitem><listitem><para>EINTR: a signal, not in <emphasis>set</emphasis>, was caught </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="77" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="77" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gac2530d4faf68aaab3605c92ea8e78a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_sigmask</definition>
+        <argsstring>(int how, const sigset_t *set, sigset_t *oset)</argsstring>
+        <name>pthread_sigmask</name>
+        <param>
+          <type>int</type>
+          <declname>how</declname>
+        </param>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>sigset_t *</type>
+          <declname>oset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the signal mask for the current thread.</para><para><simplesect kind="return"><para>Zero or SIG_ERR with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>how</emphasis> is not one of SIG_BLOCK, SIG_SETMASK, or SIG_UNBLOCK </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="118" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="118" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga8828f2feb6a31f0ee3df4948d57616e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigprocmask</definition>
+        <argsstring>(int how, const sigset_t *set, sigset_t *oset)</argsstring>
+        <name>sigprocmask</name>
+        <param>
+          <type>int</type>
+          <declname>how</declname>
+        </param>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>sigset_t *</type>
+          <declname>oset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the signal mask for the current thread. This function should only be called in single threaded applications.</para><para><simplesect kind="return"><para>Zero or SIG_ERR with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>how</emphasis> is not one of SIG_BLOCK, SIG_SETMASK, or SIG_UNBLOCK </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000010"><xreftitle>Todo</xreftitle><xrefdescription><para>the calling thread must be a process (thread 0 of the process) </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="159" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="159" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga7b91eecad5998acd6162fde3ab530d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigpending</definition>
+        <argsstring>(sigset_t *set)</argsstring>
+        <name>sigpending</name>
+        <param>
+          <type>sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function writes the calling thread&apos;s current pending set to <emphasis>set</emphasis>. It then waits for a signal to arrive. If the action for the signal is to terminate, then this function never returns. If the action is to execute a signal catching function, the signal catching function is executed and the signal mask for the thread is restored before returning.</para><para><simplesect kind="return"><para>-1 with errno set to EINTR otherwise never returns </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="173" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="173" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga20d9f879bbe69c79f62bd3813fcc1e63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigsuspend</definition>
+        <argsstring>(const sigset_t *sigmask)</argsstring>
+        <name>sigsuspend</name>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>sigmask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" line="179" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal.c" bodystart="179" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga3278c6c7694e0e17fab575c08a012139" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void abort_action</definition>
+        <argsstring>(int signo, int flags)</argsstring>
+        <name>abort_action</name>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga2a9d4eb83371915b55ea9c6d46ad6d76" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void terminate_action</definition>
+        <argsstring>(int signo, int flags)</argsstring>
+        <name>terminate_action</name>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="25" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga3282b8e2d385e4fa5fc0d24cc719b948" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void stop_action</definition>
+        <argsstring>(int signo, int flags)</argsstring>
+        <name>stop_action</name>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="191" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gab961e4ac120bfb0fb1be132e55d229e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void continue_action</definition>
+        <argsstring>(int signo, int flags)</argsstring>
+        <name>continue_action</name>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="210" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gad7fadb65887b3fe3dfe4b244d14e4377" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ignore_action</definition>
+        <argsstring>(int signo, int flags)</argsstring>
+        <name>ignore_action</name>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="28" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga8efd5b6e3f49f171f59189cc0ba1b09e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void signal_handler</definition>
+        <argsstring>(int tid, int si_signo, int si_sigcode, union sigval sig_value)</argsstring>
+        <name>signal_handler</name>
+        <param>
+          <type>int</type>
+          <declname>tid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_signo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>si_sigcode</declname>
+        </param>
+        <param>
+          <type>union sigval</type>
+          <declname>sig_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="66" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="66" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gacefc6e6f291d9f3d15d8d52225a0fb08" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void priv_stoppid</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_stoppid</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="147" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="147" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1gaa4ce1566079ee6001d243ed83c646b26" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void priv_contpid</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_contpid</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" line="165" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/signal_handler.c" bodystart="165" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga921af3df7dd4461bb2ab54508703bc3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigaddset</definition>
+        <argsstring>(sigset_t *set, const int signo)</argsstring>
+        <name>sigaddset</name>
+        <param>
+          <type>sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>signo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets <emphasis>signo</emphasis> in <emphasis>set</emphasis>. <simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" line="21" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga586b16d8edd7b04129b66da4c5ddc0f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigdelset</definition>
+        <argsstring>(sigset_t *set, const int signo)</argsstring>
+        <name>sigdelset</name>
+        <param>
+          <type>sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>signo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function clears <emphasis>signo</emphasis> in <emphasis>set</emphasis>. <simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga2bd11ded490df632440aa08f320aad17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigismember</definition>
+        <argsstring>(const sigset_t *set, int signo)</argsstring>
+        <name>sigismember</name>
+        <param>
+          <type>const sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks to see if <emphasis>signo</emphasis> is a member of <emphasis>set</emphasis>. <simplesect kind="return"><para>non-zero if <emphasis>signo</emphasis> is a member of <emphasis>set</emphasis> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga88d7bbc77ea1569ee21c90db549ea023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigfillset</definition>
+        <argsstring>(sigset_t *set)</argsstring>
+        <name>sigfillset</name>
+        <param>
+          <type>sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets all signal in <emphasis>set</emphasis>. <simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" line="46" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_i_g_n_a_l_1ga5925352f90eb589393274fa0376d7def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sigemptyset</definition>
+        <argsstring>(sigset_t *set)</argsstring>
+        <name>sigemptyset</name>
+        <param>
+          <type>sigset_t *</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function clears all signal in <emphasis>set</emphasis>. <simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" line="54" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal/sigset.c" bodystart="54" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

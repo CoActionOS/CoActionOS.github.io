@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__task__data__t" kind="struct" prot="public">
+    <compoundname>link_task_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__task__data__t_1a3376c741eceafb65dd1111097f8fc7fc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_data_t::pid</definition>
+        <argsstring></argsstring>
+        <name>pid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="458" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a2dfccc7218b5fec0a85c674ae231ec04" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_data_t::tid</definition>
+        <argsstring></argsstring>
+        <name>tid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="459" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="459" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a30c9f2e1a31e63633e07b42f1f5d0d1d" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t link_task_data_t::timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="460" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a0515cd44e2e5d7d20e23e73c65e39387" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_data_t::mem_loc</definition>
+        <argsstring></argsstring>
+        <name>mem_loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>location of data memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="461" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="461" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1aa6389a60ce2d9f764173af6386294d64" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_data_t::mem_size</definition>
+        <argsstring></argsstring>
+        <name>mem_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>size of data memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="462" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="462" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1ab787eebc90e7e9e55569d2ceec9bd156" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_data_t::malloc_loc</definition>
+        <argsstring></argsstring>
+        <name>malloc_loc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>malloc base + size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="463" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a3b77e12374ec305da575387c50fe55fe" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_task_data_t::stack_ptr</definition>
+        <argsstring></argsstring>
+        <name>stack_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>location of stack pointer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="464" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a231f155b06dd25d0e30a495d81b85d73" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t link_task_data_t::prio</definition>
+        <argsstring></argsstring>
+        <name>prio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="465" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1af8b62271f4ec44ad6b4b44582bdac14a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t link_task_data_t::prio_ceiling</definition>
+        <argsstring></argsstring>
+        <name>prio_ceiling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="466" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a2fc42f01213f75243c99ca7a692f3317" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t link_task_data_t::is_active</definition>
+        <argsstring></argsstring>
+        <name>is_active</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="467" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1a199e77496cf592351ba0344d3ec68276" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t link_task_data_t::is_thread</definition>
+        <argsstring></argsstring>
+        <name>is_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="468" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1ac1b053ab7dccbd1835fe2a4d80621091" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t link_task_data_t::is_enabled</definition>
+        <argsstring></argsstring>
+        <name>is_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="469" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__task__data__t_1ac1b02980449fc0a26607bebaed09dd4f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char link_task_data_t::name[LINK_NAME_MAX]</definition>
+        <argsstring>[LINK_NAME_MAX]</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="470" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="378">
+        <label>link_task_data_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="457" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="457" bodyend="471"/>
+    <listofallmembers>
+      <member refid="structlink__task__data__t_1a2fc42f01213f75243c99ca7a692f3317" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>is_active</name></member>
+      <member refid="structlink__task__data__t_1ac1b053ab7dccbd1835fe2a4d80621091" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>is_enabled</name></member>
+      <member refid="structlink__task__data__t_1a199e77496cf592351ba0344d3ec68276" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>is_thread</name></member>
+      <member refid="structlink__task__data__t_1ab787eebc90e7e9e55569d2ceec9bd156" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>malloc_loc</name></member>
+      <member refid="structlink__task__data__t_1a0515cd44e2e5d7d20e23e73c65e39387" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>mem_loc</name></member>
+      <member refid="structlink__task__data__t_1aa6389a60ce2d9f764173af6386294d64" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>mem_size</name></member>
+      <member refid="structlink__task__data__t_1ac1b02980449fc0a26607bebaed09dd4f" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>name</name></member>
+      <member refid="structlink__task__data__t_1a3376c741eceafb65dd1111097f8fc7fc" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>pid</name></member>
+      <member refid="structlink__task__data__t_1a231f155b06dd25d0e30a495d81b85d73" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>prio</name></member>
+      <member refid="structlink__task__data__t_1af8b62271f4ec44ad6b4b44582bdac14a" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>prio_ceiling</name></member>
+      <member refid="structlink__task__data__t_1a3b77e12374ec305da575387c50fe55fe" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>stack_ptr</name></member>
+      <member refid="structlink__task__data__t_1a2dfccc7218b5fec0a85c674ae231ec04" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>tid</name></member>
+      <member refid="structlink__task__data__t_1a30c9f2e1a31e63633e07b42f1f5d0d1d" prot="public" virt="non-virtual"><scope>link_task_data_t</scope><name>timer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

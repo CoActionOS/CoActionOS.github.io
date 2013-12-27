@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="chown_8c" kind="file">
+    <compoundname>chown.c</compoundname>
+    <includes local="no">string.h</includes>
+    <includes refid="unistd__fs_8h" local="yes">unistd_fs.h</includes>
+    <incdepgraph>
+      <node id="2876">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="2881">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2873">
+        <label>unistd_fs.h</label>
+        <link refid="unistd__fs_8h_source"/>
+        <childnode refid="2874" relation="include">
+        </childnode>
+        <childnode refid="2875" relation="include">
+        </childnode>
+        <childnode refid="2876" relation="include">
+        </childnode>
+        <childnode refid="2877" relation="include">
+        </childnode>
+        <childnode refid="2878" relation="include">
+        </childnode>
+        <childnode refid="2879" relation="include">
+        </childnode>
+        <childnode refid="2880" relation="include">
+        </childnode>
+      </node>
+      <node id="2890">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="2883">
+        <label>stdint.h</label>
+      </node>
+      <node id="2879">
+        <label>errno.h</label>
+      </node>
+      <node id="2884">
+        <label>stddef.h</label>
+      </node>
+      <node id="2875">
+        <label>sys/fcntl.h</label>
+      </node>
+      <node id="2882">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2888">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="2872">
+        <label>string.h</label>
+      </node>
+      <node id="2874">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2878">
+        <label>unistd.h</label>
+      </node>
+      <node id="2871">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c</label>
+        <link refid="chown.c"/>
+        <childnode refid="2872" relation="include">
+        </childnode>
+        <childnode refid="2873" relation="include">
+        </childnode>
+      </node>
+      <node id="2886">
+        <label>device.h</label>
+        <link refid="device_8h_source"/>
+        <childnode refid="2876" relation="include">
+        </childnode>
+        <childnode refid="2881" relation="include">
+        </childnode>
+        <childnode refid="2887" relation="include">
+        </childnode>
+        <childnode refid="2888" relation="include">
+        </childnode>
+        <childnode refid="2889" relation="include">
+        </childnode>
+      </node>
+      <node id="2887">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2883" relation="include">
+        </childnode>
+        <childnode refid="2881" relation="include">
+        </childnode>
+      </node>
+      <node id="2889">
+        <label>dev/pio.h</label>
+        <link refid="pio_8h"/>
+        <childnode refid="2881" relation="include">
+        </childnode>
+        <childnode refid="2883" relation="include">
+        </childnode>
+        <childnode refid="2890" relation="include">
+        </childnode>
+        <childnode refid="2888" relation="include">
+        </childnode>
+      </node>
+      <node id="2880">
+        <label>sysfs.h</label>
+        <link refid="sysfs_8h_source"/>
+        <childnode refid="2881" relation="include">
+        </childnode>
+        <childnode refid="2882" relation="include">
+        </childnode>
+        <childnode refid="2883" relation="include">
+        </childnode>
+        <childnode refid="2884" relation="include">
+        </childnode>
+        <childnode refid="2876" relation="include">
+        </childnode>
+        <childnode refid="2885" relation="include">
+        </childnode>
+        <childnode refid="2886" relation="include">
+        </childnode>
+      </node>
+      <node id="2877">
+        <label>stdio.h</label>
+      </node>
+      <node id="2885">
+        <label>dirent.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gaffffc50469285ec46d3a0594e818bc10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int chown</definition>
+        <argsstring>(const char *path, uid_t uid, gid_t gid)</argsstring>
+        <name>chown</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>uid_t</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>gid_t</type>
+          <declname>gid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function changes the mode of the specified file or directory.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EIO: IO Error</para></listitem><listitem><para>ENAMETOOLONG: <emphasis>path</emphasis> exceeds PATH_MAX or a component of <emphasis>path</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>path</emphasis> does not exist</para></listitem><listitem><para>EACCES: search permission is denied for a component of <emphasis>path</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c" bodystart="26" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/><sp/>&quot;unistd_fs.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___u_n_i___p_e_r_m_s_1gaffffc50469285ec46d3a0594e818bc10" kindref="member">chown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/>uid_t<sp/>uid,<sp/>gid_t<sp/>gid){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>sysfs_t<sp/>*<sp/>fs;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>sysfs_ispathinvalid(path)<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>){</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>fs<sp/>=<sp/>sysfs_find(path,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>fs<sp/>!=<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>fs-&gt;chown(fs-&gt;cfg,<sp/>sysfs_stripmountpath(fs,<sp/>path),<sp/>uid,<sp/>gid);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>ENOENT;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structrtc__attr__t" kind="struct" prot="public">
+    <compoundname>rtc_attr_t</compoundname>
+    <includes refid="rtc_8h" local="no">rtc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrtc__attr__t_1a392313f88f4010f2d75808003b6e781f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Always 0 </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="149" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__attr__t_1a926c6ece8fab50b950daf68c90c3d0de" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_attr_t::clock</definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The source clock </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="150" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__attr__t_1a911c7406ee51a5d5a0e904530c69710d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t rtc_attr_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calibration frequency for setting the pre-scalar </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="151" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RTC IO Attributes. </para>    </briefdescription>
+    <detaileddescription>
+<para>This data structure defines the structure used with I_GETATTR and I_SETATTR ioctl requests on the RTC. It is also used when opening the RTC. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="446">
+        <label>rtc_attr_t</label>
+        <link refid="structrtc__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="148" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="148" bodyend="152"/>
+    <listofallmembers>
+      <member refid="structrtc__attr__t_1a926c6ece8fab50b950daf68c90c3d0de" prot="public" virt="non-virtual"><scope>rtc_attr_t</scope><name>clock</name></member>
+      <member refid="structrtc__attr__t_1a911c7406ee51a5d5a0e904530c69710d" prot="public" virt="non-virtual"><scope>rtc_attr_t</scope><name>freq</name></member>
+      <member refid="structrtc__attr__t_1a392313f88f4010f2d75808003b6e781f" prot="public" virt="non-virtual"><scope>rtc_attr_t</scope><name>pin_assign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

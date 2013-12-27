@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i___s_l_e_e_p" kind="group">
+    <compoundname>UNI_SLEEP</compoundname>
+    <title>Sleep Funcions</title>
+    <innerfile refid="sleep_8c">sleep.c</innerfile>
+    <innerfile refid="usleep_8c">usleep.c</innerfile>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___s_l_e_e_p_1gaf62b6301eadefb77a6b5ef6ae3586092" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_sleep</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_sleep</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/sleep.c" line="16" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/sleep.c" bodystart="39" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___s_l_e_e_p_1ga69c97039c9ec10a30e5edbdf365e3bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int sleep</definition>
+        <argsstring>(unsigned int seconds)</argsstring>
+        <name>sleep</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>seconds</declname>
+          <briefdescription><para>The number of seconds to sleep </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling thread to sleep for <emphasis>seconds</emphasis> seconds. <simplesect kind="return"><para>0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/sleep.c" line="21" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/sleep.c" bodystart="21" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___s_l_e_e_p_1gad4a11e2a434392a13e8967ebfe2ad532" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_usleep</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_usleep</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/usleep.c" line="20" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/usleep.c" bodystart="64" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___s_l_e_e_p_1ga59715f1a0a2ee4dc75e8343aca15c1dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usleep</definition>
+        <argsstring>(useconds_t useconds)</argsstring>
+        <name>usleep</name>
+        <param>
+          <type>useconds_t</type>
+          <declname>useconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling thread to sleep for <emphasis>useconds</emphasis> microseconds.</para><para><simplesect kind="return"><para>0 or -1 for an error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>useconds</emphasis> is greater than 1 million. </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/usleep.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/usleep.c" bodystart="27" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="tty_8h" kind="file">
+    <compoundname>tty.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">dev/ioctl.h</includes>
+    <includes local="yes">termios.h</includes>
+    <incdepgraph>
+      <node id="1655">
+        <label>dev/ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1654">
+        <label>stdint.h</label>
+      </node>
+      <node id="1656">
+        <label>termios.h</label>
+      </node>
+      <node id="1653">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h</label>
+        <link refid="tty.h"/>
+        <childnode refid="1654" relation="include">
+        </childnode>
+        <childnode refid="1655" relation="include">
+        </childnode>
+        <childnode refid="1656" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structtty__state__t" prot="public">tty_state_t</innerclass>
+    <innerclass refid="structtty__cfg__t" prot="public">tty_cfg_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_t_y_1gab1a4a058e9abc5590b6750a50d84a71f" prot="public" static="no">
+        <name>TTY_IOC_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="32" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga2bbbef5fed749cf65a45751432ab800d" prot="public" static="no">
+        <name>I_TTY_SETATTR</name>
+        <briefdescription>
+<para>This request sets the terminal attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="37" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga48cd753d9124466d5e17f480cea29cf1" prot="public" static="no">
+        <name>I_TTY_GETATTR</name>
+        <briefdescription>
+<para>This request gets the terminal attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="42" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga4fc3fc5fff92c6fba854a9332e7f2bf3" prot="public" static="no">
+        <name>TTY_FLAG_ICRNL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="46" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga878e1572721f587a65f2b2a6625f70de" prot="public" static="no">
+        <name>TTY_FLAG_IGNBRK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="47" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaac1929f3a01f171f7b153213faf642df" prot="public" static="no">
+        <name>TTY_FLAG_IGNCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="48" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaf09c0a1b638e3b593137f85fce9f6825" prot="public" static="no">
+        <name>TTY_FLAG_IGNPAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaa3def987543c9d57eada0ff7efbbb3cf" prot="public" static="no">
+        <name>TTY_FLAG_ECHO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="50" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga722263d3dbf2a7849382d1100a3ef141" prot="public" static="no">
+        <name>TTY_FLAG_ECHOE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="51" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga64a37b44d93bf7d4e8a4f48f8d11ff59" prot="public" static="no">
+        <name>TTY_FLAG_ECHOK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaab93dd9ffa7f2f1050138f671907d481" prot="public" static="no">
+        <name>TTY_FLAG_ECHONL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gadaeb86a3c7119dc240393e6e4403275c" prot="public" static="no">
+        <name>TTY_FLAG_ICANON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="54" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gac1f8bd5c6fd768c754f0ae391b8438fc" prot="public" static="no">
+        <name>TTY_FLAG_IEXTEN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="55" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga032c16422121904c80668ee0f123c865" prot="public" static="no">
+        <name>TTY_FLAG_ISIG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="56" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1gaf517b2824c74f9f6203bde576d1cecb8" prot="public" static="no">
+        <name>TTY_FLAG_NOFLSH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___t_t_y_1ga65c3ae5b8738c6e091f12b6edabd3c3f" prot="public" static="no">
+        <name>TTY_FLAG_TOSTOP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" line="58" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor">#ifndef<sp/>DEV_TTY_H_</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_TTY_H_</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dev/ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;termios.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TTY_IOC_CHAR<sp/>&apos;t&apos;</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="37" refid="group___t_t_y_1ga2bbbef5fed749cf65a45751432ab800d" refkind="member"><highlight class="preprocessor">#define<sp/>I_TTY_SETATTR<sp/>_IOCTLW(TTY_IOC_CHAR,<sp/>0,<sp/>struct<sp/>termios)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="42" refid="group___t_t_y_1ga48cd753d9124466d5e17f480cea29cf1" refkind="member"><highlight class="preprocessor">#define<sp/>I_TTY_GETATTR<sp/>_IOCTLR(TTY_IOC_CHAR,<sp/>1,<sp/>struct<sp/>termios)</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ICRNL<sp/>0</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_IGNBRK<sp/>1</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_IGNCR<sp/>2</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_IGNPAR<sp/>3</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ECHO<sp/>4</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ECHOE<sp/>5</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ECHOK<sp/>6</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ECHONL<sp/>7</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ICANON<sp/>8</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_IEXTEN<sp/>9</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_ISIG<sp/>10</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_NOFLSH<sp/>11</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>TTY_FLAG_TOSTOP<sp/>12</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>flags;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}<sp/>tty_state_t;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>write_ep;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>read_ep;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/>tty_cfg_t;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_TTY_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/tty.h"/>
+  </compounddef>
+</doxygen>

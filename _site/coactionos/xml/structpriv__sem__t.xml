@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpriv__sem__t" kind="struct" prot="public">
+    <compoundname>priv_sem_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpriv__sem__t_1a49d255398a9a17f11e0cd364360e5882" prot="public" static="no" mutable="no">
+        <type>sem_t *</type>
+        <definition>sem_t* priv_sem_t::sem</definition>
+        <argsstring></argsstring>
+        <name>sem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="44" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__sem__t_1a1dd95d5cf8ff0627cf0db7e1ca8257cc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_sem_t::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="45" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__sem__t_1aa3a96210cf41ae3251ea792a5d4dc977" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_sem_t::new_thread</definition>
+        <argsstring></argsstring>
+        <name>new_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="46" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__sem__t_1a6278d189ea66e8e04dd867ccc52c271c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_sem_t::ret</definition>
+        <argsstring></argsstring>
+        <name>ret</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="47" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="427">
+        <label>priv_sem_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="43" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="43" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structpriv__sem__t_1a1dd95d5cf8ff0627cf0db7e1ca8257cc" prot="public" virt="non-virtual"><scope>priv_sem_t</scope><name>id</name></member>
+      <member refid="structpriv__sem__t_1aa3a96210cf41ae3251ea792a5d4dc977" prot="public" virt="non-virtual"><scope>priv_sem_t</scope><name>new_thread</name></member>
+      <member refid="structpriv__sem__t_1a6278d189ea66e8e04dd867ccc52c271c" prot="public" virt="non-virtual"><scope>priv_sem_t</scope><name>ret</name></member>
+      <member refid="structpriv__sem__t_1a49d255398a9a17f11e0cd364360e5882" prot="public" virt="non-virtual"><scope>priv_sem_t</scope><name>sem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

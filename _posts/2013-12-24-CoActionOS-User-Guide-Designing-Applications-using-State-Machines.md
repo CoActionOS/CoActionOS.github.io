@@ -22,7 +22,7 @@ CoActionOS Applib provides a C++ class for defining and executing state machines
 
 states.png
 
-To implement the state machine, we use two Applib classes "SMach":/projects/coactionos-applib/embedded/class_s_mach.html as the top level state machine and "State":/projects/coactionos-applib/embedded/class_state.html for each individual state.  Each state is implemented as it's own class which inherits "State":/projects/coactionos-applib/embedded/class_state.html and re-implements:
+To implement the state machine, we use two Applib classes "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html as the top level state machine and "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html for each individual state.  Each state is implemented as it's own class which inherits "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html and re-implements:
 
 {% highlight CPP %}
 const char * name();  //unique state name
@@ -124,8 +124,8 @@ bool Machine::action(void){
 
 As you can see in the action() method, we delay for 10ms.  This will be called in the "home", "timer", and "alarm" states.  Call it a "global" action.  If a global state machine action is not used, you don't need to re-implement the action() method at all.
 
-Since this "SMach":/projects/coactionos-applib/embedded/class_s_mach.html is a top level machine, we don't implement the exit_condition() method.  However, an "SMach":/projects/coactionos-applib/embedded/class_s_mach.html is just a special type of "State":/projects/coactionos-applib/embedded/class_state.html and can be part of a higher level SMach's state list.
+Since this "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html is a top level machine, we don't implement the exit_condition() method.  However, an "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html is just a special type of "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html and can be part of a higher level SMach's state list.
 
 ##  Conclusion
 
-State machines are a great way of designing complex firmware programs.  Using the Applib "SMach":/projects/coactionos-applib/embedded/class_s_mach.html and "State":/projects/coactionos-applib/embedded/class_state.html classes makes doing so quick and easy.  You can get started now by downloading the attached "state machine project":/attachments/download/367/state-machine.zip.
+State machines are a great way of designing complex firmware programs.  Using the Applib "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html and "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html classes makes doing so quick and easy.  You can get started now by downloading the attached "state machine project":/attachments/download/367/state-machine.zip.

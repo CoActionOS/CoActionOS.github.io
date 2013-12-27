@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structflash__attr__t" kind="struct" prot="public">
+    <compoundname>flash_attr_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structflash__attr__t_1a98e2903f11f6ed8a764a896e14bcd50d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t flash_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ignored </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" line="60" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="296">
+        <label>flash_attr_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" line="59" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/flash.h" bodystart="59" bodyend="61"/>
+    <listofallmembers>
+      <member refid="structflash__attr__t_1a98e2903f11f6ed8a764a896e14bcd50d" prot="public" virt="non-virtual"><scope>flash_attr_t</scope><name>pin_assign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

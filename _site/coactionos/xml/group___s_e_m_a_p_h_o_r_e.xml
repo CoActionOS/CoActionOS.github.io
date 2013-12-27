@@ -1,0 +1,412 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___s_e_m_a_p_h_o_r_e" kind="group">
+    <compoundname>SEMAPHORE</compoundname>
+    <title>Semaphore</title>
+    <innerfile refid="sem_8c">sem.c</innerfile>
+    <innerclass refid="structsem__file__hdr__t" prot="public">sem_file_hdr_t</innerclass>
+    <innerclass refid="structsem__list__t" prot="public">sem_list_t</innerclass>
+    <innerclass refid="structpriv__sem__t" prot="public">priv_sem_t</innerclass>
+    <innerclass refid="structpriv__sem__timedwait__t" prot="public">priv_sem_timedwait_t</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___s_e_m_a_p_h_o_r_e_1ga35914298b78b0cde7924d1e7d5fa3ea4" prot="public" static="yes" mutable="no">
+        <type>sem_list_t *</type>
+        <definition>sem_list_t* sem_first</definition>
+        <argsstring></argsstring>
+        <name>sem_first</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="50" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1gab51a83b857084406f617253da7a41dcd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_sem_wait</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_sem_wait</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="40" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="431" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga6954131da7363773191f475c99ded088" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int check_initialized</definition>
+        <argsstring>(sem_t *sem)</argsstring>
+        <name>check_initialized</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="41" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="463" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga58e88c99b70784f1d6d5b205138ae0ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sem_t *</type>
+        <definition>static sem_t* sem_find_named</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>sem_find_named</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="52" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="52" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1gac4e11fa37145b04d5cc951109f1cda19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sem_t *</type>
+        <definition>static sem_t* sem_find_free</definition>
+        <argsstring>(void)</argsstring>
+        <name>sem_find_free</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="64" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="64" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1gaca0dab9804c683ffeccda510770d186d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_sem_post</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_sem_post</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="92" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="273" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga94a90ae2cae7c17e62ad158a29a0683b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_sem_trywait</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_sem_trywait</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="95" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="353" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga28c3501bf26614802a345fb73362cacd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_sem_timedwait</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_sem_timedwait</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="100" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="309" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga532509bd8a6499f8193253192fb83a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_init</definition>
+        <argsstring>(sem_t *sem, int pshared, unsigned int value)</argsstring>
+        <name>sem_init</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pshared</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes <emphasis>sem</emphasis> as an unnamed semaphore with <emphasis>pshared</emphasis> and <emphasis>value</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="109" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="109" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga6bc9a7dd941a9b5e319715b767af5682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_destroy</definition>
+        <argsstring>(sem_t *sem)</argsstring>
+        <name>sem_destroy</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function destroys <emphasis>sem<ndash/>an</emphasis> unnamed semaphore.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="128" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="128" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga9755d3b56c40d2aec3d55b00c8f7cae8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_getvalue</definition>
+        <argsstring>(sem_t *sem, int *sval)</argsstring>
+        <name>sem_getvalue</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>sval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the value of the semaphore. If the semaphore is locked, the value is zero.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="145" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="145" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga6efb777ffb2b3641875a813a1b22912d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sem_t *</type>
+        <definition>sem_t* sem_open</definition>
+        <argsstring>(const char *name, int oflag,...)</argsstring>
+        <name>sem_open</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>oflag</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function opens or creates a named semaphore.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the message queue </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oflag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags to use when opening (O_CREAT, O_EXCL, O_RDWR)</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+When using O_CREAT, the third argument is the mode and the fourth is the initial value of the semaphore: <programlisting><codeline><highlight class="normal">sem_t<sp/>*<sp/><ref refid="group___s_e_m_a_p_h_o_r_e_1ga6efb777ffb2b3641875a813a1b22912d" kindref="member">sem_open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>oflag,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value){</highlight></codeline>
+</programlisting></para><para><simplesect kind="return"><para>Zero on success or SEM_FAILED with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: name length is greater than NAME_MAX</para></listitem><listitem><para>EEXIST: O_CREAT and O_EXCL are set in <emphasis>oflag</emphasis> but the semaphore already exists</para></listitem><listitem><para>ENOENT: O_CREAT is not set in <emphasis>oflag</emphasis> and the semaphore does not exist</para></listitem><listitem><para>ENOMEM: not enough memory for the semaphore </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="172" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="172" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga4e398fea1080fd7919e5c72ee94e2fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_close</definition>
+        <argsstring>(sem_t *sem)</argsstring>
+        <name>sem_close</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function closes a semaphore. The semaphore must be deleted using <ref refid="group___s_e_m_a_p_h_o_r_e_1ga776256d1a473906f8b7490689bfcb75c" kindref="member">sem_unlink()</ref> in order to free the system resources associated with the semaphore.</para><para><simplesect kind="return"><para>Zero on success or SEM_FAILED with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="254" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="254" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga015dce85cab8477c679cc47968958247" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_post</definition>
+        <argsstring>(sem_t *sem)</argsstring>
+        <name>sem_post</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function unlocks (increments) the value of the semaphore.</para><para><simplesect kind="return"><para>Zero on success or SEM_FAILED with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL</para></listitem><listitem><para>EACCES: process cannot access semaphore </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="289" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="289" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga19192f37769545c4c4661dc8d0b3daf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_timedwait</definition>
+        <argsstring>(sem_t *sem, const struct timespec *abs_timeout)</argsstring>
+        <name>sem_timedwait</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abs_timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function waits to lock (decrement) the semaphore until the value of <emphasis>CLOCK_REALTIME</emphasis> exceeds the value of <emphasis>abs_timeout</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or SEM_FAILED with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL</para></listitem><listitem><para>EACCES: process cannot access semaphore</para></listitem><listitem><para>ETIMEDOUT: timeout expired without locking the semaphore </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="329" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="329" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga4de7a9a334b01b6373b017aaefa07cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_trywait</definition>
+        <argsstring>(sem_t *sem)</argsstring>
+        <name>sem_trywait</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function locks (decrements) the semaphore if it can be locked immediately.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: sem is NULL</para></listitem><listitem><para>EACCES: process cannot access semaphore</para></listitem><listitem><para>EAGAIN: <emphasis>sem</emphasis> could not be immediately locked. </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="374" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="374" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1ga776256d1a473906f8b7490689bfcb75c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_unlink</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>sem_unlink</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function unlinks a named semaphore. It also releases any system resources associated with the semaphore.</para><para><simplesect kind="return"><para>Zero on success or SEM_FAILED with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOENT: the semaphore with <emphasis>name</emphasis> could not be found</para></listitem><listitem><para>ENAMETOOLONG: the length of <emphasis>name</emphasis> exceeds <emphasis>NAME_MAX</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="397" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="397" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_e_m_a_p_h_o_r_e_1gaad70020dca2241a2b78e272ca033271b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sem_wait</definition>
+        <argsstring>(sem_t *sem)</argsstring>
+        <name>sem_wait</name>
+        <param>
+          <type>sem_t *</type>
+          <declname>sem</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function locks (decrements) the semaphore. If the semaphore is already zero (and therefore cannot be locked), the calling thread blocks until the semaphore becomes available.</para><para><simplesect kind="return"><para>Zero on success or SEM_FAILED with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>sem</emphasis> is NULL</para></listitem><listitem><para>EACCES: <emphasis>sem</emphasis> is not pshared and was created in another process </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="454" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="454" bodyend="461"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_e_m_a_p_h_o_r_e_1gab4f99cf046a0619fc8020e388a81cf63" prot="public" static="no">
+        <name>SEM_FILE_HDR_SIGNATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="26" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_e_m_a_p_h_o_r_e_1gab40ff0a983187beb05773c9bda15b8fc" prot="public" static="no">
+        <name>SEM_FILE_HDR_NOT_SIGNATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" line="27" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore/sem.c" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

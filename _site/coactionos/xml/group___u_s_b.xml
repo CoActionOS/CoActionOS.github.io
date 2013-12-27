@@ -1,0 +1,552 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_s_b" kind="group">
+    <compoundname>USB</compoundname>
+    <title>Universal Serial Bus (USB)</title>
+    <innerfile refid="usb_8h">usb.h</innerfile>
+    <innerclass refid="structusb__attr__t" prot="public">usb_attr_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___u_s_b_1gaf9bdc3014f3d54c426b6d2df10de4960" prot="public" static="no">
+        <name>@19</name>
+        <enumvalue id="group___u_s_b_1ggaf9bdc3014f3d54c426b6d2df10de4960acb6fd04450fad1154a28a34854d755f0" prot="public">
+          <name>USB_SETUP_EVENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB Setup event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1ggaf9bdc3014f3d54c426b6d2df10de4960a252da7a582f3e5ac441ce510ea534a70" prot="public">
+          <name>USB_OUT_EVENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB Out event (Out from host to device) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1ggaf9bdc3014f3d54c426b6d2df10de4960a8299ede3f5483b2f2fbf64361e7c9c21" prot="public">
+          <name>USB_IN_EVENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB In event (In to host from device) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1ggaf9bdc3014f3d54c426b6d2df10de4960a173cfc749e23847664dd24482653940a" prot="public">
+          <name>USB_OUT_EVENT_STALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Out stall event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1ggaf9bdc3014f3d54c426b6d2df10de4960a8305e7204f1523c4cb8114c7da5a50fb" prot="public">
+          <name>USB_IN_EVENT_STALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>In stall event </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="43" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="43" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___u_s_b_1ga64e493e34c1d014134234576ebf1d2b1" prot="public" static="no">
+        <name>usb_spec_event_t</name>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1ab25f25f85cf492bbd3103823d369918d" prot="public">
+          <name>USB_SPEC_EVENT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1a25b63f6fb0cff997e788dea2efaba053" prot="public">
+          <name>USB_SPEC_EVENT_RESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1 Reset Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1a6b3e52ae311ae7611a065213426aae79" prot="public">
+          <name>USB_SPEC_EVENT_POWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 Power Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1a01b514743987fc89d263e1a5f3df6d04" prot="public">
+          <name>USB_SPEC_EVENT_SUSPEND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>3 Suspend Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1a4b09f1245f9ef9ff77c4cf3adf27aa3a" prot="public">
+          <name>USB_SPEC_EVENT_RESUME</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 Resume Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1a440b047b717239298de57a137602028b" prot="public">
+          <name>USB_SPEC_EVENT_DEBUG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 Debug Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1aa64b8298343e08d09f7f3adc37218a14" prot="public">
+          <name>USB_SPEC_EVENT_WAKEUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 Wakeup Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1abb155db2e80a68e9d793f5535f672f4b" prot="public">
+          <name>USB_SPEC_EVENT_WAKEUP_CFG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>7 Wakeup Configure Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1af5c68635b605539c4a272085139161a5" prot="public">
+          <name>USB_SPEC_EVENT_DIR_CTRL_EP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>8 Direction Control Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1a39ed8d6613bba05453ba9adeb56722b5" prot="public">
+          <name>USB_SPEC_EVENT_ERR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>9 Error Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1aeb2df3e4403d96154002fa7446ac5de7" prot="public">
+          <name>USB_SPEC_EVENT_FIQ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>10 Fast Interrupt Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1ad89fce2cf7da52d07d9d5eaa58fb77da" prot="public">
+          <name>USB_SPEC_EVENT_SOF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>11 Start of Frame Event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga64e493e34c1d014134234576ebf1d2b1ae461c3926187266c37d0d34e193858c0" prot="public">
+          <name>USB_SPEC_EVENT_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Total Number of Events </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>These are the special events that can be passed to the event callback handler. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="60" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="60" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___u_s_b_1ga578dcf8d54f14603f1fb0b0b1ce56713" prot="public" static="no">
+        <name>usb_attr_mode_t</name>
+        <enumvalue id="group___u_s_b_1gga578dcf8d54f14603f1fb0b0b1ce56713ae4561e72ba2f4b40f92051ff4e025889" prot="public">
+          <name>USB_ATTR_MODE_UNCONFIGURED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unconfigured mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga578dcf8d54f14603f1fb0b0b1ce56713a121781e4a6a998e45f15d835449c2cc5" prot="public">
+          <name>USB_ATTR_MODE_DEVICE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga578dcf8d54f14603f1fb0b0b1ce56713a04a5a05450d79146c435dbbf9e70168b" prot="public">
+          <name>USB_ATTR_MODE_HOST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>host mode </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga578dcf8d54f14603f1fb0b0b1ce56713a57c2667c533296d123c4f16b75202ba8" prot="public">
+          <name>USB_ATTR_MODE_OTG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>on-the-go mode </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the valid USB modes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="80" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="80" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___u_s_b_1ga0f6e05ac11898ce5b7e32046107ace43" prot="public" static="no">
+        <name>usb_action_event_t</name>
+        <enumvalue id="group___u_s_b_1gga0f6e05ac11898ce5b7e32046107ace43a91ea6eeb10197cfb82277110475d5c81" prot="public">
+          <name>USB_EVENT_DATA_READY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga0f6e05ac11898ce5b7e32046107ace43a04b29ddd36e572ac3cda0dee23ef27de" prot="public">
+          <name>USB_EVENT_WRITE_COMPLETE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___u_s_b_1gga0f6e05ac11898ce5b7e32046107ace43a773df711fb5ce08173899fd26872775f" prot="public">
+          <name>USB_EVENT_TOTAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="88" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___u_s_b_1ga74e5e4ca1ab221625ea8ef41feb80eab" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t usb_action_t</definition>
+        <argsstring></argsstring>
+        <name>usb_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines a USB action. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="54" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___u_s_b_1ga4a87d231224b39791ad0aed0d67fd7ae" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* usb_event_handler_t)(usb_spec_event_t)</definition>
+        <argsstring>)(usb_spec_event_t)</argsstring>
+        <name>usb_event_handler_t</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This defines the type for a USB event handler. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="108" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b_1ga24621a3d6eb3b0a4a4bb5668584746ef" prot="public" static="no">
+        <name>USB_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="37" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gabd35b3301baa5c32b424b5ec7221e1f0" prot="public" static="no">
+        <name>USB_LOGIC_EP_NUM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="40" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga785d453825b98b0d07217b7038219f18" prot="public" static="no">
+        <name>I_USB_GETATTR</name>
+        <briefdescription>
+<para>This request gets the USB attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="113" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gad6f6c4daba62bacea67d686703974644" prot="public" static="no">
+        <name>I_USB_SETATTR</name>
+        <briefdescription>
+<para>This request sets the USB attributes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="117" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga318679f620dde5970f0fc87b589a83eb" prot="public" static="no">
+        <name>I_USB_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="118" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga7561bd1047753ea4d31750a6e169dcb1" prot="public" static="no">
+        <name>I_USB_RESET</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal">usb_ioctl(usb_fd,<sp/><ref refid="group___u_s_b_1ga7561bd1047753ea4d31750a6e169dcb1" kindref="member">I_USB_RESET</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="129" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga01556db3ac51057a7b46248d3d82ebc3" prot="public" static="no">
+        <name>I_USB_ATTACH</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request attaches the USB.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1ga01556db3ac51057a7b46248d3d82ebc3" kindref="member">I_USB_ATTACH</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="140" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga1dad0e52179b7ec389712b592e70e9cc" prot="public" static="no">
+        <name>I_USB_DETACH</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request detaches the USB</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1ga1dad0e52179b7ec389712b592e70e9cc" kindref="member">I_USB_DETACH</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="151" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga14f78d39c2242b61c939abc54f8fbe99" prot="public" static="no">
+        <name>I_USB_CONFIGURE</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request configures the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1ga14f78d39c2242b61c939abc54f8fbe99" kindref="member">I_USB_CONFIGURE</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="162" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga268ff33ef187038af7193f87b9fe9d8b" prot="public" static="no">
+        <name>I_USB_SETADDR</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the USB address.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1ga268ff33ef187038af7193f87b9fe9d8b" kindref="member">I_USB_SETADDR</ref>,<sp/>usb_addr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="173" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gaafdf6965129a7bc8daf67ad1f39f8cf6" prot="public" static="no">
+        <name>I_USB_RESETEP</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the specified USB endpoint.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1gaafdf6965129a7bc8daf67ad1f39f8cf6" kindref="member">I_USB_RESETEP</ref>,<sp/>endpoint_number);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="184" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga61c7317ba08faabb5becde2ce7ca17fa" prot="public" static="no">
+        <name>I_USB_RESET_EP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="185" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gaaa0c78d4ec81f63b00f1812788d1fbdf" prot="public" static="no">
+        <name>I_USB_ENABLEEP</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1gaaa0c78d4ec81f63b00f1812788d1fbdf" kindref="member">I_USB_ENABLEEP</ref>,<sp/>endpoint_number);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="196" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gaab218f7348a661a0ca0279208c78be94" prot="public" static="no">
+        <name>I_USB_ENABLE_EP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="197" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga138790e1c9c34c1792e233f28bcd8225" prot="public" static="no">
+        <name>I_USB_DISABLEEP</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1ga138790e1c9c34c1792e233f28bcd8225" kindref="member">I_USB_DISABLEEP</ref>,<sp/>endpoint_number);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="208" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gafe263b0d1cb77774361bb69dd7bfcaaf" prot="public" static="no">
+        <name>I_USB_DISABLE_EP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="209" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gac2174b37571a9c6aee5bb468583985cc" prot="public" static="no">
+        <name>I_USB_STALLEP</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/>I_USB_STALL_EP,<sp/>endpoint_number);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="220" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gad09f5ea5bc86010a9e108de7cdaa949c" prot="public" static="no">
+        <name>I_USB_STALL_EP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="221" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gac6fd7eda91dd24231db4459cc1520fd5" prot="public" static="no">
+        <name>I_USB_UNSTALLEP</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1gac6fd7eda91dd24231db4459cc1520fd5" kindref="member">I_USB_UNSTALLEP</ref>,<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)endpoint_number);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="232" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gab97cd5014208f808b9f23e268dff8615" prot="public" static="no">
+        <name>I_USB_UNSTALL_EP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="233" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gab8129187a9468244e2f1730808642e24" prot="public" static="no">
+        <name>I_USB_CFGEP</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request resets the USB interface.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1gab8129187a9468244e2f1730808642e24" kindref="member">I_USB_CFGEP</ref>,<sp/>endpoint_number);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="244" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga909c4f782e9e818a720cc2c11294edab" prot="public" static="no">
+        <name>I_USB_CFG_EP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="245" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gac6b890fbfcce430ca6ed3c175bac637c" prot="public" static="no">
+        <name>I_USB_SETEVENTHANDLER</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request sets the function to handle events.</para><para>Example: <programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>my_handler(<ref refid="group___u_s_b_1ga64e493e34c1d014134234576ebf1d2b1" kindref="member">usb_spec_event_t</ref><sp/>event);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1gac6b890fbfcce430ca6ed3c175bac637c" kindref="member">I_USB_SETEVENTHANDLER</ref>,<sp/>my_handler)<sp/>){</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="259" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga75bde7563a3c2fb52e03f385ce19f297" prot="public" static="no">
+        <name>I_USB_SET_EVENT_HANDLER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="260" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gabc85c456d6ed233afeee0193d13ea005" prot="public" static="no">
+        <name>I_USB_ISCONNECTED</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request checks to see if the USB is connected to an upstream port. It is connected, once is has been reset and disconnected when suspended.</para><para><itemizedlist>
+<listitem><para>Example: <programlisting><codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>my_handler(<ref refid="group___u_s_b_1ga64e493e34c1d014134234576ebf1d2b1" kindref="member">usb_spec_event_t</ref><sp/>event);</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(usb_fd,<sp/><ref refid="group___u_s_b_1gabc85c456d6ed233afeee0193d13ea005" kindref="member">I_USB_ISCONNECTED</ref>)<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight><highlight class="comment">//The<sp/>USB<sp/>is<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//The<sp/>USB<sp/>is<sp/>not<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="279" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1ga82133e9c3600366a4740b46a944c6ec1" prot="public" static="no">
+        <name>I_USB_CONNECTED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="280" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b_1gab2ebf8498a4da459250b63a9a604bd66" prot="public" static="no">
+        <name>I_USB_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" line="282" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The HWPL USB module provides an API for accessing the devices USB hardware. The full USB device stack is part of the Hardware Device Library (HWDL). The HWPL API is used for low level initialization, and the HWDL is used for application level functionality such as implementing USB Device Classes.</para><para>More information about accessing peripheral IO is in the <ref refid="group___p_e_r_i_p_h_i_o" kindref="compound">Peripheral Input/Output</ref> section. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

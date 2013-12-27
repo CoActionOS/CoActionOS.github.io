@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structeint__attr__t" kind="struct" prot="public">
+    <compoundname>eint_attr_t</compoundname>
+    <includes refid="eint_8h" local="no">eint.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeint__attr__t_1a29a20d1250f75e808af5b5b876027ea2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eint_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+<para>The Pin assignment to use (see <ref refid="group___l_p_c17_x_x_d_e_v" kindref="compound">LPC17xx Devices</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="109" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeint__attr__t_1a3856c21e6184664c35cb6ee8cac3dc42" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eint_attr_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Value of input at pin (1 for high and zero for low) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="110" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>External Interrupt Attribute Data Structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>This data structure is used for controlling external interrupt IO peripherals. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="284">
+        <label>eint_attr_t</label>
+        <link refid="structeint__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" line="108" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/eint.h" bodystart="108" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structeint__attr__t_1a29a20d1250f75e808af5b5b876027ea2" prot="public" virt="non-virtual"><scope>eint_attr_t</scope><name>pin_assign</name></member>
+      <member refid="structeint__attr__t_1a3856c21e6184664c35cb6ee8cac3dc42" prot="public" virt="non-virtual"><scope>eint_attr_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

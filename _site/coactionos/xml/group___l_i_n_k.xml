@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___l_i_n_k" kind="group">
+    <compoundname>LINK</compoundname>
+    <title>USB Link</title>
+    <innerfile refid="link_8h">link.h</innerfile>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___l_i_n_k_1gad9dc554a4425c2de2dbd47a5134dc987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int link_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>link_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___l_i_n_k_1ga1edf53e014519099de05b86d6fdd7e76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* link_update</definition>
+        <argsstring>(void *arg)</argsstring>
+        <name>link_update</name>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This module provides the interface to CoActionOS Link as a USB device. The interface can be customized by adding new initialization values for link_dev_desc and link_string_desc in the <emphasis>devices.c</emphasis> file. Only the following values can be changed by the user:<itemizedlist>
+<listitem><para>USB VID</para></listitem><listitem><para>USB PID</para></listitem><listitem><para>Manufacturer String</para></listitem><listitem><para>Product String</para></listitem><listitem><para>Serial Number String</para></listitem></itemizedlist>
+</para><para>Changing any of the above values will require custom USB drivers to make software applications work with CoActionOS. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__string__desc__t" kind="struct" prot="public">
+    <compoundname>usb_string_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structusb__string__desc__t_1a97e0317cfeea75e7a00956342fb872f0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_string_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__string__desc__t_1a153d3c57e0438dec8a01dcae20ea1caa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_string_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="103" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__string__desc__t_1af222a49d40879d4a3f5adee46f9111d8" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* usb_string_desc_t::bString</definition>
+        <argsstring></argsstring>
+        <name>bString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="104" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__string__desc__t_1a21157361ff0ea3028ba662a7693c1b54" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* usb_string_desc_t::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="105" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="548">
+        <label>usb_string_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="101" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="101" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structusb__string__desc__t_1a153d3c57e0438dec8a01dcae20ea1caa" prot="public" virt="non-virtual"><scope>usb_string_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structusb__string__desc__t_1a97e0317cfeea75e7a00956342fb872f0" prot="public" virt="non-virtual"><scope>usb_string_desc_t</scope><name>bLength</name></member>
+      <member refid="structusb__string__desc__t_1af222a49d40879d4a3f5adee46f9111d8" prot="public" virt="non-virtual"><scope>usb_string_desc_t</scope><name>bString</name></member>
+      <member refid="structusb__string__desc__t_1a21157361ff0ea3028ba662a7693c1b54" prot="public" virt="non-virtual"><scope>usb_string_desc_t</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

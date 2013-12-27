@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structrtc__time__t" kind="struct" prot="public">
+    <compoundname>rtc_time_t</compoundname>
+    <includes refid="rtc_8h" local="no">rtc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrtc__time__t_1ac2155b3641bef6ff8c9ad672c2e30fdd" prot="public" static="no" mutable="no">
+        <type>struct link_tm</type>
+        <definition>struct link_tm rtc_time_t::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+<para>Time (compatible with struct tm) used with set/get. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="39" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a9ba34c8bbd37c123a0ba77ac34fd6366" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t rtc_time_t::useconds</definition>
+        <argsstring></argsstring>
+        <name>useconds</name>
+        <briefdescription>
+<para>Microseconds used with set/get. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="112" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a9eb9b39ef96acdc6adf23cb419652d1f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t rtc_time_t::time_t</definition>
+        <argsstring></argsstring>
+        <name>time_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="113" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__time__t_1a863ee894f18a7afc02d1e449137b4ed2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t rtc_time_t::use_time_t</definition>
+        <argsstring></argsstring>
+        <name>use_time_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="114" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>RTC Time Structure (compatible with struct tm from time.h) </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure holds the time. It should be compatible with struct tm. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="448">
+        <label>rtc_time_t</label>
+        <link refid="structrtc__time__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" line="110" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/rtc.h" bodystart="110" bodyend="115"/>
+    <listofallmembers>
+      <member refid="structrtc__time__t_1ac2155b3641bef6ff8c9ad672c2e30fdd" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>time</name></member>
+      <member refid="structrtc__time__t_1a9eb9b39ef96acdc6adf23cb419652d1f" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>time_t</name></member>
+      <member refid="structrtc__time__t_1a863ee894f18a7afc02d1e449137b4ed2" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>use_time_t</name></member>
+      <member refid="structrtc__time__t_1a9ba34c8bbd37c123a0ba77ac34fd6366" prot="public" virt="non-virtual"><scope>rtc_time_t</scope><name>useconds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

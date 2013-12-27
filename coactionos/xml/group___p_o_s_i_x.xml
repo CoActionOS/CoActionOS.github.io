@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___p_o_s_i_x" kind="group">
+    <compoundname>POSIX</compoundname>
+    <title>POSIX</title>
+    <innergroup refid="group___d_i_r_e_n_t">Directory Entry (dirent)</innergroup>
+    <innergroup refid="group___e_r_r_n_o">Error Numbers</innergroup>
+    <innergroup refid="group___g_r_p">Groups</innergroup>
+    <innergroup refid="group___m_q_u_e_u_e">Message Queue (mqueue)</innergroup>
+    <innergroup refid="group___p_w_d">Password</innergroup>
+    <innergroup refid="group___p_t_h_r_e_a_d">Posix Threads (pthread)</innergroup>
+    <innergroup refid="group___s_c_h_e_d">Scheduler</innergroup>
+    <innergroup refid="group___s_e_m_a_p_h_o_r_e">Semaphore</innergroup>
+    <innergroup refid="group___s_i_g_n_a_l">Signal Handling</innergroup>
+    <innergroup refid="group___t_i_m_e">Time</innergroup>
+    <innergroup refid="group___u_n_i_s_t_d">Unix Standard (unistd)</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The POSIX API contains functions that allow users to create new threads, access files as well as hardware, and perform interprocess communication. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

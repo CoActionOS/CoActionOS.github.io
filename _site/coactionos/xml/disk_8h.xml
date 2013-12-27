@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="disk_8h" kind="file">
+    <compoundname>disk.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">dev/ioctl.h</includes>
+    <incdepgraph>
+      <node id="1432">
+        <label>dev/ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1431">
+        <label>stdint.h</label>
+      </node>
+      <node id="1430">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h</label>
+        <link refid="disk.h"/>
+        <childnode refid="1431" relation="include">
+        </childnode>
+        <childnode refid="1432" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___d_i_s_k_1gaf69cf330a1890f43006013ad6a623b22" prot="public" static="no">
+        <name>DISK_IOC_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="26" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga9baa43dfcd6232dc973ece1c409a581d" prot="public" static="no">
+        <name>I_DISK_PROTECT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request applies the software write protect to the entire device.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga9baa43dfcd6232dc973ece1c409a581d" kindref="member">I_DISK_PROTECT</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="38" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gab3d07e4f8bd14632a169101cfcfe841c" prot="public" static="no">
+        <name>I_DISK_UNPROTECT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request removes the software write protect from the entire device.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1gab3d07e4f8bd14632a169101cfcfe841c" kindref="member">I_DISK_UNPROTECT</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga714c9f18f86d8a3fc01e7e598af00a4e" prot="public" static="no">
+        <name>I_DISK_ERASEBLOCK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request erases a block of memory. The ctl argurment is an address that is contained in the block to erase.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga714c9f18f86d8a3fc01e7e598af00a4e" kindref="member">I_DISK_ERASEBLOCK</ref>,<sp/>0x1000);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="60" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga975805f5374798dbec31385ce34f54c6" prot="public" static="no">
+        <name>I_DISK_ERASE_BLOCK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="61" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga172ebb6426469f5c5e80bedde4b21184" prot="public" static="no">
+        <name>I_DISK_ERASEDEVICE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request erases the device.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga172ebb6426469f5c5e80bedde4b21184" kindref="member">I_DISK_ERASEDEVICE</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="71" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gaf7caa340cf6556a6fec5d5cbcf608a93" prot="public" static="no">
+        <name>I_DISK_ERASE_DEVICE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="72" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gafb3a67c64836a10e8d3bc8f18cc4c150" prot="public" static="no">
+        <name>I_DISK_POWERDOWN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request powers down the device.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1gafb3a67c64836a10e8d3bc8f18cc4c150" kindref="member">I_DISK_POWERDOWN</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga7d61738cabaf1bd15355968a92e44695" prot="public" static="no">
+        <name>I_DISK_POWER_DOWN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="83" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gaad871a23999389c2ceb0376480814cf9" prot="public" static="no">
+        <name>I_DISK_POWERUP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request powers up the device.</para><para>Example: <programlisting><codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/>I_DISK_POWER_UP);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="93" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga983d2feefb7e3d994e0385c8e8714d8f" prot="public" static="no">
+        <name>I_DISK_POWER_UP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="94" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga612b377df35a735f4d144bf37623e389" prot="public" static="no">
+        <name>I_DISK_GETSIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request gets the size of the memory on the device.</para><para>Example: <programlisting><codeline><highlight class="normal">uint32_t<sp/>size;</highlight></codeline>
+<codeline><highlight class="normal">size<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga612b377df35a735f4d144bf37623e389" kindref="member">I_DISK_GETSIZE</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="105" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga388881d4bceb0df0fbf1d53ca4d49f08" prot="public" static="no">
+        <name>I_DISK_GET_SIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="106" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga9a3c212d3cb793324343c48424bd8dbc" prot="public" static="no">
+        <name>I_DISK_GETBLOCKSIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request gets the size of the smallest eraseable block.</para><para>Example: <programlisting><codeline><highlight class="normal">uint32_t<sp/>size;</highlight></codeline>
+<codeline><highlight class="normal">size<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga9a3c212d3cb793324343c48424bd8dbc" kindref="member">I_DISK_GETBLOCKSIZE</ref>);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="117" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga1379f821ea96282bad763b08575fa085" prot="public" static="no">
+        <name>I_DISK_GET_BLOCKSIZE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="118" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gad99e96c1a82c1d74924b9e6c55224739" prot="public" static="no">
+        <name>I_DISK_GETBLOCKERASETIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request gets the amount of time to erase a block.</para><para>Example: <programlisting><codeline><highlight class="normal">uint32_t<sp/>useconds;</highlight></codeline>
+<codeline><highlight class="normal">useconds<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1gad99e96c1a82c1d74924b9e6c55224739" kindref="member">I_DISK_GETBLOCKERASETIME</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga714c9f18f86d8a3fc01e7e598af00a4e" kindref="member">I_DISK_ERASEBLOCK</ref>,<sp/>0x1000);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___s_l_e_e_p_1ga59715f1a0a2ee4dc75e8343aca15c1dd" kindref="member">usleep</ref>(useconds);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="131" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga4b591ccaa422c87309fce73986e88dfb" prot="public" static="no">
+        <name>I_DISK_GET_BLOCK_ERASETIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="132" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1ga2490bed8315b72874e4f34ffdda768fa" prot="public" static="no">
+        <name>I_DISK_GETDEVICEERASETIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This request gets the amount of time required to erase the device.</para><para>Example: <programlisting><codeline><highlight class="normal">uint32_t<sp/>useconds;</highlight></codeline>
+<codeline><highlight class="normal">useconds<sp/>=<sp/><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga2490bed8315b72874e4f34ffdda768fa" kindref="member">I_DISK_GETDEVICEERASETIME</ref>);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fildes,<sp/><ref refid="group___d_i_s_k_1ga172ebb6426469f5c5e80bedde4b21184" kindref="member">I_DISK_ERASEDEVICE</ref>,<sp/>0x1000);</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___s_l_e_e_p_1ga59715f1a0a2ee4dc75e8343aca15c1dd" kindref="member">usleep</ref>(useconds);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="145" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gaf088dc882a5fa808604606819b483467" prot="public" static="no">
+        <name>I_DISK_GET_DEVICE_ERASETIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="146" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___d_i_s_k_1gaad9fc50decdc658b0b9b959bf7adfddf" prot="public" static="no">
+        <name>I_DISK_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" line="148" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#ifndef<sp/>DEV_DISK_H_</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_DISK_H_</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;dev/ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISK_IOC_CHAR<sp/>&apos;d&apos;</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="group___d_i_s_k_1ga9baa43dfcd6232dc973ece1c409a581d" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_PROTECT<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>0)</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="49" refid="group___d_i_s_k_1gab3d07e4f8bd14632a169101cfcfe841c" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_UNPROTECT<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>1)</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="60" refid="group___d_i_s_k_1ga714c9f18f86d8a3fc01e7e598af00a4e" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_ERASEBLOCK<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>2)</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_ERASE_BLOCK<sp/>I_DISK_ERASEBLOCK</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="71" refid="group___d_i_s_k_1ga172ebb6426469f5c5e80bedde4b21184" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_ERASEDEVICE<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>3)</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_ERASE_DEVICE<sp/>I_DISK_ERASEDEVICE</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="82" refid="group___d_i_s_k_1gafb3a67c64836a10e8d3bc8f18cc4c150" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_POWERDOWN<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>4)</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_POWER_DOWN<sp/>I_DISK_POWERDOWN</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="93" refid="group___d_i_s_k_1gaad871a23999389c2ceb0376480814cf9" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_POWERUP<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>5)</highlight></codeline>
+<codeline lineno="94"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_POWER_UP<sp/>I_DISK_POWERUP</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="105" refid="group___d_i_s_k_1ga612b377df35a735f4d144bf37623e389" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_GETSIZE<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>6)</highlight></codeline>
+<codeline lineno="106"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_GET_SIZE<sp/>I_DISK_GETSIZE</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="117" refid="group___d_i_s_k_1ga9a3c212d3cb793324343c48424bd8dbc" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_GETBLOCKSIZE<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>7)</highlight></codeline>
+<codeline lineno="118"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_GET_BLOCKSIZE<sp/>I_DISK_GETBLOCKSIZE</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="131" refid="group___d_i_s_k_1gad99e96c1a82c1d74924b9e6c55224739" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_GETBLOCKERASETIME<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>8)</highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_GET_BLOCK_ERASETIME<sp/>I_DISK_GETBLOCKERASETIME</highlight></codeline>
+<codeline lineno="133"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="145" refid="group___d_i_s_k_1ga2490bed8315b72874e4f34ffdda768fa" refkind="member"><highlight class="preprocessor">#define<sp/>I_DISK_GETDEVICEERASETIME<sp/>_IOCTL(DISK_IOC_CHAR,<sp/>9)</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_GET_DEVICE_ERASETIME<sp/>I_DISK_GETDEVICEERASETIME</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_DISK_TOTAL<sp/>10</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_DISK_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/disk.h"/>
+  </compounddef>
+</doxygen>

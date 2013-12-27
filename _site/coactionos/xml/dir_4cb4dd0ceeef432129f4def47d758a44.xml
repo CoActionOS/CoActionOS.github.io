@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_4cb4dd0ceeef432129f4def47d758a44" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/src/sys</compoundname>
+    <innerdir refid="dir_8f5f16164928e601992683dea9c4cf20">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent</innerdir>
+    <innerdir refid="dir_7665a98af214cba17e1a14b80a56630c">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/grp</innerdir>
+    <innerdir refid="dir_ae698d8d15e5162de5587eab88b7d263">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue</innerdir>
+    <innerdir refid="dir_10ffd5c7fb3884d4467767ecd438af8b">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread</innerdir>
+    <innerdir refid="dir_62dc641eaa492813426a41da87add652">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pwd</innerdir>
+    <innerdir refid="dir_a1ce66578206b95a603418c6054a8ae9">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched</innerdir>
+    <innerdir refid="dir_0774983ec59f276fad5d753f1bf2ffe5">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/semaphore</innerdir>
+    <innerdir refid="dir_dc992761663f67d9de03d69c9b9c457c">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/signal</innerdir>
+    <innerdir refid="dir_7afb6464ba18fe36b6ad8ef58161a0ca">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time</innerdir>
+    <innerdir refid="dir_f279741e54d27b82622822ad33dc09b4">/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/"/>
+  </compounddef>
+</doxygen>

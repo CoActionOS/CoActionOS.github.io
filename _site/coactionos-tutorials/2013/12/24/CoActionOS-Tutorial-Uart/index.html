@@ -57,6 +57,12 @@
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
 							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
 							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
@@ -82,7 +88,7 @@
       <span>24 December 2013</span>
     </div>
     <div class="content">
-      <p>A UART is used to transmit data serially. CoActionOS Applib makes configuring and using a <a href="/projects/coactionos-applib/embedded/class_uart.html">UART</a> on CoActionOS both simple and flexible.</p>
+      <p>A UART is used to transmit data serially. CoActionOS Applib makes configuring and using a <a href="/coactionos-applib/html/class_uart.html">UART</a> on CoActionOS both simple and flexible.</p>
 
 <p>The basic steps to use the UART are to:</p>
 
@@ -96,7 +102,7 @@
 <li>Optionally Close the UART (power it down)</li>
 </ol>
 
-<p>The following program demonstrates how to use the UART. The program assumes the TXD line is connected to the RXD line. For more details on using the UART, please see the <a href="/projects/coactionos-applib/embedded/class_uart.html">UART Applib documentation</a>.</p>
+<p>The following program demonstrates how to use the UART. The program assumes the TXD line is connected to the RXD line. For more details on using the UART, please see the <a href="/coactionos-applib/html/class_uart.html">UART Applib documentation</a>.</p>
 <div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;cstdio&gt; </span><span class='c1'>//For printf</span>
 <span class='cp'>#include &lt;cstdlib&gt;</span>
 <span class='cp'>#include &lt;cstring&gt; </span><span class='c1'>//for strcpy and memset</span>

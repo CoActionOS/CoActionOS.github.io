@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i_s_t_d" kind="group">
+    <compoundname>UNISTD</compoundname>
+    <title>Unix Standard (unistd)</title>
+    <innerfile refid="__exit_8c">_exit.c</innerfile>
+    <innerfile refid="__getpid_8c">_getpid.c</innerfile>
+    <innerfile refid="__getppid_8c">_getppid.c</innerfile>
+    <innerfile refid="unistd__data__transfer_8c">unistd_data_transfer.c</innerfile>
+    <innerclass refid="structpriv__device__data__transfer__t" prot="public">priv_device_data_transfer_t</innerclass>
+    <innergroup refid="group___u_n_i___f_s">Filesystem</innergroup>
+    <innergroup refid="group___u_n_i___p_r_o_c_e_s_s">Processes</innergroup>
+    <innergroup refid="group___u_n_i___s_l_e_e_p">Sleep Funcions</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga3dbf4fb99b79cb0c6e1ebdbe919e51e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_stop_threads</definition>
+        <argsstring>(int *send_signal)</argsstring>
+        <name>priv_stop_threads</name>
+        <param>
+          <type>int *</type>
+          <declname>send_signal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" bodystart="97" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1gaa5f1bafed3e9aa5814455aae5cbc5848" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_zombie_process</definition>
+        <argsstring>(int *signal_sent)</argsstring>
+        <name>priv_zombie_process</name>
+        <param>
+          <type>int *</type>
+          <declname>signal_sent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" bodystart="145" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga55e99c539cf7723ec15e856b7e0a8cee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void exit</definition>
+        <argsstring>(int status)</argsstring>
+        <name>exit</name>
+        <param>
+          <type>int</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga6a7c6128f83e1cabd41803e0065bdaca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void _exit</definition>
+        <argsstring>(int __status)</argsstring>
+        <name>_exit</name>
+        <param>
+          <type>int</type>
+          <declname>__status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling process to exit with the specified exit code.</para><para><simplesect kind="note"><para>In this version, named semaphores are not closed in this function.</para></simplesect>
+<simplesect kind="return"><para>This function never returns </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_exit.c" bodystart="35" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1gac61b207337ca21b3b309593fd1a0cb82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t getpid</definition>
+        <argsstring>(void)</argsstring>
+        <name>getpid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns the process ID of the calling process. <simplesect kind="return"><para>The process ID of the caller. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getpid.c" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1gad1f206883946ce8cb8bb983464f9b102" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t _getpid</definition>
+        <argsstring>(void)</argsstring>
+        <name>_getpid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getpid.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getpid.c" bodystart="22" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1gac6d7f7ade00dcdc302b0da5664eee812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pid_t</type>
+        <definition>pid_t getppid</definition>
+        <argsstring>(void)</argsstring>
+        <name>getppid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns the process ID of the parent process. <simplesect kind="return"><para>The process ID of the caller&apos;s parent process. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getppid.c" line="19" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_getppid.c" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1gad17d15d67499239f00be5e98f769d430" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_device_data_transfer</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_device_data_transfer</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" line="36" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" bodystart="81" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga1d64056a0894bf19e3bd7d5a46d52272" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int priv_data_transfer_callback</definition>
+        <argsstring>(void *context, const void *data)</argsstring>
+        <name>priv_data_transfer_callback</name>
+        <param>
+          <type>void *</type>
+          <declname>context</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" bodystart="41" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga47a8c9072f11b6009d6c80a409d033ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int device_data_transfer</definition>
+        <argsstring>(open_file_t *open_file, void *buf, int nbyte, int read)</argsstring>
+        <name>device_data_transfer</name>
+        <param>
+          <type>open_file_t *</type>
+          <declname>open_file</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbyte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>read</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" line="38" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" bodystart="118" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga7b4059cfd3c8b315dcb83ebdf613601b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_mode</definition>
+        <argsstring>(const sysfs_t *fs, void *handle)</argsstring>
+        <name>get_mode</name>
+        <param>
+          <type>const sysfs_t *</type>
+          <declname>fs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" line="39" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" bodystart="211" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga00a3c026d2e7197dffb7d1f2320d8fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unistd_device_read</definition>
+        <argsstring>(open_file_t *open_file, void *buf, int nbyte)</argsstring>
+        <name>unistd_device_read</name>
+        <param>
+          <type>open_file_t *</type>
+          <declname>open_file</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" line="110" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i_s_t_d_1ga5ddfa67eae9723c05c6c4947113ed5ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unistd_device_write</definition>
+        <argsstring>(open_file_t *open_file, const void *buf, int nbyte)</argsstring>
+        <name>unistd_device_write</name>
+        <param>
+          <type>open_file_t *</type>
+          <declname>open_file</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" line="114" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/unistd_data_transfer.c" bodystart="114" bodyend="116"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

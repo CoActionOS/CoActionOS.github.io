@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="usb__dev__runtime__dfu_8h" kind="file">
+    <compoundname>usb_dev_runtime_dfu.h</compoundname>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <incdepgraph>
+      <node id="2030">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h</label>
+        <link refid="usb_dev_runtime_dfu.h"/>
+        <childnode refid="2031" relation="include">
+        </childnode>
+      </node>
+      <node id="2031">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gafc1122a7b0155a7e39bc116e3058df26" prot="public" static="no">
+        <name>USB_DEV_RUNTIME_DFU_SW_REQ_LOC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="19" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gacaa36cdbfccbc8ad3c631db3e5b6e624" prot="public" static="no">
+        <name>USB_DEV_RUNTIME_DFU_SW_REQ_VALUE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="20" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1ga92eea61ebb06c0dea0ac951897336122" prot="public" static="no" mutable="no">
+        <type>usb_dev_dfu_status_t</type>
+        <definition>volatile usb_dev_dfu_status_t usb_dev_runtime_dfu_status</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_runtime_dfu_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gae564e82bc9712f4c45f65cd4d3b6a8c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_runtime_dfu_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_runtime_dfu_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1ga91e062fa42de261f1d72160eab834c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_runtime_dfu_reset_event</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_runtime_dfu_reset_event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gaec4cffcad0932904e51ab5565a7b9bb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_runtime_dfu_get_state</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_runtime_dfu_get_state</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="25" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1ga0b3b60c278d4cbea749b395554d102ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_runtime_dfu_set_appDETACH</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_runtime_dfu_set_appDETACH</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#ifndef<sp/>USB_DEV_RUNTIME_DFU_H_</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEV_RUNTIME_DFU_H_</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USB_DEV_RUNTIME_DFU_SW_REQ_LOC<sp/>0x10002000</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEV_RUNTIME_DFU_SW_REQ_VALUE<sp/>0x55AA55AA</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usb_dev_runtime_dfu_init(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usb_dev_runtime_dfu_reset_event(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>usb_dev_dfu_status_t<sp/>usb_dev_runtime_dfu_status;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/>usb_dev_runtime_dfu_get_state(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>HWPL_ALWAYS_INLINE;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">uint8_t<sp/>usb_dev_runtime_dfu_get_state(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>usb_dev_runtime_dfu_status.bState;<sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usb_dev_runtime_dfu_set_appDETACH(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>HWPL_ALWAYS_INLINE;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>usb_dev_runtime_dfu_set_appDETACH(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){<sp/>usb_dev_runtime_dfu_status.bState<sp/>=<sp/>appDETACH;<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USB_DEV_RUNTIME_DFU_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u" kind="group">
+    <compoundname>USB_DEV_RUNTIME_DFU</compoundname>
+    <title>USB Runtime Device Firmware Upgrade</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1ga92eea61ebb06c0dea0ac951897336122" prot="public" static="no" mutable="no">
+        <type>usb_dev_dfu_status_t</type>
+        <definition>volatile usb_dev_dfu_status_t usb_dev_runtime_dfu_status</definition>
+        <argsstring></argsstring>
+        <name>usb_dev_runtime_dfu_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="24" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gae564e82bc9712f4c45f65cd4d3b6a8c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_runtime_dfu_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_runtime_dfu_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1ga91e062fa42de261f1d72160eab834c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_runtime_dfu_reset_event</definition>
+        <argsstring>(void)</argsstring>
+        <name>usb_dev_runtime_dfu_reset_event</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gaec4cffcad0932904e51ab5565a7b9bb5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_runtime_dfu_get_state</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_runtime_dfu_get_state</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="25" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1ga0b3b60c278d4cbea749b395554d102ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void usb_dev_runtime_dfu_set_appDETACH</definition>
+        <argsstring>(void) 1</argsstring>
+        <name>usb_dev_runtime_dfu_set_appDETACH</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gafc1122a7b0155a7e39bc116e3058df26" prot="public" static="no">
+        <name>USB_DEV_RUNTIME_DFU_SW_REQ_LOC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="19" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u_1gacaa36cdbfccbc8ad3c631db3e5b6e624" prot="public" static="no">
+        <name>USB_DEV_RUNTIME_DFU_SW_REQ_VALUE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" line="20" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_runtime_dfu.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

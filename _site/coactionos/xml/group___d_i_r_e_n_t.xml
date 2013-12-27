@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___d_i_r_e_n_t" kind="group">
+    <compoundname>DIRENT</compoundname>
+    <title>Directory Entry (dirent)</title>
+    <innerfile refid="dirent_8c">dirent.c</innerfile>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1ga2a51d271e66487f8e23da4641359ece1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int check_ebadf</definition>
+        <argsstring>(DIR *dirp)</argsstring>
+        <name>check_ebadf</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="55" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="55" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1gaaeac2b41e8c2c3a5f91c9bd511a8c0a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int closedir</definition>
+        <argsstring>(DIR *dirp)</argsstring>
+        <name>closedir</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+          <briefdescription><para>A pointer to the open directory </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function closes the directory stream specified by <emphasis>dirp</emphasis>.</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>dirp</emphasis> does not refere to an open directory stream </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="74" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1gad09dd96447776d2bc5d8321e4b499591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>DIR *</type>
+        <definition>DIR* opendir</definition>
+        <argsstring>(const char *dirname)</argsstring>
+        <name>opendir</name>
+        <param>
+          <type>const char *</type>
+          <declname>dirname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function opens a directory.</para><para><simplesect kind="return"><para>a pointer to the directory or NULL with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOMEM: not enough memory</para></listitem><listitem><para>ENOENT: <emphasis>dirname</emphasis> was not found</para></listitem><listitem><para>EACCES: read access to <emphasis>dirname</emphasis> is not allowed</para></listitem><listitem><para>ENAMETOOLONG: <emphasis>dirname</emphasis> exceeds <emphasis>PATH_MAX</emphasis> or an element of <emphasis>dirname</emphasis> exceeds <emphasis>NAME_MAX</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="91" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="91" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1ga58257faf8b13b3f14558613c632b2373" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>struct dirent *</type>
+        <definition>struct dirent* readdir</definition>
+        <argsstring>(DIR *dirp)</argsstring>
+        <name>readdir</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+          <briefdescription><para>a pointer to the directory structure </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function reads the next directory entry in the open directory. <simplesect kind="note"><para>This function is not thread-safe nor re-entrant; use <ref refid="group___d_i_r_e_n_t_1ga2219da481be06be4bf9f8f363b607492" kindref="member">readdir_r()</ref> as a thread-safe, re-entrant alternative.</para></simplesect>
+<simplesect kind="return"><para>a pointer to a dirent or NULL with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>dirp</emphasis> is invalid</para></listitem><listitem><para>ENOENT: the current position of the directory stream is invalid </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="136" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="136" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1ga2219da481be06be4bf9f8f363b607492" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int readdir_r</definition>
+        <argsstring>(DIR *dirp, struct dirent *entry, struct dirent **result)</argsstring>
+        <name>readdir_r</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+          <briefdescription><para>a pointer to the directory structure </para></briefdescription>
+        </param>
+        <param>
+          <type>struct dirent *</type>
+          <declname>entry</declname>
+          <briefdescription><para>a pointer to the destination memory </para></briefdescription>
+        </param>
+        <param>
+          <type>struct dirent **</type>
+          <declname>result</declname>
+          <briefdescription><para>this value is assigned to <emphasis>entry</emphasis> on success and NULL on failure </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function reads the next directory entry in the open directory (reentrant version).</para><para><simplesect kind="return"><para>a pointer to a dirent or NULL with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>dirp</emphasis> is invalid</para></listitem><listitem><para>ENOENT: the current position of the directory stream is invalid </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="150" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="150" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1gad4fcb58b9194b1a3c1699654de963719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rewinddir</definition>
+        <argsstring>(DIR *dirp)</argsstring>
+        <name>rewinddir</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+          <briefdescription><para>a pointer to the directory structure </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function rewinds <emphasis>dirp</emphasis>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="183" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1ga6be27113ffd4a87f2f46c3d1d9a71046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void seekdir</definition>
+        <argsstring>(DIR *dirp, long loc)</argsstring>
+        <name>seekdir</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+          <briefdescription><para>a pointer to the directory structure </para></briefdescription>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>loc</declname>
+          <briefdescription><para>the target location </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function seeks to the specified location in the directory. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="191" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="191" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="group___d_i_r_e_n_t_1ga4c2cd02bd612ae655782632c9f5227ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long telldir</definition>
+        <argsstring>(DIR *dirp)</argsstring>
+        <name>telldir</name>
+        <param>
+          <type>DIR *</type>
+          <declname>dirp</declname>
+          <briefdescription><para>a pointer to the directory structure </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the current location in the directory.</para><para><simplesect kind="return"><para>The current directory location </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" line="201" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/dirent/dirent.c" bodystart="201" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This interface accesses directory entries (both files and folders). Here is an example of how to use this interface.</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;dirent.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>show_directory(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>DIR<sp/>*<sp/>dirp;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">dirent<sp/>entry;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">dirent<sp/>*<sp/>result;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>dirp<sp/>=<sp/><ref refid="group___d_i_r_e_n_t_1gad09dd96447776d2bc5d8321e4b499591" kindref="member">opendir</ref>(</highlight><highlight class="stringliteral">&quot;/path/to/dir&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>dirp<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>open<sp/>directory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/><ref refid="group___d_i_r_e_n_t_1ga2219da481be06be4bf9f8f363b607492" kindref="member">readdir_r</ref>(dirp,<sp/>&amp;entry,<sp/>&amp;result)<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Directory<sp/>name<sp/>(number):<sp/>%s<sp/>(%d)\n&quot;</highlight><highlight class="normal">,<sp/>entry.d_name,<sp/>entry.d_ino);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___d_i_r_e_n_t_1gaaeac2b41e8c2c3a5f91c9bd511a8c0a6" kindref="member">closedir</ref>(dirp)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>close<sp/>directory&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

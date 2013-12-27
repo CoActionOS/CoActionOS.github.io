@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structspi__attr__t" kind="struct" prot="public">
+    <compoundname>spi_attr_t</compoundname>
+    <includes refid="spi_8h" local="no">spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspi__attr__t_1a5dc90bfc713043bd421210089f8bd0f2" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t spi_attr_t::pin_assign</definition>
+        <argsstring></argsstring>
+        <name>pin_assign</name>
+        <briefdescription>
+<para>The GPIO configuration to use (see <ref refid="group___l_p_c17_x_x_d_e_v" kindref="compound">LPC17xx Devices</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="139" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__attr__t_1aebbfa7c7f066e32d060388fd02bb77e1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t spi_attr_t::bitrate</definition>
+        <argsstring></argsstring>
+        <name>bitrate</name>
+        <briefdescription>
+<para>The SPI bitrate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="140" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__attr__t_1a13f07dd7e9f0e14f7c122b3806b734c5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t spi_attr_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>The SPI mode from 0 to 3 inclusive (CPOL:CPHA or SPI_ATTR_MODE0 to SPI_ATTR_MODE3) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="141" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__attr__t_1aa1d803475d2c60b022f8972941148cf7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t spi_attr_t::master</definition>
+        <argsstring></argsstring>
+        <name>master</name>
+        <briefdescription>
+<para>Must be set to master (SPI_ATTR_MASTER) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="142" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__attr__t_1ab7b92f9582bac94e6c2f87f4a859e385" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t spi_attr_t::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+<para>The transfer width. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="143" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__attr__t_1af3dc7209ee970bc6b5bef3d58e237738" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t spi_attr_t::format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+<para>The SPI output format (SPI_ATTR_FORMAT_SPI, SPI_ATTR_FORMAT_TI or SPI_ATTR_FORMAT_MICROWIRE) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="144" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>SPI Attribute Data Structure. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure defines how the control structure for opening or reconfiguring the SPI port. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="458">
+        <label>spi_attr_t</label>
+        <link refid="structspi__attr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" line="138" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/spi.h" bodystart="138" bodyend="145"/>
+    <listofallmembers>
+      <member refid="structspi__attr__t_1aebbfa7c7f066e32d060388fd02bb77e1" prot="public" virt="non-virtual"><scope>spi_attr_t</scope><name>bitrate</name></member>
+      <member refid="structspi__attr__t_1af3dc7209ee970bc6b5bef3d58e237738" prot="public" virt="non-virtual"><scope>spi_attr_t</scope><name>format</name></member>
+      <member refid="structspi__attr__t_1aa1d803475d2c60b022f8972941148cf7" prot="public" virt="non-virtual"><scope>spi_attr_t</scope><name>master</name></member>
+      <member refid="structspi__attr__t_1a13f07dd7e9f0e14f7c122b3806b734c5" prot="public" virt="non-virtual"><scope>spi_attr_t</scope><name>mode</name></member>
+      <member refid="structspi__attr__t_1a5dc90bfc713043bd421210089f8bd0f2" prot="public" virt="non-virtual"><scope>spi_attr_t</scope><name>pin_assign</name></member>
+      <member refid="structspi__attr__t_1ab7b92f9582bac94e6c2f87f4a859e385" prot="public" virt="non-virtual"><scope>spi_attr_t</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

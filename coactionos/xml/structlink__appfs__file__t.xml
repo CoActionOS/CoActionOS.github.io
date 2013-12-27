@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__appfs__file__t" kind="struct" prot="public">
+    <compoundname>link_appfs_file_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__appfs__file__t_1aa9a4f2b5149ac0c15274c56d3b9d805e" prot="public" static="no" mutable="no">
+        <type>link_appfs_hdr_t</type>
+        <definition>link_appfs_hdr_t link_appfs_file_t::hdr</definition>
+        <argsstring></argsstring>
+        <name>hdr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="631" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__file__t_1a32ccfdd6530531715a679f8236733be0" prot="public" static="no" mutable="no">
+        <type>link_appfs_exec_t</type>
+        <definition>link_appfs_exec_t link_appfs_file_t::exec</definition>
+        <argsstring></argsstring>
+        <name>exec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="632" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="632" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="318">
+        <label>link_appfs_file_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="630" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="630" bodyend="633"/>
+    <listofallmembers>
+      <member refid="structlink__appfs__file__t_1a32ccfdd6530531715a679f8236733be0" prot="public" virt="non-virtual"><scope>link_appfs_file_t</scope><name>exec</name></member>
+      <member refid="structlink__appfs__file__t_1aa9a4f2b5149ac0c15274c56d3b9d805e" prot="public" virt="non-virtual"><scope>link_appfs_file_t</scope><name>hdr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

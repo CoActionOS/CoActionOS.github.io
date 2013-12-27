@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structgpio__pinmode__req__t" kind="struct" prot="public">
+    <compoundname>gpio_pinmode_req_t</compoundname>
+    <includes refid="gpio_8h" local="no">gpio.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgpio__pinmode__req__t_1a536838a29a557b69c25bf5a1aa2c7f60" prot="public" static="no" mutable="no">
+        <type><ref refid="group___g_p_i_o_1ga58afe68d92f686031ea2bfa3d8e30386" kindref="member">gpio_pinmode_t</ref></type>
+        <definition>gpio_pinmode_t gpio_pinmode_req_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+<para>The mode to use. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="130" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__pinmode__req__t_1a32646673625ad3149f2db94a551412cd" prot="public" static="no" mutable="no">
+        <type><ref refid="group___g_p_i_o_1gad5bba12d58022b010776d35cc964a4f8" kindref="member">gpio_sample_t</ref></type>
+        <definition>gpio_sample_t gpio_pinmode_req_t::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+<para>Each bit set in the mask will be set to <emphasis>mode</emphasis> using I_GPIO_SET_PINMODE. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="131" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__pinmode__req__t_1adbe7a3843ca0193cd69c7a113caf7496" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gpio_pinmode_req_t::opendrain</definition>
+        <argsstring></argsstring>
+        <name>opendrain</name>
+        <briefdescription>
+<para>Sets whether or not pin should be configured as an open drain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="132" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgpio__pinmode__req__t_1a55d5a5e4065068722f5798859f3c1cdc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gpio_pinmode_req_t::hysteresis</definition>
+        <argsstring></argsstring>
+        <name>hysteresis</name>
+        <briefdescription>
+<para>Sets whether or not to enable hysteresis on this pin (if supported) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="133" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This data structure is used with the I_GPIO_SETPINMODE request. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="304">
+        <label>gpio_pinmode_req_t</label>
+        <link refid="structgpio__pinmode__req__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" line="129" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/gpio.h" bodystart="129" bodyend="134"/>
+    <listofallmembers>
+      <member refid="structgpio__pinmode__req__t_1a55d5a5e4065068722f5798859f3c1cdc" prot="public" virt="non-virtual"><scope>gpio_pinmode_req_t</scope><name>hysteresis</name></member>
+      <member refid="structgpio__pinmode__req__t_1a32646673625ad3149f2db94a551412cd" prot="public" virt="non-virtual"><scope>gpio_pinmode_req_t</scope><name>mask</name></member>
+      <member refid="structgpio__pinmode__req__t_1a536838a29a557b69c25bf5a1aa2c7f60" prot="public" virt="non-virtual"><scope>gpio_pinmode_req_t</scope><name>mode</name></member>
+      <member refid="structgpio__pinmode__req__t_1adbe7a3843ca0193cd69c7a113caf7496" prot="public" virt="non-virtual"><scope>gpio_pinmode_req_t</scope><name>opendrain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

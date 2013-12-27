@@ -7,7 +7,7 @@ tags : [coaction, tutorial]
 ---
 CoActionOS Applib includes a Thread class for easily initializing 
 and running threads. For more details on using this class, please 
-see the [Thread Applib documentation](/redmine/projects/coactionos-applib/embedded/class_thread.html).
+see the [Thread Applib documentation]({{ BASE_URL }}/coactionos-applib/html/class_thread.html).
 
 {% highlight CPP %}
 #include <applib/Thread.hpp> //for Thread class

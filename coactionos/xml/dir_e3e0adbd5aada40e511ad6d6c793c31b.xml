@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_e3e0adbd5aada40e511ad6d6c793c31b" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/include/dev</compoundname>
+    <innerfile refid="adc_8h">adc.h</innerfile>
+    <innerfile refid="bootloader_8h">bootloader.h</innerfile>
+    <innerfile refid="core_8h">core.h</innerfile>
+    <innerfile refid="dac_8h">dac.h</innerfile>
+    <innerfile refid="devfifo_8h">devfifo.h</innerfile>
+    <innerfile refid="disk_8h">disk.h</innerfile>
+    <innerfile refid="eeprom_8h">eeprom.h</innerfile>
+    <innerfile refid="eint_8h">eint.h</innerfile>
+    <innerfile refid="emc_8h">emc.h</innerfile>
+    <innerfile refid="eth_8h">eth.h</innerfile>
+    <innerfile refid="fifo_8h">fifo.h</innerfile>
+    <innerfile refid="flash_8h">flash.h</innerfile>
+    <innerfile refid="gpio_8h">gpio.h</innerfile>
+    <innerfile refid="i2c_8h">i2c.h</innerfile>
+    <innerfile refid="ioctl_8h">ioctl.h</innerfile>
+    <innerfile refid="mem_8h">mem.h</innerfile>
+    <innerfile refid="pio_8h">pio.h</innerfile>
+    <innerfile refid="pwm_8h">pwm.h</innerfile>
+    <innerfile refid="qei_8h">qei.h</innerfile>
+    <innerfile refid="rtc_8h">rtc.h</innerfile>
+    <innerfile refid="spi_8h">spi.h</innerfile>
+    <innerfile refid="sys_8h">sys.h</innerfile>
+    <innerfile refid="tmr_8h">tmr.h</innerfile>
+    <innerfile refid="tty_8h">tty.h</innerfile>
+    <innerfile refid="uart_8h">uart.h</innerfile>
+    <innerfile refid="uartfifo_8h">uartfifo.h</innerfile>
+    <innerfile refid="usb_8h">usb.h</innerfile>
+    <innerfile refid="usbfifo_8h">usbfifo.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/"/>
+  </compounddef>
+</doxygen>

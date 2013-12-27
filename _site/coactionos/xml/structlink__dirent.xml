@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__dirent" kind="struct" prot="public">
+    <compoundname>link_dirent</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__dirent_1a8f7055864c0da62d70752a5fdb206f13" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_dirent::d_ino</definition>
+        <argsstring></argsstring>
+        <name>d_ino</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="474" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__dirent_1abb3e1481cdf22c2bf061622a3ee948a0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char link_dirent::d_name[LINK_NAME_MAX]</definition>
+        <argsstring>[LINK_NAME_MAX]</argsstring>
+        <name>d_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="475" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="330">
+        <label>link_dirent</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="473" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="473" bodyend="476"/>
+    <listofallmembers>
+      <member refid="structlink__dirent_1a8f7055864c0da62d70752a5fdb206f13" prot="public" virt="non-virtual"><scope>link_dirent</scope><name>d_ino</name></member>
+      <member refid="structlink__dirent_1abb3e1481cdf22c2bf061622a3ee948a0" prot="public" virt="non-virtual"><scope>link_dirent</scope><name>d_name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="pthread__cond_8c" kind="file">
+    <compoundname>pthread_cond.c</compoundname>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes local="no">pthread.h</includes>
+    <includes local="no">errno.h</includes>
+    <includes local="yes">../sched/sched_flags.h</includes>
+    <incdepgraph>
+      <node id="2183">
+        <label>errno.h</label>
+      </node>
+      <node id="2182">
+        <label>pthread.h</label>
+      </node>
+      <node id="2184">
+        <label>../sched/sched_flags.h</label>
+      </node>
+      <node id="2181">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="2180">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c</label>
+        <link refid="pthread_cond.c"/>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2183" relation="include">
+        </childnode>
+        <childnode refid="2184" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structpriv__cond__wait__t" prot="public">priv_cond_wait_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga11ddfdce0654c748a51ef2fe69c0d307" prot="public" static="no">
+        <name>PSHARED_FLAG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="23" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga1a0231c0a69e2af1098e67c6483dee8c" prot="public" static="no">
+        <name>INIT_FLAG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="24" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga246a30969aa2b5a287cb9a5c8aa175f3" prot="public" static="no">
+        <name>PID_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="25" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1gaf3c2c2034df48b038cd6e6dce8f0b9ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_cond_signal</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_cond_signal</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="104" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga27968a082de240193bf63d19ec734367" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_cond_wait</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_cond_wait</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="36" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="138" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga9d2087df6c331ae1e665928fc8d2bce9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_cond_broadcast</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_cond_broadcast</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1gad5b6c558bcd5260289981207b9ca9687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cond_init</definition>
+        <argsstring>(pthread_cond_t *cond, const pthread_condattr_t *attr)</argsstring>
+        <name>pthread_cond_init</name>
+        <param>
+          <type>pthread_cond_t *</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>const pthread_condattr_t *</type>
+          <declname>attr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes a pthread block condition.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: cond or attr is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="44" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1gaa1587e01856a579b78effd0a1a284a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cond_destroy</definition>
+        <argsstring>(pthread_cond_t *cond)</argsstring>
+        <name>pthread_cond_destroy</name>
+        <param>
+          <type>pthread_cond_t *</type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function destroys a pthread block condition.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: cond is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="62" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="62" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1gafc4b19aa8ea2dce0956579ce878b4998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cond_broadcast</definition>
+        <argsstring>(pthread_cond_t *cond)</argsstring>
+        <name>pthread_cond_broadcast</name>
+        <param>
+          <type>pthread_cond_t *</type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function wakes all threads that are blocked on <emphasis>cond</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: cond is NULL or not initialized </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="88" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="88" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga20f98235b024efb10e5c76a64f0d94e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cond_signal</definition>
+        <argsstring>(pthread_cond_t *cond)</argsstring>
+        <name>pthread_cond_signal</name>
+        <param>
+          <type>pthread_cond_t *</type>
+          <declname>cond</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function wakes the highest priority thread that is blocked on <emphasis>cond</emphasis>.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: cond is NULL or not initialized </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="116" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="116" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1ga907ae104b6dfd8fc12e23e84952aa7ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cond_wait</definition>
+        <argsstring>(pthread_cond_t *cond, pthread_mutex_t *mutex)</argsstring>
+        <name>pthread_cond_wait</name>
+        <param>
+          <type>pthread_cond_t *</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling thread to block on <emphasis>cond</emphasis>. When called, <emphasis>mutex</emphasis> must be locked by the caller.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: cond is NULL or not initialized</para></listitem><listitem><para>EACCES: cond is from a different process and not shared</para></listitem><listitem><para>EPERM: the caller does not have a lock on <emphasis>mutex</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="176" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="176" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d___c_o_n_d_1gab03e3ab6546f661d2b2f83bc12559e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cond_timedwait</definition>
+        <argsstring>(pthread_cond_t *cond, pthread_mutex_t *mutex, const struct timespec *abstime)</argsstring>
+        <name>pthread_cond_timedwait</name>
+        <param>
+          <type>pthread_cond_t *</type>
+          <declname>cond</declname>
+        </param>
+        <param>
+          <type>pthread_mutex_t *</type>
+          <declname>mutex</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>abstime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling thread to block on <emphasis>cond</emphasis>. When called, <emphasis>mutex</emphasis> must be locked by the caller. If <emphasis>cond</emphasis> does not wake the process by <emphasis>abstime</emphasis>, the thread resumes.</para><para>Example: <programlisting><codeline><highlight class="keyword">struct<sp/></highlight><highlight class="normal">timespec<sp/>abstime;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___t_i_m_e_1ga570b5d2b9e8b421674c8ba40199e3f51" kindref="member">clock_gettime</ref>(CLOCK_REALTIME,<sp/>&amp;abstime);</highlight></codeline>
+<codeline><highlight class="normal">abstime.tv_sec<sp/>+=<sp/>5;<sp/></highlight><highlight class="comment">//time<sp/>out<sp/>after<sp/>five<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1gab03e3ab6546f661d2b2f83bc12559e40" kindref="member">pthread_cond_timedwait</ref>(cond,<sp/>mutex,<sp/>&amp;abstime)<sp/>==<sp/>-1<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>errno<sp/>==<sp/>ETIMEDOUT<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Timedout</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting></para><para><simplesect kind="return"><para>Zero on success or -1 with errno set to:<itemizedlist>
+<listitem><para>EINVAL: cond is NULL or not initialized</para></listitem><listitem><para>EACCES: cond is from a different process and not shared</para></listitem><listitem><para>EPERM: the caller does not have a lock on <emphasis>mutex</emphasis> </para></listitem><listitem><para>ETIMEDOUT: <emphasis>abstime</emphasis> passed before <emphasis>cond</emphasis> arrived </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" line="241" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c" bodystart="241" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;errno.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../sched/sched_flags.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PSHARED_FLAG<sp/>31</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INIT_FLAG<sp/>30</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PID_MASK<sp/>0x3FFFFFFF</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>priv_cond_signal(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>args);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pthread_cond_t<sp/>*cond;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pthread_mutex_t<sp/>*mutex;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_thread;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">sched_timeval<sp/>interval;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/>priv_cond_wait_t;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>priv_cond_wait(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>*<sp/>args);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>priv_cond_broadcast(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>args);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1gad5b6c558bcd5260289981207b9ca9687" kindref="member">pthread_cond_init</ref>(pthread_cond_t<sp/>*cond,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>pthread_condattr_t<sp/>*attr){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(cond<sp/>==<sp/>NULL)<sp/>||<sp/>(attr<sp/>==<sp/>NULL)<sp/>){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*cond<sp/>=<sp/><ref refid="group___u_n_i_s_t_d_1gac61b207337ca21b3b309593fd1a0cb82" kindref="member">getpid</ref>()<sp/>|<sp/>(1&lt;&lt;INIT_FLAG);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>attr-&gt;process_shared<sp/>!=<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*cond<sp/>|=<sp/>(1&lt;&lt;PSHARED_FLAG);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1gaa1587e01856a579b78effd0a1a284a47" kindref="member">pthread_cond_destroy</ref>(pthread_cond_t<sp/>*cond){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>cond<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;INIT_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EINVAL;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*cond<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>priv_cond_broadcast(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>args){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>prio;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>prio<sp/>=<sp/>sched_priv_unblock_all(args,<sp/>SCHED_UNBLOCK_COND);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sched_priv_update_on_wake(prio);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1gafc4b19aa8ea2dce0956579ce878b4998" kindref="member">pthread_cond_broadcast</ref>(pthread_cond_t<sp/>*cond){</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>cond<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;INIT_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//wake<sp/>all<sp/>tasks<sp/>blocking<sp/>on<sp/>cond</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>hwpl_core_privcall(priv_cond_broadcast,<sp/>cond);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>priv_cond_signal(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>args){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>*((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*)args);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sched_priv_assert_active(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>SCHED_UNBLOCK_COND);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sched_priv_update_on_wake(<sp/>sched_table[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">].priority<sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1ga20f98235b024efb10e5c76a64f0d94e5" kindref="member">pthread_cond_signal</ref>(pthread_cond_t<sp/>*cond){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_thread;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>cond<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;INIT_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EINVAL;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>new_thread<sp/>=<sp/>sched_get_highest_priority_blocked(cond);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>new_thread<sp/>!=<sp/>-1<sp/>){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hwpl_core_privcall(priv_cond_signal,<sp/>&amp;new_thread);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>priv_cond_wait(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/>*<sp/>args){</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>priv_cond_wait_t<sp/>*<sp/>argsp<sp/>=<sp/>(priv_cond_wait_t*)args;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_thread<sp/>=<sp/>argsp-&gt;new_thread;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>argsp-&gt;mutex-&gt;pthread<sp/>==<sp/>task_get_current()<sp/>){</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//First<sp/>unlock<sp/>the<sp/>mutex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Restore<sp/>the<sp/>priority<sp/>to<sp/>the<sp/>task<sp/>that<sp/>is<sp/>unlocking<sp/>the<sp/>mutex</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sched_table[task_get_current()].priority<sp/>=<sp/>sched_table[task_get_current()].attr.schedparam.sched_priority;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>new_thread<sp/>!=<sp/>-1<sp/>){</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;mutex-&gt;pthread<sp/>=<sp/>new_thread;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;mutex-&gt;pid<sp/>=<sp/>task_get_pid(new_thread);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;mutex-&gt;lock<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sched_table[new_thread].priority<sp/>=<sp/>argsp-&gt;mutex-&gt;prio_ceiling;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sched_priv_assert_active(new_thread,<sp/>SCHED_UNBLOCK_MUTEX);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;mutex-&gt;lock<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;mutex-&gt;pthread<sp/>=<sp/>-1;<sp/></highlight><highlight class="comment">//The<sp/>mutex<sp/>is<sp/>up<sp/>for<sp/>grabs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sched_priv_timedblock(argsp-&gt;cond,<sp/>&amp;argsp-&gt;interval);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>argsp-&gt;ret<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1ga907ae104b6dfd8fc12e23e84952aa7ca" kindref="member">pthread_cond_wait</ref>(pthread_cond_t<sp/>*cond,<sp/>pthread_mutex_t<sp/>*mutex){</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pid;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>priv_cond_wait_t<sp/>args;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>cond<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;INIT_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EINVAL;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pid<sp/>=<sp/>*cond<sp/>&amp;<sp/>PID_MASK;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;PSHARED_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>pid<sp/>!=<sp/><ref refid="group___u_n_i_s_t_d_1gac61b207337ca21b3b309593fd1a0cb82" kindref="member">getpid</ref>()<sp/>){<sp/></highlight><highlight class="comment">//This<sp/>is<sp/>a<sp/>different<sp/>process<sp/>with<sp/>a<sp/>not<sp/>pshared<sp/>cond</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EACCES;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.cond<sp/>=<sp/>cond;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.mutex<sp/>=<sp/>mutex;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.interval.tv_sec<sp/>=<sp/>SCHED_TIMEVAL_SEC_INVALID;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.interval.tv_usec<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//release<sp/>the<sp/>mutex<sp/>and<sp/>block<sp/>on<sp/>the<sp/>cond</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.new_thread<sp/>=<sp/>sched_get_highest_priority_blocked(mutex);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>hwpl_core_privcall(priv_cond_wait,<sp/>&amp;args);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>args.ret<sp/>==<sp/>-1<sp/>){</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EPERM;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group___p_t_h_r_e_a_d___c_o_n_d_1gab03e3ab6546f661d2b2f83bc12559e40" kindref="member">pthread_cond_timedwait</ref>(pthread_cond_t<sp/>*cond,<sp/>pthread_mutex_t<sp/>*mutex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>timespec<sp/>*abstime){</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pid;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>priv_cond_wait_t<sp/>args;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>cond<sp/>==<sp/>NULL<sp/>){</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EINVAL;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;INIT_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EINVAL;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pid<sp/>=<sp/>*cond<sp/>&amp;<sp/>PID_MASK;</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(*cond<sp/>&amp;<sp/>(1&lt;&lt;PSHARED_FLAG))<sp/>==<sp/>0<sp/>){</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>pid<sp/>!=<sp/><ref refid="group___u_n_i_s_t_d_1gac61b207337ca21b3b309593fd1a0cb82" kindref="member">getpid</ref>()<sp/>){<sp/></highlight><highlight class="comment">//This<sp/>is<sp/>a<sp/>different<sp/>process<sp/>with<sp/>a<sp/>not<sp/>pshared<sp/>cond</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EACCES;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.cond<sp/>=<sp/>cond;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.mutex<sp/>=<sp/>mutex;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>sched_convert_timespec(&amp;args.interval,<sp/>abstime);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//release<sp/>the<sp/>mutex<sp/>and<sp/>block<sp/>on<sp/>the<sp/>cond</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>args.new_thread<sp/>=<sp/>sched_get_highest_priority_blocked(mutex);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>hwpl_core_privcall(priv_cond_wait,<sp/>&amp;args);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>args.ret<sp/>==<sp/>-1<sp/>){</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>EPERM;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>sched_get_unblock_type(<sp/>task_get_current()<sp/>)<sp/>==<sp/>SCHED_UNBLOCK_SLEEP<sp/>){</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>errno<sp/>=<sp/>ETIMEDOUT;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cond.c"/>
+  </compounddef>
+</doxygen>

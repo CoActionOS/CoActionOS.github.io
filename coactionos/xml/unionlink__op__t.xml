@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="unionlink__op__t" kind="union" prot="public">
+    <compoundname>link_op_t</compoundname>
+    <includes refid="link__protocol_8h" local="no">link_protocol.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionlink__op__t_1ab26a6da6cf3e9b8999c52f1d6c1c2eb0" prot="public" static="no" mutable="no">
+        <type>link_cmd_t</type>
+        <definition>link_cmd_t link_op_t::cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="501" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a8c8b65bc85976688163d50d409e1ef79" prot="public" static="no" mutable="no">
+        <type>link_open_t</type>
+        <definition>link_open_t link_op_t::open</definition>
+        <argsstring></argsstring>
+        <name>open</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="502" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a47f754a695d5601811c24c083df91813" prot="public" static="no" mutable="no">
+        <type>link_symlink_t</type>
+        <definition>link_symlink_t link_op_t::symlink</definition>
+        <argsstring></argsstring>
+        <name>symlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="503" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a7d22356236922d57d108524fc00a268b" prot="public" static="no" mutable="no">
+        <type>link_ioctl_t</type>
+        <definition>link_ioctl_t link_op_t::ioctl</definition>
+        <argsstring></argsstring>
+        <name>ioctl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="504" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1afecf9018375d46fdc505ddccd67f5c0c" prot="public" static="no" mutable="no">
+        <type>link_write_t</type>
+        <definition>link_write_t link_op_t::write</definition>
+        <argsstring></argsstring>
+        <name>write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="505" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a8b818489e456488efd1be036ec334c4f" prot="public" static="no" mutable="no">
+        <type>link_read_t</type>
+        <definition>link_read_t link_op_t::read</definition>
+        <argsstring></argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="506" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="506" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ac2ca826239c5c29ddb80ded61b2c72aa" prot="public" static="no" mutable="no">
+        <type>link_close_t</type>
+        <definition>link_close_t link_op_t::close</definition>
+        <argsstring></argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="507" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a5a86d255ab0df5631e187e0470cec89a" prot="public" static="no" mutable="no">
+        <type>link_unlink_t</type>
+        <definition>link_unlink_t link_op_t::unlink</definition>
+        <argsstring></argsstring>
+        <name>unlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="508" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a7645fc12a6d84d31d922fe117b4032a5" prot="public" static="no" mutable="no">
+        <type>link_lseek_t</type>
+        <definition>link_lseek_t link_op_t::lseek</definition>
+        <argsstring></argsstring>
+        <name>lseek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="509" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a75217150ecd1fb2ffab40ab31c10478b" prot="public" static="no" mutable="no">
+        <type>link_stat_t</type>
+        <definition>link_stat_t link_op_t::stat</definition>
+        <argsstring></argsstring>
+        <name>stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="510" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a5949c95033d265403ebf6b915795b9c0" prot="public" static="no" mutable="no">
+        <type>link_fstat_t</type>
+        <definition>link_fstat_t link_op_t::fstat</definition>
+        <argsstring></argsstring>
+        <name>fstat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="511" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a53b27cdc3ca6016f977309116b3d4705" prot="public" static="no" mutable="no">
+        <type>link_mkdir_t</type>
+        <definition>link_mkdir_t link_op_t::mkdir</definition>
+        <argsstring></argsstring>
+        <name>mkdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="512" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a88e1457d070edb4aab9fccd804859397" prot="public" static="no" mutable="no">
+        <type>link_rmdir_t</type>
+        <definition>link_rmdir_t link_op_t::rmdir</definition>
+        <argsstring></argsstring>
+        <name>rmdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="513" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ae40906b7bbded779e113ce7682663943" prot="public" static="no" mutable="no">
+        <type>link_opendir_t</type>
+        <definition>link_opendir_t link_op_t::opendir</definition>
+        <argsstring></argsstring>
+        <name>opendir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="514" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ac798d38895718eabd43f46f2fc5764a9" prot="public" static="no" mutable="no">
+        <type>link_readdir_t</type>
+        <definition>link_readdir_t link_op_t::readdir</definition>
+        <argsstring></argsstring>
+        <name>readdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="515" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ac3809faed29e0581bc9169a234972567" prot="public" static="no" mutable="no">
+        <type>link_closedir_t</type>
+        <definition>link_closedir_t link_op_t::closedir</definition>
+        <argsstring></argsstring>
+        <name>closedir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="516" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1af5e72ef355f35eb077242bc6f9c5c5b3" prot="public" static="no" mutable="no">
+        <type>link_rewinddir_t</type>
+        <definition>link_rewinddir_t link_op_t::rewinddir</definition>
+        <argsstring></argsstring>
+        <name>rewinddir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="517" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a717d7c67f3eb964240f9182875f57f8d" prot="public" static="no" mutable="no">
+        <type>link_telldir_t</type>
+        <definition>link_telldir_t link_op_t::telldir</definition>
+        <argsstring></argsstring>
+        <name>telldir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="518" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="518" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a730a3749a6fc8af8ea54840d47adc999" prot="public" static="no" mutable="no">
+        <type>link_seekdir_t</type>
+        <definition>link_seekdir_t link_op_t::seekdir</definition>
+        <argsstring></argsstring>
+        <name>seekdir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="519" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a99119494bfca1f46db2e13f88110f995" prot="public" static="no" mutable="no">
+        <type>link_malloc_t</type>
+        <definition>link_malloc_t link_op_t::malloc</definition>
+        <argsstring></argsstring>
+        <name>malloc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="520" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1a3ec2bd4f6eeed440a1eb0a39fdd12be1" prot="public" static="no" mutable="no">
+        <type>link_free_t</type>
+        <definition>link_free_t link_op_t::free</definition>
+        <argsstring></argsstring>
+        <name>free</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="521" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1af77ba12d69171460fef466db7803a8e3" prot="public" static="no" mutable="no">
+        <type>link_exec_t</type>
+        <definition>link_exec_t link_op_t::exec</definition>
+        <argsstring></argsstring>
+        <name>exec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="522" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ab4f6d55f555458130f4867ec346844ed" prot="public" static="no" mutable="no">
+        <type>link_time_t</type>
+        <definition>link_time_t link_op_t::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="523" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1abd1b7f3e6960adaa0452f73d0b8d92ec" prot="public" static="no" mutable="no">
+        <type>link_task_t</type>
+        <definition>link_task_t link_op_t::task</definition>
+        <argsstring></argsstring>
+        <name>task</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="524" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ad9375d7c41a5285f9ca0f0f02e30f416" prot="public" static="no" mutable="no">
+        <type>link_rename_t</type>
+        <definition>link_rename_t link_op_t::rename</definition>
+        <argsstring></argsstring>
+        <name>rename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="525" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1aae1a0d35c91edd7610bbf5038a89a7c1" prot="public" static="no" mutable="no">
+        <type>link_chown_t</type>
+        <definition>link_chown_t link_op_t::chown</definition>
+        <argsstring></argsstring>
+        <name>chown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="526" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1aa357a4f096c14cae19c35bb7b4d0461c" prot="public" static="no" mutable="no">
+        <type>link_chmod_t</type>
+        <definition>link_chmod_t link_op_t::chmod</definition>
+        <argsstring></argsstring>
+        <name>chmod</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="527" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionlink__op__t_1ae95e4f97dc7fe9d6bc4692bd4c1a0f97" prot="public" static="no" mutable="no">
+        <type>link_mkfs_t</type>
+        <definition>link_mkfs_t link_op_t::mkfs</definition>
+        <argsstring></argsstring>
+        <name>mkfs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="528" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The USB Link Operation Data Structure (Interrupt Out) </para>    </briefdescription>
+    <detaileddescription>
+<para>This data structure defines the data unions </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="348">
+        <label>link_op_t</label>
+        <link refid="unionlink__op__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="500" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="500" bodyend="529"/>
+    <listofallmembers>
+      <member refid="unionlink__op__t_1aa357a4f096c14cae19c35bb7b4d0461c" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>chmod</name></member>
+      <member refid="unionlink__op__t_1aae1a0d35c91edd7610bbf5038a89a7c1" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>chown</name></member>
+      <member refid="unionlink__op__t_1ac2ca826239c5c29ddb80ded61b2c72aa" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>close</name></member>
+      <member refid="unionlink__op__t_1ac3809faed29e0581bc9169a234972567" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>closedir</name></member>
+      <member refid="unionlink__op__t_1ab26a6da6cf3e9b8999c52f1d6c1c2eb0" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>cmd</name></member>
+      <member refid="unionlink__op__t_1af77ba12d69171460fef466db7803a8e3" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>exec</name></member>
+      <member refid="unionlink__op__t_1a3ec2bd4f6eeed440a1eb0a39fdd12be1" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>free</name></member>
+      <member refid="unionlink__op__t_1a5949c95033d265403ebf6b915795b9c0" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>fstat</name></member>
+      <member refid="unionlink__op__t_1a7d22356236922d57d108524fc00a268b" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>ioctl</name></member>
+      <member refid="unionlink__op__t_1a7645fc12a6d84d31d922fe117b4032a5" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>lseek</name></member>
+      <member refid="unionlink__op__t_1a99119494bfca1f46db2e13f88110f995" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>malloc</name></member>
+      <member refid="unionlink__op__t_1a53b27cdc3ca6016f977309116b3d4705" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>mkdir</name></member>
+      <member refid="unionlink__op__t_1ae95e4f97dc7fe9d6bc4692bd4c1a0f97" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>mkfs</name></member>
+      <member refid="unionlink__op__t_1a8c8b65bc85976688163d50d409e1ef79" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>open</name></member>
+      <member refid="unionlink__op__t_1ae40906b7bbded779e113ce7682663943" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>opendir</name></member>
+      <member refid="unionlink__op__t_1a8b818489e456488efd1be036ec334c4f" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>read</name></member>
+      <member refid="unionlink__op__t_1ac798d38895718eabd43f46f2fc5764a9" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>readdir</name></member>
+      <member refid="unionlink__op__t_1ad9375d7c41a5285f9ca0f0f02e30f416" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>rename</name></member>
+      <member refid="unionlink__op__t_1af5e72ef355f35eb077242bc6f9c5c5b3" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>rewinddir</name></member>
+      <member refid="unionlink__op__t_1a88e1457d070edb4aab9fccd804859397" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>rmdir</name></member>
+      <member refid="unionlink__op__t_1a730a3749a6fc8af8ea54840d47adc999" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>seekdir</name></member>
+      <member refid="unionlink__op__t_1a75217150ecd1fb2ffab40ab31c10478b" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>stat</name></member>
+      <member refid="unionlink__op__t_1a47f754a695d5601811c24c083df91813" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>symlink</name></member>
+      <member refid="unionlink__op__t_1abd1b7f3e6960adaa0452f73d0b8d92ec" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>task</name></member>
+      <member refid="unionlink__op__t_1a717d7c67f3eb964240f9182875f57f8d" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>telldir</name></member>
+      <member refid="unionlink__op__t_1ab4f6d55f555458130f4867ec346844ed" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>time</name></member>
+      <member refid="unionlink__op__t_1a5a86d255ab0df5631e187e0470cec89a" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>unlink</name></member>
+      <member refid="unionlink__op__t_1afecf9018375d46fdc505ddccd67f5c0c" prot="public" virt="non-virtual"><scope>link_op_t</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

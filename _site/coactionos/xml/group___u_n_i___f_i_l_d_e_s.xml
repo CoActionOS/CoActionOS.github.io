@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i___f_i_l_d_e_s" kind="group">
+    <compoundname>UNI_FILDES</compoundname>
+    <title>Descriptor Handling</title>
+    <innerfile refid="__fcntl_8c">_fcntl.c</innerfile>
+    <innerfile refid="__fstat_8c">_fstat.c</innerfile>
+    <innerfile refid="__isatty_8c">_isatty.c</innerfile>
+    <innerfile refid="__lseek_8c">_lseek.c</innerfile>
+    <innerfile refid="lstat_8c">lstat.c</innerfile>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1gacfc4bf677fc9f8be66d9624175cb3775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fcntl</definition>
+        <argsstring>(int fildes, int cmd,...)</argsstring>
+        <name>fcntl</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function performs various operations on open files such as:<itemizedlist>
+<listitem><para>F_DUPFD: duplicate a file descriptor</para></listitem><listitem><para>F_GETFD: get the file descriptor flags</para></listitem><listitem><para>F_SETFD: set the file descriptor flags</para></listitem><listitem><para>F_GETOWN: get the file descriptor owner process ID.</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fildes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file descriptor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cmd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The operation to perform</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: invalid file descriptor</para></listitem><listitem><para>ENOTSUP: <emphasis>cmd</emphasis> is not supported for the file descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fcntl.c" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga2cea5ca0935e1b22a486e17b86faab05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _fcntl</definition>
+        <argsstring>(int fildes, int cmd,...)</argsstring>
+        <name>_fcntl</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fcntl.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fcntl.c" bodystart="35" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1gac1759a877da2f37512096f3a491e4112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fstat</definition>
+        <argsstring>(int fildes, struct stat *buf)</argsstring>
+        <name>fstat</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets various file statistics for the specified file descriptor.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is invalid</para></listitem><listitem><para>EINVAL: <emphasis>buf</emphasis> is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga649d75c0ad1eb6ae029b723c26b66752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _fstat</definition>
+        <argsstring>(int fildes, struct stat *buf)</argsstring>
+        <name>_fstat</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>struct <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref> *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_fstat.c" bodystart="27" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1gae5b285365759a2c737038bec18ed7533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int isatty</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>isatty</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks to see if <emphasis>fildes</emphasis> is associated with a terminal device.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTTY: <emphasis>fildes</emphasis> is not associated with a terminal device</para></listitem><listitem><para>EBADF: <emphasis>fildes</emphasis> is invalid </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_isatty.c" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga81c31ba5216786a72a4e4f59bfb43035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _isatty</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>_isatty</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_isatty.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_isatty.c" bodystart="26" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga8c14c9e98882b06f6a91d2c8895f4d98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_size</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>get_size</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c" line="16" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c" bodystart="61" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga33a233f3e6cc9e1a2b8b3f6aaea2c808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>off_t</type>
+        <definition>off_t lseek</definition>
+        <argsstring>(int fildes, off_t offset, int whence)</argsstring>
+        <name>lseek</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>off_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the file offset for <emphasis>fildes</emphasis> using the following values of <emphasis>whence:</emphasis> <itemizedlist>
+<listitem><para>SEEK_SET: set the offset to <emphasis>offset</emphasis> </para></listitem><listitem><para>SEEK_CUR: set the offset to current location plus <emphasis>offset</emphasis> </para></listitem><listitem><para>SEEK_END: set the offset to the size of the file plus <emphasis>offset</emphasis> </para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is invalid</para></listitem><listitem><para>EINVAL: <emphasis>whence</emphasis> is invalid </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1ga1fd116a5c6d658acbe5e5786fa3e1868" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>off_t</type>
+        <definition>off_t _lseek</definition>
+        <argsstring>(int fildes, off_t offset, int whence)</argsstring>
+        <name>_lseek</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>off_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>whence</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c" line="32" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_lseek.c" bodystart="32" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_d_e_s_1gac727ef949350b56ff4fd8103b13ec91c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lstat</definition>
+        <argsstring>(const char *path, struct stat *buf)</argsstring>
+        <name>lstat</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+          <briefdescription><para>The path the to symbolic link </para></briefdescription>
+        </param>
+        <param>
+          <type>struct <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat</ref> *</type>
+          <declname>buf</declname>
+          <briefdescription><para>The destination buffer </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is equivalent to <ref refid="group___u_n_i___f_s_1ga3dc1b07404b646712a144e2057359876" kindref="member">stat()</ref> except path refers to a symbolic link.</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: <emphasis>path</emphasis> exceeds PATH_MAX or a component of <emphasis>path</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>path</emphasis> does not exist</para></listitem><listitem><para>EACCES: search permission is denied for a component of <emphasis>path</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/lstat.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/lstat.c" bodystart="26" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

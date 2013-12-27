@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structusb__dev__qual__desc__t" kind="struct" prot="public">
+    <compoundname>usb_dev_qual_desc_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1ac0461d921c31be2a9b10801369483735" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bLength</definition>
+        <argsstring></argsstring>
+        <name>bLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="79" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1aed758dffce7cdb50d55d5abc14616e2c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bDescriptorType</definition>
+        <argsstring></argsstring>
+        <name>bDescriptorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="80" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1a115fbd762806b14f9103e2d96f9d2bca" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t usb_dev_qual_desc_t::bcdUSB</definition>
+        <argsstring></argsstring>
+        <name>bcdUSB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="81" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1a16fd77f16bb0389ff50102288857604c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bDeviceClass</definition>
+        <argsstring></argsstring>
+        <name>bDeviceClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="82" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1a98b076218edfb23d4f5e2bc0def61ccd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bDeviceSubClass</definition>
+        <argsstring></argsstring>
+        <name>bDeviceSubClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="83" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1ab6fc5f8ccf24352ff0add744af39f175" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bDeviceProtocol</definition>
+        <argsstring></argsstring>
+        <name>bDeviceProtocol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="84" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1ae4a649a276f9a382836d5675778cbe06" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bMaxPacketSize</definition>
+        <argsstring></argsstring>
+        <name>bMaxPacketSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="85" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1abc20c54ce8c80873029d9b4a3579ea4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bNumConfigurations</definition>
+        <argsstring></argsstring>
+        <name>bNumConfigurations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="86" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structusb__dev__qual__desc__t_1acd51487e6ef5f7c93f5e9752963b9e26" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t usb_dev_qual_desc_t::bReserved</definition>
+        <argsstring></argsstring>
+        <name>bReserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="87" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="536">
+        <label>usb_dev_qual_desc_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" line="78" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_typedefs.h" bodystart="78" bodyend="88"/>
+    <listofallmembers>
+      <member refid="structusb__dev__qual__desc__t_1a115fbd762806b14f9103e2d96f9d2bca" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bcdUSB</name></member>
+      <member refid="structusb__dev__qual__desc__t_1aed758dffce7cdb50d55d5abc14616e2c" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bDescriptorType</name></member>
+      <member refid="structusb__dev__qual__desc__t_1a16fd77f16bb0389ff50102288857604c" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bDeviceClass</name></member>
+      <member refid="structusb__dev__qual__desc__t_1ab6fc5f8ccf24352ff0add744af39f175" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bDeviceProtocol</name></member>
+      <member refid="structusb__dev__qual__desc__t_1a98b076218edfb23d4f5e2bc0def61ccd" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bDeviceSubClass</name></member>
+      <member refid="structusb__dev__qual__desc__t_1ac0461d921c31be2a9b10801369483735" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bLength</name></member>
+      <member refid="structusb__dev__qual__desc__t_1ae4a649a276f9a382836d5675778cbe06" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bMaxPacketSize</name></member>
+      <member refid="structusb__dev__qual__desc__t_1abc20c54ce8c80873029d9b4a3579ea4b" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bNumConfigurations</name></member>
+      <member refid="structusb__dev__qual__desc__t_1acd51487e6ef5f7c93f5e9752963b9e26" prot="public" virt="non-virtual"><scope>usb_dev_qual_desc_t</scope><name>bReserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

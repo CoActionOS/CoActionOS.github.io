@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structmessage" kind="struct" prot="public">
+    <compoundname>message</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmessage_1ae3fd42397b485c966cc1ae5d2c1d36af" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int message::prio</definition>
+        <argsstring></argsstring>
+        <name>prio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="98" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmessage_1a30f692043fc5987c984000f3029d2924" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int message::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="99" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmessage_1a6231667d057b8280cd4d64beed28cec5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int message::age</definition>
+        <argsstring></argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="100" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="396">
+        <label>message</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" line="97" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/mqueue/mqueue.c" bodystart="97" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structmessage_1a6231667d057b8280cd4d64beed28cec5" prot="public" virt="non-virtual"><scope>message</scope><name>age</name></member>
+      <member refid="structmessage_1ae3fd42397b485c966cc1ae5d2c1d36af" prot="public" virt="non-virtual"><scope>message</scope><name>prio</name></member>
+      <member refid="structmessage_1a30f692043fc5987c984000f3029d2924" prot="public" virt="non-virtual"><scope>message</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

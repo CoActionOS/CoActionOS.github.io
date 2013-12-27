@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structcore__clkout__t" kind="struct" prot="public">
+    <compoundname>core_clkout_t</compoundname>
+    <includes refid="core_8h" local="no">core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcore__clkout__t_1add56e841fb8d2446c806651924fe76b4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t core_clkout_t::src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+<para>The clock output source (see <ref refid="group___c_o_r_e_1ga865263eb03a43700297f3eba0c085b88" kindref="member">core_clkout_src_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="66" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcore__clkout__t_1ae724b080cfc2ae5ffceb1d5cfc2c01c9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t core_clkout_t::div</definition>
+        <argsstring></argsstring>
+        <name>div</name>
+        <briefdescription>
+<para>The clock divide value applied to src. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="67" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Used with I_CORE_SETCLKOUT. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure is used to set the clock out attributes (see <ref refid="group___c_o_r_e_1gab18399788c0a6653e37c6b51ab2fa796" kindref="member">I_CORE_SETCLKOUT</ref>). </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="212">
+        <label>core_clkout_t</label>
+        <link refid="structcore__clkout__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" line="65" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/core.h" bodystart="65" bodyend="68"/>
+    <listofallmembers>
+      <member refid="structcore__clkout__t_1ae724b080cfc2ae5ffceb1d5cfc2c01c9" prot="public" virt="non-virtual"><scope>core_clkout_t</scope><name>div</name></member>
+      <member refid="structcore__clkout__t_1add56e841fb8d2446c806651924fe76b4" prot="public" virt="non-virtual"><scope>core_clkout_t</scope><name>src</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

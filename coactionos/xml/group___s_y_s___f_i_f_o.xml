@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___s_y_s___f_i_f_o" kind="group">
+    <compoundname>SYS_FIFO</compoundname>
+    <title>FIFO Buffer</title>
+    <innerfile refid="fifo_8h">fifo.h</innerfile>
+    <innerclass refid="structfifo__attr__t" prot="public">fifo_attr_t</innerclass>
+    <innerclass refid="structfifo__cfg__t" prot="public">fifo_cfg_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1ga624683868788e19d8362b866b2d7501e" prot="public" static="no">
+        <name>FIFO_IOC_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="28" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1ga670519da9a74984f5605f50cf675385d" prot="public" static="no">
+        <name>FIFO_DEVICE</name>
+        <param><defname>device_name</defname></param>
+        <param><defname>cfg_ptr</defname></param>
+        <param><defname>state_ptr</defname></param>
+        <param><defname>mode_value</defname></param>
+        <param><defname>uid_value</defname></param>
+        <param><defname>gid_value</defname></param>
+        <briefdescription>
+<para>See below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This defines the configuration values for a FIFO device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>device_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the device (e.g &quot;fifo0&quot;) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cfg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the const <ref refid="structfifo__cfg__t" kindref="compound">fifo_cfg_t</ref> data structure </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the state structure (see fifo_state_t) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The access mode (usually 0666) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uid_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The User ID </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gid_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Group ID</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Example: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;hwdl/fifo.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfifo__cfg__t" kindref="compound">fifo_cfg_t</ref><sp/>fifo_cfg0<sp/>=<sp/>{<sp/>.<ref refid="structfifo__cfg__t_1a7f642065e80c386324078fed9b3e9994" kindref="member">buffer</ref><sp/>=<sp/>fifo_buf0,<sp/>.size<sp/>=<sp/>FIFO_BUF_SIZE<sp/>};</highlight></codeline>
+<codeline><highlight class="normal">fifo_state_t<sp/>fifo_state0;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structdevice__t" kindref="compound">device_t</ref><sp/>devices[DEVICES_TOTAL+1]<sp/>=<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___s_y_s___f_i_f_o_1ga670519da9a74984f5605f50cf675385d" kindref="member">FIFO_DEVICE</ref>(</highlight><highlight class="stringliteral">&quot;fifo0&quot;</highlight><highlight class="normal">,<sp/>&amp;fifo_cfg0,<sp/>&amp;fifo_state0,<sp/>0666,<sp/>USER_ROOT,<sp/>GROUP_ROOT),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>DEVICE_TERMINATOR</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1gad71d088d731cda37f04522cefbee3034" prot="public" static="no">
+        <name>FIFO_DEVICE_CFG</name>
+        <param><defname>buf</defname></param>
+        <param><defname>buf_size</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="66" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1ga81cb55b73d1c48300efc4f9170781de9" prot="public" static="no">
+        <name>I_FIFO_GETATTR</name>
+        <briefdescription>
+<para>See below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This request gets the size of the FIFO in bytes. Example: <programlisting><codeline><highlight class="normal"><ref refid="structfifo__attr__t" kindref="compound">fifo_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(fifo_fd,<sp/><ref refid="group___s_y_s___f_i_f_o_1ga81cb55b73d1c48300efc4f9170781de9" kindref="member">I_FIFO_GETATTR</ref>,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="87" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1ga0f9954de41765a8b9a5a73c66aae9daa" prot="public" static="no">
+        <name>I_FIFO_FLUSH</name>
+        <briefdescription>
+<para>This request flushes all data out of the fifo (third <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> arg is omitted). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="92" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1ga2c9e07cb0c947411af9b154c25b49ff5" prot="public" static="no">
+        <name>I_FIFO_INIT</name>
+        <briefdescription>
+<para>This request initializes the fifo (third <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> arg is omitted). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="96" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1gab11d9f1ec93aaf8bfce1a579f258b439" prot="public" static="no">
+        <name>I_FIFO_EXIT</name>
+        <briefdescription>
+<para>This request shuts down the operation of the FIFO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="100" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1ga40bc035a4c24444b501687addddb5ca9" prot="public" static="no">
+        <name>I_FIFO_SETWRITEBLOCK</name>
+        <briefdescription>
+<para>This request tells the FIFO whether or not to block when data is written and the buffer is full. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="106" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___s_y_s___f_i_f_o_1gaaf27488d78b10ff907b737a52ee9edb3" prot="public" static="no">
+        <name>I_FIFO_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" line="108" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/fifo.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This device is a FIFO RAM buffer. A write to the buffer adds data to the FIFO. A read from the buffer reads from the FIFO. If the FIFO fills up, additional writes will block until data arrives. Similarly, if the FIFO is empty, a read will block until data arrives. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

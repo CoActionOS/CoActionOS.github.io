@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___s_c_h_e_d" kind="group">
+    <compoundname>SCHED</compoundname>
+    <title>Scheduler</title>
+    <innerfile refid="sched__posix_8c">sched_posix.c</innerfile>
+    <innerclass refid="structpriv__set__scheduling__param__t" prot="public">priv_set_scheduling_param_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga416d70cb234178e0e258fdb51b297d53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_set_scheduling_param</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_set_scheduling_param</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="208" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga41c8cba23568b415cab3d65307872a16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int get_pid_task</definition>
+        <argsstring>(pid_t pid)</argsstring>
+        <name>get_pid_task</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="29" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1gafaebd1698caeb9b9b9e614ad84edd609" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_get_priority_max</definition>
+        <argsstring>(int policy)</argsstring>
+        <name>sched_get_priority_max</name>
+        <param>
+          <type>int</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the maximum priority for <emphasis>policy</emphasis>. <simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>policy</emphasis> is not SCHED_RR, SCHED_FIFO, or SCHED_OTHER </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="44" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1gaf1f370fc36ea6b22ed42b5ee3cf82a81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_get_priority_min</definition>
+        <argsstring>(int policy)</argsstring>
+        <name>sched_get_priority_min</name>
+        <param>
+          <type>int</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the minimum priority for <emphasis>policy</emphasis>. <simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>policy</emphasis> is not SCHED_RR, SCHED_FIFO, or SCHED_OTHER </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="62" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="62" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga563c7ac53bac2c1b51379147e66c44ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_getparam</definition>
+        <argsstring>(pid_t pid, struct sched_param *param)</argsstring>
+        <name>sched_getparam</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>struct sched_param *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the scheduling parameter (priority) for <emphasis>pid</emphasis>. <simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>policy</emphasis> is not SCHED_RR, SCHED_FIFO, or SCHED_OTHER</para></listitem><listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000005"><xreftitle>Todo</xreftitle><xrefdescription><para>check the permissions for EPERM </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="81" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="81" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga99fcb2532b1482d236dc04495a3f194d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_getscheduler</definition>
+        <argsstring>(pid_t pid)</argsstring>
+        <name>sched_getscheduler</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the scheduling policy. <simplesect kind="return"><para>The scheduling policy on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="102" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga99a3b9b823d4b20bf111719ccd1b59bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_rr_get_interval</definition>
+        <argsstring>(pid_t pid, struct timespec *ts)</argsstring>
+        <name>sched_rr_get_interval</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>struct timespec *</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the round robin interval for <emphasis>pid</emphasis>. <simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>ts</emphasis> is NULL</para></listitem><listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="121" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="121" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga06b497c4ea6bbabd2b62ba1a8a848a1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_setparam</definition>
+        <argsstring>(pid_t pid, const struct sched_param *param)</argsstring>
+        <name>sched_setparam</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const struct sched_param *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the process&apos;s scheduling paramater (priority). <simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process</para></listitem><listitem><para>EPERM: the calling process does not have permission to change the scheduling parameters </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="139" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="139" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga84ad29a6f2ad27370df09c664ac65eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_setscheduler</definition>
+        <argsstring>(pid_t pid, int policy, const struct sched_param *param)</argsstring>
+        <name>sched_setscheduler</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const struct sched_param *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the scheduler policy and parameter (priority) for the process. <simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>policy</emphasis> is not SCHED_RR, SCHED_FIFO, or SCHED_OTHER</para></listitem><listitem><para>EPERM: the calling process does not have permission to change the scheduling parameters</para></listitem><listitem><para>ESRCH: <emphasis>pid</emphasis> is not a valid process </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000006"><xreftitle>Todo</xreftitle><xrefdescription><para>Set the policy </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="168" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="168" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="group___s_c_h_e_d_1ga357cd4b34c13011749dfffb42b489f09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sched_yield</definition>
+        <argsstring>(void)</argsstring>
+        <name>sched_yield</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function causes the calling thread to yield the processor. The context is switched to the next active task. If no tasks are active, the CPU idles. <simplesect kind="return"><para>Zero </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" line="203" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/sched/sched_posix.c" bodystart="203" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

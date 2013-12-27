@@ -25,8 +25,8 @@ The steps to use the SPI are:
 
 The following program demonstrates how to use the SPI in CoActinOS. 
 For more details on using the SPI, please see the 
-[SPI Applib documentation](/projects/coactionos-applib/embedded/class_spi.html).  
-The [Pin class documentation](/projects/coactionos-applib/embedded/class_pin.html) 
+[SPI Applib documentation]({{ BASE_URL }}/coactionos-applib/html/class_spi.html).  
+The [Pin class documentation]({{ BASE_URL }}/coactionos-applib/html/class_pin.html) 
 may also be helpful.
 
 {% highlight CPP %}

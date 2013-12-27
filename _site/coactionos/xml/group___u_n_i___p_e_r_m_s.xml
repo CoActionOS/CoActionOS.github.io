@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i___p_e_r_m_s" kind="group">
+    <compoundname>UNI_PERMS</compoundname>
+    <title>Permissions</title>
+    <innerfile refid="access_8c">access.c</innerfile>
+    <innerfile refid="chmod_8c">chmod.c</innerfile>
+    <innerfile refid="chown_8c">chown.c</innerfile>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___u_n_i___p_e_r_m_s_1ga7a91398425509d1face45acaf6481f93" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t euid</definition>
+        <argsstring></argsstring>
+        <name>euid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="55" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___u_n_i___p_e_r_m_s_1ga54786b5c05408df6a78445e4ade2002f" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t egid</definition>
+        <argsstring></argsstring>
+        <name>egid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="56" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gaeb536ca259b0cf3bc5555569d3b7b23d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int check_permissions</definition>
+        <argsstring>(int file_mode, int file_uid, int file_gid, int amode)</argsstring>
+        <name>check_permissions</name>
+        <param>
+          <type>int</type>
+          <declname>file_mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>file_uid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>file_gid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="74" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gaa6adc1f71f9027c8bdd8e88e8c843049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int access</definition>
+        <argsstring>(const char *path, int amode)</argsstring>
+        <name>access</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>amode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function checks to see if the specified access (<emphasis>amode</emphasis>) is allowed for <emphasis>path</emphasis>.</para><para><simplesect kind="return"><para>Zero on success (ie <emphasis>amode</emphasis> is allowed) or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: <emphasis>path</emphasis> exceeds PATH_MAX or a component of <emphasis>path</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>path</emphasis> does not exist</para></listitem><listitem><para>EACCES: <emphasis>amode</emphasis> is not allowed for <emphasis>path</emphasis> or search permission is denied for a component of <emphasis>path</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="33" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="33" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gab1c6f80e5290f08a176e42d204792ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cl_sys_seteuid</definition>
+        <argsstring>(int uid)</argsstring>
+        <name>cl_sys_seteuid</name>
+        <param>
+          <type>int</type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="58" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gaf5feb8fd68a7b7b7a8519de13e9e279c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cafs_sys_setegid</definition>
+        <argsstring>(int gid)</argsstring>
+        <name>cafs_sys_setegid</name>
+        <param>
+          <type>int</type>
+          <declname>gid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="62" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1ga745a1d016c241ade5c0097ba6bc33b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cl_sys_geteuid</definition>
+        <argsstring>(void)</argsstring>
+        <name>cl_sys_geteuid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="66" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1ga79a9e0fc2325df454c61dcc87122922e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cl_sys_getegid</definition>
+        <argsstring>(void)</argsstring>
+        <name>cl_sys_getegid</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" line="70" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/access.c" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gabdfbba6d30d9f53e6053a04890ad8116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int chmod</definition>
+        <argsstring>(const char *path, mode_t mode)</argsstring>
+        <name>chmod</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>mode_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function changes the mode of the specified file or directory.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EIO: IO Error</para></listitem><listitem><para>ENAMETOOLONG: <emphasis>path</emphasis> exceeds PATH_MAX or a component of <emphasis>path</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>path</emphasis> does not exist</para></listitem><listitem><para>EACCES: search permission is denied for a component of <emphasis>path</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chmod.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chmod.c" bodystart="26" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___p_e_r_m_s_1gaffffc50469285ec46d3a0594e818bc10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int chown</definition>
+        <argsstring>(const char *path, uid_t uid, gid_t gid)</argsstring>
+        <name>chown</name>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>uid_t</type>
+          <declname>uid</declname>
+        </param>
+        <param>
+          <type>gid_t</type>
+          <declname>gid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function changes the mode of the specified file or directory.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EIO: IO Error</para></listitem><listitem><para>ENAMETOOLONG: <emphasis>path</emphasis> exceeds PATH_MAX or a component of <emphasis>path</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>path</emphasis> does not exist</para></listitem><listitem><para>EACCES: search permission is denied for a component of <emphasis>path</emphasis> </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/chown.c" bodystart="26" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

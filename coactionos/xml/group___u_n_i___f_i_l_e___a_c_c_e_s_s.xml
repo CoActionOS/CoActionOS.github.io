@@ -1,0 +1,454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___u_n_i___f_i_l_e___a_c_c_e_s_s" kind="group">
+    <compoundname>UNI_FILE_ACCESS</compoundname>
+    <title>Access</title>
+    <innerfile refid="__close_8c">_close.c</innerfile>
+    <innerfile refid="__open_8c">_open.c</innerfile>
+    <innerfile refid="__read_8c">_read.c</innerfile>
+    <innerfile refid="__write_8c">_write.c</innerfile>
+    <innerfile refid="ioctl_8c">ioctl.c</innerfile>
+    <innerclass refid="structpriv__attr__t" prot="public">priv_attr_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaacad1d135ca2779b583623678e36db7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int close</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>close</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function closes the file associated with the specified descriptor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fildes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The File descriptor <emphasis>fildes</emphasis>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: Invalid file descriptor </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_close.c" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga5af2dad9b50913a0025ea80a8577bea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _close</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>_close</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_close.c" line="28" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_close.c" bodystart="28" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaf0ebfb9c9321e65a6638ffd680137dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unistd_new_open_file</definition>
+        <argsstring>(int start)</argsstring>
+        <name>unistd_new_open_file</name>
+        <param>
+          <type>int</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="36" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga86317029041b98f86e8e42c09e19a0e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void unistd_reset_fildes</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>unistd_reset_fildes</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="48" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gae54348f89749eb075aab8f8bcb7dda8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_open_file</definition>
+        <argsstring>(int fildes, const sysfs_t *fs, void *handle, uint16_t flags)</argsstring>
+        <name>set_open_file</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>const sysfs_t *</type>
+          <declname>fs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="52" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int open</definition>
+        <argsstring>(const char *name, int flags,...)</argsstring>
+        <name>open</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function opens a file with flags being the OR&apos;d combination of:<itemizedlist>
+<listitem><para>O_RDONLY, O_WRONLY or O_RDWR</para></listitem><listitem><para>O_NONBLOCK, O_CREAT, O_EXCL, O_TRUNC</para></listitem></itemizedlist>
+</para><para>If the O_CREAT flag is set, the third argument should specify the mode as a mode_t. The bits used with the mode are:<itemizedlist>
+<listitem><para>S_IRWXU: User read/write/execute</para></listitem><listitem><para>S_IRUSR: User read</para></listitem><listitem><para>S_IWUSR: User write</para></listitem><listitem><para>S_IXUSR: User execute</para></listitem><listitem><para>S_IRWXG: Group read/write/execute</para></listitem><listitem><para>S_IRGRP: Group read (groups not implemented)</para></listitem><listitem><para>S_IWGRP: Group write (groups not implemented)</para></listitem><listitem><para>S_IXGRP: Group execute (groups not implemented)</para></listitem><listitem><para>S_IRWXO: Other read/write/execute</para></listitem><listitem><para>S_IROTH: Other read</para></listitem><listitem><para>S_IWOTH: Other write</para></listitem><listitem><para>S_IXOTH: Other execute</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero on success or -1 on error with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENAMETOOLONG: <emphasis>name</emphasis> exceeds PATH_MAX or a component of <emphasis>name</emphasis> exceeds NAME_MAX</para></listitem><listitem><para>ENOENT: <emphasis>name</emphasis> could not be found</para></listitem><listitem><para>EIO: IO error</para></listitem><listitem><para>EEXIST: <emphasis>name</emphasis> already exists and flags is not set to overwrite</para></listitem><listitem><para>ENOSPC: no more space left on the device</para></listitem><listitem><para>ENOMEM: not enough memory to open another file<itemizedlist>
+<listitem><para>ENOTDIR: the path to <emphasis>name</emphasis> does not exist</para></listitem><listitem><para>EFBIG: size error with the file (file is likely corrupt) </para></listitem></itemizedlist>
+</para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga2c3128fcd2de2c4d985c86898fb734b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _open</definition>
+        <argsstring>(const char *name, int flags,...)</argsstring>
+        <name>_open</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="92" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" bodystart="92" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga417ddcf89db8eb5886d3a4ae630d830f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unistd_fildes_is_bad</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>unistd_fildes_is_bad</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="163" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" bodystart="163" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga779cd938d829541be75fe3cb40652db2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unistd_init_stdio</definition>
+        <argsstring>(int fildes)</argsstring>
+        <name>unistd_init_stdio</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" line="199" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_open.c" bodystart="199" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaefe7609d91407014d94611912cc2b1a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int read</definition>
+        <argsstring>(int fildes, void *buf, size_t nbyte)</argsstring>
+        <name>read</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function reads <emphasis>nbyte</emphasis> bytes from <emphasis>fildes</emphasis> to the memory location pointed to by <emphasis>buf</emphasis>.</para><para><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaefe7609d91407014d94611912cc2b1a3" kindref="member">read()</ref> is always a synchronous call which is either blocking or non-blocking depending on the value of O_NONBLOCK for <emphasis>fildes</emphasis>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fildes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file descriptor returned by <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the destination memory (process must have write access) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbyte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes actually read of -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is bad</para></listitem><listitem><para>EACCESS: <emphasis>fildes</emphasis> is on in O_WRONLY mode</para></listitem><listitem><para>EIO: IO error</para></listitem><listitem><para>EAGAIN: O_NONBLOCK is set for <emphasis>fildes</emphasis> and no new data is available </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga104894d6b371a21a6244a730569e0c0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _read</definition>
+        <argsstring>(int fildes, void *buf, size_t nbyte)</argsstring>
+        <name>_read</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_read.c" bodystart="35" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gadd30ddeed4bdbf3c96fa36970c1ca778" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int write</definition>
+        <argsstring>(int fildes, const void *buf, size_t nbyte)</argsstring>
+        <name>write</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function writes <emphasis>nbyte</emphasis> bytes <emphasis>fildes</emphasis> from the memory location pointed to by <emphasis>buf</emphasis>.</para><para><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gadd30ddeed4bdbf3c96fa36970c1ca778" kindref="member">write()</ref> is always a synchronous call which is either blocking or non-blocking depending on the value of O_NONBLOCK for <emphasis>fildes</emphasis>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fildes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file descriptor returned by <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the destination memory (process must have write access) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbyte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of bytes to read</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes actually read of -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is bad</para></listitem><listitem><para>EACCESS: <emphasis>fildes</emphasis> is on in O_RDONLY mode</para></listitem><listitem><para>EIO: IO error</para></listitem><listitem><para>EAGAIN: O_NONBLOCK is set for <emphasis>fildes</emphasis> and the device is busy </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_write.c" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gae80a7329a85893fdc47760ef79ff71ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _write</definition>
+        <argsstring>(int fildes, const void *buf, size_t nbyte)</argsstring>
+        <name>_write</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>nbyte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_write.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/_write.c" bodystart="35" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gaf7891c6a737e787e2d35feedbe4d0311" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_ioctl</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_ioctl</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="28" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ioctl</definition>
+        <argsstring>(int fildes, int request,...)</argsstring>
+        <name>ioctl</name>
+        <param>
+          <type>int</type>
+          <declname>fildes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function performs a control request on the device associated with <emphasis>fildes</emphasis>. <emphasis>request</emphasis> is specific to the device. The value of <emphasis>request</emphasis> determines what value should be passed as the <emphasis>ctl</emphasis> argument.</para><para>There are three types of devices which <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl()</ref> can access. The <emphasis>request</emphasis> and <emphasis>ctl</emphasis> documentation for each device can be found in the respective device type documentation:<itemizedlist>
+<listitem><para><ulink url="http://www.coactionos.com/swdoc/hwpl/html/group___p_e_r_i_p_h_i_o.html">HWPL IO</ulink></para></listitem><listitem><para><ulink url="http://www.coactionos.com/swdoc/hwdl/html/index.html">HWDL</ulink></para></listitem><listitem><para>Custom (see driver specific documentation)</para></listitem></itemizedlist>
+</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fildes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file descriptor returned by <ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gac843f2e35e60c3bbf1da47d84306f29b" kindref="member">open()</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The request to the device.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of bytes actually read of -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EBADF: <emphasis>fildes</emphasis> is bad</para></listitem><listitem><para>EIO: IO error</para></listitem><listitem><para>EAGAIN: O_NONBLOCK is set for <emphasis>fildes</emphasis> and the device is busy </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="51" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="51" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1gadebadefb29626ac963ae2158727b45c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int unistd_device_ioctl</definition>
+        <argsstring>(open_file_t *open_file, int request, void *ctl)</argsstring>
+        <name>unistd_device_ioctl</name>
+        <param>
+          <type>open_file_t *</type>
+          <declname>open_file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ctl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="76" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="76" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

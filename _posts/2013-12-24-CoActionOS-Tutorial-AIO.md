@@ -5,7 +5,6 @@ category: coactionos-tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 ---
-h1. CoActionOS Async IO Tutorial
 
 Asynchronous IO (AIO) is used when you want to start an operation and do 
 other things while you wait until the operation completes. AIO is supported 
@@ -13,8 +12,8 @@ on all peripherals which support read() and write(). Simply pass an Aio
 object to read() or write(), and the operation will perform asynchronously.
 
 The following program demonstrates AIO using the DAC. See the 
-[AIO class documenation](/redmine/projects/coactionos-applib/embedded/class_aio.html) and 
-[DAC class documentation](/redmine/projects/coactionos-applib/embedded/class_dac.html) for more details.
+[AIO class documenation]({{ BASE_URL }}/coactionos-applib/html/class_aio.html) and 
+[DAC class documentation]({{ BASE_URL }}/coactionos-applib/html/class_dac.html) for more details.
 
 {% highlight CPP %}
 #include <applib/DbugStdout.hpp> //For the DbugStdout class (or just use printf() is you prefer)

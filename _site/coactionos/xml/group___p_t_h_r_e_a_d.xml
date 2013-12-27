@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___p_t_h_r_e_a_d" kind="group">
+    <compoundname>PTHREAD</compoundname>
+    <title>Posix Threads (pthread)</title>
+    <innerfile refid="pthread__cancel_8c">pthread_cancel.c</innerfile>
+    <innerfile refid="pthread__cleanup_8c">pthread_cleanup.c</innerfile>
+    <innerfile refid="pthread__create_8c">pthread_create.c</innerfile>
+    <innerfile refid="pthread__schedparam_8c">pthread_schedparam.c</innerfile>
+    <innerfile refid="pthread__self_8c">pthread_self.c</innerfile>
+    <innerclass refid="structpriv__set__pthread__scheduling__param__t" prot="public">priv_set_pthread_scheduling_param_t</innerclass>
+    <innergroup refid="group___p_t_h_r_e_a_d___a_t_t_r">Attributes</innergroup>
+    <innergroup refid="group___p_t_h_r_e_a_d___c_o_n_d">Conditional Variables</innergroup>
+    <innergroup refid="group___p_t_h_r_e_a_d___m_u_t_e_x">Mutexes</innergroup>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1ga9e77a80c073787bf9a593e9c619dce27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_cancel</definition>
+        <argsstring>(pthread_t thread)</argsstring>
+        <name>pthread_cancel</name>
+        <param>
+          <type>pthread_t</type>
+          <declname>thread</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported. <simplesect kind="return"><para>-1 with errno equal to ENOTSUP </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cancel.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cancel.c" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1gafbe33fb00cd24693796a0870a3374631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pthread_cleanup_pop</definition>
+        <argsstring>(int execute)</argsstring>
+        <name>pthread_cleanup_pop</name>
+        <param>
+          <type>int</type>
+          <declname>execute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cleanup.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cleanup.c" bodystart="22" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1ga68bc26522daf418f3cc78360925374ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void pthread_cleanup_push</definition>
+        <argsstring>(void(*routine)(void *), void *arg)</argsstring>
+        <name>pthread_cleanup_push</name>
+        <param>
+          <type>void(*)(void *)</type>
+          <declname>routine</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cleanup.c" line="27" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_cleanup.c" bodystart="27" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1gaf2b2e0ec0184bb0cedc7ef218e67ae8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_join_thread</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_join_thread</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c" line="54" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c" bodystart="147" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1gae5d18438d4d20c8a2e42cd2500578d79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_create</definition>
+        <argsstring>(pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine)(void *), void *arg)</argsstring>
+        <name>pthread_create</name>
+        <param>
+          <type>pthread_t *</type>
+          <declname>thread</declname>
+          <briefdescription><para>If not null, the thread id is written here </para></briefdescription>
+        </param>
+        <param>
+          <type>const pthread_attr_t *</type>
+          <declname>attr</declname>
+          <briefdescription><para>Sets the thread attributes (defaults are used if this is NULL) </para></briefdescription>
+        </param>
+        <param>
+          <type>void *(*)(void *)</type>
+          <declname>start_routine</declname>
+          <briefdescription><para>A pointer to the start routine </para></briefdescription>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+          <briefdescription><para>A pointer to the start routine&apos;s single argument </para></briefdescription>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function creates a new thread. <simplesect kind="return"><para>Zero on success or -1 with <emphasis>errno</emphasis> (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOMEM: error allocating memory for the thread</para></listitem><listitem><para>EAGAIN: insufficient system resources to create a new thread </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c" line="63" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c" bodystart="63" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1gaa79c99cc7b194918a2def257246f11c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_join</definition>
+        <argsstring>(pthread_t thread, void **value_ptr)</argsstring>
+        <name>pthread_join</name>
+        <param>
+          <type>pthread_t</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>void **</type>
+          <declname>value_ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function blocks the calling thread until <emphasis>thread</emphasis> terminates. <simplesect kind="return"><para>Zero on success or -1 with <emphasis>errno</emphasis> (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ESRCH: <emphasis>thread</emphasis> does not exist</para></listitem><listitem><para>EDEADLK: a deadlock has been detected or <emphasis>thread</emphasis> refers to the calling thread</para></listitem><listitem><para>EINVAL: <emphasis>thread</emphasis> does not refer to a joinable thread. </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c" line="108" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_create.c" bodystart="108" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1ga416d70cb234178e0e258fdb51b297d53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_set_scheduling_param</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_set_scheduling_param</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c" bodystart="99" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1gaae9850b3759769c748727e171c4c6e61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_getschedparam</definition>
+        <argsstring>(pthread_t thread, int *policy, struct sched_param *param)</argsstring>
+        <name>pthread_getschedparam</name>
+        <param>
+          <type>pthread_t</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>struct sched_param *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets <emphasis>thread&apos;s</emphasis> scheduling policy and scheduling parameters and stores them in <emphasis>policy</emphasis> and <emphasis>param</emphasis> respectively.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ESRCH: thread is not a valid</para></listitem><listitem><para>EINVAL: policy or param is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c" bodystart="37" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1ga5863ca5ea1eaf973c408e2c3bbaff3a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pthread_setschedparam</definition>
+        <argsstring>(pthread_t thread, int policy, struct sched_param *param)</argsstring>
+        <name>pthread_setschedparam</name>
+        <param>
+          <type>pthread_t</type>
+          <declname>thread</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>struct sched_param *</type>
+          <declname>param</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets <emphasis>thread&apos;s</emphasis> scheduling policy and scheduling parameters to <emphasis>policy</emphasis> and <emphasis>param</emphasis> respectively.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ESRCH: thread is not a valid</para></listitem><listitem><para>EINVAL: param is NULL or the priority is invalid </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c" line="63" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_schedparam.c" bodystart="63" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="group___p_t_h_r_e_a_d_1ga4c4f5f3b4f8f45d9d897847d53b11aaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>pthread_t</type>
+        <definition>pthread_t pthread_self</definition>
+        <argsstring>(void)</argsstring>
+        <name>pthread_self</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns the thread ID of the calling process. <simplesect kind="return"><para>The thread ID of the caller. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_self.c" line="21" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/pthread/pthread_self.c" bodystart="21" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This is the interface for POSIX threads. Here is an example of creating a new thread:</para><para><programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>thread_function(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>args);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal">pthread_t<sp/>t;</highlight></codeline>
+<codeline><highlight class="normal">pthread_attr_t<sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___p_t_h_r_e_a_d___a_t_t_r_1ga0b85ebb1e3aac081a4c0a5e85ae3cbe9" kindref="member">pthread_attr_init</ref>(&amp;attr)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>initialize<sp/>attr&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___p_t_h_r_e_a_d___a_t_t_r_1gae6ee78c307d8467b34a9b0c330993a54" kindref="member">pthread_attr_setdetachstate</ref>(&amp;attr,<sp/>PTHREAD_CREATE_DETACHED)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>set<sp/>detach<sp/>state&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___p_t_h_r_e_a_d___a_t_t_r_1ga812a9a455ae2ef2bb0dca4fff201a281" kindref="member">pthread_attr_setstacksize</ref>(&amp;attr,<sp/>4096)<sp/>&lt;<sp/>0<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>set<sp/>stack<sp/>size&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="group___p_t_h_r_e_a_d_1gae5d18438d4d20c8a2e42cd2500578d79" kindref="member">pthread_create</ref>(&amp;t,<sp/>&amp;attr,<sp/>thread_function,<sp/>NULL)<sp/>){</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;failed<sp/>to<sp/>create<sp/>thread&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+</programlisting> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

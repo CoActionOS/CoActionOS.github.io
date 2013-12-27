@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___a_r_c_h_i_t_e_c_t_u_r_e_s" kind="group">
+    <compoundname>ARCHITECTURES</compoundname>
+    <title>Architectures</title>
+    <innergroup refid="group___l_p_c13_x_x_d_e_v">LPC13xx Devices</innergroup>
+    <innergroup refid="group___l_p_c17_x_x_d_e_v">LPC17xx Devices</innergroup>
+    <innergroup refid="group___u_s_b_l_i_n_k">USB Link (link)</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

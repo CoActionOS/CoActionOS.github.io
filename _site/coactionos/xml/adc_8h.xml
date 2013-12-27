@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="adc_8h" kind="file">
+    <compoundname>adc.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includes refid="types_8h" local="yes">hwpl/types.h</includes>
+    <includedby refid="link__protocol_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</includedby>
+    <incdepgraph>
+      <node id="1390">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1387">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1386">
+        <label>stdint.h</label>
+      </node>
+      <node id="1385">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h</label>
+        <link refid="adc.h"/>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1387" relation="include">
+        </childnode>
+        <childnode refid="1388" relation="include">
+        </childnode>
+        <childnode refid="1389" relation="include">
+        </childnode>
+      </node>
+      <node id="1388">
+        <label>hwpl/arch.h</label>
+      </node>
+      <node id="1389">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="1386" relation="include">
+        </childnode>
+        <childnode refid="1390" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1391">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h</label>
+        <link refid="adc.h"/>
+        <childnode refid="1392" relation="include">
+        </childnode>
+      </node>
+      <node id="1392">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</label>
+        <link refid="link__protocol_8h"/>
+        <childnode refid="1393" relation="include">
+        </childnode>
+      </node>
+      <node id="1393">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structadc__attr__t" prot="public">adc_attr_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___a_d_c_1ga0752f98855786572ddddfdd5a467f8c8" prot="public" static="no">
+        <name>ADC_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="76" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c_1ga555a695bf58df062dc03f0e892d95cd7" prot="public" static="no">
+        <name>ADC_MAX</name>
+        <briefdescription>
+<para>This defines the maximum value the ADC will return. It is specific to the MCU architecture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="85" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c_1gaf0098a1eafb8a60a1c65773e1064d595" prot="public" static="no">
+        <name>ADC_MIN</name>
+        <briefdescription>
+<para>This defines the minimum step value of the ADC. This is MCU specific. For example if the data is not right-justified and the lowest 4 bits are always zero, ADC_MIN will be 0x10. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="94" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c_1gaee9ff036d0e34f634b48e953d19d3bc2" prot="public" static="no">
+        <name>ADC_MAX_FREQ</name>
+        <briefdescription>
+<para>This values defines the maximum frequency that can be used when reading the ADC. When doing an IOCTL write request, the freq member should not exceed this value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="113" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c_1gae599932a5a540645042f364aa40335ae" prot="public" static="no">
+        <name>I_ADC_GETATTR</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This requests reads the ADC attributes.</para><para>Example: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="adc_8h" kindref="compound">dev/adc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structadc__attr__t" kindref="compound">adc_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>adc_fd;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">ioctl(adc_fd,<sp/><ref refid="group___a_d_c_1gae599932a5a540645042f364aa40335ae" kindref="member">I_ADC_GETATTR</ref>,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="140" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c_1gaf9007b82aa0f9af53bbb74796462927e" prot="public" static="no">
+        <name>I_ADC_SETATTR</name>
+        <briefdescription>
+<para>See below for details. </para>        </briefdescription>
+        <detaileddescription>
+<para>This requests writes the ADC attributes.</para><para>Example: <programlisting><codeline><highlight class="preprocessor">#include<sp/>&lt;<ref refid="adc_8h" kindref="compound">dev/adc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"><ref refid="structadc__attr__t" kindref="compound">adc_attr_t</ref><sp/>attr;</highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>adc_fd;</highlight></codeline>
+<codeline><highlight class="normal">...</highlight></codeline>
+<codeline><highlight class="normal">ioctl(adc_fd,<sp/><ref refid="group___a_d_c_1gaf9007b82aa0f9af53bbb74796462927e" kindref="member">I_ADC_SETATTR</ref>,<sp/>&amp;attr);</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="155" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___a_d_c_1ga75f23d9a4666337dc9d3308a0eadcc7d" prot="public" static="no">
+        <name>I_ADC_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="156" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___a_d_c_1gadb1e7590af3d13eac9127942749eeb7e" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t adc_action_t</definition>
+        <argsstring></argsstring>
+        <name>adc_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="78" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___a_d_c_1ga33301a686dfa6470fcd5ddae981e889f" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t adc_sample_t</definition>
+        <argsstring></argsstring>
+        <name>adc_sample_t</name>
+        <briefdescription>
+<para>This defines the type of an ADC sample (see adc_read() and adc_write()). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" line="102" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Analog to Digital Converter Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor">#ifndef<sp/>DEV_ADC_H_</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_ADC_H_</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_IOC_IDENT_CHAR<sp/>&apos;a&apos;</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref><sp/><ref refid="structhwpl__action__t" kindref="compound">adc_action_t</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADC_MAX</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="85" refid="group___a_d_c_1ga555a695bf58df062dc03f0e892d95cd7" refkind="member"><highlight class="preprocessor">#define<sp/>ADC_MAX<sp/>0x0000FFF0</highlight></codeline>
+<codeline lineno="86"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="87"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADC_MIN</highlight></codeline>
+<codeline lineno="89"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="94" refid="group___a_d_c_1gaf0098a1eafb8a60a1c65773e1064d595" refkind="member"><highlight class="preprocessor">#define<sp/>ADC_MIN<sp/>0x01</highlight></codeline>
+<codeline lineno="95"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="96"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADC_SAMPLE_T</highlight></codeline>
+<codeline lineno="99"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="102" refid="group___a_d_c_1ga33301a686dfa6470fcd5ddae981e889f" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="group___a_d_c_1ga33301a686dfa6470fcd5ddae981e889f" kindref="member">adc_sample_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="104"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ADC_MAX_FREQ</highlight></codeline>
+<codeline lineno="107"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="113" refid="group___a_d_c_1gaee9ff036d0e34f634b48e953d19d3bc2" refkind="member"><highlight class="preprocessor">#define<sp/>ADC_MAX_FREQ<sp/>200000</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="115"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="120" refid="structadc__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="121" refid="structadc__attr__t_1ac57e591ff27636cd38c89b788a3d1a1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="122" refid="structadc__attr__t_1a52ac5ff57cb395121181220492703e18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>enabled_channels<sp/>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>freq<sp/>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}<sp/><ref refid="structadc__attr__t" kindref="compound">adc_attr_t</ref>;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="group___a_d_c_1gae599932a5a540645042f364aa40335ae" refkind="member"><highlight class="preprocessor">#define<sp/>I_ADC_GETATTR<sp/>_IOCTLR(ADC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>adc_attr_t)</highlight></codeline>
+<codeline lineno="141"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="155" refid="group___a_d_c_1gaf9007b82aa0f9af53bbb74796462927e" refkind="member"><highlight class="preprocessor">#define<sp/>I_ADC_SETATTR<sp/>_IOCTLW(ADC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>adc_attr_t)</highlight></codeline>
+<codeline lineno="156"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_ADC_SETACTION<sp/>_IOCTLW(ADC_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>adc_action_t)</highlight></codeline>
+<codeline lineno="157"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="159"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="161"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>DEV_ADC_H_</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/adc.h"/>
+  </compounddef>
+</doxygen>

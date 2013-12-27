@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="pwm_8h" kind="file">
+    <compoundname>pwm.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="ioctl_8h" local="yes">ioctl.h</includes>
+    <includes local="yes">hwpl/arch.h</includes>
+    <includedby refid="link__protocol_8h" local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</includedby>
+    <incdepgraph>
+      <node id="1606">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h</label>
+        <link refid="pwm.h"/>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>ioctl.h</label>
+        <link refid="ioctl_8h_source"/>
+      </node>
+      <node id="1607">
+        <label>stdint.h</label>
+      </node>
+      <node id="1609">
+        <label>hwpl/arch.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1610">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h</label>
+        <link refid="pwm.h"/>
+        <childnode refid="1611" relation="include">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h</label>
+        <link refid="link__protocol_8h"/>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1612">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/link.h</label>
+        <link refid="link_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structpwm__attr__t" prot="public">pwm_attr_t</innerclass>
+    <innerclass refid="structpwm__reqattr__t" prot="public">pwm_reqattr_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___p_w_m_1gacd6010ca8a3ea373ee538266676a11c5" prot="public" static="no">
+        <name>PWM_IOC_IDENT_CHAR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="79" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_m_1ga3e7c195c23af6c85f7a3a22953ff7920" prot="public" static="no">
+        <name>PWM_DUTY_T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_m_1ga3dd2442122ad11a0e676bd5beaad9fdf" prot="public" static="no">
+        <name>I_PWM_GETATTR</name>
+        <briefdescription>
+<para>Get the PWM attributes (<ref refid="structpwm__attr__t" kindref="compound">pwm_attr_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="141" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_m_1gaa75d927353da20de158da094d1db2419" prot="public" static="no">
+        <name>I_PWM_SETATTR</name>
+        <briefdescription>
+<para>Set the PWM attributes (<ref refid="structpwm__attr__t" kindref="compound">pwm_attr_t</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="145" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_m_1ga661709840fd25e792addc6ba851d7400" prot="public" static="no">
+        <name>I_PWM_SETACTION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="146" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_m_1gac9d07b82e0695639d6ecbbc061b83314" prot="public" static="no">
+        <name>I_PWM_SET</name>
+        <briefdescription>
+<para>See details below. </para>        </briefdescription>
+        <detaileddescription>
+<para>This IOCTL request sets the channel. The ctl argument is the channel to use. For example, <programlisting><codeline><highlight class="normal"><ref refid="structpwm__reqattr__t" kindref="compound">pwm_reqattr_t</ref><sp/>req;</highlight></codeline>
+<codeline><highlight class="normal">req.<ref refid="structpwm__reqattr__t_1a4b2137ff09705679b71adf8c278289b5" kindref="member">channel</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline><highlight class="normal">req.<ref refid="structpwm__reqattr__t_1a898444eaf97c0aa612821bbb99092bd2" kindref="member">duty</ref><sp/>=<sp/>100;</highlight></codeline>
+<codeline><highlight class="normal"><ref refid="group___u_n_i___f_i_l_e___a_c_c_e_s_s_1ga1e7463f2ee53d9da5a2ee24121aed25d" kindref="member">ioctl</ref>(pwm_fd,<sp/><ref refid="group___p_w_m_1gac9d07b82e0695639d6ecbbc061b83314" kindref="member">I_PWM_SET</ref>,<sp/>&amp;req);<sp/></highlight><highlight class="comment">//write<sp/>100<sp/>to<sp/>channel<sp/>0</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="159" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___p_w_m_1ga8dfd020d520fcc66f1437d809be6b302" prot="public" static="no">
+        <name>I_PWM_TOTAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="161" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___p_w_m_1gadb0ac4dd4fa0f375b62eb9892bef454d" prot="public" static="no">
+        <name>pwm_action_event_t</name>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dae7f9a88f48882ed3bea0e97471032ffb" prot="public">
+          <name>PWM_ACTION_EVENT_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>no action </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dabd38c51940b756c66419f1e67d28cb98" prot="public">
+          <name>PWM_ACTION_EVENT_INTERRUPT</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>enable interrupt on event and execute callback </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dab3b89d3b5dda63db98e2ef5d290c7777" prot="public">
+          <name>PWM_ACTION_EVENT_RESET</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>reset the PWM timer on channel event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da446afa9e95d740843b13987d732360b7" prot="public">
+          <name>PWM_ACTION_EVENT_STOP</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>stop the PWM timer on channel event </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da4cf1cc05b6bcb1f19efb1fb1a354dd21" prot="public">
+          <name>PWM_ACTION_EVENT_SETOC</name>
+          <initializer>= (1&lt;&lt;3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>set the OC channel pin to logic 1 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dae340c466bc882f68657e4077d10e5250" prot="public">
+          <name>PWM_ACTION_EVENT_CLROC</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>clear the OC channel pin to logic 0 </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da0fc8c2a0a3e0ac4de8c55ae7b3b10b32" prot="public">
+          <name>PWM_ACTION_EVENT_TOGGLEOC</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>toggle the OC channel pin </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This defines the events for a PWM action. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="97" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="97" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___p_w_m_1gaad9478ab24c5f2deba744bd6697c1cd1" prot="public" static="no">
+        <name>pwm_attr_flags_t</name>
+        <enumvalue id="group___p_w_m_1ggaad9478ab24c5f2deba744bd6697c1cd1a382322b0b1eeb3b35fce8d67b5d5e4fd" prot="public">
+          <name>PWM_ATTR_FLAGS_ACTIVE_HIGH</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PWM output is high until a match and then goes low (default) </para>          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___p_w_m_1ggaad9478ab24c5f2deba744bd6697c1cd1afc960faa75fd295af15350e500d299b1" prot="public">
+          <name>PWM_ATTR_FLAGS_ACTIVE_LOW</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PWM output is low until a match and then goes high </para>          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This lists the flags that can be set when assigning the flags member of <ref refid="structpwm__attr__t" kindref="compound">pwm_attr_t</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="110" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___p_w_m_1gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t pwm_duty_t</definition>
+        <argsstring></argsstring>
+        <name>pwm_duty_t</name>
+        <briefdescription>
+<para>This defines the type for the PWM duty cycle read/write operations. This definition is MCU specific. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="86" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___p_w_m_1ga090028c2fa62a95140c1d5221ef6e988" prot="public" static="no">
+        <type><ref refid="group___p_w_m_1gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6" kindref="member">pwm_duty_t</ref></type>
+        <definition>typedef pwm_duty_t pwm_sample_t</definition>
+        <argsstring></argsstring>
+        <name>pwm_sample_t</name>
+        <briefdescription>
+<para>This defines a PWM sample type. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="91" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___p_w_m_1ga968ace0abf21ba4789227b948fdf404c" prot="public" static="no">
+        <type><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref></type>
+        <definition>typedef hwpl_action_t pwm_action_t</definition>
+        <argsstring></argsstring>
+        <name>pwm_action_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" line="93" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Pulse Width Modulation Header File. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor">#ifndef<sp/>DEV_PWM_H_</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DEV_PWM_H_</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ioctl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/arch.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWM_IOC_IDENT_CHAR<sp/>&apos;p&apos;</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PWM_DUTY_T</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PWM_DUTY_T</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="86" refid="group___p_w_m_1gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="group___p_w_m_1gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6" kindref="member">pwm_duty_t</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="88"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="91" refid="group___p_w_m_1ga090028c2fa62a95140c1d5221ef6e988" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>pwm_duty_t<sp/><ref refid="group___p_w_m_1ga090028c2fa62a95140c1d5221ef6e988" kindref="member">pwm_sample_t</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="structhwpl__action__t" kindref="compound">hwpl_action_t</ref><sp/><ref refid="structhwpl__action__t" kindref="compound">pwm_action_t</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="group___p_w_m_1gadb0ac4dd4fa0f375b62eb9892bef454d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="98" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dae7f9a88f48882ed3bea0e97471032ffb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dae7f9a88f48882ed3bea0e97471032ffb" kindref="member">PWM_ACTION_EVENT_NONE</ref><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="99" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dabd38c51940b756c66419f1e67d28cb98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dabd38c51940b756c66419f1e67d28cb98" kindref="member">PWM_ACTION_EVENT_INTERRUPT</ref><sp/><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="100" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dab3b89d3b5dda63db98e2ef5d290c7777" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dab3b89d3b5dda63db98e2ef5d290c7777" kindref="member">PWM_ACTION_EVENT_RESET</ref><sp/><sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="101" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da446afa9e95d740843b13987d732360b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da446afa9e95d740843b13987d732360b7" kindref="member">PWM_ACTION_EVENT_STOP</ref><sp/><sp/>=<sp/>(1&lt;&lt;2),</highlight></codeline>
+<codeline lineno="102" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da4cf1cc05b6bcb1f19efb1fb1a354dd21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da4cf1cc05b6bcb1f19efb1fb1a354dd21" kindref="member">PWM_ACTION_EVENT_SETOC</ref><sp/><sp/>=<sp/>(1&lt;&lt;3),</highlight></codeline>
+<codeline lineno="103" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dae340c466bc882f68657e4077d10e5250" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454dae340c466bc882f68657e4077d10e5250" kindref="member">PWM_ACTION_EVENT_CLROC</ref><sp/><sp/>=<sp/>(1&lt;&lt;4),</highlight></codeline>
+<codeline lineno="104" refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da0fc8c2a0a3e0ac4de8c55ae7b3b10b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggadb0ac4dd4fa0f375b62eb9892bef454da0fc8c2a0a3e0ac4de8c55ae7b3b10b32" kindref="member">PWM_ACTION_EVENT_TOGGLEOC</ref><sp/><sp/>=<sp/>(1&lt;&lt;5)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}<sp/><ref refid="group___p_w_m_1gadb0ac4dd4fa0f375b62eb9892bef454d" kindref="member">pwm_action_event_t</ref>;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="group___p_w_m_1gaad9478ab24c5f2deba744bd6697c1cd1" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="111" refid="group___p_w_m_1ggaad9478ab24c5f2deba744bd6697c1cd1a382322b0b1eeb3b35fce8d67b5d5e4fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggaad9478ab24c5f2deba744bd6697c1cd1a382322b0b1eeb3b35fce8d67b5d5e4fd" kindref="member">PWM_ATTR_FLAGS_ACTIVE_HIGH</ref><sp/><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="112" refid="group___p_w_m_1ggaad9478ab24c5f2deba744bd6697c1cd1afc960faa75fd295af15350e500d299b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="group___p_w_m_1ggaad9478ab24c5f2deba744bd6697c1cd1afc960faa75fd295af15350e500d299b1" kindref="member">PWM_ATTR_FLAGS_ACTIVE_LOW</ref><sp/><sp/>=<sp/>(1&lt;&lt;1)</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}<sp/><ref refid="group___p_w_m_1gaad9478ab24c5f2deba744bd6697c1cd1" kindref="member">pwm_attr_flags_t</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="structpwm__attr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="121" refid="structpwm__attr__t_1a1664fab32ed7e60a828101349e2068b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>pin_assign<sp/>;</highlight></codeline>
+<codeline lineno="122" refid="structpwm__attr__t_1afa6e533ed6cc37440087bd6014783ee9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>enabled_channels<sp/>;</highlight></codeline>
+<codeline lineno="123" refid="structpwm__attr__t_1a5b4eb669e021aa77c0c4ac3cdbc4e0af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>flags<sp/>;</highlight></codeline>
+<codeline lineno="124" refid="structpwm__attr__t_1abef1ea5b29606b756e293d9cb64e4e9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pwm_duty_t<sp/>top<sp/>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>freq<sp/>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}<sp/><ref refid="structpwm__attr__t" kindref="compound">pwm_attr_t</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="structpwm__reqattr__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">HWPL_PACK<sp/>{</highlight></codeline>
+<codeline lineno="134" refid="structpwm__reqattr__t_1a4b2137ff09705679b71adf8c278289b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>channel<sp/>;</highlight></codeline>
+<codeline lineno="135" refid="structpwm__reqattr__t_1a898444eaf97c0aa612821bbb99092bd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>pwm_duty_t<sp/>duty<sp/>;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}<sp/><ref refid="structpwm__reqattr__t" kindref="compound">pwm_reqattr_t</ref>;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="group___p_w_m_1ga3dd2442122ad11a0e676bd5beaad9fdf" refkind="member"><highlight class="preprocessor">#define<sp/>I_PWM_GETATTR<sp/>_IOCTLR(PWM_IOC_IDENT_CHAR,<sp/>I_GLOBAL_GETATTR,<sp/>pwm_attr_t)</highlight></codeline>
+<codeline lineno="142"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="145" refid="group___p_w_m_1gaa75d927353da20de158da094d1db2419" refkind="member"><highlight class="preprocessor">#define<sp/>I_PWM_SETATTR<sp/>_IOCTLW(PWM_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETATTR,<sp/>pwm_attr_t)</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>I_PWM_SETACTION<sp/>_IOCTLW(PWM_IOC_IDENT_CHAR,<sp/>I_GLOBAL_SETACTION,<sp/>pwm_action_t)</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="159" refid="group___p_w_m_1gac9d07b82e0695639d6ecbbc061b83314" refkind="member"><highlight class="preprocessor">#define<sp/>I_PWM_SET<sp/>_IOCTLW(PWM_IOC_IDENT_CHAR,<sp/>I_GLOBAL_TOTAL<sp/>+<sp/>0,<sp/>pwm_duty_t)</highlight></codeline>
+<codeline lineno="160"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I_PWM_TOTAL<sp/>1</highlight></codeline>
+<codeline lineno="162"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight></codeline>
+<codeline lineno="164"><highlight class="preprocessor"></highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="166"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>DEV_PWM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/dev/pwm.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="group___t_i_m_e" kind="group">
+    <compoundname>TIME</compoundname>
+    <title>Time</title>
+    <innerfile refid="__gettimeofday_8c">_gettimeofday.c</innerfile>
+    <innerfile refid="__itimer_8c">_itimer.c</innerfile>
+    <innerfile refid="__settimeofday_8c">_settimeofday.c</innerfile>
+    <innerfile refid="__times_8c">_times.c</innerfile>
+    <innerfile refid="clocks_8c">clocks.c</innerfile>
+    <innerfile refid="hibernate_8c">hibernate.c</innerfile>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___t_i_m_e_1ga9ea51916fabb2ae47202ba987cb79fd2" prot="public" static="no" mutable="no">
+        <type>struct timeval time_of_day_offset</type>
+        <definition>struct timeval time_of_day_offset HWPL_SYS_MEM</definition>
+        <argsstring></argsstring>
+        <name>HWPL_SYS_MEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="54" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___t_i_m_e_1ga9ea51916fabb2ae47202ba987cb79fd2" prot="public" static="no" mutable="no">
+        <type>struct timeval time_of_day_offset</type>
+        <definition>struct timeval time_of_day_offset HWPL_SYS_MEM</definition>
+        <argsstring></argsstring>
+        <name>HWPL_SYS_MEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___t_i_m_e_1ga0199b4d9e4933690386844deaa949cc4" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t clk_nsec_div</definition>
+        <argsstring></argsstring>
+        <name>clk_nsec_div</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___t_i_m_e_1ga0b0c5c77c61edd8308c4e6d4515dd936" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int microcomputer_osc_freq</definition>
+        <argsstring></argsstring>
+        <name>microcomputer_osc_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="group___t_i_m_e_1ga21dbc38795465db361a0e15da727335a" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int cpu_init_freq</definition>
+        <argsstring></argsstring>
+        <name>cpu_init_freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="28" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___t_i_m_e_1gac84a189c60f38145888a21228b2f0fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gettimeofday</definition>
+        <argsstring>(struct timeval *tp, void *tzp)</argsstring>
+        <name>gettimeofday</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>tzp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the current time of day using the real time clock. The time is written to <emphasis>tp</emphasis>. In this implementation <emphasis>tzp</emphasis> is not used.</para><para><simplesect kind="return"><para>Zero </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gabf1659da0e02c80c0218d2ddd3113afc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gettimeofday_rtc</definition>
+        <argsstring>(struct timeval *ptimeval)</argsstring>
+        <name>gettimeofday_rtc</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>ptimeval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="34" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" bodystart="64" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga5f2e1b4df745a055b71d2b844df11166" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gettimeofday_sched</definition>
+        <argsstring>(struct timeval *ptimeval)</argsstring>
+        <name>gettimeofday_sched</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>ptimeval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="35" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" bodystart="44" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga9407a5597c3642ba1440b12673ccf40a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _gettimeofday</definition>
+        <argsstring>(struct timeval *ptimeval, void *ptimezone)</argsstring>
+        <name>_gettimeofday</name>
+        <param>
+          <type>struct timeval *</type>
+          <declname>ptimeval</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ptimezone</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" line="37" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_gettimeofday.c" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga9749651a934824e5f4de7248a9604604" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _getitimer</definition>
+        <argsstring>(int which, struct itimerval *value)</argsstring>
+        <name>_getitimer</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>struct itimerval *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_itimer.c" line="18" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_itimer.c" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga7c632070d94beead3a3427d087beb3fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _setitimer</definition>
+        <argsstring>(int which, const struct itimerval *value, struct itimerval *ovalue)</argsstring>
+        <name>_setitimer</name>
+        <param>
+          <type>int</type>
+          <declname>which</declname>
+        </param>
+        <param>
+          <type>const struct itimerval *</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>struct itimerval *</type>
+          <declname>ovalue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_itimer.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_itimer.c" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga63f4380a8a6fc801dd9b6a0c3d76034a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void priv_set_time</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_set_time</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" bodystart="26" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gab8183ab48979419262c33d56f6cfed71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int settimeofday</definition>
+        <argsstring>(const struct timeval *tp, const struct timezone *tzp)</argsstring>
+        <name>settimeofday</name>
+        <param>
+          <type>const struct timeval *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>const struct timezone *</type>
+          <declname>tzp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the current time of day to the time stored in <emphasis>tp</emphasis>. The timezone (<emphasis>tzp</emphasis>) is ignored.</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EIO: IO error when setting the real time clock </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga2d9503e2e9ec3fcf19044d64b3260527" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int settimeofday_rtc</definition>
+        <argsstring>(const struct timeval *tp)</argsstring>
+        <name>settimeofday_rtc</name>
+        <param>
+          <type>const struct timeval *</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" line="55" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" bodystart="66" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga6b4e0a39982010c39dbe9bb31cc80448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int _settimeofday</definition>
+        <argsstring>(const struct timeval *tp, const struct timezone *tzp)</argsstring>
+        <name>_settimeofday</name>
+        <param>
+          <type>const struct timeval *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>const struct timezone *</type>
+          <declname>tzp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" line="57" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_settimeofday.c" bodystart="57" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gacea7c68e5517ffc20c7d7b735d23f9ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clock_t</type>
+        <definition>clock_t times</definition>
+        <argsstring>(struct tms *buffer)</argsstring>
+        <name>times</name>
+        <param>
+          <type>struct tms *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function populates <emphasis>buffer</emphasis> with the:<itemizedlist>
+<listitem><para>process user time</para></listitem><listitem><para>system time on behalf of the process</para></listitem><listitem><para>children process user time</para></listitem><listitem><para>children system time on behalf of the process</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: buffer is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga278ffb77806687cb6412761726af4326" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>clock_t</type>
+        <definition>clock_t _times</definition>
+        <argsstring>(struct tms *buffer)</argsstring>
+        <name>_times</name>
+        <param>
+          <type>struct tms *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c" line="32" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/_times.c" bodystart="32" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gac331217c661d1581ba6c043d365a7a2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t convert_clocks_to_nanoseconds</definition>
+        <argsstring>(int32_t clocks)</argsstring>
+        <name>convert_clocks_to_nanoseconds</name>
+        <param>
+          <type>int32_t</type>
+          <declname>clocks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga208eff33da13ddce60c6257eac6d6960" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void task_timer_to_timespec</definition>
+        <argsstring>(struct timespec *tp, uint64_t task_timer)</argsstring>
+        <name>task_timer_to_timespec</name>
+        <param>
+          <type>struct timespec *</type>
+          <declname>tp</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>task_timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="99" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gab2cd29aa41b2b485b571f05ac22d9f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clock_getcpuclockid</definition>
+        <argsstring>(pid_t pid, clockid_t *clock_id)</argsstring>
+        <name>clock_getcpuclockid</name>
+        <param>
+          <type>pid_t</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>clockid_t *</type>
+          <declname>clock_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="31" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga570b5d2b9e8b421674c8ba40199e3f51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clock_gettime</definition>
+        <argsstring>(clockid_t id, struct timespec *tp)</argsstring>
+        <name>clock_gettime</name>
+        <param>
+          <type>clockid_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>struct timespec *</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the time of the <emphasis>id</emphasis> clock where <emphasis>id</emphasis> is one of:<itemizedlist>
+<listitem><para>CLOCK_MONOTONIC</para></listitem><listitem><para>CLOCK_REALTIME</para></listitem><listitem><para>CLOCK_PROCESS_CPUTIME</para></listitem><listitem><para>CLOCK_THREAD_CPUTIME</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>id</emphasis> is not one of the above clocks or tp is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000011"><xreftitle>Todo</xreftitle><xrefdescription><para>This should be an uninterruptable read </para></xrefdescription></xrefsect></para>        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="46" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="46" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga08b1827adc347a71b395c4b3c4f3ce1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clock_getres</definition>
+        <argsstring>(clockid_t id, struct timespec *res)</argsstring>
+        <name>clock_getres</name>
+        <param>
+          <type>clockid_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>struct timespec *</type>
+          <declname>res</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function gets the resolution of the <emphasis>id</emphasis> clock where <emphasis>id</emphasis> is one of:<itemizedlist>
+<listitem><para>CLOCK_MONOTONIC</para></listitem><listitem><para>CLOCK_REALTIME</para></listitem><listitem><para>CLOCK_PROCESS_CPUTIME</para></listitem><listitem><para>CLOCK_THREAD_CPUTIME</para></listitem></itemizedlist>
+</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>EINVAL: <emphasis>id</emphasis> is not one of the above clocks or res is NULL </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="118" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="118" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga80194af2b80b172e07f839c1b63a7cbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clock_settime</definition>
+        <argsstring>(clockid_t id, const struct timespec *tp)</argsstring>
+        <name>clock_settime</name>
+        <param>
+          <type>clockid_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const struct timespec *</type>
+          <declname>tp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is not supported.</para><para><simplesect kind="return"><para>Zero on success or -1 with errno (see <ref refid="group___e_r_r_n_o" kindref="compound">Error Numbers</ref>) set to:<itemizedlist>
+<listitem><para>ENOTSUP: not supported </para></listitem></itemizedlist>
+</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="154" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga8901df9d663ffe98867ddd903fc115cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int set_alarm</definition>
+        <argsstring>(int seconds)</argsstring>
+        <name>set_alarm</name>
+        <param>
+          <type>int</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="30" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" bodystart="53" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gad5a41f354d8677b4594942a5f3309bdf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_powerdown</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_powerdown</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="31" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1ga2f53e30a2a8f5250d9324960a2c9a9ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void priv_hibernate</definition>
+        <argsstring>(void *args)</argsstring>
+        <name>priv_hibernate</name>
+        <param>
+          <type>void *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="32" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" bodystart="38" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gae65665332278b3b47ba519a1aba0222b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hibernate</definition>
+        <argsstring>(int seconds)</argsstring>
+        <name>hibernate</name>
+        <param>
+          <type>int</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function puts the controller in hibernate mode. All CPU and peripheral activity is stopped. The RTC continues running and will wake up the controller after <emphasis>seconds</emphasis> has elapsed. When the controller wakes up, it resumes execution in the same state as before <emphasis><ref refid="group___c_a_o_s_1gae65665332278b3b47ba519a1aba0222b" kindref="member">hibernate()</ref></emphasis> was called.</para><para>Hibernate corresponds to <emphasis>CORE_SLEEP_DEEPSLEEP</emphasis>. It can be woken up before <emphasis>seconds</emphasis> elapsed if other interrupts are enabled such as pin change interrupts. See the device specific documentation for wakeup events for <emphasis>CORE_SLEEP_DEEPSLEEP</emphasis>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of seconds to hibernate (zero to hibernate indefinitely) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="74" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" bodystart="74" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="group___t_i_m_e_1gac149b46cea60ad2b3538a075d91ffacb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void powerdown</definition>
+        <argsstring>(int seconds)</argsstring>
+        <name>powerdown</name>
+        <param>
+          <type>int</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function turns the controller off. The RTC stays on and wakes up the controller after <emphasis>seconds</emphasis> has elapsed. When the controller wakes up from power down, it resets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>seconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of seconds to powerdown (zero to powedown indefinitely) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" line="94" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/hibernate.c" bodystart="94" bodyend="108"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___t_i_m_e_1ga01fa419b83cc7b3f1461985c52c80921" prot="public" static="no">
+        <name>CLOCK_PROCESS_FLAG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" line="20" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/time/clocks.c" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Unix style time functions are available in CoActionOS as documented herein. The C standard library time functions are also available (see <ref refid="group___s_t_d_c" kindref="compound">C Standard Library</ref>). </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

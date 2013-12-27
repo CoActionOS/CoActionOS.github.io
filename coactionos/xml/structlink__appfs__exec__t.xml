@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structlink__appfs__exec__t" kind="struct" prot="public">
+    <compoundname>link_appfs_exec_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a1a959dcf0d58dc4cbc0db93f942332df" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::startup</definition>
+        <argsstring></argsstring>
+        <name>startup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The startup routine </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="613" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1acadc039f321591045123d1268239373c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::code_start</definition>
+        <argsstring></argsstring>
+        <name>code_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The start of memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="614" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="614" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a55d77acf67cbb758a576211d321c9429" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::code_size</definition>
+        <argsstring></argsstring>
+        <name>code_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The size of the code section </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="615" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a453b180c6ff8d218fa81c2965792753f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::ram_start</definition>
+        <argsstring></argsstring>
+        <name>ram_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The start of memory </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="616" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a97e4be71fa94f5181e990a2337918894" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::ram_size</definition>
+        <argsstring></argsstring>
+        <name>ram_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The size of memory (total RAM for process) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="617" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a70bb7bea44dbcc3f3fbd738d74687181" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::data_size</definition>
+        <argsstring></argsstring>
+        <name>data_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of &quot;data&quot; section </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="618" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="618" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a5f39909187a58a35eecf7c9e8fed7855" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::options</definition>
+        <argsstring></argsstring>
+        <name>options</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A pointer to the re-entrancy structure </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="619" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlink__appfs__exec__t_1a4ab922a8743894ebd72b11a1a150c8dc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t link_appfs_exec_t::signature</definition>
+        <argsstring></argsstring>
+        <name>signature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>must be valid to execute the file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="620" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="316">
+        <label>link_appfs_exec_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" line="612" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/link_protocol.h" bodystart="612" bodyend="621"/>
+    <listofallmembers>
+      <member refid="structlink__appfs__exec__t_1a55d77acf67cbb758a576211d321c9429" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>code_size</name></member>
+      <member refid="structlink__appfs__exec__t_1acadc039f321591045123d1268239373c" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>code_start</name></member>
+      <member refid="structlink__appfs__exec__t_1a70bb7bea44dbcc3f3fbd738d74687181" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>data_size</name></member>
+      <member refid="structlink__appfs__exec__t_1a5f39909187a58a35eecf7c9e8fed7855" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>options</name></member>
+      <member refid="structlink__appfs__exec__t_1a97e4be71fa94f5181e990a2337918894" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>ram_size</name></member>
+      <member refid="structlink__appfs__exec__t_1a453b180c6ff8d218fa81c2965792753f" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>ram_start</name></member>
+      <member refid="structlink__appfs__exec__t_1a4ab922a8743894ebd72b11a1a150c8dc" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>signature</name></member>
+      <member refid="structlink__appfs__exec__t_1a1a959dcf0d58dc4cbc0db93f942332df" prot="public" virt="non-virtual"><scope>link_appfs_exec_t</scope><name>startup</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

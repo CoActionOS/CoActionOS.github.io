@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="structpriv__attr__t" kind="struct" prot="public">
+    <compoundname>priv_attr_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structpriv__attr__t_1a77d1f1e93c1c3be69f30fcc30a924c5d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_attr_t::err</definition>
+        <argsstring></argsstring>
+        <name>err</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="22" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__attr__t_1a26197d14f72510eb75f216334c2d3d88" prot="public" static="no" mutable="no">
+        <type>const sysfs_t *</type>
+        <definition>const sysfs_t* priv_attr_t::fs</definition>
+        <argsstring></argsstring>
+        <name>fs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="23" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__attr__t_1a6c46145d5f07ea01ae88617d99287ab1" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* priv_attr_t::handle</definition>
+        <argsstring></argsstring>
+        <name>handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="24" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__attr__t_1aad2e5f962f2ccbaa5f1e8d6faf3db754" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int priv_attr_t::request</definition>
+        <argsstring></argsstring>
+        <name>request</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="25" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structpriv__attr__t_1af5b37f169d85c588c0a6818f29b1ef69" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* priv_attr_t::ctl</definition>
+        <argsstring></argsstring>
+        <name>ctl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="26" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="412">
+        <label>priv_attr_t</label>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" line="21" column="1" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/unistd/ioctl.c" bodystart="21" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structpriv__attr__t_1af5b37f169d85c588c0a6818f29b1ef69" prot="public" virt="non-virtual"><scope>priv_attr_t</scope><name>ctl</name></member>
+      <member refid="structpriv__attr__t_1a77d1f1e93c1c3be69f30fcc30a924c5d" prot="public" virt="non-virtual"><scope>priv_attr_t</scope><name>err</name></member>
+      <member refid="structpriv__attr__t_1a26197d14f72510eb75f216334c2d3d88" prot="public" virt="non-virtual"><scope>priv_attr_t</scope><name>fs</name></member>
+      <member refid="structpriv__attr__t_1a6c46145d5f07ea01ae88617d99287ab1" prot="public" virt="non-virtual"><scope>priv_attr_t</scope><name>handle</name></member>
+      <member refid="structpriv__attr__t_1aad2e5f962f2ccbaa5f1e8d6faf3db754" prot="public" virt="non-virtual"><scope>priv_attr_t</scope><name>request</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

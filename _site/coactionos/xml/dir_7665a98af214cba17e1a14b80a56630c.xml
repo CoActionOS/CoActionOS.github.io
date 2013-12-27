@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7665a98af214cba17e1a14b80a56630c" kind="dir">
+    <compoundname>/Users/tgil/git/CoActionOS/CoActionOS/src/sys/grp</compoundname>
+    <innerfile refid="grp_8c">grp.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/src/sys/grp/"/>
+  </compounddef>
+</doxygen>

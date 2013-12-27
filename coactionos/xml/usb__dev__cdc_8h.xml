@@ -1,0 +1,879 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="usb__dev__cdc_8h" kind="file">
+    <compoundname>usb_dev_cdc.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="yes">hwpl/usb.h</includes>
+    <includes local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/device.h</includes>
+    <includes local="yes">/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h</includes>
+    <includes refid="usb__dev__std_8h" local="yes">usb_dev_std.h</includes>
+    <incdepgraph>
+      <node id="2020">
+        <label>stdbool.h</label>
+      </node>
+      <node id="2014">
+        <label>stdint.h</label>
+      </node>
+      <node id="2013">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h</label>
+        <link refid="usb_dev_cdc.h"/>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2015" relation="include">
+        </childnode>
+        <childnode refid="2016" relation="include">
+        </childnode>
+        <childnode refid="2017" relation="include">
+        </childnode>
+        <childnode refid="2018" relation="include">
+        </childnode>
+      </node>
+      <node id="2017">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/dev/usb.h</label>
+      </node>
+      <node id="2021">
+        <label>usb_dev_typedefs.h</label>
+        <link refid="usb__dev__typedefs_8h_source"/>
+      </node>
+      <node id="2015">
+        <label>hwpl/usb.h</label>
+      </node>
+      <node id="2016">
+        <label>/Users/tgil/git/CoActionOS/CoActionOS/include/device.h</label>
+      </node>
+      <node id="2019">
+        <label>hwpl/types.h</label>
+        <link refid="types_8h_source"/>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2020" relation="include">
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>usb_dev_std.h</label>
+        <link refid="usb__dev__std_8h_source"/>
+        <childnode refid="2014" relation="include">
+        </childnode>
+        <childnode refid="2019" relation="include">
+        </childnode>
+        <childnode refid="2021" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcdc__func__desc__t" prot="public">cdc_func_desc_t</innerclass>
+    <innerclass refid="structcdc__header__func__desc__t" prot="public">cdc_header_func_desc_t</innerclass>
+    <innerclass refid="structcdc__call__mgt__func__desc__t" prot="public">cdc_call_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__abstract__contorl__mgt__func__desc__t" prot="public">cdc_abstract_contorl_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__direct__line__mgt__func__desc__t" prot="public">cdc_direct_line_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__telephone__ringer__func__desc__t" prot="public">cdc_telephone_ringer_func_desc_t</innerclass>
+    <innerclass refid="structcdc__telephone__operational__modes__func__desc__t" prot="public">cdc_telephone_operational_modes_func_desc_t</innerclass>
+    <innerclass refid="structcdc__telephone__call__and__line__reporting__capabilities__func__desc__t" prot="public">cdc_telephone_call_and_line_reporting_capabilities_func_desc_t</innerclass>
+    <innerclass refid="structcdc__union__func__desc__t" prot="public">cdc_union_func_desc_t</innerclass>
+    <innerclass refid="structcdc__country__selection__func__desc__t" prot="public">cdc_country_selection_func_desc_t</innerclass>
+    <innerclass refid="structcdc__usb__terminal__func__desc__t" prot="public">cdc_usb_terminal_func_desc_t</innerclass>
+    <innerclass refid="structcdc__network__channel__terminal__func__desc__t" prot="public">cdc_network_channel_terminal_func_desc_t</innerclass>
+    <innerclass refid="structcdc__protocol__unit__func__desc__t" prot="public">cdc_protocol_unit_func_desc_t</innerclass>
+    <innerclass refid="structcdc__extension__unit__func__desc__t" prot="public">cdc_extension_unit_func_desc_t</innerclass>
+    <innerclass refid="structcdc__multi__channel__mgt__func__desc__t" prot="public">cdc_multi_channel_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__capi__control__mgt__func__desc__t" prot="public">cdc_capi_control_mgt_func_desc_t</innerclass>
+    <innerclass refid="structcdc__ethernet__netorking__func__desc__t" prot="public">cdc_ethernet_netorking_func_desc_t</innerclass>
+    <innerclass refid="structcdc__atm__netorking__func__desc__t" prot="public">cdc_atm_netorking_func_desc_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gafe0ca40b5aacc5c750f952af952583d2" prot="public" static="no">
+        <name>CDC_CS_INTERFACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="26" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gae07e10978a48ff63df33c3aeedf84c3a" prot="public" static="no">
+        <name>CDC_CS_ENDPOINT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="27" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6d486e8708890d149c1090b3eea784ad" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_HEADER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="30" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga3c1d6a3eb2938dadac9948334c2956d6" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_CALL_MGT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="31" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga0255469335ca398084a080f7f5b2af65" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_ABSTRACT_CONTROL_MGT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="32" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga1becddf5d65f66155e96bf729ce2c215" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_DIRECT_LINE_MGT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="33" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gad06009d46d045f55c6a813c4e98f348a" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_RINGER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="34" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga9d4abd50966678957c0b2c7364a06b7e" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_CALL_AND_LINE_STATE_REPORTING_CAPABILITIES</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="35" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga2b58d9d0e2f32cacc0698c95fdc73a30" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_UNION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="36" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gafe5ff5991a5700674ad4f39e668c4131" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_COUNTRY_SEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="37" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf9717c76419d8eca5b561feb18655b29" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_OPERATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="38" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gade526ba60fb4fd54a480e73b99109b22" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_USB_TERMINAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="39" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6e7b1fe7cb15a89344fec97c0f283df3" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_NETWORK_CHANNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="40" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaea2265d44f4a0716e3c7281397b1bb19" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_PROTOCOL_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="41" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gade91ab55665aefb2cc345ca9e71c1763" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_EXTENSION_UNIT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="42" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga20a788c36938b52cb91c9e60e26a278e" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_MULTI_CHANNEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="43" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6de3dda33922779c7a09d0573aa8f751" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_CAPI_CONTROL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="44" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gabb95bcc1cb5b51023fc5af27c71df178" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_ETHERNET_NETWORKING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="45" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga1d60d75385c4280327f1625718d0acbd" prot="public" static="no">
+        <name>CDC_DESCRIPTOR_SUBTYPE_ATM_NETWORKING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="46" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf6eb2e11501b197edb3c6bc3f6b3edbc" prot="public" static="no">
+        <name>SEND_ENCAPSULATED_COMMAND</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="49" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga82f6db248764860f737ab97db4cbdfc3" prot="public" static="no">
+        <name>GET_ENCAPSULATED_RESPONSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="50" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga96a98428a60e80787599adc8fad3a70b" prot="public" static="no">
+        <name>SET_COMM_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="51" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gab156c6a84346f885ecf44eed291fff35" prot="public" static="no">
+        <name>GET_COMM_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="52" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gad0be5fbdf6911ca9546e929984a01364" prot="public" static="no">
+        <name>CLEAR_COMM_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="53" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga22f86d847cab82af27eb136e6fa81165" prot="public" static="no">
+        <name>SET_AUX_LINE_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="54" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf891f75f99be51f7e5ac9b2106a7c2d5" prot="public" static="no">
+        <name>SET_HOOK_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="55" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga7c5efafd23efd9a3b577fe2d8d68daf1" prot="public" static="no">
+        <name>PULSE_SETUP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="56" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga0a5afe8487063eaa33512047112c5958" prot="public" static="no">
+        <name>SEND_PULSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="57" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf25ac476d795149a9a392da3b18f722b" prot="public" static="no">
+        <name>SET_PULSE_TIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="58" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga84a3511d7c477f94d9b36cf75240036c" prot="public" static="no">
+        <name>RING_AUX_JACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="59" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga91a9c047339a1a5918b6a923af6d1af6" prot="public" static="no">
+        <name>SET_LINE_CODING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="60" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6698d8d2ca56fafdc943aec2cede1daf" prot="public" static="no">
+        <name>GET_LINE_CODING</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="61" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga437869c339749d5d011060cd5676659e" prot="public" static="no">
+        <name>SET_CONTROL_LINE_STATE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="62" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gab22359d3d41b78ab1a9e634772b1ffbb" prot="public" static="no">
+        <name>SEND_BREAK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="63" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf4426afb0f95b9c6652fd218e674bb33" prot="public" static="no">
+        <name>SET_RINGER_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="64" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gab7d64060ce61a06a013dfd5ed6432dd0" prot="public" static="no">
+        <name>GET_RINGER_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="65" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga219149bb68ad34029d1fc7e6a150d5a1" prot="public" static="no">
+        <name>SET_OPERATION_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="66" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6bea619e51a88cdf4ebdf0fdb1dae0c2" prot="public" static="no">
+        <name>GET_OPERATION_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="67" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga9fabfa1c9e70f02e53119d81e323ef5e" prot="public" static="no">
+        <name>SET_LINE_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="68" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gac3a7aa22aa81cb3db744f7ed007e1d34" prot="public" static="no">
+        <name>GET_LINE_PARMS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="69" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga77239fd409858ff3437560882ecc5165" prot="public" static="no">
+        <name>DIAL_DIGITS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="70" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gad8aba840e5b555f41482f17b2a0391c5" prot="public" static="no">
+        <name>SET_UNIT_PARAMETER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="71" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaff4d4c80e03d3994ea3bc80fa9299b8f" prot="public" static="no">
+        <name>GET_UNIT_PARAMETER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="72" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga6f4d610bbdf159997654a5825aa1d161" prot="public" static="no">
+        <name>CLEAR_UNIT_PARAMETER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="73" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gacf4c03ed1fbc6f2b1802e8d3e476d6d2" prot="public" static="no">
+        <name>GET_PROFILE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="74" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga4dce35ee8cf2337bab3c90081200a9f6" prot="public" static="no">
+        <name>SET_ETHERNET_MULTICAST_FILTERS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="75" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gae7004b7a93f285f107f3957856d48b2b" prot="public" static="no">
+        <name>SET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="76" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga19246e4a3c92cffeda486069719b0c62" prot="public" static="no">
+        <name>GET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="77" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gadae019242224bbbc9d0f853da3733f1c" prot="public" static="no">
+        <name>SET_ETHERNET_PACKET_FILTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="78" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga7dffeba1576d6660fb930eabc5c515b7" prot="public" static="no">
+        <name>GET_ETHERNET_STATISTIC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="79" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga886455cbacbb221159650697f6b6b4ad" prot="public" static="no">
+        <name>SET_ATM_DATA_FORMAT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="80" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga0a521201eef82fb3d0b6c54331421e10" prot="public" static="no">
+        <name>GET_ATM_DEVICE_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="81" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1gaf627aaac38b2ab259002b26a4d5c08e5" prot="public" static="no">
+        <name>SET_ATM_DEFAULT_VC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="82" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group___u_s_b___d_e_v___c_d_c_1ga4063c673a32b554bf16b8ebef31e5c31" prot="public" static="no">
+        <name>GET_ATM_VC_STATISTICS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="83" column="9" bodyfile="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___u_s_b___d_e_v___c_d_c_1ga17b9e20eb5c101d58bed23608b6ced50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int usb_dev_cdc_if_req</definition>
+        <argsstring>(int event)</argsstring>
+        <name>usb_dev_cdc_if_req</name>
+        <param>
+          <type>int</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h" line="239" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>2011;<sp/>All<sp/>Rights<sp/>Reserved</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Please<sp/>see<sp/>http://www.coactionos.com/license.html<sp/>for</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>licensing<sp/>information.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor">#ifndef<sp/>USB_DEV_CDC_H_</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>USB_DEV_CDC_H_</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;hwpl/usb.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//bDescriptorType<sp/>field</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CDC_CS_INTERFACE<sp/>0x24</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_CS_ENDPOINT<sp/>0x25</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//bDescriptorSubType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_HEADER<sp/>0x00</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_CALL_MGT<sp/>0x01</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_ABSTRACT_CONTROL_MGT<sp/>0x02</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_DIRECT_LINE_MGT<sp/>0x03</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_RINGER<sp/>0x04</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_CALL_AND_LINE_STATE_REPORTING_CAPABILITIES<sp/>0x05</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_UNION<sp/>0x06</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_COUNTRY_SEL<sp/>0x07</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_TELEPHONE_OPERATION<sp/>0x08</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_USB_TERMINAL<sp/>0x09</highlight></codeline>
+<codeline lineno="40"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_NETWORK_CHANNEL<sp/>0x0A</highlight></codeline>
+<codeline lineno="41"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_PROTOCOL_UNIT<sp/>0x0B</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_EXTENSION_UNIT<sp/>0x0C</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_MULTI_CHANNEL<sp/>0x0D</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_CAPI_CONTROL<sp/>0x0E</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_ETHERNET_NETWORKING<sp/>0x0F</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CDC_DESCRIPTOR_SUBTYPE_ATM_NETWORKING<sp/>0x10</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//Interface<sp/>Class<sp/>specific<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEND_ENCAPSULATED_COMMAND<sp/>0x00</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_ENCAPSULATED_RESPONSE<sp/>0x01</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_COMM_FEATURE<sp/>0x02</highlight></codeline>
+<codeline lineno="52"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_COMM_FEATURE<sp/>0x03</highlight></codeline>
+<codeline lineno="53"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLEAR_COMM_FEATURE<sp/>0x04</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_AUX_LINE_STATE<sp/>0x10</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_HOOK_STATE<sp/>0x11</highlight></codeline>
+<codeline lineno="56"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PULSE_SETUP<sp/>0x12</highlight></codeline>
+<codeline lineno="57"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEND_PULSE<sp/>0x13</highlight></codeline>
+<codeline lineno="58"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_PULSE_TIME<sp/>0x14</highlight></codeline>
+<codeline lineno="59"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>RING_AUX_JACK<sp/>0x15</highlight></codeline>
+<codeline lineno="60"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_LINE_CODING<sp/>0x20</highlight></codeline>
+<codeline lineno="61"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_LINE_CODING<sp/>0x21</highlight></codeline>
+<codeline lineno="62"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_CONTROL_LINE_STATE<sp/>0x22</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SEND_BREAK<sp/>0x23</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_RINGER_PARMS<sp/>0x30</highlight></codeline>
+<codeline lineno="65"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_RINGER_PARMS<sp/>0x31</highlight></codeline>
+<codeline lineno="66"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_OPERATION_PARMS<sp/>0x32</highlight></codeline>
+<codeline lineno="67"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_OPERATION_PARMS<sp/>0x33</highlight></codeline>
+<codeline lineno="68"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_LINE_PARMS<sp/>0x34</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_LINE_PARMS<sp/>0x35</highlight></codeline>
+<codeline lineno="70"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>DIAL_DIGITS<sp/>0x36</highlight></codeline>
+<codeline lineno="71"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_UNIT_PARAMETER<sp/>0x37</highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_UNIT_PARAMETER<sp/>0x38</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CLEAR_UNIT_PARAMETER<sp/>0x39</highlight></codeline>
+<codeline lineno="74"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_PROFILE<sp/>0x3A</highlight></codeline>
+<codeline lineno="75"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_ETHERNET_MULTICAST_FILTERS<sp/>0x40</highlight></codeline>
+<codeline lineno="76"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER<sp/>0x41</highlight></codeline>
+<codeline lineno="77"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_ETHERNET_POWER_MANAGEMENT_PATTERNFILTER<sp/>0x42</highlight></codeline>
+<codeline lineno="78"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_ETHERNET_PACKET_FILTER<sp/>0x43</highlight></codeline>
+<codeline lineno="79"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_ETHERNET_STATISTIC<sp/>0x44</highlight></codeline>
+<codeline lineno="80"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_ATM_DATA_FORMAT<sp/>0x50</highlight></codeline>
+<codeline lineno="81"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_ATM_DEVICE_STATISTICS<sp/>0x51</highlight></codeline>
+<codeline lineno="82"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>SET_ATM_DEFAULT_VC<sp/>0x52</highlight></codeline>
+<codeline lineno="83"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GET_ATM_VC_STATISTICS<sp/>0x53</highlight></codeline>
+<codeline lineno="84"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>functionSpecificData[];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/>cdc_func_desc_t;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>bcdCDC;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/>cdc_header_func_desc_t;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDataInterface;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}<sp/>cdc_call_mgt_func_desc_t;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}<sp/>cdc_abstract_contorl_mgt_func_desc_t;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}<sp/>cdc_direct_line_mgt_func_desc_t;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bRingerVolSteps;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bNumRingerPatterns;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}<sp/>cdc_telephone_ringer_func_desc_t;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}<sp/>cdc_telephone_operational_modes_func_desc_t;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}<sp/>cdc_telephone_call_and_line_reporting_capabilities_func_desc_t;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bMasterInterface;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bSlaveInterface[];</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}<sp/>cdc_union_func_desc_t;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>iCountryCodeRelDate;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>wCountryCode[];</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}<sp/>cdc_country_selection_func_desc_t;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bEntityId;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bInInterfaceNo;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bOutInterfaceNo;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmOptions;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bChildId[];</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}<sp/>cdc_usb_terminal_func_desc_t;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bEntityId;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>iName;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bChannelIndex;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bPhysicalInterface;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}<sp/>cdc_network_channel_terminal_func_desc_t;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bEntityId;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bProtocol;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bChildId[];</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}<sp/>cdc_protocol_unit_func_desc_t;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bEntityId;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bExtensionCode;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>iName;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bChildId[];</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}<sp/>cdc_extension_unit_func_desc_t;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}<sp/>cdc_multi_channel_mgt_func_desc_t;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmCapabilities;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}<sp/>cdc_capi_control_mgt_func_desc_t;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>iMACAddress;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>bmEthernetStatistics;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>wMaxSegmentSize;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>wNumberMCFilters;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bNumberPowerFilters;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}<sp/>cdc_ethernet_netorking_func_desc_t;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bFunctionLength;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorType;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bDescriptorSubType;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>iEndSystemIdentifier;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmDataCapabilities;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>bmATMDeviceStatistics;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>wType2MaxSegmentSize;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>wType3MaxSegmentSize;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>wMaxVC;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal">}<sp/>cdc_atm_netorking_func_desc_t;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;usb_dev_std.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>usb_dev_cdc_if_req(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>event);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>USB_DEV_CDC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="242"><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/tgil/git/CoActionOS/CoActionOS/include/usb_dev_cdc.h"/>
+  </compounddef>
+</doxygen>
