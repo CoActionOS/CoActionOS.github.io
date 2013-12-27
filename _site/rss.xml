@@ -5,8 +5,8 @@
         <description>CoActionOS - CoActionOS, Inc</description>
         <link>http://Coactionos.github.io</link>
         <link>http://Coactionos.github.io</link>
-        <lastBuildDate>2013-12-26T19:47:51-07:00</lastBuildDate>
-        <pubDate>2013-12-26T19:47:51-07:00</pubDate>
+        <lastBuildDate>2013-12-26T20:20:14-07:00</lastBuildDate>
+        <pubDate>2013-12-26T20:20:14-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -1291,7 +1291,7 @@ in later lessons. &lt;/div&gt;
 
         <item>
                 <title>Using Op Amps in Embedded Design</title>
-                <description>&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. &lt;img src=&quot;/images/inverting-opamp.png&quot; alt=&quot;Inverting Op Amp&quot; title=&quot;Inverting Op Amp&quot; /&gt;&lt;/p&gt;
+                <description>&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. &lt;img class=&#39;post_image&#39; src=&#39;/images/inverting-opamp.png&#39; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction_to_opamps&quot;&gt;Introduction to Op-Amps&lt;/h2&gt;
 

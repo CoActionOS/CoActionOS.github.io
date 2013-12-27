@@ -7,7 +7,8 @@ tags : [embedded, tips]
 ---
 
 Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems.
-![Inverting Op Amp]({{ BASE_PATH }}/images/inverting-opamp.png "Inverting Op Amp")
+<img class="post_image" src="{{ BASE_PATH }}/images/inverting-opamp.png" />
+
 
 {{ excerpt_separator }}
 

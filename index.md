@@ -4,7 +4,7 @@ title: CoActionOS
 tagline: Embedded Development
 ---
 
-<img class="post_image" src="{{ BASE_PATH }}/images/coactionos-main-wide.png" />
+<img class="post_image" src="{{ BASE_PATH }}/images/CoActionOS-Logo.svg" />
 
 CoActionOS is a real-time, embedded operating system for the ARM Cortex-M3 architecture. It features:
 

@@ -27,6 +27,10 @@ $( document ).ready(function() {
 	
 	$("table.params").addClass("table");
 	$("div.ingroups").wrapInner("<small></small>");
+	$("div.levels").css("margin", "0.5em");
+	$("div.levels > span").addClass("btn btn-default btn-xs");
+	$("div.levels > span").css("margin-right", "0.25em");
+	
 	$("table.directory").addClass("table table-striped");
 	$("div.summary > a").addClass("btn btn-default btn-xs");
 	$("table.fieldtable").addClass("table");
