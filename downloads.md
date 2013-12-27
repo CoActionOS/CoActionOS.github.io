@@ -13,4 +13,4 @@ group: navigation
 
 ## Binary Downloads
 
-* [CoActionOS Link (Desktop Interface Program) and Compiler]({% post_url 2013-12-24-Get-the-Software %})
+* [CoActionOS Link (Desktop Interface Program) and Compiler]({% post_url 2013-12-24-Getting-Started-Get-the-Software %})

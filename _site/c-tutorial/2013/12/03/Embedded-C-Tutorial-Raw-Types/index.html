@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Raw Types</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+</head>
+
+<body style="min-height: 200px; padding-top: 50px;">
+
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav">
+							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="content" id="content">
+		<div class="container">
+			<div class="row" style="margin-top: 20px;">
+				<div class="col-md-offset-1 col-md-7 panel panel-default"><div class="panel-body">
+<div class="page-header">
+	<h1>
+		Raw Types <small>Embedded C Tutorial</small>
+	</h1>
+</div>
+
+<div class="content"><h2 id="using_data_in_programming">Using Data in Programming</h2>
+
+<p>Programs are created to do something useful–in embedded systems, to make a device or gadget do something useful. As a means to an end, the program uses data and operations. For example, a motor’s position is represented as data in a program; the motor’s speed, also represented as data, can be calculated using various operations given the change in motor positions for a given period of time. This tutorial introduces C raw data types. The following code snippet illustrates how to use data in C and introduces the raw data type int.</p>
+<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;stdlib.h&gt; </span><span class='c1'>//this declares exit()</span>
+<span class='cp'>#include &lt;unistd.h&gt; </span><span class='c1'>//this contains usleep()</span>
+<span class='cp'>#include &quot;motor.h&quot; </span><span class='c1'>//this is a fictitious header than contains get_motor_position()</span>
+<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span>
+     <span class='cm'>/* This is where the data variables are declared--All </span>
+<span class='cm'>     variables must be declared before use Since they are </span>
+<span class='cm'>     declared inside main&#39;s {}, they are local to the </span>
+<span class='cm'>     main function */</span>
+     <span class='kt'>int</span> <span class='n'>motor_pos0</span><span class='p'>,</span> <span class='n'>motor_pos1</span><span class='p'>;</span>  <span class='c1'>//commas can separate variables</span>
+     <span class='kt'>int</span> <span class='n'>motor_speed</span><span class='p'>;</span> <span class='c1'>//or just use a new statement</span>
+ 
+     <span class='n'>motor_pos0</span> <span class='o'>=</span> <span class='n'>get_motor_position</span><span class='p'>();</span>  <span class='c1'>//assign position to motor_pos0</span>
+     <span class='n'>usleep</span><span class='p'>(</span><span class='mi'>1000</span><span class='p'>);</span>	<span class='c1'>//wait for 1ms (1000 microseconds)</span>
+     <span class='n'>motor_pos1</span> <span class='o'>=</span> <span class='n'>get_motor_position</span><span class='p'>();</span>  <span class='c1'>//assign the updated motor position</span>
+     <span class='c1'>//now use the positions values and some operators to calculate the speed</span>
+     <span class='n'>motor_speed</span> <span class='o'>=</span> <span class='p'>(</span><span class='n'>motor_pos1</span> <span class='o'>-</span> <span class='n'>motor_pos0</span><span class='p'>)</span> <span class='o'>/</span> <span class='mi'>1000</span><span class='p'>;</span>
+     <span class='n'>exit</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>);</span> <span class='c1'>//exit the program</span>
+<span class='p'>}</span>
+</code></pre></div>
+<h2 id="data_types">Data Types</h2>
+
+<p>Raw data types are represented by C keywords. Due to the nature of binary numbers, raw data types in C come in eight-bit chunks. Eight-bit chunks are combined to make-up the various raw data types in C: char, short, int, and long. The following is a list of the raw data types in C.</p>
+
+<ul>
+<li>8 bits wide
+<ul>
+<li>unsigned char 0 to 255</li>
+
+<li>signed char -128 to 127</li>
+
+<li>char either signed or unsigned depending on the implementation and the usage; typically used to represent characters in a string</li>
+</ul>
+</li>
+
+<li>(At least) 16 bits wide
+<ul>
+<li>unsigned short 0 to 65535</li>
+
+<li>or unsigned short int</li>
+
+<li>signed short -32768 to 32767</li>
+
+<li>or short, short int, signed short int</li>
+</ul>
+</li>
+
+<li>(At least) 32 bits wide
+<ul>
+<li>unsigned long 0 to 4294967296 (just over 4 billion)</li>
+
+<li>or unsigned long int</li>
+
+<li>signed long -2147483648 to 2147483647 (about -2 billion to 2 billion)</li>
+
+<li>or signed long int, long, long int</li>
+</ul>
+</li>
+
+<li>(At least) 64 bits wide
+<ul>
+<li>unsigned long long 0 to 1.8446744E+19 or 2^64 (appropriately named long, long number)</li>
+
+<li>or unsigned long long int</li>
+
+<li>signed long long -2^63 to (2^63)-1</li>
+
+<li>or signed long long int, long long, long long int</li>
+</ul>
+</li>
+
+<li>At least 16-bits but highly architecture dependent
+<ul>
+<li>unsigned int 0 to architecture dependent value</li>
+
+<li>int is architecture optimized so 32-bit architectures use 32-bit integers</li>
+
+<li>Since int is at least 16-bits, 8-bit architectures are not optimized to use int</li>
+
+<li>signed int or int -2^(architecture-1) to (2^(architecture-1)) - 1</li>
+</ul>
+</li>
+
+<li>Floating point types
+<ul>
+<li>float single precision, 32-bits (most common on embedded architectures)</li>
+
+<li>double double precision, 64-bits</li>
+
+<li>long double extending precision 80-bits</li>
+</ul>
+</li>
+</ul>
+
+<p>The above data types can introduce ambiguity when porting code from one architecture to the next. To help eliminate the ambiguity, the C99 standard introduced the stdint.h header. It defines the following types:</p>
+
+<ul>
+<li>uint8_t, int8_t: unsigned, signed 8-bit integer</li>
+
+<li>uint16_t, int16_t: unsigned, signed 16-bit integer</li>
+
+<li>uint32_t, int32_t: unsigned, signed 32-bit integer</li>
+
+<li>uint64_t, int64_t: unsigned, signed 64-bit integer</li>
+</ul>
+
+<p>These types are not raw data types but type definitions (explained later) derived from the raw data types.</p>
+
+<p>The raw floating-point types must be taken in context. Most embedded processors do not natively support floating point math. This means the compiler must use software to support these types. On small, 8-bit architectures, floating point math takes up too much code space and execution time to be practical. For 32-bit systems, the code space is still substantial, but the execution time is reasonable for some applications. Even in this case, it is not wise (or even supported in some cases) to use double or long double types.</p>
+
+<h2 id="take_away">Take Away</h2>
+
+<p>Raw types in C come in integer and floating point types. Integers are much more prevalent on embedded systems than floating point values. The int type is architecture optimized and possibly the most commonly used type. The C99 standard introduced a header that eliminates ambiguity on integer types using int8_t, int32_t, etc.</p></div>
+
+<hr>
+
+<ul class="nav nav-pills">
+	
+	
+
+
+  
+     
+    	<li><a href="/tags.html#embedded-ref">embedded <span class="badge">12</span></a></li>
+     
+    	<li><a href="/tags.html#tips-ref">tips <span class="badge">12</span></a></li>
+     
+    	<li><a href="/tags.html#c-tutorial-ref">c-tutorial <span class="badge">10</span></a></li>
+    
+  
+
+
+
+</ul>
+
+
+<div class="pagination">
+	<center>
+		 <a href="/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions" type="button" class="btn btn-primary"><i
+			class="fa fa-arrow-left"></i></a>  <a href="/archive.html" type="button" class="btn btn-primary"><i class="fa fa-archive"></i></a> 
+		 <a href="/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators" type="button" class="btn btn-primary"><i class="fa fa-arrow-right"></i></a>
+		
+	</center>
+</div>
+
+
+</div></div>
+				<div class="col-md-3">
+				
+
+					<h3>c-tutorial</h3>
+					<ul class="nav nav-pills nav-stacked">
+						  
+						
+
+
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types" class="active">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	
+      
+    
+  
+
+
+
+					</ul>
+					
+					
+					
+ 				  
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+

@@ -84,10 +84,19 @@
 
 					<h3>{{ page.category }}</h3>
 					<ul class="nav nav-pills nav-stacked">
-						{% assign pages_list = site.categories[page.category] %}  
+						{% assign pages_list = site.categories[page.category] | sort:"name" %}  
 						{% include JB/pages_list %}
 					</ul>
- 
+					
+					{% if page.category == "embedded" %}
+						<h3>Embedded C Tutorial</h3>
+						<ul class="nav nav-pills nav-stacked">
+							{% assign pages_list = site.categories["c-tutorial"] | sort:"name" %}  
+							{% include JB/pages_list %}
+						</ul>
+					
+					{% endif %}
+					
  				{% endunless %}  
 				</div>
 			</div>
