@@ -26,6 +26,7 @@ $( document ).ready(function() {
 	$("#nav-path > ul").addClass("breadcrumb");
 	
 	$("table.params").addClass("table");
+	$("div.ingroups").wrapInner("<small></small>");
 	$("table.directory").addClass("table table-striped");
 	$("div.summary > a").addClass("btn btn-default btn-xs");
 	$("table.fieldtable").addClass("table");
