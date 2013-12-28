@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Get the Software
-category: getting-started
+category: Getting Started
 tagline: SDK Download
-tags : [coaction, getting started, downloads]
+tags: [coaction, getting-started, downloads]
 ---
 
 There are two software packages used with CoActionOS for Windows, Mac, and Linux

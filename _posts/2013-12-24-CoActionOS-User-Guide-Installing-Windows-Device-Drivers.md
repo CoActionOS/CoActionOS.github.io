@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Installing Windows Device Drivers
-category: coactionos-user-guides
+category: User Guides
 tagline: CoActionOS User Guide
 tags : [coaction, user-guide]
 ---

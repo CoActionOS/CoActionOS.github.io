@@ -20,17 +20,17 @@ you don't have to integrate your application with the operating system.  You jus
 application using the free SDK and install it on any system running CoActionOS.
 
 <ul>
-{% assign pages_list = site.categories.getting-started %} {% include JB/pages_list %}
+{% assign pages_list = site.categories.["getting started"] %} {% include JB/pages_list %}
 </ul>
 
 ### Tutorials
 
 <ul>
-{% assign pages_list = site.categories.coactionos-tutorials %} {% include JB/pages_list %}
+{% assign pages_list = site.categories.["coactionos tutorials"] | sort:"name" %} {% include JB/pages_list %}
 </ul>
 
 ### User Guides
 
 <ul>
-{% assign pages_list = site.categories.coactionos-user-guides %} {% include JB/pages_list %}
+{% assign pages_list = site.categories.["user guides"] %} {% include JB/pages_list %}
 </ul>

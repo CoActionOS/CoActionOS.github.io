@@ -2,7 +2,7 @@
 layout: post
 title: Using Op Amps in Embedded Design
 tagline: Embedded Design Tips
-category: embedded
+category: Embedded Design Tips
 tags : [embedded, tips]
 ---
 

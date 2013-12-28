@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Strings Tutorial
-category: coactionos-tutorials
+category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
 number: 06

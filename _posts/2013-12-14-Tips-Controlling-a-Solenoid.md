@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Controlling a Solenoid
-category: embedded
+category: Embedded Design Tips
 tagline: Solenoid Control
 tags : [embedded, tips, control]
 image : solenoid-ckt.png
@@ -11,7 +11,6 @@ image : solenoid-ckt.png
 Many products use solenoids to open and close valves. A microcontroller can control solenoids programmatically using a GPIO pin and a simple circuit. 
 
 {{ excerpt_separator }}
-
 
 ## Circuit
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Device Driver Development
-category: coactionos-user-guides
+category: User Guides
 tagline: CoActionOS User Guide
 tags : [coaction, user-guide]
 ---

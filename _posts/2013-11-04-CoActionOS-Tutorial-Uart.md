@@ -1,9 +1,9 @@
 ---
 layout: post
 title: UART Tutorial
-category: coactionos-tutorials
+category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial]
+tags : [coaction, tutorial, serial]
 number: 04
 ---
 A UART is used to transmit data serially. CoActionOS Applib makes 

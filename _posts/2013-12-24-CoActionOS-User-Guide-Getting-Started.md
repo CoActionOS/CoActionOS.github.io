@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started
-category: coactionos-user-guides
+category: User Guides
 tagline: CoActionOS User Guide
 tags : [coaction, user-guide]
 ---

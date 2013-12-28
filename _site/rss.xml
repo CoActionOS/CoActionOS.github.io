@@ -5,8 +5,8 @@
         <description>CoActionOS - CoActionOS, Inc</description>
         <link>http://Coactionos.github.io</link>
         <link>http://Coactionos.github.io</link>
-        <lastBuildDate>2013-12-27T12:12:58-07:00</lastBuildDate>
-        <pubDate>2013-12-27T12:12:58-07:00</pubDate>
+        <lastBuildDate>2013-12-27T17:49:12-07:00</lastBuildDate>
+        <pubDate>2013-12-27T17:49:12-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -55,8 +55,8 @@
 cd /
 sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;/pre&gt;</description>
-                <link>http://Coactionos.github.io/getting-started/2013/12/24/Getting-Started-Get-the-Software</link>
-                <guid>http://Coactionos.github.io/getting-started/2013/12/24/Getting-Started-Get-the-Software</guid>
+                <link>http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software</link>
+                <guid>http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -87,8 +87,8 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;/ol&gt;
 
 &lt;p&gt;These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
-                <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -113,8 +113,8 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;h3 id=&quot;build_and_install_your_first_application&quot;&gt;Build and Install Your First Application&lt;/h3&gt;
 
 &lt;p&gt;Read the [[CoActionOS Tutorial–First Project|first project tutorial]].&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</link>
-                <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</guid>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -225,8 +225,8 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
 &lt;li&gt;&lt;em&gt;state&lt;/em&gt; allows the driver developer to provide any additional volatile data&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</link>
-                <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</guid>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -343,8 +343,8 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;State machines are a great way of designing complex firmware programs. Using the Applib “SMach”:/coactionos-applib/html/class_s_mach.html and “State”:/coactionos-applib/html/class_state.html classes makes doing so quick and easy. You can get started now by downloading the attached “state machine project”:/attachments/download/367/state-machine.zip.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</link>
-                <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</guid>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -407,8 +407,8 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
 &lt;li&gt;Right click on the project and click “Index -&amp;gt; Rebuild”&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
-                <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -442,8 +442,8 @@ all three ports.&lt;/div&gt;
 &lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Once you have the devices and filesystems you want, you just hit the hammer in Eclipse to build the kernel binary. You can then use CoActionOS Link to install the binary.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</link>
-                <guid>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</guid>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</guid>
                 <pubDate>2013-12-24T00:00:00-07:00</pubDate>
         </item>
 
@@ -518,8 +518,8 @@ all three ports.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Op-amps are great for analog signals in digital designs (especially rail-to-rail op-amps). The ideal op-amp as well as knowledge of basic electrical principles greatly simplify designing and integrating op-amps in your embedded designs.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</link>
-                <guid>http://Coactionos.github.io/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</guid>
+                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</link>
+                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</guid>
                 <pubDate>2013-12-14T00:00:00-07:00</pubDate>
         </item>
 
@@ -546,8 +546,8 @@ all three ports.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Controlling solenoids with microcontrollers is simple. Remember to ensure the MOSFET has sufficient current capability to activate the solenoid, include the protection diode to prevent the solenoid from damaging the MOSFET, and include a pull-down resistor on the GPIO line if the microcontroller doesn’t drive the line low at startup.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded/2013/12/14/Tips-Controlling-a-Solenoid</link>
-                <guid>http://Coactionos.github.io/embedded/2013/12/14/Tips-Controlling-a-Solenoid</guid>
+                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid</link>
+                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid</guid>
                 <pubDate>2013-12-14T00:00:00-07:00</pubDate>
         </item>
 
@@ -574,19 +574,11 @@ all three ports.&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;++ pre increment&lt;/li&gt;
 
-&lt;li&gt;– pre decrement&lt;/li&gt;
+&lt;li&gt;&lt;span /&gt; pre decrement&lt;/li&gt;
 
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;unary plus&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;+ unary plus&lt;/li&gt;
 
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;unary minus&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;- unary minus&lt;/li&gt;
 
 &lt;li&gt;! logical not&lt;/li&gt;
 
@@ -714,8 +706,8 @@ all three ports.&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;, comma (evaluates to the value of the second argument)&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</guid>
                 <pubDate>2013-12-11T00:00:00-07:00</pubDate>
         </item>
 
@@ -810,8 +802,8 @@ all three ports.&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;sizeof&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</guid>
                 <pubDate>2013-12-10T00:00:00-07:00</pubDate>
         </item>
 
@@ -942,8 +934,8 @@ sizeof(w) is 4, sizeof(z) is 4
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;Compound data types in C give the programmer a powerful set of tools for organizing data. The C struct is the most common compound data type and organizes data contiguously in memory. A union allows the same place in memory to be treated as different types. An enum defines a list of values but acts more like a macro (see #define) than a compound data type. Users can also create customized types using the typedef keyword. Finally, the sizeof keyword determines the amount of memory used by a variable or type.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</guid>
                 <pubDate>2013-12-09T00:00:00-07:00</pubDate>
         </item>
 
@@ -1040,8 +1032,8 @@ sizeof(w) is 4, sizeof(z) is 4
 &lt;h3 id=&quot;take_away&quot;&gt;Take Away&lt;/h3&gt;
 
 &lt;p&gt;C language compilers always preprocess the code and execute any preprocessor directives during that stage. The most commonly used preprocessor directives (especially among beginners) are #include and #define. #include is simple to use; you just need to remember quotes for local files and less/greater than symbols for system files. #define is handy for code maintenance. If a value is fixed, it should be defined as a macro so that if it needs to be changed, it only needs to be changed in one location. Lastly, if you create your own header file, it is imperative that you use a header guard of the form: #ifndef NAME_H_, #define NAME_H_, … #endif.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</guid>
                 <pubDate>2013-12-08T00:00:00-07:00</pubDate>
         </item>
 
@@ -1248,8 +1240,8 @@ xlist[4] = 8 and 8
 &lt;h3 id=&quot;take_away&quot;&gt;Take Away&lt;/h3&gt;
 
 &lt;p&gt;Arrays and pointers are powerful tools in C. Arrays store lists or matrices of data while pointers access the memory of a variable rather than the variable itself. Though pointers can be difficult to master; it is very important that new programmers take the time to learn them for two reasons. First, they are used a lot in the standard C library and through many available libraries. Second, they can cause problems (crashing) if used incorrectly.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</guid>
                 <pubDate>2013-12-07T00:00:00-07:00</pubDate>
         </item>
 
@@ -1453,8 +1445,8 @@ xlist[4] = 8 and 8
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;Flow control in C programs is broken down to conditions and loops. C’s if/else clauses and switch/case clauses are the main tools for conditionally executing statements in C. Two mechanisms are available for loops: the for loop and the while loop.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</guid>
                 <pubDate>2013-12-05T00:00:00-07:00</pubDate>
         </item>
 
@@ -1744,8 +1736,8 @@ xlist[4] = 8 and 8
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;The C language includes many mathematical operators for doing basic arithmetic, comparisons, and binary operations. The order of operations is critical in C for correctly evaluating expressions. Sometimes understanding this order can be difficult when skimming through code, but adding parentheses can help to make code easier to read and avoid unintended evaluation orders.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</guid>
                 <pubDate>2013-12-04T00:00:00-07:00</pubDate>
         </item>
 
@@ -1866,8 +1858,8 @@ xlist[4] = 8 and 8
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;Raw types in C come in integer and floating point types. Integers are much more prevalent on embedded systems than floating point values. The int type is architecture optimized and possibly the most commonly used type. The C99 standard introduced a header that eliminates ambiguity on integer types using int8_t, int32_t, etc.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</guid>
                 <pubDate>2013-12-03T00:00:00-07:00</pubDate>
         </item>
 
@@ -1901,7 +1893,7 @@ xlist[4] = 8 and 8
 &lt;p&gt;The name of the function must be a valid C identifier. By convention, user-defined identifiers should not start with an underscore. It is good practice to use descriptive identifiers. Actually, my_first_function() is a poor name because it does not inform the programmer what the function does. A better name is add_xy() because the function returns the sum of the two parameters.&lt;/p&gt;
 &lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; Valid C identifiers must start with a letter or 
 underscore and be composed of case-sensitive letters, numbers, and underscores as 
-well as not be a &lt;a href=&#39;/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference&#39;&gt;C keyword&lt;/a&gt;.&lt;/div&gt;
+well as not be a &lt;a href=&#39;/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference&#39;&gt;C keyword&lt;/a&gt;.&lt;/div&gt;
 &lt;h2 id=&quot;parameters&quot;&gt;Parameters&lt;/h2&gt;
 
 &lt;p&gt;The naming rules for parameters are the same for functions in that they must be C identifiers. A function can have any number of parameters passed to it of any type. The example above has two parameters of type int. Within the body of a function, a parameter acts as a local variable. It can be both read and written. However, any changes to the parameters are lost when the function returns. In the example above, the variable w within main() is not affected by the x = 0 statement within my_first_function() because a copy of w is passed to the function rather than w itself.&lt;/p&gt;
@@ -1923,8 +1915,8 @@ well as not be a &lt;a href=&#39;/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyw
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;A function is a primary building block in C. A function consists of a prototype, name, return type, parameters, and body. The function name as well as the parameters must be valid C identifiers consisting only of letters, numbers, and underscores. They cannot start with a number and should not start with an underscore. As a programmer, you will create, use, and re-use many, many functions.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</guid>
                 <pubDate>2013-12-02T00:00:00-07:00</pubDate>
         </item>
 
@@ -1982,8 +1974,8 @@ in later lessons. &lt;/div&gt;
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;The important things to learn here are that C is a modular programming language consisting of functions and data; the OS entry point for a C program is the main() function; the basic function used for text output is printf() which is used extensively in C during development for debugging.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</link>
-                <guid>http://Coactionos.github.io/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</guid>
+                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</link>
+                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</guid>
                 <pubDate>2013-12-01T00:00:00-07:00</pubDate>
         </item>
 
@@ -2143,8 +2135,8 @@ legend(&quot;Set Point&quot;, &quot;Speed&quot;, &quot;Duty*100&quot;);
 print(&quot;output.png&quot;, &quot;-dpng&quot;);
 &lt;/pre&gt;
 &lt;p&gt;motor-demo-plot.png&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</guid>
                 <pubDate>2013-11-11T00:00:00-07:00</pubDate>
         </item>
 
@@ -2197,8 +2189,8 @@ Thread 0 is completing
 Thread 1 is completing
 done
 &lt;/pre&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Thread</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Thread</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</guid>
                 <pubDate>2013-11-10T00:00:00-07:00</pubDate>
         </item>
 
@@ -2265,8 +2257,8 @@ done
 	&lt;span class=&#39;n&#39;&gt;printf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;SIGUSR1 has been handled (triggered by tmr0)&lt;/span&gt;&lt;span class=&#39;se&#39;&gt;\n&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Signals</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Signals</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</guid>
                 <pubDate>2013-11-10T00:00:00-07:00</pubDate>
         </item>
 
@@ -2340,8 +2332,8 @@ done
   &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/09/CoActionOS-Tutorial-AIO</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/09/CoActionOS-Tutorial-AIO</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</guid>
                 <pubDate>2013-11-09T00:00:00-07:00</pubDate>
         </item>
 
@@ -2394,8 +2386,8 @@ done
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;That about covers the basics. You can read the &lt;a href=&quot;/coactionos-applib/html/class_string.html&quot;&gt;String class API&lt;/a&gt; for more information.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/08/CoActionOS-Tutorial-Strings</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/08/CoActionOS-Tutorial-Strings</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</guid>
                 <pubDate>2013-11-08T00:00:00-07:00</pubDate>
         </item>
 
@@ -2443,8 +2435,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</guid>
                 <pubDate>2013-11-07T00:00:00-07:00</pubDate>
         </item>
 
@@ -2528,8 +2520,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/06/CoActionOS-Tutorial-I2C</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/06/CoActionOS-Tutorial-I2C</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</guid>
                 <pubDate>2013-11-06T00:00:00-07:00</pubDate>
         </item>
 
@@ -2615,8 +2607,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/05/CoActionOS-Tutorial-Spi</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/05/CoActionOS-Tutorial-Spi</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</guid>
                 <pubDate>2013-11-05T00:00:00-07:00</pubDate>
         </item>
 
@@ -2665,8 +2657,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/04/CoActionOS-Tutorial-Uart</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/04/CoActionOS-Tutorial-Uart</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</guid>
                 <pubDate>2013-11-04T00:00:00-07:00</pubDate>
         </item>
 
@@ -2727,8 +2719,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/03/CoActionOS-Tutorial-Files</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/03/CoActionOS-Tutorial-Files</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</guid>
                 <pubDate>2013-11-03T00:00:00-06:00</pubDate>
         </item>
 
@@ -2765,9 +2757,69 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos-tutorials/2013/11/02/CoActionOS-Tutorial-Pio</link>
-                <guid>http://Coactionos.github.io/coactionos-tutorials/2013/11/02/CoActionOS-Tutorial-Pio</guid>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</guid>
                 <pubDate>2013-11-02T00:00:00-06:00</pubDate>
+        </item>
+
+        <item>
+                <title>First Project</title>
+                <description>&lt;div align=&#39;center&#39; class=&#39;flex-video&#39;&gt;
+	&lt;iframe frameborder=&#39;0&#39; src=&#39;//www.youtube.com/embed/6-rbEx6AV6A?rel=0&#39;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;starting_a_new_project&quot;&gt;Starting a New Project&lt;/h2&gt;
+
+&lt;p&gt;To start a new project for CoActionOS, you start by downloading our default Hello World project (see the attached files below). This project can be imported to Eclipse by clicking File-&amp;gt;Import… then select “Existing Projects into Workspace” under “General”. You then specify the downloaded archive file and hit “Finish”. Once the project is in your workspace, you can push the hammer icon to build it. Next you install the application using CoActionOS Link.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Connect the CoActionOS microcomputer to a desktop computer with a USB cable&lt;/li&gt;
+
+&lt;li&gt;Launch CoActionOS Link on the desktop computer&lt;/li&gt;
+
+&lt;li&gt;Establish a connection to the microcomputer by pushing the connect button&lt;/li&gt;
+
+&lt;li&gt;Navigate to the Application view
+&lt;ul&gt;
+&lt;li&gt;Browse to or type in the workspace address and “Hello World” will appear in the project dropdown&lt;/li&gt;
+
+&lt;li&gt;Select the “Startup”, “Run”, and “RAM” options&lt;/li&gt;
+
+&lt;li&gt;Startup: runs the application when the device starts (cannot be RAM)&lt;/li&gt;
+
+&lt;li&gt;Run: runs the application when installation is complete&lt;/li&gt;
+
+&lt;li&gt;RAM: installs the application in RAM (lost after a reset)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Push the install button&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hello_world&quot;&gt;Hello World!&lt;/h2&gt;
+
+&lt;p&gt;The source code for main.cpp looks like:&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
+ 
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;main&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;argc&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;argv&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[]){&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;printf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Hello World&lt;/span&gt;&lt;span class=&#39;se&#39;&gt;\n&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is the standard “Hello World!” program for any platform using the C standard library. When CoActionOS boots up, it initializes the hardware and system calls associated with the standard output such that when “Hello World!” runs, the standard output is ready to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;customizing_hello_world&quot;&gt;Customizing Hello World&lt;/h2&gt;
+
+&lt;p&gt;Using Eclipse, you can add classes or C source files. Once you add the files, the Eclipse builder will automatically include them in the build.&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; If you download
+the attached Hello World project for MacOS X on Windows, it will still work. 
+You will just have to clear the include path entries and rebuild the index in 
+Eclipse.&lt;/div&gt;
+&lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-macosx.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (mac)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-win.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (win)&lt;/a&gt;&lt;/p&gt;</description>
+                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</link>
+                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</guid>
+                <pubDate>2013-11-01T00:00:00-06:00</pubDate>
         </item>
 
 

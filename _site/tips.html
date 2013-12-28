@@ -35,9 +35,7 @@
 <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
 </head>
-
 <body style="min-height: 200px; padding-top: 50px;">
-
 	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 		<div class="container">
 			<div class="row">
@@ -74,159 +72,112 @@
 		</div>
 	</header>
 
+	<a class="anchor" id="top"></a>
+
+
 	<div class="content" id="content">
-		<div class="container">
-			<div class="row" style="margin-top: 20px;">
-				<div class="col-md-offset-1 col-md-7 panel panel-default"><div class="panel-body">
-<div>
+		
+<script type="text/javascript">
+
+function register_click(name){
+	$("#" + name).click( function(){
+		$(".tag-list-item").removeClass("active");
+		$("#" + name).addClass("active");
+		$(".tagged").addClass("hidden");
+		$("." + name).removeClass("hidden");
+	});	
+}
+
+$(document).ready( function(){
+	
+	register_click("coaction");	
+	
+	register_click("tutorial");	
+	
+	register_click("control");	
+	
+	register_click("serial");	
+	
+	register_click("embedded");	
+	
+	register_click("tips");	
+	
+	register_click("user-guide");	
+	
+	register_click("getting-started");	
+	
+	register_click("downloads");	
+	
+	
+	$("#all").click(function(){
+		$(".tagged").removeClass("hidden");
+		$(".tag-list-item").removeClass("active");
+	});
+});
+
+</script>
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7 panel panel-default">
+			<div class="panel-body">
+				
 
 
-
-
-	<h2><a href="/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a> <small>2013-12-14</small></h2>
+	<div class='tagged embedded tips'>
+	<h2><a href="/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a> <small>2013-12-14</small></h2>
 	<p><p>Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. <img class='post_image' src='/images/inverting-opamp.svg' /></p></p>
+	<hr>
+	</div>
 
-
-	<h2><a href="/embedded/2013/12/14/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a> <small>2013-12-14</small></h2>
+	<div class='tagged embedded tips control'>
+	<h2><a href="/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a> <small>2013-12-14</small></h2>
 	<p><p><img class='post_image' src='/images/solenoid-ckt.png' /></p>
 
 <p>Many products use solenoids to open and close valves. A microcontroller can control solenoids programmatically using a GPIO pin and a simple circuit.</p></p>
+	<hr>
+	</div>
 
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h2><i class="fa fa-filter"></i> Filter<button id="all" class="btn btn-default pull-right"><i class="fa fa-refresh"></i></button></h2>
+			<div class="list-group">
+				
+				
+
+
+  
+     
+    	<a class="list-group-item tag-list-item" href="#" id="coaction"><span class="badge">19</span> coaction</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="tutorial"><span class="badge">22</span> tutorial</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="control"><span class="badge">5</span> control</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="serial"><span class="badge">3</span> serial</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="embedded"><span class="badge">12</span> embedded</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="tips"><span class="badge">12</span> tips</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="user-guide"><span class="badge">6</span> user-guide</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="getting-started"><span class="badge">1</span> getting-started</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="downloads"><span class="badge">1</span> downloads</a>
+    
+  
+
+
+
+			</div>
+		</div>
+	</div>
 </div>
 
 
-</div></div>
-				<div class="col-md-3">
-				
 
-					<h3>embedded</h3>
-					<ul class="nav nav-pills nav-stacked">
-						  
-						
-
-
-  
-    
-      
-      	
-      	<li><a href="/embedded/2013/12/14/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
-      	
-      
-    
-  
-
-
-
-					</ul>
-					
-					
-						<h3>Embedded C Tutorial</h3>
-						<ul class="nav nav-pills nav-stacked">
-							  
-							
-
-
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
-      	
-      
-    
-  
-
-
-
-						</ul>
-					
-					
-					
- 				  
-				</div>
-			</div>
-
-		</div>
 	</div>
 	<hr>
 	<footer>

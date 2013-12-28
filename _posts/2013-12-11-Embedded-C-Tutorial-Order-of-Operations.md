@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Order of Operations Reference
-category: c-tutorial
-tagline: Embedded C Tutorial
-tags : [embedded, tips, c-tutorial]
+category: Embedded C Tutorial
+category: Embedded C Tutorial
+tags : [embedded, tips, tutorial]
 number: 10
 ---
 
@@ -22,9 +22,9 @@ or right-to-left as indicated.
 ### Right-to-Left
 
 - ++ pre increment
-- -- pre decrement
-- + unary plus
-- - unary minus
+- <span>--</span> pre decrement
+- \+ unary plus
+- \- unary minus
 - ! logical not
 - ~ bitwise not
 - (type) type casting

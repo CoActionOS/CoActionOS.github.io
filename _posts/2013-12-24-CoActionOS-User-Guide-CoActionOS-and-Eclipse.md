@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Developing on CoActionOS using Eclipse
-category: coactionos-user-guides
+category: User Guides
 tagline: CoActionOS User Guide
 tags : [coaction, user-guide]
 ---

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: PIO Tutorial
-category: coactionos-tutorials
+category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial]
+tags : [coaction, tutorial, control]
 number: 02
 ---
 

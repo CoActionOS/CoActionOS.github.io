@@ -35,9 +35,7 @@
 <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
 </head>
-
 <body style="min-height: 200px; padding-top: 50px;">
-
 	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 		<div class="container">
 			<div class="row">
@@ -74,40 +72,84 @@
 		</div>
 	</header>
 
-	<div class="content" id="content">
-		<div class="container">
-			<div class="row" style="margin-top: 20px;">
-				<div class="col-md-offset-1 col-md-7 panel panel-default"><div class="panel-body">
-<div>
+	<a class="anchor" id="top"></a>
 
+
+	<div class="content" id="content">
+		
+<script type="text/javascript">
+
+function register_click(name){
+	$("#" + name).click( function(){
+		$(".tag-list-item").removeClass("active");
+		$("#" + name).addClass("active");
+		$(".tagged").addClass("hidden");
+		$("." + name).removeClass("hidden");
+	});	
+}
+
+$(document).ready( function(){
+	
+	register_click("coaction");	
+	
+	register_click("tutorial");	
+	
+	register_click("control");	
+	
+	register_click("serial");	
+	
+	register_click("embedded");	
+	
+	register_click("tips");	
+	
+	register_click("user-guide");	
+	
+	register_click("getting-started");	
+	
+	register_click("downloads");	
+	
+	
+	$("#all").click(function(){
+		$(".tagged").removeClass("hidden");
+		$(".tag-list-item").removeClass("active");
+	});
+});
+
+</script>
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7 panel panel-default">
+			<div class="panel-body">
+				
 
 <h1>Categories</h1>
 
-<ul class="list-inline">
+<ul class="nav nav-pills">
   
   
 
 
   
      
-    	<li><a href="/categories.html#coactionos-tutorials-ref">
-    		coactionos-tutorials <span class="badge">11</span>
+    	<li><a href="/categories.html#coactionos tutorials-ref">
+    		coactionos tutorials <span class="badge">12</span>
     	</a></li>
      
-    	<li><a href="/categories.html#c-tutorial-ref">
-    		c-tutorial <span class="badge">10</span>
+    	<li><a href="/categories.html#embedded c tutorial-ref">
+    		embedded c tutorial <span class="badge">10</span>
     	</a></li>
      
-    	<li><a href="/categories.html#embedded-ref">
-    		embedded <span class="badge">2</span>
+    	<li><a href="/categories.html#embedded design tips-ref">
+    		embedded design tips <span class="badge">2</span>
     	</a></li>
      
-    	<li><a href="/categories.html#coactionos-user-guides-ref">
-    		coactionos-user-guides <span class="badge">6</span>
+    	<li><a href="/categories.html#user guides-ref">
+    		user guides <span class="badge">6</span>
     	</a></li>
      
-    	<li><a href="/categories.html#getting-started-ref">
-    		getting-started <span class="badge">1</span>
+    	<li><a href="/categories.html#getting started-ref">
+    		getting started <span class="badge">1</span>
     	</a></li>
     
   
@@ -117,7 +159,7 @@
 
 
  
-  <h2 id="coactionos-tutorials-ref">coactionos-tutorials</h2>
+  <h2 id="coactionos tutorials-ref" class="anchor">coactionos tutorials</h2>
   <ul>
       
     
@@ -127,7 +169,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control">Motor Control Tutorial</a></li>
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
       	
       
     
@@ -135,7 +177,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Thread">Thread Tutorial</a></li>
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
       	
       
     
@@ -143,7 +185,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
       	
       
     
@@ -151,7 +193,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
+      	<li class='tagged coaction tutorial serial'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
       	
       
     
@@ -159,7 +201,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
+      	<li class='tagged coaction tutorial serial'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
       	
       
     
@@ -167,7 +209,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/07/CoActionOS-Tutorial-Pwm">PWM Tutorial</a></li>
+      	<li class='tagged coaction tutorial serial'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C">I2C Tutorial</a></li>
       	
       
     
@@ -175,7 +217,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/06/CoActionOS-Tutorial-I2C">I2C Tutorial</a></li>
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm">PWM Tutorial</a></li>
       	
       
     
@@ -183,7 +225,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
       	
       
     
@@ -191,7 +233,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
       	
       
     
@@ -199,7 +241,7 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
       	
       
     
@@ -207,7 +249,15 @@
     
       
       	
-      	<li><a href="/coactionos-tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread">Thread Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control">Motor Control Tutorial</a></li>
       	
       
     
@@ -217,7 +267,7 @@
 
   </ul>
  
-  <h2 id="c-tutorial-ref">c-tutorial</h2>
+  <h2 id="embedded c tutorial-ref" class="anchor">embedded c tutorial</h2>
   <ul>
       
     
@@ -227,7 +277,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
       	
       
     
@@ -235,7 +285,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
       	
       
     
@@ -243,7 +293,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
       	
       
     
@@ -251,7 +301,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
       	
       
     
@@ -259,7 +309,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
       	
       
     
@@ -267,7 +317,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
       	
       
     
@@ -275,7 +325,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
       	
       
     
@@ -283,7 +333,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
       	
       
     
@@ -291,7 +341,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
       	
       
     
@@ -299,7 +349,7 @@
     
       
       	
-      	<li><a href="/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
+      	<li class='tagged embedded tips tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
       	
       
     
@@ -309,7 +359,7 @@
 
   </ul>
  
-  <h2 id="embedded-ref">embedded</h2>
+  <h2 id="embedded design tips-ref" class="anchor">embedded design tips</h2>
   <ul>
       
     
@@ -319,7 +369,7 @@
     
       
       	
-      	<li><a href="/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
+      	<li class='tagged embedded tips control'><a href="/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
       	
       
     
@@ -327,7 +377,7 @@
     
       
       	
-      	<li><a href="/embedded/2013/12/14/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
+      	<li class='tagged embedded tips'><a href="/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
       	
       
     
@@ -337,7 +387,7 @@
 
   </ul>
  
-  <h2 id="coactionos-user-guides-ref">coactionos-user-guides</h2>
+  <h2 id="user guides-ref" class="anchor">user guides</h2>
   <ul>
       
     
@@ -347,7 +397,7 @@
     
       
       	
-      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers">Installing Windows Device Drivers</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
       	
       
     
@@ -355,7 +405,7 @@
     
       
       	
-      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
       	
       
     
@@ -363,7 +413,7 @@
     
       
       	
-      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines">Designing Applications using State Machines</a></li>
       	
       
     
@@ -371,7 +421,7 @@
     
       
       	
-      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines">Designing Applications using State Machines</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
       	
       
     
@@ -379,7 +429,7 @@
     
       
       	
-      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
       	
       
     
@@ -387,7 +437,7 @@
     
       
       	
-      	<li><a href="/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers">Installing Windows Device Drivers</a></li>
       	
       
     
@@ -397,7 +447,7 @@
 
   </ul>
  
-  <h2 id="getting-started-ref">getting-started</h2>
+  <h2 id="getting started-ref" class="anchor">getting started</h2>
   <ul>
       
     
@@ -407,7 +457,7 @@
     
       
       	
-      	<li><a href="/getting-started/2013/12/24/Getting-Started-Get-the-Software">Get the Software</a></li>
+      	<li class='tagged coaction getting-started downloads'><a href="/getting%20started/2013/12/24/Getting-Started-Get-the-Software">Get the Software</a></li>
       	
       
     
@@ -419,32 +469,46 @@
 
 
 
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h2><i class="fa fa-filter"></i> Filter<button id="all" class="btn btn-default pull-right"><i class="fa fa-refresh"></i></button></h2>
+			<div class="list-group">
+				
+				
+
+
+  
+     
+    	<a class="list-group-item tag-list-item" href="#" id="coaction"><span class="badge">19</span> coaction</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="tutorial"><span class="badge">22</span> tutorial</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="control"><span class="badge">5</span> control</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="serial"><span class="badge">3</span> serial</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="embedded"><span class="badge">12</span> embedded</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="tips"><span class="badge">12</span> tips</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="user-guide"><span class="badge">6</span> user-guide</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="getting-started"><span class="badge">1</span> getting-started</a>
+     
+    	<a class="list-group-item tag-list-item" href="#" id="downloads"><span class="badge">1</span> downloads</a>
+    
+  
+
+
+
+			</div>
+		</div>
+	</div>
 </div>
 
 
-</div></div>
-				<div class="col-md-3">
-				
 
-					<h3></h3>
-					<ul class="nav nav-pills nav-stacked">
-						  
-						
-
-
-  
-
-
-
-					</ul>
-					
-					
-					
- 				  
-				</div>
-			</div>
-
-		</div>
 	</div>
 	<hr>
 	<footer>

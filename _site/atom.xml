@@ -4,7 +4,7 @@
  <title>CoActionOS</title>
  <link href="http://Coactionos.github.io/" rel="self"/>
  <link href="http://Coactionos.github.io"/>
- <updated>2013-12-27T12:12:58-07:00</updated>
+ <updated>2013-12-27T17:49:12-07:00</updated>
  <id>http://Coactionos.github.io</id>
  <author>
    <name>CoActionOS, Inc</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Get the Software</title>
-   <link href="http://Coactionos.github.io/getting-started/2013/12/24/Getting-Started-Get-the-Software"/>
+   <link href="http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/getting-started/2013/12/24/Getting-Started-Get-the-Software</id>
+   <id>http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software</id>
    <content type="html">&lt;p&gt;There are two software packages used with CoActionOS for Windows, Mac, and Linux&lt;/p&gt;
 
 &lt;ul&gt;
@@ -64,9 +64,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
  
  <entry>
    <title>Installing Windows Device Drivers</title>
-   <link href="http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers"/>
+   <link href="http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</id>
+   <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</id>
    <content type="html">&lt;h2 id=&quot;windows_xpvista7&quot;&gt;Windows XP/Vista/7&lt;/h2&gt;
 
 &lt;p&gt;p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is). When a CoActionOS device is connected, Windows 7 automatically installs the driver.&lt;/p&gt;
@@ -96,9 +96,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
  
  <entry>
    <title>Getting Started</title>
-   <link href="http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started"/>
+   <link href="http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</id>
+   <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</id>
    <content type="html">&lt;h3 id=&quot;buy_hardware&quot;&gt;Buy Hardware&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -122,9 +122,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
  
  <entry>
    <title>Device Driver Development</title>
-   <link href="http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development"/>
+   <link href="http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</id>
+   <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</id>
    <content type="html">&lt;h3 id=&quot;introduction&quot;&gt;Introduction&lt;/h3&gt;
 
 &lt;p&gt;Device drivers are code that is included in the kernel and used to access hardware. They are integrated with the filesystem and populate the /dev folder. The user application accesses drivers the same way as files.&lt;/p&gt;
@@ -234,9 +234,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
  
  <entry>
    <title>Designing Applications using State Machines</title>
-   <link href="http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines"/>
+   <link href="http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</id>
+   <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</id>
    <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;A state machine is a model that helps when designing computer programs. The state machine is represented by a state diagram that shows 1) what states the program can have, 2) how the program transitions between states, and 3) what actions the programs takes while entering, exiting, or executing a state. A simple example of a state machine is a turnstile. The following diagram (from wikipedia) shows how the state machine works.&lt;/p&gt;
@@ -352,9 +352,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
  
  <entry>
    <title>Developing on CoActionOS using Eclipse</title>
-   <link href="http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse"/>
+   <link href="http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</id>
+   <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</id>
    <content type="html">&lt;p&gt;Eclipse is an Integrated Development Environement (IDE) that works great for developing CoActionOS applications.&lt;/p&gt;
 
 &lt;p&gt;To start using Eclipse with CoActionOS, you’ll first need to download and install the latest version of Eclipse. You can then import sample projects downloaded from this website into Eclipse. Eclipse can then be used to build and debug programs.&lt;/p&gt;
@@ -416,9 +416,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
  
  <entry>
    <title>Building and Installing CoActionOS</title>
-   <link href="http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS"/>
+   <link href="http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS"/>
    <updated>2013-12-24T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-user-guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</id>
+   <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</id>
    <content type="html">&lt;h3 id=&quot;building_and_installing_coactionos_static_libraries&quot;&gt;Building and Installing CoActionOS Static Libraries&lt;/h3&gt;
 
 &lt;p&gt;CoActionOS is built as a library. The library just needs to link to the board support package to make the final binary. To build CoActionOS, you need to download the &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS&quot;&gt;source code&lt;/a&gt; and import the CoActionOS project in to Eclipse. Once in Eclipse, you can right click on CoActionOS then click Build Configurations-&amp;gt;Build All. Or you can just click the hammer icon and select the target architecture.&lt;/p&gt;
@@ -451,9 +451,9 @@ all three ports.&lt;/div&gt;
  
  <entry>
    <title>Using Op Amps in Embedded Design</title>
-   <link href="http://Coactionos.github.io/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design"/>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design"/>
    <updated>2013-12-14T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/embedded/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</id>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</id>
    <content type="html">&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. &lt;img class=&#39;post_image&#39; src=&#39;/images/inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction_to_opamps&quot;&gt;Introduction to Op-Amps&lt;/h2&gt;
@@ -527,9 +527,9 @@ all three ports.&lt;/div&gt;
  
  <entry>
    <title>Controlling a Solenoid</title>
-   <link href="http://Coactionos.github.io/embedded/2013/12/14/Tips-Controlling-a-Solenoid"/>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid"/>
    <updated>2013-12-14T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/embedded/2013/12/14/Tips-Controlling-a-Solenoid</id>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid</id>
    <content type="html">&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/solenoid-ckt.png&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Many products use solenoids to open and close valves. A microcontroller can control solenoids programmatically using a GPIO pin and a simple circuit.&lt;/p&gt;
@@ -555,9 +555,9 @@ all three ports.&lt;/div&gt;
  
  <entry>
    <title>Order of Operations Reference</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations"/>
    <updated>2013-12-11T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</id>
    <content type="html">&lt;p&gt;The following is a list of the C order of operations from highest precendence to lowest.&lt;br /&gt;Operators within the same group have equal precendence and evaluate lefto-to-right or right-to-left as indicated.&lt;/p&gt;
 
 &lt;h3 id=&quot;lefttoright&quot;&gt;Left-to-Right&lt;/h3&gt;
@@ -579,19 +579,11 @@ all three ports.&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;++ pre increment&lt;/li&gt;
 
-&lt;li&gt;– pre decrement&lt;/li&gt;
+&lt;li&gt;&lt;span /&gt; pre decrement&lt;/li&gt;
 
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;unary plus&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;+ unary plus&lt;/li&gt;
 
-&lt;li&gt;
-&lt;ul&gt;
-&lt;li&gt;unary minus&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;- unary minus&lt;/li&gt;
 
 &lt;li&gt;! logical not&lt;/li&gt;
 
@@ -723,9 +715,9 @@ all three ports.&lt;/div&gt;
  
  <entry>
    <title>Keywords Reference</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference"/>
    <updated>2013-12-10T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</id>
    <content type="html">&lt;p&gt;This tutorial (part of the embedded C tutorial) is a list of the C keywords for reference.&lt;/p&gt;
 
 &lt;h3 id=&quot;data_types&quot;&gt;Data Types&lt;/h3&gt;
@@ -819,9 +811,9 @@ all three ports.&lt;/div&gt;
  
  <entry>
    <title>Compound Data Types</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types"/>
    <updated>2013-12-09T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</id>
    <content type="html">&lt;p&gt;The C languages defines several types of compound data structures. The structures treat the data differently when stored in memory. The following compound data types exist.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -951,9 +943,9 @@ sizeof(w) is 4, sizeof(z) is 4
  
  <entry>
    <title>Preprocessor Directives</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor"/>
    <updated>2013-12-08T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</id>
    <content type="html">&lt;p&gt;The C language preprocesses all code before compilation. Within the program, preprocessor directives give special instructions to the preprocessor. Preprocessor directives in C start with the hash symbol (#). This tutorial describes the basic function of preprocessor directives in C. The following directives are available:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1049,9 +1041,9 @@ sizeof(w) is 4, sizeof(z) is 4
  
  <entry>
    <title>Pointers and Arrays</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays"/>
    <updated>2013-12-07T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</id>
    <content type="html">&lt;p&gt;Pointers and arrays are powerful tools in C programming. While arrays are a straightforward concept, pointers are more difficult for new programmers to grasNonetheless, they are worth learning as they are an essential part of the C language.&lt;/p&gt;
 
 &lt;p&gt;Conceptually arrays are lists of data, but more specifically they are an abstration of pointers. The namesake of pointers offer a clue as to what they are. Rather than be variables with a meaningful value, they “point” to variables that have a meaningful value. The value of a pointer is actually the memory address of the pointed to variable.&lt;/p&gt;
@@ -1257,9 +1249,9 @@ xlist[4] = 8 and 8
  
  <entry>
    <title>Flow Control</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control"/>
    <updated>2013-12-05T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</id>
    <content type="html">&lt;p&gt;The typical C program executes one statement after the next. Various mechanisms exist to vary the flow of the program in order to conditionally execute some statements while executing others over and over within a looThe C flow control keywords include:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1462,9 +1454,9 @@ xlist[4] = 8 and 8
  
  <entry>
    <title>Operators</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators"/>
    <updated>2013-12-04T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/04/Embedded-C-Tutorial-Operators</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</id>
    <content type="html">&lt;p&gt;Now that we have a basic understanding of the raw data types, let’s look at the operators. You are likely already familiar with many of the C operators (unless you are still in kindergarten). The most basic are:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1753,9 +1745,9 @@ xlist[4] = 8 and 8
  
  <entry>
    <title>Raw Types</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types"/>
    <updated>2013-12-03T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</id>
    <content type="html">&lt;h2 id=&quot;using_data_in_programming&quot;&gt;Using Data in Programming&lt;/h2&gt;
 
 &lt;p&gt;Programs are created to do something useful–in embedded systems, to make a device or gadget do something useful. As a means to an end, the program uses data and operations. For example, a motor’s position is represented as data in a program; the motor’s speed, also represented as data, can be calculated using various operations given the change in motor positions for a given period of time. This tutorial introduces C raw data types. The following code snippet illustrates how to use data in C and introduces the raw data type int.&lt;/p&gt;
@@ -1875,9 +1867,9 @@ xlist[4] = 8 and 8
  
  <entry>
    <title>Functions</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions"/>
    <updated>2013-12-02T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/02/Embedded-C-Tutorial-Functions</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</id>
    <content type="html">&lt;p&gt;A function is a collection of C statements that can be utilized many times throughout a program or packaged into a module and re-used throughout many programs. The anatomy of a C function includes the prototype, the return type, the parameters, the name, and the body. Here is an example:&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/span&gt;
@@ -1906,7 +1898,7 @@ xlist[4] = 8 and 8
 &lt;p&gt;The name of the function must be a valid C identifier. By convention, user-defined identifiers should not start with an underscore. It is good practice to use descriptive identifiers. Actually, my_first_function() is a poor name because it does not inform the programmer what the function does. A better name is add_xy() because the function returns the sum of the two parameters.&lt;/p&gt;
 &lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; Valid C identifiers must start with a letter or 
 underscore and be composed of case-sensitive letters, numbers, and underscores as 
-well as not be a &lt;a href=&#39;/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference&#39;&gt;C keyword&lt;/a&gt;.&lt;/div&gt;
+well as not be a &lt;a href=&#39;/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference&#39;&gt;C keyword&lt;/a&gt;.&lt;/div&gt;
 &lt;h2 id=&quot;parameters&quot;&gt;Parameters&lt;/h2&gt;
 
 &lt;p&gt;The naming rules for parameters are the same for functions in that they must be C identifiers. A function can have any number of parameters passed to it of any type. The example above has two parameters of type int. Within the body of a function, a parameter acts as a local variable. It can be both read and written. However, any changes to the parameters are lost when the function returns. In the example above, the variable w within main() is not affected by the x = 0 statement within my_first_function() because a copy of w is passed to the function rather than w itself.&lt;/p&gt;
@@ -1932,9 +1924,9 @@ well as not be a &lt;a href=&#39;/c-tutorial/2013/12/10/Embedded-C-Tutorial-Keyw
  
  <entry>
    <title>Hello World</title>
-   <link href="http://Coactionos.github.io/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World"/>
+   <link href="http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World"/>
    <updated>2013-12-01T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/c-tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</id>
+   <id>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</id>
    <content type="html">&lt;p&gt;Programming tutorials, as you will notice, always begin with the quintessential “Hello World” program which demonstrates: how to use compilers, the basic usage of the language, and how to use output–essential for seeing if your program is working correctly. The code below is the standard C Hello World program.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;c1&#39;&gt;//include is a compiler directive and .h refers to a header file&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;stdio.h&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//contains the prototype for printf&lt;/span&gt;
@@ -1991,9 +1983,9 @@ in later lessons. &lt;/div&gt;
  
  <entry>
    <title>Motor Control Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control"/>
    <updated>2013-11-11T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</id>
    <content type="html">&lt;p&gt;Motor control is simple using CoActionOS. In this example, a simple PID control loop takes the speed of the motor as an input and computes the PWM duty cycle (which sets the motor drive voltage) as the output.&lt;/p&gt;
 
 &lt;p&gt;Here is the circuit diagram for this tutorial.&lt;/p&gt;
@@ -2152,9 +2144,9 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
  
  <entry>
    <title>Thread Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Thread"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread"/>
    <updated>2013-11-10T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Thread</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</id>
    <content type="html">&lt;p&gt;CoActionOS Applib includes a Thread class for easily initializing and running threads. For more details on using this class, please see the &lt;a href=&quot;/coactionos-applib/html/class_thread.html&quot;&gt;Thread Applib documentation&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Thread.hpp&amp;gt; &lt;/span&gt;&lt;span class=&#39;c1&#39;&gt;//for Thread class&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Timer.hpp&amp;gt;&lt;/span&gt;
@@ -2206,9 +2198,9 @@ done
  
  <entry>
    <title>Signals Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Signals"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals"/>
    <updated>2013-11-10T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/10/CoActionOS-Tutorial-Signals</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</id>
    <content type="html">&lt;p&gt;CoActionOS allows uers signals to notify different threads or processes about events. It uses POSIX signals as the underlying API. CoActionOS Applib provides a class to easily send and receive signals. When a thread or process receives a signal, its execution is interrupted and the signal handler is executed. This is distinct from hardware interrupt handlers because the signal interrupt will not execute until the receiving task is scheduled to execute. Also, hardware interrupts run in privileged mode where signal handlers run in user mode.&lt;/p&gt;
 
 &lt;p&gt;The example below shows how to send a signal using software as well as how to enable hardware to send a signal when an event happens.&lt;/p&gt;
@@ -2274,9 +2266,9 @@ done
  
  <entry>
    <title>AIO Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/09/CoActionOS-Tutorial-AIO"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO"/>
    <updated>2013-11-09T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/09/CoActionOS-Tutorial-AIO</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</id>
    <content type="html">&lt;p&gt;Asynchronous IO (AIO) is used when you want to start an operation and do other things while you wait until the operation completes. AIO is supported on all peripherals which support read() and write(). Simply pass an Aio object to read() or write(), and the operation will perform asynchronously.&lt;/p&gt;
 
 &lt;p&gt;The following program demonstrates AIO using the DAC. See the &lt;a href=&quot;/coactionos-applib/html/class_aio.html&quot;&gt;AIO class documenation&lt;/a&gt; and &lt;a href=&quot;/coactionos-applib/html/class_dac.html&quot;&gt;DAC class documentation&lt;/a&gt; for more details.&lt;/p&gt;
@@ -2349,9 +2341,9 @@ done
  
  <entry>
    <title>Strings Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/08/CoActionOS-Tutorial-Strings"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings"/>
    <updated>2013-11-08T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/08/CoActionOS-Tutorial-Strings</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</id>
    <content type="html">&lt;p&gt;The CoActionOS Applib includes a &lt;a href=&quot;/coactionos-applib/html/class_string.html&quot;&gt;String class&lt;/a&gt; similar to the C++ STL string class. The Applib String class avoids using dynamic memory allocation so that it can run well on systems with very little memory. It is based on standard C string manipulation (such as strcpy(), strcmp()) but gives the ease of use of the STL string class.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/String.hpp&amp;gt;&lt;/span&gt;
@@ -2403,9 +2395,9 @@ done
  
  <entry>
    <title>PWM Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/07/CoActionOS-Tutorial-Pwm"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm"/>
    <updated>2013-11-07T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</id>
    <content type="html">&lt;p&gt;PWM is used to output a pulse signal. It can be used to dim an LED or apply a variable voltage to a motor.&lt;/p&gt;
 
 &lt;p&gt;The basic steps to use the PWM are to:&lt;/p&gt;
@@ -2452,9 +2444,9 @@ done
  
  <entry>
    <title>I2C Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/06/CoActionOS-Tutorial-I2C"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C"/>
    <updated>2013-11-06T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/06/CoActionOS-Tutorial-I2C</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</id>
    <content type="html">&lt;p&gt;I2C is a half duplex serial protocol. It uses two lines:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2537,9 +2529,9 @@ done
  
  <entry>
    <title>SPI Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/05/CoActionOS-Tutorial-Spi"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi"/>
    <updated>2013-11-05T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/05/CoActionOS-Tutorial-Spi</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</id>
    <content type="html">&lt;p&gt;SPI is a a full duplex serial protocol. It uses four lines:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2624,9 +2616,9 @@ done
  
  <entry>
    <title>UART Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/04/CoActionOS-Tutorial-Uart"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart"/>
    <updated>2013-11-04T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/04/CoActionOS-Tutorial-Uart</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</id>
    <content type="html">&lt;p&gt;A UART is used to transmit data serially. CoActionOS Applib makes configuring and using a &lt;a href=&quot;/coactionos-applib/html/class_uart.html&quot;&gt;UART&lt;/a&gt; on CoActionOS both simple and flexible.&lt;/p&gt;
 
 &lt;p&gt;The basic steps to use the UART are to:&lt;/p&gt;
@@ -2674,9 +2666,9 @@ done
  
  <entry>
    <title>Files Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/03/CoActionOS-Tutorial-Files"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files"/>
    <updated>2013-11-03T00:00:00-06:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/03/CoActionOS-Tutorial-Files</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</id>
    <content type="html">&lt;p&gt;Files can be accessed in several ways in CoActionOS:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -2736,9 +2728,9 @@ done
  
  <entry>
    <title>PIO Tutorial</title>
-   <link href="http://Coactionos.github.io/coactionos-tutorials/2013/11/02/CoActionOS-Tutorial-Pio"/>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio"/>
    <updated>2013-11-02T00:00:00-06:00</updated>
-   <id>http://Coactionos.github.io/coactionos-tutorials/2013/11/02/CoActionOS-Tutorial-Pio</id>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</id>
    <content type="html">&lt;p&gt;The original Flashing LED article discusses how to access IO on CoActionOS using C/C++. CoActionOS Applib provides C++ classes for easy IO access. The following program demonstrates using a pin to turn the CoAction Hero on-board LED on and off (error checking has been omitted for simplicity). See &lt;a href=&quot;/coactionos-applib/html/class_pin.html&quot;&gt;Pin Class&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
 &lt;span class=&#39;cp&#39;&gt;#include &amp;lt;applib/Timer.hpp&amp;gt;&lt;/span&gt;
@@ -2770,6 +2762,66 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>First Project</title>
+   <link href="http://Coactionos.github.io/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project"/>
+   <updated>2013-11-01T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</id>
+   <content type="html">&lt;div align=&#39;center&#39; class=&#39;flex-video&#39;&gt;
+	&lt;iframe frameborder=&#39;0&#39; src=&#39;//www.youtube.com/embed/6-rbEx6AV6A?rel=0&#39;&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;starting_a_new_project&quot;&gt;Starting a New Project&lt;/h2&gt;
+
+&lt;p&gt;To start a new project for CoActionOS, you start by downloading our default Hello World project (see the attached files below). This project can be imported to Eclipse by clicking File-&amp;gt;Import… then select “Existing Projects into Workspace” under “General”. You then specify the downloaded archive file and hit “Finish”. Once the project is in your workspace, you can push the hammer icon to build it. Next you install the application using CoActionOS Link.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Connect the CoActionOS microcomputer to a desktop computer with a USB cable&lt;/li&gt;
+
+&lt;li&gt;Launch CoActionOS Link on the desktop computer&lt;/li&gt;
+
+&lt;li&gt;Establish a connection to the microcomputer by pushing the connect button&lt;/li&gt;
+
+&lt;li&gt;Navigate to the Application view
+&lt;ul&gt;
+&lt;li&gt;Browse to or type in the workspace address and “Hello World” will appear in the project dropdown&lt;/li&gt;
+
+&lt;li&gt;Select the “Startup”, “Run”, and “RAM” options&lt;/li&gt;
+
+&lt;li&gt;Startup: runs the application when the device starts (cannot be RAM)&lt;/li&gt;
+
+&lt;li&gt;Run: runs the application when installation is complete&lt;/li&gt;
+
+&lt;li&gt;RAM: installs the application in RAM (lost after a reset)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;Push the install button&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;hello_world&quot;&gt;Hello World!&lt;/h2&gt;
+
+&lt;p&gt;The source code for main.cpp looks like:&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;cstdio&amp;gt;&lt;/span&gt;
+ 
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;main&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;argc&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;argv&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[]){&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;printf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;Hello World&lt;/span&gt;&lt;span class=&#39;se&#39;&gt;\n&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is the standard “Hello World!” program for any platform using the C standard library. When CoActionOS boots up, it initializes the hardware and system calls associated with the standard output such that when “Hello World!” runs, the standard output is ready to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;customizing_hello_world&quot;&gt;Customizing Hello World&lt;/h2&gt;
+
+&lt;p&gt;Using Eclipse, you can add classes or C source files. Once you add the files, the Eclipse builder will automatically include them in the build.&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; If you download
+the attached Hello World project for MacOS X on Windows, it will still work. 
+You will just have to clear the include path entries and rebuild the index in 
+Eclipse.&lt;/div&gt;
+&lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-macosx.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (mac)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-win.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (win)&lt;/a&gt;&lt;/p&gt;</content>
  </entry>
  
  

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Flow Control
-category: c-tutorial
+category: Embedded C Tutorial
 tagline: Embedded C Tutorial
-tags : [embedded, tips, c-tutorial]
+tags : [embedded, tips, tutorial]
 number: 05
 ---
 
