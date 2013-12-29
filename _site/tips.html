@@ -77,99 +77,88 @@
 
 	<div class="content" id="content">
 		
-<script type="text/javascript">
-
-function register_click(name){
-	$("#" + name).click( function(){
-		$(".tag-list-item").removeClass("active");
-		$("#" + name).addClass("active");
-		$(".tagged").addClass("hidden");
-		$("." + name).removeClass("hidden");
-	});	
-}
-
-$(document).ready( function(){
-	
-	register_click("coaction");	
-	
-	register_click("tutorial");	
-	
-	register_click("control");	
-	
-	register_click("serial");	
-	
-	register_click("embedded");	
-	
-	register_click("tips");	
-	
-	register_click("user-guide");	
-	
-	register_click("getting-started");	
-	
-	register_click("downloads");	
-	
-	
-	$("#all").click(function(){
-		$(".tagged").removeClass("hidden");
-		$(".tag-list-item").removeClass("active");
-	});
-});
-
-</script>
-
 <div class="container">
 	<div class="row" style="margin-top: 20px;">
-		<div class="col-md-offset-1 col-md-7 panel panel-default">
+		<div class="col-md-offset-1 col-md-10 panel panel-default">
 			<div class="panel-body">
 				
 
 
-	<div class='tagged embedded tips'>
-	<h2><a href="/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a> <small>2013-12-14</small></h2>
+	<div class='tagged embedded circuit'>
+	<h2><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a> <small>2013-10-27</small></h2>
 	<p><p>Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. <img class='post_image' src='/images/inverting-opamp.svg' /></p></p>
 	<hr>
 	</div>
 
-	<div class='tagged embedded tips control'>
-	<h2><a href="/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a> <small>2013-12-14</small></h2>
+	<div class='tagged embedded control gpio'>
+	<h2><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a> <small>2013-10-26</small></h2>
 	<p><p><img class='post_image' src='/images/solenoid-ckt.png' /></p>
 
 <p>Many products use solenoids to open and close valves. A microcontroller can control solenoids programmatically using a GPIO pin and a simple circuit.</p></p>
 	<hr>
 	</div>
 
-			</div>
-		</div>
-		<div class="col-md-3">
-			<h2><i class="fa fa-filter"></i> Filter<button id="all" class="btn btn-default pull-right"><i class="fa fa-refresh"></i></button></h2>
-			<div class="list-group">
-				
-				
+	<div class='tagged embedded gpio circuit microcontroller'>
+	<h2><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a> <small>2013-10-25</small></h2>
+	<p><p>An embedded microcontroller utilizes input/output (IO) signals to communicate with the outside world. The simplest form of IO is commonly referred to as general purpose input/output (GPIO) where the GPIO voltage level can be high, low, or high-impedance. Pulling resistors are used to ensure GPIO is always in a valid state.</p></p>
+	<hr>
+	</div>
 
+	<div class='tagged embedded circuit led control'>
+	<h2><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a> <small>2013-10-24</small></h2>
+	<p><p>LEDs are a common element of many embedded designs. Though the devices are simple; their implementation is not always simplistic. Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.</p></p>
+	<hr>
+	</div>
 
-  
-     
-    	<a class="list-group-item tag-list-item" href="#" id="coaction"><span class="badge">19</span> coaction</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="tutorial"><span class="badge">22</span> tutorial</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="control"><span class="badge">5</span> control</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="serial"><span class="badge">3</span> serial</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="embedded"><span class="badge">12</span> embedded</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="tips"><span class="badge">12</span> tips</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="user-guide"><span class="badge">6</span> user-guide</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="getting-started"><span class="badge">1</span> getting-started</a>
-     
-    	<a class="list-group-item tag-list-item" href="#" id="downloads"><span class="badge">1</span> downloads</a>
-    
-  
+	<div class='tagged embedded c doxygen programming'>
+	<h2><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a> <small>2013-10-23</small></h2>
+	<p><p>Doxygen is a free source code documentation tool. It automatically decomposes a software design when using an object-oriented programming language such as C++ or Java. When using C, however, there is no natural break-down of the code so the developer must create groups (or modules) within Doxygen to show a definitive decomposition of the design.</p></p>
+	<hr>
+	</div>
 
+	<div class='tagged embedded usb programming microcontroller'>
+	<h2><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a> <small>2013-10-22</small></h2>
+	<p><p>Desktop communication to embedded devices is critical for programming and debugging. It is also important in production for data acquisition devices and other computer peripherals. Setting up a device as a virtual serial port using USB is a great solution for transferring data between desktop computers and embedded systems. It can be connected to most desktop operating systems (Windows, Mac OS X, and Linux) without installing or developing any USB drivers.</p></p>
+	<hr>
+	</div>
 
+	<div class='tagged embedded microcontroller gpio programming'>
+	<h2><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a> <small>2013-10-21</small></h2>
+	<p><p>General purpose input/output (GPIO) pins on microcontrollers have various modes for both input and output. Input modes may include pull-up or pull-down resistors, hysteresis, or some combination. Output modes can be push-pull, high-drive or open-drain.</p></p>
+	<hr>
+	</div>
+
+	<div class='tagged embedded microcontroller circuit'>
+	<h2><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a> <small>2013-10-14</small></h2>
+	<p><p>Microcontrollers are small computers that contain a central processor, memory, and input/output circuitry all on one integrated chiComputers in general contain all these components with varying degrees of integration. Most people are familiar with the CPU acronym which refers to the central processing unit. The core of a microcontroller is also a central processing unit and is also the focus of this article.</p></p>
+	<hr>
+	</div>
+
+	<div class='tagged embedded macosx qt'>
+	<h2><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a> <small>2013-10-11</small></h2>
+	<p><p>Qt is a multi-platform development framework supporing Windows, Mac, and Linux. It is great for creating desktop applications that interact with embedded devices. Though the code runs on multiple platforms deploying a Qt application to different platforms can be challenging.</p></p>
+	<hr>
+	</div>
+
+	<div class='tagged embedded gcc compiler macosx'>
+	<h2><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a> <small>2013-10-06</small></h2>
+	<p><p>GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X. It is the compiler of choice for CoActionOS, and an excellent general purpose ARM Cortex-M3 compiler.</p>
+
+<p>To install GCC for the ARM Cortex M3 architecture on a computer running Mac OS X (10.5 or higher), you must have XCode installed. Also, ensure the following packages (or their equivalents are installed): flex, bison, libgmp3, libppl, libmpfr, autoconf, automake, texinfo, libmpc, and build-essential. These packages can be installed using Fink or Macports. Once the pre-requisite packages are installed, the binutils, GCC, and newlib source files must be downloaded and extracted.</p></p>
+	<hr>
+	</div>
+
+	<div class='tagged embedded fifo uart serial microcontroller programming'>
+	<h2><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a> <small>2013-10-02</small></h2>
+	<p><p>A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.</p></p>
+	<hr>
+	</div>
+
+	<div class='tagged embedded microcontroller'>
+	<h2><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a> <small>2013-10-01</small></h2>
+	<p><p>Traditional microcontroller projects have been based on 8-bit architectures. However, 16-bit and 32-bit architectures (such as the ARM Cortex-M3) are becoming very attractive alternatives with competitive pricing and power consumption requirements.</p></p>
+	<hr>
+	</div>
 
 			</div>
 		</div>

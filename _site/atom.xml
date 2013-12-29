@@ -4,7 +4,7 @@
  <title>CoActionOS</title>
  <link href="http://Coactionos.github.io/" rel="self"/>
  <link href="http://Coactionos.github.io"/>
- <updated>2013-12-27T17:49:12-07:00</updated>
+ <updated>2013-12-28T21:57:12-07:00</updated>
  <id>http://Coactionos.github.io</id>
  <author>
    <name>CoActionOS, Inc</name>
@@ -69,7 +69,7 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
    <id>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</id>
    <content type="html">&lt;h2 id=&quot;windows_xpvista7&quot;&gt;Windows XP/Vista/7&lt;/h2&gt;
 
-&lt;p&gt;p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is). When a CoActionOS device is connected, Windows 7 automatically installs the driver.&lt;/p&gt;
+&lt;p&gt;When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is). When a CoActionOS device is connected, Windows 7 automatically installs the driver.&lt;/p&gt;
 
 &lt;h2 id=&quot;windows_81&quot;&gt;Windows 8.1&lt;/h2&gt;
 
@@ -447,110 +447,6 @@ all three ports.&lt;/div&gt;
 &lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Once you have the devices and filesystems you want, you just hit the hammer in Eclipse to build the kernel binary. You can then use CoActionOS Link to install the binary.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Using Op Amps in Embedded Design</title>
-   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design"/>
-   <updated>2013-12-14T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Using-Op-Amps-in-Embedded-Design</id>
-   <content type="html">&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. &lt;img class=&#39;post_image&#39; src=&#39;/images/inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;introduction_to_opamps&quot;&gt;Introduction to Op-Amps&lt;/h2&gt;
-
-&lt;p&gt;An op-amp (or operational amplifier) is a very common electrical circuit widely used in the electronics industry. It has two inputs (plus and minus) as well as one output. Traditional op-amps require a positive and negative voltage supply (e.g. plus and minus 15V) and the output voltage is limited to within about a volt of each rail–meaning the maximum output for an op-amp with a 15V supply is around 14V. This presents a problem in single supply systems with traditional digital voltage levels. Traditional op-amps are not able to take advantage of the full range of ADCs nor definitively drive digital inputs. The rail problem is overcome by using rail-to-rail op-amps which are designed for single supply operation and can drive its output within a few millivolts of the power rails. Rail-to-rail op-amps are particularly well suited for embedded systems integration. Before looking at some typical applications, it is important to understand how to analyze an op-amp circuits.&lt;/p&gt;
-
-&lt;h2 id=&quot;analyzing_opamp_circuits&quot;&gt;Analyzing Op-amp Circuits&lt;/h2&gt;
-
-&lt;p&gt;Ideal op-amps are a good first order approximation of op-amp behavior and are used to analyze as well as design op-amp circuits. The ideal op-amp has two basic rules:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Infinite Input Impedance (no current flows in or out of the input terminals)&lt;/li&gt;
-
-&lt;li&gt;Output forces voltage difference on inputs to zero in closed-loop designs (meaning the voltage at both input terminals is the same)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To apply these two rules to op-amp circuit analysis, it is important to be familiar with two electrical laws: Ohm’s Law and Kirchhoff’s Current Law. Ohm’s law is defined by the equation:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/ohms-law.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;That is, voltage is equal to current times resistance. Ohm’s law can be used to calculate the current through the resistor in the diagram below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/ohms-law-circuit.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Kirchhoff’s current law states that the sum of all currents entering a node is zero. The law implies that all currents entering the node are equal to the currents leaving the node. This law can be applied to the op-amp circuit above (first in the article).&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-0.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If Ohm’s law is combined with Kirchhoff’s current law, the equation then becomes the following.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-1.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The equation is simplified further by applying the rules of an ideal op-am. First, infinite input impedance means that current i3 is zero. Second, the voltage difference on the inputs is zero means V&lt;sub&gt;n&lt;/sub&gt; = V&lt;sub&gt;p&lt;/sub&gt; = 0V. The resulting equation is as follows.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-2.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To calculate the gain of the circuit, the above equation is solved for the output divided by the input.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-3.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The op-amp circuit shown above is called an inverting amplifier (the output is the input times a negative number). As drawn, the inverting amplifier is not well adapted to single supply embedded systems because the output is centered at 0V. However, there are plenty of great ways to use op-amps in single supply, embedded designs.&lt;/p&gt;
-
-&lt;h2 id=&quot;using_opamps_in_embedded_systems&quot;&gt;Using Op-amps in Embedded Systems&lt;/h2&gt;
-
-&lt;p&gt;Op-amps are great in embedded systems when mixing analog and digital circuitry. One common use is signal conditioning before sampling with an analog-to-digital converter (ADC). The op-amp can also be used as a comparator for comparing thresholds or as a frequency counter.&lt;/p&gt;
-
-&lt;h2 id=&quot;signal_conditioning_example&quot;&gt;Signal Conditioning Example&lt;/h2&gt;
-
-&lt;p&gt;A pressure sensor typically has an output in the millivolt range. To measure this voltage with an ADC on a microcontroller, an op-amp is used to scale the output of the pressure sensor to span the range of the ADC input. For example, if the pressure sensor output is zero volts to 250mV and the ADC input range is zero to 2.5V, the amplifier needs to magnify the sensor output with a gain of 10. Because all the voltages are positive, the desired op-amp configuration is a non-inverting op-amp.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/non-inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The analysis technique described above shows that the output of the op-amp is:&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-4.svg&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If the feedback resistor is 9KOhms and the input resistor is 1KOhms, the gain will be 10 such that the output of the pressure sensor will be scaled to take advantage of the full range of the ADC.&lt;/p&gt;
-
-&lt;h2 id=&quot;frequency_counter_example&quot;&gt;Frequency Counter Example&lt;/h2&gt;
-
-&lt;p&gt;Another useful application of the op-amp is a sine-wave to square-wave converter which can be input to a timer clock input to measure frequency. For example, if you have a sine wave in your embedded application and want to measure the frequency, you can pass the wave through an op-amp and use a timer on the microcontroller to count rising edges. Converting the rising edges to frequency can be done in one of two ways. The fast way is to count the number of MCU clock cycles between rising edges; this method works well if the MCU clock speed is much higher have the input frequency. The slow way is to count the number of rising edges in a given period of time. Either method uses the circuit below to convert the sine wave to a square wave that can act as the timer input.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/freq-counter-circuit.png&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The first stage of the circuit adjusts the sine wave to be centered around Vcc/2. Rf and Ri can be adjusted so that the output swing of the first amplifier is between 0V and Vcc. The second op-amp acts as a voltage comparator. If the input (on the inverting terminal) is greater than Vcc/2 (the non-inverting terminal), the output is zero volts. If the inverting input is less than Vcc/2, the output is Vcc assuming the op-amp is of the rail-to-rail variety.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Op-amps are great for analog signals in digital designs (especially rail-to-rail op-amps). The ideal op-amp as well as knowledge of basic electrical principles greatly simplify designing and integrating op-amps in your embedded designs.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Controlling a Solenoid</title>
-   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid"/>
-   <updated>2013-12-14T00:00:00-07:00</updated>
-   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/12/14/Tips-Controlling-a-Solenoid</id>
-   <content type="html">&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/solenoid-ckt.png&#39; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Many products use solenoids to open and close valves. A microcontroller can control solenoids programmatically using a GPIO pin and a simple circuit.&lt;/p&gt;
-
-&lt;h2 id=&quot;circuit&quot;&gt;Circuit&lt;/h2&gt;
-
-&lt;p&gt;A solenoid can be enabled using a simple transistor circuit and a microcontroller. The circuit above shows a solenoid, MOSFET transistor, diode, and a microcontroller GPIO signal. To activate the solenoid, the microcontroller GPIO signal goes high causing the MOSFET to turn on. When on, the MOSFET allows current to flow from the power supply through the solenoid and to ground. The voltage rating for the solenoid dictates the voltage of the power supply (it is OK if the power supply voltage is different from the microcontroller voltage). The MOSFET should be selected to handle sufficient current to activate the solenoid as specified in the solenoid’s datasheet.&lt;/p&gt;
-
-&lt;p&gt;Because the solenoid is an inductive device, the diode is added to protect the MOSFET. When the solenoid turns off, the current through the solenoid rapidly drops from the nominal value to zero. Since the voltage drop across the solenoid is proportional to the change in current (see equation below), the current drop creates a voltage spike which can damage the MOSFET. The diode prevents the voltage spike from reaching damaging levels by directing the current back to the power supply.&lt;/p&gt;
-
-&lt;p&gt;!formula1.png!&lt;/p&gt;
-
-&lt;h2 id=&quot;firmware_considerations&quot;&gt;Firmware Considerations&lt;/h2&gt;
-
-&lt;p&gt;Controlling the solenoid in firmware is a straightforward operation with one exception. As mentioned, driving the GPIO high will turn the solenoid on, while driving it low will turn it off. However, there is a small amount of time while the microcontroller starts up where the solenoid may open unexpectedly. For example, if the default GPIO configuration is to have an internal pull-up activated, the solenoid will be activated while the microcontroller is starting u To avoid this behavior, an external pull-down resistor can be added to the GPIO line (shown below) to ensure the solenoid stays off during microcontroller initialization.&lt;/p&gt;
-
-&lt;p&gt;!{width:40%}solenoid-pulldown-ckt.png!&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;Controlling solenoids with microcontrollers is simple. Remember to ensure the MOSFET has sufficient current capability to activate the solenoid, include the protection diode to prevent the solenoid from damaging the MOSFET, and include a pull-down resistor on the GPIO line if the microcontroller doesn’t drive the line low at startup.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -2822,6 +2718,1376 @@ Eclipse.&lt;/div&gt;
 &lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-macosx.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (mac)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-win.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (win)&lt;/a&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Using Op Amps in Embedded Design</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design"/>
+   <updated>2013-10-27T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design</id>
+   <content type="html">&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. &lt;img class=&#39;post_image&#39; src=&#39;/images/inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction_to_opamps&quot;&gt;Introduction to Op-Amps&lt;/h2&gt;
+
+&lt;p&gt;An op-amp (or operational amplifier) is a very common electrical circuit widely used in the electronics industry. It has two inputs (plus and minus) as well as one output. Traditional op-amps require a positive and negative voltage supply (e.g. plus and minus 15V) and the output voltage is limited to within about a volt of each rail–meaning the maximum output for an op-amp with a 15V supply is around 14V. This presents a problem in single supply systems with traditional digital voltage levels. Traditional op-amps are not able to take advantage of the full range of ADCs nor definitively drive digital inputs. The rail problem is overcome by using rail-to-rail op-amps which are designed for single supply operation and can drive its output within a few millivolts of the power rails. Rail-to-rail op-amps are particularly well suited for embedded systems integration. Before looking at some typical applications, it is important to understand how to analyze an op-amp circuits.&lt;/p&gt;
+
+&lt;h2 id=&quot;analyzing_opamp_circuits&quot;&gt;Analyzing Op-amp Circuits&lt;/h2&gt;
+
+&lt;p&gt;Ideal op-amps are a good first order approximation of op-amp behavior and are used to analyze as well as design op-amp circuits. The ideal op-amp has two basic rules:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Infinite Input Impedance (no current flows in or out of the input terminals)&lt;/li&gt;
+
+&lt;li&gt;Output forces voltage difference on inputs to zero in closed-loop designs (meaning the voltage at both input terminals is the same)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To apply these two rules to op-amp circuit analysis, it is important to be familiar with two electrical laws: Ohm’s Law and Kirchhoff’s Current Law. Ohm’s law is defined by the equation:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/ohms-law.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That is, voltage is equal to current times resistance. Ohm’s law can be used to calculate the current through the resistor in the diagram below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/ohms-law-circuit.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Kirchhoff’s current law states that the sum of all currents entering a node is zero. The law implies that all currents entering the node are equal to the currents leaving the node. This law can be applied to the op-amp circuit above (first in the article).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-0.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If Ohm’s law is combined with Kirchhoff’s current law, the equation then becomes the following.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-1.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The equation is simplified further by applying the rules of an ideal op-am. First, infinite input impedance means that current i3 is zero. Second, the voltage difference on the inputs is zero means V&lt;sub&gt;n&lt;/sub&gt; = V&lt;sub&gt;p&lt;/sub&gt; = 0V. The resulting equation is as follows.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-2.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To calculate the gain of the circuit, the above equation is solved for the output divided by the input.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-3.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The op-amp circuit shown above is called an inverting amplifier (the output is the input times a negative number). As drawn, the inverting amplifier is not well adapted to single supply embedded systems because the output is centered at 0V. However, there are plenty of great ways to use op-amps in single supply, embedded designs.&lt;/p&gt;
+
+&lt;h2 id=&quot;using_opamps_in_embedded_systems&quot;&gt;Using Op-amps in Embedded Systems&lt;/h2&gt;
+
+&lt;p&gt;Op-amps are great in embedded systems when mixing analog and digital circuitry. One common use is signal conditioning before sampling with an analog-to-digital converter (ADC). The op-amp can also be used as a comparator for comparing thresholds or as a frequency counter.&lt;/p&gt;
+
+&lt;h2 id=&quot;signal_conditioning_example&quot;&gt;Signal Conditioning Example&lt;/h2&gt;
+
+&lt;p&gt;A pressure sensor typically has an output in the millivolt range. To measure this voltage with an ADC on a microcontroller, an op-amp is used to scale the output of the pressure sensor to span the range of the ADC input. For example, if the pressure sensor output is zero volts to 250mV and the ADC input range is zero to 2.5V, the amplifier needs to magnify the sensor output with a gain of 10. Because all the voltages are positive, the desired op-amp configuration is a non-inverting op-amp.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/non-inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The analysis technique described above shows that the output of the op-amp is:&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_equation&#39; src=&#39;/images/opamp-kirchhoff-4.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If the feedback resistor is 9KOhms and the input resistor is 1KOhms, the gain will be 10 such that the output of the pressure sensor will be scaled to take advantage of the full range of the ADC.&lt;/p&gt;
+
+&lt;h2 id=&quot;frequency_counter_example&quot;&gt;Frequency Counter Example&lt;/h2&gt;
+
+&lt;p&gt;Another useful application of the op-amp is a sine-wave to square-wave converter which can be input to a timer clock input to measure frequency. For example, if you have a sine wave in your embedded application and want to measure the frequency, you can pass the wave through an op-amp and use a timer on the microcontroller to count rising edges. Converting the rising edges to frequency can be done in one of two ways. The fast way is to count the number of MCU clock cycles between rising edges; this method works well if the MCU clock speed is much higher have the input frequency. The slow way is to count the number of rising edges in a given period of time. Either method uses the circuit below to convert the sine wave to a square wave that can act as the timer input.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/freq-counter-circuit.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first stage of the circuit adjusts the sine wave to be centered around Vcc/2. Rf and Ri can be adjusted so that the output swing of the first amplifier is between 0V and Vcc. The second op-amp acts as a voltage comparator. If the input (on the inverting terminal) is greater than Vcc/2 (the non-inverting terminal), the output is zero volts. If the inverting input is less than Vcc/2, the output is Vcc assuming the op-amp is of the rail-to-rail variety.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Op-amps are great for analog signals in digital designs (especially rail-to-rail op-amps). The ideal op-amp as well as knowledge of basic electrical principles greatly simplify designing and integrating op-amps in your embedded designs.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Controlling a Solenoid</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid"/>
+   <updated>2013-10-26T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid</id>
+   <content type="html">&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/solenoid-ckt.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Many products use solenoids to open and close valves. A microcontroller can control solenoids programmatically using a GPIO pin and a simple circuit.&lt;/p&gt;
+
+&lt;h2 id=&quot;circuit&quot;&gt;Circuit&lt;/h2&gt;
+
+&lt;p&gt;A solenoid can be enabled using a simple transistor circuit and a microcontroller. The circuit above shows a solenoid, MOSFET transistor, diode, and a microcontroller GPIO signal. To activate the solenoid, the microcontroller GPIO signal goes high causing the MOSFET to turn on. When on, the MOSFET allows current to flow from the power supply through the solenoid and to ground. The voltage rating for the solenoid dictates the voltage of the power supply (it is OK if the power supply voltage is different from the microcontroller voltage). The MOSFET should be selected to handle sufficient current to activate the solenoid as specified in the solenoid’s datasheet.&lt;/p&gt;
+
+&lt;p&gt;Because the solenoid is an inductive device, the diode is added to protect the MOSFET. When the solenoid turns off, the current through the solenoid rapidly drops from the nominal value to zero. Since the voltage drop across the solenoid is proportional to the change in current (see equation below), the current drop creates a voltage spike which can damage the MOSFET. The diode prevents the voltage spike from reaching damaging levels by directing the current back to the power supply.&lt;/p&gt;
+
+&lt;p&gt;V&lt;sub&gt;L&lt;/sub&gt;=L * di / dt&lt;/p&gt;
+
+&lt;h2 id=&quot;firmware_considerations&quot;&gt;Firmware Considerations&lt;/h2&gt;
+
+&lt;p&gt;Controlling the solenoid in firmware is a straightforward operation with one exception. As mentioned, driving the GPIO high will turn the solenoid on, while driving it low will turn it off. However, there is a small amount of time while the microcontroller starts up where the solenoid may open unexpectedly. For example, if the default GPIO configuration is to have an internal pull-up activated, the solenoid will be activated while the microcontroller is starting up. To avoid this behavior, an external pull-down resistor can be added to the GPIO line (shown below) to ensure the solenoid stays off during microcontroller initialization.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/solenoid-pulldown-ckt.png&#39; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Controlling solenoids with microcontrollers is simple. Remember to ensure the MOSFET has sufficient current capability to activate the solenoid, include the protection diode to prevent the solenoid from damaging the MOSFET, and include a pull-down resistor on the GPIO line if the microcontroller doesn’t drive the line low at startup.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Using Pull-Up and Pull-Down Resistors</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors"/>
+   <updated>2013-10-25T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors</id>
+   <content type="html">&lt;p&gt;An embedded microcontroller utilizes input/output (IO) signals to communicate with the outside world. The simplest form of IO is commonly referred to as general purpose input/output (GPIO) where the GPIO voltage level can be high, low, or high-impedance. Pulling resistors are used to ensure GPIO is always in a valid state.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/pullup.png&#39; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;gpio_input_states_on_an_embedded_microcontroller&quot;&gt;GPIO Input States on an Embedded Microcontroller&lt;/h3&gt;
+
+&lt;p&gt;GPIO on a microcontroller is usually configured as either input or output. As an input, the pin can take one of three states: low, high, and floating (also called high-impedance or tri-stated). When an input is driven above the input high threshold, it is high (or logic one). When driven below the input low threshold, the input is low (or logic zero). When in a high-impedance state, the input level is not reliably high nor low. To ensure an input value is always in a known state, a pull-up or pull-down resistor is used. A pull-up resistor pulls the signal to a high state unless it is driven low while a pull-down resistor puts the signal in a low state unless driven high.&lt;/p&gt;
+
+&lt;h3 id=&quot;pullup_or_pulldown&quot;&gt;Pull-up or Pull-down&lt;/h3&gt;
+
+&lt;p&gt;The figure above illustrates a typical pull-up resistor application. The resistor is connected between the power supply and a GPIO pin. A switch is then connected between the GPIO pin and ground. When the switch is open, there is (practically) zero current that flows from VCC through the resistor and into the GPIO pin. The voltage at the GPIO pin is given by the following equation derived from Ohm’s law:&lt;/p&gt;
+
+&lt;p&gt;V&lt;sub&gt;GPIO&lt;/sub&gt; &lt;span&gt;=&lt;/span&gt; V&lt;sub&gt;CC&lt;/sub&gt; - I&lt;sub&gt;R1&lt;/sub&gt;*R1&lt;/p&gt;
+
+&lt;p&gt;Since there is no current through the resistor I&lt;sub&gt;R1&lt;/sub&gt;=0, there is no voltage drop across R1 making the voltage at the GPIO input equal to VCC which causes the input to read “high”. When the switch is closed, the GPIO pin is connected directly to ground driving it “low”. As a side effect of closing the switch, current flows through the resistor according to the following equation (also from Ohm’s law):&lt;/p&gt;
+
+&lt;p&gt;I&lt;sub&gt;PULLUP&lt;/sub&gt; = V&lt;sub&gt;CC&lt;/sub&gt;/R&lt;sub&gt;PULLUP&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;In some systems, I&lt;sub&gt;PULLUP&lt;/sub&gt; is a significant amount of current through the pull-up (or pull-down) resistor. Increasing the value of the resistor can reduce this current while simultaneously causing the pull-up or pull-down to be “weaker”.&lt;/p&gt;
+
+&lt;h3 id=&quot;weak_or_strong_pulluppulldown_resistor&quot;&gt;Weak or Strong Pull-up/Pull-down Resistor&lt;/h3&gt;
+
+&lt;p&gt;A weak pull-up/pull-down resistor typically has a value of tens or hundreds of kilo-ohms. Strong pulling resistors have values of a few kilo-ohms and can override weak pulling resistors if both are used on the same microcontroller GPIO pin. The circuit below shows a GPIO pin with a weak internal pull-up resistor–most modern microcontroller designs have built-in pull-up and/or pull-down resistors on each GPIO pin–and a strong external pull-down resistor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/internalpullup2.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In order for the strong pull-down resistor to work properly, it must be correctly sized.&lt;br /&gt;During normal operation, the voltage at the GPIO pin must be below the input low voltage V&lt;sub&gt;IL&lt;/sub&gt; as specified in the electrical characteristics section of the device’s datasheet. The voltage at the GPIO pin is calculated using a voltage divider:&lt;/p&gt;
+
+&lt;p&gt;V&lt;sub&gt;GPIO&lt;/sub&gt; = V&lt;sub&gt;CC&lt;/sub&gt; * R1 / (R2 + R1)&lt;/p&gt;
+
+&lt;p&gt;The value of the strong pull-down must be low enough to make V&lt;sub&gt;GPIO&lt;/sub&gt; &amp;lt; V&lt;sub&gt;IL&lt;/sub&gt;.&lt;br /&gt;This ensures the voltage at the microcontroller GPIO pin is low (logic zero) when the switch is open. When the switch is closed, the signal is driven high–not because of the internal pull-up resistor but because it is directly connected to VCC.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;Pull-up/pull-down resistors are a great way to prevent microcontroller GPIO inputs from assuming undefined values in embedded designs; however, they must be correctly sized (either weak or strong) based on power consumption requirements as well as existing circuitry (such as internal pull-up/pull-down resistors) to ensure proper circuit operation.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Using LEDs in Embedded Designs</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs"/>
+   <updated>2013-10-24T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs</id>
+   <content type="html">&lt;p&gt;LEDs are a common element of many embedded designs. Though the devices are simple; their implementation is not always simplistic. Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.&lt;/p&gt;
+
+&lt;p&gt;The brightness of an LED is determined by the current that runs through it. Typical applications use a current limiting resistor in series with an LED to set the brightness at a fixed level. The following diagram shows a circuit that powers an LED using such a resistor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-circuit.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To optimize the performance of the LED, the resistor must be sized correctly (note the resistor can be either above or below the LED without affecting the operation or performance of the circuit). The LED manufacturer provides the rated current and forward voltage values that are essential to calculating the resistor size. The rated current is the optimal current value for the LED, and the forward voltage is the drop in voltage across the LED when the rated current is applied. The following diagram shows fictitious but typical values for VCC, the forward voltage, and the rated current.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-circuit-annotated.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The value of the resistor is calculated using the given constraints and Ohm’s law. The voltage drop across R1 is 2.1V, which is VCC (3.3V) minus the forward voltage across the diode (1.2V). The current through R1–the same as the rated current of D1–is 20mA. From Ohm’s law, R1 is 105 Ohms.&lt;/p&gt;
+&lt;p style=&#39;text-align: center&#39;&gt;
+V=IR&lt;br /&gt;
+2.1V=20mA*R&lt;sub&gt;1&lt;/sub&gt;&lt;br /&gt;
+R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;The rated current, 20mA, is the maximum that can be safely, continuously applied. Therefore, 105 Ohms is the minimum value for R1. Decreasing the value of R1 allows more current to flow through D1; increasing R1 decreases the current through D1 as well as the brightness.&lt;/p&gt;
+
+&lt;p&gt;In this circuit D1 is always on. The ground or power connection can be replaced with driving circuitry that is dynamically controlled with an MCU to make the LED blink or dim.&lt;/p&gt;
+
+&lt;h2 id=&quot;driving_circuitry&quot;&gt;Driving Circuitry&lt;/h2&gt;
+
+&lt;p&gt;p.LED’s can be driven using a GPIO pin or–if more current is needed–a transistor. Depending on the current capabilities of the GPIO pin, it may act as either a sink or a source for the current through the LED. The datasheet for the MCU will specifiy how much current each pin can sink or source. The following picture shows an example of the GPIO acting as a current sink.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-GPIO-sink.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the GPIO outputs a low value, the LED turns off. Conversely when the GPIO outputs a high value the LED is off. Interestingly, the LED is also off when the pin is configured as an input. The GPIO is called a current sink in this case because the current flows in to the pin (much like water flows down the drain of a kitchen sink). The pin can also act a a current source if configured as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-GPIO-source.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this case, the LED is on when the GPIO outputs a logic one. In both these scenarios, the current through the LED is limited by the sinking/sourcing capabilities of the GPIO. This limitation is overcome by using a transistor to drive the LED (shown below).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-NMOS.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To turn the LED on, Q1 needs to be turned on; that is, the GPIO pin outputs a logic one. Outputting a logic zero on the pin turns the LED off. In this case, if the GPIO is configured as an input, Q1 will be in an un-stable state, and the light may be on, off, or flickering. If keeping Q1 in a stable state is critical, a pull-up or pull-down resistor may be added to the gate of Q1 to ensure a known state while the GPIO pin is initializing.&lt;/p&gt;
+
+&lt;p&gt;Once the circuit is configured to drive the LED with a GPIO pin, as in any of the above three examples, the brightness can be adjusted dyncamically by rapidly changing the output of the pin.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/pwm-plot.jpg&#39; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dynamic_brightness_adjustment&quot;&gt;Dynamic Brightness Adjustment&lt;/h2&gt;
+
+&lt;p&gt;Pulse width modulation (PWM) is a form of digital to analog conversion that can be used to control the brightness of an LED. PWM is defined by a period and a duty cycle. The period is the total time; the duty cycle is the percentage of the period that the LED is on. The following diagram illustrates several PWM duty cycles.&lt;/p&gt;
+
+&lt;p&gt;If the period is set to a relatively large value, such as several seconds, the LED will blink. Much smaller periods (in the milli- or microsecond range) will make the LED appear to be dimmer with lower duty cycle values and brighter with higher ones.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Using LEDs in embedded designs is relatively simple (and thus a good starting point for beginners). It is important to use a current limiting resistor in-line with LEDs to prevent damage. To optimize the performance of the LED, careful sizing of the resistor is necessary. However, to just get the LED to turn on and off a broad range of resistors will work. Depending on the current requirements of the LED and the capabilites of the MCU, LEDs may be driven directly using GPIO or, for high current applications, may require the use of a transistor. Firmware can then be used to simply blink the LED or use PWM to adjust the brightness.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Using Doxygen with C</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C"/>
+   <updated>2013-10-23T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C</id>
+   <content type="html">&lt;p&gt;Doxygen is a free source code documentation tool. It automatically decomposes a software design when using an object-oriented programming language such as C++ or Java. When using C, however, there is no natural break-down of the code so the developer must create groups (or modules) within Doxygen to show a definitive decomposition of the design.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/cdoxygen-arch.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first step in using Doxygen to document C code is to create a software design. Embedded systems fit well into a layered software design with the lowest layer being the MCU’s peripheral drivers. The device driver layer is on top of the peripheral drivers and provides an API to external devices. Other software libraries may also exist independent of the hardware layers. The highest layer is typically the application. A sample, layered architecture diagram is shown above.&lt;/p&gt;
+
+&lt;p&gt;Once the design is done, each bit of functionality is assigned to a Doxygen group. The groups are then grouped together. For example, functions in the UART driver are part of the UART group, and the UART group is part of the PERIPHERAL group as shown below:&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;cm&#39;&gt;/*! \addtogroup UART UART Driver&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; *&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * \ingroup PERIPHERAL&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * @{&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * \details This is the UART perhipheral driver.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; *&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; */&lt;/span&gt;
+ 
+&lt;span class=&#39;cm&#39;&gt;/*! \file&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * \details This file is the UART peripheral driver header file.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; */&lt;/span&gt;
+ 
+&lt;span class=&#39;cp&#39;&gt;#ifndef UART_H_&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define UART_H_&lt;/span&gt;
+ 
+&lt;span class=&#39;cm&#39;&gt;/*! \details This function opens the specified UART port.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * \return Zero if the port opened successfully.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; */&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;uart_open&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;port&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The port to open */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;mode&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The mode for the UART */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+ 
+&lt;span class=&#39;cm&#39;&gt;/*! \details This function opens the specified UART port.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * \return The number of bytes read&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; */&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;uart_rd&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;port&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The port to read */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; 
+     &lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;dest&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! A pointer to the destination memory */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; 
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;size&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The number of bytes to read */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+ 
+&lt;span class=&#39;cm&#39;&gt;/*! \details This function opens the specified UART port.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; * \return The number of bytes written&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; */&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;uart_wr&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;port&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The port to write */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; 
+     &lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;src&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! A pointer to the source memory */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; 
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;size&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The number of bytes to write */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+ 
+&lt;span class=&#39;cm&#39;&gt;/*! \details This function opens the specified UART port.&lt;/span&gt;
+&lt;span class=&#39;cm&#39;&gt; */&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;uart_close&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;port&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The port to close */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+ 
+&lt;span class=&#39;cp&#39;&gt;#endif&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;To complete the design hierarchy, the PERIPHERAL group is part of a top group called SYSTEM. To document all of the modules shown in the architecture diagram above, the following groups are needed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SYSTEM
+&lt;ul&gt;
+&lt;li&gt;COMMAND_MANAGER&lt;/li&gt;
+
+&lt;li&gt;SOFTWARE
+&lt;ul&gt;
+&lt;li&gt;PID&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;DEVICE_DRIVERS
+&lt;ul&gt;
+&lt;li&gt;MOTOR_DRIVER&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;PERIPHERAL&lt;/li&gt;
+
+&lt;li&gt;UART&lt;/li&gt;
+
+&lt;li&gt;PWM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The &lt;a href=&quot;/coactionos/html/&quot;&gt;CoActionOS documentation&lt;/a&gt; includes many examples of the techniques described herein.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>USB Virtual Serial Port Firmware</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware"/>
+   <updated>2013-10-22T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware</id>
+   <content type="html">&lt;p&gt;Desktop communication to embedded devices is critical for programming and debugging. It is also important in production for data acquisition devices and other computer peripherals. Setting up a device as a virtual serial port using USB is a great solution for transferring data between desktop computers and embedded systems. It can be connected to most desktop operating systems (Windows, Mac OS X, and Linux) without installing or developing any USB drivers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/usb-cdc-desc.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction_to_usb&quot;&gt;Introduction to USB&lt;/h2&gt;
+
+&lt;p&gt;USB is a serial communications protocol that is found in almost all desktop computers (its name, Universal Serial Bus, is truly descriptive). Physically USB is just four wires: 5V, ground, data plus and data minus. It uses differential signaling to maximize immunity to noise. Using differential signaling means both data lines are used to send data in one direction making USB a half-duplex protocol. So at any given time, the USB is sending data in at most one direction. The data sent is packetized and error checked. The packets enable communication between logical endpoints stored in the host and device.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/usb-endpoints.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The basic logical building block of USB is an endpoint. Unfortunately, unlike USB, endpoint is not a descriptive name. Endpoints are realized as memory buffers in the host and device (see above diagram). In USB, the host is always the master, and the slave is the device. The host initiates all communcations. When the host sends data to a device endpoint, it means that the data is packetized, transmitted across the data plus and data minus lines, and stored in one of various memory buffers (called endpoints) in the device.&lt;/p&gt;
+
+&lt;p&gt;USB uses endpoint zero as the control endpoint. This means all USB devices have at least one endpoint. In order for the host to understand the device, it uses the control endpoint to load data that describes the device. This data is called a USB descriptor. The four main types of descriptors are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Device Descriptor: contains information about the device such as USB version, power consumption, manufacturer and serial number&lt;/li&gt;
+
+&lt;li&gt;Configuration Descriptor: contains information about what the device does like mass storage or communications&lt;/li&gt;
+
+&lt;li&gt;Interface Descriptor: describes one of possibly many ways the host can interact with the configuration&lt;/li&gt;
+
+&lt;li&gt;Endpoint Descriptor: describes how the host can send data to and get data from an interface&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In addition to these descriptor types, different classes define additional descriptors that provide additional information about how the device works. For example, a human interface device (HID) has additional descriptors that describe the input type (such as mouse, keyboard, joystick, etc). For a virtual serial port, the communications device class (CDC) provides additional information about how the host sends information to the device.&lt;/p&gt;
+
+&lt;h2 id=&quot;abstract_control_model&quot;&gt;Abstract Control Model&lt;/h2&gt;
+
+&lt;p&gt;Successfully implementing the abstract control model on the USB device requires three things:&lt;/p&gt;
+
+&lt;h3 id=&quot;properly_implementing_the_usb_descriptors&quot;&gt;Properly implementing the USB descriptors&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Responding to interface requests on endpoint zero&lt;/li&gt;
+
+&lt;li&gt;Reading and writing data on the data class interface&lt;/li&gt;
+
+&lt;li&gt;USB Virtual Serial Port USB Descriptors&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The diagram above (top) outlines the USB descriptors for a CDC device using the abstract control model (ACM). The ACM is used for a virtual serial port. Under the CDC configuration, there are two interfaces:&lt;br /&gt;the communications class interface and the data class interface. The former is used for control (such as telling the host the status of the CTS line has changed) while the latter transfers the serial port data.&lt;/p&gt;
+
+&lt;h3 id=&quot;communications_class_interface&quot;&gt;Communications Class Interface&lt;/h3&gt;
+
+&lt;p&gt;The communications class interface includes four special CDC descriptors:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CDC Header: tells the host the size of the special CDC descriptors&lt;/li&gt;
+
+&lt;li&gt;ACM: tells the host the device is, basically, a virtual serial port&lt;/li&gt;
+
+&lt;li&gt;Union: tells the host which data class interface to use to transfer data&lt;/li&gt;
+
+&lt;li&gt;Call Management: tells the host which, if any, commands the device handles over the control endpoint&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The interrupt endpoint is used when the device needs to send status updates to the host. The endpoint is an in endpoint meaning data is sent in to the host from the device.&lt;/p&gt;
+
+&lt;h3 id=&quot;data_class_interface&quot;&gt;Data Class Interface&lt;/h3&gt;
+
+&lt;p&gt;There are two endpoints that are part of the data class interface. These endpoints are effectively used to read and write data over the virtual serial port. The bulk in endpoint allows the device to send data to the host while the bulk out endpoint transfer data from the host to the device.&lt;/p&gt;
+
+&lt;h3 id=&quot;example_code&quot;&gt;Example Code&lt;/h3&gt;
+
+&lt;p&gt;The following code is used to set up the endpoint descriptors for the virtual serial port.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt; 		
+&lt;span class=&#39;cp&#39;&gt;#include &amp;lt;stdint.h&amp;gt;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//This is the standard device descriptor &lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//(HWPL_PACK ensure the structures are packed using a pragma)&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//on GCC HWPL PACK is #define HWPL_PACK __attribute__((packed))&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bcdUSB&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDeviceClass&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDeviceSubClass&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDeviceProtocol&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bMaxPacketSize&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;idVendor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;idProduct&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bcdDevice&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;iManufacturer&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;iProduct&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;iSerialNumber&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bNumConfigurations&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;usb_dev_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//definition to aid with declaring USB strings&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define usb_declare_string(len) struct \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;    HWPL_PACK { \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;  uint8_t bLength; \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;  uint8_t bDescriptorType; \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;  uint16_t string[len]; \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//definition to aid with assigning values to a USB string&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define usb_assign_string(len, ...) { \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;    .bLength = len*2+2, \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;    .bDescriptorType = USB_STRING_DESCRIPTOR_TYPE, \&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;    .string = { __VA_ARGS__ } }&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The standard configuration descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;wTotalLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bNumInterfaces&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bConfigurationValue&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;iConfiguration&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bmAttributes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bMaxPower&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;usb_cfg_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The standard interface descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bInterfaceNumber&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bAlternateSetting&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bNumEndpoints&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bInterfaceClass&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bInterfaceSubClass&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bInterfaceProtocol&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;iInterface&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;usb_interface_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The standard endpoint descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bEndpointAddress&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bmAttributes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;wMaxPacketSize&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bInterval&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The CDC functional header&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bcdCDC&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;cdc_header_func_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The CDC call management descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bmCapabilities&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDataInterface&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;cdc_call_mgt_func_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The CDC ACM descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bmCapabilities&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;cdc_abstract_contorl_model_func_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The CDC union descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bMasterInterface&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bSlaveInterface&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[];&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;cdc_union_func_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//CDC interface descriptor with CDC header, ACM, union, and call management&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_header_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;header&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_acm_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_uniondescriptor_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;union_descriptor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_callmanagement_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;call_management&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;cdc_acm_interface_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//Application level configuration descriptor with interfaces and endpoints&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_cfg_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;cfg&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* The configuration descriptor */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_interface_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;ifcontrol&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* The interface descriptor */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;link_cdc_acm_interface_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/*! The CDC ACM Class descriptor */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;control&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* Endpoint:  Interrupt out for control packets */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_interface_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;ifdata&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* The interface descriptor */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;data_out&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* Endpoint:  Bulk out */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;data_in&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* Endpoint:  Bulk in */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;terminator&lt;/span&gt;  &lt;span class=&#39;cm&#39;&gt;/* A null terminator used by the driver (required) */&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;app_cfg_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;cp&#39;&gt;#define USB_DESC_MANUFACTURER_SIZE 15&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define USB_DESC_PRODUCT_SIZE 10&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define USB_DESC_SERIAL_SIZE 16&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define USB_DESC_MANUFACTURER_STRING &amp;#39;C&amp;#39;,&amp;#39;o&amp;#39;,&amp;#39;A&amp;#39;,&amp;#39;c&amp;#39;,&amp;#39;t&amp;#39;,&amp;#39;i&amp;#39;,&amp;#39;o&amp;#39;,&amp;#39;n&amp;#39;,&amp;#39;O&amp;#39;,&amp;#39;S&amp;#39;,&amp;#39;,&amp;#39;,&amp;#39; &amp;#39;,&amp;#39;I&amp;#39;,&amp;#39;n&amp;#39;,&amp;#39;c&amp;#39;&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define USB_DESC_PRODUCT_STRING &amp;#39;C&amp;#39;,&amp;#39;o&amp;#39;,&amp;#39;A&amp;#39;,&amp;#39;c&amp;#39;,&amp;#39;t&amp;#39;,&amp;#39;i&amp;#39;,&amp;#39;o&amp;#39;,&amp;#39;n&amp;#39;,&amp;#39;O&amp;#39;,&amp;#39;S&amp;#39;&lt;/span&gt;
+&lt;span class=&#39;cp&#39;&gt;#define USB_DESC_SERIAL_STRING &amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;,&amp;#39;0&amp;#39;&lt;/span&gt;
+ 
+ 
+&lt;span class=&#39;c1&#39;&gt;//The application structure used for storing the strings&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;HWPL_PACK&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;app_usb_string_t&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint8_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;kt&#39;&gt;uint16_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;wLANGID&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;n&#39;&gt;usb_declare_string&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_DESC_MANUFACTURER_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;manufacturer&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;n&#39;&gt;usb_declare_string&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_DESC_PRODUCT_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;product&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+  &lt;span class=&#39;n&#39;&gt;usb_declare_string&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_DESC_SERIAL_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;serial&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
+ 
+&lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;link_usb_string_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;app_string_desc&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;4&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_STRING_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;wLANGID&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x0409&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//English&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;manufacturer&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;usb_assign_string&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_DESC_MANUFACTURER_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_DESC_MANUFACTURER_STRING&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;product&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;usb_assign_string&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_DESC_PRODUCT_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_DESC_PRODUCT_STRING&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;serial&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;usb_assign_string&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_DESC_SERIAL_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_DESC_SERIAL_STRING&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The application device descriptor assignment&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;usb_dev_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;app_dev_desc&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_dev_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_DEVICE_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bcdUSB&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x0200&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDeviceClass&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_DEVICE_CLASS_COMMUNICATIONS&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDeviceSubClass&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDeviceProtocol&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bMaxPacketSize&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_MAX_PACKET0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;idVendor&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;LINK_USB_VID&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;idProduct&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;LINK_USB_PID&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;+&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;10&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bcdDevice&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x0010&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;iManufacturer&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;iProduct&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;2&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;iSerialNumber&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;3&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bNumConfigurations&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//The assignment of the application&amp;#39;s USB configuration descriptor&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;link_cfg_desc_t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;app_cfg_desc&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;cfg&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_cfg_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_CONFIGURATION_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;wTotalLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;app_cfg_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//exclude the zero terminator&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bNumInterfaces&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x02&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bConfigurationValue&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x01&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;iConfiguration&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x03&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bmAttributes&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_CONFIG_BUS_POWERED&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bMaxPower&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_CONFIG_POWER_MA&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;LINK_REQD_CURRENT&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;ifcontrol&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_interface_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_INTERFACE_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceNumber&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bAlternateSetting&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bNumEndpoints&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x01&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceClass&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_INTERFACE_CLASS_COMMUNICATIONS&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceSubClass&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_INTERFACE_SUBCLASS_ACM&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceProtocol&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_INTERFACE_PROTOCOL_V25TER&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;iInterface&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;header&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_header_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;header&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x24&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;header&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;header&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bcdCDC&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x0110&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_acm_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x24&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x02&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;acm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bmCapabilities&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x02&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;union_descriptor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_uniondescriptor_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;union_descriptor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x24&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;union_descriptor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x06&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;union_descriptor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bMasterInterface&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;union_descriptor&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bSlaveInterface&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x01&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;call_management&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bFunctionLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_dev_cdc_callmanagement_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;call_management&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x24&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;call_management&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorSubType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x01&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;call_management&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bmCapabilities&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;call_management&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDataInterface&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x01&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;control&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_ENDPOINT_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bEndpointAddress&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_INTIN&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bmAttributes&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_ENDPOINT_TYPE_INTERRUPT&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;wMaxPacketSize&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;LINK_INTERRUPT_ENDPOINT_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterval&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;ifdata&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_interface_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_INTERFACE_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceNumber&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x01&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bAlternateSetting&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bNumEndpoints&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x02&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceClass&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;USB_INTERFACE_CLASS_COMMUNICATIONS_DATA&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceSubClass&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterfaceProtocol&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;iInterface&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;0x00&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;data_out&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_ENDPOINT_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bEndpointAddress&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_BULKOUT&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bmAttributes&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_ENDPOINT_TYPE_BULK&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;wMaxPacketSize&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;LINK_BULK_ENDPOINT_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterval&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;data_in&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bLength&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;sizeof&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;usb_ep_desc_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bDescriptorType&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_ENDPOINT_DESCRIPTOR_TYPE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bEndpointAddress&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_BULKIN&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bmAttributes&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;USB_ENDPOINT_TYPE_BULK&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;wMaxPacketSize&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;LINK_BULK_ENDPOINT_SIZE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+        &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;bInterval&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;
+    &lt;span class=&#39;p&#39;&gt;},&lt;/span&gt;
+ 
+ 
+ 
+    &lt;span class=&#39;p&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;terminator&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;required_interface_requests&quot;&gt;Required Interface Requests&lt;/h3&gt;
+
+&lt;p&gt;The firmware must recognize two special interface requests: SEND_ENCAPSULATED_COMMAND and GET_ENCAPSULATED_RESPONSE. The firmware must not stall the USB endpoint when these requests arrive. However, the firmware does not need to do anything special with the requests other than receive them and not stall.&lt;/p&gt;
+
+&lt;h3 id=&quot;reading_and_writing_data_over_the_virtual_serial_port&quot;&gt;Reading and Writing Data over the Virtual Serial Port&lt;/h3&gt;
+
+&lt;p&gt;To send and receive data over the virtual serial port is simple. Data is written to the BULK IN endpoint and is read from the BULK OUT endpoint. These are the endpoints defined in the data interface.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;The USB communications device class (CDC) abstract control model (ACM) is a great way to create a cross-platform software-firmware interface. The connection creates a virtual serial communications port that can be read and written like a classic serial port but without the outdated cables.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Understanding Microcontroller Pin Input/Output Modes</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes"/>
+   <updated>2013-10-21T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes</id>
+   <content type="html">&lt;p&gt;General purpose input/output (GPIO) pins on microcontrollers have various modes for both input and output. Input modes may include pull-up or pull-down resistors, hysteresis, or some combination. Output modes can be push-pull, high-drive or open-drain.&lt;/p&gt;
+
+&lt;h3 id=&quot;input_modes&quot;&gt;Input Modes&lt;/h3&gt;
+
+&lt;p&gt;GPIO input modes typically include high impedance, pull-up, pull-down and repeater. Most input circuitry feature hysteresis which prevents spurious state changes.&lt;/p&gt;
+
+&lt;h4 id=&quot;floating_high_impedance_tristated&quot;&gt;Floating, High Impedance, Tri-Stated&lt;/h4&gt;
+
+&lt;p&gt;When an input pin is in high impedance input mode, its state is indeterminate unless it is driven high or low by an external source. Pins configured as high impedance inputs and not currently driven are called “floating”. Many times “float” or “floating” is used interchaneably with “high impedance” or “tri-stated”. To prevent pins from floating when they are not externally driven, internally pulling resistors are used.&lt;/p&gt;
+
+&lt;h4 id=&quot;pull_updown&quot;&gt;Pull Up/Down&lt;/h4&gt;
+
+&lt;p&gt;If an input is configured with an internal pull-up, it will be high unless it is externally driven low. The converse is true with pull-down inputs (learn more about pulling resistors). Some GPIO pins also support changing the pull-up and pull-down settings dynamically using repeater mode.&lt;/p&gt;
+
+&lt;h4 id=&quot;repeater&quot;&gt;Repeater&lt;/h4&gt;
+
+&lt;p&gt;When a GPIO is configured in repeater mode, the pull-up is enabled when the pin is driven high, and the pull-down is enabled when the pin is driven low. If nothing is driving the pin, the pull-enable will retain its last known state. In some designs, this can prevent power from leaking on pins in an indeterminate state.&lt;/p&gt;
+
+&lt;h4 id=&quot;hysteresis&quot;&gt;Hysteresis&lt;/h4&gt;
+
+&lt;p&gt;Virtually all GPIO inputs use a principle called hysteresis to prevent spurious changes in state when an input value changes. “Hysteresis is the dependence of a system on not only its current environment but also on its past” (read more). Hysteresis is implemented on GPIO by setting two thresholds for a digital input which are V&lt;sub&gt;IH&lt;/sub&gt; and V&lt;sub&gt;IL&lt;/sub&gt; typically enumerated in the “Electrical Characteristics” section of microcontroller datasheets. V&lt;sub&gt;IH&lt;/sub&gt; is the input-high voltage and represents the minimum voltage that must be applied to drive the pin high. V&lt;sub&gt;IL&lt;/sub&gt; is the maximum input-low voltage needed to drive the pin low. This means if the input voltage is greater than V&lt;sub&gt;IL&lt;/sub&gt; and less than V&lt;sub&gt;IH&lt;/sub&gt;, the value at the pin depends on whether the past input value was above V&lt;sub&gt;IH&lt;/sub&gt;, in which case the pin is high, or below V&lt;sub&gt;IL&lt;/sub&gt;, which means the pin is low. The following graph illustrates the difference between no hysteresis (A) and hysteresis (B) for a given signal (U).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/smitt_hysteresis_graph.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Image from Wikipedia: Schmitt Trigger&lt;/p&gt;
+
+&lt;h3 id=&quot;output_modes&quot;&gt;Output Modes&lt;/h3&gt;
+
+&lt;h4 id=&quot;pushpull&quot;&gt;Push-Pull&lt;/h4&gt;
+
+&lt;p&gt;A push-pull output has the ability to both source and sink current. TTL and CMOS logic circuits use push-pull outputs. A CMOS push-pull topology is illustrated in the figure below. The “C” in CMOS stands for complementary because M2 and M3 are complementary devices. M2 is a PMOS device while M3 is an NMOS device. Because M2 and M3 have the same input signal, M3 is on whenever M2 is off and vice versa. An open-drain output is also shown in the figure below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/gpio-output-types.png&#39; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;opendrain&quot;&gt;Open-Drain&lt;/h4&gt;
+
+&lt;p&gt;From the figure above, the namesake of “open-drain” is obvious to anyone who is familiar with MOSFETs. A MOSFET has three terminals called: gate, source, and drain. In an open-drain configuration, the source is grounded, the gate is driven internally, and the drain is open (i.e. not connected to anything).&lt;/p&gt;
+
+&lt;p&gt;An open-drain output can only sink current. Its two states are low and high-impedance. When M1 is on, the output is set to 0V. When M1 is off, the output is not driven high nor low. Most applications, including I2C buses, use an external pull-up resistor on any open-drain outputs. Another useful application for open-drain outputs is having multiple external devices drive a single, active-low interrupt pin on a microcontroller.&lt;/p&gt;
+
+&lt;h4 id=&quot;high_drive&quot;&gt;High Drive&lt;/h4&gt;
+
+&lt;p&gt;High drive pins are push-pull pins that are capable of higher current.&lt;br /&gt;A typical push-pull output is able to source/sink around +/-8ma where a high drive output can source up to +/-40ma. The electrical characteristics specified in the datasheet enumerate the current capacity of each pin. Understanding the current capabilities of pins is important to reducing circuit board costs and complexity. If a microcontroller is capable of directly driving a motor or LED, there is no need to add external circuitry (such as a MOSFET).&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;GPIO is the simplest IO available on microcontrollers. However, it is important to understand the intricacies of GPIO such as the input and output modes. Understanding the capabilites of the GPIO can save cost and complexity in an embedded design while boosting flexiblity.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>How Microcontrollers Work</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work"/>
+   <updated>2013-10-14T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work</id>
+   <content type="html">&lt;p&gt;Microcontrollers are small computers that contain a central processor, memory, and input/output circuitry all on one integrated chiComputers in general contain all these components with varying degrees of integration. Most people are familiar with the CPU acronym which refers to the central processing unit. The core of a microcontroller is also a central processing unit and is also the focus of this article.&lt;/p&gt;
+
+&lt;p&gt;Microcontroller processors are built on a silicon base. The silicon has extra elements added in a controlled manner to create millions of semiconductor devices on a small piece of silicon. The devices are arranged and connected–basically with tiny integrated wires–to form logic gate circuits that use boolean algebra to perform mathematical operations such as addition, subtraction, et cetera. This type of logic is called combinational logic. The semiconductor devices are also arranged to form memory (such as RAM) using sequential logic. These logical building blocks are used by microcontroller designers to create the various parts of a microcontroller CPU such as the arithmetic logic unit (ALU), CPU registers, buses, and memory.&lt;/p&gt;
+
+&lt;p&gt;From the atomic level to the CPU architecture, here is an overview of how microcontrollers work:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Semiconductor Physics: silicon is doped to create semiconductor properties&lt;/li&gt;
+
+&lt;li&gt;Transistors: semiconductor material is arranged for form transistors&lt;/li&gt;
+
+&lt;li&gt;CMOS: transistors come together to form circuits that perform boolean algebra&lt;/li&gt;
+
+&lt;li&gt;Logic: both combinational and sequential logic used to form the major building blocks of a CPU&lt;/li&gt;
+
+&lt;li&gt;Microcontroller Architecture: digital logic circuitry comes together to execute instructions&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;semiconductor_physics&quot;&gt;Semiconductor Physics&lt;/h2&gt;
+
+&lt;p&gt;Modern semiconductors are made primarily from silicon. Silicon, per se, does not conduct electricity; however when impurities are introduced, silicon semi-conducts electricity. To understand how silicon is transformed from a non-conductor to a semi-conductor, it is important to be familiar with the Lewis octet rule.&lt;/p&gt;
+
+&lt;p&gt;The Lewis octet rule is a rule of thumb in chemistry that says atoms with a low number of electrons (low atomic number) tend to bond with other atoms in such a way to produce eight valence electrons. A valence electron is one in the outer regions of the atom that is used to bond with other atoms. A single silicon atom has four valence electrons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/sili-atom.svg&#39; /&gt;&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt;  This model
+inspired the CoActionOS logo.  The symbol inside the gear is a silicon atom.&lt;/div&gt;
+&lt;p&gt;When silicon atoms are around other silicon atoms, they share valence electrons such that each has eight–thus fulfilling the Lewis octet rule. The following diagram illustrates this in two dimensions, but in real life, the bonding happens in three dimensions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/sili-atom-group.svg&#39; /&gt;&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; The 
+center atom has four valence electrons of its own and shares one from each of 
+four surrounding atoms.&lt;/div&gt;
+&lt;p&gt;With pure silicon, the Lewis octet rule holds up nicely. When impurities are introduced, instead of four valence electrons, there might be only three valence electrons on some atoms; this is the case when Boron is added. Other impurities, such as nitrogen add an additional electron.&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; When a 
+material has extra valence electrons, it is more negative and called N-type.&lt;/div&gt;
+&lt;p&gt;A material that has fewer valence electrons is more positive and called P-type.&lt;/p&gt;
+
+&lt;p&gt;With extra electrons bouncing around, current is able to flow through the material when a potential is applied. In the diagram below, new electrons are injected from the “-” site while being attracted to the “+” site. The extra electrons provided by the nitrogen atoms allow the electrons to flow across the material.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/sili-nit-group.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Silicon can also be doped with Boron. Instead of having extra electrons, it has “holes” (less than eight valence electrons). These holes provide a place for electrons to jump across when a voltage is applied. The resulting material (Silicon doped with Boron) also conducts current.&lt;/p&gt;
+
+&lt;p&gt;Thus far, the materials mentioned are still conductors rather then semiconductors. It is only when the above materials are combined do they become semiconductors.&lt;/p&gt;
+
+&lt;h2 id=&quot;diodes_the_pn_junction&quot;&gt;Diodes, the PN Junction&lt;/h2&gt;
+
+&lt;p&gt;The diode is the most basic semiconductor device. It permits current to flow in one direction and prevents it from flowing in the opposite direction. It essentially acts as a one way valve. A diode is created by juxtaposing a P-type material and an N-type material (known as the PN junction). The diagram below shows a PN junction with N-type doping on the left using Nitrogen and P-type doping on the right using Boron. The red electrons represent the extra valence electrons provided by the Nitrogen atoms, and the empty electrons represent the “holes” introduced by the Boron atoms.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/p-n-junction.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When a positive voltage is applied to the P-type side of a PN junction, current flows. The extra electrons on the N-type side are pulled over to the P-type side while the negative potential injects electrons.&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; Current 
+flows from positive to negative, but electrons flow from 
+negative to positive because electrons have a negative charge value.&lt;/div&gt;
+&lt;p&gt;The diagram below illustrates how electrons are pulled across a PN junction.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/pn-junction-flow.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the voltage potential is reversed, current does not flow across the junction. All the electrons on the N-type side are pulled to the positive potential, and the electrons injected in the P-type side fill the existing holes. However, the electrons that occupy the holes are unable to flow across the N-type side because the positive potential has effectively removed the doping leaving the equivalent of pure, non-conducting Silicon.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/pn-junction-noflow.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The diode is the most basic semiconductor device. However, it is not the main building block of microcontrollers. This designation belongs to the transistor.&lt;/p&gt;
+
+&lt;h2 id=&quot;field_effect_transistors_fets&quot;&gt;Field Effect Transistors (FETs)&lt;/h2&gt;
+
+&lt;p&gt;The first widely-used transistors were the bi-polar junction transistors (BJTs). They are created by using an additional doping material with the PN junction resulting in either an NPN or PNP transistor. However, BJTs are better at amplification than switching. The second widely used transistors were the Field effect transistors (FETs). FETs are typically “on” or “off” and rarely operate in the linear region between these states making them well-suited as tiny switches.&lt;/p&gt;
+
+&lt;p&gt;FETs also use N-type and P-type materials but they are arranged distinctly. The metal-oxide-semiconductor FET (MOSFET) was the first FET and one of the most common in use today. The diagram below shows the anatomy of an N-channel MOSFET (or NMOS).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/nmos.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The NMOS consists of a P-type substrate with two N-type regions connected to the source and drain. The gate is connected to the substrate through an insulating oxide layer (electrically it acts as a capacitor). The gate is used to control whether the switch is on or off. When the gate-source voltage is 0V, the substrate acts like two diodes that are butted together in opposite directions preventing current flow in both directions. When the gate-source voltage is above a threshold, the positive charge on the gate pushes away the positively charged “holes” in the P-type region and attracts negatively charged electrons creating a depletion layer that is effectively a channel of N-type material (hence the name N-channel).&lt;/p&gt;
+
+&lt;p&gt;A P-channel MOSFET (PMOS) has the same structure but uses an N-type material for the substrate and P-type for the drain and source connections. Also the gate-source voltage must be below a certain (negative) threshold to turn on.&lt;/p&gt;
+
+&lt;p&gt;In practice, the source of an NMOS is almost always connected to ground while the source of a PMOS is mostly connected to VDD. This is especially true in single supply systems. This configuration makes it easy to apply a positive voltage to the NMOS gate and a negative voltage to the PMOS gate (both voltages being with respect to the source). The diagram below shows simplified schematic symbols for NMOS and PMOS transistors. Though the the symbols have horizontal symmetry, the conventional wisdom mentioned above holds true for subsequent illustrations meaning NMOS source is down (ground) and PMOS source is up (VDD).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/mosfet-symbols.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;NMOS and PMOS transistors work complementary to form what is called CMOS logic–the C signifies complementary.&lt;/p&gt;
+
+&lt;h2 id=&quot;cmos&quot;&gt;CMOS&lt;/h2&gt;
+
+&lt;p&gt;CMOS stands for complementary metal-oxide-semiconductor and is the result of using NMOS and PMOS transistors together to create logic gates. To grasp the importance of CMOS logic, understanding boolean algebra is crucial.&lt;/p&gt;
+
+&lt;h2 id=&quot;boolean_algebra&quot;&gt;Boolean Algebra&lt;/h2&gt;
+
+&lt;p&gt;Boolean algebra is named after George Boole who published a book called An Investigation of the Laws of Thought in 1854. In this book, he defined an algebraic system based on the values of 0 and 1. The operations defined are distinct to decimal number operations such as plus and minus as well as multiply and divide. Nonetheless, these boolean operations are the building blocks for implementing traditional algebraic operations using CMOS circuitry.&lt;/p&gt;
+
+&lt;p&gt;The basic boolean operators are NOT, AND, and OR. While AND as well as OR have two or more inputs, NOT operates on a single input value. Boolean operations are typically expressed using a truth table (a table of inputs and outputs). Here is the truth table for x NOT equals z.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;z&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;The following truth table expresses x AND y is z.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;y&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;z&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;This table is x OR y equals z.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;x&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;y&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;z&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;These operations can also be combined. NOR is a combination of NOT and OR where NOT is applied to the output of OR. Additionally, NAND is NOT applied to the output of AND. These combinations are important for building CMOS circuitry of these operations. To start building these operators with CMOS circuitry, the CMOS inverter performs the NOT operation.&lt;/p&gt;
+
+&lt;h2 id=&quot;cmos_inverter&quot;&gt;CMOS Inverter&lt;/h2&gt;
+
+&lt;p&gt;The diagram below shows a CMOS inverter which is the CMOS implementation of the boolean NOT operation–the circuit is also known as a NOT gate. The transistor on the VDD side is a PMOS while the one connected to ground is an NMOS. The drains of the PMOS and NMOS are connected at the voltage output. The gates are also connected at the voltage input.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/cmos-inverter.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When the voltage input is zero volts, the output voltage is VDD (henceforth called logic zero and logic one respectively). With zero input voltage, the gate-source voltage of the PMOS is -VDD. This causes the PMOS to conduct current. Effectively, the output is shorted to VDD. In this state, the gate-source voltage on the NMOS is zero volts keeping the NMOS off.&lt;/p&gt;
+
+&lt;p&gt;Conversely, when the voltage input is VDD, the output is logic zero. In this state, the NMOS is on, and the PMOS is off. Each input scenario is shown in the diagram below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/cmos-inverter-on-off.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;By adding two more complementary transistors, other gates are created.&lt;/p&gt;
+
+&lt;h2 id=&quot;and_gate&quot;&gt;AND Gate&lt;/h2&gt;
+
+&lt;p&gt;An AND gate is built using a NAND gate and an inverter. The NAND gate is shown in the following diagram.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/cmos-nand.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The NAND gate above is built with two NMOS and two PMOS transistors. The transistors are arranged in a complementary–there’s the C word again–configuration with the PMOSs in parallel and the NMOSs in series. To round out the AND gate, the output of the NAND gate is put through a NOT gate (CMOS inverter) to yield the AND truth table.&lt;/p&gt;
+
+&lt;h2 id=&quot;or&quot;&gt;OR&lt;/h2&gt;
+
+&lt;p&gt;OR is implemented similarly to AND. First, a NOR gate is used (shown below) which output is sent through an inverter (not shown). The NOR gate uses two NMOS transistor in parallel with two PMOS transistors in series–again using a complementary configuration.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/cmos-nor.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With just these three gates, many other logic gates, as well as more advanced digital circuitry, can be built.&lt;/p&gt;
+
+&lt;h2 id=&quot;logic&quot;&gt;Logic&lt;/h2&gt;
+
+&lt;p&gt;There are two fundamental types of logic used in microcontrollers: combinational and sequential. The output of combinational logic depends only on the current inputs much like the AND, OR and NOT gates previously discussed. Sequential logic depends both on the current inputs as well as the previous inputs and is the basis for forming memory circuits.&lt;/p&gt;
+
+&lt;h2 id=&quot;combinational_logic&quot;&gt;Combinational Logic&lt;/h2&gt;
+
+&lt;p&gt;Microcontrollers process data by performing mathematical operations. These operations are defined by the instruction set and are performed using circuitry especially designed to add, subtract, multiply, et cetera. The digital circuitry used in these operations is built using logic gates such as AND, OR, and NOT discussed previously in the CMOS section as well as additional gates (which can be built using these gates) including NAND, NOR, XOR, and XNOR.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/logic-gate-legend.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;adder_circuit&quot;&gt;Adder Circuit&lt;/h2&gt;
+
+&lt;p&gt;A binary adder has two inputs and two outputs. The inputs are the bits being added. The outputs are the sum and the carry value. Adding two binary numbers can yield four results: 0 and 1 with and without a carry. The carry bit is added to the next digit of the binary number meaning that the next addition will include three inputs: the bits to be added and the carry from the previous bit.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;c (in)&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;a&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;b&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;c (out)&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;s&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;The top half of the above truth table (where the carry is zero) is called a half adder circuit. The sum is a XOR b and the carry is a AND b. The entire table (known as a full adder) is represented by the equations below.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;s = (a XOR b) XOR cin&lt;/li&gt;
+
+&lt;li&gt;cout = (a AND b) OR ((a XOR b) AND cin)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These equations are calculated using the following circuit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/adder.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The above circuit adds just one bit to another bit. Most microcontrollers have 8, 16 or 32 bit architectures, which means they respectively add 8, 16, or 32 bits at one time. This is done by cascading the adder circuit above. A four-bit adder looks like the following circuit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/four-bit-adder.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The circuit above (expanded to 8, 16, or 32 bits) is used when the microcontroller executes an “add” instruction. Every microcontroller has an instruction set which defines which circuitry is available. Most can add, subtract, invert, shift, rotate, and complement. Some can multiply, and a few can divide. All the operations are performed using sequential logic gates using the design approach illustrated for the adder circuit starting with CMOS transistors to form logic gates. Before an operation (such as addition) starts, it needs to be loaded from memory. Likewise once an operation completes, the result is stored in memory. Combinational logic cannot store information but sequential logic can.&lt;/p&gt;
+
+&lt;h2 id=&quot;sequential_logic&quot;&gt;Sequential Logic&lt;/h2&gt;
+
+&lt;p&gt;While combination logic provides a given output for a given input, sequential logic takes both current and past input values into account when generating an output. The most basic sequential logic circuit is the SR-latch. It stores one bit of data. The circuit below shows how two NOR gates can be used for form an SR latch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/sr-flip-flop.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Q is the output of the circuit. R is used to reset the output (write to zero), and S is used to set the output (write to one). Q’ (pronounced Q not) is always the opposite value of Q. To understand the circuit, first consider the truth table for the NOR gate which is the OR output passed through a NOT gate.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;a&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;b&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;NOR&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;Now, here are the truth tables of the two NOR gates side by side.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;R&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Q&#39; (present)&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Q (next)&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;S&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Q (present)&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Q&#39; (next)&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;In the above table, notice when R is one, Q is forced to zero and when S is one, Q’ is forced to zero, and Q is forced to one. If both S and R are one, the circuit will become unstable and have an undefined output.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered center&#39;&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;S&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;R&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Hold&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Reset&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Set&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Undefined&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;The SR latch is just one of many types of memory storage circuitry. Static RAM (SRAM) (used in most microcontrollers) is not made up of SR latches but uses the same design principles. Dynamic RAM (DRAM) (used in most desktop computers) combines logic with a capacitor which stores the memory as a charge. Flash memory uses principles similar to SRAM. However, the transistor semiconductor design is tweaked to allow the gates to be programmed to retain their state when power is removed.&lt;/p&gt;
+
+&lt;p&gt;Combination and sequential logic circuitry lay the foundation for creating the digital circuitry that makes up a microcontroller’s central processing unit.&lt;/p&gt;
+
+&lt;h2 id=&quot;microcontroller_architecture&quot;&gt;Microcontroller Architecture&lt;/h2&gt;
+
+&lt;p&gt;Microcontroller architecture relies on digital devices created using combinational and sequential logic. When a microcontroller starts up, it goes to a predetermined location in memory and starts executing instructions that are stored there. Typical operations include loading data from memory, executing calculations, and storing data to memory. Some memory regions are designed to not just store data but control the input/output mechanisms of the microcontroller. This memory is typically referred to as peripheral registers because reading and writing the registers control peripheral circuitry (as opposed to the central processing).&lt;/p&gt;
+
+&lt;p&gt;A basic microcontroller architecture includes memory, a CPU, and peripheral circuitry. The memory might be flash (typically used for program instructions) and RAM. The CPU contains circuitry that can load and store data from memories as well as perform various calculations such as adding and subtracting using the arithmetic logic unit (ALU). The CPU also has a set of registers, which is a special type of RAM that is directly wired to the ALU. This means the CPU cannot directly add two values from RAM. It must first load the values to the CPU registers to perform the calculation. The general purpose CPU registers are typically called r0, r1, r2, and so on. Special CPU registers also include the program counter and stack pointer. Finally, microcontrollers contain peripheral circuitry that is controlled using peripheral registers. The peripheral registers are also RAM like. But instead of the data just sitting there, it actively controls the peripheral circuitry such as the UART, SPI, I2C, GPIO, and so on. Therefore by reading and writing the peripheral registers, the CPU can interact with external devices (such as a bluetooth radio).&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/mcu-arch.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For a microcontroller to execute an instruction, it goes through three basic steps.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fetch&lt;/li&gt;
+
+&lt;li&gt;Decode&lt;/li&gt;
+
+&lt;li&gt;Execute&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When an instruction is fetched, the CPU grabs an instruction from the flash memory using the instruction bus (see &lt;span class=&#39;badge&#39;&gt;1&lt;/span&gt; above). The CPU uses a special register called the program counter (part of CPU registers above) to keep track of what instruction should be loaded next. The program counter automatically increments–meaning it has special digital circuitry designed using logic to make it increment–each time an instruction is executed. Microcontrollers use branching instructions to make the program counter jump around in the case of executing a loop or an “if” statement.&lt;/p&gt;
+
+&lt;p&gt;Once the instruction is fetched, the CPU executes it. For load instructions, this means loading data from RAM or the peripheral registers to the CPU registers using the data bus (see &lt;span class=&#39;badge&#39;&gt;2&lt;/span&gt; above). Sometimes with load instructions that use indirect addressing, the ALU is used to calculate the address to load. Store instructions work similarly except that data from the CPU registers is stored in RAM or peripheral memory. Math based instructions pass one or two registers (see &lt;span class=&#39;badge&#39;&gt;3&lt;/span&gt; above) to the ALU which then performs a calculation (such as addition) and stores the result in a CPU register (see &lt;span class=&#39;badge&#39;&gt;4&lt;/span&gt; above).&lt;/p&gt;
+
+&lt;p&gt;The above described architecture is not all encompassing. It is more specifically a Harvard architecture with a load-store instruction set. Many other architectures exist each with various advantages and disadvantages.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Understanding how microcontrollers work starts with a basic understanding of semiconductor physics. Silicon doped into N-type and P-type materials enable the creation of semiconductor devices such as diodes and transistors. Microcontrollers consists of millions of transistors arranged a on single silicon based circuit to create many logic gates–such as AND, NOT, OR, XOR–to form the digital circuitry that make up microcontrollers.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Deploying Qt Applications on Mac OSX</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX"/>
+   <updated>2013-10-11T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX</id>
+   <content type="html">&lt;p&gt;Qt is a multi-platform development framework supporing Windows, Mac, and Linux. It is great for creating desktop applications that interact with embedded devices. Though the code runs on multiple platforms deploying a Qt application to different platforms can be challenging.&lt;/p&gt;
+
+&lt;p&gt;The following is a script that takes a Qt project and bundles it in to a Mac OS X disk image. It also does code signing which is becoming more important on Mac OS X starting with Mountain Lion. The script is used to deploy CoActionOS Link but can adapted to any Qt application.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;c&#39;&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class=&#39;nv&#39;&gt;VERSION&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt;$1&lt;/span&gt;
+&lt;span class=&#39;nv&#39;&gt;QTSDKPATH&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;/Users/tgil/QtSDK
+&lt;span class=&#39;nv&#39;&gt;APP&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;CoActionOS-Link
+&lt;span class=&#39;nv&#39;&gt;TEMPDIR&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt;$APP&lt;/span&gt;-tmp
+&lt;span class=&#39;nv&#39;&gt;SIGNATURE&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;CoActionOS,&lt;span class=&#39;se&#39;&gt;\ &lt;/span&gt;Inc
+&lt;span class=&#39;nv&#39;&gt;NAME&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;uname&lt;span class=&#39;sb&#39;&gt;`&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$NAME&amp;quot;&lt;/span&gt; !&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Darwin&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;This is not a Mac&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$VERSION&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Usage:  ../deploy &amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+make
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to Build&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#use macdeployqt to deploy the application&lt;/span&gt;
+&lt;span class=&#39;nv&#39;&gt;$QTSDKPATH&lt;/span&gt;/Desktop/Qt/4.8.0/gcc/bin/macdeployqt ./&lt;span class=&#39;nv&#39;&gt;$APP&lt;/span&gt;.app
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to run macdeployqt&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Create $TEMPDIR&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#Create a temporary directory if one doesn&amp;#39;t exist&lt;/span&gt;
+mkdir -p &lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to create temporary folder&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Clean $TEMPDIR&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#Delete the contents of any previous builds&lt;/span&gt;
+rm -Rf ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;/*
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to clean temporary folder&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Move application bundle&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#Move the application to the temporary directory&lt;/span&gt;
+mv ./&lt;span class=&#39;nv&#39;&gt;$APP&lt;/span&gt;.app ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to move application bundle&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Sign the code&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#This signs the code&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Sign Code with $SIGNATURE&amp;quot;&lt;/span&gt;
+codesign -s &lt;span class=&#39;s2&#39;&gt;&amp;quot;$SIGNATURE&amp;quot;&lt;/span&gt; -f ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;/&lt;span class=&#39;nv&#39;&gt;$APP&lt;/span&gt;.app
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to sign app bundle&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Create symbolic link&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#Create a symbolic link to the applications folder&lt;/span&gt;
+ln -s /Applications ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;/Applications
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to create link to /Applications&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Create new disk image&amp;quot;&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#Create the disk image&lt;/span&gt;
+rm -f ./&lt;span class=&#39;nv&#39;&gt;$APP&lt;/span&gt;-&lt;span class=&#39;nv&#39;&gt;$VERSION&lt;/span&gt;.dmg
+hdiutil create -srcfolder ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt; -format UDBZ ./&lt;span class=&#39;nv&#39;&gt;$APP&lt;/span&gt;-&lt;span class=&#39;nv&#39;&gt;$VERSION&lt;/span&gt;.dmg
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to create disk image&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;c&#39;&gt;#delete the temporary directory&lt;/span&gt;
+rm -Rf ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;/*
+&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;[&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;$?&amp;quot;&lt;/span&gt; -ne &lt;span class=&#39;s2&#39;&gt;&amp;quot;0&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;]&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;then&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;    &lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Failed to clean temporary folder&amp;quot;&lt;/span&gt;
+    &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;1
+&lt;span class=&#39;k&#39;&gt;fi&lt;/span&gt;
+&lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Hopefully, this script is helpful in your endeavours to deploy Qt applications on Mac OS X.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Building and Installing a Cortex-M3 Compiler on Mac OS X</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X"/>
+   <updated>2013-10-06T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X</id>
+   <content type="html">&lt;p&gt;GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X. It is the compiler of choice for CoActionOS, and an excellent general purpose ARM Cortex-M3 compiler.&lt;/p&gt;
+
+&lt;p&gt;To install GCC for the ARM Cortex M3 architecture on a computer running Mac OS X (10.5 or higher), you must have XCode installed. Also, ensure the following packages (or their equivalents are installed): flex, bison, libgmp3, libppl, libmpfr, autoconf, automake, texinfo, libmpc, and build-essential. These packages can be installed using Fink or Macports. Once the pre-requisite packages are installed, the binutils, GCC, and newlib source files must be downloaded and extracted.&lt;/p&gt;
+
+&lt;p&gt;The GMP, PPL, MPFR, and MPC libraries may be installed from source. The latest versions can be downloaded from:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://gmplib.org/&quot;&gt;GMP&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://bugseng.com/products/ppl/download&quot;&gt;PPL&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.mpfr.org/&quot;&gt;MPFR&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.multiprecision.org/&quot;&gt;MPC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Once you download the source, enter the following commands in the Terminal. Replace the version values with the version you download.&lt;/p&gt;
+&lt;pre&gt;
+export GMP_VERSION=5.1.2
+#If you use ppl-1.0, you need to use GMP 5.0.x
+export PPL_VERSION=1.1pre9
+export MPFR_VERSION=3.1.2
+export MPC_VERSION=1.0.1
+export TOOLSPATH=/usr/local/CoActionOS
+mkdir -p gmp
+mkdir -p ppl
+mkdir -p mpfr
+mkdir -p mpc
+cd gmp
+../gmp-$GMP_VERSION/configure --prefix=$TOOLSPATH  --enable-cxx
+make
+make install
+cd ../ppl
+#on mingw add: --disable-shared --enable-static --disable-debugging
+../ppl-$PPL_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
+make
+make install
+cd ../mpfr
+../mpfr-$MPFR_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
+make
+make install
+cd ../mpc
+../mpc-$MPC_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH --enable-static --disable-shared
+make
+make install
+&lt;/pre&gt;
+&lt;p&gt;Now specify the program to download the sources (or use a browser).&lt;/p&gt;
+&lt;pre&gt;
+export GET=ftp
+&lt;/pre&gt;
+&lt;p&gt;Now that all prerequisites are installed, binutils, gcc, and newlib can be compiled and installed using the following commands.&lt;/p&gt;
+&lt;pre&gt;
+#Define the desired versions
+export BINUTILS_VERSION=2.23.1
+export GCC_VERSION=4.7.3
+export NEWLIB_VERSION=1.19.0
+export TOOLSPATH=/usr/local/CoActionOS
+export PROGPREFIX=arm-cm3-eabi-
+export ARCH=arm-cm3-eabi
+mkdir binutils
+mkdir gcc
+mkdir newlib
+#Download and extract the source
+$GET ftp://mirrors.kernel.org/gnu/binutils/binutils-$BINUTILS_VERSION.tar.gz
+tar -zxvf binutils-$BINUTILS_VERSION.tar.gz
+$GET ftp://mirrors.kernel.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.gz
+tar -zxvf gcc-$GCC_VERSION.tar.gz
+$GET ftp://sources.redhat.com/pub/newlib/newlib-$NEWLIB_VERSION.tar.gz
+tar -zxvf newlib-$NEWLIB_VERSION.tar.gz
+&lt;/pre&gt;
+&lt;p&gt;The binutils source needs to be built first. Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:&lt;/p&gt;
+&lt;pre&gt;
+cd binutils
+../binutils-$BINUTILS_VERSION/configure \
+  --program-prefix=$PROGPREFIX \
+  --target=$ARCH \
+  --disable-nls \
+  --disable-werror \
+  --with-cpu=cortex-m3 \
+  --with-no-thumb-interwork \
+  --with-mode=thumb \
+  --prefix=$TOOLSPATH \
+  --with-gnu-as \
+  --with-gnu-ld CC=clang
+make
+sudo make install
+export PATH=$TOOLSPATH/bin:$PATH
+&lt;/pre&gt;
+&lt;p&gt;After binutils is built, GCC is next:&lt;/p&gt;
+&lt;pre&gt;
+cd ../gcc
+../gcc-$GCC_VERSION/configure \
+     --disable-werror \
+     --target=$ARCH \
+     --with-cpu=cortex-m3 \
+     --with-mode=thumb \
+     --disable-multilib \
+     --with-float=soft \
+     --with-newlib \
+     --enable-languages=&quot;c,c++&quot; \
+     --disable-shared \
+     --with-gnu-as \
+     --with-gnu-ld \
+     --program-prefix=$PROGPREFIX \
+     --prefix=$TOOLSPATH \
+     --with-gmp=$TOOLSPATH \
+     --with-ppl=$TOOLSPATH \
+     --with-no-thumb-interwork \
+     --enable-target-optspace \
+     --disable-libssp \
+     CC=clang 
+make all-gcc
+sudo make install-gcc
+&lt;/pre&gt;
+&lt;p&gt;Now, we need to build newlib. In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions. The &lt;strong&gt;BUFSIZ&lt;/strong&gt; definition specifies what size buffer to use with printf() and file I/O. Smaller values mean slower performance using less RAM. To build newlib, type (or copy and paste) the following in a terminal window:&lt;/p&gt;
+&lt;pre&gt;
+cd ../newlib
+../newlib-$NEWLIB_VERSION/configure \
+  --target=$ARCH \
+  --disable-multilib \
+  --disable-werror \
+  --with-gnu-as \
+  --with-gnu-ld \
+  --prefix=$TOOLSPATH \
+  --disable-newlib-supplied-syscalls \
+  --disable-nls \
+  --enable-target-optspace \
+  --disable-libssp \
+  --enable-newlib-reent-small \
+  --enable-newlib-multithread \
+  --disable-libgloss
+make CFLAGS_FOR_TARGET=&quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;
+sudo make install
+&lt;/pre&gt;
+&lt;p&gt;Finally, we need to finish building GCC.&lt;/p&gt;
+&lt;pre&gt;
+cd ../gcc
+make
+sudo make install
+&lt;/pre&gt;
+&lt;p&gt;That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in /usr/local/CoActionOS. To uninstall the compiler tools, delete the /usr/local/CoActionOS folder.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>A FIFO Buffer Implementation</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation"/>
+   <updated>2013-10-02T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation</id>
+   <content type="html">&lt;p&gt;A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/fifo.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”. When the head or tail reach the end of the memory array, it wraps around to the beginning. If the tail runs in to the head, the buffer is empty. But if the head runs in to the tail, the implementation must define if the oldest data is discarded or the write does not complete. In the example below, data is never discarded.&lt;/p&gt;
+
+&lt;h2 id=&quot;general_implementation&quot;&gt;General Implementation&lt;/h2&gt;
+
+&lt;p&gt;The code below shows a general implementation of a FIFO buffer. The code assumes an overflow condition is not allowed (that is when the head meets the tail, the buffer is full and no more data can be written).&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;k&#39;&gt;typedef&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;struct&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;head&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;size&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;fifo_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//This initializes the FIFO structure with the given buffer and size&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;fifo_init&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;fifo_t&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;size&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;size&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;size&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//This reads nbytes bytes from the FIFO&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//The number of bytes read is returned&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;fifo_read&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;fifo_t&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;nbytes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;p&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;p&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;for&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;nbytes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;++&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+          &lt;span class=&#39;k&#39;&gt;if&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;!=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//see if any data is available&lt;/span&gt;
+               &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;p&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;++&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;];&lt;/span&gt;  &lt;span class=&#39;c1&#39;&gt;//grab a byte from the buffer&lt;/span&gt;
+               &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;++&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;  &lt;span class=&#39;c1&#39;&gt;//increment the tail&lt;/span&gt;
+               &lt;span class=&#39;k&#39;&gt;if&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;==&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;size&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;  &lt;span class=&#39;c1&#39;&gt;//check for wrap-around&lt;/span&gt;
+                    &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+               &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+          &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;else&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+               &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//number of bytes read &lt;/span&gt;
+          &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+     &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;nbytes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&#39;c1&#39;&gt;//This writes up to nbytes bytes to the FIFO&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//If the head runs in to the tail, not all bytes are written&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//The number of bytes written is returned&lt;/span&gt;
+&lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;fifo_write&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;fifo_t&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;nbytes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;int&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;p&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;p&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;for&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;nbytes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;++&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+           &lt;span class=&#39;c1&#39;&gt;//first check to see if there is space in the buffer&lt;/span&gt;
+           &lt;span class=&#39;k&#39;&gt;if&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;==&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;||&lt;/span&gt;
+                &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;+&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;==&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;size&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;tail&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;==&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+                 &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;i&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//no more room&lt;/span&gt;
+           &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;else&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+               &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;buf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;]&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;p&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;++&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+               &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;++&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;  &lt;span class=&#39;c1&#39;&gt;//increment the head&lt;/span&gt;
+               &lt;span class=&#39;k&#39;&gt;if&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;==&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;size&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;  &lt;span class=&#39;c1&#39;&gt;//check for wrap-around&lt;/span&gt;
+                    &lt;span class=&#39;n&#39;&gt;f&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;head&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+               &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+           &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+     &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+     &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;nbytes&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;using_a_fifo_with_a_microcontroller_uart&quot;&gt;Using a FIFO with a Microcontroller UART&lt;/h2&gt;
+
+&lt;p&gt;Many microcontroller designs have limited buffer space for data arriving on the UART. Incorporating a FIFO in the UART ISR can make it easier to manage incoming data. The following pseudo-code uses the above FIFO as part of the UART ISR.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;k&#39;&gt;static&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;fifo_t&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;uart_fifo&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+ 
+&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;uart_fifo_init&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;fifo_t&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;fifo&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+     &lt;span class=&#39;n&#39;&gt;uart_fifo&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;fifo&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+ 
+&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;uart_isr&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+     &lt;span class=&#39;kt&#39;&gt;char&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;incoming_byte&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+     &lt;span class=&#39;c1&#39;&gt;//execute any required ISR entrance code&lt;/span&gt;
+ 
+     &lt;span class=&#39;k&#39;&gt;while&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;UART_REGISTER_FLAG_DATA_READY&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//check the register for incoming data&lt;/span&gt;
+          &lt;span class=&#39;n&#39;&gt;incoming_byte&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;UART_REGISTER_READ_DATA_BYTE&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//read the UART data&lt;/span&gt;
+          &lt;span class=&#39;n&#39;&gt;fifo_write&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;uart_fifo&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;amp&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;incoming_byte&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//write the data to the fifo&lt;/span&gt;
+     &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+ 
+     &lt;span class=&#39;c1&#39;&gt;//execute any required ISR exit code&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Using a FIFO in the above way lessens the real-time requirements for an application as well as gives the application developer more leeway in handling incoming data.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;FIFOs are a storage mechanism which operate on a first-in, first-out basis. They are useful for managing the arrival of asynchronous data. Integrating a FIFO with an ISR, such as the UART ISR, can make processing the incoming data much easier for the application developer.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>8 vs 16 vs 32 Bit Microcontrollers--A Case Study</title>
+   <link href="http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers"/>
+   <updated>2013-10-01T00:00:00-06:00</updated>
+   <id>http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</id>
+   <content type="html">&lt;p&gt;Traditional microcontroller projects have been based on 8-bit architectures. However, 16-bit and 32-bit architectures (such as the ARM Cortex-M3) are becoming very attractive alternatives with competitive pricing and power consumption requirements.&lt;/p&gt;
+
+&lt;h2 id=&quot;a_small_case_study_8bit_16bit_and_32bit_microcontroller_architectures&quot;&gt;A Small Case Study: 8-bit, 16-bit, and 32-bit Microcontroller Architectures&lt;/h2&gt;
+
+&lt;p&gt;The following table offers a simple comparison between several microcontroller architectures (8-bit, 16-bit, and 32-bit) of the same package (QFP100) and roughly the same price. The comparison is simplified in order to give a rough idea of the relative value of each microcontroller.&lt;/p&gt;
+&lt;table class=&#39;table table-striped table-bordered&#39;&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;strong&gt;MCU&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;Arch&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;Flash (KB)&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;RAM (KB)&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;Clock (MHz)&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;Current (mA)&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;mA/MHz&lt;/strong&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;strong&gt;Price (USD) at 1k&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;LPC1765FBD100,551&lt;/td&gt;
+	&lt;td&gt;ARM Cortex-M3 (32)&lt;/td&gt;
+	&lt;td&gt;256&lt;/td&gt;
+	&lt;td&gt;64&lt;/td&gt;
+	&lt;td&gt;100&lt;/td&gt;
+	&lt;td&gt;50&lt;/td&gt;
+	&lt;td&gt;0.5&lt;/td&gt;
+	&lt;td&gt;5.06&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;ATxmega128A1&lt;/td&gt;
+	&lt;td&gt;AVR (8)&lt;/td&gt;
+	&lt;td&gt;128&lt;/td&gt;
+	&lt;td&gt;8&lt;/td&gt;
+	&lt;td&gt;32&lt;/td&gt;
+	&lt;td&gt;20&lt;/td&gt;
+	&lt;td&gt;0.63&lt;/td&gt;
+	&lt;td&gt;6.05&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;MSP430F5436AIPZR&lt;/td&gt;
+	&lt;td&gt;MSP430 (16)&lt;/td&gt;
+	&lt;td&gt;192&lt;/td&gt;
+	&lt;td&gt;16&lt;/td&gt;
+	&lt;td&gt;25&lt;/td&gt;
+	&lt;td&gt;10&lt;/td&gt;
+	&lt;td&gt;0.4&lt;/td&gt;
+	&lt;td&gt;4.797&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;PIC32MX340F128L-80I/PT&lt;/td&gt;
+	&lt;td&gt;PIC32 (32)&lt;/td&gt;
+	&lt;td&gt;128&lt;/td&gt;
+	&lt;td&gt;32&lt;/td&gt;
+	&lt;td&gt;80&lt;/td&gt;
+	&lt;td&gt;55&lt;/td&gt;
+	&lt;td&gt;0.69&lt;/td&gt;
+	&lt;td&gt;4.82&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;STM32F103VBT6&lt;/td&gt;
+	&lt;td&gt;ARM Cortex-M3 (32)&lt;/td&gt;
+	&lt;td&gt;128&lt;/td&gt;
+	&lt;td&gt;20&lt;/td&gt;
+	&lt;td&gt;72&lt;/td&gt;
+	&lt;td&gt;33&lt;/td&gt;
+	&lt;td&gt;0.46&lt;/td&gt;
+	&lt;td&gt;4.29&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; Prices updated
+2013-12-28 using Digikey.&lt;/div&gt;
+&lt;h2 id=&quot;flash_memory&quot;&gt;Flash Memory&lt;/h2&gt;
+
+&lt;p&gt;As far as flash memory goes, each microcontroller above has a comparable amount. The LPC1765 (ARM Cortex-CM3) offers the best value especially when compared to the other 32-bit microcontroller samples. However, because code densities can vary greatly across 8-bit/16-bit/32-bit architectures, it is difficult to determine which has the best value overall. RAM requirements are more easily compared.&lt;/p&gt;
+
+&lt;h2 id=&quot;ram&quot;&gt;RAM&lt;/h2&gt;
+
+&lt;p&gt;Since RAM is not typically associated with code densities, we can assume the RAM requirements for an application are roughly the same for different MCUs. With this assumption, the LPC1765 offers the best value for RAM at 64KB. The 8-bit and 16-bit systems simply do not have comparable RAM sizes to the 32-bit microcontroller samples.&lt;/p&gt;
+
+&lt;h2 id=&quot;cpu_speeds&quot;&gt;CPU Speeds&lt;/h2&gt;
+
+&lt;p&gt;For clock speeds, the 32-bit microcontroller systems offer significantly better performance. They can run at higher clock speeds and do more per cycle with a 32-bit instruction set and data bus. The ARM Cortex-CM3 (LPC1765), again, has a great value with a maximum clock speed of 100MHz. The drawback is that a higher clock speed means more power is consumed.&lt;/p&gt;
+
+&lt;h2 id=&quot;power_consumption&quot;&gt;Power Consumption&lt;/h2&gt;
+
+&lt;p&gt;To save power, the microcontroller can run at a lower clock speed. The mA/MHz ratio in the table is the current consumption at max speed divided by the max speed. This gives a general idea of how efficient the microcontroller is. The MSP430, which is specifically designed for ultra-low power consumption, has the best Current/MHz ratio followed closely by the ARM Cortex CM3 designs (STM32 and LPC1765).&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Though brief, this case study illustrates that 32-bit microcontroller architectures can, from a practical standpoint, replace 8-bit systems without a cost increase and with a boost in RAM size and performance.&lt;/p&gt;</content>
  </entry>
  
  

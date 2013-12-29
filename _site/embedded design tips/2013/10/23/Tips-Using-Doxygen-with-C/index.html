@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Using Doxygen with C</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+</head>
+<body style="min-height: 200px; padding-top: 50px;">
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav">
+							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>
+						Using Doxygen with C <small>Embedded Design</small>
+					</h1>
+				</div>
+				<div class="panel-body">
+					<p>Doxygen is a free source code documentation tool. It automatically decomposes a software design when using an object-oriented programming language such as C++ or Java. When using C, however, there is no natural break-down of the code so the developer must create groups (or modules) within Doxygen to show a definitive decomposition of the design.</p>
+
+<p><img class='post_image' src='/images/cdoxygen-arch.png' /></p>
+
+<p>The first step in using Doxygen to document C code is to create a software design. Embedded systems fit well into a layered software design with the lowest layer being the MCU’s peripheral drivers. The device driver layer is on top of the peripheral drivers and provides an API to external devices. Other software libraries may also exist independent of the hardware layers. The highest layer is typically the application. A sample, layered architecture diagram is shown above.</p>
+
+<p>Once the design is done, each bit of functionality is assigned to a Doxygen group. The groups are then grouped together. For example, functions in the UART driver are part of the UART group, and the UART group is part of the PERIPHERAL group as shown below:</p>
+<div class='highlight'><pre><code class='cpp'><span class='cm'>/*! \addtogroup UART UART Driver</span>
+<span class='cm'> *</span>
+<span class='cm'> * \ingroup PERIPHERAL</span>
+<span class='cm'> * @{</span>
+<span class='cm'> * \details This is the UART perhipheral driver.</span>
+<span class='cm'> *</span>
+<span class='cm'> */</span>
+ 
+<span class='cm'>/*! \file</span>
+<span class='cm'> * \details This file is the UART peripheral driver header file.</span>
+<span class='cm'> */</span>
+ 
+<span class='cp'>#ifndef UART_H_</span>
+<span class='cp'>#define UART_H_</span>
+ 
+<span class='cm'>/*! \details This function opens the specified UART port.</span>
+<span class='cm'> * \return Zero if the port opened successfully.</span>
+<span class='cm'> */</span>
+<span class='kt'>int</span> <span class='nf'>uart_open</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to open */</span><span class='p'>,</span> <span class='kt'>int</span> <span class='n'>mode</span> <span class='cm'>/*! The mode for the UART */</span><span class='p'>);</span>
+ 
+<span class='cm'>/*! \details This function opens the specified UART port.</span>
+<span class='cm'> * \return The number of bytes read</span>
+<span class='cm'> */</span>
+<span class='kt'>int</span> <span class='nf'>uart_rd</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to read */</span><span class='p'>,</span> 
+     <span class='kt'>void</span> <span class='o'>*</span> <span class='n'>dest</span> <span class='cm'>/*! A pointer to the destination memory */</span><span class='p'>,</span> 
+     <span class='kt'>int</span> <span class='n'>size</span> <span class='cm'>/*! The number of bytes to read */</span><span class='p'>);</span>
+ 
+<span class='cm'>/*! \details This function opens the specified UART port.</span>
+<span class='cm'> * \return The number of bytes written</span>
+<span class='cm'> */</span>
+<span class='kt'>int</span> <span class='nf'>uart_wr</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to write */</span><span class='p'>,</span> 
+     <span class='kt'>void</span> <span class='o'>*</span> <span class='n'>src</span> <span class='cm'>/*! A pointer to the source memory */</span><span class='p'>,</span> 
+     <span class='kt'>int</span> <span class='n'>size</span> <span class='cm'>/*! The number of bytes to write */</span><span class='p'>);</span>
+ 
+<span class='cm'>/*! \details This function opens the specified UART port.</span>
+<span class='cm'> */</span>
+<span class='kt'>void</span> <span class='nf'>uart_close</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to close */</span><span class='p'>);</span>
+ 
+<span class='cp'>#endif</span>
+</code></pre></div>
+<p>To complete the design hierarchy, the PERIPHERAL group is part of a top group called SYSTEM. To document all of the modules shown in the architecture diagram above, the following groups are needed:</p>
+
+<ul>
+<li>SYSTEM
+<ul>
+<li>COMMAND_MANAGER</li>
+
+<li>SOFTWARE
+<ul>
+<li>PID</li>
+</ul>
+</li>
+
+<li>DEVICE_DRIVERS
+<ul>
+<li>MOTOR_DRIVER</li>
+</ul>
+</li>
+
+<li>PERIPHERAL</li>
+
+<li>UART</li>
+
+<li>PWM</li>
+</ul>
+</li>
+</ul>
+
+<p>The <a href="/coactionos/html/">CoActionOS documentation</a> includes many examples of the techniques described herein.</p>
+				</div>
+			</div>
+
+			
+			<ul class="nav nav-pills">
+				
+				
+
+
+  
+     
+    	<li><a href="/tags.html#embedded-ref">embedded <span class="badge">22</span></a></li>
+     
+    	<li><a href="/tags.html#c-ref">c <span class="badge">1</span></a></li>
+     
+    	<li><a href="/tags.html#doxygen-ref">doxygen <span class="badge">1</span></a></li>
+     
+    	<li><a href="/tags.html#programming-ref">programming <span class="badge">4</span></a></li>
+    
+  
+
+
+
+			</ul>
+			
+			<div class="pagination">
+				<center>
+					 <a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware" type="button" class="btn btn-primary"><i
+						class="fa fa-arrow-left"></i></a>  
+					<a href="/archive.html" type="button" class="btn btn-primary"><i class="fa fa-archive"></i></a> 
+					<a href="/categories.html" type="button" class="btn btn-primary"><i class="fa fa-folder-open"></i></a> 
+					 <a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs" type="button" class="btn btn-primary"><i class="fa fa-arrow-right"></i></a>
+					
+				</center>
+			</div>
+				
+		</div>
+		<div class="col-md-3">
+		
+
+			<h3>Embedded Design Tips</h3>
+			<ul class="nav nav-pills nav-stacked">
+				
+				  
+				
+
+
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded fifo uart serial microcontroller programming'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded usb programming microcontroller'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C" class="active">Using Doxygen with C</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gpio circuit microcontroller'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
+      	
+      
+    
+  
+
+
+
+			</ul>
+			
+			
+				<h3>Embedded C Tutorial</h3>
+				<ul class="nav nav-pills nav-stacked">
+					  
+					
+
+
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	
+      
+    
+  
+
+
+
+				</ul>
+			
+			
+			
+			  
+		</div>
+	</div>
+
+</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+

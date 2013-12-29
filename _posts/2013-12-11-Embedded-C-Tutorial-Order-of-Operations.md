@@ -3,7 +3,7 @@ layout: post
 title: Order of Operations Reference
 category: Embedded C Tutorial
 category: Embedded C Tutorial
-tags : [embedded, tips, tutorial]
+tags : [embedded, tutorial]
 number: 10
 ---
 

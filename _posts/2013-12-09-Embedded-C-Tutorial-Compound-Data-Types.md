@@ -3,7 +3,7 @@ layout: post
 title: Compound Data Types
 category: Embedded C Tutorial
 tagline: Embedded C Tutorial
-tags : [embedded, tips, tutorial]
+tags : [embedded, tutorial]
 number: 08
 ---
 

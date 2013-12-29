@@ -8,7 +8,7 @@ tags : [coaction, user-guide]
 
 ## Windows XP/Vista/7
 
-p. When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is).  When a CoActionOS device is connected, Windows 7 automatically installs the driver.
+When CoActionOS Link is installed, it copies the driver files to C:\Windows\inf (or whatever your Windows directory is).  When a CoActionOS device is connected, Windows 7 automatically installs the driver.
 
 ## Windows 8.1
 

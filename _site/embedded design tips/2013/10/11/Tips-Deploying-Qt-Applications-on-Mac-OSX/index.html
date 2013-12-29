@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Deploying Qt Applications on Mac OSX</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+</head>
+<body style="min-height: 200px; padding-top: 50px;">
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav">
+							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>
+						Deploying Qt Applications on Mac OSX <small>Embedded Design</small>
+					</h1>
+				</div>
+				<div class="panel-body">
+					<p>Qt is a multi-platform development framework supporing Windows, Mac, and Linux. It is great for creating desktop applications that interact with embedded devices. Though the code runs on multiple platforms deploying a Qt application to different platforms can be challenging.</p>
+
+<p>The following is a script that takes a Qt project and bundles it in to a Mac OS X disk image. It also does code signing which is becoming more important on Mac OS X starting with Mountain Lion. The script is used to deploy CoActionOS Link but can adapted to any Qt application.</p>
+<div class='highlight'><pre><code class='bash'><span class='c'>#!/bin/bash</span>
+<span class='nv'>VERSION</span><span class='o'>=</span><span class='nv'>$1</span>
+<span class='nv'>QTSDKPATH</span><span class='o'>=</span>/Users/tgil/QtSDK
+<span class='nv'>APP</span><span class='o'>=</span>CoActionOS-Link
+<span class='nv'>TEMPDIR</span><span class='o'>=</span><span class='nv'>$APP</span>-tmp
+<span class='nv'>SIGNATURE</span><span class='o'>=</span>CoActionOS,<span class='se'>\ </span>Inc
+<span class='nv'>NAME</span><span class='o'>=</span><span class='sb'>`</span>uname<span class='sb'>`</span>
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$NAME&quot;</span> !<span class='o'>=</span> <span class='s2'>&quot;Darwin&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;This is not a Mac&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$VERSION&quot;</span> <span class='o'>=</span> <span class='s2'>&quot;&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Usage:  ../deploy &quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+make
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to Build&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='c'>#use macdeployqt to deploy the application</span>
+<span class='nv'>$QTSDKPATH</span>/Desktop/Qt/4.8.0/gcc/bin/macdeployqt ./<span class='nv'>$APP</span>.app
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to run macdeployqt&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Create $TEMPDIR&quot;</span>
+<span class='c'>#Create a temporary directory if one doesn&#39;t exist</span>
+mkdir -p <span class='nv'>$TEMPDIR</span>
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to create temporary folder&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Clean $TEMPDIR&quot;</span>
+<span class='c'>#Delete the contents of any previous builds</span>
+rm -Rf ./<span class='nv'>$TEMPDIR</span>/*
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to clean temporary folder&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Move application bundle&quot;</span>
+<span class='c'>#Move the application to the temporary directory</span>
+mv ./<span class='nv'>$APP</span>.app ./<span class='nv'>$TEMPDIR</span>
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to move application bundle&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Sign the code&quot;</span>
+<span class='c'>#This signs the code</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Sign Code with $SIGNATURE&quot;</span>
+codesign -s <span class='s2'>&quot;$SIGNATURE&quot;</span> -f ./<span class='nv'>$TEMPDIR</span>/<span class='nv'>$APP</span>.app
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to sign app bundle&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Create symbolic link&quot;</span>
+<span class='c'>#Create a symbolic link to the applications folder</span>
+ln -s /Applications ./<span class='nv'>$TEMPDIR</span>/Applications
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to create link to /Applications&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>echo</span> <span class='s2'>&quot;Create new disk image&quot;</span>
+<span class='c'>#Create the disk image</span>
+rm -f ./<span class='nv'>$APP</span>-<span class='nv'>$VERSION</span>.dmg
+hdiutil create -srcfolder ./<span class='nv'>$TEMPDIR</span> -format UDBZ ./<span class='nv'>$APP</span>-<span class='nv'>$VERSION</span>.dmg
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to create disk image&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='c'>#delete the temporary directory</span>
+rm -Rf ./<span class='nv'>$TEMPDIR</span>/*
+<span class='k'>if</span> <span class='o'>[</span> <span class='s2'>&quot;$?&quot;</span> -ne <span class='s2'>&quot;0&quot;</span> <span class='o'>]</span><span class='p'>;</span> <span class='k'>then</span>
+<span class='k'>    </span><span class='nb'>echo</span> <span class='s2'>&quot;Failed to clean temporary folder&quot;</span>
+    <span class='nb'>exit </span>1
+<span class='k'>fi</span>
+<span class='nb'>exit </span>0
+</code></pre></div>
+<p>Hopefully, this script is helpful in your endeavours to deploy Qt applications on Mac OS X.</p>
+				</div>
+			</div>
+
+			
+			<ul class="nav nav-pills">
+				
+				
+
+
+  
+     
+    	<li><a href="/tags.html#embedded-ref">embedded <span class="badge">22</span></a></li>
+     
+    	<li><a href="/tags.html#macosx-ref">macosx <span class="badge">2</span></a></li>
+     
+    	<li><a href="/tags.html#qt-ref">qt <span class="badge">1</span></a></li>
+    
+  
+
+
+
+			</ul>
+			
+			<div class="pagination">
+				<center>
+					 <a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X" type="button" class="btn btn-primary"><i
+						class="fa fa-arrow-left"></i></a>  
+					<a href="/archive.html" type="button" class="btn btn-primary"><i class="fa fa-archive"></i></a> 
+					<a href="/categories.html" type="button" class="btn btn-primary"><i class="fa fa-folder-open"></i></a> 
+					 <a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work" type="button" class="btn btn-primary"><i class="fa fa-arrow-right"></i></a>
+					
+				</center>
+			</div>
+				
+		</div>
+		<div class="col-md-3">
+		
+
+			<h3>Embedded Design Tips</h3>
+			<ul class="nav nav-pills nav-stacked">
+				
+				  
+				
+
+
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded fifo uart serial microcontroller programming'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX" class="active">Deploying Qt Applications on Mac OSX</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded usb programming microcontroller'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gpio circuit microcontroller'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
+      	
+      
+    
+  
+
+
+
+			</ul>
+			
+			
+				<h3>Embedded C Tutorial</h3>
+				<ul class="nav nav-pills nav-stacked">
+					  
+					
+
+
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	
+      
+    
+  
+
+
+
+				</ul>
+			
+			
+			
+			  
+		</div>
+	</div>
+
+</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+
