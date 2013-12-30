@@ -3,7 +3,7 @@ layout: post
 title: SPI Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial, serial]
+tags : [coaction, tutorial, serial, spi]
 number: 05
 ---
 SPI is a a full duplex serial protocol. It uses four lines:

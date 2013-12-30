@@ -3,7 +3,7 @@ layout: post
 title: USB Virtual Serial Port Firmware
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, usb, programming, microcontroller]
+tags : [embedded, usb, programming, microcontroller, serial]
 ---
 
 Desktop communication to embedded devices is critical for programming and 

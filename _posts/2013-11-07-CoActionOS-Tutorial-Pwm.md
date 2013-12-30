@@ -3,7 +3,7 @@ layout: post
 title: PWM Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial, control]
+tags : [coaction, tutorial, control, pwm]
 number: 07
 ---
 PWM is used to output a pulse signal. It can be used to dim an LED or 

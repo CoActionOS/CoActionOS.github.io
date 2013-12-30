@@ -3,7 +3,7 @@ layout: post
 title: I2C Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial, serial]
+tags : [coaction, tutorial, serial, i2c]
 number: 05
 ---
 

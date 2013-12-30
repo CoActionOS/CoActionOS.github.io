@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Building and Installing a Cortex-M3 Compiler on Ubuntu</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+</head>
+<body style="min-height: 200px; padding-top: 50px;">
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav">
+							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>
+						Building and Installing a Cortex-M3 Compiler on Ubuntu <small>Embedded Design</small>
+					</h1>
+				</div>
+				<div class="panel-body">
+					<p>GCC is a open source C compiler which can be downloaded, compiled, and installed on Ubuntu. It is the compiler of choice for CoActionOS.</p>
+
+<p>To install GCC for the ARM Cortex M3 architecture on a computer running Ubuntu 10.10, ensure the following packages (or their equivalents are installed): flex, bison, libgmp3-dev, libmpfr-dev, libmpc-dev, autoconf, texinfo, and build-essential. These packages can be installed apt-get. Once the pre-requisite packages are installed, the binutils, GCC, and newlib source files must be downloaded and extracted.</p>
+
+<p>First specify the program to download the sources (or use a browser).</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>GET</span><span class='o'>=</span>wget
+</code></pre></div>
+<p>Now that all prerequisites are installed, binutils, gcc, and newlib can be compiled and installed using the following commands.</p>
+<div class='highlight'><pre><code class='bash'><span class='c'>#Define the desired versions</span>
+<span class='nb'>export </span><span class='nv'>BINUTILS_VERSION</span><span class='o'>=</span>2.23.1
+<span class='nb'>export </span><span class='nv'>GCC_VERSION</span><span class='o'>=</span>4.7.3
+<span class='nb'>export </span><span class='nv'>NEWLIB_VERSION</span><span class='o'>=</span>1.19.0
+<span class='nb'>export </span><span class='nv'>TOOLSPATH</span><span class='o'>=</span>/usr/local/CoActionOS
+<span class='nb'>export </span><span class='nv'>PROGPREFIX</span><span class='o'>=</span>arm-cm3-eabi-
+<span class='nb'>export </span><span class='nv'>ARCH</span><span class='o'>=</span>arm-cm3-eabi
+mkdir binutils
+mkdir gcc
+mkdir newlib
+<span class='c'>#Download and extract the source</span>
+<span class='nv'>$GET</span> ftp://mirrors.kernel.org/gnu/binutils/binutils-<span class='nv'>$BINUTILS_VERSION</span>.tar.gz
+tar -zxvf binutils-<span class='nv'>$BINUTILS_VERSION</span>.tar.gz
+<span class='nv'>$GET</span> ftp://mirrors.kernel.org/gnu/gcc/gcc-<span class='nv'>$GCC_VERSION</span>/gcc-<span class='nv'>$GCC_VERSION</span>.tar.gz
+tar -zxvf gcc-<span class='nv'>$GCC_VERSION</span>.tar.gz
+<span class='nv'>$GET</span> ftp://sources.redhat.com/pub/newlib/newlib-<span class='nv'>$NEWLIB_VERSION</span>.tar.gz
+tar -zxvf newlib-<span class='nv'>$NEWLIB_VERSION</span>.tar.gz
+</code></pre></div>
+<p>The binutils source needs to be built first. Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>cd </span>binutils
+../binutils-<span class='nv'>$BINUTILS_VERSION</span>/configure <span class='se'>\</span>
+  --program-prefix<span class='o'>=</span><span class='nv'>$PROGPREFIX</span> <span class='se'>\</span>
+  --target<span class='o'>=</span><span class='nv'>$ARCH</span> <span class='se'>\</span>
+  --disable-nls <span class='se'>\</span>
+  --disable-werror <span class='se'>\</span>
+  --with-cpu<span class='o'>=</span>cortex-m3 <span class='se'>\</span>
+  --with-no-thumb-interwork <span class='se'>\</span>
+  --with-mode<span class='o'>=</span>thumb <span class='se'>\</span>
+  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
+  --with-gnu-as <span class='se'>\</span>
+  --with-gnu-ld
+make
+sudo make install
+<span class='nb'>export </span><span class='nv'>PATH</span><span class='o'>=</span><span class='nv'>$TOOLSPATH</span>/bin:<span class='nv'>$PATH</span>
+</code></pre></div>
+<p>After binutils is built, GCC is next:</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../gcc
+../gcc-<span class='nv'>$GCC_VERSION</span>/configure <span class='se'>\</span>
+     --disable-werror <span class='se'>\</span>
+     --target<span class='o'>=</span><span class='nv'>$ARCH</span> <span class='se'>\</span>
+     --with-cpu<span class='o'>=</span>cortex-m3 <span class='se'>\</span>
+     --with-mode<span class='o'>=</span>thumb <span class='se'>\</span>
+     --disable-multilib <span class='se'>\</span>
+     --with-float<span class='o'>=</span>soft <span class='se'>\</span>
+     --with-newlib <span class='se'>\</span>
+     --enable-languages<span class='o'>=</span><span class='s2'>&quot;c,c++&quot;</span> <span class='se'>\</span>
+     --disable-shared <span class='se'>\</span>
+     --with-gnu-as <span class='se'>\</span>
+     --with-gnu-ld <span class='se'>\</span>
+     --program-prefix<span class='o'>=</span><span class='nv'>$PROGPREFIX</span> <span class='se'>\</span>
+     --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
+     --with-no-thumb-interwork <span class='se'>\</span>
+     --enable-target-optspace <span class='se'>\</span>
+     --disable-libssp
+make all-gcc
+sudo make install-gcc
+</code></pre></div>
+<p>Next, we need to build newlib. In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_BIG_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions. The <strong>BUFSIZ</strong> definition specifies what size buffer to use with printf() and file I/O. Smaller values mean slower performance using less RAM. To build newlib, type (or copy and paste) the following in a terminal window:</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../newlib
+../newlib-<span class='nv'>$NEWLIB_VERSION</span>/configure <span class='se'>\</span>
+  --target<span class='o'>=</span><span class='nv'>$ARCH</span> <span class='se'>\</span>
+  --disable-multilib <span class='se'>\</span>
+  --disable-werror <span class='se'>\</span>
+  --with-gnu-as <span class='se'>\</span>
+  --with-gnu-ld <span class='se'>\</span>
+  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
+  --disable-newlib-supplied-syscalls <span class='se'>\</span>
+  --disable-nls <span class='se'>\</span>
+  --enable-target-optspace <span class='se'>\</span>
+  --disable-libssp <span class='se'>\</span>
+  --enable-newlib-reent-small <span class='se'>\</span>
+  --enable-newlib-multithread <span class='se'>\</span>
+  --disable-libgloss
+make <span class='nv'>CFLAGS_FOR_TARGET</span><span class='o'>=</span><span class='s2'>&quot;-D__IEEE_BIG_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;</span>
+sudo make install
+</code></pre></div>
+<p>Finally, we finish building GCC.</p>
+<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../gcc
+make
+sudo make install
+</code></pre></div>
+<p>That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in /usr/local/arm-cm3-eabi.</p>
+				</div>
+			</div>
+
+			
+			<ul class="nav nav-pills">
+				
+				
+
+
+  
+     
+    	<li><a href="/tags.html#embedded-ref">embedded <span class="badge">34</span></a></li>
+     
+    	<li><a href="/tags.html#gcc-ref">gcc <span class="badge">4</span></a></li>
+     
+    	<li><a href="/tags.html#compiler-ref">compiler <span class="badge">4</span></a></li>
+     
+    	<li><a href="/tags.html#linux-ref">linux <span class="badge">1</span></a></li>
+    
+  
+
+
+
+			</ul>
+			
+			<div class="pagination">
+				<center>
+					 <a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X" type="button" class="btn btn-primary"><i
+						class="fa fa-arrow-left"></i></a>  
+					<a href="/archive.html" type="button" class="btn btn-primary"><i class="fa fa-archive"></i></a> 
+					<a href="/categories.html" type="button" class="btn btn-primary"><i class="fa fa-folder-open"></i></a> 
+					 <a href="/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools" type="button" class="btn btn-primary"><i class="fa fa-arrow-right"></i></a>
+					
+				</center>
+			</div>
+				
+		</div>
+		<div class="col-md-3">
+		
+
+			<h3>Embedded Design Tips</h3>
+			<ul class="nav nav-pills nav-stacked">
+				
+				  
+				
+
+
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded fifo uart serial microcontroller programming'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded adc lookup-table c programming'><a href="/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table">ADC Thermistor Circuit and Lookup Table</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded filter iir programming'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler windows'><a href="/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows">Building and Installing a Cortex-M3 Compiler in Windows</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded gcc compiler linux'><a href="/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu" class="active">Building and Installing a Cortex-M3 Compiler on Ubuntu</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded compiler gcc'><a href="/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools">Building and Installing Autotools</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3 threads'><a href="/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3">Context Switching on the Cortex-M3</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit power'><a href="/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors">Decoupling Capacitors (and Other Power Rules of Thumb)</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3'><a href="/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall">Effective Use of ARM Cortex-M3 SVCall</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3 fft filter'><a href="/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3">FFT on the ARM Cortex M3</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control pwm pid motor programming circuit'><a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID">Motor Control using PWM and PID</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c programming'><a href="/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs">RAM/Flash Usage in Embedded C Programs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit sensor filter adc programming'><a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application">Sensing the Source Current in an Embedded Application</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded usb programming microcontroller serial'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gpio circuit microcontroller'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
+      	
+      
+    
+  
+
+
+
+			</ul>
+			
+			
+				<h3>Embedded C Tutorial</h3>
+				<ul class="nav nav-pills nav-stacked">
+					  
+					
+
+
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference">Keywords Reference</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	
+      
+    
+  
+
+
+
+				</ul>
+			
+			
+			
+			  
+		</div>
+	</div>
+
+</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+
