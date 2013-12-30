@@ -1,38 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>CoActionOS Docs</title>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
-<link href="../../assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
-<script src="../../assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
-<link href="../../assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="doxy-boot.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-</script>
-<link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="CoActionOS"/>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21543723-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<title>CoActionOS Docs</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
 </head>
 <body style="min-height: 200px; padding-top: 50px;">
 	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -43,22 +44,24 @@
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
 							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="../../index.html">
-							<img style="height: 22px;" src="../../images/CoActionOS-Logo.svg" />
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
 						</a>
 					</div>
+
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
-							<li><a href="../../downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="../../coactionos/html/">CoActionOS</a></li>
-									<li><a href="../../coactionos-applib/html/">CoActionOS Applib</a></li>
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
 								</ul>
-							</li>							<li><a href="../../tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
@@ -68,12 +71,23 @@
 			</div>
 		</div>
 	</header>
-<div class="container" style="margin-top: 1em">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-<div class="panel panel-default panel-body">
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<!-- end header part -->
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-10 panel panel-default">
+			<div class="panel-body">
+				
+<script type="text/javascript" src="doxy-boot.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
 <!-- Generated by Doxygen 1.8.6 -->
   <div id="navrow1" class="tabs">
     <ul class="tablist">
@@ -119,15 +133,15 @@ Inheritance diagram for Dac:</div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><a class="code" href="class_dac.html">Dac</a> dac(0);</div>
-<div class="line"><a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___d_a_c.html#gaf7a0f5287d897fc67ce9d9981c5b6236">dac_sample_t</a> samples[50];</div>
+<div class="line">dac_sample_t samples[50];</div>
 <div class="line">dac.init(1&lt;&lt;0, 50000); <span class="comment">//enable channel 0 at 50KHz</span></div>
 <div class="line"></div>
 <div class="line"> <span class="comment">//here, write meaningful values to samples</span></div>
 <div class="line"></div>
-<div class="line">dac.write(0, samples, 50*<span class="keyword">sizeof</span>(<a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___d_a_c.html#gaf7a0f5287d897fc67ce9d9981c5b6236">dac_sample_t</a>)); <span class="comment">//This returns when all 50 samples are written</span></div>
+<div class="line">dac.write(0, samples, 50*<span class="keyword">sizeof</span>(dac_sample_t)); <span class="comment">//This returns when all 50 samples are written</span></div>
 <div class="line"></div>
 <div class="line"> <span class="comment">//if you want to do other things while the sample is written use AIO</span></div>
-<div class="line"><a class="code" href="class_aio.html">Aio</a> aio(samples, 50*<span class="keyword">sizeof</span>(<a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___d_a_c.html#gaf7a0f5287d897fc67ce9d9981c5b6236">dac_sample_t</a>));</div>
+<div class="line"><a class="code" href="class_aio.html">Aio</a> aio(samples, 50*<span class="keyword">sizeof</span>(dac_sample_t));</div>
 <div class="line"></div>
 <div class="line">dac.write(aio);</div>
 <div class="line"> <span class="comment">//Here you can do other things while the data is written</span></div>
@@ -145,15 +159,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad88bbef6359e6988e3a1e3fb0a81765f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#ad88bbef6359e6988e3a1e3fb0a81765f">More...</a><br/></td></tr>
 <tr class="separator:ad88bbef6359e6988e3a1e3fb0a81765f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad053303a8c9c64e6f9b94697d6172376"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad053303a8c9c64e6f9b94697d6172376"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#ad053303a8c9c64e6f9b94697d6172376">getattr</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structdac__attr__t.html">dac_attr_t</a> *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#ad053303a8c9c64e6f9b94697d6172376">getattr</a> (dac_attr_t *attr)</td></tr>
 <tr class="memdesc:ad053303a8c9c64e6f9b94697d6172376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the DAC attributes. <br/></td></tr>
 <tr class="separator:ad053303a8c9c64e6f9b94697d6172376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec9b112a8577aee2f40ff5ee1a4a6e32"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec9b112a8577aee2f40ff5ee1a4a6e32"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#aec9b112a8577aee2f40ff5ee1a4a6e32">setattr</a> (const <a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structdac__attr__t.html">dac_attr_t</a> *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#aec9b112a8577aee2f40ff5ee1a4a6e32">setattr</a> (const dac_attr_t *attr)</td></tr>
 <tr class="memdesc:aec9b112a8577aee2f40ff5ee1a4a6e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the DAC attributes. <br/></td></tr>
 <tr class="separator:aec9b112a8577aee2f40ff5ee1a4a6e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3bd61da523bdcbfd3c038cacb7cf512"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3bd61da523bdcbfd3c038cacb7cf512"></a>
-<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___d_a_c.html#gaf7a0f5287d897fc67ce9d9981c5b6236">dac_sample_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#af3bd61da523bdcbfd3c038cacb7cf512">get</a> (void)</td></tr>
+dac_sample_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#af3bd61da523bdcbfd3c038cacb7cf512">get</a> (void)</td></tr>
 <tr class="memdesc:af3bd61da523bdcbfd3c038cacb7cf512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the dac. <br/></td></tr>
 <tr class="separator:af3bd61da523bdcbfd3c038cacb7cf512"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9297643b6f2970f64a1424e0ca660730"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dac.html#a9297643b6f2970f64a1424e0ca660730">setattr</a> (uint16_t enabled_channels, int freq=1000000, uint8_t pin_assign=0)</td></tr>
@@ -371,17 +385,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-</div>
-<hr>
-<div class="container">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-&copy 2012-2014 CoActionOS, Inc; All rights reserved. <small>Generated by doxygen 1.8.6</small>
-</div>
-</div>
-</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
 </body>
 </html>
+

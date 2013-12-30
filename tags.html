@@ -1,5 +1,5 @@
 ---
-layout: page-tags
+layout: page
 title: Tags
 header: Posts By Tag
 group: navigation
@@ -21,3 +21,9 @@ group: navigation
     {% include JB/pages_list %}
   </ul>
 {% endfor %}
+
+<div class="btn-group">
+	<button class="btn btn-default"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}"><i class="fa fa-archive"></i></a></button> 
+	<button class="btn btn-default"><a href="{{ BASE_PATH }}/categories.html"><i class="fa fa-folder-open"></i></a></button>
+	<button class="btn btn-default"><a href="{{ BASE_PATH }}/tags.html"><i class="fa fa-tags"></i></a></button>
+</div>

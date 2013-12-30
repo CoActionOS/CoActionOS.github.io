@@ -709,94 +709,170 @@ $(document).ready( function(){
 			<h2><i class="fa fa-filter"></i> Filter
 			<button id="all" class="btn btn-default pull-right"><i class="fa fa-refresh"></i></button>
 			</h2>
-			<div class="list-group">
+			<ul class="list-inline">
 				
 				
 
 
   
      
-    	<a class="list-group-item tag-list-item" href="#" id="embedded"><span class="badge">34</span> embedded</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="embedded"><button type="button" class="btn btn-lg btn-default">embedded</button></li>
+	   	
      
-    	<a class="list-group-item tag-list-item" href="#" id="microcontroller"><span class="badge">6</span> microcontroller</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="microcontroller"><button type="button" class="btn btn-sm btn-default">microcontroller</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="fifo"><span class="badge">1</span> fifo</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="fifo"><button type="button" class="btn btn-xs btn-default">fifo</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="uart"><span class="badge">2</span> uart</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="uart"><button type="button" class="btn btn-xs btn-default">uart</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="serial"><span class="badge">5</span> serial</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="serial"><button type="button" class="btn btn-xs btn-default">serial</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="programming"><span class="badge">9</span> programming</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="programming"><button type="button" class="btn btn-sm btn-default">programming</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="adc"><span class="badge">2</span> adc</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="adc"><button type="button" class="btn btn-xs btn-default">adc</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="lookup-table"><span class="badge">1</span> lookup-table</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="lookup-table"><button type="button" class="btn btn-xs btn-default">lookup-table</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="c"><span class="badge">3</span> c</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="c"><button type="button" class="btn btn-xs btn-default">c</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="filter"><span class="badge">3</span> filter</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="filter"><button type="button" class="btn btn-xs btn-default">filter</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="iir"><span class="badge">1</span> iir</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="iir"><button type="button" class="btn btn-xs btn-default">iir</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="gcc"><span class="badge">4</span> gcc</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="gcc"><button type="button" class="btn btn-xs btn-default">gcc</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="compiler"><span class="badge">4</span> compiler</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="compiler"><button type="button" class="btn btn-xs btn-default">compiler</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="windows"><span class="badge">1</span> windows</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="windows"><button type="button" class="btn btn-xs btn-default">windows</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="macosx"><span class="badge">2</span> macosx</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="macosx"><button type="button" class="btn btn-xs btn-default">macosx</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="linux"><span class="badge">1</span> linux</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="linux"><button type="button" class="btn btn-xs btn-default">linux</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="cortex-m3"><span class="badge">3</span> cortex-m3</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="cortex-m3"><button type="button" class="btn btn-xs btn-default">cortex-m3</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="threads"><span class="badge">1</span> threads</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="threads"><button type="button" class="btn btn-xs btn-default">threads</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="circuit"><span class="badge">7</span> circuit</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="circuit"><button type="button" class="btn btn-sm btn-default">circuit</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="power"><span class="badge">1</span> power</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="power"><button type="button" class="btn btn-xs btn-default">power</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="qt"><span class="badge">1</span> qt</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="qt"><button type="button" class="btn btn-xs btn-default">qt</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="fft"><span class="badge">1</span> fft</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="fft"><button type="button" class="btn btn-xs btn-default">fft</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="control"><span class="badge">7</span> control</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="control"><button type="button" class="btn btn-sm btn-default">control</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="pwm"><span class="badge">2</span> pwm</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="pwm"><button type="button" class="btn btn-xs btn-default">pwm</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="pid"><span class="badge">1</span> pid</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="pid"><button type="button" class="btn btn-xs btn-default">pid</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="motor"><span class="badge">1</span> motor</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="motor"><button type="button" class="btn btn-xs btn-default">motor</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="sensor"><span class="badge">1</span> sensor</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="sensor"><button type="button" class="btn btn-xs btn-default">sensor</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="gpio"><span class="badge">3</span> gpio</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="gpio"><button type="button" class="btn btn-xs btn-default">gpio</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="usb"><span class="badge">1</span> usb</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="usb"><button type="button" class="btn btn-xs btn-default">usb</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="doxygen"><span class="badge">1</span> doxygen</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="doxygen"><button type="button" class="btn btn-xs btn-default">doxygen</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="led"><span class="badge">1</span> led</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="led"><button type="button" class="btn btn-xs btn-default">led</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="coaction"><span class="badge">19</span> coaction</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="coaction"><button type="button" class="btn btn-default">coaction</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="tutorial"><span class="badge">22</span> tutorial</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="tutorial"><button type="button" class="btn btn-lg btn-default">tutorial</button></li>
+	   	
      
-    	<a class="list-group-item tag-list-item" href="#" id="spi"><span class="badge">1</span> spi</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="spi"><button type="button" class="btn btn-xs btn-default">spi</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="i2c"><span class="badge">1</span> i2c</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="i2c"><button type="button" class="btn btn-xs btn-default">i2c</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="user-guide"><span class="badge">6</span> user-guide</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="user-guide"><button type="button" class="btn btn-sm btn-default">user-guide</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="getting-started"><span class="badge">1</span> getting-started</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="getting-started"><button type="button" class="btn btn-xs btn-default">getting-started</button></li>
+    	
      
-    	<a class="list-group-item tag-list-item" href="#" id="downloads"><span class="badge">1</span> downloads</a>
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="downloads"><button type="button" class="btn btn-xs btn-default">downloads</button></li>
+    	
     
   
 
 
 
-			</div>
+			</ul>
 			<div class="btn-group">
 				<button class="btn btn-default"><a href="/archive.html"><i class="fa fa-archive"></i></a></button> 
 				<button class="btn btn-default"><a href="/categories.html"><i class="fa fa-folder-open"></i></a></button>

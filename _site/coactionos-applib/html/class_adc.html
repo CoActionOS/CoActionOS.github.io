@@ -1,38 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>CoActionOS Docs</title>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
-<link href="../../assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
-<script src="../../assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
-<link href="../../assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="doxy-boot.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-</script>
-<link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="CoActionOS"/>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21543723-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<title>CoActionOS Docs</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
 </head>
 <body style="min-height: 200px; padding-top: 50px;">
 	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -43,22 +44,24 @@
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
 							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="../../index.html">
-							<img style="height: 22px;" src="../../images/CoActionOS-Logo.svg" />
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
 						</a>
 					</div>
+
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
-							<li><a href="../../downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="../../coactionos/html/">CoActionOS</a></li>
-									<li><a href="../../coactionos-applib/html/">CoActionOS Applib</a></li>
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
 								</ul>
-							</li>							<li><a href="../../tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
@@ -68,12 +71,23 @@
 			</div>
 		</div>
 	</header>
-<div class="container" style="margin-top: 1em">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-<div class="panel panel-default panel-body">
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<!-- end header part -->
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-10 panel panel-default">
+			<div class="panel-body">
+				
+<script type="text/javascript" src="doxy-boot.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
 <!-- Generated by Doxygen 1.8.6 -->
   <div id="navrow1" class="tabs">
     <ul class="tablist">
@@ -113,10 +127,10 @@ Inheritance diagram for Adc:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements ADC device peripherals.</p>
 <div class="fragment"><div class="line"><a class="code" href="class_adc.html">Adc</a> adc(0);  <span class="comment">//create an instance of ADC to access port 0</span></div>
-<div class="line"><a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___a_d_c.html#ga33301a686dfa6470fcd5ddae981e889f">adc_sample_t</a> samples[16];</div>
+<div class="line">adc_sample_t samples[16];</div>
 <div class="line">adc.init((1&lt;&lt;0)|(1&lt;&lt;1)); <span class="comment">//open() and setattr() enabling channels 0 and 1</span></div>
-<div class="line">adc.read(0, samples, 16*<span class="keyword">sizeof</span>(<a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___a_d_c.html#ga33301a686dfa6470fcd5ddae981e889f">adc_sample_t</a>)); <span class="comment">//read 16 samples from channel 0</span></div>
-<div class="line">adc.read(1, samples, 16*<span class="keyword">sizeof</span>(<a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___a_d_c.html#ga33301a686dfa6470fcd5ddae981e889f">adc_sample_t</a>)); <span class="comment">//read 16 samples from channel 1</span></div>
+<div class="line">adc.read(0, samples, 16*<span class="keyword">sizeof</span>(adc_sample_t)); <span class="comment">//read 16 samples from channel 0</span></div>
+<div class="line">adc.read(1, samples, 16*<span class="keyword">sizeof</span>(adc_sample_t)); <span class="comment">//read 16 samples from channel 1</span></div>
 <div class="line">adc.close(); <span class="comment">//close the ADC</span></div>
 </div><!-- fragment --> 
 <p>Definition at line <a class="el" href="_adc_8hpp_source.html#l00022">22</a> of file <a class="el" href="_adc_8hpp_source.html">Adc.hpp</a>.</p>
@@ -131,17 +145,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa89a11350799937892313a959a9dc17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#aa89a11350799937892313a959a9dc17f">More...</a><br/></td></tr>
 <tr class="separator:aa89a11350799937892313a959a9dc17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf53f35215f09e202a0b863c7303ce33"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf53f35215f09e202a0b863c7303ce33"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#adf53f35215f09e202a0b863c7303ce33">getattr</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structadc__attr__t.html">adc_attr_t</a> *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#adf53f35215f09e202a0b863c7303ce33">getattr</a> (adc_attr_t *attr)</td></tr>
 <tr class="memdesc:adf53f35215f09e202a0b863c7303ce33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ADC attributes. <br/></td></tr>
 <tr class="separator:adf53f35215f09e202a0b863c7303ce33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fe9966a97d2b4b1b253bf67ea47f9ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4fe9966a97d2b4b1b253bf67ea47f9ff"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#a4fe9966a97d2b4b1b253bf67ea47f9ff">setattr</a> (const <a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structadc__attr__t.html">adc_attr_t</a> *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#a4fe9966a97d2b4b1b253bf67ea47f9ff">setattr</a> (const adc_attr_t *attr)</td></tr>
 <tr class="memdesc:a4fe9966a97d2b4b1b253bf67ea47f9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ADC attributes. <br/></td></tr>
 <tr class="separator:a4fe9966a97d2b4b1b253bf67ea47f9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0be381919db508e6b091ba74abeb05a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#a0be381919db508e6b091ba74abeb05a1">setattr</a> (uint16_t enabled_channels, int freq=<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___l_p_c13_x_x_d_e_v.html#gaee9ff036d0e34f634b48e953d19d3bc2">ADC_MAX_FREQ</a>, uint8_t pin_assign=0)</td></tr>
+<tr class="memitem:a0be381919db508e6b091ba74abeb05a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#a0be381919db508e6b091ba74abeb05a1">setattr</a> (uint16_t enabled_channels, int freq=ADC_MAX_FREQ, uint8_t pin_assign=0)</td></tr>
 <tr class="memdesc:a0be381919db508e6b091ba74abeb05a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the ADC attributes.  <a href="#a0be381919db508e6b091ba74abeb05a1">More...</a><br/></td></tr>
 <tr class="separator:a0be381919db508e6b091ba74abeb05a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66750f3384a6ad67bd850049be480acf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#a66750f3384a6ad67bd850049be480acf">init</a> (uint16_t enabled_channels, int freq=<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___l_p_c13_x_x_d_e_v.html#gaee9ff036d0e34f634b48e953d19d3bc2">ADC_MAX_FREQ</a>, uint8_t pin_assign=0)</td></tr>
+<tr class="memitem:a66750f3384a6ad67bd850049be480acf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_adc.html#a66750f3384a6ad67bd850049be480acf">init</a> (uint16_t enabled_channels, int freq=ADC_MAX_FREQ, uint8_t pin_assign=0)</td></tr>
 <tr class="memdesc:a66750f3384a6ad67bd850049be480acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open ADC and set the attributes as specified.  <a href="#a66750f3384a6ad67bd850049be480acf">More...</a><br/></td></tr>
 <tr class="separator:a66750f3384a6ad67bd850049be480acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_pblock"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_pblock')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_pblock.html">Pblock</a></td></tr>
@@ -241,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>freq</em> = <code><a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___l_p_c13_x_x_d_e_v.html#gaee9ff036d0e34f634b48e953d19d3bc2">ADC_MAX_FREQ</a></code>, </td>
+          <td class="paramname"><em>freq</em> = <code>ADC_MAX_FREQ</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -319,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>freq</em> = <code><a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___l_p_c13_x_x_d_e_v.html#gaee9ff036d0e34f634b48e953d19d3bc2">ADC_MAX_FREQ</a></code>, </td>
+          <td class="paramname"><em>freq</em> = <code>ADC_MAX_FREQ</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -353,17 +367,26 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-</div>
-<hr>
-<div class="container">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-&copy 2012-2014 CoActionOS, Inc; All rights reserved. <small>Generated by doxygen 1.8.6</small>
-</div>
-</div>
-</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
 </body>
 </html>
+

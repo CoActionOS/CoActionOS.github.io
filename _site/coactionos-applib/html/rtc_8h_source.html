@@ -1,38 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>CoActionOS Docs</title>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
-<link href="../../assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
-<script src="../../assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
-<link href="../../assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="doxy-boot.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-</script>
-<link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="CoActionOS"/>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21543723-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<title>CoActionOS Docs</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
 </head>
 <body style="min-height: 200px; padding-top: 50px;">
 	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -43,22 +44,24 @@
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
 							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="../../index.html">
-							<img style="height: 22px;" src="../../images/CoActionOS-Logo.svg" />
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
 						</a>
 					</div>
+
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
-							<li><a href="../../downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="../../coactionos/html/">CoActionOS</a></li>
-									<li><a href="../../coactionos-applib/html/">CoActionOS Applib</a></li>
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
 								</ul>
-							</li>							<li><a href="../../tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
@@ -68,12 +71,23 @@
 			</div>
 		</div>
 	</header>
-<div class="container" style="margin-top: 1em">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-<div class="panel panel-default panel-body">
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<!-- end header part -->
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-10 panel panel-default">
+			<div class="panel-body">
+				
+<script type="text/javascript" src="doxy-boot.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
 <!-- Generated by Doxygen 1.8.6 -->
   <div id="navrow1" class="tabs">
     <ul class="tablist">
@@ -97,7 +111,7 @@
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef APPLIB_RTC_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APPLIB_RTC_H_</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/rtc_8h.html">dev/rtc.h</a>&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;dev/rtc.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="periph_8h.html">periph.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
@@ -109,21 +123,21 @@
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga78d0a53b45e86922c171f73fddf9b4fd">rtc_close</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga6c539a39ad1a27d7ea876af1087c001e">rtc_getattr</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structrtc__attr__t.html">rtc_attr_t</a> * attr);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga6c539a39ad1a27d7ea876af1087c001e">rtc_getattr</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_attr_t * attr);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga11283b245c561cb0fc03ad003d139ad8">rtc_setattr</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structrtc__attr__t.html">rtc_attr_t</a> * attr);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga11283b245c561cb0fc03ad003d139ad8">rtc_setattr</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_attr_t * attr);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga07526fdbc24e682c58cbca992f89a4bb">rtc_setaction</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structhwpl__action__t.html">rtc_action_t</a> * action);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga07526fdbc24e682c58cbca992f89a4bb">rtc_setaction</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_action_t * action);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga71b05e6d1c67f8312e779fece63fe9b6">rtc_setalarm</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structrtc__alarm__t.html">rtc_alarm_t</a> * alarm);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga71b05e6d1c67f8312e779fece63fe9b6">rtc_setalarm</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_alarm_t * alarm);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga664351b395d81fd2066941f72091c689">rtc_getalarm</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structrtc__alarm__t.html">rtc_alarm_t</a> * alarm);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga664351b395d81fd2066941f72091c689">rtc_getalarm</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_alarm_t * alarm);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#gadf968bf00b2fe46b70f32c07a470822a">rtc_disablealarm</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#gaf8e4ce45ceac79289a6a9f626400b4c8">rtc_set</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structrtc__time__t.html">rtc_time_t</a> * time);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#gaf8e4ce45ceac79289a6a9f626400b4c8">rtc_set</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_time_t * time);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga8240b4902fca42680abccf8652d0f108">rtc_get</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structrtc__time__t.html">rtc_time_t</a> * time);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___r_t_c.html#ga8240b4902fca42680abccf8652d0f108">rtc_get</a>(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, rtc_time_t * time);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>}</div>
@@ -133,34 +147,38 @@
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* APPLIB_RTC_H_ */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___r_t_c_html_ga78d0a53b45e86922c171f73fddf9b4fd"><div class="ttname"><a href="group___r_t_c.html#ga78d0a53b45e86922c171f73fddf9b4fd">rtc_close</a></div><div class="ttdeci">int rtc_close(port_t port)</div></div>
-<div class="ttc" id="rtc_8h_html"><div class="ttname"><a href="../../coactionos/html/rtc_8h.html">rtc.h</a></div></div>
 <div class="ttc" id="group___r_t_c_html_ga07526fdbc24e682c58cbca992f89a4bb"><div class="ttname"><a href="group___r_t_c.html#ga07526fdbc24e682c58cbca992f89a4bb">rtc_setaction</a></div><div class="ttdeci">int rtc_setaction(port_t port, rtc_action_t *action)</div></div>
 <div class="ttc" id="group___r_t_c_html_ga664351b395d81fd2066941f72091c689"><div class="ttname"><a href="group___r_t_c.html#ga664351b395d81fd2066941f72091c689">rtc_getalarm</a></div><div class="ttdeci">int rtc_getalarm(port_t port, rtc_alarm_t *alarm)</div></div>
 <div class="ttc" id="group___r_t_c_html_gadf968bf00b2fe46b70f32c07a470822a"><div class="ttname"><a href="group___r_t_c.html#gadf968bf00b2fe46b70f32c07a470822a">rtc_disablealarm</a></div><div class="ttdeci">int rtc_disablealarm(port_t port)</div></div>
 <div class="ttc" id="group___r_t_c_html_ga71b05e6d1c67f8312e779fece63fe9b6"><div class="ttname"><a href="group___r_t_c.html#ga71b05e6d1c67f8312e779fece63fe9b6">rtc_setalarm</a></div><div class="ttdeci">int rtc_setalarm(port_t port, rtc_alarm_t *alarm)</div></div>
 <div class="ttc" id="group___r_t_c_html_gaf8e4ce45ceac79289a6a9f626400b4c8"><div class="ttname"><a href="group___r_t_c.html#gaf8e4ce45ceac79289a6a9f626400b4c8">rtc_set</a></div><div class="ttdeci">int rtc_set(port_t port, rtc_time_t *time)</div></div>
-<div class="ttc" id="structhwpl__action__t_html"><div class="ttname"><a href="../../coactionos/html/structhwpl__action__t.html">hwpl_action_t</a></div></div>
 <div class="ttc" id="periph_8h_html"><div class="ttname"><a href="periph_8h.html">periph.h</a></div></div>
-<div class="ttc" id="structrtc__attr__t_html"><div class="ttname"><a href="../../coactionos/html/structrtc__attr__t.html">rtc_attr_t</a></div></div>
-<div class="ttc" id="structrtc__alarm__t_html"><div class="ttname"><a href="../../coactionos/html/structrtc__alarm__t.html">rtc_alarm_t</a></div></div>
 <div class="ttc" id="group___p_e_r_i_p_h_html_ga5d29779155d58d67a2f85c1d953352ba"><div class="ttname"><a href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a></div><div class="ttdeci">unsigned int port_t</div><div class="ttdoc">Port type definition. </div><div class="ttdef"><b>Definition:</b> <a href="periph_8h_source.html#l00069">periph.h:69</a></div></div>
 <div class="ttc" id="group___r_t_c_html_ga8240b4902fca42680abccf8652d0f108"><div class="ttname"><a href="group___r_t_c.html#ga8240b4902fca42680abccf8652d0f108">rtc_get</a></div><div class="ttdeci">int rtc_get(port_t port, rtc_time_t *time)</div></div>
 <div class="ttc" id="group___r_t_c_html_ga11283b245c561cb0fc03ad003d139ad8"><div class="ttname"><a href="group___r_t_c.html#ga11283b245c561cb0fc03ad003d139ad8">rtc_setattr</a></div><div class="ttdeci">int rtc_setattr(port_t port, rtc_attr_t *attr)</div></div>
 <div class="ttc" id="group___r_t_c_html_gacf9bb394480a5adf91313ee44b6b029c"><div class="ttname"><a href="group___r_t_c.html#gacf9bb394480a5adf91313ee44b6b029c">rtc_open</a></div><div class="ttdeci">int rtc_open(port_t port)</div></div>
-<div class="ttc" id="structrtc__time__t_html"><div class="ttname"><a href="../../coactionos/html/structrtc__time__t.html">rtc_time_t</a></div></div>
 <div class="ttc" id="group___r_t_c_html_ga6c539a39ad1a27d7ea876af1087c001e"><div class="ttname"><a href="group___r_t_c.html#ga6c539a39ad1a27d7ea876af1087c001e">rtc_getattr</a></div><div class="ttdeci">int rtc_getattr(port_t port, rtc_attr_t *attr)</div></div>
 </div><!-- fragment --></div><!-- contents -->
+
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-</div>
-<hr>
-<div class="container">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-&copy 2012-2014 CoActionOS, Inc; All rights reserved. <small>Generated by doxygen 1.8.6</small>
-</div>
-</div>
-</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
 </body>
 </html>
+

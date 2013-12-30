@@ -1,38 +1,39 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>CoActionOS Docs</title>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-  $(document).ready(initResizable);
-</script>
-<link href="../../assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
-<script src="../../assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
-<link href="../../assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="doxy-boot.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if ($('.searchresults').length > 0) { searchBox.DOMSearchField().focus(); }
-  });
-</script>
-<link rel="search" href="search-opensearch.php?v=opensearch.xml" type="application/opensearchdescription+xml" title="CoActionOS"/>
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21543723-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
-<link href="style.css" rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<title>CoActionOS Docs</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
 </head>
 <body style="min-height: 200px; padding-top: 50px;">
 	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -43,22 +44,24 @@
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
 							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="../../index.html">
-							<img style="height: 22px;" src="../../images/CoActionOS-Logo.svg" />
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
 						</a>
 					</div>
+
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
 							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
-							<li><a href="../../downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="../../coactionos/html/">CoActionOS</a></li>
-									<li><a href="../../coactionos-applib/html/">CoActionOS Applib</a></li>
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
 								</ul>
-							</li>							<li><a href="../../tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
@@ -68,12 +71,23 @@
 			</div>
 		</div>
 	</header>
-<div class="container" style="margin-top: 1em">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-<div class="panel panel-default panel-body">
-<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
-<!-- end header part -->
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-10 panel panel-default">
+			<div class="panel-body">
+				
+<script type="text/javascript" src="doxy-boot.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
 <!-- Generated by Doxygen 1.8.6 -->
   <div id="navrow1" class="tabs">
     <ul class="tablist">
@@ -158,15 +172,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a66eee4150d7aa98938f00f1e9b45af1d inherit pub_methods_class_i2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#a66eee4150d7aa98938f00f1e9b45af1d">More...</a><br/></td></tr>
 <tr class="separator:a66eee4150d7aa98938f00f1e9b45af1d inherit pub_methods_class_i2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa28546c5cba322d704a86fb383157a22 inherit pub_methods_class_i2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa28546c5cba322d704a86fb383157a22"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#aa28546c5cba322d704a86fb383157a22">getattr</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structi2c__attr__t.html">i2c_attr_t</a> *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#aa28546c5cba322d704a86fb383157a22">getattr</a> (i2c_attr_t *attr)</td></tr>
 <tr class="memdesc:aa28546c5cba322d704a86fb383157a22 inherit pub_methods_class_i2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the I2C attributes. <br/></td></tr>
 <tr class="separator:aa28546c5cba322d704a86fb383157a22 inherit pub_methods_class_i2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ec7ec3ca4db2e19c6c0e5d987b187e2 inherit pub_methods_class_i2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ec7ec3ca4db2e19c6c0e5d987b187e2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#a0ec7ec3ca4db2e19c6c0e5d987b187e2">setattr</a> (const <a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structi2c__attr__t.html">i2c_attr_t</a> *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#a0ec7ec3ca4db2e19c6c0e5d987b187e2">setattr</a> (const i2c_attr_t *attr)</td></tr>
 <tr class="memdesc:a0ec7ec3ca4db2e19c6c0e5d987b187e2 inherit pub_methods_class_i2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the I2C attributes. <br/></td></tr>
 <tr class="separator:a0ec7ec3ca4db2e19c6c0e5d987b187e2 inherit pub_methods_class_i2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfb9578b1b482e4fd46ced0c4d8e2c5f inherit pub_methods_class_i2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfb9578b1b482e4fd46ced0c4d8e2c5f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#acfb9578b1b482e4fd46ced0c4d8e2c5f">setup</a> (const <a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structi2c__reqattr__t.html">i2c_reqattr_t</a> *req)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#acfb9578b1b482e4fd46ced0c4d8e2c5f">setup</a> (const i2c_reqattr_t *req)</td></tr>
 <tr class="memdesc:acfb9578b1b482e4fd46ced0c4d8e2c5f inherit pub_methods_class_i2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup an I2C transaction. <br/></td></tr>
 <tr class="separator:acfb9578b1b482e4fd46ced0c4d8e2c5f inherit pub_methods_class_i2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41424f5afd26f1264858cd629e12f400 inherit pub_methods_class_i2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41424f5afd26f1264858cd629e12f400"></a>
@@ -174,7 +188,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:a41424f5afd26f1264858cd629e12f400 inherit pub_methods_class_i2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last error. <br/></td></tr>
 <tr class="separator:a41424f5afd26f1264858cd629e12f400 inherit pub_methods_class_i2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc225b8cbcd941e84de1706aba41fbf inherit pub_methods_class_i2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dc225b8cbcd941e84de1706aba41fbf"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#a1dc225b8cbcd941e84de1706aba41fbf">setup</a> (uint16_t slave_addr, <a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___i2_c.html#ga3ad96dadad63bfad13256b053c868ac3">i2c_transfer_t</a> type=<a class="elRef" doxygen="/Users/tgil/git/CoActionOS/CoActionOS/doc/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___i2_c.html#gga3ad96dadad63bfad13256b053c868ac3a4493a827b39459a5bb65561dbf0640d3">I2C_TRANSFER_NORMAL</a>)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i2c.html#a1dc225b8cbcd941e84de1706aba41fbf">setup</a> (uint16_t slave_addr, i2c_transfer_t type=I2C_TRANSFER_NORMAL)</td></tr>
 <tr class="memdesc:a1dc225b8cbcd941e84de1706aba41fbf inherit pub_methods_class_i2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup an I2C transaction using the slave addr and type. <br/></td></tr>
 <tr class="separator:a1dc225b8cbcd941e84de1706aba41fbf inherit pub_methods_class_i2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4ea19dea84dca27b434d513dfeaae0 inherit pub_methods_class_i2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d4ea19dea84dca27b434d513dfeaae0"></a>
@@ -227,17 +241,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a0bfb698dfa396193b3f4f465fdf2c671 inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-</div>
-<hr>
-<div class="container">
-<div class="row">
-<div class="col-md-offset-1 col-md-10">
-&copy 2012-2014 CoActionOS, Inc; All rights reserved. <small>Generated by doxygen 1.8.6</small>
-</div>
-</div>
-</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2013 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
 </body>
 </html>
+
