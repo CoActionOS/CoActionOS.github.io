@@ -6,12 +6,10 @@ tagline: Embedded Design
 tags : [embedded, c, programming]
 ---
 
+<img class="post_image" src="{{ BASE_PATH }}/images/flash-map.svg" />
 In embedded designs, memory, especially RAM, is a precious 
 resource.  Understanding how C allocates variables in memory 
 is crucial to getting the best use of memory in embedded systems.
-
-<img class="post_image" src="{{ BASE_PATH }}/images/flash-map.svg" />
-
 
 Memory in a C program includes code (executable instructions) and 
 data.  Code is typically read-only and executable--characteristics 

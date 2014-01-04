@@ -21,6 +21,7 @@
 <link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
 <link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
 <link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+<script src="/assets/themes/twitter/js/application.js"></script>
 
 <!-- Le fav and touch icons -->
 <!-- Update these with your own images
@@ -52,7 +53,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
-							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="/services.html"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
 							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
@@ -64,7 +65,7 @@
 							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+							<li><a href="/about.html"><i class="fa fa-info-circle"></i> About</a></li>
 						</ul>
 					</div>
 				</div>
@@ -89,11 +90,11 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>LEDs are a common element of many embedded designs. Though the devices are simple; their implementation is not always simplistic. Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.</p>
+					<p><img class='post_image_tall' src='/images/LED-circuit.png' /></p>
+
+<p>LEDs are a common element of many embedded designs. Though the devices are simple; their implementation is not always simplistic. Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.</p>
 
 <p>The brightness of an LED is determined by the current that runs through it. Typical applications use a current limiting resistor in series with an LED to set the brightness at a fixed level. The following diagram shows a circuit that powers an LED using such a resistor.</p>
-
-<p><img class='post_image_tall' src='/images/LED-circuit.png' /></p>
 
 <p>To optimize the performance of the LED, the resistor must be sized correctly (note the resistor can be either above or below the LED without affecting the operation or performance of the circuit). The LED manufacturer provides the rated current and forward voltage values that are essential to calculating the resistor size. The rated current is the optimal current value for the LED, and the forward voltage is the drop in voltage across the LED when the rated current is applied. The following diagram shows fictitious but typical values for VCC, the forward voltage, and the rated current.</p>
 
@@ -165,11 +166,29 @@ R<sub>1</sub>=2.1V / 20mA=105Ohms<br />
 			
 			<div class="pagination">
 				<center>
-					 <a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C" type="button" class="btn btn-primary"><i
-						class="fa fa-arrow-left"></i></a>  
-					<a href="/archive.html" type="button" class="btn btn-primary"><i class="fa fa-archive"></i></a> 
-					<a href="/categories.html" type="button" class="btn btn-primary"><i class="fa fa-folder-open"></i></a> 
-					 <a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors" type="button" class="btn btn-primary"><i class="fa fa-arrow-right"></i></a>
+					 
+						<a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="left" title="" data-original-title="Previous Post"
+							>
+							<i class="fa fa-arrow-left"></i>
+						</a> 
+					 
+					<a href="/archive.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Archives"
+						>
+						<i class="fa fa-archive"></i>
+					</a> 
+					<a href="/categories.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Categories"
+					>
+						<i class="fa fa-folder-open"></i>
+					</a> 
+					 
+						<a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="right" title="" data-original-title="Next Post"
+							>
+							<i class="fa fa-arrow-right"></i>
+						</a>
 					
 				</center>
 			</div>
@@ -492,7 +511,7 @@ R<sub>1</sub>=2.1V / 20mA=105Ohms<br />
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-1 col-md-9">
-					<p>&copy; 2013 CoActionOS, Inc</p>
+					<p>&copy; 2014 CoActionOS, Inc</p>
 				</div>
 			</div>
 		</div>

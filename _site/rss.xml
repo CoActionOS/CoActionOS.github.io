@@ -5,60 +5,10 @@
         <description>CoActionOS - CoActionOS, Inc</description>
         <link>http://Coactionos.github.io</link>
         <link>http://Coactionos.github.io</link>
-        <lastBuildDate>2013-12-29T21:00:42-07:00</lastBuildDate>
-        <pubDate>2013-12-29T21:00:42-07:00</pubDate>
+        <lastBuildDate>2014-01-04T13:45:02-07:00</lastBuildDate>
+        <pubDate>2014-01-04T13:45:02-07:00</pubDate>
         <ttl>1800</ttl>
 
-
-        <item>
-                <title>Get the Software</title>
-                <description>&lt;p&gt;There are two software packages used with CoActionOS for Windows, Mac, and Linux&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CoActionOS Compiler (used for building programs)&lt;/li&gt;
-
-&lt;li&gt;CoActionOS Link (used for installing and running programs)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We also recommend downloading &lt;a href=&quot;http://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE for C/C++ Developers&lt;/a&gt; to use for editing code and invoking the compiler.&lt;/p&gt;
-
-&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/win/CoActionOS-Compiler-Installer-4.7.3-1.3.1.exe&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3 CoActionOS 1.3.1&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/win/CoActionOS-Link-Installer-1.3.1.exe&quot;&gt;CoActionOS Link 1.3.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Please be sure to read the Installing Windows Device Drivers.&lt;/p&gt;
-
-&lt;h2 id=&quot;mac_os_x&quot;&gt;Mac OS X&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.3-1.3.1.pkg&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.3.1&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Link-1.3.1.dmg&quot;&gt;CoActionOS Link 1.3.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;ubuntu_linux&quot;&gt;Ubuntu Linux&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/linux/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.2.7&lt;/a&gt; (&lt;a href=&quot;https://www.coactionos.com/redmine/boards/3/topics/5&quot;&gt;more info&lt;/a&gt;)&lt;/li&gt;
-
-&lt;li&gt;Even though the Linux distribution is not as up to date, you can always download the code and build/install from &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS&quot;&gt;source&lt;/a&gt; using Eclipse.&lt;/li&gt;
-
-&lt;li&gt;CoActionOS Link: currently only available in &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS-Desktop&quot;&gt;source form&lt;/a&gt;. You need to install Qt 5.0.2 in order to build the binary.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You can install the compiler using the following commands. This assumes the tar file is downloaded to the ~/Downloads directory.&lt;/p&gt;
-&lt;pre&gt;
-cd /
-sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
-&lt;/pre&gt;</description>
-                <link>http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software</link>
-                <guid>http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
-        </item>
 
         <item>
                 <title>Installing Windows Device Drivers</title>
@@ -87,35 +37,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;/ol&gt;
 
 &lt;p&gt;These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
-        </item>
-
-        <item>
-                <title>Getting Started</title>
-                <description>&lt;h3 id=&quot;buy_hardware&quot;&gt;Buy Hardware&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;“Buy the CoAction Hero”:http://www.coactionos.com/opencart/index.php?route=product/product&amp;amp;product_id=58 (easiest way to get started)&lt;/li&gt;
-
-&lt;li&gt;“Install CoActionOS on mbed”:/redmine/projects/mbed-lpc1768&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;install_eclipse_ide&quot;&gt;Install Eclipse IDE&lt;/h3&gt;
-
-&lt;p&gt;The Eclipse IDE is used for editing and building CoActionOS applications. You can download the “Eclipse IDE”:http://www.eclipse.org/cdt/downloads.php for free.&lt;/p&gt;
-
-&lt;h3 id=&quot;install_the_sdk&quot;&gt;Install the SDK&lt;/h3&gt;
-
-&lt;p&gt;To build and install applications on CoActionOS, you will need to [[Get the Software|download and install the compiler and CoActionOS Link]]&lt;/p&gt;
-
-&lt;h3 id=&quot;build_and_install_your_first_application&quot;&gt;Build and Install Your First Application&lt;/h3&gt;
-
-&lt;p&gt;Read the [[CoActionOS Tutorial–First Project|first project tutorial]].&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
+                <pubDate>2013-12-20T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -225,9 +149,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
 &lt;li&gt;&lt;em&gt;state&lt;/em&gt; allows the driver developer to provide any additional volatile data&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development</guid>
+                <pubDate>2013-12-18T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -343,9 +267,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;State machines are a great way of designing complex firmware programs. Using the Applib “SMach”:/coactionos-applib/html/class_s_mach.html and “State”:/coactionos-applib/html/class_state.html classes makes doing so quick and easy. You can get started now by downloading the attached “state machine project”:/attachments/download/367/state-machine.zip.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</guid>
+                <pubDate>2013-12-17T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -407,9 +331,9 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 
 &lt;li&gt;Right click on the project and click “Index -&amp;gt; Rebuild”&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
+                <pubDate>2013-12-16T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -442,9 +366,31 @@ all three ports.&lt;/div&gt;
 &lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Once you have the devices and filesystems you want, you just hit the hammer in Eclipse to build the kernel binary. You can then use CoActionOS Link to install the binary.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</guid>
-                <pubDate>2013-12-24T00:00:00-07:00</pubDate>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</guid>
+                <pubDate>2013-12-15T00:00:00-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Getting Started</title>
+                <description>&lt;h3 id=&quot;buy_hardware&quot;&gt;Buy Hardware&lt;/h3&gt;
+
+&lt;p&gt;Buy the &lt;a href=&quot;/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware&quot;&gt;CoAction Hero&lt;/a&gt; (easiest way to get started).&lt;/p&gt;
+
+&lt;h3 id=&quot;install_eclipse_ide&quot;&gt;Install Eclipse IDE&lt;/h3&gt;
+
+&lt;p&gt;The Eclipse IDE is used for editing and building CoActionOS applications. You can download the &lt;a href=&quot;http://www.eclipse.org/cdt/downloads.php&quot;&gt;Eclipse IDE&lt;/a&gt; for free.&lt;/p&gt;
+
+&lt;h3 id=&quot;install_the_sdk&quot;&gt;Install the SDK&lt;/h3&gt;
+
+&lt;p&gt;To build and install applications on CoActionOS, you will need to &lt;a href=&quot;/getting%20started/2013/09/02/Getting-Started-Get-the-Software&quot;&gt;get the software&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;build_and_install_your_first_application&quot;&gt;Build and Install Your First Application&lt;/h3&gt;
+
+&lt;p&gt;Read the &lt;a href=&quot;/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project&quot;&gt;CoActionOS Tutorial&lt;/a&gt;.&lt;/p&gt;</description>
+                <link>http://Coactionos.github.io/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started</link>
+                <guid>http://Coactionos.github.io/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started</guid>
+                <pubDate>2013-12-14T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -2708,8 +2654,8 @@ done
 &lt;p&gt;Using Eclipse, you can add classes or C source files. Once you add the files, the Eclipse builder will automatically include them in the build.&lt;/p&gt;
 &lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; If you download
 the attached Hello World project for MacOS X on Windows, it will still work. 
-You will just have to clear the include path entries and rebuild the index in 
-Eclipse.&lt;/div&gt;
+You will just have to clear the include path entries and &lt;a href=&#39;/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse&#39;&gt;rebuild the index in 
+Eclipse&lt;/a&gt;.&lt;/div&gt;
 &lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-macosx.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (mac)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-win.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (win)&lt;/a&gt;&lt;/p&gt;</description>
@@ -2720,7 +2666,9 @@ Eclipse.&lt;/div&gt;
 
         <item>
                 <title>Using Op Amps in Embedded Design</title>
-                <description>&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems. &lt;img class=&#39;post_image&#39; src=&#39;/images/inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/inverting-opamp.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction_to_opamps&quot;&gt;Introduction to Op-Amps&lt;/h2&gt;
 
@@ -2824,9 +2772,9 @@ Eclipse.&lt;/div&gt;
 
         <item>
                 <title>Using Pull-Up and Pull-Down Resistors</title>
-                <description>&lt;p&gt;An embedded microcontroller utilizes input/output (IO) signals to communicate with the outside world. The simplest form of IO is commonly referred to as general purpose input/output (GPIO) where the GPIO voltage level can be high, low, or high-impedance. Pulling resistors are used to ensure GPIO is always in a valid state.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/pullup.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/pullup.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;An embedded microcontroller utilizes input/output (IO) signals to communicate with the outside world. The simplest form of IO is commonly referred to as general purpose input/output (GPIO) where the GPIO voltage level can be high, low, or high-impedance. Pulling resistors are used to ensure GPIO is always in a valid state.&lt;/p&gt;
 
 &lt;h3 id=&quot;gpio_input_states_on_an_embedded_microcontroller&quot;&gt;GPIO Input States on an Embedded Microcontroller&lt;/h3&gt;
 
@@ -2866,11 +2814,11 @@ Eclipse.&lt;/div&gt;
 
         <item>
                 <title>Using LEDs in Embedded Designs</title>
-                <description>&lt;p&gt;LEDs are a common element of many embedded designs. Though the devices are simple; their implementation is not always simplistic. Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-circuit.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;LEDs are a common element of many embedded designs. Though the devices are simple; their implementation is not always simplistic. Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.&lt;/p&gt;
 
 &lt;p&gt;The brightness of an LED is determined by the current that runs through it. Typical applications use a current limiting resistor in series with an LED to set the brightness at a fixed level. The following diagram shows a circuit that powers an LED using such a resistor.&lt;/p&gt;
-
-&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/LED-circuit.png&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;To optimize the performance of the LED, the resistor must be sized correctly (note the resistor can be either above or below the LED without affecting the operation or performance of the circuit). The LED manufacturer provides the rated current and forward voltage values that are essential to calculating the resistor size. The rated current is the optimal current value for the LED, and the forward voltage is the drop in voltage across the LED when the rated current is applied. The following diagram shows fictitious but typical values for VCC, the forward voltage, and the rated current.&lt;/p&gt;
 
@@ -2922,9 +2870,9 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 
         <item>
                 <title>Using Doxygen with C</title>
-                <description>&lt;p&gt;Doxygen is a free source code documentation tool. It automatically decomposes a software design when using an object-oriented programming language such as C++ or Java. When using C, however, there is no natural break-down of the code so the developer must create groups (or modules) within Doxygen to show a definitive decomposition of the design.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/cdoxygen-arch.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/cdoxygen-arch.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;Doxygen is a free source code documentation tool. It automatically decomposes a software design when using an object-oriented programming language such as C++ or Java. When using C, however, there is no natural break-down of the code so the developer must create groups (or modules) within Doxygen to show a definitive decomposition of the design.&lt;/p&gt;
 
 &lt;p&gt;The first step in using Doxygen to document C code is to create a software design. Embedded systems fit well into a layered software design with the lowest layer being the MCU’s peripheral drivers. The device driver layer is on top of the peripheral drivers and provides an API to external devices. Other software libraries may also exist independent of the hardware layers. The highest layer is typically the application. A sample, layered architecture diagram is shown above.&lt;/p&gt;
 
@@ -3005,9 +2953,9 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 
         <item>
                 <title>USB Virtual Serial Port Firmware</title>
-                <description>&lt;p&gt;Desktop communication to embedded devices is critical for programming and debugging. It is also important in production for data acquisition devices and other computer peripherals. Setting up a device as a virtual serial port using USB is a great solution for transferring data between desktop computers and embedded systems. It can be connected to most desktop operating systems (Windows, Mac OS X, and Linux) without installing or developing any USB drivers.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/usb-cdc-desc.svg&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/usb-cdc-desc.svg&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;Desktop communication to embedded devices is critical for programming and debugging. It is also important in production for data acquisition devices and other computer peripherals. Setting up a device as a virtual serial port using USB is a great solution for transferring data between desktop computers and embedded systems. It can be connected to most desktop operating systems (Windows, Mac OS X, and Linux) without installing or developing any USB drivers.&lt;/p&gt;
 
 &lt;h2 id=&quot;introduction_to_usb&quot;&gt;Introduction to USB&lt;/h2&gt;
 
@@ -3403,9 +3351,9 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 
         <item>
                 <title>Sensing the Source Current in an Embedded Application</title>
-                <description>&lt;p&gt;This is a simple, low-cost way to measure the current output at the power source of an embedded system using a microcontroller’s ADC input.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/currentsense.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/currentsense.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;This is a simple, low-cost way to measure the current output at the power source of an embedded system using a microcontroller’s ADC input.&lt;/p&gt;
 
 &lt;p&gt;The above sensor circuit measures the current at the power source of an embedded system. The power source shown is a battery but can be any DC supply source. The above schematic shows VCC as both the battery voltage and the op-amp voltage. However, the battery voltage can be any value, and the circuit will still work. The key components of the circuit are the sensor resistor (RSENSE) and the amplifier (U1). The voltage input to U1 (the negative terminal of the battery) will always be a negative voltage with respect to ground. For this reason, U1 is configured as an inverting amplifier where:&lt;/p&gt;
 
@@ -3464,9 +3412,9 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 
         <item>
                 <title>RAM/Flash Usage in Embedded C Programs</title>
-                <description>&lt;p&gt;In embedded designs, memory, especially RAM, is a precious resource. Understanding how C allocates variables in memory is crucial to getting the best use of memory in embedded systems.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/flash-map.svg&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/flash-map.svg&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;In embedded designs, memory, especially RAM, is a precious resource. Understanding how C allocates variables in memory is crucial to getting the best use of memory in embedded systems.&lt;/p&gt;
 
 &lt;p&gt;Memory in a C program includes code (executable instructions) and data. Code is typically read-only and executable–characteristics enforced by the operating system (OS). Data memory is non-executable (enforced by the OS), can be either read-only or read-write, and is either statically or dynamically allocated which characteristics are managed by the compiler. In desktop programs, the entire memory map is managed through virtual memory using a hardware construct, called a Memory Management Unit (MMU), to map the program’s memory to physical RAM. In RAM-constrained embedded systems lacking an MMU, the memory map is divided in to a section for flash memory (code and read-only data) and a section for RAM (read-write data).&lt;/p&gt;
 &lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; This article 
@@ -3616,9 +3564,9 @@ my_static:4, my_stack:0&lt;/pre&gt;
 
         <item>
                 <title>Motor Control using PWM and PID</title>
-                <description>&lt;p&gt;Bi-directional motor control can be done using an H-bridge circuit with pulse-width modulation (PWM) from a microcontroller to vary the speed. Several design challenges include preventing shoot-through, implementing a snubber circuit, as well as open and closed loop (such as PID) control mechanisms.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/h-bridge.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/h-bridge.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;Bi-directional motor control can be done using an H-bridge circuit with pulse-width modulation (PWM) from a microcontroller to vary the speed. Several design challenges include preventing shoot-through, implementing a snubber circuit, as well as open and closed loop (such as PID) control mechanisms.&lt;/p&gt;
 
 &lt;h2 id=&quot;pwm_control_of_an_hbridge&quot;&gt;PWM Control of an H-Bridge&lt;/h2&gt;
 
@@ -3998,7 +3946,9 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
 
         <item>
                 <title>How Microcontrollers Work</title>
-                <description>&lt;p&gt;Microcontrollers are small computers that contain a central processor, memory, and input/output circuitry all on one integrated chiComputers in general contain all these components with varying degrees of integration. Most people are familiar with the CPU acronym which refers to the central processing unit. The core of a microcontroller is also a central processing unit and is also the focus of this article.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/sili-atom.svg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Microcontrollers are small computers that contain a central processor, memory, and input/output circuitry all on one integrated chiComputers in general contain all these components with varying degrees of integration. Most people are familiar with the CPU acronym which refers to the central processing unit. The core of a microcontroller is also a central processing unit and is also the focus of this article.&lt;/p&gt;
 
 &lt;p&gt;Microcontroller processors are built on a silicon base. The silicon has extra elements added in a controlled manner to create millions of semiconductor devices on a small piece of silicon. The devices are arranged and connected–basically with tiny integrated wires–to form logic gate circuits that use boolean algebra to perform mathematical operations such as addition, subtraction, et cetera. This type of logic is called combinational logic. The semiconductor devices are also arranged to form memory (such as RAM) using sequential logic. These logical building blocks are used by microcontroller designers to create the various parts of a microcontroller CPU such as the arithmetic logic unit (ALU), CPU registers, buses, and memory.&lt;/p&gt;
 
@@ -4020,15 +3970,13 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
 
 &lt;p&gt;Modern semiconductors are made primarily from silicon. Silicon, per se, does not conduct electricity; however when impurities are introduced, silicon semi-conducts electricity. To understand how silicon is transformed from a non-conductor to a semi-conductor, it is important to be familiar with the Lewis octet rule.&lt;/p&gt;
 
-&lt;p&gt;The Lewis octet rule is a rule of thumb in chemistry that says atoms with a low number of electrons (low atomic number) tend to bond with other atoms in such a way to produce eight valence electrons. A valence electron is one in the outer regions of the atom that is used to bond with other atoms. A single silicon atom has four valence electrons.&lt;/p&gt;
+&lt;p&gt;The Lewis octet rule is a rule of thumb in chemistry that says atoms with a low number of electrons (low atomic number) tend to bond with other atoms in such a way to produce eight valence electrons. A valence electron is one in the outer regions of the atom that is used to bond with other atoms. A single silicon atom has four valence electrons (as shown in the image at the top of the page).&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/sili-atom.svg&#39; /&gt;&lt;/p&gt;
-&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt;  This model
-inspired the CoActionOS logo.  The symbol inside the gear is a silicon atom.&lt;/div&gt;
 &lt;p&gt;When silicon atoms are around other silicon atoms, they share valence electrons such that each has eight–thus fulfilling the Lewis octet rule. The following diagram illustrates this in two dimensions, but in real life, the bonding happens in three dimensions.&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/sili-atom-group.svg&#39; /&gt;&lt;/p&gt;
-&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; The 
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt;  This model
+inspired the CoActionOS logo.  The symbol inside the gear is a silicon atom.&lt;/div&gt;&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; The 
 center atom has four valence electrons of its own and shares one from each of 
 four surrounding atoms.&lt;/div&gt;
 &lt;p&gt;With pure silicon, the Lewis octet rule holds up nicely. When impurities are introduced, instead of four valence electrons, there might be only three valence electrons on some atoms; this is the case when Boron is added. Other impurities, such as nitrogen add an additional electron.&lt;/p&gt;
@@ -4254,9 +4202,9 @@ negative to positive because electrons have a negative charge value.&lt;/div&gt;
 
         <item>
                 <title>FFT on the ARM Cortex M3</title>
-                <description>&lt;p&gt;The ARM Cortex-M3 combined with a Fast Fourier Transform (FFT) implementation is a powerful, embedded digital signal processing (DSP) solution. The ARM Cortex-M3 is a mid-range microcontroller architecture with clock speeds over 100MHz and a powerful arithmetic logic unit (ALU). The FFT, a useful tool in many DSP applications, utilizes these features enabling the ARM Cortex-M3 to be a suitable replacement for dedicated DSP’s in some embedded applications.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/DIT-FFT-butterfly.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/DIT-FFT-butterfly.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;The ARM Cortex-M3 combined with a Fast Fourier Transform (FFT) implementation is a powerful, embedded digital signal processing (DSP) solution. The ARM Cortex-M3 is a mid-range microcontroller architecture with clock speeds over 100MHz and a powerful arithmetic logic unit (ALU). The FFT, a useful tool in many DSP applications, utilizes these features enabling the ARM Cortex-M3 to be a suitable replacement for dedicated DSP’s in some embedded applications.&lt;/p&gt;
 
 &lt;h2 id=&quot;arm_cortexm3&quot;&gt;ARM Cortex-M3&lt;/h2&gt;
 
@@ -4528,9 +4476,9 @@ rm -Rf ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;/*
 
         <item>
                 <title>Decoupling Capacitors (and Other Power Rules of Thumb)</title>
-                <description>&lt;p&gt;It is ubiquitous in the digital electronics industry to use small capacitors next to power pins. These capacitors stabilize the power delivered to digital devices and reduce noise. They are not the only good idea in embedded systems power supply design. Ferrite beads further attenuate noise on the power supply line while diodes prevent reverse voltage and overvoltage conditions.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/decouple-caps.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/decouple-caps.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;It is ubiquitous in the digital electronics industry to use small capacitors next to power pins. These capacitors stabilize the power delivered to digital devices and reduce noise. They are not the only good idea in embedded systems power supply design. Ferrite beads further attenuate noise on the power supply line while diodes prevent reverse voltage and overvoltage conditions.&lt;/p&gt;
 
 &lt;p&gt;Digital circuitry, especially a microcontroller, typically draws high current in response to an event (such as a clock edge) and uses minimal current between events. The graph below illustrates hypothetical current spikes on dual clock edges of a 1MHz clock signal.&lt;/p&gt;
 
@@ -5256,9 +5204,9 @@ make install
 
         <item>
                 <title>An Easy-to-Use Digital Filter</title>
-                <description>&lt;p&gt;The exponential moving average (EMA) is a type of infinite impulse response (IIR) filter that can be used in many embedded DSP applications. It requires only a small amount of RAM and computing power.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/316px-Fourier_Series.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/316px-Fourier_Series.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;The exponential moving average (EMA) is a type of infinite impulse response (IIR) filter that can be used in many embedded DSP applications. It requires only a small amount of RAM and computing power.&lt;/p&gt;
 
 &lt;h2 id=&quot;what_is_a_filter&quot;&gt;What is a Filter?&lt;/h2&gt;
 
@@ -5338,9 +5286,9 @@ make install
 
         <item>
                 <title>ADC Thermistor Circuit and Lookup Table</title>
-                <description>&lt;p&gt;Thermistors are simple to integrate in embedded designs but their temperature response can be challenging to interpret. A lookup table is a convenient way to convert a thermistor’s ADC reading to temperature.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/thermistor-circuit.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/thermistor-circuit.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;Thermistors are simple to integrate in embedded designs but their temperature response can be challenging to interpret. A lookup table is a convenient way to convert a thermistor’s ADC reading to temperature.&lt;/p&gt;
 
 &lt;p&gt;A thermistor’s resistance varies with temperature. As an example, assume T1 in the circuit above to be part number NTCLE413E2103H400 from Vishay/Dale Inc. This thermistor has the resistive characteristics shown in the table below. At cold temperatures, the resistance is very large but decreases non-linearly as temperature increases.&lt;/p&gt;
 
@@ -5441,9 +5389,9 @@ make install
 
         <item>
                 <title>A FIFO Buffer Implementation</title>
-                <description>&lt;p&gt;A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.&lt;/p&gt;
+                <description>&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/fifo.png&#39; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image_tall&#39; src=&#39;/images/fifo.png&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;A FIFO buffer is a useful way of storing data that arrives to a microcontroller peripheral asynchronously but cannot be read immediately. One example is storing bytes incoming on a UART. Buffering the bytes eases the real-time requirements for the embedded firmware.&lt;/p&gt;
 
 &lt;p&gt;A FIFO buffer stores data on a first-in, first-out basis. The storage structure is typically an array of contiguous memory. Data is written to the “head” of the buffer and read from the “tail”. When the head or tail reach the end of the memory array, it wraps around to the beginning. If the tail runs in to the head, the buffer is empty. But if the head runs in to the tail, the implementation must define if the oldest data is discarded or the write does not complete. In the example below, data is never discarded.&lt;/p&gt;
 
@@ -5541,12 +5489,7 @@ make install
 
         <item>
                 <title>8 vs 16 vs 32 Bit Microcontrollers--A Case Study</title>
-                <description>&lt;p&gt;Traditional microcontroller projects have been based on 8-bit architectures. However, 16-bit and 32-bit architectures (such as the ARM Cortex-M3) are becoming very attractive alternatives with competitive pricing and power consumption requirements.&lt;/p&gt;
-
-&lt;h2 id=&quot;a_small_case_study_8bit_16bit_and_32bit_microcontroller_architectures&quot;&gt;A Small Case Study: 8-bit, 16-bit, and 32-bit Microcontroller Architectures&lt;/h2&gt;
-
-&lt;p&gt;The following table offers a simple comparison between several microcontroller architectures (8-bit, 16-bit, and 32-bit) of the same package (QFP100) and roughly the same price. The comparison is simplified in order to give a rough idea of the relative value of each microcontroller.&lt;/p&gt;
-&lt;table class=&#39;table table-striped table-bordered&#39;&gt;
+                <description>&lt;table class=&#39;table table-striped table-bordered&#39;&gt;
 &lt;tr&gt;
 	&lt;td&gt;&lt;strong&gt;MCU&lt;/strong&gt;&lt;/td&gt;
 	&lt;td&gt;&lt;strong&gt;Arch&lt;/strong&gt;&lt;/td&gt;
@@ -5607,7 +5550,13 @@ make install
 	&lt;td&gt;0.46&lt;/td&gt;
 	&lt;td&gt;4.29&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/table&gt;&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; Prices updated
+&lt;/table&gt;
+&lt;p&gt;Traditional microcontroller projects have been based on 8-bit architectures. However, 16-bit and 32-bit architectures (such as the ARM Cortex-M3) are becoming very attractive alternatives with competitive pricing and power consumption requirements.&lt;/p&gt;
+
+&lt;h2 id=&quot;a_small_case_study_8bit_16bit_and_32bit_microcontroller_architectures&quot;&gt;A Small Case Study: 8-bit, 16-bit, and 32-bit Microcontroller Architectures&lt;/h2&gt;
+
+&lt;p&gt;The table abobe offers a simple comparison between several microcontroller architectures (8-bit, 16-bit, and 32-bit) of the same package (QFP100) and roughly the same price. The comparison is simplified in order to give a rough idea of the relative value of each microcontroller.&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; Prices updated
 2013-12-28 using Digikey.&lt;/div&gt;
 &lt;h2 id=&quot;flash_memory&quot;&gt;Flash Memory&lt;/h2&gt;
 
@@ -5631,6 +5580,109 @@ make install
                 <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</link>
                 <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</guid>
                 <pubDate>2013-10-01T00:00:00-06:00</pubDate>
+        </item>
+
+        <item>
+                <title>Get the Software</title>
+                <description>&lt;p&gt;There are two software packages used with CoActionOS for Windows, Mac, and Linux&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CoActionOS Compiler (used for building programs)&lt;/li&gt;
+
+&lt;li&gt;CoActionOS Link (used for installing and running programs)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We also recommend downloading &lt;a href=&quot;http://www.eclipse.org/downloads/&quot;&gt;Eclipse IDE for C/C++ Developers&lt;/a&gt; to use for editing code and invoking the compiler.&lt;/p&gt;
+
+&lt;h2 id=&quot;windows&quot;&gt;Windows&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/win/CoActionOS-Compiler-Installer-4.7.3-1.3.1.exe&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3 CoActionOS 1.3.1&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/win/CoActionOS-Link-Installer-1.3.1.exe&quot;&gt;CoActionOS Link 1.3.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please be sure to read &lt;a href=&quot;/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers&quot;&gt;Installing Windows Device Drivers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;mac_os_x&quot;&gt;Mac OS X&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.3-1.3.1.pkg&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.3.1&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Link-1.3.1.dmg&quot;&gt;CoActionOS Link 1.3.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;ubuntu_linux&quot;&gt;Ubuntu Linux&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/linux/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.2.7&lt;/a&gt; (&lt;a href=&quot;https://www.coactionos.com/redmine/boards/3/topics/5&quot;&gt;more info&lt;/a&gt;)&lt;/li&gt;
+
+&lt;li&gt;Even though the Linux distribution is not as up to date, you can always download the code and build/install from &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS&quot;&gt;source&lt;/a&gt; using Eclipse.&lt;/li&gt;
+
+&lt;li&gt;CoActionOS Link: currently only available in &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS-Desktop&quot;&gt;source form&lt;/a&gt;. You need to install Qt 5.0.2 in order to build the binary.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can install the compiler using the following commands. This assumes the tar file is downloaded to the ~/Downloads directory.&lt;/p&gt;
+&lt;pre&gt;
+cd /
+sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
+&lt;/pre&gt;</description>
+                <link>http://Coactionos.github.io/getting%20started/2013/09/02/Getting-Started-Get-the-Software</link>
+                <guid>http://Coactionos.github.io/getting%20started/2013/09/02/Getting-Started-Get-the-Software</guid>
+                <pubDate>2013-09-02T00:00:00-06:00</pubDate>
+        </item>
+
+        <item>
+                <title>Buy the Hardware</title>
+                <description>&lt;h2 id=&quot;coaction_hero&quot;&gt;CoAction Hero&lt;/h2&gt;
+
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/CoActionOS-hero.jpg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The CoAction Hero features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;120MHz, 512KB flash, 64KB ram LPC1769 ARM Cortex M3 microcontroller&lt;/li&gt;
+
+&lt;li&gt;USB device&lt;/li&gt;
+
+&lt;li&gt;1MB serial flash chip for storing user files&lt;/li&gt;
+
+&lt;li&gt;Pre-installed with CoActionOS and CoActionOS Bootloader&lt;/li&gt;
+
+&lt;li&gt;Easiest way to get started developing CoActionOS applications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More info:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/files/coaction-hero-datasheet-A.pdf&quot;&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;/files/CoAction-Hero-Microcomputer-Schematic.pdf&quot;&gt;Schematic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;form action=&#39;https://www.paypal.com/cgi-bin/webscr&#39; method=&#39;post&#39; target=&#39;_blank&#39;&gt;
+&lt;input name=&#39;cmd&#39; type=&#39;hidden&#39; value=&#39;_s-xclick&#39; /&gt;
+&lt;input name=&#39;hosted_button_id&#39; type=&#39;hidden&#39; value=&#39;NY8QYJ9Z8ZCW2&#39; /&gt;
+&lt;button class=&#39;btn btn-success&#39; name=&#39;submit&#39; type=&#39;submit&#39;&gt;Buy Now $49 (free Shipping)&lt;/button&gt;
+&lt;img alt=&#39;&#39; border=&#39;0&#39; height=&#39;1&#39; src=&#39;https://www.paypalobjects.com/en_US/i/scr/pixel.gif&#39; width=&#39;1&#39; /&gt;
+&lt;/form&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;mbed&quot;&gt;mbed&lt;/h2&gt;
+
+&lt;p&gt;CoActionOS can also run on the &lt;a href=&quot;http://mbed.org/platforms/mbed-LPC1768/&quot;&gt;mbed LPC1768&lt;/a&gt; board.&lt;/p&gt;
+
+&lt;p&gt;The CoActionOS kernel image is installed by using the mass storage device drivers that come with the mbed. After that, applications are installed using CoActionOS Link.&lt;/p&gt;
+&lt;div class=&#39;alert alert-info&#39;&gt;&lt;span class=&#39;label label-danger&#39;&gt;Note&lt;/span&gt; When
+connecting to CoActionOS on the mbed using CoActionOS Link, the internal circuitry
+uses a UART rather than native USB which has better performance.  The CoAction
+Hero and mbed with the Xively jumpstart kit both use native USB to connect to CoActionOS
+Link.&lt;/div&gt;
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/mbed-xively-kit.jpg&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;CoActionOS also supports running the mbed with the &lt;a href=&quot;https://xively.com/dev/kits/&quot;&gt;Xively jumpstart kit&lt;/a&gt;.&lt;/p&gt;</description>
+                <link>http://Coactionos.github.io/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</link>
+                <guid>http://Coactionos.github.io/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</guid>
+                <pubDate>2013-09-01T00:00:00-06:00</pubDate>
         </item>
 
 

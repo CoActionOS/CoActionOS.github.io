@@ -5,9 +5,13 @@ category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, circuit, power]
 ---
-It is ubiquitous in the digital electronics industry to use small capacitors next to power pins.  These capacitors stabilize the power delivered to digital devices and reduce noise.  They are not the only good idea in embedded systems power supply design.  Ferrite beads further attenuate noise on the power supply line while diodes prevent reverse voltage and overvoltage conditions.
-
 <img class="post_image" src="{{ BASE_PATH }}/images/decouple-caps.png" />
+It is ubiquitous in the digital electronics industry to use small capacitors 
+next to power pins.  These capacitors stabilize the power delivered to 
+digital devices and reduce noise.  They are not the only good idea in 
+embedded systems power supply design.  Ferrite beads further attenuate 
+noise on the power supply line while diodes prevent reverse voltage and 
+overvoltage conditions.
 
 Digital circuitry, especially a microcontroller, typically draws high current in response to an event (such as a clock edge) and uses minimal current between events.  The graph below illustrates hypothetical current spikes on dual clock edges of a 1MHz clock signal.
 

@@ -5,10 +5,14 @@ category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, control, pwm, pid, motor, programming, circuit]
 ---
-
-Bi-directional motor control can be done using an H-bridge circuit with pulse-width modulation (PWM) from a microcontroller to vary the speed. Several design challenges include preventing shoot-through, implementing a snubber circuit, as well as open and closed loop (such as PID) control mechanisms.
-
 <img class="post_image" src="{{ BASE_PATH }}/images/h-bridge.png" />
+Bi-directional motor control can be done using an H-bridge circuit 
+with pulse-width modulation (PWM) from a microcontroller to vary 
+the speed. Several design challenges include preventing shoot-through, implementing 
+a snubber circuit, as well as open and closed loop (such as PID) control 
+mechanisms.
+
+{{ excerpt_separator }}
  
 ## PWM Control of an H-Bridge
 

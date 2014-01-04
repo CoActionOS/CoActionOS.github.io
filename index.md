@@ -8,7 +8,7 @@ tagline: Embedded Development
 
 CoActionOS is a real-time, embedded operating system for the ARM Cortex-M3 architecture. It features:
 
-- Easy-to-learn, POSIX Style API
+- Easy-to-learn, [POSIX Style API]({{ BASE_URL }}/coactionos/html/group___p_o_s_i_x.html)
 - A multi-tasking, pre-emptive kernel
 - Filesystems (including peripheral and device level hardware abstraction)
 - A USB user interface with a cross-platform desktop software application and SDK
@@ -20,7 +20,7 @@ you don't have to integrate your application with the operating system.  You jus
 application using the free SDK and install it on any system running CoActionOS.
 
 <ul>
-{% assign pages_list = site.categories.["getting started"] %} {% include JB/pages_list %}
+{% assign pages_list = site.categories.["getting started"] | sort:"name" %} {% include JB/pages_list %}
 </ul>
 
 ### Tutorials
@@ -32,5 +32,5 @@ application using the free SDK and install it on any system running CoActionOS.
 ### User Guides
 
 <ul>
-{% assign pages_list = site.categories.["user guides"] %} {% include JB/pages_list %}
+{% assign pages_list = site.categories.["user guides"] | sort:"name" %} {% include JB/pages_list %}
 </ul>

@@ -6,12 +6,15 @@ tagline: Embedded Design
 tags : [embedded, microcontroller, circuit]
 ---
 
+<img class="post_image_tall" src="{{ BASE_PATH }}/images/sili-atom.svg" />
 Microcontrollers are small computers that contain a central processor, memory, 
 and input/output circuitry all on one integrated chiComputers in general 
 contain all these components with varying degrees of integration. Most people 
 are familiar with the CPU acronym which refers to the central processing 
 unit. The core of a microcontroller is also a central processing unit and is 
 also the focus of this article.
+
+{{ excerpt_separator }}
 
 Microcontroller processors are built on a silicon base. The silicon has 
 extra elements added in a controlled manner to create millions of semiconductor 
@@ -45,12 +48,7 @@ The Lewis octet rule is a rule of thumb in chemistry that says atoms with a
 low number of electrons (low atomic number) tend to bond with other atoms in 
 such a way to produce eight valence electrons. A valence electron is one in 
 the outer regions of the atom that is used to bond with other atoms. A single 
-silicon atom has four valence electrons.
-
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/sili-atom.svg" />
-
-<div class="alert alert-info"><span class="label label-danger">Note</span>  This model
-inspired the CoActionOS logo.  The symbol inside the gear is a silicon atom.</div>
+silicon atom has four valence electrons (as shown in the image at the top of the page).
 
 When silicon atoms are around other silicon atoms, they share valence electrons 
 such that each has eight--thus fulfilling the Lewis octet rule. The following 
@@ -58,6 +56,9 @@ diagram illustrates this in two dimensions, but in real life, the bonding happen
 in three dimensions.
 
 <img class="post_image" src="{{ BASE_PATH }}/images/sili-atom-group.svg" />
+
+<div class="alert alert-info"><span class="label label-danger">Note</span>  This model
+inspired the CoActionOS logo.  The symbol inside the gear is a silicon atom.</div>
 
 <div class="alert alert-info"><span class="label label-danger">Note</span> The 
 center atom has four valence electrons of its own and shares one from each of 

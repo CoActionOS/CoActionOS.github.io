@@ -5,7 +5,7 @@ category : Embedded Design Tips
 tagline: Embedded Design
 tags : [embedded, microcontroller, gpio, programming]
 ---
-
+<img class="post_image" src="{{ BASE_PATH }}/images/gpio-output-types.png" />
 General purpose input/output (GPIO) pins on microcontrollers have various modes 
 for both input and output. Input modes may include pull-up or pull-down resistors, 
 hysteresis, or some combination. Output modes can be push-pull, high-drive or open-drain.
@@ -69,9 +69,7 @@ is illustrated in the figure below.  The "C" in CMOS stands for complementary
 because M2 and M3 are complementary devices.  M2 is a PMOS device while M3 
 is an NMOS device.  Because M2 and M3 have the same input signal, M3 is on 
 whenever M2 is off and vice versa.  An open-drain output is also shown in the 
-figure below.
-
-<img class="post_image" src="{{ BASE_PATH }}/images/gpio-output-types.png" />
+figure at the top of the page.
 
 #### Open-Drain
 

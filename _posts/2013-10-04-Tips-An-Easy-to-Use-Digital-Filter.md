@@ -6,11 +6,10 @@ tagline: Embedded Design
 tags : [embedded, filter, iir, programming]
 ---
 
+<img class="post_image_tall" src="{{ BASE_PATH }}/images/316px-Fourier_Series.png" />
 The exponential moving average (EMA) is a type of infinite impulse response (IIR) filter 
 that can be used in many embedded DSP applications.  It requires only a small amount 
 of RAM and computing power.
-
-<img class="post_image_tall" src="{{ BASE_PATH }}/images/316px-Fourier_Series.png" />
 
 ## What is a Filter?
 

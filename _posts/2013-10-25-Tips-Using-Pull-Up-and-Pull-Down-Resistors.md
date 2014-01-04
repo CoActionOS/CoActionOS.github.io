@@ -6,13 +6,12 @@ tagline: Embedded Design
 tags : [embedded, gpio, circuit, microcontroller]
 ---
 
+<img class="post_image" src="{{ BASE_PATH }}/images/pullup.png" />
 An embedded microcontroller utilizes input/output (IO) signals to 
 communicate with the outside world.  The simplest form of IO is 
 commonly referred to as general purpose input/output (GPIO) where 
 the GPIO voltage level can be high, low, or high-impedance.  Pulling 
 resistors are used to ensure GPIO is always in a valid state.
-
-<img class="post_image" src="{{ BASE_PATH }}/images/pullup.png" />
 
 ### GPIO Input States on an Embedded Microcontroller
 

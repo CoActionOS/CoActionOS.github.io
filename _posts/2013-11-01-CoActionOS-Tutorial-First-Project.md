@@ -56,8 +56,9 @@ the Eclipse builder will automatically include them in the build.
 
 <div class="alert alert-info"><span class="label label-danger">Note</span> If you download
 the attached Hello World project for MacOS X on Windows, it will still work. 
-You will just have to clear the include path entries and rebuild the index in 
-Eclipse.</div>
+You will just have to clear the include path entries and <a href="{% post_url 2013-12-16-CoActionOS-User-Guide-CoActionOS-and-Eclipse %}"
+>rebuild the index in 
+Eclipse</a>.</div>
 
 <a class="btn btn-default" href="{{ BASE_URL }}/attachments/HelloWorld-macosx.zip"><i class="fa fa-paperclip"> </i> Hello World (mac)</a>
 <a class="btn btn-default" href="{{ BASE_URL }}/attachments/HelloWorld-win.zip"><i class="fa fa-paperclip"> </i> Hello World (win)</a>

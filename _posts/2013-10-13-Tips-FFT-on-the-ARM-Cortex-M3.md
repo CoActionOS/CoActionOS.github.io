@@ -6,6 +6,7 @@ tagline: Embedded Design
 tags : [embedded, cortex-m3, fft, filter]
 ---
 
+<img class="post_image" src="{{ BASE_PATH }}/images/DIT-FFT-butterfly.png" />
 The ARM Cortex-M3 combined with a Fast Fourier Transform (FFT) implementation 
 is a powerful, embedded digital signal processing (DSP) solution.  The ARM 
 Cortex-M3 is a mid-range microcontroller architecture with clock speeds 
@@ -13,8 +14,6 @@ over 100MHz and a powerful arithmetic logic unit (ALU).  The FFT, a useful
 tool in many DSP applications, utilizes these features enabling the ARM 
 Cortex-M3 to be a suitable replacement for dedicated DSP's in some embedded 
 applications.
-
-<img class="post_image" src="{{ BASE_PATH }}/images/DIT-FFT-butterfly.png" />
 
 ## ARM Cortex-M3
 

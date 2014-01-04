@@ -6,12 +6,6 @@ tagline: Embedded Design
 tags : [embedded, microcontroller]
 ---
 
-Traditional microcontroller projects have been based on 8-bit architectures.  However, 16-bit and 32-bit architectures (such as the ARM Cortex-M3) are becoming very attractive alternatives with competitive pricing and power consumption requirements.
-
-## A Small Case Study: 8-bit, 16-bit, and 32-bit Microcontroller Architectures
-
-The following table offers a simple comparison between several microcontroller architectures (8-bit, 16-bit, and 32-bit) of the same package (QFP100) and roughly the same price. The comparison is simplified in order to give a rough idea of the relative value of each microcontroller.
-
 <table class="table table-striped table-bordered">
 <tr>
 	<td><strong>MCU</strong></td>
@@ -74,6 +68,13 @@ The following table offers a simple comparison between several microcontroller a
 	<td>4.29</td>
 </tr>
 </table>
+Traditional microcontroller projects have been based on 8-bit architectures.  However, 16-bit and 32-bit architectures (such as the ARM Cortex-M3) are becoming very attractive alternatives with competitive pricing and power consumption requirements.
+
+## A Small Case Study: 8-bit, 16-bit, and 32-bit Microcontroller Architectures
+
+The table abobe offers a simple comparison between several microcontroller architectures (8-bit, 16-bit, and 32-bit) of the same package (QFP100) and roughly the same price. The comparison is simplified in order to give a rough idea of the relative value of each microcontroller.
+
+
 
 <div class="alert alert-info"><span class="label label-danger">Note</span> Prices updated
 2013-12-28 using Digikey.</div>

@@ -6,7 +6,8 @@ tagline: Embedded Design
 tags : [embedded, compiler, gcc]
 ---
 
-Autotools is a set of tools used to build and manage software builds on multiple platforms.
+Autotools is a set of tools used to build and manage software builds on 
+multiple platforms.
 
 To build and install, first use ftp (on Mac OS X) or wget (on Windows Mingw) to download the sources.
 

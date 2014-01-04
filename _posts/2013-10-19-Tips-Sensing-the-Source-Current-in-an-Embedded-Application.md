@@ -6,9 +6,9 @@ tagline: Embedded Design
 tags : [embedded, circuit, sensor, filter, adc, programming]
 ---
 
-This is a simple, low-cost way to measure the current output at the power source of an embedded system using a microcontroller's ADC input.
-
 <img class="post_image" src="{{ BASE_PATH }}/images/currentsense.png" />
+This is a simple, low-cost way to measure the current output at the power 
+source of an embedded system using a microcontroller's ADC input.
 
 The above sensor circuit measures the current at the power source of an embedded system.  The power source shown is a battery but can be any DC supply source.  The above schematic shows VCC as both the battery voltage and the op-amp voltage.  However, the battery voltage can be any value, and the circuit will still work.  The key components of the circuit are the sensor resistor (RSENSE) and the amplifier (U1).  The voltage input to U1 (the negative terminal of the battery) will always be a negative voltage with respect to ground.  For this reason, U1 is configured as an inverting amplifier where:
 

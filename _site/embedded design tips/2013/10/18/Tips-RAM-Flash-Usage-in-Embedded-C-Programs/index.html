@@ -21,6 +21,7 @@
 <link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
 <link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
 <link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+<script src="/assets/themes/twitter/js/application.js"></script>
 
 <!-- Le fav and touch icons -->
 <!-- Update these with your own images
@@ -52,7 +53,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
 						<ul class="nav navbar-nav">
-							<li><a href="#"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="/services.html"><i class="fa fa-phone"></i> Services</a></li>
 							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
 							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
 							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
@@ -64,7 +65,7 @@
 							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+							<li><a href="/about.html"><i class="fa fa-info-circle"></i> About</a></li>
 						</ul>
 					</div>
 				</div>
@@ -89,9 +90,9 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>In embedded designs, memory, especially RAM, is a precious resource. Understanding how C allocates variables in memory is crucial to getting the best use of memory in embedded systems.</p>
+					<p><img class='post_image' src='/images/flash-map.svg' /></p>
 
-<p><img class='post_image' src='/images/flash-map.svg' /></p>
+<p>In embedded designs, memory, especially RAM, is a precious resource. Understanding how C allocates variables in memory is crucial to getting the best use of memory in embedded systems.</p>
 
 <p>Memory in a C program includes code (executable instructions) and data. Code is typically read-only and executable–characteristics enforced by the operating system (OS). Data memory is non-executable (enforced by the OS), can be either read-only or read-write, and is either statically or dynamically allocated which characteristics are managed by the compiler. In desktop programs, the entire memory map is managed through virtual memory using a hardware construct, called a Memory Management Unit (MMU), to map the program’s memory to physical RAM. In RAM-constrained embedded systems lacking an MMU, the memory map is divided in to a section for flash memory (code and read-only data) and a section for RAM (read-write data).</p>
 <div class='alert alert-info'><span class='label label-danger'>Note</span> This article 
@@ -259,11 +260,29 @@ my_static:4, my_stack:0</pre>
 			
 			<div class="pagination">
 				<center>
-					 <a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID" type="button" class="btn btn-primary"><i
-						class="fa fa-arrow-left"></i></a>  
-					<a href="/archive.html" type="button" class="btn btn-primary"><i class="fa fa-archive"></i></a> 
-					<a href="/categories.html" type="button" class="btn btn-primary"><i class="fa fa-folder-open"></i></a> 
-					 <a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application" type="button" class="btn btn-primary"><i class="fa fa-arrow-right"></i></a>
+					 
+						<a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="left" title="" data-original-title="Previous Post"
+							>
+							<i class="fa fa-arrow-left"></i>
+						</a> 
+					 
+					<a href="/archive.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Archives"
+						>
+						<i class="fa fa-archive"></i>
+					</a> 
+					<a href="/categories.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Categories"
+					>
+						<i class="fa fa-folder-open"></i>
+					</a> 
+					 
+						<a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="right" title="" data-original-title="Next Post"
+							>
+							<i class="fa fa-arrow-right"></i>
+						</a>
 					
 				</center>
 			</div>
@@ -586,7 +605,7 @@ my_static:4, my_stack:0</pre>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-1 col-md-9">
-					<p>&copy; 2013 CoActionOS, Inc</p>
+					<p>&copy; 2014 CoActionOS, Inc</p>
 				</div>
 			</div>
 		</div>

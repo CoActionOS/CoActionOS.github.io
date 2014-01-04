@@ -1,5 +1,6 @@
 
 http://Coactionos.github.io/404.html
+http://Coactionos.github.io/about.html
 http://Coactionos.github.io/archive.html
 http://Coactionos.github.io/atom.xml
 http://Coactionos.github.io/categories.html
@@ -772,19 +773,19 @@ http://Coactionos.github.io/downloads.html
 http://Coactionos.github.io/index.html
 http://Coactionos.github.io/pages.html
 http://Coactionos.github.io/rss.xml
+http://Coactionos.github.io/services.html
 http://Coactionos.github.io/sitemap.txt
 http://Coactionos.github.io/sitemap.xml
 http://Coactionos.github.io/tags.html
 http://Coactionos.github.io/tips.html
 http://Coactionos.github.io/tutorials.html
 
-http://Coactionos.github.io/getting%20started/2013/12/24/Getting-Started-Get-the-Software
-http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Installing-Windows-Device-Drivers
-http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Getting-Started
-http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Device-Driver-Development
-http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Designing-Applications-using-State-Machines
-http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-CoActionOS-and-Eclipse
-http://Coactionos.github.io/user%20guides/2013/12/24/CoActionOS-User-Guide-Building-and-Installing-CoActionOS
+http://Coactionos.github.io/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers
+http://Coactionos.github.io/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development
+http://Coactionos.github.io/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines
+http://Coactionos.github.io/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse
+http://Coactionos.github.io/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS
+http://Coactionos.github.io/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started
 http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations
 http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference
 http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types
@@ -831,3 +832,5 @@ http://Coactionos.github.io/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-
 http://Coactionos.github.io/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table
 http://Coactionos.github.io/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation
 http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers
+http://Coactionos.github.io/getting%20started/2013/09/02/Getting-Started-Get-the-Software
+http://Coactionos.github.io/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware

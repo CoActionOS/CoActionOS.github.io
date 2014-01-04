@@ -6,7 +6,8 @@ tagline: Embedded Design
 tags : [embedded, gcc, compiler, linux]
 ---
 
-GCC is a open source C compiler which can be downloaded, compiled, and installed on Ubuntu.  It is the compiler of choice for CoActionOS.
+GCC is a open source C compiler which can be downloaded, compiled, and 
+installed on Ubuntu.  It is the compiler of choice for CoActionOS.
 
 To install GCC for the ARM Cortex M3 architecture on a computer running  Ubuntu 10.10, ensure the following packages (or their equivalents are installed): flex, bison, libgmp3-dev, libmpfr-dev, libmpc-dev, autoconf, texinfo, and  build-essential.  These packages can be installed apt-get.  Once the pre-requisite packages are installed, the binutils, GCC, and newlib source files must be downloaded and extracted.
 

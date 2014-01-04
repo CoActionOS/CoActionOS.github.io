@@ -6,11 +6,16 @@ tagline: Embedded Design
 tags : [embedded, circuit, led, control]
 ---
 
-LEDs are a common element of many embedded designs.  Though the devices are simple; their implementation is not always simplistic.  Optimizing LED cost and performance includes ensuring the driving circuitry is providing the correct voltage and current.
-
-The brightness of an LED is determined by the current that runs through it.  Typical applications use a current limiting resistor in series with an LED to set the brightness at a fixed level.  The following diagram shows a circuit that powers an LED using such a resistor.
-
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/LED-circuit.png" />
+LEDs are a common element of many embedded designs.  Though the devices are 
+simple; their implementation is not always simplistic.  Optimizing LED cost 
+and performance includes ensuring the driving circuitry is providing the 
+correct voltage and current.
+
+The brightness of an LED is determined by the current that runs through it.  Typical 
+applications use a current limiting resistor in series with an LED to set the 
+brightness at a fixed level.  The following diagram shows a circuit that powers 
+an LED using such a resistor.
 
 To optimize the performance of the LED, the resistor must be sized correctly (note the resistor can be either above or below the LED without affecting the operation or performance of the circuit).  The LED manufacturer provides the rated current and forward voltage values that are essential to calculating the resistor size.  The rated current is the optimal current value for the LED, and the forward voltage is the drop in voltage across the LED when the rated current is applied.  The following diagram shows fictitious but typical values for VCC, the forward voltage, and the rated current.
 

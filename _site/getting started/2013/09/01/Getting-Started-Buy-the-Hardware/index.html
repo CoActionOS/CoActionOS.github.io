@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Buy the Hardware</title> 
+<meta name="author" content="CoActionOS, Inc">
+
+<!-- Enable responsive viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<!-- Le styles -->
+<link href="/assets/themes/twitter/bootstrap3/css/bootstrap.min.css" rel="stylesheet">
+<script src="/assets/themes/twitter/bootstrap3/js/jquery-2.0.3.min.js"></script>
+<script src="/assets/themes/twitter/bootstrap3/js/bootstrap.min.js"></script>
+<link href="/assets/themes/twitter/bootstrap3/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/style.css" rel="stylesheet">
+<link href="/assets/themes/twitter/css/syntax.css" rel="stylesheet">
+<script src="/assets/themes/twitter/js/application.js"></script>
+
+<!-- Le fav and touch icons -->
+<!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+<!-- atom & rss feed -->
+<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+<link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+</head>
+<body style="min-height: 200px; padding-top: 50px;">
+	<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<div class="navbar-header">
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".menu-navbar-collapse">
+							<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/index.html">
+							<img style="height: 22px;" src="/images/CoActionOS-Logo.svg" />
+						</a>
+					</div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-navbar-collapse" role="navigation">
+						<ul class="nav navbar-nav">
+							<li><a href="/services.html"><i class="fa fa-phone"></i> Services</a></li>
+							<li><a href="https://github.com/CoActionOS"><i class="fa fa-code-fork"></i> Code</a></li>
+							<li><a href="/downloads.html"><i class="fa fa-cloud-download"></i> Downloads</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text-o"></i> Docs <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="/coactionos/html/">CoActionOS</a></li>
+									<li><a href="/coactionos-applib/html/">CoActionOS Applib</a></li>
+								</ul>
+							</li>
+							<li><a href="/tips.html"><i class="fa fa-lightbulb-o"></i> Design Tips</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="/about.html"><i class="fa fa-info-circle"></i> About</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<a class="anchor" id="top"></a>
+
+
+	<div class="content" id="content">
+		
+
+
+<div class="container">
+	<div class="row" style="margin-top: 20px;">
+		<div class="col-md-offset-1 col-md-7">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>
+						Buy the Hardware <small>Getting Started</small>
+					</h1>
+				</div>
+				<div class="panel-body">
+					<h2 id="coaction_hero">CoAction Hero</h2>
+
+<p><img class='post_image' src='/images/CoActionOS-hero.jpg' /></p>
+
+<p>The CoAction Hero features:</p>
+
+<ul>
+<li>120MHz, 512KB flash, 64KB ram LPC1769 ARM Cortex M3 microcontroller</li>
+
+<li>USB device</li>
+
+<li>1MB serial flash chip for storing user files</li>
+
+<li>Pre-installed with CoActionOS and CoActionOS Bootloader</li>
+
+<li>Easiest way to get started developing CoActionOS applications</li>
+</ul>
+
+<p>More info:</p>
+
+<ul>
+<li><a href="/files/coaction-hero-datasheet-A.pdf">Datasheet</a></li>
+
+<li><a href="/files/CoAction-Hero-Microcomputer-Schematic.pdf">Schematic</a></li>
+</ul>
+
+<p><form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_blank'>
+<input name='cmd' type='hidden' value='_s-xclick' />
+<input name='hosted_button_id' type='hidden' value='NY8QYJ9Z8ZCW2' />
+<button class='btn btn-success' name='submit' type='submit'>Buy Now $49 (free Shipping)</button>
+<img alt='' border='0' height='1' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' />
+</form></p>
+
+<h2 id="mbed">mbed</h2>
+
+<p>CoActionOS can also run on the <a href="http://mbed.org/platforms/mbed-LPC1768/">mbed LPC1768</a> board.</p>
+
+<p>The CoActionOS kernel image is installed by using the mass storage device drivers that come with the mbed. After that, applications are installed using CoActionOS Link.</p>
+<div class='alert alert-info'><span class='label label-danger'>Note</span> When
+connecting to CoActionOS on the mbed using CoActionOS Link, the internal circuitry
+uses a UART rather than native USB which has better performance.  The CoAction
+Hero and mbed with the Xively jumpstart kit both use native USB to connect to CoActionOS
+Link.</div>
+<p><img class='post_image' src='/images/mbed-xively-kit.jpg' /></p>
+
+<p>CoActionOS also supports running the mbed with the <a href="https://xively.com/dev/kits/">Xively jumpstart kit</a>.</p>
+				</div>
+			</div>
+
+			
+			<ul class="nav nav-pills">
+				
+				
+
+
+  
+     
+    	<li><a href="/tags.html#coaction-ref">coaction <span class="badge">20</span></a></li>
+    
+  
+
+
+
+			</ul>
+			
+			<div class="pagination">
+				<center>
+					 
+						<a href="#" type="button" class="disabled btn btn-primary"><i class="fa fa-arrow-left"></i></a>
+					 
+					<a href="/archive.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Archives"
+						>
+						<i class="fa fa-archive"></i>
+					</a> 
+					<a href="/categories.html" type="button" class="btn btn-primary"
+						data-toggle="tooltip" data-placement="top" title="" data-original-title="Categories"
+					>
+						<i class="fa fa-folder-open"></i>
+					</a> 
+					 
+						<a href="/getting%20started/2013/09/02/Getting-Started-Get-the-Software" type="button" class="btn btn-primary"
+							data-toggle="tooltip" data-placement="right" title="" data-original-title="Next Post"
+							>
+							<i class="fa fa-arrow-right"></i>
+						</a>
+					
+				</center>
+			</div>
+				
+		</div>
+		<div class="col-md-3">
+		
+
+			<h3>Getting Started</h3>
+			<ul class="nav nav-pills nav-stacked">
+				
+				  
+				
+
+
+  
+    
+      
+      	
+      	<li class='active tagged coaction'><a href="/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware" class="active">Buy the Hardware</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction downloads'><a href="/getting%20started/2013/09/02/Getting-Started-Get-the-Software">Get the Software</a></li>
+      	
+      
+    
+  
+
+
+
+			</ul>
+			
+			
+			
+			  
+		</div>
+	</div>
+
+</div>
+
+
+
+	</div>
+	<hr>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-9">
+					<p>&copy; 2014 CoActionOS, Inc</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
+

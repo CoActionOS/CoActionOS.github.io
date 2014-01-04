@@ -6,14 +6,13 @@ tagline: Embedded Design
 tags : [embedded, usb, programming, microcontroller, serial]
 ---
 
+<img class="post_image" src="{{ BASE_PATH }}/images/usb-cdc-desc.svg" />
 Desktop communication to embedded devices is critical for programming and 
 debugging.  It is also important in production for data acquisition devices 
 and other computer peripherals.  Setting up a device as a virtual serial port 
 using USB is a great solution for transferring data between desktop computers 
 and embedded systems.  It can be connected to most desktop operating systems 
 (Windows, Mac OS X, and Linux) without installing or developing any USB drivers.
-
-<img class="post_image" src="{{ BASE_PATH }}/images/usb-cdc-desc.svg" />
 
 ## Introduction to USB
 

@@ -10,6 +10,8 @@ Qt is a multi-platform development framework supporting Windows, Mac, and Linux.
 creating desktop applications that interact with embedded devices. Though the code runs on multiple 
 platforms deploying a Qt application to different platforms can be challenging.
 
+{{ excerpt_separator }}
+
 The following is a script that takes a Qt project and bundles it into a Mac OS X disk image. It 
 also does code signing which is becoming more important on Mac OS X starting with Mountain Lion. The 
 script is used to deploy CoActionOS Link but can adapted to any Qt application.

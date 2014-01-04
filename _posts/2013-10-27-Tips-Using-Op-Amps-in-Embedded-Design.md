@@ -5,10 +5,9 @@ tagline: Embedded Design Tips
 category: Embedded Design Tips
 tags : [embedded, circuit]
 ---
-
-Op-amps are very useful devices in electronics and can be very helpful when interfacing analog and digital technologies in embedded systems.
 <img class="post_image" src="{{ BASE_PATH }}/images/inverting-opamp.svg" />
-
+Op-amps are very useful devices in electronics and can be very helpful when 
+interfacing analog and digital technologies in embedded systems.
 
 {{ excerpt_separator }}
 

@@ -11,6 +11,8 @@ The ARM Cortex-M3 service call (SVCall) can be a tricky feature to integrate in 
 - Allowing a piece of code to execute without interruption
 - Jumping to privileged mode from unprivileged mode
 
+{{ excerpt_separator }}
+
 ## SVCall Introduction
 
 The SVCall (contraction of service call) is a software triggered interrupt. It is useful for several reasons. First, depending on interrupt priorities, the handler can be uninterruptible by one interrupt but interruptible by another. For example, if you have a piece of code that should not be interrupted by the timer but can be interrupted by the UART, you can set the interrupt priorities on the ARM Cortex-M3 in such a fashion to have the SVCall interrupt priority be higher than the timer but lower than the UART. Second, if you are using the MPU or privileged mode on the ARM Cortex-M3, the SVCall provides the code executing in unprivileged mode a way to access privileged resources.

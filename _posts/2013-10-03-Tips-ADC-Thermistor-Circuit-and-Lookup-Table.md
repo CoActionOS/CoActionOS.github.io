@@ -6,11 +6,10 @@ tagline: Embedded Design
 tags : [embedded, adc, lookup-table, c, programming]
 ---
 
+<img class="post_image" src="{{ BASE_PATH }}/images/thermistor-circuit.png" />
 Thermistors are simple to integrate in embedded designs but their temperature 
 response can be challenging to interpret.  A lookup table is a convenient way 
 to convert a thermistor's ADC reading to temperature.
-
-<img class="post_image" src="{{ BASE_PATH }}/images/thermistor-circuit.png" />
 
 A thermistor's resistance varies with temperature.  As an example, assume T1 
 in the circuit above to be part number NTCLE413E2103H400 from 

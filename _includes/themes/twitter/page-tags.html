@@ -37,10 +37,8 @@ $(document).ready( function(){
 				{% assign tags_list = site.tags %}
 				{% include JB/tags_list_group %}
 			</ul>
-			<div class="btn-group">
-				<button class="btn btn-default"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}"><i class="fa fa-archive"></i></a></button> 
-				<button class="btn btn-default"><a href="{{ BASE_PATH }}/categories.html"><i class="fa fa-folder-open"></i></a></button>
-				<button class="btn btn-default"><a href="{{ BASE_PATH }}/tags.html"><i class="fa fa-tags"></i></a></button>
+			<div class="list-inline">
+				{% include themes/twitter/nav-buttons %}
 			</div>
 		</div>
 	</div>
