@@ -2,10 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/</loc>
-    <lastmod>2014-01-07T10:00:31-07:00</lastmod>
+    <lastmod>2014-01-07T13:45:43-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+    <url>
+      <loc>/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap</loc>
+      
+        <lastmod>2014-01-07T00:00:00-07:00</lastmod>
+      
+      <changefreq>monthly</changefreq>
+      <priority>0.5</priority>
+    </url>
   
     <url>
       <loc>/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</loc>

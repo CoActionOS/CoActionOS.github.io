@@ -780,6 +780,7 @@ http://Coactionos.github.io/tags.html
 http://Coactionos.github.io/tips.html
 http://Coactionos.github.io/tutorials.html
 
+http://Coactionos.github.io/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap
 http://Coactionos.github.io/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers
 http://Coactionos.github.io/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development
 http://Coactionos.github.io/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines
