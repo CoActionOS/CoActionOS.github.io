@@ -4,7 +4,6 @@ title: I2C Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial, serial, i2c]
-number: 05
 ---
 
 I2C is a half duplex serial protocol. It uses two lines:

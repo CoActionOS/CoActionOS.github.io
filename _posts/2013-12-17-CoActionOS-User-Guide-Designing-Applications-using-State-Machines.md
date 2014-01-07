@@ -8,21 +8,34 @@ tags : [coaction, user-guide]
 
 ## Introduction
 
-A state machine is a model that helps when designing computer programs.  The state machine is represented by a state diagram that shows 1) what states the program can have, 2) how the program transitions between states, and 3) what actions the programs takes while entering, exiting, or executing a state.  A simple example of a state machine is a turnstile.  The following diagram (from wikipedia) shows how the state machine works.
+A state machine is a model that helps when designing computer programs.  The state 
+machine is represented by a state diagram that shows 1) what states the 
+program can have, 2) how the program transitions between states, and 3) what 
+actions the programs takes while entering, exiting, or executing a state.  A 
+simple example of a state machine is a turnstile.  The following 
+diagram (from wikipedia) shows how the state machine works.
 
-turnstile.png
+<img class="post_image" src="{{ BASE_PATH }}/images/turnstile.png" />
 
-The diagram shows at startup, the turnstile is locked.  When a coin is inserted, the turnstile transitions to unlocked until someone walks through.
+The diagram shows at startup, the turnstile is locked.  When a coin is inserted, the 
+turnstile transitions to unlocked until someone walks through.
 
 ## A CoActionOS Example
 
 ### SMach and State
 
-CoActionOS Applib provides a C++ class for defining and executing state machines.  For this example, we will use an alarm application.  The program will start in the "home" state.  When the user pushes start, the program will enter the "timer" state.  From the "timer" state the user can push the reset button to return "home" or after 10 seconds, the state machine will transition to the "alarm" state.
+CoActionOS Applib provides a C++ class for defining and executing state machines.  For 
+this example, we will use an alarm application.  The program will start in the "home" 
+state.  When the user pushes start, the program will enter the "timer" state.  From 
+the "timer" state the user can push the reset button to return "home" or after 10 
+seconds, the state machine will transition to the "alarm" state.
 
-states.png
+<img class="post_image" src="{{ BASE_PATH }}/images/states.png" />
 
-To implement the state machine, we use two Applib classes "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html as the top level state machine and "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html for each individual state.  Each state is implemented as it's own class which inherits "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html and re-implements:
+To implement the state machine, we use two Applib classes [SMach]({{ BASE_URL }}/coactionos-applib/html/class_s_mach.html) as 
+the top level state machine and [State]({{ BASE_URL }}/coactionos-applib/html/class_state.html) for 
+each individual state.  Each state is implemented as it's own class which 
+inherits [State]({{ BASE_URL }}/coactionos-applib/html/class_state.html) and re-implements:
 
 {% highlight CPP %}
 const char * name();  //unique state name
@@ -33,7 +46,7 @@ State * exit_condition(State * slist[]); //Executing to see if state should tran
 
 The methods above fit in to the state diagram above as noted below.
 
-states-info.png
+<img class="post_image" src="{{ BASE_PATH }}/images/states-info.png" />
 
 ### Home State
 
@@ -124,8 +137,14 @@ bool Machine::action(void){
 
 As you can see in the action() method, we delay for 10ms.  This will be called in the "home", "timer", and "alarm" states.  Call it a "global" action.  If a global state machine action is not used, you don't need to re-implement the action() method at all.
 
-Since this "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html is a top level machine, we don't implement the exit_condition() method.  However, an "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html is just a special type of "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html and can be part of a higher level SMach's state list.
+Since this [SMach]({{ BASE_URL }}/coactionos-applib/html/class_s_mach.html) is a top 
+level machine, we don't implement the exit_condition() method.  However, 
+an [SMach]({{ BASE_URL }}/coactionos-applib/html/class_s_mach.html) is just a special 
+type of [State]({{ BASE_URL }}/coactionos-applib/html/class_state.html) and can be part 
+of a higher level SMach's state list.
 
 ##  Conclusion
 
-State machines are a great way of designing complex firmware programs.  Using the Applib "SMach":{{ BASE_URL }}/coactionos-applib/html/class_s_mach.html and "State":{{ BASE_URL }}/coactionos-applib/html/class_state.html classes makes doing so quick and easy.  You can get started now by downloading the attached "state machine project":/attachments/download/367/state-machine.zip.
+State machines are a great way of designing complex firmware programs.  Using the Applib 
+[SMach]({{ BASE_URL }}/coactionos-applib/html/class_s_mach.html) and [State]({{ BASE_URL }}/coactionos-applib/html/class_state.html) classes 
+makes doing so quick and easy.

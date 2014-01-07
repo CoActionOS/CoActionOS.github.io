@@ -3,15 +3,16 @@ layout: post
 title: Motor Control Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial, control]
-number: 09
+tags : [coaction, tutorial, control, threads]
 ---
 
-Motor control is simple using CoActionOS. In this example, a simple PID control loop takes the speed of the motor as an input and computes the PWM duty cycle (which sets the motor drive voltage) as the output.
+Motor control is simple using CoActionOS. In this example, a simple 
+PID control loop takes the speed of the motor as an input and computes 
+the PWM duty cycle (which sets the motor drive voltage) as the output.
 
 Here is the circuit diagram for this tutorial.
 
-motor-demo-diagram.jpg
+<img class="post_image" src="{{ BASE_PATH }}/images/motor-demo-diagram.jpg" />
 
 ## Source Code
 
@@ -151,7 +152,9 @@ void set_duty(int duty){
 }
 {% endhighlight %}
 
-This [video](http://www.youtube.com/watch?feature=player_embedded&v=V6nnVzJFD_Q) shows the motor being controlled with the potentiometer input.
+<div align="center" class="flex-video">
+	<iframe src="//www.youtube.com/embed/V6nnVzJFD_Q?rel=0" frameborder="0"> </iframe>
+</div>
 
 The data is plotted using MATLAB (or octave) using the following script.
 
@@ -168,4 +171,4 @@ legend("Set Point", "Speed", "Duty*100");
 print("output.png", "-dpng");
 </pre>
 
-motor-demo-plot.png
+<img class="post_image" src="{{ BASE_PATH }}/images/motor-demo-plot.png" />

@@ -4,10 +4,8 @@ title: PIO Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial, control]
-number: 02
 ---
 
-The original Flashing LED article discusses how to access IO on CoActionOS using C/C++.
 CoActionOS Applib provides C++ classes for easy IO access. The following 
 program demonstrates using a pin to turn the CoAction Hero on-board LED 
 on and off (error checking has been omitted for simplicity). 

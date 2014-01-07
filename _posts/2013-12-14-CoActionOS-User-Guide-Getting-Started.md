@@ -8,7 +8,8 @@ tags : [coaction, user-guide]
 
 ### Buy Hardware
 
-Buy the [CoAction Hero]({% post_url 2013-09-01-Getting-Started-Buy-the-Hardware %}) (easiest way to get started).
+Buy the [CoAction Hero]({% post_url 2013-09-01-Getting-Started-Buy-the-Hardware %}) (easiest way to get started). Or
+you can install CoActionOS on the mbed LPC1768 platform.
 
 ###  Install Eclipse IDE
 

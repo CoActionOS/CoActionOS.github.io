@@ -3,7 +3,7 @@ layout: post
 title: A FIFO Buffer Implementation
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, fifo, uart, serial, microcontroller, programming]
+tags : [embedded, fifo, uart, serial, microcontroller, programming, popular]
 ---
 
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/fifo.png" />

@@ -3,7 +3,7 @@ layout: post
 title: FFT on the ARM Cortex M3
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, cortex-m3, fft, filter]
+tags : [embedded, cortex-m3, fft, filter, popular]
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/DIT-FFT-butterfly.png" />

@@ -4,7 +4,6 @@ title: Files Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
-number: 03
 ---
 
 Files can be accessed in several ways in CoActionOS:

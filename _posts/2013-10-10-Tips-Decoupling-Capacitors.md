@@ -3,7 +3,7 @@ layout: post
 title: Decoupling Capacitors (and Other Power Rules of Thumb)
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, circuit, power]
+tags : [embedded, circuit, power, popular]
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/decouple-caps.png" />
 It is ubiquitous in the digital electronics industry to use small capacitors 

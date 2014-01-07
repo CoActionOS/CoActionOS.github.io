@@ -3,7 +3,7 @@ layout: post
 title: Using Pull-Up and Pull-Down Resistors
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, gpio, circuit, microcontroller]
+tags : [embedded, gpio, circuit, microcontroller, popular]
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/pullup.png" />

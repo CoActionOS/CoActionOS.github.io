@@ -94,7 +94,7 @@
 
 <p>A state machine is a model that helps when designing computer programs. The state machine is represented by a state diagram that shows 1) what states the program can have, 2) how the program transitions between states, and 3) what actions the programs takes while entering, exiting, or executing a state. A simple example of a state machine is a turnstile. The following diagram (from wikipedia) shows how the state machine works.</p>
 
-<p>turnstile.png</p>
+<p><img class='post_image' src='/images/turnstile.png' /></p>
 
 <p>The diagram shows at startup, the turnstile is locked. When a coin is inserted, the turnstile transitions to unlocked until someone walks through.</p>
 
@@ -104,9 +104,9 @@
 
 <p>CoActionOS Applib provides a C++ class for defining and executing state machines. For this example, we will use an alarm application. The program will start in the “home” state. When the user pushes start, the program will enter the “timer” state. From the “timer” state the user can push the reset button to return “home” or after 10 seconds, the state machine will transition to the “alarm” state.</p>
 
-<p>states.png</p>
+<p><img class='post_image' src='/images/states.png' /></p>
 
-<p>To implement the state machine, we use two Applib classes “SMach”:/coactionos-applib/html/class_s_mach.html as the top level state machine and “State”:/coactionos-applib/html/class_state.html for each individual state. Each state is implemented as it’s own class which inherits “State”:/coactionos-applib/html/class_state.html and re-implements:</p>
+<p>To implement the state machine, we use two Applib classes <a href="/coactionos-applib/html/class_s_mach.html">SMach</a> as the top level state machine and <a href="/coactionos-applib/html/class_state.html">State</a> for each individual state. Each state is implemented as it’s own class which inherits <a href="/coactionos-applib/html/class_state.html">State</a> and re-implements:</p>
 <div class='highlight'><pre><code class='cpp'><span class='k'>const</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='nf'>name</span><span class='p'>();</span>  <span class='c1'>//unique state name</span>
 <span class='kt'>bool</span> <span class='nf'>entry_action</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>);</span> <span class='c1'>//action to execute when entering the state</span>
 <span class='kt'>bool</span> <span class='nf'>action</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>);</span> <span class='c1'>//action to execute while state is active</span>
@@ -114,7 +114,7 @@
 </code></pre></div>
 <p>The methods above fit in to the state diagram above as noted below.</p>
 
-<p>states-info.png</p>
+<p><img class='post_image' src='/images/states-info.png' /></p>
 
 <h3 id="home_state">Home State</h3>
 
@@ -196,11 +196,11 @@
 </code></pre></div>
 <p>As you can see in the action() method, we delay for 10ms. This will be called in the “home”, “timer”, and “alarm” states. Call it a “global” action. If a global state machine action is not used, you don’t need to re-implement the action() method at all.</p>
 
-<p>Since this “SMach”:/coactionos-applib/html/class_s_mach.html is a top level machine, we don’t implement the exit_condition() method. However, an “SMach”:/coactionos-applib/html/class_s_mach.html is just a special type of “State”:/coactionos-applib/html/class_state.html and can be part of a higher level SMach’s state list.</p>
+<p>Since this <a href="/coactionos-applib/html/class_s_mach.html">SMach</a> is a top level machine, we don’t implement the exit_condition() method. However, an <a href="/coactionos-applib/html/class_s_mach.html">SMach</a> is just a special type of <a href="/coactionos-applib/html/class_state.html">State</a> and can be part of a higher level SMach’s state list.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>State machines are a great way of designing complex firmware programs. Using the Applib “SMach”:/coactionos-applib/html/class_s_mach.html and “State”:/coactionos-applib/html/class_state.html classes makes doing so quick and easy. You can get started now by downloading the attached “state machine project”:/attachments/download/367/state-machine.zip.</p>
+<p>State machines are a great way of designing complex firmware programs. Using the Applib <a href="/coactionos-applib/html/class_s_mach.html">SMach</a> and <a href="/coactionos-applib/html/class_state.html">State</a> classes makes doing so quick and easy.</p>
 				</div>
 			</div>
 

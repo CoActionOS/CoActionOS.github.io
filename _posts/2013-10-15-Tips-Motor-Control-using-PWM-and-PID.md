@@ -3,7 +3,7 @@ layout: post
 title: Motor Control using PWM and PID
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, control, pwm, pid, motor, programming, circuit]
+tags : [embedded, control, pwm, pid, motor, programming, circuit, popular]
 ---
 <img class="post_image" src="{{ BASE_PATH }}/images/h-bridge.png" />
 Bi-directional motor control can be done using an H-bridge circuit 

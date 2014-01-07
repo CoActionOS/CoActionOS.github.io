@@ -50,7 +50,7 @@ The threads can be analyzed while they are running by using the Monitor view
 in CoActionOS Link. The following screen shot shows the running tasks while 
 all three threads are running (the project is called HelloCpp).
 
-thread-monitor-example.png
+<img class="post_image" src="{{ BASE_PATH }}/images/thread-monitor-example.png" />
 
 The above program has the following output.
 

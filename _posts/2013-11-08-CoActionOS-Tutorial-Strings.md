@@ -4,7 +4,6 @@ title: Strings Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
-number: 06
 ---
 The CoActionOS Applib includes a 
 [String class]({{ BASE_URL }}/coactionos-applib/html/class_string.html) 

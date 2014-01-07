@@ -3,7 +3,7 @@ layout: post
 title: RAM/Flash Usage in Embedded C Programs
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, c, programming]
+tags : [embedded, c, programming, popular]
 ---
 
 <img class="post_image" src="{{ BASE_PATH }}/images/flash-map.svg" />

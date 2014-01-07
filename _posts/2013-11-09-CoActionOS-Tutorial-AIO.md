@@ -4,7 +4,6 @@ title: AIO Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
 tags : [coaction, tutorial]
-number: 08
 ---
 
 Asynchronous IO (AIO) is used when you want to start an operation and do 

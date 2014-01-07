@@ -3,8 +3,7 @@ layout: post
 title: Signals Tutorial
 category: CoActionOS Tutorials
 tagline: CoActionOS Tutorial
-tags : [coaction, tutorial]
-number: 08
+tags : [coaction, tutorial, signals]
 ---
 
 CoActionOS allows uers signals to notify different threads or processes 

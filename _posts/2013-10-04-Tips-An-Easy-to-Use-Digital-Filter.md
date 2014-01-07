@@ -3,7 +3,7 @@ layout: post
 title: An Easy-to-Use Digital Filter
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, filter, iir, programming]
+tags : [embedded, filter, iir, programming, popular]
 ---
 
 <img class="post_image_tall" src="{{ BASE_PATH }}/images/316px-Fourier_Series.png" />

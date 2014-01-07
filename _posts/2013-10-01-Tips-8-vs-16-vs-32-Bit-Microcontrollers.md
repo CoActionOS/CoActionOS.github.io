@@ -3,7 +3,7 @@ layout: post
 title: 8 vs 16 vs 32 Bit Microcontrollers--A Case Study
 category : Embedded Design Tips
 tagline: Embedded Design
-tags : [embedded, microcontroller]
+tags : [embedded, microcontroller, popular]
 ---
 
 <table class="table table-striped table-bordered">

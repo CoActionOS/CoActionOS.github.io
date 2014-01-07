@@ -99,6 +99,8 @@ $(document).ready( function(){
 	
 	register_click("microcontroller");	
 	
+	register_click("popular");	
+	
 	register_click("fifo");	
 	
 	register_click("uart");	
@@ -197,7 +199,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded gpio circuit microcontroller'>
+	<div class='tagged embedded gpio circuit microcontroller popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a> <small>2013-10-25</small></h2>
 	<p><p><img class='post_image' src='/images/pullup.png' /></p>
 
@@ -231,7 +233,9 @@ $(document).ready( function(){
 
 	<div class='tagged embedded microcontroller gpio programming'>
 	<h2><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a> <small>2013-10-21</small></h2>
-	<p><p>General purpose input/output (GPIO) pins on microcontrollers have various modes for both input and output. Input modes may include pull-up or pull-down resistors, hysteresis, or some combination. Output modes can be push-pull, high-drive or open-drain.</p></p>
+	<p><p><img class='post_image' src='/images/gpio-output-types.png' /></p>
+
+<p>General purpose input/output (GPIO) pins on microcontrollers have various modes for both input and output. Input modes may include pull-up or pull-down resistors, hysteresis, or some combination. Output modes can be push-pull, high-drive or open-drain.</p></p>
 	<hr>
 	</div>
 
@@ -243,7 +247,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded c programming'>
+	<div class='tagged embedded c programming popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs">RAM/Flash Usage in Embedded C Programs</a> <small>2013-10-18</small></h2>
 	<p><p><img class='post_image' src='/images/flash-map.svg' /></p>
 
@@ -251,7 +255,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded control pwm pid motor programming circuit'>
+	<div class='tagged embedded control pwm pid motor programming circuit popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID">Motor Control using PWM and PID</a> <small>2013-10-15</small></h2>
 	<p><p><img class='post_image' src='/images/h-bridge.png' /></p>
 
@@ -267,7 +271,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded cortex-m3 fft filter'>
+	<div class='tagged embedded cortex-m3 fft filter popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3">FFT on the ARM Cortex M3</a> <small>2013-10-13</small></h2>
 	<p><p><img class='post_image' src='/images/DIT-FFT-butterfly.png' /></p>
 
@@ -287,7 +291,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded circuit power'>
+	<div class='tagged embedded circuit power popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors">Decoupling Capacitors (and Other Power Rules of Thumb)</a> <small>2013-10-10</small></h2>
 	<p><p><img class='post_image' src='/images/decouple-caps.png' /></p>
 
@@ -295,7 +299,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded cortex-m3 threads'>
+	<div class='tagged embedded cortex-m3 threads popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3">Context Switching on the Cortex-M3</a> <small>2013-10-09</small></h2>
 	<p><p>The ARM Cortex-M3 architecture is designed with special features to facilitate implementing a pre-emptive RTOS. The system code takes advantage of these features when implementing context switching code.</p></p>
 	<hr>
@@ -327,7 +331,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded filter iir programming'>
+	<div class='tagged embedded filter iir programming popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a> <small>2013-10-04</small></h2>
 	<p><p><img class='post_image_tall' src='/images/316px-Fourier_Series.png' /></p>
 
@@ -343,7 +347,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded fifo uart serial microcontroller programming'>
+	<div class='tagged embedded fifo uart serial microcontroller programming popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a> <small>2013-10-02</small></h2>
 	<p><p><img class='post_image_tall' src='/images/fifo.png' /></p>
 
@@ -351,7 +355,7 @@ $(document).ready( function(){
 	<hr>
 	</div>
 
-	<div class='tagged embedded microcontroller'>
+	<div class='tagged embedded microcontroller popular'>
 	<h2><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a> <small>2013-10-01</small></h2>
 	<p><table class='table table-striped table-bordered'>
 <tr>
@@ -446,6 +450,10 @@ $(document).ready( function(){
      
     	
     		<li class="tag-list-item" style="margin-bottom: 0.3em" id="microcontroller"><button type="button" class="btn btn-sm btn-default">microcontroller</button></li>
+    	
+     
+    	
+    		<li class="tag-list-item" style="margin-bottom: 0.3em" id="popular"><button type="button" class="btn btn-default">popular</button></li>
     	
      
     	
