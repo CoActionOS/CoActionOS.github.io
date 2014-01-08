@@ -4,7 +4,7 @@
  <title>CoActionOS</title>
  <link href="http://Coactionos.github.io/" rel="self"/>
  <link href="http://Coactionos.github.io"/>
- <updated>2014-01-07T13:45:43-07:00</updated>
+ <updated>2014-01-07T17:20:40-07:00</updated>
  <id>http://Coactionos.github.io</id>
  <author>
    <name>CoActionOS, Inc</name>
@@ -5732,7 +5732,7 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
    <id>http://Coactionos.github.io/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</id>
    <content type="html">&lt;h2 id=&quot;coaction_hero&quot;&gt;CoAction Hero&lt;/h2&gt;
 
-&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/CoActionOS-hero.jpg&#39; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/coaction-hero.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The CoAction Hero features:&lt;/p&gt;
 

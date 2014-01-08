@@ -8,7 +8,7 @@ tags: [coaction]
 
 ## CoAction Hero
 
-<img class="post_image" src="{{ BASE_PATH }}/images/CoActionOS-hero.jpg" />
+<img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero.jpg" />
 
 The CoAction Hero features:
 
