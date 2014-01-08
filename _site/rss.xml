@@ -3,10 +3,10 @@
 <channel>
         <title>CoActionOS</title>
         <description>CoActionOS - CoActionOS, Inc</description>
-        <link>http://Coactionos.github.io</link>
-        <link>http://Coactionos.github.io</link>
-        <lastBuildDate>2014-01-07T17:20:40-07:00</lastBuildDate>
-        <pubDate>2014-01-07T17:20:40-07:00</pubDate>
+        <link>http://coactionos.com</link>
+        <link>http://coactionos.com</link>
+        <lastBuildDate>2014-01-08T10:47:31-07:00</lastBuildDate>
+        <pubDate>2014-01-08T10:47:31-07:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -96,8 +96,8 @@
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;There are various ways to customize the Doxygen output. The easiest way to integrate Doxygen and Twitter Bootstrap is to use a few lines of javascript/jquery code to apply the desired Bootstrap classes to the already well documented Doxygen output. This results in fully responsive, mobile-ready code documentation.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap</guid>
                 <pubDate>2014-01-07T00:00:00-07:00</pubDate>
         </item>
 
@@ -128,8 +128,8 @@
 &lt;/ol&gt;
 
 &lt;p&gt;These steps only need to be taken the first time a device is connected. Subsequently, other CoActionOS devices should be automatically loaded by Windows 8.1.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
+                <link>http://coactionos.com/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</link>
+                <guid>http://coactionos.com/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers</guid>
                 <pubDate>2013-12-20T00:00:00-07:00</pubDate>
         </item>
 
@@ -240,8 +240,8 @@
 
 &lt;li&gt;&lt;em&gt;state&lt;/em&gt; allows the driver developer to provide any additional volatile data&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development</guid>
+                <link>http://coactionos.com/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development</link>
+                <guid>http://coactionos.com/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development</guid>
                 <pubDate>2013-12-18T00:00:00-07:00</pubDate>
         </item>
 
@@ -358,8 +358,8 @@
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;State machines are a great way of designing complex firmware programs. Using the Applib &lt;a href=&quot;/coactionos-applib/html/class_s_mach.html&quot;&gt;SMach&lt;/a&gt; and &lt;a href=&quot;/coactionos-applib/html/class_state.html&quot;&gt;State&lt;/a&gt; classes makes doing so quick and easy.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</guid>
+                <link>http://coactionos.com/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</link>
+                <guid>http://coactionos.com/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines</guid>
                 <pubDate>2013-12-17T00:00:00-07:00</pubDate>
         </item>
 
@@ -422,8 +422,8 @@
 
 &lt;li&gt;Right click on the project and click “Index -&amp;gt; Rebuild”&lt;/li&gt;
 &lt;/ol&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
+                <link>http://coactionos.com/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse</link>
+                <guid>http://coactionos.com/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse</guid>
                 <pubDate>2013-12-16T00:00:00-07:00</pubDate>
         </item>
 
@@ -457,8 +457,8 @@ all three ports.&lt;/div&gt;
 &lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Once you have the devices and filesystems you want, you just hit the hammer in Eclipse to build the kernel binary. You can then use CoActionOS Link to install the binary.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</guid>
+                <link>http://coactionos.com/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</link>
+                <guid>http://coactionos.com/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS</guid>
                 <pubDate>2013-12-15T00:00:00-07:00</pubDate>
         </item>
 
@@ -479,8 +479,8 @@ all three ports.&lt;/div&gt;
 &lt;h3 id=&quot;build_and_install_your_first_application&quot;&gt;Build and Install Your First Application&lt;/h3&gt;
 
 &lt;p&gt;Read the &lt;a href=&quot;/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project&quot;&gt;CoActionOS Tutorial&lt;/a&gt;.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started</link>
-                <guid>http://Coactionos.github.io/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started</guid>
+                <link>http://coactionos.com/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started</link>
+                <guid>http://coactionos.com/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started</guid>
                 <pubDate>2013-12-14T00:00:00-07:00</pubDate>
         </item>
 
@@ -639,8 +639,8 @@ all three ports.&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;, comma (evaluates to the value of the second argument)&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations</guid>
                 <pubDate>2013-12-11T00:00:00-07:00</pubDate>
         </item>
 
@@ -735,8 +735,8 @@ all three ports.&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;sizeof&lt;/li&gt;
 &lt;/ul&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutorial-Keyword-Reference</guid>
                 <pubDate>2013-12-10T00:00:00-07:00</pubDate>
         </item>
 
@@ -867,8 +867,8 @@ sizeof(w) is 4, sizeof(z) is 4
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;Compound data types in C give the programmer a powerful set of tools for organizing data. The C struct is the most common compound data type and organizes data contiguously in memory. A union allows the same place in memory to be treated as different types. An enum defines a list of values but acts more like a macro (see #define) than a compound data type. Users can also create customized types using the typedef keyword. Finally, the sizeof keyword determines the amount of memory used by a variable or type.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types</guid>
                 <pubDate>2013-12-09T00:00:00-07:00</pubDate>
         </item>
 
@@ -965,8 +965,8 @@ sizeof(w) is 4, sizeof(z) is 4
 &lt;h3 id=&quot;take_away&quot;&gt;Take Away&lt;/h3&gt;
 
 &lt;p&gt;C language compilers always preprocess the code and execute any preprocessor directives during that stage. The most commonly used preprocessor directives (especially among beginners) are #include and #define. #include is simple to use; you just need to remember quotes for local files and less/greater than symbols for system files. #define is handy for code maintenance. If a value is fixed, it should be defined as a macro so that if it needs to be changed, it only needs to be changed in one location. Lastly, if you create your own header file, it is imperative that you use a header guard of the form: #ifndef NAME_H_, #define NAME_H_, … #endif.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor</guid>
                 <pubDate>2013-12-08T00:00:00-07:00</pubDate>
         </item>
 
@@ -1173,8 +1173,8 @@ xlist[4] = 8 and 8
 &lt;h3 id=&quot;take_away&quot;&gt;Take Away&lt;/h3&gt;
 
 &lt;p&gt;Arrays and pointers are powerful tools in C. Arrays store lists or matrices of data while pointers access the memory of a variable rather than the variable itself. Though pointers can be difficult to master; it is very important that new programmers take the time to learn them for two reasons. First, they are used a lot in the standard C library and through many available libraries. Second, they can cause problems (crashing) if used incorrectly.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays</guid>
                 <pubDate>2013-12-07T00:00:00-07:00</pubDate>
         </item>
 
@@ -1378,8 +1378,8 @@ xlist[4] = 8 and 8
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;Flow control in C programs is broken down to conditions and loops. C’s if/else clauses and switch/case clauses are the main tools for conditionally executing statements in C. Two mechanisms are available for loops: the for loop and the while loop.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control</guid>
                 <pubDate>2013-12-05T00:00:00-07:00</pubDate>
         </item>
 
@@ -1669,8 +1669,8 @@ xlist[4] = 8 and 8
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;The C language includes many mathematical operators for doing basic arithmetic, comparisons, and binary operations. The order of operations is critical in C for correctly evaluating expressions. Sometimes understanding this order can be difficult when skimming through code, but adding parentheses can help to make code easier to read and avoid unintended evaluation orders.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators</guid>
                 <pubDate>2013-12-04T00:00:00-07:00</pubDate>
         </item>
 
@@ -1791,8 +1791,8 @@ xlist[4] = 8 and 8
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;Raw types in C come in integer and floating point types. Integers are much more prevalent on embedded systems than floating point values. The int type is architecture optimized and possibly the most commonly used type. The C99 standard introduced a header that eliminates ambiguity on integer types using int8_t, int32_t, etc.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types</guid>
                 <pubDate>2013-12-03T00:00:00-07:00</pubDate>
         </item>
 
@@ -1848,8 +1848,8 @@ well as not be a &lt;a href=&#39;/embedded%20c%20tutorial/2013/12/10/Embedded-C-
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;A function is a primary building block in C. A function consists of a prototype, name, return type, parameters, and body. The function name as well as the parameters must be valid C identifiers consisting only of letters, numbers, and underscores. They cannot start with a number and should not start with an underscore. As a programmer, you will create, use, and re-use many, many functions.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions</guid>
                 <pubDate>2013-12-02T00:00:00-07:00</pubDate>
         </item>
 
@@ -1907,8 +1907,8 @@ in later lessons. &lt;/div&gt;
 &lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
 
 &lt;p&gt;The important things to learn here are that C is a modular programming language consisting of functions and data; the OS entry point for a C program is the main() function; the basic function used for text output is printf() which is used extensively in C during development for debugging.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</link>
-                <guid>http://Coactionos.github.io/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</guid>
+                <link>http://coactionos.com/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</link>
+                <guid>http://coactionos.com/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World</guid>
                 <pubDate>2013-12-01T00:00:00-07:00</pubDate>
         </item>
 
@@ -2068,8 +2068,8 @@ legend(&quot;Set Point&quot;, &quot;Speed&quot;, &quot;Duty*100&quot;);
 print(&quot;output.png&quot;, &quot;-dpng&quot;);
 &lt;/pre&gt;
 &lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/motor-demo-plot.png&#39; /&gt;&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control</guid>
                 <pubDate>2013-11-11T00:00:00-07:00</pubDate>
         </item>
 
@@ -2122,8 +2122,8 @@ Thread 0 is completing
 Thread 1 is completing
 done
 &lt;/pre&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Thread</guid>
                 <pubDate>2013-11-10T00:00:00-07:00</pubDate>
         </item>
 
@@ -2190,8 +2190,8 @@ done
 	&lt;span class=&#39;n&#39;&gt;printf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;SIGUSR1 has been handled (triggered by tmr0)&lt;/span&gt;&lt;span class=&#39;se&#39;&gt;\n&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals</guid>
                 <pubDate>2013-11-10T00:00:00-07:00</pubDate>
         </item>
 
@@ -2265,8 +2265,8 @@ done
   &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO</guid>
                 <pubDate>2013-11-09T00:00:00-07:00</pubDate>
         </item>
 
@@ -2319,8 +2319,8 @@ done
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;That about covers the basics. You can read the &lt;a href=&quot;/coactionos-applib/html/class_string.html&quot;&gt;String class API&lt;/a&gt; for more information.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings</guid>
                 <pubDate>2013-11-08T00:00:00-07:00</pubDate>
         </item>
 
@@ -2368,8 +2368,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm</guid>
                 <pubDate>2013-11-07T00:00:00-07:00</pubDate>
         </item>
 
@@ -2453,8 +2453,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C</guid>
                 <pubDate>2013-11-06T00:00:00-07:00</pubDate>
         </item>
 
@@ -2540,8 +2540,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi</guid>
                 <pubDate>2013-11-05T00:00:00-07:00</pubDate>
         </item>
 
@@ -2590,8 +2590,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart</guid>
                 <pubDate>2013-11-04T00:00:00-07:00</pubDate>
         </item>
 
@@ -2652,8 +2652,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files</guid>
                 <pubDate>2013-11-03T00:00:00-06:00</pubDate>
         </item>
 
@@ -2690,8 +2690,8 @@ done
   &lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
 &lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio</guid>
                 <pubDate>2013-11-02T00:00:00-06:00</pubDate>
         </item>
 
@@ -2750,8 +2750,8 @@ Eclipse&lt;/a&gt;.&lt;/div&gt;
 &lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-macosx.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (mac)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a class=&#39;btn btn-default&#39; href=&#39;/attachments/HelloWorld-win.zip&#39;&gt;&lt;i class=&#39;fa fa-paperclip&#39;&gt; &lt;/i&gt; Hello World (win)&lt;/a&gt;&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</link>
-                <guid>http://Coactionos.github.io/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</guid>
+                <link>http://coactionos.com/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</link>
+                <guid>http://coactionos.com/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project</guid>
                 <pubDate>2013-11-01T00:00:00-06:00</pubDate>
         </item>
 
@@ -2828,8 +2828,8 @@ Eclipse&lt;/a&gt;.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Op-amps are great for analog signals in digital designs (especially rail-to-rail op-amps). The ideal op-amp as well as knowledge of basic electrical principles greatly simplify designing and integrating op-amps in your embedded designs.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design</guid>
                 <pubDate>2013-10-27T00:00:00-06:00</pubDate>
         </item>
 
@@ -2856,8 +2856,8 @@ Eclipse&lt;/a&gt;.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Controlling solenoids with microcontrollers is simple. Remember to ensure the MOSFET has sufficient current capability to activate the solenoid, include the protection diode to prevent the solenoid from damaging the MOSFET, and include a pull-down resistor on the GPIO line if the microcontroller doesn’t drive the line low at startup.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid</guid>
                 <pubDate>2013-10-26T00:00:00-06:00</pubDate>
         </item>
 
@@ -2898,8 +2898,8 @@ Eclipse&lt;/a&gt;.&lt;/div&gt;
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;Pull-up/pull-down resistors are a great way to prevent microcontroller GPIO inputs from assuming undefined values in embedded designs; however, they must be correctly sized (either weak or strong) based on power consumption requirements as well as existing circuitry (such as internal pull-up/pull-down resistors) to ensure proper circuit operation.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors</guid>
                 <pubDate>2013-10-25T00:00:00-06:00</pubDate>
         </item>
 
@@ -2954,8 +2954,8 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Using LEDs in embedded designs is relatively simple (and thus a good starting point for beginners). It is important to use a current limiting resistor in-line with LEDs to prevent damage. To optimize the performance of the LED, careful sizing of the resistor is necessary. However, to just get the LED to turn on and off a broad range of resistors will work. Depending on the current requirements of the LED and the capabilites of the MCU, LEDs may be driven directly using GPIO or, for high current applications, may require the use of a transistor. Firmware can then be used to simply blink the LED or use PWM to adjust the brightness.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs</guid>
                 <pubDate>2013-10-24T00:00:00-06:00</pubDate>
         </item>
 
@@ -3037,8 +3037,8 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;The &lt;a href=&quot;/coactionos/html/&quot;&gt;CoActionOS documentation&lt;/a&gt; includes many examples of the techniques described herein.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C</guid>
                 <pubDate>2013-10-23T00:00:00-06:00</pubDate>
         </item>
 
@@ -3381,8 +3381,8 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;The USB communications device class (CDC) abstract control model (ACM) is a great way to create a cross-platform software-firmware interface. The connection creates a virtual serial communications port that can be read and written like a classic serial port but without the outdated cables.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware</guid>
                 <pubDate>2013-10-22T00:00:00-06:00</pubDate>
         </item>
 
@@ -3435,8 +3435,8 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;GPIO is the simplest IO available on microcontrollers. However, it is important to understand the intricacies of GPIO such as the input and output modes. Understanding the capabilites of the GPIO can save cost and complexity in an embedded design while boosting flexiblity.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes</guid>
                 <pubDate>2013-10-21T00:00:00-06:00</pubDate>
         </item>
 
@@ -3496,8 +3496,8 @@ R&lt;sub&gt;1&lt;/sub&gt;=2.1V / 20mA=105Ohms&lt;br /&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Sensing current in embedded designs is a challenge. This method uses a precision resistor and an operational amplifier at the power source. This approach is inexpensive but slightly decreases the power efficiency of the system. The current signal must be filtered before and after it is digitally sampled in order for the data to be useful.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application</guid>
                 <pubDate>2013-10-19T00:00:00-06:00</pubDate>
         </item>
 
@@ -3648,8 +3648,8 @@ my_static:4, my_stack:0&lt;/pre&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;In embedded systems, it is crucial to pay close attention to memory usage. Having a sound understanding of how C allocates variables in RAM and flash both dynamically and statically is key to getting the most out of limited memory.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs</guid>
                 <pubDate>2013-10-18T00:00:00-06:00</pubDate>
         </item>
 
@@ -4030,8 +4030,8 @@ print(&quot;output.png&quot;, &quot;-dpng&quot;);
 &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;Precision, bi-directional motor control is achievable in embedded designs using an H-bridge driver, circuitry to sense feedback from the motor, and a PID algorithm. It is important to have a well designed H-bridge that prevents shoot-through and suppresses electomagnetic interference with a snubber circuit. The sensing feedback can come in the form of speed (using encoders) or current; though, the best results will be achieved using an encoder. Finally, the PID algorithm can be tuned to ensure the control algorithm meets the application’s requirements.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID</guid>
                 <pubDate>2013-10-15T00:00:00-06:00</pubDate>
         </item>
 
@@ -4286,8 +4286,8 @@ negative to positive because electrons have a negative charge value.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Understanding how microcontrollers work starts with a basic understanding of semiconductor physics. Silicon doped into N-type and P-type materials enable the creation of semiconductor devices such as diodes and transistors. Microcontrollers consists of millions of transistors arranged a on single silicon based circuit to create many logic gates–such as AND, NOT, OR, XOR–to form the digital circuitry that make up microcontrollers.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work</guid>
                 <pubDate>2013-10-14T00:00:00-06:00</pubDate>
         </item>
 
@@ -4403,8 +4403,8 @@ negative to positive because electrons have a negative charge value.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;The combination of the ARM CM3 and the FFT allow developers to execute some signal processing algorithms previously reserved for dedicated DSP hardware. This is possible due to the single cycle multiply as well as bit reversal instructions available on the CM3 and the high speed CPU cores that are available. All of this functionality comes at power budgets and price points that are competitive with 8/16 microcontroller architectures.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3</guid>
                 <pubDate>2013-10-13T00:00:00-06:00</pubDate>
         </item>
 
@@ -4471,8 +4471,8 @@ negative to positive because electrons have a negative charge value.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;This very simple code sample provides a powerful and effective mechanism for using the ARM Cortex-CM3 SVCall (service call) interrupt. It allows an arbitrary function to be executed uninterrupted in privileged mode. The code is both re-entrant and thread-safe (as long as the context-switch can’t interrupt the service call handler).&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall</guid>
                 <pubDate>2013-10-12T00:00:00-06:00</pubDate>
         </item>
 
@@ -4560,8 +4560,8 @@ rm -Rf ./&lt;span class=&#39;nv&#39;&gt;$TEMPDIR&lt;/span&gt;/*
 &lt;span class=&#39;nb&#39;&gt;exit &lt;/span&gt;0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Hopefully, this script is helpful in your endeavours to deploy Qt applications on Mac OS X.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX</guid>
                 <pubDate>2013-10-11T00:00:00-06:00</pubDate>
         </item>
 
@@ -4614,8 +4614,8 @@ devices.&lt;/div&gt;
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Decoupling capacitors, ferrite beads, and diodes are vital components to embedded systems power supplies. Decoupling capacitors ensure steady power is delivered to digital chips and help reduce noise on the power supply lines. Ferrite beads act to further reduce noise while diodes offer both reverse polarity and over voltage protection.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors</guid>
                 <pubDate>2013-10-10T00:00:00-06:00</pubDate>
         </item>
 
@@ -4837,8 +4837,8 @@ devices.&lt;/div&gt;
 &lt;p&gt;ARM, with the Cortex M architecture, delivers valuable hardware resources to enable context switching. The interrupts support both round robing and FIFO style scheduling while the dual stacks allow the kernel process and interrupts to execute on a dedicated stack. With just a few software routines to perform the context switching, initialize the system, and create new stacks, system developers can create a functioning pre-emptive kernel.&lt;/p&gt;
 
 &lt;p&gt;For more information on context switching on the Cortex-M3, see the Cortex-M3 technical reference manual from ARM.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3</guid>
                 <pubDate>2013-10-09T00:00:00-06:00</pubDate>
         </item>
 
@@ -4884,8 +4884,8 @@ make
 sudo make install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;The Autotools binaries should now be available in TOOLSPATH/bin.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools</guid>
                 <pubDate>2013-10-08T00:00:00-06:00</pubDate>
         </item>
 
@@ -4981,8 +4981,8 @@ make
 sudo make install
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in /usr/local/arm-cm3-eabi.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu</guid>
                 <pubDate>2013-10-07T00:00:00-06:00</pubDate>
         </item>
 
@@ -5129,8 +5129,8 @@ make
 sudo make install
 &lt;/pre&gt;
 &lt;p&gt;That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in /usr/local/CoActionOS. To uninstall the compiler tools, delete the /usr/local/CoActionOS folder.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X</guid>
                 <pubDate>2013-10-06T00:00:00-06:00</pubDate>
         </item>
 
@@ -5288,8 +5288,8 @@ make install
 &lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;bash&#39;&gt;&lt;span class=&#39;nb&#39;&gt;echo&lt;/span&gt; &lt;span class=&#39;s1&#39;&gt;&amp;#39;export PATH=/usr/local/CoActionOS/bin:$PATH&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; /usr/etc/profile
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in C:\MinGW\msys\1.0\local\CoActionOS.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows</guid>
                 <pubDate>2013-10-05T00:00:00-06:00</pubDate>
         </item>
 
@@ -5370,8 +5370,8 @@ make install
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Filters, both analog and digital, are an essential part of embedded designs. They allow developers to get rid of unwanted frequencies when analyzing sensor input. For digital filters to be useful, analog filters must remove all frequencies above half the sampling frequency. Digital IIR filters can be powerful tools in embedded design where resources are limited. The exponential moving average (EMA) is an example of such a filter that works well in embedded designs because of the low memory and computing power requirements.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter</guid>
                 <pubDate>2013-10-04T00:00:00-06:00</pubDate>
         </item>
 
@@ -5473,8 +5473,8 @@ make install
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Thermistors are great to use in embedded designs because they come in a variety of shapes and sizes and are easy to interface with a microcontroller ADC input. The main design challenge is interpreting the non-linear temperature response. Taking the temperature response and creating a lookup table using a spreadsheet is a relatively easy way of getting the table in C code. The firmware then just needs to use linear extrapolation to approximate the temperature between points in the lookup table.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table</guid>
                 <pubDate>2013-10-03T00:00:00-06:00</pubDate>
         </item>
 
@@ -5573,8 +5573,8 @@ make install
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;FIFOs are a storage mechanism which operate on a first-in, first-out basis. They are useful for managing the arrival of asynchronous data. Integrating a FIFO with an ISR, such as the UART ISR, can make processing the incoming data much easier for the application developer.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation</guid>
                 <pubDate>2013-10-02T00:00:00-06:00</pubDate>
         </item>
 
@@ -5668,8 +5668,8 @@ make install
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
 &lt;p&gt;Though brief, this case study illustrates that 32-bit microcontroller architectures can, from a practical standpoint, replace 8-bit systems without a cost increase and with a boost in RAM size and performance.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</link>
-                <guid>http://Coactionos.github.io/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</guid>
+                <link>http://coactionos.com/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers</guid>
                 <pubDate>2013-10-01T00:00:00-06:00</pubDate>
         </item>
 
@@ -5718,8 +5718,8 @@ make install
 cd /
 sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 &lt;/pre&gt;</description>
-                <link>http://Coactionos.github.io/getting%20started/2013/09/02/Getting-Started-Get-the-Software</link>
-                <guid>http://Coactionos.github.io/getting%20started/2013/09/02/Getting-Started-Get-the-Software</guid>
+                <link>http://coactionos.com/getting%20started/2013/09/02/Getting-Started-Get-the-Software</link>
+                <guid>http://coactionos.com/getting%20started/2013/09/02/Getting-Started-Get-the-Software</guid>
                 <pubDate>2013-09-02T00:00:00-06:00</pubDate>
         </item>
 
@@ -5771,8 +5771,8 @@ Link.&lt;/div&gt;
 &lt;p&gt;&lt;img class=&#39;post_image&#39; src=&#39;/images/mbed-xively-kit.jpg&#39; /&gt;&lt;/p&gt;
 
 &lt;p&gt;CoActionOS also supports running the mbed with the &lt;a href=&quot;https://xively.com/dev/kits/&quot;&gt;Xively jumpstart kit&lt;/a&gt;.&lt;/p&gt;</description>
-                <link>http://Coactionos.github.io/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</link>
-                <guid>http://Coactionos.github.io/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</guid>
+                <link>http://coactionos.com/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</link>
+                <guid>http://coactionos.com/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</guid>
                 <pubDate>2013-09-01T00:00:00-06:00</pubDate>
         </item>
 
