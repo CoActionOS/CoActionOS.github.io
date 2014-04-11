@@ -21,8 +21,7 @@ title: CoActionOS Docs
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">System Devices<div class="ingroups"><a class="el" href="group___p_e_r_i_p_h_i_o.html">Peripheral Input/Output</a></div></div>  </div>
 </div><!--header-->
@@ -49,8 +48,8 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__process__t.html">sys_process_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure for checking the status of a named process.  <a href="structsys__process__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__lock__t.html">sys_lock_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure to unlock the security word features.  <a href="structsys__lock__t.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__sudo__t.html">sys_sudo_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data structure to unlock the security word features.  <a href="structsys__sudo__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structled__req__t.html">led_req_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,30 +90,12 @@ Macros</h2></td></tr>
 <tr class="memitem:gad8d831b99cd6f4396a939aaca76729b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#gad8d831b99cd6f4396a939aaca76729b7">I_SYS_GETPROCESS</a></td></tr>
 <tr class="memdesc:gad8d831b99cd6f4396a939aaca76729b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gad8d831b99cd6f4396a939aaca76729b7">More...</a><br/></td></tr>
 <tr class="separator:gad8d831b99cd6f4396a939aaca76729b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bd8a56716406a9adaaa4048bd04496a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga2bd8a56716406a9adaaa4048bd04496a">I_SYS_UNLOCK</a></td></tr>
-<tr class="memdesc:ga2bd8a56716406a9adaaa4048bd04496a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga2bd8a56716406a9adaaa4048bd04496a">More...</a><br/></td></tr>
-<tr class="separator:ga2bd8a56716406a9adaaa4048bd04496a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8762a159eb2b4526b4d1aae767464cf5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga8762a159eb2b4526b4d1aae767464cf5">I_SYS_LOCK</a></td></tr>
-<tr class="memdesc:ga8762a159eb2b4526b4d1aae767464cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga8762a159eb2b4526b4d1aae767464cf5">More...</a><br/></td></tr>
-<tr class="separator:ga8762a159eb2b4526b4d1aae767464cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c621ec59132edcfea3e0c7403380d21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga4c621ec59132edcfea3e0c7403380d21">I_SYS_SUDO</a></td></tr>
+<tr class="memdesc:ga4c621ec59132edcfea3e0c7403380d21"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga4c621ec59132edcfea3e0c7403380d21">More...</a><br/></td></tr>
+<tr class="separator:ga4c621ec59132edcfea3e0c7403380d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga984e40321cd06b5f9674d79659e5b197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">I_LED_SET</a></td></tr>
 <tr class="memdesc:ga984e40321cd06b5f9674d79659e5b197"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga984e40321cd06b5f9674d79659e5b197">More...</a><br/></td></tr>
 <tr class="separator:ga984e40321cd06b5f9674d79659e5b197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga15736219cc3742e6ede20e5ccbf167b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga15736219cc3742e6ede20e5ccbf167b9">sys_security_flags_t</a> { <br/>
-&#160;&#160;<a class="el" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9ac81ee4f452b7a1fcab1dedf6bd94dae8">SYS_SECURITY_RESET</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a99986402f95bf43ca64d8b4412b0e9ce">SYS_SECURITY_INVOKEBOOTLOADER</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a598705bce38928c1b5154207009bd094">SYS_SECURITY_READFLASH</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a7a70299c9921746fc63a72352c145e25">SYS_SECURITY_APPINSTALL</a>
-<br/>
- }</td></tr>
-<tr class="memdesc:ga15736219cc3742e6ede20e5ccbf167b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags in <em>security</em> (member of <a class="el" href="structsys__attr__t.html">sys_attr_t</a>).  <a href="group___s_y_s___d_e_v.html#ga15736219cc3742e6ede20e5ccbf167b9">More...</a><br/></td></tr>
-<tr class="separator:ga15736219cc3742e6ede20e5ccbf167b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga984e40321cd06b5f9674d79659e5b197"></a>
@@ -207,20 +188,6 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga8762a159eb2b4526b4d1aae767464cf5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define I_SYS_LOCK</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>This request locks the device. When locked, certain operations are disabled based on the value of <em>security</em> in <a class="el" href="structsys__attr__t.html">sys_attr_t</a>;</p>
-<div class="fragment"><div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___s_y_s___d_e_v.html#ga8762a159eb2b4526b4d1aae767464cf5">I_SYS_LOCK</a>);</div>
-</div><!-- fragment --> 
-</div>
-</div>
 <a class="anchor" id="ga6303d85184e2ac7c2a7272db86a7240c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -234,21 +201,20 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga2bd8a56716406a9adaaa4048bd04496a"></a>
+<a class="anchor" id="ga4c621ec59132edcfea3e0c7403380d21"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_SYS_UNLOCK</td>
+          <td class="memname">#define I_SYS_SUDO</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This request unlocks the device. When unlocked, all operations are available (the security word has no effect).</p>
-<div class="fragment"><div class="line"><a class="code" href="structsys__lock__t.html">sys_lock_t</a> lock;</div>
-<div class="line">strcpy(lock.<a class="code" href="structsys__lock__t.html#a9b2a22d10fda427295ca098cbbda33f7">key</a>, <span class="stringliteral">&quot;the passord&quot;</span>);</div>
-<div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___s_y_s___d_e_v.html#ga2bd8a56716406a9adaaa4048bd04496a">I_SYS_UNLOCK</a>, &amp;lock);</div>
-<div class="line"><span class="keywordflow">if</span>( lock.<a class="code" href="structsys__lock__t.html#a0fb35b1d9c18a32b7855412058ded39a">status</a> == 0 ){</div>
-<div class="line">     <span class="comment">//device is still locked</span></div>
+<p>This request temporarily changes the effective user ID to root. As root certain system functions are available that would not available to the user. For example, as root, an application can set an interrupt callback that is executed in privileged mode.</p>
+<div class="fragment"><div class="line"><a class="code" href="structsys__sudo__t.html">sys_sudo_t</a> passwd;</div>
+<div class="line">strcpy(passwd.<a class="code" href="structsys__sudo__t.html#a4d49138cc4e086449e16350ea11e2fcb">key</a>, <span class="stringliteral">&quot;the password&quot;</span>);</div>
+<div class="line"><span class="keywordflow">if</span>( <a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___s_y_s___d_e_v.html#ga4c621ec59132edcfea3e0c7403380d21">I_SYS_SUDO</a>, &amp;passwd) &lt; 0 ){</div>
+<div class="line">     <span class="comment">//failed to accept password</span></div>
 <div class="line">}</div>
 </div><!-- fragment --> 
 </div>
@@ -340,33 +306,6 @@ Enumerations</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga15736219cc3742e6ede20e5ccbf167b9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___s_y_s___d_e_v.html#ga15736219cc3742e6ede20e5ccbf167b9">sys_security_flags_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga15736219cc3742e6ede20e5ccbf167b9ac81ee4f452b7a1fcab1dedf6bd94dae8"></a>SYS_SECURITY_RESET</em>&#160;</td><td class="fielddoc">
-<p>Allows desktop interface to reset the device </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga15736219cc3742e6ede20e5ccbf167b9a99986402f95bf43ca64d8b4412b0e9ce"></a>SYS_SECURITY_INVOKEBOOTLOADER</em>&#160;</td><td class="fielddoc">
-<p>Allows desktop interface to invoke the bootloader (can always be invoked manually) </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga15736219cc3742e6ede20e5ccbf167b9a598705bce38928c1b5154207009bd094"></a>SYS_SECURITY_READFLASH</em>&#160;</td><td class="fielddoc">
-<p>Allows desktop interface to read the flash memory (where OS and application binaries are stored) </p>
-</td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga15736219cc3742e6ede20e5ccbf167b9a7a70299c9921746fc63a72352c145e25"></a>SYS_SECURITY_APPINSTALL</em>&#160;</td><td class="fielddoc">
-<p>Allows desktop interface to install custom applications (warning: custom applications can get around security) </p>
-</td></tr>
-</table>
 
 </div>
 </div>

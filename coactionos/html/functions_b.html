@@ -14,6 +14,7 @@ title: CoActionOS Docs
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
@@ -21,13 +22,17 @@ title: CoActionOS Docs
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -41,7 +46,6 @@ title: CoActionOS Docs
       <li><a href="functions_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
-      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -53,6 +57,8 @@ title: CoActionOS Docs
       <li><a href="functions_u.html#index_u"><span>u</span></a></li>
       <li><a href="functions_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_w.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_x.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -60,24 +66,47 @@ title: CoActionOS Docs
 <div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
-<li>baudrate
-: <a class="el" href="structuart__attr__t.html#aa94e58584407d254bda954d37fd0ced3">uart_attr_t</a>
+<li>BAUDRATE_115200
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65da2499dc76b17752b5a29f19501b21e62d">Brsp</a>
 </li>
-<li>bitrate
-: <a class="el" href="structdevice__cfg__t.html#afef96c74a2c86f536de04d8499f272e9">device_cfg_t</a>
-, <a class="el" href="structi2c__attr__t.html#a7f58e2df0c6afe57de0c300ce21efd8e">i2c_attr_t</a>
-, <a class="el" href="structspi__attr__t.html#aebbfa7c7f066e32d060388fd02bb77e1">spi_attr_t</a>
+<li>BAUDRATE_19200
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65dae682b75ceda02e20bde6d015514c29ff">Brsp</a>
 </li>
-<li>buf
-: <a class="el" href="structbootloader__writepage__t.html#a7f978a12ec96d21dc3e5482bb18d3818">bootloader_writepage_t</a>
-, <a class="el" href="structdevice__transfer__t.html#a33ab02f5be228631bc710c15449a984b">device_transfer_t</a>
-, <a class="el" href="structflash__writepage__t.html#ada65fc394b82ba0c36d1fc15f03eef58">flash_writepage_t</a>
+<li>BAUDRATE_230400
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65da0facd2e9414ef98bdae71ec58b1d5d36">Brsp</a>
 </li>
-<li>buffer
-: <a class="el" href="structdevfifo__cfg__t.html#a6f93b7b15f07f0cc590852af8f104322">devfifo_cfg_t</a>
-, <a class="el" href="structfifo__cfg__t.html#a7f642065e80c386324078fed9b3e9994">fifo_cfg_t</a>
-, <a class="el" href="structuartfifo__cfg__t.html#a18192a832df2e3d55c5452750da2a13b">uartfifo_cfg_t</a>
-, <a class="el" href="structusbfifo__cfg__t.html#a52542347bade3bd8fa29ea022bedf03b">usbfifo_cfg_t</a>
+<li>BAUDRATE_38400
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65da00143a6fd0b3e17be5fec0b46866898a">Brsp</a>
+</li>
+<li>BAUDRATE_460800
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65daf1d5b75955e85dbba2e1f01346ec1632">Brsp</a>
+</li>
+<li>BAUDRATE_57600
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65dabc1ec0b2e0e632a38ef61c917123f997">Brsp</a>
+</li>
+<li>BAUDRATE_921600
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65da2c81e2d588127c58a143da3f44c4468a">Brsp</a>
+</li>
+<li>BAUDRATE_9600
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65dad6cac7a8b5e255422f87d6d26cb89502">Brsp</a>
+</li>
+<li>baudrate_t
+: <a class="el" href="class_brsp.html#a7002c2c179e3f79b1128e992a0a5f65d">Brsp</a>
+</li>
+<li>BINARY
+: <a class="el" href="class_dbug.html#a9bced5ff19bc48680134a570a3794833a19527dff45cf5b6bd4c9bf1392393679">Dbug</a>
+</li>
+<li>bitmap()
+: <a class="el" href="class_m_b_font.html#ae47727d83ebe142c7a10c711f2e45c56">MBFont</a>
+</li>
+<li>BOTH
+: <a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea403bdcfb719053ae655b32315a2ddeb5">Tmr</a>
+</li>
+<li>Brsp()
+: <a class="el" href="class_brsp.html#a0117467061fc63b228c19f69371a02c2">Brsp</a>
+</li>
+<li>buf()
+: <a class="el" href="class_aio.html#a002104cedc61915254deaf03718a2ad5">Aio</a>
 </li>
 </ul>
 </div><!-- contents -->

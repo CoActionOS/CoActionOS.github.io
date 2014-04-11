@@ -190,108 +190,92 @@
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#define SYS_IOC_CHAR &#39;s&#39;</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga15736219cc3742e6ede20e5ccbf167b9">  143</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9ac81ee4f452b7a1fcab1dedf6bd94dae8">  144</a></span>&#160;     <a class="code" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9ac81ee4f452b7a1fcab1dedf6bd94dae8">SYS_SECURITY_RESET</a>  = (1&lt;&lt;0),</div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a99986402f95bf43ca64d8b4412b0e9ce">  145</a></span>&#160;     <a class="code" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a99986402f95bf43ca64d8b4412b0e9ce">SYS_SECURITY_INVOKEBOOTLOADER</a>  = (1&lt;&lt;1),</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a598705bce38928c1b5154207009bd094">  146</a></span>&#160;     <a class="code" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a598705bce38928c1b5154207009bd094">SYS_SECURITY_READFLASH</a>  = (1&lt;&lt;2),</div>
-<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a7a70299c9921746fc63a72352c145e25">  147</a></span>&#160;     <a class="code" href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a7a70299c9921746fc63a72352c145e25">SYS_SECURITY_APPINSTALL</a>  =  (1&lt;&lt;3)</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;} <a class="code" href="group___s_y_s___d_e_v.html#ga15736219cc3742e6ede20e5ccbf167b9">sys_security_flags_t</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="structsys__attr__t.html">  154</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a9a0ca1776b9909befa954eb172e8b999">  155</a></span>&#160;     <span class="keywordtype">char</span> version[8] ;</div>
-<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#aa35ce7db55a8a6cca5fe3477baa4ff0b">  156</a></span>&#160;     <span class="keywordtype">char</span> arch[8] ;</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#acc6cc408953d1d799cdbb688e459803b">  157</a></span>&#160;     uint32_t signature ;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#aa5c17da2051565545a0d30b1c551c25b">  158</a></span>&#160;     uint32_t security ;</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a1bf42a512224ad1bc645b075d78189d1">  159</a></span>&#160;     uint32_t cpu_freq ;</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a9c54fcab6d3a2a1cfe27cd390b77960f">  160</a></span>&#160;     uint32_t sys_mem_size ;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#af4d93bc22b5041b5b85a6c3639464709">  161</a></span>&#160;     <span class="keywordtype">char</span> stdout_name[NAME_MAX] ;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a8db0e27ebef300bec4b61defc05c608d">  162</a></span>&#160;     <span class="keywordtype">char</span> stdin_name[NAME_MAX] ;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;} <a class="code" href="structsys__attr__t.html">sys_attr_t</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html">  169</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a773b7f458c6ab4f8d1a5d0e2683ba33f">  170</a></span>&#160;     uint32_t pid ;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ae36bcea539445093eff8bf4d35f73707">  171</a></span>&#160;     uint32_t tid ;</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a899b0754104fe54d971b12d91a87563f">  172</a></span>&#160;     uint64_t timer ;</div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a52a985fdee304ef08c89088f16127523">  173</a></span>&#160;     uint32_t mem_loc ;</div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ad404fdc2d38639aef19ff389c9f2bb00">  174</a></span>&#160;     uint32_t mem_size ;</div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ae9ea43833e828ad0130bcd0b97c9ca3b">  175</a></span>&#160;     uint32_t malloc_loc ;</div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a4813ad0946188c57426b437ab40a4d20">  176</a></span>&#160;     uint32_t stack_ptr ;</div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a589235acdfc54a41eeda3a82dcf0b89d">  177</a></span>&#160;     uint8_t prio ;</div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a9387ca3f9dd6c3b091fbfde967087082">  178</a></span>&#160;     uint8_t prio_ceiling ;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#aac2b35038563fd2cb547baefb9ae338e">  179</a></span>&#160;     uint8_t is_active ;</div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a5c35fb3379dbb40e7fc52388a4a018d9">  180</a></span>&#160;     uint8_t is_thread ;</div>
-<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a8f284ffa928cb6688a986dd69346ef94">  181</a></span>&#160;     uint8_t is_enabled ;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ac6c56faad3fd57861d262dbdb8664814">  182</a></span>&#160;     <span class="keywordtype">char</span> name[NAME_MAX] ;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;} <a class="code" href="structsys__taskattr__t.html">sys_taskattr_t</a>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html">  189</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a6ca4f87bb8076338ba6ae4fdf4b809a3">  190</a></span>&#160;     uint32_t <span class="keywordtype">id</span> ;</div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a701f4e2c5797e85246d53bfe83a6aad5">  191</a></span>&#160;     uint32_t si_signo ;</div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a6286cc5e0872a19357f146dc04b6d4d7">  192</a></span>&#160;     int32_t si_sigcode ;</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a65f9058f201b225a0026ffe02e01cc81">  193</a></span>&#160;     int32_t si_sigvalue ;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;} <a class="code" href="structsys__killattr__t.html">sys_killattr_t</a>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="structsys__process__t.html">  201</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="structsys__process__t.html#a14483145b0b98d4be33f6ea5fb0cdcae">  202</a></span>&#160;     <span class="keywordtype">char</span> name[24] ;</div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="structsys__process__t.html#ab124dde9cdb462243d5f018a53ad5397">  203</a></span>&#160;     int32_t pid ;</div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="structsys__process__t.html#a03f8ecefe9e40266fc18a4dab614d4ed">  204</a></span>&#160;     int32_t pthread_id ;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;} <a class="code" href="structsys__process__t.html">sys_process_t</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="structsys__attr__t.html">  144</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a9a0ca1776b9909befa954eb172e8b999">  145</a></span>&#160;     <span class="keywordtype">char</span> version[8] ;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#aa35ce7db55a8a6cca5fe3477baa4ff0b">  146</a></span>&#160;     <span class="keywordtype">char</span> arch[8] ;</div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#acc6cc408953d1d799cdbb688e459803b">  147</a></span>&#160;     uint32_t signature ;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#aa5c17da2051565545a0d30b1c551c25b">  148</a></span>&#160;     uint32_t security ;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a1bf42a512224ad1bc645b075d78189d1">  149</a></span>&#160;     uint32_t cpu_freq ;</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a9c54fcab6d3a2a1cfe27cd390b77960f">  150</a></span>&#160;     uint32_t sys_mem_size ;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#af4d93bc22b5041b5b85a6c3639464709">  151</a></span>&#160;     <span class="keywordtype">char</span> stdout_name[NAME_MAX] ;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="structsys__attr__t.html#a8db0e27ebef300bec4b61defc05c608d">  152</a></span>&#160;     <span class="keywordtype">char</span> stdin_name[NAME_MAX] ;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;} <a class="code" href="structsys__attr__t.html">sys_attr_t</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html">  159</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a773b7f458c6ab4f8d1a5d0e2683ba33f">  160</a></span>&#160;     uint32_t pid ;</div>
+<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ae36bcea539445093eff8bf4d35f73707">  161</a></span>&#160;     uint32_t tid ;</div>
+<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a899b0754104fe54d971b12d91a87563f">  162</a></span>&#160;     uint64_t timer ;</div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a52a985fdee304ef08c89088f16127523">  163</a></span>&#160;     uint32_t mem_loc ;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ad404fdc2d38639aef19ff389c9f2bb00">  164</a></span>&#160;     uint32_t mem_size ;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ae9ea43833e828ad0130bcd0b97c9ca3b">  165</a></span>&#160;     uint32_t malloc_loc ;</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a4813ad0946188c57426b437ab40a4d20">  166</a></span>&#160;     uint32_t stack_ptr ;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a589235acdfc54a41eeda3a82dcf0b89d">  167</a></span>&#160;     uint8_t prio ;</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a9387ca3f9dd6c3b091fbfde967087082">  168</a></span>&#160;     uint8_t prio_ceiling ;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#aac2b35038563fd2cb547baefb9ae338e">  169</a></span>&#160;     uint8_t is_active ;</div>
+<div class="line"><a name="l00170"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a5c35fb3379dbb40e7fc52388a4a018d9">  170</a></span>&#160;     uint8_t is_thread ;</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#a8f284ffa928cb6688a986dd69346ef94">  171</a></span>&#160;     uint8_t is_enabled ;</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="structsys__taskattr__t.html#ac6c56faad3fd57861d262dbdb8664814">  172</a></span>&#160;     <span class="keywordtype">char</span> name[NAME_MAX] ;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;} <a class="code" href="structsys__taskattr__t.html">sys_taskattr_t</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html">  179</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a6ca4f87bb8076338ba6ae4fdf4b809a3">  180</a></span>&#160;     uint32_t <span class="keywordtype">id</span> ;</div>
+<div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a701f4e2c5797e85246d53bfe83a6aad5">  181</a></span>&#160;     uint32_t si_signo ;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a6286cc5e0872a19357f146dc04b6d4d7">  182</a></span>&#160;     int32_t si_sigcode ;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="structsys__killattr__t.html#a65f9058f201b225a0026ffe02e01cc81">  183</a></span>&#160;     int32_t si_sigvalue ;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;} <a class="code" href="structsys__killattr__t.html">sys_killattr_t</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="structsys__process__t.html">  191</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="structsys__process__t.html#a14483145b0b98d4be33f6ea5fb0cdcae">  192</a></span>&#160;     <span class="keywordtype">char</span> name[24] ;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="structsys__process__t.html#ab124dde9cdb462243d5f018a53ad5397">  193</a></span>&#160;     int32_t pid ;</div>
+<div class="line"><a name="l00194"></a><span class="lineno"><a class="line" href="structsys__process__t.html#a03f8ecefe9e40266fc18a4dab614d4ed">  194</a></span>&#160;     int32_t pthread_id ;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;} <a class="code" href="structsys__process__t.html">sys_process_t</a>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="structsys__sudo__t.html">  203</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="structsys__sudo__t.html#a4d49138cc4e086449e16350ea11e2fcb">  204</a></span>&#160;     uint8_t key[32] ;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;} <a class="code" href="structsys__sudo__t.html">sys_sudo_t</a>;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="structsys__lock__t.html">  213</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00214"></a><span class="lineno"><a class="line" href="structsys__lock__t.html#a9b2a22d10fda427295ca098cbbda33f7">  214</a></span>&#160;     <span class="keywordtype">char</span> key[32] ;</div>
-<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="structsys__lock__t.html#a0fb35b1d9c18a32b7855412058ded39a">  215</a></span>&#160;     uint32_t status ;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;} <a class="code" href="structsys__lock__t.html">sys_lock_t</a>;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gae5331e280386e4b946296b770c21869c">  236</a></span>&#160;<span class="preprocessor">#define I_SYS_GETATTR _IOCTLR(SYS_IOC_CHAR, 0, sys_attr_t)</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga0cfb1333526bc4de1ca199d516b96d9a">  246</a></span>&#160;<span class="preprocessor">#define I_SYS_GETTASK _IOCTLRW(SYS_IOC_CHAR, 1, sys_taskattr_t)</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gae5331e280386e4b946296b770c21869c">  225</a></span>&#160;<span class="preprocessor">#define I_SYS_GETATTR _IOCTLR(SYS_IOC_CHAR, 0, sys_attr_t)</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00235"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga0cfb1333526bc4de1ca199d516b96d9a">  235</a></span>&#160;<span class="preprocessor">#define I_SYS_GETTASK _IOCTLRW(SYS_IOC_CHAR, 1, sys_taskattr_t)</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gad0e220485d38414a82259e46be0c4b5f">  241</a></span>&#160;<span class="preprocessor">#define I_SYS_KILL _IOCTLW(SYS_IOC_CHAR, 2, sys_killattr_t)</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga6303d85184e2ac7c2a7272db86a7240c">  246</a></span>&#160;<span class="preprocessor">#define I_SYS_PTHREADKILL _IOCTLW(SYS_IOC_CHAR, 3, sys_killattr_t)</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00252"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gad0e220485d38414a82259e46be0c4b5f">  252</a></span>&#160;<span class="preprocessor">#define I_SYS_KILL _IOCTLW(SYS_IOC_CHAR, 2, sys_killattr_t)</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga6303d85184e2ac7c2a7272db86a7240c">  257</a></span>&#160;<span class="preprocessor">#define I_SYS_PTHREADKILL _IOCTLW(SYS_IOC_CHAR, 3, sys_killattr_t)</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gad8d831b99cd6f4396a939aaca76729b7">  272</a></span>&#160;<span class="preprocessor">#define I_SYS_GETPROCESS _IOCTLRW(SYS_IOC_CHAR, 4, sys_process_t)</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga2bd8a56716406a9adaaa4048bd04496a">  287</a></span>&#160;<span class="preprocessor">#define I_SYS_UNLOCK _IOCTLRW(SYS_IOC_CHAR, 5, sys_lock_t)</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga8762a159eb2b4526b4d1aae767464cf5">  298</a></span>&#160;<span class="preprocessor">#define I_SYS_LOCK _IOCTL(SYS_IOC_CHAR, 6)</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#define I_SYS_TOTAL 7</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#define LED_IOC_CHAR &#39;l&#39;</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LED_ACTIVE_LOW 0</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LED_ACTIVE_HIGH 1</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="structled__req__t.html">  310</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
-<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="structled__req__t.html#a53eab9dd4ca41d55c8cf80bd713ee5e3">  311</a></span>&#160;     uint8_t channel ;</div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="structled__req__t.html#a041a12fb9f4a8a2418948617dff0a1cf">  312</a></span>&#160;     uint8_t on ;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;} <a class="code" href="structled__req__t.html">led_req_t</a>;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">  330</a></span>&#160;<span class="preprocessor">#define I_LED_SET _IOCTLW(LED_IOC_CHAR, 0, led_req_t)</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DEV_SYS_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor"></span></div>
-<div class="ttc" id="group___s_y_s___d_e_v_html_gga15736219cc3742e6ede20e5ccbf167b9a598705bce38928c1b5154207009bd094"><div class="ttname"><a href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a598705bce38928c1b5154207009bd094">SYS_SECURITY_READFLASH</a></div><div class="ttdef"><b>Definition:</b> sys.h:146</div></div>
-<div class="ttc" id="structsys__killattr__t_html"><div class="ttname"><a href="structsys__killattr__t.html">sys_killattr_t</a></div><div class="ttdoc">Structure for I_SYS_KILL and I_SYS_PTHREADKILL. </div><div class="ttdef"><b>Definition:</b> sys.h:189</div></div>
-<div class="ttc" id="group___s_y_s___d_e_v_html_gga15736219cc3742e6ede20e5ccbf167b9ac81ee4f452b7a1fcab1dedf6bd94dae8"><div class="ttname"><a href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9ac81ee4f452b7a1fcab1dedf6bd94dae8">SYS_SECURITY_RESET</a></div><div class="ttdef"><b>Definition:</b> sys.h:144</div></div>
-<div class="ttc" id="group___s_y_s___d_e_v_html_ga15736219cc3742e6ede20e5ccbf167b9"><div class="ttname"><a href="group___s_y_s___d_e_v.html#ga15736219cc3742e6ede20e5ccbf167b9">sys_security_flags_t</a></div><div class="ttdeci">sys_security_flags_t</div><div class="ttdoc">Flags in security (member of sys_attr_t). </div><div class="ttdef"><b>Definition:</b> sys.h:143</div></div>
-<div class="ttc" id="structled__req__t_html"><div class="ttname"><a href="structled__req__t.html">led_req_t</a></div><div class="ttdef"><b>Definition:</b> sys.h:310</div></div>
-<div class="ttc" id="structsys__process__t_html"><div class="ttname"><a href="structsys__process__t.html">sys_process_t</a></div><div class="ttdoc">Structure for checking the status of a named process. </div><div class="ttdef"><b>Definition:</b> sys.h:201</div></div>
-<div class="ttc" id="group___s_y_s___d_e_v_html_gga15736219cc3742e6ede20e5ccbf167b9a7a70299c9921746fc63a72352c145e25"><div class="ttname"><a href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a7a70299c9921746fc63a72352c145e25">SYS_SECURITY_APPINSTALL</a></div><div class="ttdoc">Allows desktop interface to install custom applications (warning: custom applications can get around ...</div><div class="ttdef"><b>Definition:</b> sys.h:147</div></div>
-<div class="ttc" id="structsys__lock__t_html"><div class="ttname"><a href="structsys__lock__t.html">sys_lock_t</a></div><div class="ttdoc">Data structure to unlock the security word features. </div><div class="ttdef"><b>Definition:</b> sys.h:213</div></div>
-<div class="ttc" id="structsys__attr__t_html"><div class="ttname"><a href="structsys__attr__t.html">sys_attr_t</a></div><div class="ttdef"><b>Definition:</b> sys.h:154</div></div>
-<div class="ttc" id="structsys__taskattr__t_html"><div class="ttname"><a href="structsys__taskattr__t.html">sys_taskattr_t</a></div><div class="ttdoc">Task Attributes. </div><div class="ttdef"><b>Definition:</b> sys.h:169</div></div>
-<div class="ttc" id="group___s_y_s___d_e_v_html_gga15736219cc3742e6ede20e5ccbf167b9a99986402f95bf43ca64d8b4412b0e9ce"><div class="ttname"><a href="group___s_y_s___d_e_v.html#gga15736219cc3742e6ede20e5ccbf167b9a99986402f95bf43ca64d8b4412b0e9ce">SYS_SECURITY_INVOKEBOOTLOADER</a></div><div class="ttdef"><b>Definition:</b> sys.h:145</div></div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#gad8d831b99cd6f4396a939aaca76729b7">  261</a></span>&#160;<span class="preprocessor">#define I_SYS_GETPROCESS _IOCTLRW(SYS_IOC_CHAR, 4, sys_process_t)</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga4c621ec59132edcfea3e0c7403380d21">  277</a></span>&#160;<span class="preprocessor">#define I_SYS_SUDO _IOCTLW(SYS_IOC_CHAR, 5, sys_sudo_t)</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#define I_SYS_TOTAL 6</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#define LED_IOC_CHAR &#39;l&#39;</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LED_ACTIVE_LOW 0</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LED_ACTIVE_HIGH 1</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="structled__req__t.html">  290</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>HWPL_PACK {</div>
+<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="structled__req__t.html#a53eab9dd4ca41d55c8cf80bd713ee5e3">  291</a></span>&#160;     uint8_t channel ;</div>
+<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="structled__req__t.html#a041a12fb9f4a8a2418948617dff0a1cf">  292</a></span>&#160;     uint8_t on ;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;} <a class="code" href="structled__req__t.html">led_req_t</a>;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">  310</a></span>&#160;<span class="preprocessor">#define I_LED_SET _IOCTLW(LED_IOC_CHAR, 0, led_req_t)</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DEV_SYS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="structsys__killattr__t_html"><div class="ttname"><a href="structsys__killattr__t.html">sys_killattr_t</a></div><div class="ttdoc">Structure for I_SYS_KILL and I_SYS_PTHREADKILL. </div><div class="ttdef"><b>Definition:</b> sys.h:179</div></div>
+<div class="ttc" id="structled__req__t_html"><div class="ttname"><a href="structled__req__t.html">led_req_t</a></div><div class="ttdef"><b>Definition:</b> sys.h:290</div></div>
+<div class="ttc" id="structsys__process__t_html"><div class="ttname"><a href="structsys__process__t.html">sys_process_t</a></div><div class="ttdoc">Structure for checking the status of a named process. </div><div class="ttdef"><b>Definition:</b> sys.h:191</div></div>
+<div class="ttc" id="structsys__sudo__t_html"><div class="ttname"><a href="structsys__sudo__t.html">sys_sudo_t</a></div><div class="ttdoc">Data structure to unlock the security word features. </div><div class="ttdef"><b>Definition:</b> sys.h:203</div></div>
+<div class="ttc" id="structsys__attr__t_html"><div class="ttname"><a href="structsys__attr__t.html">sys_attr_t</a></div><div class="ttdef"><b>Definition:</b> sys.h:144</div></div>
+<div class="ttc" id="structsys__taskattr__t_html"><div class="ttname"><a href="structsys__taskattr__t.html">sys_taskattr_t</a></div><div class="ttdoc">Task Attributes. </div><div class="ttdef"><b>Definition:</b> sys.h:159</div></div>
 </div><!-- fragment --></div><!-- contents -->
 
 			</div>

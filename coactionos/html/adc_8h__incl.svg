@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="ioctl_8h_source.html" target="_top" xlink:title="ioctl.h">
+<g id="a_node3"><a xlink:href="ioctl_8h_source.html" target="_top" target="_top" target="_top" xlink:title="ioctl.h">
 <polygon fill="none" stroke="black" points="11.7255,-59 11.7255,-79 53.8486,-79 53.8486,-59 11.7255,-59"/>
 <text text-anchor="middle" x="32.7871" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">ioctl.h</text>
 </a>
@@ -50,7 +50,7 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="types_8h_source.html" target="_top" xlink:title="hwpl/types.h">
+<g id="a_node5"><a xlink:href="types_8h_source.html" target="_top" target="_top" target="_top" xlink:title="hwpl/types.h">
 <polygon fill="none" stroke="black" points="156.994,-59 156.994,-79 228.58,-79 228.58,-59 156.994,-59"/>
 <text text-anchor="middle" x="192.787" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">hwpl/types.h</text>
 </a>

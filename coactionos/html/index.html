@@ -14,6 +14,7 @@ title: CoActionOS Docs
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
@@ -23,54 +24,105 @@ title: CoActionOS Docs
 <div class="title">CoActionOS Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="group___c_a_o_s.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a></p>
+<div class="textblock"><p><a class="el" href="_phy_8hpp.html#a11ba21e5eca38f5e22415e7c105998f2">APPLIB_VERSION</a></p>
+<p>This is the CoActionOS Applib API documentation. This is recommended for users that are writing CoActionOS applications. If you want to write device drivers or tweak the kernel, please see the <a href="../../coactionos/html/">CoActionOS API documentation</a>.</p>
 <h1><a class="anchor" id="INTRO"></a>
 Introduction</h1>
-<p>This is the CoActionOS API documentation. This is recommended for users looking to write device drivers or tweak the kernel. If you are writing applications, see the <a href="../../coactionos-applib/html/">CoActionOS Applib API documentation</a>.</p>
-<h2><a class="anchor" id="API"></a>
-POSIX API</h2>
-<p>CoActionOS supports a subset of the <a class="el" href="group___s_t_d_c.html">C Standard Library</a> and <a class="el" href="group___p_o_s_i_x.html">POSIX</a> APIs. Many programmers are already familiar with these APIs which eases the learning curve. Additionally, reference material for these standards is widely available on the web.</p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="group___s_t_d_c.html">C Standard Library</a>, <a class="el" href="group___p_o_s_i_x.html">POSIX</a></dd></dl>
-<h2><a class="anchor" id="MULTI"></a>
-Multi-tasking</h2>
-<p>CoActionOS supports both threads and processes. Threads are programmed using the <a class="el" href="group___p_t_h_r_e_a_d.html">Posix Threads (pthread)</a> API. Processes are unique because CoActionOS does not use a memory management unit (MMU). Instead, it uses a memory protection unit (MPU) to prevent one process from reading or writing data from another process despite both processes running in the same address space. Interprocess communication is accomplished with the <a class="el" href="group___s_e_m_a_p_h_o_r_e.html">Semaphore</a>, <a class="el" href="group___m_q_u_e_u_e.html">Message Queue (mqueue)</a>, and pthread APIs as well as with the filesystem (see <a class="el" href="group___s_y_s___f_i_f_o.html">FIFO Buffer</a>).</p>
-<h2><a class="anchor" id="FILESYSTEM"></a>
-Filesystem</h2>
-<p>CoActionOS supports multiple filesystems. There are three required filesystems and one optional filesystem included in CoActionOS:</p>
+<p>Applib is an application programming interface to access microcontroller peripheral hardware.</p>
+<h1><a class="anchor" id="GETTING_STARTED"></a>
+Getting Started</h1>
+<p>Using Applib with CoActionOS applications is simple. The API headers are stored in the applib directory so that the source code looks like:</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;applib/Pin.hpp&gt;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[]){</div>
+<div class="line"> <a class="code" href="class_pin.html">Pin</a> p(2, 10);</div>
+<div class="line"> p.init(<a class="code" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2">Pin::OUTPUT</a>); <span class="comment">//open the port and configure pin 10 as an output</span></div>
+<div class="line"> p.clr(); <span class="comment">//set the output to zero</span></div>
+<div class="line"> p.close(); <span class="comment">//close the port (Pin retains state)</span></div>
+<div class="line">     <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>The application needs to be linked to -lapp_CoActionOS_arch where arch is the HWPL architecture such as lpc17xx. For example:</p>
+<div class="fragment"><div class="line">-lapp_CoActionOS_lpc17xx</div>
+</div><!-- fragment --><h1><a class="anchor" id="CoActionOS"></a>
+Using Applib with CoActionOS</h1>
+<p>CoActionOS uses file descriptors to access hardware using the following functions:</p>
 <ul>
-<li>Root Filesystem</li>
-<li>Application Filesystem</li>
-<li>Device Filesystem</li>
-<li>Flash Filesystem (optional)</li>
+<li>open()</li>
+<li>close()</li>
+<li>read()</li>
+<li>write()</li>
+<li>ioctl()</li>
 </ul>
-<p>Other filesystems (such as FAT) can also be added by the user.</p>
-<p>Files on CoActionOS are accessed using the <a class="el" href="group___s_t_d_c.html">C Standard Library</a> or <a class="el" href="group___u_n_i_s_t_d.html">Unix Standard (unistd)</a> functions: <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open()</a>, <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaefe7609d91407014d94611912cc2b1a3">read()</a>, <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gadd30ddeed4bdbf3c96fa36970c1ca778">write()</a>, <a class="el" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close()</a>, etc. The root filesystem is located at "/" and only supports the <a class="el" href="group___d_i_r_e_n_t.html">Directory Entry (dirent)</a> API. It is used for browsing the child filesystems.</p>
-<p>The application filesystem manages data and code stored in the microcontroller's flash memory or RAM. By default, it is located at "/app" and includes the folders "/app/flash" and "/app/ram". It is primarily used to install new programs but may also be used in a limited way for both temporary and non-volatile data storage.</p>
-<p>The device filesystem comprises the hardware access API. It is located at "/dev" and allows access to both peripheral microcontroller hardware and external ICs. The folder, per se, is read-only; all available devices are fixed when the kernel is installed. The devices in the folder usually support reading as well as writing and are classified as either character special or block special files.</p>
-<p>The flash filesystem ("/home") is a fully-functional data-storage filesystem. It requires an external IC (such as a serial flash chip).</p>
-<h1><a class="anchor" id="DESIGN"></a>
-Design</h1>
-<p>CoActionOS is divided into three layers (from the top down):</p>
-<ul>
-<li>OS Layer (scheduler, filesystem, etc)</li>
-<li>Hardware Device Library (external and system device level abstraction)</li>
-<li>Hardware Peripheral Library (MCU level abstraction)</li>
-</ul>
-<h2><a class="anchor" id="OS_DESIGN"></a>
-OS</h2>
-<p>The OS layer comprises the C standard library as well as a subset of the POSIX standard including the scheduler, threads, processes, and hardware abstraction.</p>
-<h2><a class="anchor" id="HWDL_DESIGN"></a>
-Hardware Device Library (HWDL)</h2>
-<p>HWDL is the hardware device abstraction layer and includes drivers for a growing collection of ICs. These ICs interface with the microcontroller using any combination of peripherals (SPI, UART, I2C, etc) and GPIO pins. HWDL drivers make direct calls to the HWPL library functions.</p>
-<h2><a class="anchor" id="HWPL_DESIGN"></a>
-Hardware Peripheral Library (HWPL)</h2>
-<p>The HWPL comprises all the drivers to access the on-chip micrcontroller features and peripherals including low-level task management. For example, this layer includes drivers for the on-chip UART and the on-chip clock control. It is the only layer that is dependent on the microcontroller.</p>
-<h3><a class="anchor" id="ARCHITECTURES"></a>
-Architectures</h3>
-<p>HWPL currently supports:</p>
-<ul>
-<li>ARM Cortex M3 Core: CMSIS, Fault Handling, Memory Protection, SysTick, NVIC, Tasks including Context Switching</li>
-<li>NXP LPC17xx: Cortex M3 Core, ADC, DAC (with DMA) Flash Memory, GPIO, USB Device, UART (with DMA), SPI (and SSP), I2C, Timers, RTC, PWM, QEI, WDT; support planned for: CAN; see <a class="el" href="group___l_p_c17_x_x_d_e_v.html">LPC17xx Devices</a>.</li>
-<li>USB Link: USB Link technology is a desktop API for accessing MCU peripherals which currently supports peripheral IO operations on devices running CoActionOS; see <a class="el" href="group___u_s_b_l_i_n_k.html">USB Link (link)</a>. </li>
-</ul>
+<p>Applib creates a simplied API which uses the peripheral name with the function above. There is also a method for each ioctl() request. For example:</p>
+<div class="fragment"><div class="line">pio_attr_t attr;</div>
+<div class="line">port_2_fd = open(<span class="stringliteral">&quot;/dev/pio2&quot;</span>, O_RDWR);</div>
+<div class="line">ioctl(port_2_fd, I_PIO_SETATTR, &amp;attr);</div>
+<div class="line">close(port_2_fd);</div>
+</div><!-- fragment --><p>Becomes:</p>
+<div class="fragment"><div class="line">pio_attr_t attr;</div>
+<div class="line"><a class="code" href="class_pio.html">Pio</a> pio(2);</div>
+<div class="line">pio.open();</div>
+<div class="line">pio.setattr(&amp;attr);</div>
+<div class="line">pio.close();</div>
+</div><!-- fragment --><p>When using Applib with CoActionOS, Applib manages all the file descriptors so that each application has at most one file descriptor open for each device port. For example, if two independent modules use the same <a class="el" href="group___p_i_o.html">PIO</a> port to access different pins, Applib uses the same file descriptor. Keep in mind, the port only needs to be opened once, but opening additional times is harmless.</p>
+<p>The first module can access the port as follows: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> module_one_pio(<span class="keywordtype">void</span>){</div>
+<div class="line"> <a class="code" href="class_pio.html">Pio</a> pio(2);</div>
+<div class="line">     pio_attr_t attr;</div>
+<div class="line">     <span class="keywordflow">if</span>( pio.open() &lt; 0 ){   <span class="comment">//opens the port if it is not already open</span></div>
+<div class="line">          perror(<span class="stringliteral">&quot;failed to open&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">return</span> -1;</div>
+<div class="line">     }</div>
+<div class="line"></div>
+<div class="line">     attr.mask = (1&lt;&lt;0);</div>
+<div class="line">     attr.mode = <a class="code" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2">Pio::OUTPUT</a>;</div>
+<div class="line">     <span class="keywordflow">if</span>( pio.setattr(&amp;attr) &lt; 0 ){</div>
+<div class="line">          perror(<span class="stringliteral">&quot;failed to set attr&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">return</span> -1;</div>
+<div class="line">     }</div>
+<div class="line"></div>
+<div class="line">     <span class="comment">//drive 2.0 high</span></div>
+<div class="line">     <span class="keywordflow">if</span>( pio.setmask((1&lt;&lt;0)) &lt; 0 ){</div>
+<div class="line">          perror(<span class="stringliteral">&quot;failed to set mask&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">return</span> -1;</div>
+<div class="line">     }</div>
+<div class="line"></div>
+<div class="line">     <span class="keywordflow">return</span> 0;</div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment --><p> The second module can access the port as follows: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> module_two_pio(<span class="keywordtype">void</span>){</div>
+<div class="line"> <a class="code" href="class_pio.html">Pio</a> pio(2);</div>
+<div class="line">     pio_attr_t attr;</div>
+<div class="line">     <span class="keywordflow">if</span>( pio.open() &lt; 0 ){   <span class="comment">//opens the port if it is not already open</span></div>
+<div class="line">          perror(<span class="stringliteral">&quot;failed to open&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">return</span> -1;</div>
+<div class="line">     }</div>
+<div class="line"></div>
+<div class="line">     attr.mask = (1&lt;&lt;2);</div>
+<div class="line">     attr.mode = <a class="code" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2">Pio::OUTPUT</a>;</div>
+<div class="line">     <span class="keywordflow">if</span>( pio.setattr(&amp;attr) &lt; 0 ){</div>
+<div class="line">          perror(<span class="stringliteral">&quot;failed to set attr&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">return</span> -1;</div>
+<div class="line">     }</div>
+<div class="line"></div>
+<div class="line">     <span class="comment">//drive 2.2 ;low</span></div>
+<div class="line">     <span class="keywordflow">if</span>( pio.clrmask(1&lt;&lt;2) &lt; 0 ){</div>
+<div class="line">          perror(<span class="stringliteral">&quot;failed to set mask&quot;</span>);</div>
+<div class="line">          <span class="keywordflow">return</span> -1;</div>
+<div class="line">     }</div>
+<div class="line"></div>
+<div class="line">     pio.close(); <span class="comment">//Closes the port for all instances of Pio</span></div>
+<div class="line"></div>
+<div class="line">     <span class="keywordflow">return</span> 0;</div>
+<div class="line"></div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Using Applib, a single file descriptor is used to access the pio in both modules above. Therefore, if one module closes the port, the file descriptor is closed for both modules.</p>
+<h1><a class="anchor" id="HWPL"></a>
+Using Applib with HWPL (without CoActionOS)</h1>
+<p>Applib also has an interface which operates directly using HWPL calls. This is for devices that are not running CoActionOS. It turns HWPL read/write calls (which are typically asynchronous and non-blocking) into synchronous blocking calls. It likewise provides functions to access ioctl() requests but makes direct calls to HWPL functions. For example, <a class="el" href="class_pio.html#a07abbc1b81437ebf38b16d5f65b8142f" title="Set the attributes for the port. ">Pio::setattr()</a> is implemented as: </p>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code" href="class_pio.html#a07abbc1b81437ebf38b16d5f65b8142f">Pio::setattr</a>(<span class="keyword">const</span> pio_setattr_t * attr){</div>
+<div class="line">     <span class="keywordflow">return</span> hwpl_pio_setattr(this-&gt;port, attr);</div>
+<div class="line">}</div>
+</div><!-- fragment --><p>Unlike the CoActionOS API, opening a port multiple times creates multiple references to the port. Therefore, in order to shut down a peripheral, it needs to be closed for every time it is opened. </p>
 </div></div><!-- contents -->

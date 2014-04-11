@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="ioctl_8h_source.html" target="_top" xlink:title="dev/ioctl.h">
+<g id="a_node3"><a xlink:href="ioctl_8h_source.html" target="_top" target="_top" xlink:title="dev/ioctl.h">
 <polygon fill="none" stroke="black" points="307.224,-1 307.224,-21 368.248,-21 368.248,-1 307.224,-1"/>
 <text text-anchor="middle" x="337.736" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">dev/ioctl.h</text>
 </a>
@@ -40,7 +40,7 @@
 </g>
 <!-- Node4 -->
 <g id="node4" class="node"><title>Node4</title>
-<g id="a_node4"><a xlink:href="device_8h_source.html" target="_top" xlink:title="device.h">
+<g id="a_node4"><a xlink:href="device_8h_source.html" target="_top" target="_top" xlink:title="device.h">
 <polygon fill="none" stroke="black" points="132.113,-117 132.113,-137 185.359,-137 185.359,-117 132.113,-117"/>
 <text text-anchor="middle" x="158.736" y="-123" font-family="Helvetica,sans-Serif" font-size="10.00">device.h</text>
 </a>
@@ -53,7 +53,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="types_8h_source.html" target="_top" xlink:title="hwpl/types.h">
+<g id="a_node7"><a xlink:href="types_8h_source.html" target="_top" target="_top" xlink:title="hwpl/types.h">
 <polygon fill="none" stroke="black" points="11.9428,-59 11.9428,-79 83.5287,-79 83.5287,-59 11.9428,-59"/>
 <text text-anchor="middle" x="47.7358" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">hwpl/types.h</text>
 </a>
@@ -101,7 +101,7 @@
 </g>
 <!-- Node9 -->
 <g id="node9" class="node"><title>Node9</title>
-<g id="a_node9"><a xlink:href="pio_8h.html" target="_top" xlink:title="General Purpose Input/Output Header File. ">
+<g id="a_node9"><a xlink:href="pio_8h.html" target="_top" target="_top" xlink:title="General Purpose Input/Output Header File. ">
 <polygon fill="none" stroke="black" points="215.443,-59 215.443,-79 272.029,-79 272.029,-59 215.443,-59"/>
 <text text-anchor="middle" x="243.736" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">dev/pio.h</text>
 </a>

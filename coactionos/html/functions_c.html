@@ -14,6 +14,7 @@ title: CoActionOS Docs
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
     </ul>
   </div>
@@ -21,13 +22,17 @@ title: CoActionOS Docs
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
   <div id="navrow3" class="tabs2">
     <ul class="tablist">
       <li class="current"><a href="functions.html"><span>All</span></a></li>
+      <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_enum.html"><span>Enumerations</span></a></li>
+      <li><a href="functions_eval.html"><span>Enumerator</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -41,7 +46,6 @@ title: CoActionOS Docs
       <li><a href="functions_g.html#index_g"><span>g</span></a></li>
       <li><a href="functions_h.html#index_h"><span>h</span></a></li>
       <li><a href="functions_i.html#index_i"><span>i</span></a></li>
-      <li><a href="functions_k.html#index_k"><span>k</span></a></li>
       <li><a href="functions_l.html#index_l"><span>l</span></a></li>
       <li><a href="functions_m.html#index_m"><span>m</span></a></li>
       <li><a href="functions_n.html#index_n"><span>n</span></a></li>
@@ -53,6 +57,8 @@ title: CoActionOS Docs
       <li><a href="functions_u.html#index_u"><span>u</span></a></li>
       <li><a href="functions_v.html#index_v"><span>v</span></a></li>
       <li><a href="functions_w.html#index_w"><span>w</span></a></li>
+      <li><a href="functions_x.html#index_x"><span>x</span></a></li>
+      <li><a href="functions_y.html#index_y"><span>y</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -60,57 +66,90 @@ title: CoActionOS Docs
 <div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>callback
-: <a class="el" href="structdevice__transfer__t.html#a5e63ce2e547e2001b5f3b79a06996b06">device_transfer_t</a>
-, <a class="el" href="structhwpl__action__t.html#a93110fca833bdac575232fe9e86ce521">hwpl_action_t</a>
+<li>c_str()
+: <a class="el" href="class_string.html#a997d8d9f5f2715150e3aedb30f95ba8f">String</a>
+, <a class="el" href="class_string_static.html#ac734d03cf856a116c013aaa37e935458">StringStatic&lt; arraysize &gt;</a>
 </li>
-<li>cbuf
-: <a class="el" href="structdevice__transfer__t.html#a0611c46dfceb2ac8e45088cfca9c7a9a">device_transfer_t</a>
+<li>capacity()
+: <a class="el" href="class_string.html#a16921c1bef0895ecb1922eae8bed42d1">String</a>
+, <a class="el" href="class_string_static.html#a1f2ca910ac3763a26777d3147b0d9328">StringStatic&lt; arraysize &gt;</a>
 </li>
-<li>cchbuf
-: <a class="el" href="structdevice__transfer__t.html#a1b8486b32aff19a2c038e9f38a133493">device_transfer_t</a>
+<li>clear()
+: <a class="el" href="class_i2c.html#a7ea4d6d6837d0f1676df83fd76e37298">I2c</a>
+, <a class="el" href="class_m_lcd.html#a43b80d90205d297fd16c23ebe6484388">MLcd</a>
+, <a class="el" href="class_nhdc12832.html#a19dbc55b48d9b72b567623cca2c99ab3">Nhdc12832</a>
+, <a class="el" href="class_string.html#ab4802af9a3f8dc0a72851f61af675854">String</a>
 </li>
-<li>cfg
-: <a class="el" href="structdevice__t.html#a737e31aabded1fbf8d35b94762a40115">device_t</a>
+<li>clock_msec()
+: <a class="el" href="class_timer.html#aabc13137c11638a6b007f77772905fe3">Timer</a>
 </li>
-<li>channel
-: <a class="el" href="structhwpl__action__t.html#ad64a81f8794209690a58c5edea69a670">hwpl_action_t</a>
-, <a class="el" href="structled__req__t.html#a53eab9dd4ca41d55c8cf80bd713ee5e3">led_req_t</a>
-, <a class="el" href="structpwm__reqattr__t.html#a4b2137ff09705679b71adf8c278289b5">pwm_reqattr_t</a>
-, <a class="el" href="structtmr__reqattr__t.html#acdb25687f2bfa6965b5f8fa733d0198a">tmr_reqattr_t</a>
+<li>clock_sec()
+: <a class="el" href="class_timer.html#adc0c1c9817847239d8b9a57dc5636c80">Timer</a>
 </li>
-<li>channels
-: <a class="el" href="structdevice__adc__cfg__t.html#a8aa690de1236756225ade0b353863800">device_adc_cfg_t</a>
-, <a class="el" href="structdevice__pwm__cfg__t.html#ae87fdb84f78a84cbc5068105f2e4764a">device_pwm_cfg_t</a>
+<li>clock_usec()
+: <a class="el" href="class_timer.html#a9357c9a4f942037c3cf32a3f1d7e3490">Timer</a>
 </li>
-<li>chbuf
-: <a class="el" href="structdevice__transfer__t.html#a5ce8d8586a48a1eb5e66fa3cb929d29d">device_transfer_t</a>
+<li>close()
+: <a class="el" href="class_dbug_uart.html#a4f0723f700186aa3c098f7ee40c1982f">DbugUart</a>
+, <a class="el" href="class_file.html#a8a9e635800826a95f83d3a9d6f8089a2">File</a>
+, <a class="el" href="class_periph.html#a8e0eec7e0eadbb1f79048456f688165f">Periph</a>
 </li>
-<li>clksrc
-: <a class="el" href="structtmr__attr__t.html#a350c863adf6378c4b838a3585bc7fb6c">tmr_attr_t</a>
+<li>clr()
+: <a class="el" href="class_pin.html#a4364bae3f9cd693d5d62bb302d0cbfca">Pin</a>
 </li>
-<li>clock
-: <a class="el" href="structcore__attr__t.html#aad8ce833ba07ca2acf27e040e8e90219">core_attr_t</a>
-, <a class="el" href="structrtc__attr__t.html#a926c6ece8fab50b950daf68c90c3d0de">rtc_attr_t</a>
+<li>clrmask()
+: <a class="el" href="class_pio.html#a68c6a5281a2fcb54003191e4b584c08c">Pio</a>
 </li>
-<li>close
-: <a class="el" href="structdevice__driver__t.html#acc1ab645a0be60b7ba17f37e99c1b4f1">device_driver_t</a>
+<li>CLROC
+: <a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06ae6be2c90de071389c864eb45800d3363">Tmr</a>
 </li>
-<li>context
-: <a class="el" href="structdevice__transfer__t.html#a20842ee8eb522337fd34f2fb4ef8be85">device_transfer_t</a>
-, <a class="el" href="structhwpl__action__t.html#a696aef4afa2abe4e4b4fb72b1db27c0b">hwpl_action_t</a>
+<li>clrpixel()
+: <a class="el" href="class_m_lcd.html#ae37563ee971f7aad272889c30775b705">MLcd</a>
+, <a class="el" href="class_nhdc12832.html#a8f05918ce9f02fcb30aad74abff1b342">Nhdc12832</a>
 </li>
-<li>counter_mode
-: <a class="el" href="structtmr__attr__t.html#a8441897a604a780771c4f1f0f86ede50">tmr_attr_t</a>
+<li>clrpixel_bounded()
+: <a class="el" href="class_m_lcd.html#aa00fb83f12f0425c2bcaefa75d85e26f">MLcd</a>
+, <a class="el" href="class_nhdc12832.html#a7f2243a9ea7bc8f1c61a2a41ed899577">Nhdc12832</a>
 </li>
-<li>cpu_freq
-: <a class="el" href="structsys__attr__t.html#a1bf42a512224ad1bc645b075d78189d1">sys_attr_t</a>
+<li>clrstr()
+: <a class="el" href="class_m_lcd.html#ac1037426a2e6a57eb1691b8dc9a8e1d1">MLcd</a>
 </li>
-<li>crystal_freq
-: <a class="el" href="structusb__attr__t.html#ae2707da01b58073eb137c24ba32c32e9">usb_attr_t</a>
+<li>condition
+: <a class="el" href="struct_state_1_1transition__t.html#acbceadbf7b9e8bca93f46447d6d05b9a">State::transition_t</a>
 </li>
-<li>cs
-: <a class="el" href="structdevice__spi__cfg__t.html#a1f1501f53c517f0e7fc37aaf16b73601">device_spi_cfg_t</a>
+<li>connect()
+: <a class="el" href="class_brsp.html#ab1eb9a1491028049d9f38f6706dfb369">Brsp</a>
+</li>
+<li>copy()
+: <a class="el" href="class_string.html#a23aea1536472bc0daebda478201c590c">String</a>
+</li>
+<li>COUNTDOWN
+: <a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea4adc1e4c7fc2702cdcb944e756f6bcfd">Tmr</a>
+</li>
+<li>CPU
+: <a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030eaa8dd430849ddced7d27b479c115fe266">Tmr</a>
+</li>
+<li>CREAT
+: <a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a09ecf701c003c46811fa3f5e84d1db4e">Phy</a>
+</li>
+<li>create()
+: <a class="el" href="class_appfs.html#aa90afe33a9e6b50fc7f5ce3bbd1624e1">Appfs</a>
+, <a class="el" href="class_file.html#a44fdb3c2ea2920cbbc1f38d3e7010102">File</a>
+</li>
+<li>CREATE
+: <a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a45c8f15f453486f5200a029a688bed2f">Phy</a>
+</li>
+<li>create()
+: <a class="el" href="class_thread.html#a215e2fb51285e18fa5c22832e14d73ef">Thread</a>
+</li>
+<li>csv()
+: <a class="el" href="class_string.html#ad4cebe8d555542cb2778fa15d134188e">String</a>
+</li>
+<li>csv_size()
+: <a class="el" href="class_string.html#a0dc1ac59a7e1f8dacf4d3f0bb0994fb7">String</a>
+</li>
+<li>current()
+: <a class="el" href="class_s_mach.html#a5f083063341c66f8148d8838476b811c">SMach</a>
 </li>
 </ul>
 </div><!-- contents -->

@@ -19,7 +19,7 @@
 </g>
 <!-- Node2 -->
 <g id="node2" class="node"><title>Node2</title>
-<g id="a_node2"><a xlink:href="class_nhdc12832.html" target="_top" xlink:title="Class for the New Haven Display 128x32 LCD. ">
+<g id="a_node2"><a xlink:href="class_nhdc12832.html" target="_top" target="_top" xlink:title="Class for the New Haven Display 128x32 LCD. ">
 <polygon fill="none" stroke="black" points="-0.838379,-99 -0.838379,-267 108.838,-267 108.838,-99 -0.838379,-99"/>
 <text text-anchor="middle" x="54" y="-253" font-family="Helvetica,sans-Serif" font-size="10.00">Nhdc12832</text>
 <polyline fill="none" stroke="black" points="-0.838379,-247 108.838,-247 "/>
@@ -45,7 +45,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="class_m_lcd.html" target="_top" xlink:title="Monochrome LCD. ">
+<g id="a_node3"><a xlink:href="class_m_lcd.html" target="_top" target="_top" xlink:title="Monochrome LCD. ">
 <polygon fill="none" stroke="black" points="13.7588,-305 13.7588,-533 94.2412,-533 94.2412,-305 13.7588,-305"/>
 <text text-anchor="middle" x="54" y="-519" font-family="Helvetica,sans-Serif" font-size="10.00">MLcd</text>
 <polyline fill="none" stroke="black" points="13.7588,-513 94.2412,-513 "/>

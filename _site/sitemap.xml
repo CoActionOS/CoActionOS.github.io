@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://coactionos.com/</loc>
-    <lastmod>2014-01-08T10:47:31-07:00</lastmod>
+    <lastmod>2014-04-11T16:31:06-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -506,7 +506,7 @@
   <url>
     <loc>http://coactionos.com/404.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -519,7 +519,7 @@
   <url>
     <loc>http://coactionos.com/about.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -532,7 +532,7 @@
   <url>
     <loc>http://coactionos.com/archive.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -545,7 +545,7 @@
   <url>
     <loc>http://coactionos.com/atom.xml</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -558,7 +558,7 @@
   <url>
     <loc>http://coactionos.com/categories.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -571,7 +571,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/access_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -584,7 +584,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/adc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -597,7 +597,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/adc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/aes256_8h_source.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -610,7 +623,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/annotated.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -623,7 +636,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/bootloader_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -636,7 +649,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/bootloader_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -649,7 +662,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/cafs__lite_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -662,7 +675,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/caos_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -675,7 +688,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/caos_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -688,7 +701,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/chmod_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -701,7 +714,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/chown_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -714,7 +727,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_adc.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -727,7 +740,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_aio.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -740,7 +753,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_appfs.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -753,7 +766,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_base64.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -766,7 +779,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_brsp.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -779,7 +792,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_brsp_address.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -792,7 +805,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_core.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -805,7 +818,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dac.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -818,7 +831,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dbug.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -831,7 +844,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dbug_null.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -844,7 +857,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dbug_stdout.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -857,7 +870,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dbug_uart.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -870,7 +883,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dsp_1_1_ema.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -883,7 +896,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dsp_1_1_ema__float.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -896,7 +909,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dsp_1_1_ema__i16.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -909,7 +922,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dsp_1_1_ema__i32.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -922,7 +935,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dsp_1_1_ema__u16.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -935,7 +948,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_dsp_1_1_ema__u32.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -948,7 +961,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_eint.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -961,7 +974,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_exp_lcd_device.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -974,7 +987,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_file.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -987,7 +1000,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_font.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1000,7 +1013,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_font8.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1013,7 +1026,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_font8_util.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/class_i2_c.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1026,7 +1052,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_i2c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1039,7 +1065,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_iic.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1052,7 +1078,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_m_b_font.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1065,7 +1091,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_m_font.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1078,7 +1104,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_m_lcd.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1091,7 +1117,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_nhdc12832.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1104,7 +1130,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_pblock.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1117,7 +1143,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_pchar.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1130,7 +1156,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_periph.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1143,7 +1169,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_phy.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1156,7 +1182,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_pin.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1169,7 +1195,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_pio.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1182,7 +1208,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_pwm.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1195,7 +1221,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_rle.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1208,7 +1234,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_rle_appfs.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1221,7 +1247,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_rle_file.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1234,7 +1260,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_rtc.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1247,7 +1273,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_s_mach.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1260,7 +1286,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_signal_1_1_event.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1273,7 +1299,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_signal_1_1_event_phy.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1286,7 +1312,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_signal_1_1_handler.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1299,7 +1325,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_spi.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1312,7 +1338,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_state.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1325,7 +1351,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_string.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1338,7 +1364,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_string_large.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1351,7 +1377,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_string_medium.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1364,7 +1390,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_string_small.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1377,7 +1403,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_string_static.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1390,7 +1416,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_string_tiny.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1403,7 +1429,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_thread.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1416,7 +1442,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_timer.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1429,7 +1455,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_tmr.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1442,7 +1468,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_token_large.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1455,7 +1481,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_token_medium.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1468,7 +1494,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_token_small.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1481,7 +1507,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_token_tiny.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1494,7 +1520,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_uart.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1507,7 +1533,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/class_usb.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1520,7 +1546,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/classes.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1533,7 +1559,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/clocks_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1546,7 +1572,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/coactionhero_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1559,7 +1585,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/coactionhero_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1572,7 +1598,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/config_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1585,7 +1611,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/config_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1598,7 +1624,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/core_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1611,7 +1637,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/core_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1624,7 +1650,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dac_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1637,7 +1663,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dac_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1650,7 +1676,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/debug_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1663,7 +1689,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/debug_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1676,7 +1702,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/devfifo_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1689,7 +1715,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/devfifo_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1702,7 +1728,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/device_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1715,7 +1741,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000003_000004.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1728,7 +1754,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000003_000007.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1741,7 +1767,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000007_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1754,7 +1780,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000007_000004.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1767,7 +1793,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000008_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1780,7 +1806,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000012_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1793,7 +1819,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000014_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1806,7 +1832,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000016_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1819,7 +1845,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000017_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1832,7 +1858,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_000018_000003.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1845,7 +1871,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_016ff1d6fa7440ecc4fb8b2166afab69.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1858,7 +1884,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_0774983ec59f276fad5d753f1bf2ffe5.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1871,7 +1897,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_10ffd5c7fb3884d4467767ecd438af8b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1884,7 +1910,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_4cb4dd0ceeef432129f4def47d758a44.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1897,7 +1923,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_62dc641eaa492813426a41da87add652.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1910,7 +1936,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_693584abd1530a739d459104b7498178.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1923,7 +1949,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_7665a98af214cba17e1a14b80a56630c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1936,7 +1962,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_7afb6464ba18fe36b6ad8ef58161a0ca.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1949,7 +1975,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_7cf1b6485cfba764416153c23f3606de.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1962,7 +1988,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_89abb805bfaa5aa5fb5070eeca341ee5.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1975,7 +2001,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_8d3e5ddfcde5886d64dd7bc296b9276d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -1988,7 +2014,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_8f5f16164928e601992683dea9c4cf20.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2001,7 +2027,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_9b6b3974b0b35142338b278fa74eb5cc.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2014,7 +2040,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_9bec7083027963d9f9ceae2cc7474de5.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2027,7 +2053,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_a1ce66578206b95a603418c6054a8ae9.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2040,7 +2066,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_a5acd7bdb2a178606751096c471e7a85.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2053,7 +2079,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_aa5efde9a6a8b464cfd0d3ef821c724c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2066,7 +2092,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_ae698d8d15e5162de5587eab88b7d263.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2079,7 +2105,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_c2967a70181ff23fef253633ce67aa26.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2092,7 +2118,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_dc992761663f67d9de03d69c9b9c457c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2105,7 +2131,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_e3e0adbd5aada40e511ad6d6c793c31b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2118,7 +2144,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_efec8f003da7aab1cb52b9ecbc6d2833.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2131,7 +2157,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dir_f279741e54d27b82622822ad33dc09b4.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2144,7 +2170,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/dirent_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2157,7 +2183,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/disk_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2170,7 +2196,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/disk_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2183,7 +2209,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/eeprom_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2196,7 +2222,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/eint_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2209,7 +2235,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/eint_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2222,7 +2248,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/emc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2235,7 +2261,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/emc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2248,7 +2274,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/eth_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2261,7 +2287,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/eth_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2274,7 +2300,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/fifo_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2287,7 +2313,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/fifo_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2300,7 +2326,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/files.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2313,7 +2339,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/flash_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2326,7 +2352,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/flash_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2339,7 +2365,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2352,7 +2378,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2365,7 +2391,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2378,7 +2404,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2391,7 +2417,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2404,7 +2430,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_enum.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2417,7 +2443,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_eval.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2430,7 +2456,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2443,7 +2469,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2456,7 +2482,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2469,7 +2495,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2482,7 +2508,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2495,7 +2521,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2508,7 +2534,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2521,7 +2547,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2534,7 +2560,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2547,7 +2573,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2560,7 +2586,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2573,7 +2599,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2586,7 +2612,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2599,7 +2625,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2612,7 +2638,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2625,7 +2651,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2638,7 +2664,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2651,7 +2677,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2664,7 +2690,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2677,7 +2703,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2690,7 +2716,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2703,7 +2729,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_x.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2716,7 +2742,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_func_y.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2729,7 +2755,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2742,7 +2768,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2755,7 +2781,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2768,7 +2794,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2781,7 +2807,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2794,7 +2820,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2807,7 +2833,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2820,7 +2846,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2833,7 +2859,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2846,7 +2872,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2859,7 +2885,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2872,7 +2898,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2885,7 +2911,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2898,7 +2924,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2911,7 +2937,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2924,7 +2950,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2937,7 +2963,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2950,7 +2976,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2963,7 +2989,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2976,7 +3002,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -2989,7 +3015,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3002,7 +3028,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3015,7 +3041,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3028,7 +3054,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3041,7 +3067,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3054,7 +3080,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3067,7 +3093,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3080,7 +3106,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3093,7 +3119,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3106,7 +3132,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3119,7 +3145,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3132,7 +3158,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3145,7 +3171,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3158,7 +3184,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3171,7 +3197,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_vars_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3184,7 +3210,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3197,7 +3223,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_x.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3210,7 +3236,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/functions_y.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3223,7 +3249,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3236,7 +3262,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_a.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3249,7 +3275,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3262,7 +3288,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3275,7 +3301,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3288,7 +3314,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3301,7 +3327,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_a.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3314,7 +3340,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3327,7 +3353,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3340,7 +3366,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3353,7 +3379,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3366,7 +3392,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3379,7 +3405,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3392,7 +3418,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3405,7 +3431,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3418,7 +3444,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3431,7 +3457,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3444,7 +3470,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3457,7 +3483,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3470,7 +3496,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_defs_z.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3483,7 +3509,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3496,7 +3522,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_enum.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3509,7 +3535,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3522,7 +3548,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3535,7 +3561,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/globals_eval_h.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3548,7 +3587,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3561,7 +3600,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/globals_eval_o.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3574,7 +3626,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3587,7 +3639,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_q.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3600,7 +3652,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3613,7 +3665,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3626,7 +3678,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3639,7 +3691,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_eval_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3652,7 +3704,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3665,7 +3717,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3678,7 +3730,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_a.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3691,7 +3743,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3704,7 +3756,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3717,7 +3769,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3730,7 +3782,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3743,7 +3795,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3756,7 +3808,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3769,7 +3821,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3782,7 +3834,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3795,7 +3847,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3808,7 +3860,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3821,7 +3873,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3834,7 +3886,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3847,7 +3899,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3860,7 +3912,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3873,7 +3925,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3886,7 +3938,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3899,7 +3951,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_func_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3912,7 +3964,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3925,7 +3977,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3938,7 +3990,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3951,7 +4003,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3964,7 +4016,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3977,7 +4029,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -3990,7 +4042,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4003,7 +4055,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4016,7 +4068,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4029,7 +4081,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_q.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4042,7 +4094,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4055,7 +4107,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4068,7 +4120,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4081,7 +4133,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_type.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4094,7 +4146,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4107,7 +4159,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4120,7 +4172,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_vars.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4133,7 +4185,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4146,7 +4198,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/globals_z.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4159,7 +4211,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/gpio_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4172,7 +4224,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/gpio_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4185,7 +4237,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/graph_legend.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4198,7 +4250,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___a_d_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4211,7 +4263,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___a_n_a_l_o_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4224,7 +4276,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___a_r_c_h_i_t_e_c_t_u_r_e_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4237,7 +4289,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___a_t_m_e_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4250,7 +4302,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___b_o_o_t_l_o_a_d_e_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4263,7 +4315,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___b_o_o_t_l_o_a_d_e_r___d_e_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4276,7 +4328,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___b_o_s_c_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4289,7 +4341,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___c_a_o_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4302,7 +4354,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___c_o_a_c_t_i_o_n___h_e_r_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4315,7 +4367,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___c_o_r_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4328,7 +4380,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___d_a_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4341,7 +4393,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___d_e_b_u_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4354,7 +4406,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___d_e_v_i_c_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4367,7 +4419,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___d_i_g_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4380,7 +4432,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___d_i_r_e_n_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4393,7 +4445,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___d_i_s_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4406,7 +4458,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___e_i_n_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4419,7 +4471,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___e_m_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4432,7 +4484,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___e_r_r_n_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4445,7 +4497,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___e_t_h___d_e_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4458,7 +4510,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___f_l_a_s_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4471,7 +4523,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___f_r_e_e_s_c_a_l_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4484,7 +4536,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___g_a_r_m_i_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4497,7 +4549,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___g_p_i_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4510,7 +4562,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___g_r_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/group___h_i_o.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4523,7 +4588,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___h_w_d_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4536,7 +4601,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___h_w_p_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4549,7 +4614,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___i2_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4562,7 +4627,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___l_i_n_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4575,7 +4640,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___l_p_c13_x_x_d_e_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4588,7 +4653,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___l_p_c17_x_x_d_e_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4601,7 +4666,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___m_a_x_i_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4614,7 +4679,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___m_e_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4627,7 +4692,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___m_i_c_r_o_c_h_i_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/group___m_l_c_d.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4640,7 +4718,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___m_q_u_e_u_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4653,7 +4731,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___n_x_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4666,7 +4744,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_e_r_i_p_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4679,7 +4757,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_e_r_i_p_h_i_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4692,7 +4770,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_i_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4705,7 +4783,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_o_s_i_x.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4718,7 +4796,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_t_h_r_e_a_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4731,7 +4809,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_t_h_r_e_a_d___a_t_t_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4744,7 +4822,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_t_h_r_e_a_d___c_o_n_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4757,7 +4835,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_t_h_r_e_a_d___m_u_t_e_x.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4770,7 +4848,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_w_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4783,7 +4861,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___p_w_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4796,7 +4874,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___q_e_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4809,7 +4887,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___r_t_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4822,7 +4900,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_c_h_e_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4835,7 +4913,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_e_m_a_p_h_o_r_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4848,7 +4926,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_i_g_n_a_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4861,7 +4939,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_p_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4874,7 +4952,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4887,7 +4965,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_t_d_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4900,7 +4978,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_y_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4913,7 +4991,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_y_s___d_e_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4926,7 +5004,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_y_s___d_e_v_f_i_f_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4939,7 +5017,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_y_s___f_i_f_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4952,7 +5030,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___s_y_s___u_a_r_t_f_i_f_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4965,7 +5043,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___t_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4978,7 +5056,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___t_i_m_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -4991,7 +5069,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___t_m_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5004,7 +5082,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___t_t_y.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5017,7 +5095,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_a_r_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5030,7 +5108,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i___f_i_l_d_e_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5043,7 +5121,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5056,7 +5134,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i___f_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5069,7 +5147,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i___p_e_r_m_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5082,7 +5160,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i___p_r_o_c_e_s_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5095,7 +5173,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i___s_l_e_e_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5108,7 +5186,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_n_i_s_t_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5121,7 +5199,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5134,7 +5212,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5147,7 +5225,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v___a_d_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5160,7 +5238,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v___c_d_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5173,7 +5251,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v___h_i_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5186,7 +5264,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v___m_s_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5199,7 +5277,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v___r_u_n_t_i_m_e___d_f_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5212,7 +5290,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___d_e_v___s_t_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5225,7 +5303,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b___h_a_n_d_l_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5238,7 +5316,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b_d_e_f_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5251,7 +5329,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___u_s_b_l_i_n_k.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5264,7 +5342,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/group___v_i_s_h_a_y.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5277,7 +5355,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/grp_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5290,7 +5368,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/hibernate_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5303,7 +5381,33 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/hierarchy.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/hio_8h.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/hio_8h_source.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5316,7 +5420,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/hwdl_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5329,7 +5433,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/hwdl_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5342,7 +5446,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/hwpl_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5355,7 +5459,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/hwpl_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5368,7 +5472,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/i2c_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5381,7 +5485,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/i2c_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5394,7 +5498,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/index.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5407,7 +5511,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/inherits.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5420,7 +5524,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/ioctl_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5433,7 +5537,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/ioctl_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5446,7 +5550,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/link_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5459,7 +5563,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/link_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5472,7 +5576,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/link__protocol_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5485,7 +5589,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/link__protocol_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5498,7 +5602,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/lpc13xx_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5511,7 +5615,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/lpc13xx_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5524,7 +5628,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/lpc17xx_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5537,7 +5641,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/lpc17xx_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5550,7 +5654,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/lstat_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5563,7 +5667,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mbfont_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5576,7 +5680,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mem_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5589,7 +5693,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mem_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5602,7 +5706,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mg__types_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5615,7 +5719,33 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mkdir_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/mlcd_8h.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/mlcd_8h_source.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5628,7 +5758,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/modules.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5641,7 +5771,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mqueue_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5654,7 +5784,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/mqueue_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5667,7 +5797,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/namespace_dsp.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5680,7 +5810,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/namespace_signal.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5693,7 +5823,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/namespaces.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5706,7 +5836,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pages.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5719,7 +5849,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/periph_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5732,7 +5862,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/periph_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5745,7 +5875,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pio_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5758,7 +5888,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pio_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5771,7 +5901,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__attr_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5784,7 +5914,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__attr__init_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5797,7 +5927,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__cancel_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5810,7 +5940,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__cleanup_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5823,7 +5953,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__cond_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5836,7 +5966,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__condattr_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5849,7 +5979,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__create_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5862,7 +5992,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__kill_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5875,7 +6005,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__mutex_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5888,7 +6018,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__mutexattr_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5901,7 +6031,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__mutexattr__init_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5914,7 +6044,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__schedparam_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5927,7 +6057,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pthread__self_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5940,7 +6070,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pwd_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5953,7 +6083,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pwm_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5966,7 +6096,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/pwm_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5979,7 +6109,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/qei_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -5992,7 +6122,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/qei_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6005,7 +6135,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/rmdir_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6018,7 +6148,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/rtc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6031,7 +6161,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/rtc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6044,7 +6174,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sched__posix_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6057,7 +6187,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sem_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6070,7 +6200,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/semaphore_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6083,7 +6213,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sig__local_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6096,7 +6226,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sig__realtime_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6109,7 +6239,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/signal_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6122,7 +6252,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/signal__handler_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6135,7 +6265,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sigset_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6148,7 +6278,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sleep_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6161,7 +6291,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/spi_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6174,7 +6304,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/spi_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6187,7 +6317,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/struct_state_1_1transition__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6200,7 +6330,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structadc__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6213,7 +6343,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structbootloader__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6226,7 +6356,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structbootloader__writepage__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6239,7 +6369,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structcore__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6252,7 +6382,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structcore__clkout__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6265,7 +6395,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structcore__irqprio__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6278,7 +6408,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structcore__pinfunc__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6291,7 +6421,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdac__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6304,7 +6434,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevfifo__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6317,7 +6447,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevfifo__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6330,7 +6460,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__adc__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6343,7 +6473,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6356,7 +6486,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__driver__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6369,7 +6499,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__gpio__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6382,7 +6512,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__i2c__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6395,7 +6525,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__periph__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6408,7 +6538,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__pwm__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6421,7 +6551,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__spi__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6434,7 +6564,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6447,7 +6577,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__transfer__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6460,7 +6590,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structdevice__uart__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6473,7 +6603,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structeeprom__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6486,7 +6616,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structeint__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6499,7 +6629,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structeth__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6512,7 +6642,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structeth__txstatus__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6525,7 +6655,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structfifo__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6538,7 +6668,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structfifo__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6551,7 +6681,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structflash__pageinfo__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6564,7 +6694,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structflash__writepage__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6577,7 +6707,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structgpio__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6590,7 +6720,33 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structgpio__pinmode__req__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/structhio__attr__t.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/structhio__desc__t.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6603,7 +6759,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structhwpl__action__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6616,7 +6772,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structi2c__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6629,7 +6785,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structi2c__reqattr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6642,7 +6798,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structled__req__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6655,7 +6811,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structlink__reply__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6668,7 +6824,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structmbfont__hdr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6681,7 +6837,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structmem__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6694,7 +6850,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structmem__pageinfo__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/structmlcd__attr__t.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6707,7 +6876,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structmq__attr.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6720,7 +6889,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structpio__action__data__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6733,7 +6902,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structpio__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6746,7 +6915,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structpio__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6759,7 +6928,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structpwm__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6772,7 +6941,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structpwm__reqattr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6785,7 +6954,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structqei__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6798,7 +6967,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structrtc__alarm__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6811,7 +6980,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structrtc__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6824,7 +6993,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structrtc__time__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6837,7 +7006,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structsignal__callback__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6850,7 +7019,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structspi__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6863,7 +7032,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structsys__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6876,7 +7045,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structsys__killattr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6889,7 +7058,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structsys__lock__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6902,7 +7071,20 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structsys__process__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>http://coactionos.com/coactionos/html/structsys__sudo__t.html</loc>
+    
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6915,7 +7097,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structsys__taskattr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6928,7 +7110,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structtmr__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6941,7 +7123,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structtmr__reqattr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6954,7 +7136,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structuart__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6967,7 +7149,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structuartfifo__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6980,7 +7162,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structusb__attr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -6993,7 +7175,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/structusbfifo__cfg__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7006,7 +7188,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sys_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7019,7 +7201,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sys_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7032,7 +7214,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/sysfs_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7045,7 +7227,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/tmr_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7058,7 +7240,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/tmr_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7071,7 +7253,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/todo.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7084,7 +7266,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/tty_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7097,7 +7279,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/tty_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7110,7 +7292,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/types_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7123,7 +7305,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/uart_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7136,7 +7318,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/uart_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7149,7 +7331,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/uartfifo_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7162,7 +7344,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/uartfifo_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7175,7 +7357,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/unionlink__op__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7188,7 +7370,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/unistd__data__transfer_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7201,7 +7383,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/unistd__flags_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7214,7 +7396,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/unistd__fs_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7227,7 +7409,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7240,7 +7422,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7253,7 +7435,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7266,7 +7448,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__adc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7279,7 +7461,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__adc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7292,7 +7474,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__cdc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7305,7 +7487,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__cdc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7318,7 +7500,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__defs_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7331,7 +7513,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__hid_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7344,7 +7526,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__hid_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7357,7 +7539,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__msc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7370,7 +7552,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__msc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7383,7 +7565,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__runtime__dfu_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7396,7 +7578,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__std_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7409,7 +7591,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__std__inline_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7422,7 +7604,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usb__dev__typedefs_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7435,7 +7617,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usbfifo_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7448,7 +7630,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usbfifo_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7461,7 +7643,7 @@
   <url>
     <loc>http://coactionos.com/coactionos/html/usleep_8c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7474,7 +7656,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/adc_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7487,7 +7669,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/adc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7500,7 +7682,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/annotated.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7513,7 +7695,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_adc-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7526,7 +7708,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_adc.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7539,7 +7721,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_aio-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7552,7 +7734,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_aio.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7565,7 +7747,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_appfs-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7578,7 +7760,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_appfs.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7591,7 +7773,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_base64-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7604,7 +7786,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_base64.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7617,7 +7799,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_brsp-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7630,7 +7812,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_brsp.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7643,7 +7825,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_brsp_address-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7656,7 +7838,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_brsp_address.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7669,7 +7851,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_core-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7682,7 +7864,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_core.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7695,7 +7877,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dac-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7708,7 +7890,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dac.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7721,7 +7903,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7734,7 +7916,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7747,7 +7929,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug_null-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7760,7 +7942,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug_null.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7773,7 +7955,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug_stdout-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7786,7 +7968,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug_stdout.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7799,7 +7981,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug_uart-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7812,7 +7994,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dbug_uart.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7825,7 +8007,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7838,7 +8020,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7851,7 +8033,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__float-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7864,7 +8046,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__float.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7877,7 +8059,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__i16-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7890,7 +8072,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__i16.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7903,7 +8085,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__i32-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7916,7 +8098,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__i32.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7929,7 +8111,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__u16-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7942,7 +8124,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__u16.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7955,7 +8137,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__u32-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7968,7 +8150,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_dsp_1_1_ema__u32.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7981,7 +8163,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_eint-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -7994,7 +8176,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_eint.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8007,7 +8189,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_exp_lcd_device-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8020,7 +8202,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_exp_lcd_device.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8033,7 +8215,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_file-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8046,7 +8228,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_file.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8059,7 +8241,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_font-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8072,7 +8254,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_font.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8085,7 +8267,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_font8-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8098,7 +8280,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_font8.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8111,7 +8293,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_font8_util-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8124,7 +8306,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_font8_util.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8137,7 +8319,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_i2c-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8150,7 +8332,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_i2c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8163,7 +8345,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_iic-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8176,7 +8358,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_iic.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8189,7 +8371,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_m_b_font-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8202,7 +8384,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_m_b_font.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8215,7 +8397,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_m_font-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8228,7 +8410,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_m_font.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8241,7 +8423,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_m_lcd-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8254,7 +8436,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_m_lcd.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8267,7 +8449,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_nhdc12832-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8280,7 +8462,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_nhdc12832.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8293,7 +8475,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pblock-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8306,7 +8488,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pblock.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8319,7 +8501,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pchar-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8332,7 +8514,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pchar.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8345,7 +8527,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_periph-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8358,7 +8540,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_periph.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8371,7 +8553,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_phy-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8384,7 +8566,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_phy.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8397,7 +8579,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pin-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8410,7 +8592,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pin.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8423,7 +8605,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pio-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8436,7 +8618,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pio.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8449,7 +8631,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pwm-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8462,7 +8644,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_pwm.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8475,7 +8657,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rle-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8488,7 +8670,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rle.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8501,7 +8683,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rle_appfs-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8514,7 +8696,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rle_appfs.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8527,7 +8709,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rle_file-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8540,7 +8722,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rle_file.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8553,7 +8735,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rtc-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8566,7 +8748,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_rtc.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8579,7 +8761,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_s_mach-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8592,7 +8774,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_s_mach.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8605,7 +8787,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_signal_1_1_event-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8618,7 +8800,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_signal_1_1_event.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8631,7 +8813,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_signal_1_1_event_phy-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8644,7 +8826,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_signal_1_1_event_phy.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8657,7 +8839,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_signal_1_1_handler-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8670,7 +8852,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_signal_1_1_handler.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8683,7 +8865,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_spi-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8696,7 +8878,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_spi.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8709,7 +8891,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_state-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8722,7 +8904,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_state.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8735,7 +8917,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8748,7 +8930,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8761,7 +8943,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_large-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8774,7 +8956,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_large.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8787,7 +8969,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_medium-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8800,7 +8982,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_medium.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8813,7 +8995,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_small-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8826,7 +9008,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_small.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8839,7 +9021,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_static-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8852,7 +9034,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_static.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8865,7 +9047,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_tiny-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8878,7 +9060,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_string_tiny.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8891,7 +9073,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_thread-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8904,7 +9086,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_thread.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8917,7 +9099,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_timer-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8930,7 +9112,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_timer.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8943,7 +9125,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_tmr-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8956,7 +9138,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_tmr.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8969,7 +9151,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_large-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8982,7 +9164,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_large.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -8995,7 +9177,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_medium-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9008,7 +9190,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_medium.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9021,7 +9203,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_small-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9034,7 +9216,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_small.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9047,7 +9229,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_tiny-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9060,7 +9242,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_token_tiny.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9073,7 +9255,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_uart-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9086,7 +9268,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_uart.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9099,7 +9281,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_usb-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9112,7 +9294,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/class_usb.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9125,7 +9307,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/classes.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9138,7 +9320,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/coactionhero_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9151,7 +9333,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/coactionhero_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9164,7 +9346,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/core_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9177,7 +9359,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/core_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9190,7 +9372,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/debug_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9203,7 +9385,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/debug_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9216,7 +9398,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/dir_d44c64559bbebec7f509842c48db8b23.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9229,7 +9411,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/eint_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9242,7 +9424,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/eint_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9255,7 +9437,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/files.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9268,7 +9450,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/flash_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9281,7 +9463,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9294,7 +9476,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9307,7 +9489,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9320,7 +9502,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9333,7 +9515,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9346,7 +9528,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_enum.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9359,7 +9541,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_eval.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9372,7 +9554,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9385,7 +9567,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9398,7 +9580,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_b.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9411,7 +9593,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9424,7 +9606,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_d.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9437,7 +9619,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9450,7 +9632,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_f.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9463,7 +9645,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9476,7 +9658,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9489,7 +9671,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9502,7 +9684,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9515,7 +9697,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9528,7 +9710,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9541,7 +9723,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9554,7 +9736,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9567,7 +9749,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9580,7 +9762,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9593,7 +9775,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9606,7 +9788,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9619,7 +9801,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9632,7 +9814,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9645,7 +9827,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_x.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9658,7 +9840,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_func_y.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9671,7 +9853,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9684,7 +9866,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9697,7 +9879,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9710,7 +9892,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_l.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9723,7 +9905,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9736,7 +9918,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_n.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9749,7 +9931,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9762,7 +9944,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_p.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9775,7 +9957,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9788,7 +9970,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_s.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9801,7 +9983,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9814,7 +9996,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_u.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9827,7 +10009,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_v.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9840,7 +10022,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_vars.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9853,7 +10035,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_w.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9866,7 +10048,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_x.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9879,7 +10061,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/functions_y.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9892,7 +10074,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/globals.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9905,7 +10087,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/globals_defs.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9918,7 +10100,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/globals_func.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9931,7 +10113,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/globals_type.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9944,7 +10126,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/gpio_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9957,7 +10139,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/graph_legend.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9970,7 +10152,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___a_d_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9983,7 +10165,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___c_o_a_c_t_i_o_n___h_e_r_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -9996,7 +10178,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___c_o_r_e.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10009,7 +10191,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___d_e_b_u_g.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10022,7 +10204,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___e_i_n_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10035,7 +10217,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___i2_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10048,7 +10230,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___p_e_r_i_p_h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10061,7 +10243,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___p_i_o.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10074,7 +10256,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___p_w_m.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10087,7 +10269,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___q_e_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10100,7 +10282,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___r_t_c.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10113,7 +10295,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___s_p_i.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10126,7 +10308,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___t_m_r.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10139,7 +10321,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/group___u_a_r_t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10152,7 +10334,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/hierarchy.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10165,7 +10347,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/i2c_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10178,7 +10360,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/i2c_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10191,7 +10373,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/index.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10204,7 +10386,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/inherits.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10217,7 +10399,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/mbfont_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10230,7 +10412,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/mg__types_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10243,7 +10425,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/modules.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10256,7 +10438,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/namespace_dsp.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10269,7 +10451,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/namespace_signal.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10282,7 +10464,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/namespaces.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10295,7 +10477,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/periph_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10308,7 +10490,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/periph_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10321,7 +10503,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/pio_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10334,7 +10516,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/pwm_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10347,7 +10529,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/qei_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10360,7 +10542,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/qei_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10373,7 +10555,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/rtc_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10386,7 +10568,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/spi_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10399,7 +10581,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/spi_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10412,7 +10594,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/struct_state_1_1transition__t-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10425,7 +10607,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/struct_state_1_1transition__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10438,7 +10620,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/structmbfont__hdr__t-members.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10451,7 +10633,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/structmbfont__hdr__t.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10464,7 +10646,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/tmr_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10477,7 +10659,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/uart_8h.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10490,7 +10672,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/uart_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10503,7 +10685,7 @@
   <url>
     <loc>http://coactionos.com/coactionos-applib/html/usb_8h_source.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10516,7 +10698,7 @@
   <url>
     <loc>http://coactionos.com/downloads.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10529,7 +10711,7 @@
   <url>
     <loc>http://coactionos.com/index.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10542,7 +10724,7 @@
   <url>
     <loc>http://coactionos.com/pages.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10555,7 +10737,7 @@
   <url>
     <loc>http://coactionos.com/rss.xml</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10568,7 +10750,7 @@
   <url>
     <loc>http://coactionos.com/services.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10581,7 +10763,7 @@
   <url>
     <loc>http://coactionos.com/sitemap.txt</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10594,7 +10776,7 @@
   <url>
     <loc>http://coactionos.com/sitemap.xml</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10607,7 +10789,7 @@
   <url>
     <loc>http://coactionos.com/tags.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10620,7 +10802,7 @@
   <url>
     <loc>http://coactionos.com/tips.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -10633,7 +10815,7 @@
   <url>
     <loc>http://coactionos.com/tutorials.html</loc>
     
-      <lastmod>2014-01-08</lastmod>
+      <lastmod>2014-04-11</lastmod>
     
     
       <changefreq>monthly</changefreq>

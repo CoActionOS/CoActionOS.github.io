@@ -71,12 +71,15 @@ title: CoActionOS Docs
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;<span class="keywordtype">int</span> <a class="code" href="group___c_a_o_s.html#ga4393cbea94379cda8f528b741b5d49c2">signal_callback</a>(<span class="keywordtype">void</span> * context, <span class="keyword">const</span> <span class="keywordtype">void</span> * data);</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*  CAOS_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor">#define CAOS_SCHED_TIMEVAL_SECONDS 2048</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CAOS_USECOND_PERIOD (1000000UL * CAOS_SCHED_TIMEVAL_SECONDS)</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*  CAOS_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="hwpl_8h_html"><div class="ttname"><a href="hwpl_8h.html">hwpl.h</a></div><div class="ttdoc">HWPL Header file (includes all other header files) </div></div>
 <div class="ttc" id="group___c_a_o_s_html_gac149b46cea60ad2b3538a075d91ffacb"><div class="ttname"><a href="group___c_a_o_s.html#gac149b46cea60ad2b3538a075d91ffacb">powerdown</a></div><div class="ttdeci">void powerdown(int seconds)</div><div class="ttdef"><b>Definition:</b> hibernate.c:94</div></div>
 <div class="ttc" id="group___c_a_o_s_html_gae65665332278b3b47ba519a1aba0222b"><div class="ttname"><a href="group___c_a_o_s.html#gae65665332278b3b47ba519a1aba0222b">hibernate</a></div><div class="ttdeci">int hibernate(int seconds)</div><div class="ttdef"><b>Definition:</b> hibernate.c:74</div></div>
