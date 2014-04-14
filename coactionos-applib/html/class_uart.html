@@ -59,12 +59,12 @@ Inheritance diagram for Uart:</div>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;applib/Uart.hpp&gt;</span></div>
 <div class="line"><a class="code" href="class_uart.html">Uart</a> uart(0);</div>
 <div class="line"><span class="keywordtype">char</span> buffer[256];</div>
-<div class="line">uart.open(<a class="code" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8bab6e41ce684f49049fe2a6d34758d164c">Uart::NONBLOCK</a>|<a class="code" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8f430a16adb1ee503b2c9cf17f44be42">Uart::RDWR</a>);</div>
+<div class="line">uart.open(<a class="code" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624ab6e41ce684f49049fe2a6d34758d164c">Uart::NONBLOCK</a>|<a class="code" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8f430a16adb1ee503b2c9cf17f44be42">Uart::RDWR</a>);</div>
 <div class="line"> <span class="comment">//now set the attributes</span></div>
 <div class="line">uart.setattr(115200, <span class="comment">//115200 baud rate</span></div>
 <div class="line">     0, <span class="comment">//pin assignment 0 (P0.2 and P0.3 on LPC17xx)</span></div>
-<div class="line">     <a class="code" href="class_uart.html#ae6236cbd4a2e49d907f6f28a44f5befca268c2d1bddd9095d8f74969a45e986c5">Uart::NONE</a>, <span class="comment">// no parity</span></div>
-<div class="line">     <a class="code" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005a0fa4677af2f5e2e0d3eb0cdab02f4825">Uart::STOP1</a>, <span class="comment">//one stop bit</span></div>
+<div class="line">     <a class="code" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005a268c2d1bddd9095d8f74969a45e986c5">Uart::NONE</a>, <span class="comment">// no parity</span></div>
+<div class="line">     <a class="code" href="class_uart.html#aa3633a1eba57b0360cf444c9c410926fa0fa4677af2f5e2e0d3eb0cdab02f4825">Uart::STOP1</a>, <span class="comment">//one stop bit</span></div>
 <div class="line">     8 <span class="comment">//8 bits per character</span></div>
 <div class="line">     );</div>
 <div class="line">uart.read(buffer, 256); <span class="comment">//returns immediately even if no data is available (errno is set to EAGAIN if no data)</span></div>
@@ -74,63 +74,63 @@ Inheritance diagram for Uart:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae6236cbd4a2e49d907f6f28a44f5befc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_uart.html#ae6236cbd4a2e49d907f6f28a44f5befca268c2d1bddd9095d8f74969a45e986c5">NONE</a> = UART_PARITY_NONE, 
-<br/>
-&#160;&#160;<a class="el" href="class_uart.html#ae6236cbd4a2e49d907f6f28a44f5befca91dad55008601c1e10f74b9b88e126ab">EVEN</a> = UART_PARITY_EVEN, 
-<br/>
-&#160;&#160;<a class="el" href="class_uart.html#ae6236cbd4a2e49d907f6f28a44f5befcacc1ead57ecbc2be1e0ed2673725c5399">ODD</a> = UART_PARITY_ODD
-<br/>
- }</td></tr>
-<tr class="memdesc:ae6236cbd4a2e49d907f6f28a44f5befc"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART Parity values.  <a href="class_uart.html#ae6236cbd4a2e49d907f6f28a44f5befc">More...</a><br/></td></tr>
-<tr class="separator:ae6236cbd4a2e49d907f6f28a44f5befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f8662ecb224cee3bb1044dbbfa0d005"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005a0fa4677af2f5e2e0d3eb0cdab02f4825">STOP1</a> = UART_ATTR_STOP_BITS_1, 
+&#160;&#160;<a class="el" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005a268c2d1bddd9095d8f74969a45e986c5">NONE</a> = UART_PARITY_NONE, 
 <br/>
-&#160;&#160;<a class="el" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005a44b2d6ca420e18c43d997b0d3f1e1741">STOP2</a> = UART_ATTR_STOP_BITS_2
+&#160;&#160;<a class="el" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005a91dad55008601c1e10f74b9b88e126ab">EVEN</a> = UART_PARITY_EVEN, 
+<br/>
+&#160;&#160;<a class="el" href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005acc1ead57ecbc2be1e0ed2673725c5399">ODD</a> = UART_PARITY_ODD
 <br/>
  }</td></tr>
-<tr class="memdesc:a6f8662ecb224cee3bb1044dbbfa0d005"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART Stop bits.  <a href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005">More...</a><br/></td></tr>
+<tr class="memdesc:a6f8662ecb224cee3bb1044dbbfa0d005"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART Parity values.  <a href="class_uart.html#a6f8662ecb224cee3bb1044dbbfa0d005">More...</a><br/></td></tr>
 <tr class="separator:a6f8662ecb224cee3bb1044dbbfa0d005"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_phy"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_phy')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_phy.html">Phy</a></td></tr>
-<tr class="memitem:a3f03ebdcedb29b4915484c820a0f5f8b inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
+<tr class="memitem:aa3633a1eba57b0360cf444c9c410926f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_uart.html#aa3633a1eba57b0360cf444c9c410926fa0fa4677af2f5e2e0d3eb0cdab02f4825">STOP1</a> = UART_ATTR_STOP_BITS_1, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8baf5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8bab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
+&#160;&#160;<a class="el" href="class_uart.html#aa3633a1eba57b0360cf444c9c410926fa44b2d6ca420e18c43d997b0d3f1e1741">STOP2</a> = UART_ATTR_STOP_BITS_2
 <br/>
  }</td></tr>
-<tr class="separator:a3f03ebdcedb29b4915484c820a0f5f8b inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:aa3633a1eba57b0360cf444c9c410926f"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART Stop bits.  <a href="class_uart.html#aa3633a1eba57b0360cf444c9c410926f">More...</a><br/></td></tr>
+<tr class="separator:aa3633a1eba57b0360cf444c9c410926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_phy"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_phy')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_phy.html">Phy</a></td></tr>
+<tr class="memitem:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624af5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624ab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
+<br/>
+ }</td></tr>
+<tr class="separator:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a893ae6793d57dd40c42a8cf19cb49bf3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a893ae6793d57dd40c42a8cf19cb49bf3"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uart.html#a893ae6793d57dd40c42a8cf19cb49bf3">open</a> (int flags=<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8f430a16adb1ee503b2c9cf17f44be42">RDWR</a>)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_uart.html#a893ae6793d57dd40c42a8cf19cb49bf3">open</a> (int flags=<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8f430a16adb1ee503b2c9cf17f44be42">RDWR</a>)</td></tr>
 <tr class="memdesc:a893ae6793d57dd40c42a8cf19cb49bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the UART port. <br/></td></tr>
 <tr class="separator:a893ae6793d57dd40c42a8cf19cb49bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3755fa83d187f8ade14b7ebd97b04663"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3755fa83d187f8ade14b7ebd97b04663"></a>
@@ -188,7 +188,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a0bfb698dfa396193b3f4f465fdf2c671 inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ae6236cbd4a2e49d907f6f28a44f5befc"></a>
+<a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -199,13 +199,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>This is a list of the UART parity values </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae6236cbd4a2e49d907f6f28a44f5befca268c2d1bddd9095d8f74969a45e986c5"></a>NONE</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005a268c2d1bddd9095d8f74969a45e986c5"></a>NONE</em>&#160;</td><td class="fielddoc">
 <p>No Parity </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae6236cbd4a2e49d907f6f28a44f5befca91dad55008601c1e10f74b9b88e126ab"></a>EVEN</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005a91dad55008601c1e10f74b9b88e126ab"></a>EVEN</em>&#160;</td><td class="fielddoc">
 <p>Even Parity </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae6236cbd4a2e49d907f6f28a44f5befcacc1ead57ecbc2be1e0ed2673725c5399"></a>ODD</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005acc1ead57ecbc2be1e0ed2673725c5399"></a>ODD</em>&#160;</td><td class="fielddoc">
 <p>Odd Parity </p>
 </td></tr>
 </table>
@@ -214,7 +214,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
-<a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005"></a>
+<a class="anchor" id="aa3633a1eba57b0360cf444c9c410926f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -225,10 +225,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>This is a list of the UART stop bit values </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005a0fa4677af2f5e2e0d3eb0cdab02f4825"></a>STOP1</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="aa3633a1eba57b0360cf444c9c410926fa0fa4677af2f5e2e0d3eb0cdab02f4825"></a>STOP1</em>&#160;</td><td class="fielddoc">
 <p>One stop bit </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a6f8662ecb224cee3bb1044dbbfa0d005a44b2d6ca420e18c43d997b0d3f1e1741"></a>STOP2</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="aa3633a1eba57b0360cf444c9c410926fa44b2d6ca420e18c43d997b0d3f1e1741"></a>STOP2</em>&#160;</td><td class="fielddoc">
 <p>Two stop bits </p>
 </td></tr>
 </table>

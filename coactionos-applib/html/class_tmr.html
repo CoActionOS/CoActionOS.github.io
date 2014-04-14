@@ -59,7 +59,7 @@ Inheritance diagram for Tmr:</div>
 </div><!-- fragment --><p>Here is an example using the <a class="el" href="class_tmr.html" title="Tmr (physcial timer) Class. ">Tmr</a> to count external edges on input capture 0</p>
 <div class="fragment"><div class="line"><a class="code" href="class_tmr.html">Tmr</a> tmr(0);</div>
 <div class="line">tmr.init(0, <span class="comment">//frequency is ignored in this case</span></div>
-<div class="line">     <a class="code" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06ad3aee5c715a85b9ede9a44b9e02fb748">Tmr::INPUT0</a>|<a class="code" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06ada4beb45816be36268a18ac701e3d28b">Tmr::RISING</a>, <span class="comment">//use input capture channel 0 rising edges as the clock source</span></div>
+<div class="line">     <a class="code" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ead3aee5c715a85b9ede9a44b9e02fb748">Tmr::INPUT0</a>|<a class="code" href="class_tmr.html#ac29227c312352b4f03b13cb84080030eada4beb45816be36268a18ac701e3d28b">Tmr::RISING</a>, <span class="comment">//use input capture channel 0 rising edges as the clock source</span></div>
 <div class="line">     __TMR0_PINASSIGN_PORT1_26_27_28_29, <span class="comment">//This is for the LPC17xx to use P1.26 for CAP0.0 (timer0/input0)</span></div>
 <div class="line">     0, <span class="comment">//not using output compare channels</span></div>
 <div class="line">     0); <span class="comment">//not using input capture (other than clock source)</span></div>
@@ -71,7 +71,7 @@ Inheritance diagram for Tmr:</div>
 <div class="line">tmr.init(); <span class="comment">//use default settings (1MHz CPU timer)</span></div>
 <div class="line"></div>
 <div class="line">tmr.setaction(0,</div>
-<div class="line">     <a class="code" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a6567650f30dfdcab87d698a3d895cbd5">Tmr::RESET</a>); <span class="comment">//reset the timer to zero when the event happens</span></div>
+<div class="line">     <a class="code" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a6567650f30dfdcab87d698a3d895cbd5">Tmr::RESET</a>); <span class="comment">//reset the timer to zero when the event happens</span></div>
 <div class="line">     <span class="comment">//Now assign a value to output compare channel 0</span></div>
 <div class="line">tmr.setoc(0, <span class="comment">//we are using output compare channel 0</span></div>
 <div class="line">     1000000 <span class="comment">//When the count gets to 1 million (1 second at 1MHz), reset the timer</span></div>
@@ -82,78 +82,78 @@ Inheritance diagram for Tmr:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae62c4a77839143ab1599c2d0358768d0"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ , <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a0e3e799e1cb2ab71bf314f77ba832a97">INTERRUPT</a> = TMR_ACTION_EVENT_INTERRUPT, 
+<tr class="memitem:ab62b82facfdc84cdb30d3895959cba06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ , <br/>
+&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a0e3e799e1cb2ab71bf314f77ba832a97">INTERRUPT</a> = TMR_ACTION_EVENT_INTERRUPT, 
 <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a6567650f30dfdcab87d698a3d895cbd5">RESET</a> = TMR_ACTION_EVENT_RESET, 
+&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a6567650f30dfdcab87d698a3d895cbd5">RESET</a> = TMR_ACTION_EVENT_RESET, 
 <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a8c530d62274b200723fddc6591af0f02">STOP</a> = TMR_ACTION_EVENT_STOP, 
+&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a8c530d62274b200723fddc6591af0f02">STOP</a> = TMR_ACTION_EVENT_STOP, 
 <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a405f97339b64929785149073bebb014a">SETOC</a> = TMR_ACTION_EVENT_SETOC, 
+&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a405f97339b64929785149073bebb014a">SETOC</a> = TMR_ACTION_EVENT_SETOC, 
 <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0ae6be2c90de071389c864eb45800d3363">CLROC</a> = TMR_ACTION_EVENT_CLROC, 
+&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06ae6be2c90de071389c864eb45800d3363">CLROC</a> = TMR_ACTION_EVENT_CLROC, 
 <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a8739460d3f2a2eb45beac31bcdf24f35">TOGGLEOC</a> = TMR_ACTION_EVENT_TOGGLEOC
-<br/>
- }</td></tr>
-<tr class="memdesc:ae62c4a77839143ab1599c2d0358768d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the events associated with timer actions.  <a href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0">More...</a><br/></td></tr>
-<tr class="separator:ae62c4a77839143ab1599c2d0358768d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab62b82facfdc84cdb30d3895959cba06"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06aa8dd430849ddced7d27b479c115fe266">CPU</a> = TMR_CLKSRC_CPU, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06ad3aee5c715a85b9ede9a44b9e02fb748">INPUT0</a> = TMR_CLKSRC_IC0, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06aaeafc30752b772f7653c6e305e144724">INPUT1</a> = TMR_CLKSRC_IC1, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a635996d7a13cede1a9d92d32ab0e6220">INPUT2</a> = TMR_CLKSRC_IC2, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a073fa36087e285b012cbb010dae6ee44">INPUT3</a> = TMR_CLKSRC_IC3, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06ada4beb45816be36268a18ac701e3d28b">RISING</a> = TMR_CLKSRC_EDGERISING, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a901cbf50071ce505ae835666fd28b3c7">FALLING</a> = TMR_CLKSRC_EDGEFALLING, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a403bdcfb719053ae655b32315a2ddeb5">BOTH</a> = TMR_CLKSRC_EDGEBOTH, 
-<br/>
-&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a4adc1e4c7fc2702cdcb944e756f6bcfd">COUNTDOWN</a> = TMR_CLKSRC_COUNTDOWN
+&#160;&#160;<a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a8739460d3f2a2eb45beac31bcdf24f35">TOGGLEOC</a> = TMR_ACTION_EVENT_TOGGLEOC
 <br/>
  }</td></tr>
-<tr class="memdesc:ab62b82facfdc84cdb30d3895959cba06"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of timer clock sources.  <a href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06">More...</a><br/></td></tr>
+<tr class="memdesc:ab62b82facfdc84cdb30d3895959cba06"><td class="mdescLeft">&#160;</td><td class="mdescRight">These are the events associated with timer actions.  <a href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06">More...</a><br/></td></tr>
 <tr class="separator:ab62b82facfdc84cdb30d3895959cba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_class_phy"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_phy')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_phy.html">Phy</a></td></tr>
-<tr class="memitem:a3f03ebdcedb29b4915484c820a0f5f8b inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
+<tr class="memitem:ac29227c312352b4f03b13cb84080030e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030eaa8dd430849ddced7d27b479c115fe266">CPU</a> = TMR_CLKSRC_CPU, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ead3aee5c715a85b9ede9a44b9e02fb748">INPUT0</a> = TMR_CLKSRC_IC0, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030eaaeafc30752b772f7653c6e305e144724">INPUT1</a> = TMR_CLKSRC_IC1, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8baf5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea635996d7a13cede1a9d92d32ab0e6220">INPUT2</a> = TMR_CLKSRC_IC2, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea073fa36087e285b012cbb010dae6ee44">INPUT3</a> = TMR_CLKSRC_IC3, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030eada4beb45816be36268a18ac701e3d28b">RISING</a> = TMR_CLKSRC_EDGERISING, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea901cbf50071ce505ae835666fd28b3c7">FALLING</a> = TMR_CLKSRC_EDGEFALLING, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea403bdcfb719053ae655b32315a2ddeb5">BOTH</a> = TMR_CLKSRC_EDGEBOTH, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8bab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
-<br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
+&#160;&#160;<a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030ea4adc1e4c7fc2702cdcb944e756f6bcfd">COUNTDOWN</a> = TMR_CLKSRC_COUNTDOWN
 <br/>
  }</td></tr>
-<tr class="separator:a3f03ebdcedb29b4915484c820a0f5f8b inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ac29227c312352b4f03b13cb84080030e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of timer clock sources.  <a href="class_tmr.html#ac29227c312352b4f03b13cb84080030e">More...</a><br/></td></tr>
+<tr class="separator:ac29227c312352b4f03b13cb84080030e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_class_phy"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_phy')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_phy.html">Phy</a></td></tr>
+<tr class="memitem:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624af5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624ab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
+<br/>
+ }</td></tr>
+<tr class="separator:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -267,7 +267,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a0bfb698dfa396193b3f4f465fdf2c671 inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0"></a>
+<a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -276,24 +276,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This lists the values for the event when using <a class="el" href="class_tmr.html#a73045df8e48c2f09829f25d59839b5b1" title="Set the TMR action. ">setaction()</a>. The values can be Or'd (|) together such as <a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a6567650f30dfdcab87d698a3d895cbd5">Tmr::RESET</a>|Tmr::INTERRUPT. </p>
+<p>This lists the values for the event when using <a class="el" href="class_tmr.html#a73045df8e48c2f09829f25d59839b5b1" title="Set the TMR action. ">setaction()</a>. The values can be Or'd (|) together such as <a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a6567650f30dfdcab87d698a3d895cbd5">Tmr::RESET</a>|Tmr::INTERRUPT. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0a0e3e799e1cb2ab71bf314f77ba832a97"></a>INTERRUPT</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a0e3e799e1cb2ab71bf314f77ba832a97"></a>INTERRUPT</em>&#160;</td><td class="fielddoc">
 <p>Trigger interrupt and execute callback </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0a6567650f30dfdcab87d698a3d895cbd5"></a>RESET</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a6567650f30dfdcab87d698a3d895cbd5"></a>RESET</em>&#160;</td><td class="fielddoc">
 <p>Reset timer value to zero </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0a8c530d62274b200723fddc6591af0f02"></a>STOP</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a8c530d62274b200723fddc6591af0f02"></a>STOP</em>&#160;</td><td class="fielddoc">
 <p>Stop the timer </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0a405f97339b64929785149073bebb014a"></a>SETOC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a405f97339b64929785149073bebb014a"></a>SETOC</em>&#160;</td><td class="fielddoc">
 <p>Set the output compare pin high </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0ae6be2c90de071389c864eb45800d3363"></a>CLROC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06ae6be2c90de071389c864eb45800d3363"></a>CLROC</em>&#160;</td><td class="fielddoc">
 <p>Clear the output compare pin </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ae62c4a77839143ab1599c2d0358768d0a8739460d3f2a2eb45beac31bcdf24f35"></a>TOGGLEOC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a8739460d3f2a2eb45beac31bcdf24f35"></a>TOGGLEOC</em>&#160;</td><td class="fielddoc">
 <p>Toggle the output compare pin </p>
 </td></tr>
 </table>
@@ -302,7 +302,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 
 </div>
 </div>
-<a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06"></a>
+<a class="anchor" id="ac29227c312352b4f03b13cb84080030e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -313,31 +313,31 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>This is a list of the timer clock sources. Not all clock sources are available on all devices. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06aa8dd430849ddced7d27b479c115fe266"></a>CPU</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030eaa8dd430849ddced7d27b479c115fe266"></a>CPU</em>&#160;</td><td class="fielddoc">
 <p>Use the internal CPU clock </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06ad3aee5c715a85b9ede9a44b9e02fb748"></a>INPUT0</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030ead3aee5c715a85b9ede9a44b9e02fb748"></a>INPUT0</em>&#160;</td><td class="fielddoc">
 <p>Use input 0 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06aaeafc30752b772f7653c6e305e144724"></a>INPUT1</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030eaaeafc30752b772f7653c6e305e144724"></a>INPUT1</em>&#160;</td><td class="fielddoc">
 <p>Use input 1 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a635996d7a13cede1a9d92d32ab0e6220"></a>INPUT2</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030ea635996d7a13cede1a9d92d32ab0e6220"></a>INPUT2</em>&#160;</td><td class="fielddoc">
 <p>Use input 2 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a073fa36087e285b012cbb010dae6ee44"></a>INPUT3</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030ea073fa36087e285b012cbb010dae6ee44"></a>INPUT3</em>&#160;</td><td class="fielddoc">
 <p>Use input 3 (device specific) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06ada4beb45816be36268a18ac701e3d28b"></a>RISING</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030eada4beb45816be36268a18ac701e3d28b"></a>RISING</em>&#160;</td><td class="fielddoc">
 <p>Modifier to clock on rising edges </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a901cbf50071ce505ae835666fd28b3c7"></a>FALLING</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030ea901cbf50071ce505ae835666fd28b3c7"></a>FALLING</em>&#160;</td><td class="fielddoc">
 <p>Modifier to clock on falling edges </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a403bdcfb719053ae655b32315a2ddeb5"></a>BOTH</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030ea403bdcfb719053ae655b32315a2ddeb5"></a>BOTH</em>&#160;</td><td class="fielddoc">
 <p>Modifier to clock on both rising and falling edges </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ab62b82facfdc84cdb30d3895959cba06a4adc1e4c7fc2702cdcb944e756f6bcfd"></a>COUNTDOWN</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ac29227c312352b4f03b13cb84080030ea4adc1e4c7fc2702cdcb944e756f6bcfd"></a>COUNTDOWN</em>&#160;</td><td class="fielddoc">
 <p>Modifier for a countdown timer </p>
 </td></tr>
 </table>
@@ -400,7 +400,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>timer frequency (if using TMR_CLKSRC_CPU) </td></tr>
-    <tr><td class="paramname">clksrc</td><td>clock source for the timer (default is <a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06aa8dd430849ddced7d27b479c115fe266">Tmr::CPU</a>) </td></tr>
+    <tr><td class="paramname">clksrc</td><td>clock source for the timer (default is <a class="el" href="class_tmr.html#ac29227c312352b4f03b13cb84080030eaa8dd430849ddced7d27b479c115fe266">Tmr::CPU</a>) </td></tr>
     <tr><td class="paramname">pin_assign</td><td>The pin assignment if using input capture (including clock source) or output compare pins </td></tr>
     <tr><td class="paramname">enabled_oc_chans</td><td>Mask of the enabled output compare channels (only if external pins are used) </td></tr>
     <tr><td class="paramname">enabled_ic_chans</td><td>Mask of the enabled input capture channels (only if external pins are used&ndash;not including clock source) </td></tr>
@@ -485,8 +485,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channel</td><td>The channel to use </td></tr>
-    <tr><td class="paramname">event</td><td>The event such as <a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a0e3e799e1cb2ab71bf314f77ba832a97">Tmr::INTERRUPT</a> </td></tr>
-    <tr><td class="paramname">callback</td><td>Callback executed if <a class="el" href="class_tmr.html#ae62c4a77839143ab1599c2d0358768d0a0e3e799e1cb2ab71bf314f77ba832a97">Tmr::INTERRUPT</a> is used </td></tr>
+    <tr><td class="paramname">event</td><td>The event such as <a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a0e3e799e1cb2ab71bf314f77ba832a97">Tmr::INTERRUPT</a> </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback executed if <a class="el" href="class_tmr.html#ab62b82facfdc84cdb30d3895959cba06a0e3e799e1cb2ab71bf314f77ba832a97">Tmr::INTERRUPT</a> is used </td></tr>
     <tr><td class="paramname">context</td><td>First argument passed to callback </td></tr>
   </table>
   </dd>
