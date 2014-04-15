@@ -27,7 +27,7 @@
 </g>
 <!-- Node3 -->
 <g id="node3" class="node"><title>Node3</title>
-<g id="a_node3"><a xlink:href="ioctl_8h_source.html" target="_top" target="_top" target="_top" xlink:title="ioctl.h">
+<g id="a_node3"><a xlink:href="ioctl_8h_source.html" target="_top" target="_top" target="_top" target="_top" xlink:title="ioctl.h">
 <polygon fill="none" stroke="black" points="139.938,-1 139.938,-21 182.062,-21 182.062,-1 139.938,-1"/>
 <text text-anchor="middle" x="161" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">ioctl.h</text>
 </a>
@@ -50,7 +50,7 @@
 </g>
 <!-- Node5 -->
 <g id="node5" class="node"><title>Node5</title>
-<g id="a_node5"><a xlink:href="types_8h_source.html" target="_top" target="_top" target="_top" xlink:title="hwpl/types.h">
+<g id="a_node5"><a xlink:href="types_8h_source.html" target="_top" target="_top" target="_top" target="_top" xlink:title="hwpl/types.h">
 <polygon fill="none" stroke="black" points="22.207,-59 22.207,-79 93.793,-79 93.793,-59 22.207,-59"/>
 <text text-anchor="middle" x="58" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">hwpl/types.h</text>
 </a>
@@ -63,7 +63,7 @@
 </g>
 <!-- Node7 -->
 <g id="node7" class="node"><title>Node7</title>
-<g id="a_node7"><a xlink:href="pio_8h.html" target="_top" target="_top" target="_top" xlink:title="General Purpose Input/Output Header File. ">
+<g id="a_node7"><a xlink:href="pio_8h.html" target="_top" target="_top" target="_top" target="_top" xlink:title="General Purpose Input/Output Header File. ">
 <polygon fill="none" stroke="black" points="111.707,-59 111.707,-79 168.293,-79 168.293,-59 111.707,-59"/>
 <text text-anchor="middle" x="140" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">dev/pio.h</text>
 </a>

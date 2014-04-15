@@ -1,15 +1,15 @@
 <map id="Phy" name="Phy">
-<area shape="rect" id="node2" href="$class_file.html" title="File Class. " alt="" coords="134,201,220,522"/>
-<area shape="rect" id="node4" href="$class_periph.html" title="Peripheral Class. " alt="" coords="381,201,469,522"/>
-<area shape="rect" id="node3" href="$class_rle_file.html" title="Class for reading/writing compressed file data. " alt="" coords="5,675,75,773"/>
-<area shape="rect" id="node5" href="$class_core.html" title="Core Class. " alt="" coords="99,603,241,845"/>
-<area shape="rect" id="node6" href="$class_eint.html" title="External Interrupt Class. " alt="" coords="266,603,360,845"/>
-<area shape="rect" id="node7" href="$class_pblock.html" title="Peripheral Block Class. " alt="" coords="384,667,465,781"/>
-<area shape="rect" id="node12" href="$class_pchar.html" title="Peripheral Character Class. " alt="" coords="490,675,571,773"/>
-<area shape="rect" id="node13" href="$class_pio.html" title="Pin Input/Output Class. " alt="" coords="596,571,692,877"/>
-<area shape="rect" id="node14" href="$class_rtc.html" title="RTC Class. " alt="" coords="716,603,832,845"/>
-<area shape="rect" id="node8" href="$class_adc.html" title="ADC Peripheral Class. " alt="" coords="216,950,305,1127"/>
-<area shape="rect" id="node9" href="$class_dac.html" title="DAC Class. " alt="" coords="331,950,409,1127"/>
-<area shape="rect" id="node10" href="$class_i2c.html" title="I2C Peripheral Class. " alt="" coords="435,926,524,1151"/>
-<area shape="rect" id="node11" href="$class_pwm.html" title="PWM Class. " alt="" coords="548,934,637,1143"/>
+<area shape="rect" id="node2" href="$class_file.html" title="File Class. " alt="" coords="134,182,220,455"/>
+<area shape="rect" id="node4" href="$class_periph.html" title="Peripheral Class. " alt="" coords="381,182,469,455"/>
+<area shape="rect" id="node3" href="$class_rle_file.html" title="Class for reading/writing compressed file data. " alt="" coords="5,591,75,678"/>
+<area shape="rect" id="node5" href="$class_core.html" title="Core Class. " alt="" coords="99,531,241,738"/>
+<area shape="rect" id="node6" href="$class_eint.html" title="External Interrupt Class. " alt="" coords="266,531,360,738"/>
+<area shape="rect" id="node7" href="$class_pblock.html" title="Peripheral Block Class. " alt="" coords="384,585,465,685"/>
+<area shape="rect" id="node12" href="$class_pchar.html" title="Peripheral Character Class. " alt="" coords="490,591,571,678"/>
+<area shape="rect" id="node13" href="$class_pio.html" title="Pin Input/Output Class. " alt="" coords="596,505,692,765"/>
+<area shape="rect" id="node14" href="$class_rtc.html" title="RTC Class. " alt="" coords="716,531,832,738"/>
+<area shape="rect" id="node8" href="$class_adc.html" title="ADC Peripheral Class. " alt="" coords="216,867,305,1021"/>
+<area shape="rect" id="node9" href="$class_dac.html" title="DAC Class. " alt="" coords="331,867,409,1021"/>
+<area shape="rect" id="node10" href="$class_i2c.html" title="I2C Peripheral Class. " alt="" coords="435,814,524,1074"/>
+<area shape="rect" id="node11" href="$class_pwm.html" title="PWM Class. " alt="" coords="548,854,637,1034"/>
 </map>

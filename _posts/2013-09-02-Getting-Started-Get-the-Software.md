@@ -37,3 +37,11 @@ You can install the compiler using the following commands. This assumes the tar 
 cd /
 sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
 </pre>
+
+## Upgrading CoActionOS Kernel Libraries
+
+The latest version of the [CoActionOS source code is available on Github](https://github.com/CoActionOS/CoActionOS-Public).  Once downloaded, you can import the CoActionOS and CoActionOS-Applib projects directly into Eclipse (without even extracting the contents of the zip).  In Eclipse, do File->Import...->Existing Projects into Workspace->Select archive file.
+
+Once imported, right click on CoActionOS and select Build Configurations->Build All.  Do the same for the CoActionOS-Applib project.
+
+More information is available from this [post]({% post_url 2013-12-15-CoActionOS-User-Guide-Building-and-Installing-CoActionOS %}).

@@ -1,7 +1,0 @@
-digraph "mlcd_attr_t"
-{
-  bgcolor="transparent";
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{mlcd_attr_t\n|+ w\l+ h\l+ mem\l+ mem8\l+ mem32\l+ @17\l+ size\l+ cols\l+ rows\l+ freq\l+ hold\l+ orientation\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-}

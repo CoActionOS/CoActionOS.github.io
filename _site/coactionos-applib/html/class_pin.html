@@ -123,7 +123,8 @@
 <div class="dynheader">
 Inheritance diagram for Pin:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_pin__inherit__graph.svg" width="110" height="1238"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_pin__inherit__graph.svg" width="110" height="1027"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class controls the operation of a single pin. It works similarly to the <a class="el" href="class_pio.html" title="Pin Input/Output Class. ">Pio</a> class, but the mask is built-in.</p>
@@ -133,7 +134,7 @@ Inheritance diagram for Pin:</div>
 <div class="line"><a class="code" href="class_pin.html">Pin</a> pin(1,0); <span class="comment">//control pin P1.0</span></div>
 <div class="line"> <span class="comment">//Or if working with the pinmask Pin  pin(1, 1&lt;&lt;0, true);</span></div>
 <div class="line"></div>
-<div class="line">pin.init(<a class="code" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2aa7b10066b381df8aaf85ae57e55a25d2">Pin::OUTPUT</a>); <span class="comment">//initialize as an output</span></div>
+<div class="line">pin.init(<a class="code" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2">Pin::OUTPUT</a>); <span class="comment">//initialize as an output</span></div>
 <div class="line"></div>
 <div class="line"> <span class="comment">//These three all set the pin high</span></div>
 <div class="line">pin = <span class="keyword">true</span>;</div>
@@ -146,7 +147,7 @@ Inheritance diagram for Pin:</div>
 <div class="line">pin.off();</div>
 <div class="line"></div>
 <div class="line"> <span class="comment">//now convert to an input</span></div>
-<div class="line">pin.setattr(<a class="code" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2a666d223d960769b6dfff4a8d1808f2a4">Pin::INPUT</a> | <a class="code" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2ace3ae088db51e122112febfc2b55df6e">Pin::PULLUP</a>); <span class="comment">//or use Pin::FLOAT, Pin::PULLDOWN, etc</span></div>
+<div class="line">pin.setattr(<a class="code" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa666d223d960769b6dfff4a8d1808f2a4">Pin::INPUT</a> | <a class="code" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaace3ae088db51e122112febfc2b55df6e">Pin::PULLUP</a>); <span class="comment">//or use Pin::FLOAT, Pin::PULLDOWN, etc</span></div>
 <div class="line"> <span class="comment">//or to init as an input use pin.init(Pin::INPUT);</span></div>
 <div class="line"></div>
 <div class="line"> <span class="comment">//now check to see if the value is high or low</span></div>
@@ -210,6 +211,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pin.html#adc7512fdb575e599135538ad9740efa2">clr</a> (void)</td></tr>
 <tr class="memdesc:adc7512fdb575e599135538ad9740efa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">clr the pin low <br/></td></tr>
 <tr class="separator:adc7512fdb575e599135538ad9740efa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae72a5b3e9633ee4d1086b4abdc8bf50a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae72a5b3e9633ee4d1086b4abdc8bf50a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pin.html#ae72a5b3e9633ee4d1086b4abdc8bf50a">set</a> (bool <a class="el" href="class_pin.html#a2eb37719452d9644efda515809552c82">value</a>)</td></tr>
+<tr class="memdesc:ae72a5b3e9633ee4d1086b4abdc8bf50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pin high or low as specified. <br/></td></tr>
+<tr class="separator:ae72a5b3e9633ee4d1086b4abdc8bf50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4364bae3f9cd693d5d62bb302d0cbfca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4364bae3f9cd693d5d62bb302d0cbfca"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pin.html#a4364bae3f9cd693d5d62bb302d0cbfca">clr</a> (bool <a class="el" href="class_pin.html#a2eb37719452d9644efda515809552c82">value</a>)</td></tr>
+<tr class="memdesc:a4364bae3f9cd693d5d62bb302d0cbfca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pin high or low as specified (e.g clr(false); sets the pin high) <br/></td></tr>
+<tr class="separator:a4364bae3f9cd693d5d62bb302d0cbfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9faf0dfd7177a88aa41a27438daa6147"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9faf0dfd7177a88aa41a27438daa6147"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pin.html#a9faf0dfd7177a88aa41a27438daa6147">on</a> (void)</td></tr>
 <tr class="memdesc:a9faf0dfd7177a88aa41a27438daa6147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pin high. <br/></td></tr>
@@ -303,59 +312,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_pio"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_pio')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_pio.html">Pio</a></td></tr>
-<tr class="memitem:a3b9b00529aef4da51925e43765706ac2 inherit pub_types_class_pio"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2a666d223d960769b6dfff4a8d1808f2a4">INPUT</a> = PIO_MODE_INPUT, 
+<tr class="memitem:ac50f2eeb5b98ac0795bf69960d2a06ea inherit pub_types_class_pio"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa666d223d960769b6dfff4a8d1808f2a4">INPUT</a> = PIO_MODE_INPUT, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2aa7b10066b381df8aaf85ae57e55a25d2">OUTPUT</a> = PIO_MODE_OUTPUT, 
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2">OUTPUT</a> = PIO_MODE_OUTPUT, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2a9b5ea72b66c7ddc5c5c5ca8687d94750">FLOAT</a> = PIO_MODE_FLOAT, 
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa9b5ea72b66c7ddc5c5c5ca8687d94750">FLOAT</a> = PIO_MODE_FLOAT, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2ace3ae088db51e122112febfc2b55df6e">PULLUP</a> = PIO_MODE_PULLUP, 
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaace3ae088db51e122112febfc2b55df6e">PULLUP</a> = PIO_MODE_PULLUP, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2aa6bfc67568f2278da6154ca250ea0d1f">PULLDOWN</a> = PIO_MODE_PULLDOWN, 
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa6bfc67568f2278da6154ca250ea0d1f">PULLDOWN</a> = PIO_MODE_PULLDOWN, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2a61621c27f137b31066378c0c87f9df9f">OPENDRAIN</a> = PIO_MODE_OPENDRAIN, 
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa61621c27f137b31066378c0c87f9df9f">OPENDRAIN</a> = PIO_MODE_OPENDRAIN, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2a83cd96a470a6b7ae56226b70a2e42e92">REPEATER</a> = PIO_MODE_REPEATER, 
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa83cd96a470a6b7ae56226b70a2e42e92">REPEATER</a> = PIO_MODE_REPEATER, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#a3b9b00529aef4da51925e43765706ac2adb86d3a08bc8c2e0e4f30b4aa0a5ab62">HYSTERESIS</a> = PIO_MODE_HYSTERESIS
+&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaadb86d3a08bc8c2e0e4f30b4aa0a5ab62">HYSTERESIS</a> = PIO_MODE_HYSTERESIS
 <br/>
  }</td></tr>
-<tr class="separator:a3b9b00529aef4da51925e43765706ac2 inherit pub_types_class_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ac50f2eeb5b98ac0795bf69960d2a06ea inherit pub_types_class_pio"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_phy"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_phy')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_phy.html">Phy</a></td></tr>
-<tr class="memitem:a3f03ebdcedb29b4915484c820a0f5f8b inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
+<tr class="memitem:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8baf5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624af5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8bab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624ab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a3f03ebdcedb29b4915484c820a0f5f8ba66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
+&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
 <br/>
  }</td></tr>
-<tr class="separator:a3f03ebdcedb29b4915484c820a0f5f8b inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 

@@ -123,7 +123,8 @@
 <div class="dynheader">
 Inheritance diagram for Nhdc12832:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_nhdc12832__inherit__graph.svg" width="155" height="723"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_nhdc12832__inherit__graph.svg" width="155" height="624"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is an implementation of the <a class="el" href="class_m_lcd.html" title="Monochrome LCD. ">MLcd</a> abstract class using the New Haven Display 128x32 pixel LCD. It is controlled using the SPI bus, CS line, A0 line, and Reset line.</p>
@@ -218,10 +219,35 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#ad1443685988e3e45cc8bb57b3308a2a6">setline</a> (int x1, int y1, int x2, int y2)</td></tr>
 <tr class="memdesc:ad1443685988e3e45cc8bb57b3308a2a6 inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pixels of a line. <br/></td></tr>
 <tr class="separator:ad1443685988e3e45cc8bb57b3308a2a6 inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e77d865307c1e71d56ec01981a6783a inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e77d865307c1e71d56ec01981a6783a"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#a5e77d865307c1e71d56ec01981a6783a">init</a> (void)=0</td></tr>
-<tr class="memdesc:a5e77d865307c1e71d56ec01981a6783a inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to initialize the LCD. <br/></td></tr>
-<tr class="separator:a5e77d865307c1e71d56ec01981a6783a inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4111b084a92671114312e28f5df70793 inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4111b084a92671114312e28f5df70793"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#a4111b084a92671114312e28f5df70793">line</a> (int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memdesc:a4111b084a92671114312e28f5df70793 inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws a line on the LCD. <br/></td></tr>
+<tr class="separator:a4111b084a92671114312e28f5df70793 inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b3c5f1ee951f8030adae181624624a inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2b3c5f1ee951f8030adae181624624a"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#ac2b3c5f1ee951f8030adae181624624a">init</a> (void)</td></tr>
+<tr class="memdesc:ac2b3c5f1ee951f8030adae181624624a inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pure virtual function to initialize the LCD. <br/></td></tr>
+<tr class="separator:ac2b3c5f1ee951f8030adae181624624a inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9fbbdaf7cb08905c89f4d380a34eb22 inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9fbbdaf7cb08905c89f4d380a34eb22"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#ae9fbbdaf7cb08905c89f4d380a34eb22">on</a> ()</td></tr>
+<tr class="memdesc:ae9fbbdaf7cb08905c89f4d380a34eb22 inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the LCD pixels on. <br/></td></tr>
+<tr class="separator:ae9fbbdaf7cb08905c89f4d380a34eb22 inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df7e8248824dfddacbf1b78a8beae4e inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6df7e8248824dfddacbf1b78a8beae4e"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#a6df7e8248824dfddacbf1b78a8beae4e">off</a> ()</td></tr>
+<tr class="memdesc:a6df7e8248824dfddacbf1b78a8beae4e inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the LCD pixels off. <br/></td></tr>
+<tr class="separator:a6df7e8248824dfddacbf1b78a8beae4e inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acec8d93399c63c71bddd66925fed9aff inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#acec8d93399c63c71bddd66925fed9aff">hold</a> ()</td></tr>
+<tr class="memdesc:acec8d93399c63c71bddd66925fed9aff inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hold LCD shared mem.  <a href="#acec8d93399c63c71bddd66925fed9aff">More...</a><br/></td></tr>
+<tr class="separator:acec8d93399c63c71bddd66925fed9aff inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834c108cd37c3a08b6433feae8fa5bb0 inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#a834c108cd37c3a08b6433feae8fa5bb0">release</a> ()</td></tr>
+<tr class="memdesc:a834c108cd37c3a08b6433feae8fa5bb0 inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release LCD shared mem.  <a href="#a834c108cd37c3a08b6433feae8fa5bb0">More...</a><br/></td></tr>
+<tr class="separator:a834c108cd37c3a08b6433feae8fa5bb0 inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd653550fd2d3b526570e806d3f18bcd inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#acd653550fd2d3b526570e806d3f18bcd">mem</a> ()</td></tr>
+<tr class="memdesc:acd653550fd2d3b526570e806d3f18bcd inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the LCD memory.  <a href="#acd653550fd2d3b526570e806d3f18bcd">More...</a><br/></td></tr>
+<tr class="separator:acd653550fd2d3b526570e806d3f18bcd inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e320d252dde737285f70d8559a22c2d inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e320d252dde737285f70d8559a22c2d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#a5e320d252dde737285f70d8559a22c2d">pixel</a> (unsigned int x, unsigned int y)</td></tr>
+<tr class="memdesc:a5e320d252dde737285f70d8559a22c2d inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a pixel on the LCD memory. <br/></td></tr>
+<tr class="separator:a5e320d252dde737285f70d8559a22c2d inherit pub_methods_class_m_lcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04fbd6257c05394519ca013d5c9637f6 inherit pub_methods_class_m_lcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04fbd6257c05394519ca013d5c9637f6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_m_lcd.html#a04fbd6257c05394519ca013d5c9637f6">setfill</a> (unsigned int x, unsigned int y)</td></tr>
 <tr class="memdesc:a04fbd6257c05394519ca013d5c9637f6 inherit pub_methods_class_m_lcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function for filling a bounded area in local LCD memory. <br/></td></tr>

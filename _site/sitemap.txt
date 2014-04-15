@@ -551,6 +551,7 @@ http://coactionos.com/coactionos/html/usbfifo_8h_source.html
 http://coactionos.com/coactionos/html/usleep_8c.html
 http://coactionos.com/coactionos-applib/html/adc_8h.html
 http://coactionos.com/coactionos-applib/html/adc_8h_source.html
+http://coactionos.com/coactionos-applib/html/aes256_8h_source.html
 http://coactionos.com/coactionos-applib/html/annotated.html
 http://coactionos.com/coactionos-applib/html/class_adc-members.html
 http://coactionos.com/coactionos-applib/html/class_adc.html
@@ -600,6 +601,8 @@ http://coactionos.com/coactionos-applib/html/class_font8-members.html
 http://coactionos.com/coactionos-applib/html/class_font8.html
 http://coactionos.com/coactionos-applib/html/class_font8_util-members.html
 http://coactionos.com/coactionos-applib/html/class_font8_util.html
+http://coactionos.com/coactionos-applib/html/class_i2_c-members.html
+http://coactionos.com/coactionos-applib/html/class_i2_c.html
 http://coactionos.com/coactionos-applib/html/class_i2c-members.html
 http://coactionos.com/coactionos-applib/html/class_i2c.html
 http://coactionos.com/coactionos-applib/html/class_iic-members.html
@@ -794,6 +797,7 @@ http://coactionos.com/tags.html
 http://coactionos.com/tips.html
 http://coactionos.com/tutorials.html
 
+http://coactionos.com/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS
 http://coactionos.com/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap
 http://coactionos.com/user%20guides/2013/12/20/CoActionOS-User-Guide-Installing-Windows-Device-Drivers
 http://coactionos.com/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development

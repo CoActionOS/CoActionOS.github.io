@@ -4,13 +4,121 @@
  <title>CoActionOS</title>
  <link href="http://coactionos.com/" rel="self"/>
  <link href="http://coactionos.com"/>
- <updated>2014-04-11T16:31:06-06:00</updated>
+ <updated>2014-04-15T17:29:08-06:00</updated>
  <id>http://coactionos.com</id>
  <author>
    <name>CoActionOS, Inc</name>
    <email>tgil@coactionos.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Deploying CoActionOS</title>
+   <link href="http://coactionos.com/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS"/>
+   <updated>2014-04-15T00:00:00-06:00</updated>
+   <id>http://coactionos.com/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS</id>
+   <content type="html">&lt;h2 id=&quot;from_development_to_production&quot;&gt;From Development to Production&lt;/h2&gt;
+
+&lt;p&gt;There are two approaches to deploying CoActionOS.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;As Is&lt;/li&gt;
+
+&lt;li&gt;Stripped Down&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;deploy_as_is&quot;&gt;Deploy As Is&lt;/h3&gt;
+
+&lt;p&gt;The first option is to deploy CoActionOS as is without stripping away any part of the OS. This method has the following advantages.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;User Upgradeable Firmware (Applications and Kernel)&lt;/li&gt;
+
+&lt;li&gt;User Installable Apps (3rd Parties can innovate on your product!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The disadvantages:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Larger ROM size&lt;/li&gt;
+
+&lt;li&gt;Security (Users can install code on your device)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;deploy_a_stripped_down_version&quot;&gt;Deploy a Stripped Down Version&lt;/h3&gt;
+
+&lt;p&gt;If the cons for the As Is deployment option outweight the pros, you can also deploy a stripped down version of CoActionOS. You can strip away any part of the OS that you don’t need.&lt;/p&gt;
+
+&lt;h4 id=&quot;exclude_unused_drivers&quot;&gt;Exclude Unused Drivers&lt;/h4&gt;
+
+&lt;p&gt;The easiest way to shrink the ROM size is to remove device drivers or filesystems that are not needed. If you look at the files in the &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS-HW&quot;&gt;board support packages&lt;/a&gt;, you will find a file called devices.c. This file references the device drivers and filesystems that will be available to applications. You just need to comment out anything you are not using to exclude those items from the binary. For example, the following lines are commented out to exclude the I2C drivers.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;c1&#39;&gt;//DEVICE_PERIPH(&amp;quot;i2c0&amp;quot;, hwpl_i2c, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//DEVICE_PERIPH(&amp;quot;i2c1&amp;quot;, hwpl_i2c, 1, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),&lt;/span&gt;
+&lt;span class=&#39;c1&#39;&gt;//DEVICE_PERIPH(&amp;quot;i2c2&amp;quot;, hwpl_i2c, 2, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you aren’t using the CoActionOS flash filesystem, that can also be excluded.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;kt&#39;&gt;sysfs_t&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;sysfs_list&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[]&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+	&lt;span class=&#39;c1&#39;&gt;//the folder for ram/flash applications&lt;/span&gt;
+	&lt;span class=&#39;n&#39;&gt;SYSFS_APP&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;/app&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;devices&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;MEM_DEV&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;]),&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;SYSFS_ALL_ACCESS&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt;
+	&lt;span class=&#39;n&#39;&gt;SYSFS_DEV&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;/dev&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;devices&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;SYSFS_READONLY_ACCESS&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//devices&lt;/span&gt;
+	&lt;span class=&#39;c1&#39;&gt;//CAFS_LITE(&amp;quot;/home&amp;quot;, &amp;amp;cafs_lite_cfg, SYSFS_ALL_ACCESS), //user files&lt;/span&gt;
+	&lt;span class=&#39;n&#39;&gt;SYSFS_ROOT&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;/&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;sysfs_list&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;SYSFS_READONLY_ACCESS&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;),&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//root&lt;/span&gt;
+	&lt;span class=&#39;n&#39;&gt;SYSFS_TERMINATOR&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;exclude_unused_cposix_functions&quot;&gt;Exclude Unused C/POSIX functions&lt;/h4&gt;
+
+&lt;p&gt;To remove unsed portions of the standard C library or POSIX functions, you need to do a custom build of &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS-Public&quot;&gt;CoActionOS&lt;/a&gt;. The file you want to modify is src/sys/symbols.c. This file contains a list of all the functions that, if not used by the kernel, are still included in the build so that they are available to applications. It ensures that if an application links to printf() (see src/crt/crt_symbols.S), then the printf() code will be part of the kernel. However, if none of your deployed applications use printf(), you don’t need it in the kernel. To exclude a function, place a zero in the table (don’t delete the line or simply comment it out!).&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;kt&#39;&gt;uint32_t&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;const&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;symbols_table&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[]&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;=&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;{&lt;/span&gt;
+	&lt;span class=&#39;c1&#39;&gt;//...&lt;/span&gt;
+	&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//(uint32_t)fprintf,&lt;/span&gt;
+	&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//(uint32_t)printf,&lt;/span&gt;
+	&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;c1&#39;&gt;//(uint32_t)snprintf,&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;uint32_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;vfprintf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;uint32_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;sprintf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;uint32_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;vprintf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;uint32_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;vsnprintf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;uint32_t&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;vsprintf&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+	&lt;span class=&#39;c1&#39;&gt;//...&lt;/span&gt;
+
+&lt;span class=&#39;p&#39;&gt;};&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;unify_kernel_and_application&quot;&gt;Unify Kernel and Application&lt;/h4&gt;
+
+&lt;p&gt;If you still need to make the binary smaller, you can compile the application with the kernel. In this case, you will want to exclude src/sys/symbols.c from the build entirely. In the CoActionOS kernel library, the first thread is called intial_thread() and is weakly bound. You can add this function to your board support package to override the version in the kernel library. The default initial thread function is shown below extracted from src/sys/intial_thread.c. Instead of initializing the link functionality (link_init() and link_update()), you can call the main() function to your application and add the applicatoin source code directly to the board support package in Eclipse.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;cpp&#39;&gt;&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;initial_thread&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;void&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;arg&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+
+	&lt;span class=&#39;n&#39;&gt;hwpl_core_privcall&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;priv_check_reset_source&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;nb&#39;&gt;NULL&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+
+	&lt;span class=&#39;c1&#39;&gt;//Initialize the file systems&lt;/span&gt;
+	&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;init_fs&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;()&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+		&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+
+	&lt;span class=&#39;c1&#39;&gt;//Initialize the CoActionOS Link interface&lt;/span&gt;
+	&lt;span class=&#39;k&#39;&gt;if&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;link_init&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;()&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;){&lt;/span&gt;
+		&lt;span class=&#39;n&#39;&gt;hwpl_core_privcall&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;gled_priv_error&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+	&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+
+	&lt;span class=&#39;n&#39;&gt;startup_fs&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;();&lt;/span&gt;
+
+	&lt;span class=&#39;n&#39;&gt;open&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;s&#39;&gt;&amp;quot;/dev/rtc&amp;quot;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;O_RDWR&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+
+	&lt;span class=&#39;n&#39;&gt;usleep&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;100&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;*&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1000&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt;
+	&lt;span class=&#39;n&#39;&gt;led_startup&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;();&lt;/span&gt;
+	&lt;span class=&#39;n&#39;&gt;link_update&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;nb&#39;&gt;NULL&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;);&lt;/span&gt; 	&lt;span class=&#39;c1&#39;&gt;//Run the link update thread--never returns&lt;/span&gt;
+
+	&lt;span class=&#39;k&#39;&gt;return&lt;/span&gt; &lt;span class=&#39;nb&#39;&gt;NULL&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
+&lt;span class=&#39;p&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;remove_the_bootloader&quot;&gt;Remove the Bootloader&lt;/h4&gt;
+
+&lt;p&gt;On the CoAction-Hero, the bootloader is installed at address 0x0 while the kernel is installed at 0x40000 (at the 256K boundary of the 512K device). If you don’t need the bootloader, you can tell Eclipse to compile the kernel to execute at address 0x0 instead of 0x40000 (see Eclipse Project Properties-&amp;gt;C/C++ Build-&amp;gt;Build Variables-&amp;gt;START_ADDR) and then use a JTAG or UART install tool to load the kernel.&lt;/p&gt;
+
+&lt;h2 id=&quot;take_away&quot;&gt;Take Away&lt;/h2&gt;
+
+&lt;p&gt;The easiest way to shrink the size of CoActionOS is to exclude used drivers. You can do this and still allow users to install custom apps and upgrade the kernel. You can further reduce the kernel size by limited the C/POSIX functions that are available to applications by modifying the symbol table in the CoActionOS kernel library. Finally, you can disregard the kernel symbol table and just compile the application and kernel in a unified binary.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Integrating Doxygen and Bootstrap</title>
@@ -5722,7 +5830,14 @@ make install
 &lt;pre&gt;
 cd /
 sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
-&lt;/pre&gt;</content>
+&lt;/pre&gt;
+&lt;h2 id=&quot;upgrading_coactionos_kernel_libraries&quot;&gt;Upgrading CoActionOS Kernel Libraries&lt;/h2&gt;
+
+&lt;p&gt;The latest version of the &lt;a href=&quot;https://github.com/CoActionOS/CoActionOS-Public&quot;&gt;CoActionOS source code is available on Github&lt;/a&gt;. Once downloaded, you can import the CoActionOS and CoActionOS-Applib projects directly into Eclipse (without even extracting the contents of the zip). In Eclipse, do File-&amp;gt;Import…-&amp;gt;Existing Projects into Workspace-&amp;gt;Select archive file.&lt;/p&gt;
+
+&lt;p&gt;Once imported, right click on CoActionOS and select Build Configurations-&amp;gt;Build All. Do the same for the CoActionOS-Applib project.&lt;/p&gt;
+
+&lt;p&gt;More information is available from this &lt;a href=&quot;/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS&quot;&gt;post&lt;/a&gt;.&lt;/p&gt;</content>
  </entry>
  
  <entry>
