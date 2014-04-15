@@ -90,67 +90,77 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>CoActionOS allows uers signals to notify different threads or processes about events. It uses POSIX signals as the underlying API. CoActionOS Applib provides a class to easily send and receive signals. When a thread or process receives a signal, its execution is interrupted and the signal handler is executed. This is distinct from hardware interrupt handlers because the signal interrupt will not execute until the receiving task is scheduled to execute. Also, hardware interrupts run in privileged mode where signal handlers run in user mode.</p>
+					<p>CoActionOS allows uers signals to notify different threads or processes 
+about events.  It uses POSIX signals as the underlying API.  CoActionOS 
+Applib provides a class to easily send and receive signals.  When a thread 
+or process receives a signal, its execution is interrupted and the signal 
+handler is executed.  This is distinct from hardware interrupt handlers 
+because the signal interrupt will not execute until the receiving task 
+is scheduled to execute.  Also, hardware interrupts run in privileged 
+mode where signal handlers run in user mode.</p>
 
-<p>The example below shows how to send a signal using software as well as how to enable hardware to send a signal when an event happens.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;cstdio&gt;</span>
-<span class='cp'>#include &lt;applib/Timer.hpp&gt;</span>
-<span class='cp'>#include &lt;applib/Tmr.hpp&gt;</span>
-<span class='cp'>#include &lt;applib/Signal.hpp&gt;</span>
+<p>The example below shows how to send a signal using software as well 
+as how to enable hardware to send a signal when an event happens.</p>
 
-<span class='k'>volatile</span> <span class='kt'>bool</span> <span class='n'>done</span><span class='p'>;</span>
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;cstdio&gt;</span>
+<span class="cp">#include &lt;applib/Timer.hpp&gt;</span>
+<span class="cp">#include &lt;applib/Tmr.hpp&gt;</span>
+<span class="cp">#include &lt;applib/Signal.hpp&gt;</span>
 
-<span class='kt'>void</span> <span class='nf'>sigusr</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>a</span><span class='p'>){</span>
-	<span class='n'>done</span> <span class='o'>=</span> <span class='nb'>true</span><span class='p'>;</span>
-<span class='p'>}</span>
+<span class="k">volatile</span> <span class="kt">bool</span> <span class="n">done</span><span class="p">;</span>
 
-<span class='k'>static</span> <span class='kt'>void</span> <span class='nf'>software_trigger_example</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>);</span>
-<span class='k'>static</span> <span class='kt'>void</span> <span class='nf'>hardware_trigger_example</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>);</span>
+<span class="kt">void</span> <span class="nf">sigusr</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">){</span>
+	<span class="n">done</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span>
-	<span class='n'>software_trigger_example</span><span class='p'>();</span>
-	<span class='n'>hardware_trigger_example</span><span class='p'>();</span>
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Both examples are complete</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
-	<span class='k'>return</span> <span class='mi'>0</span><span class='p'>;</span>
-<span class='p'>}</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">software_trigger_example</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="k">static</span> <span class="kt">void</span> <span class="nf">hardware_trigger_example</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
+	<span class="n">software_trigger_example</span><span class="p">();</span>
+	<span class="n">hardware_trigger_example</span><span class="p">();</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Both examples are complete</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 
 
-<span class='c1'>//this function sets up a handler and triggers it with software</span>
-<span class='kt'>void</span> <span class='nf'>software_trigger_example</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>){</span>
-	<span class='n'>Signal</span><span class='o'>::</span><span class='n'>Handler</span> <span class='n'>handler</span><span class='p'>(</span><span class='n'>sigusr</span><span class='p'>);</span> <span class='c1'>//the function sigusr is called with this handler</span>
-	<span class='n'>Signal</span><span class='o'>::</span><span class='n'>Event</span> <span class='n'>event</span><span class='p'>(</span><span class='n'>SIGUSR1</span><span class='p'>);</span>
-	<span class='n'>event</span><span class='p'>.</span><span class='n'>set_handler</span><span class='p'>(</span><span class='o'>&amp;</span><span class='n'>handler</span><span class='p'>);</span>
-	<span class='n'>done</span> <span class='o'>=</span> <span class='nb'>false</span><span class='p'>;</span>
-	<span class='n'>event</span><span class='p'>.</span><span class='n'>trigger</span><span class='p'>(</span><span class='n'>getpid</span><span class='p'>());</span> <span class='c1'>//send the signal to this process</span>
-	<span class='k'>while</span><span class='p'>(</span> <span class='o'>!</span><span class='n'>done</span> <span class='p'>){</span>
-		<span class='n'>Timer</span><span class='o'>::</span><span class='n'>wait_usec</span><span class='p'>(</span><span class='mi'>100</span><span class='p'>);</span>
-	<span class='p'>}</span>
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;SIGUSR1 has been handled</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
-<span class='p'>}</span>
+<span class="c1">//this function sets up a handler and triggers it with software</span>
+<span class="kt">void</span> <span class="nf">software_trigger_example</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+	<span class="n">Signal</span><span class="o">::</span><span class="n">Handler</span> <span class="n">handler</span><span class="p">(</span><span class="n">sigusr</span><span class="p">);</span> <span class="c1">//the function sigusr is called with this handler</span>
+	<span class="n">Signal</span><span class="o">::</span><span class="n">Event</span> <span class="n">event</span><span class="p">(</span><span class="n">SIGUSR1</span><span class="p">);</span>
+	<span class="n">event</span><span class="p">.</span><span class="n">set_handler</span><span class="p">(</span><span class="o">&amp;</span><span class="n">handler</span><span class="p">);</span>
+	<span class="n">done</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">event</span><span class="p">.</span><span class="n">trigger</span><span class="p">(</span><span class="n">getpid</span><span class="p">());</span> <span class="c1">//send the signal to this process</span>
+	<span class="k">while</span><span class="p">(</span> <span class="o">!</span><span class="n">done</span> <span class="p">){</span>
+		<span class="n">Timer</span><span class="o">::</span><span class="n">wait_usec</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;SIGUSR1 has been handled</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class='c1'>//this function sets up a handler and triggers it with hardware (such as a timer event)</span>
-<span class='kt'>void</span> <span class='nf'>hardware_trigger_example</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>){</span>
-	<span class='n'>Tmr</span> <span class='n'>tmr</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>);</span> <span class='c1'>//use hardware tmr0 as the triggering mechanism</span>
-	<span class='kt'>tmr_action_t</span> <span class='n'>action</span><span class='p'>;</span>
-	<span class='n'>Signal</span><span class='o'>::</span><span class='n'>Handler</span> <span class='n'>handler</span><span class='p'>(</span><span class='n'>sigusr</span><span class='p'>);</span> <span class='c1'>//the function sigusr is called with this handler</span>
-	<span class='n'>Signal</span><span class='o'>::</span><span class='n'>EventPhy</span> <span class='n'>event</span><span class='p'>(</span><span class='nb'>true</span><span class='p'>,</span> <span class='n'>SIGUSR1</span><span class='p'>);</span>
+<span class="c1">//this function sets up a handler and triggers it with hardware (such as a timer event)</span>
+<span class="kt">void</span> <span class="nf">hardware_trigger_example</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+	<span class="n">Tmr</span> <span class="n">tmr</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">//use hardware tmr0 as the triggering mechanism</span>
+	<span class="kt">tmr_action_t</span> <span class="n">action</span><span class="p">;</span>
+	<span class="n">Signal</span><span class="o">::</span><span class="n">Handler</span> <span class="n">handler</span><span class="p">(</span><span class="n">sigusr</span><span class="p">);</span> <span class="c1">//the function sigusr is called with this handler</span>
+	<span class="n">Signal</span><span class="o">::</span><span class="n">EventPhy</span> <span class="n">event</span><span class="p">(</span><span class="nb">true</span><span class="p">,</span> <span class="n">SIGUSR1</span><span class="p">);</span>
 
-	<span class='n'>tmr</span><span class='p'>.</span><span class='n'>init</span><span class='p'>(</span><span class='mi'>1000</span><span class='p'>);</span> <span class='c1'>//tmr0 will run as a 1KHz timer</span>
+	<span class="n">tmr</span><span class="p">.</span><span class="n">init</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span> <span class="c1">//tmr0 will run as a 1KHz timer</span>
 
-	<span class='n'>tmr</span><span class='p'>.</span><span class='n'>set</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>);</span> <span class='c1'>//set timer to 0</span>
-	<span class='n'>tmr</span><span class='p'>.</span><span class='n'>setoc</span><span class='p'>(</span><span class='n'>TMR_ACTION_CHANNEL_OC0</span><span class='p'>,</span> <span class='mi'>1000</span><span class='p'>);</span> <span class='c1'>//set output compare 0 to 1000 (triggers after one second)</span>
+	<span class="n">tmr</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">//set timer to 0</span>
+	<span class="n">tmr</span><span class="p">.</span><span class="n">setoc</span><span class="p">(</span><span class="n">TMR_ACTION_CHANNEL_OC0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span> <span class="c1">//set output compare 0 to 1000 (triggers after one second)</span>
 
-	<span class='n'>action</span> <span class='o'>=</span> <span class='n'>event</span><span class='p'>.</span><span class='n'>action</span><span class='p'>(</span><span class='n'>Tmr</span><span class='o'>::</span><span class='n'>INTERRUPT</span><span class='p'>,</span> <span class='mi'>0</span><span class='p'>);</span>
-	<span class='n'>tmr</span><span class='p'>.</span><span class='n'>setaction</span><span class='p'>(</span> <span class='o'>&amp;</span><span class='n'>action</span> <span class='p'>);</span>
-	<span class='n'>done</span> <span class='o'>=</span> <span class='nb'>false</span><span class='p'>;</span>
-	<span class='n'>tmr</span><span class='p'>.</span><span class='n'>on</span><span class='p'>();</span>
-	<span class='k'>while</span><span class='p'>(</span> <span class='o'>!</span><span class='n'>done</span> <span class='p'>){</span>
-		<span class='n'>Timer</span><span class='o'>::</span><span class='n'>wait_usec</span><span class='p'>(</span><span class='mi'>100</span><span class='p'>);</span>
-	<span class='p'>}</span>
+	<span class="n">action</span> <span class="o">=</span> <span class="n">event</span><span class="p">.</span><span class="n">action</span><span class="p">(</span><span class="n">Tmr</span><span class="o">::</span><span class="n">INTERRUPT</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+	<span class="n">tmr</span><span class="p">.</span><span class="n">setaction</span><span class="p">(</span> <span class="o">&amp;</span><span class="n">action</span> <span class="p">);</span>
+	<span class="n">done</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+	<span class="n">tmr</span><span class="p">.</span><span class="n">on</span><span class="p">();</span>
+	<span class="k">while</span><span class="p">(</span> <span class="o">!</span><span class="n">done</span> <span class="p">){</span>
+		<span class="n">Timer</span><span class="o">::</span><span class="n">wait_usec</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+	<span class="p">}</span>
 
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;SIGUSR1 has been handled (triggered by tmr0)</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
-<span class='p'>}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;SIGUSR1 has been handled (triggered by tmr0)</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
+
 				</div>
 			</div>
 

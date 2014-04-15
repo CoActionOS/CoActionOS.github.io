@@ -90,61 +90,58 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>Files can be accessed in several ways in CoActionOS:</p>
+					<p>Files can be accessed in several ways in CoActionOS:
+* standard C library (fopen(), fread(), etc)
+* POSIX API (open(), read(), etc)
+* <a href="/coactionos-applib/html/class_file.html">Applib File Class</a></p>
 
-<ul>
-<li>standard C library (fopen(), fread(), etc)</li>
+<p>The program below demonstrates how to use the <a href="/coactionos-applib/html/class_file.html">Applib File Class</a>.  It uses POSIX calls to access files but is easier to code than using POSIX.</p>
 
-<li>POSIX API (open(), read(), etc)</li>
-
-<li><a href="/coactionos-applib/html/class_file.html">Applib File Class</a></li>
-</ul>
-
-<p>The program below demonstrates how to use the <a href="/coactionos-applib/html/class_file.html">Applib File Class</a>. It uses POSIX calls to access files but is easier to code than using POSIX.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;cstdio&gt; </span><span class='c1'>//For printf and perror</span>
-<span class='cp'>#include &lt;cstdlib&gt; </span><span class='c1'>//for exit()</span>
-<span class='cp'>#include &lt;cstring&gt; </span><span class='c1'>//for strcpy and memset</span>
-<span class='cp'>#include &lt;applib/File.hpp&gt; </span><span class='c1'>//For the File class</span>
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;cstdio&gt; </span><span class="c1">//For printf and perror</span>
+<span class="cp">#include &lt;cstdlib&gt; </span><span class="c1">//for exit()</span>
+<span class="cp">#include &lt;cstring&gt; </span><span class="c1">//for strcpy and memset</span>
+<span class="cp">#include &lt;applib/File.hpp&gt; </span><span class="c1">//For the File class</span>
  
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span>
-  <span class='kt'>char</span> <span class='n'>tmp</span><span class='p'>[</span><span class='mi'>64</span><span class='p'>];</span>
-  <span class='n'>File</span> <span class='n'>f</span><span class='p'>;</span> <span class='c1'>//Declare f as a File class</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
+  <span class="kt">char</span> <span class="n">tmp</span><span class="p">[</span><span class="mi">64</span><span class="p">];</span>
+  <span class="n">File</span> <span class="n">f</span><span class="p">;</span> <span class="c1">//Declare f as a File class</span>
  
-  <span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Create a new file</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Create a new file</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
  
-  <span class='c1'>//Create a new file</span>
-  <span class='k'>if</span><span class='p'>(</span> <span class='n'>f</span><span class='p'>.</span><span class='n'>create</span><span class='p'>(</span><span class='s'>&quot;/home/myfile.txt&quot;</span><span class='p'>)</span> <span class='o'>&lt;</span> <span class='mi'>0</span> <span class='p'>){</span>
-    <span class='n'>perror</span><span class='p'>(</span><span class='s'>&quot;failed to create file&quot;</span><span class='p'>);</span>
-    <span class='n'>exit</span><span class='p'>(</span><span class='mi'>1</span><span class='p'>);</span>
-  <span class='p'>}</span>
+  <span class="c1">//Create a new file</span>
+  <span class="k">if</span><span class="p">(</span> <span class="n">f</span><span class="p">.</span><span class="n">create</span><span class="p">(</span><span class="s">&quot;/home/myfile.txt&quot;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">){</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">&quot;failed to create file&quot;</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+  <span class="p">}</span>
  
-  <span class='c1'>//Construct a string in a temporary variable</span>
-  <span class='n'>strcpy</span><span class='p'>(</span><span class='n'>tmp</span><span class='p'>,</span> <span class='s'>&quot;This is a string to write to the file</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
+  <span class="c1">//Construct a string in a temporary variable</span>
+  <span class="n">strcpy</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="s">&quot;This is a string to write to the file</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
  
-  <span class='c1'>//Write data to the file</span>
-  <span class='k'>if</span><span class='p'>(</span> <span class='n'>f</span><span class='p'>.</span><span class='n'>write</span><span class='p'>(</span><span class='n'>tmp</span><span class='p'>,</span> <span class='n'>strlen</span><span class='p'>(</span><span class='n'>tmp</span><span class='p'>))</span> <span class='o'>&lt;</span> <span class='mi'>0</span> <span class='p'>){</span>
-    <span class='n'>perror</span><span class='p'>(</span><span class='s'>&quot;failed to write&quot;</span><span class='p'>);</span>
-  <span class='p'>}</span>
+  <span class="c1">//Write data to the file</span>
+  <span class="k">if</span><span class="p">(</span> <span class="n">f</span><span class="p">.</span><span class="n">write</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">strlen</span><span class="p">(</span><span class="n">tmp</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">){</span>
+    <span class="n">perror</span><span class="p">(</span><span class="s">&quot;failed to write&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
  
-  <span class='c1'>//Close the file</span>
-  <span class='n'>f</span><span class='p'>.</span><span class='n'>close</span><span class='p'>();</span>
+  <span class="c1">//Close the file</span>
+  <span class="n">f</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
  
-  <span class='c1'>//Clear the contents of tmp</span>
-  <span class='n'>memset</span><span class='p'>(</span><span class='n'>tmp</span><span class='p'>,</span> <span class='mi'>0</span><span class='p'>,</span> <span class='mi'>64</span><span class='p'>);</span>
+  <span class="c1">//Clear the contents of tmp</span>
+  <span class="n">memset</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>
  
-  <span class='c1'>//Open the file for reading</span>
-  <span class='n'>f</span><span class='p'>.</span><span class='n'>open</span><span class='p'>(</span><span class='s'>&quot;/home/myfile.txt&quot;</span><span class='p'>);</span>
+  <span class="c1">//Open the file for reading</span>
+  <span class="n">f</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="s">&quot;/home/myfile.txt&quot;</span><span class="p">);</span>
  
-  <span class='c1'>//Read and show contents</span>
-  <span class='n'>f</span><span class='p'>.</span><span class='n'>read</span><span class='p'>(</span><span class='n'>tmp</span><span class='p'>,</span> <span class='mi'>64</span><span class='p'>);</span>
-  <span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Read:%s&quot;</span><span class='p'>,</span> <span class='n'>tmp</span><span class='p'>);</span>
+  <span class="c1">//Read and show contents</span>
+  <span class="n">f</span><span class="p">.</span><span class="n">read</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="mi">64</span><span class="p">);</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Read:%s&quot;</span><span class="p">,</span> <span class="n">tmp</span><span class="p">);</span>
  
-  <span class='c1'>//Close the file</span>
-  <span class='n'>f</span><span class='p'>.</span><span class='n'>close</span><span class='p'>();</span>
+  <span class="c1">//Close the file</span>
+  <span class="n">f</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
  
-  <span class='k'>return</span> <span class='mi'>0</span><span class='p'>;</span>
-<span class='p'>}</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
+
 				</div>
 			</div>
 

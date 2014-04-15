@@ -90,53 +90,64 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>The CoActionOS Applib includes a <a href="/coactionos-applib/html/class_string.html">String class</a> similar to the C++ STL string class. The Applib String class avoids using dynamic memory allocation so that it can run well on systems with very little memory. It is based on standard C string manipulation (such as strcpy(), strcmp()) but gives the ease of use of the STL string class.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;cstdio&gt;</span>
-<span class='cp'>#include &lt;applib/String.hpp&gt;</span>
+					<p>The CoActionOS Applib includes a 
+<a href="/coactionos-applib/html/class_string.html">String class</a> 
+similar to the C++ STL string class.  The Applib String class avoids 
+using dynamic memory allocation so that it can run well on systems 
+with very little memory.  It is based on standard C 
+string manipulation (such as strcpy(), strcmp()) but gives the ease 
+of use of the STL string class.</p>
 
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span>
-	<span class='c1'>//String Types allows us to allocate various string sizes</span>
-	<span class='n'>StringMedium</span> <span class='n'>mstring</span><span class='p'>;</span> <span class='c1'>//This is the same as String&lt;64&gt; mstring;</span>
-	<span class='n'>StringLarge</span> <span class='n'>lstring</span><span class='p'>;</span> <span class='c1'>//This is the same as String&lt;128&gt; lstring;</span>
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;cstdio&gt;</span>
+<span class="cp">#include &lt;applib/String.hpp&gt;</span>
 
-	<span class='n'>mstring</span> <span class='o'>=</span> <span class='s'>&quot;Hello&quot;</span><span class='p'>;</span> <span class='c1'>//assignment</span>
-	<span class='n'>lstring</span> <span class='o'>&lt;&lt;</span> <span class='s'>&quot;Hello&quot;</span><span class='p'>;</span> <span class='c1'>//concatenation</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
+	<span class="c1">//String Types allows us to allocate various string sizes</span>
+	<span class="n">StringMedium</span> <span class="n">mstring</span><span class="p">;</span> <span class="c1">//This is the same as String&lt;64&gt; mstring;</span>
+	<span class="n">StringLarge</span> <span class="n">lstring</span><span class="p">;</span> <span class="c1">//This is the same as String&lt;128&gt; lstring;</span>
 
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Medium using %d of %d bytes</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>,</span> <span class='n'>mstring</span><span class='p'>.</span><span class='n'>size</span><span class='p'>(),</span> <span class='n'>mstring</span><span class='p'>.</span><span class='n'>capacity</span><span class='p'>());</span>
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Large using %d of %d bytes</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>,</span> <span class='n'>lstring</span><span class='p'>.</span><span class='n'>size</span><span class='p'>(),</span> <span class='n'>lstring</span><span class='p'>.</span><span class='n'>capacity</span><span class='p'>());</span>
+	<span class="n">mstring</span> <span class="o">=</span> <span class="s">&quot;Hello&quot;</span><span class="p">;</span> <span class="c1">//assignment</span>
+	<span class="n">lstring</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello&quot;</span><span class="p">;</span> <span class="c1">//concatenation</span>
+
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Medium using %d of %d bytes</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">mstring</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">mstring</span><span class="p">.</span><span class="n">capacity</span><span class="p">());</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Large using %d of %d bytes</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">lstring</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span> <span class="n">lstring</span><span class="p">.</span><span class="n">capacity</span><span class="p">());</span>
 
 
-	<span class='c1'>//Strings can be compared C++ style (to const char*)</span>
-	<span class='k'>if</span><span class='p'>(</span> <span class='n'>mstring</span> <span class='o'>==</span> <span class='s'>&quot;Hello&quot;</span> <span class='p'>){</span>
-		<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Hello</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
-	<span class='p'>}</span>
+	<span class="c1">//Strings can be compared C++ style (to const char*)</span>
+	<span class="k">if</span><span class="p">(</span> <span class="n">mstring</span> <span class="o">==</span> <span class="s">&quot;Hello&quot;</span> <span class="p">){</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+	<span class="p">}</span>
 
-	<span class='c1'>//Two strings can also be compared</span>
-	<span class='k'>if</span><span class='p'>(</span> <span class='n'>mstring</span> <span class='o'>==</span> <span class='n'>lstring</span> <span class='p'>){</span>
-		<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;They are the same</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span>
-	<span class='p'>}</span>
+	<span class="c1">//Two strings can also be compared</span>
+	<span class="k">if</span><span class="p">(</span> <span class="n">mstring</span> <span class="o">==</span> <span class="n">lstring</span> <span class="p">){</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">&quot;They are the same</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+	<span class="p">}</span>
 
-	<span class='c1'>//We can allows write numbers to the string and concatenate strings</span>
-	<span class='n'>mstring</span> <span class='o'>&lt;&lt;</span> <span class='s'>&quot; Number #&quot;</span> <span class='o'>&lt;&lt;</span> <span class='mi'>5</span> <span class='o'>&lt;&lt;</span> <span class='s'>&quot;</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>;</span>
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;%s&quot;</span><span class='p'>,</span> <span class='n'>mstring</span><span class='p'>.</span><span class='n'>c_str</span><span class='p'>());</span> <span class='c1'>//it is converted to a c string just like STL string</span>
+	<span class="c1">//We can allows write numbers to the string and concatenate strings</span>
+	<span class="n">mstring</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; Number #&quot;</span> <span class="o">&lt;&lt;</span> <span class="mi">5</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="p">,</span> <span class="n">mstring</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span> <span class="c1">//it is converted to a c string just like STL string</span>
 
-	<span class='c1'>//We can also concatenation strings</span>
-	<span class='n'>mstring</span> <span class='o'>=</span> <span class='s'>&quot;I am mstring</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>;</span>
-	<span class='n'>lstring</span> <span class='o'>=</span> <span class='s'>&quot;I am lstring</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>;</span>
-	<span class='n'>mstring</span> <span class='o'>&lt;&lt;</span> <span class='n'>lstring</span><span class='p'>;</span>
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;%s&quot;</span><span class='p'>,</span> <span class='n'>mstring</span><span class='p'>.</span><span class='n'>c_str</span><span class='p'>());</span>
+	<span class="c1">//We can also concatenation strings</span>
+	<span class="n">mstring</span> <span class="o">=</span> <span class="s">&quot;I am mstring</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+	<span class="n">lstring</span> <span class="o">=</span> <span class="s">&quot;I am lstring</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+	<span class="n">mstring</span> <span class="o">&lt;&lt;</span> <span class="n">lstring</span><span class="p">;</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;%s&quot;</span><span class="p">,</span> <span class="n">mstring</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
 
-	<span class='c1'>//copy the first five bytes of lstring to mstring</span>
-	<span class='c1'>//This is as close as we can get to implementing substr() with dynamic memory allocation</span>
-	<span class='n'>lstring</span> <span class='o'>=</span> <span class='s'>&quot;Hello mstring&quot;</span><span class='p'>;</span>
-	<span class='n'>mstring</span><span class='p'>.</span><span class='n'>clear</span><span class='p'>();</span> <span class='c1'>//since copy doesn&#39;t add a 0 terminator - we clear mstirng now</span>
-	<span class='n'>lstring</span><span class='p'>.</span><span class='n'>copy</span><span class='p'>(</span><span class='n'>mstring</span><span class='p'>,</span> <span class='mi'>5</span><span class='p'>,</span> <span class='mi'>0</span><span class='p'>);</span>
+	<span class="c1">//copy the first five bytes of lstring to mstring</span>
+	<span class="c1">//This is as close as we can get to implementing substr() with dynamic memory allocation</span>
+	<span class="n">lstring</span> <span class="o">=</span> <span class="s">&quot;Hello mstring&quot;</span><span class="p">;</span>
+	<span class="n">mstring</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span> <span class="c1">//since copy doesn&#39;t add a 0 terminator - we clear mstirng now</span>
+	<span class="n">lstring</span><span class="p">.</span><span class="n">copy</span><span class="p">(</span><span class="n">mstring</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
 
-	<span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;Now mstring is %s</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>,</span> <span class='n'>mstring</span><span class='p'>.</span><span class='n'>c_str</span><span class='p'>());</span>
-	<span class='k'>return</span> <span class='mi'>0</span><span class='p'>;</span>
-<span class='p'>}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;Now mstring is %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">mstring</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>That about covers the basics. You can read the <a href="/coactionos-applib/html/class_string.html">String class API</a> for more information.</p>
+
+<p>That about covers the basics.  You can read the 
+<a href="/coactionos-applib/html/class_string.html">String class API</a> 
+for more information.</p>
+
 				</div>
 			</div>
 

@@ -90,158 +90,199 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>GCC is a open source C compiler which can be downloaded, compiled, and installed on Windows. It is the compiler of choice for CoActionOS.</p>
+					<p>GCC is a open source C compiler which can be downloaded, compiled, and 
+installed on Windows.  It is the compiler of choice for CoActionOS.</p>
 
-<p>To build and install GCC for the ARM Cortex M3 architecture on a computer running Windows XP, Vista or 7, you must first install MinGW. You can download the installer from the <a href="http://www.mingw.org/wiki/Getting_Started">MinGW Getting Started</a> and download the latest installer (<a href="http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/">mingw-get-inst</a>). When running the installer, include:</p>
+<p>To build and install GCC for the ARM Cortex M3 architecture on a 
+computer running Windows XP, Vista or 7, you must first install 
+MinGW.  You can download the installer from 
+the <a href="http://www.mingw.org/wiki/Getting_Started">MinGW Getting Started</a> and 
+download the latest 
+installer (<a href="http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/">mingw-get-inst</a>).  When running 
+the installer, include:</p>
 
 <ul>
-<li>C Compiler</li>
-
-<li>C++ Compiler</li>
-
-<li>MSYS Basic System</li>
-
-<li>MinGW Developer ToolKit</li>
+  <li>C Compiler</li>
+  <li>C++ Compiler</li>
+  <li>MSYS Basic System</li>
+  <li>MinGW Developer ToolKit</li>
 </ul>
 
-<p>The rest of this tutorial assumes you are installing MinGW in the default directory (C:\MinGW) and that the installer created a Start Menu item called “MinGW”.</p>
+<p>The rest of this tutorial assumes you are installing MinGW in the default 
+directory (C:\MinGW) and that the installer created a Start Menu 
+item called “MinGW”.</p>
 
-<p>The default console application lacks key functionality (such as copy/paste, resize-ability, customization). It is recommended to use mintty instead. To install mintty, open a MSYS Shell by going to the “MinGW” folder under “All Programs” in the start menu. At the shell prompt type:</p>
-<div class='highlight'><pre><code class='bash'>mingw-get install mintty
+<p>The default console application lacks key 
+functionality (such as copy/paste, resize-ability, customization).  It 
+is recommended to use mintty instead.  To install mintty, open a 
+MSYS Shell by going to the “MinGW” folder under “All Programs” in 
+the start menu.  At the shell prompt type:</p>
+
+<div class="highlight"><pre><code class="bash">mingw-get install mintty
 </code></pre></div>
-<p>To launch mintty, edit the “MSYS Shell” shortcut by right-clicking the shortcut in the “Start Menu” under “All Programs” and “MinGW” and clicking properties. Then add ”–mintty” to the end of target so that target reads “C:\MinGW\msys\1.0\msys.bat –mintty”.</p>
 
-<p>To ease the downloading of required software, wget can be copied to the C:\MinGW\bin directory. The executable can be found in the “wget mingwPORT”:https://sourceforge.net/project/downloading.php?group_id=2435&amp;filename=wget-1.9.1-mingwPORT.tar.bz2&amp;a=85590697. This step is optional; if you choose to skip it, you will have to download the prerequisite and GCC source code manually.</p>
+<p>To launch mintty, edit the “MSYS Shell” shortcut by right-clicking the 
+shortcut in the “Start Menu” under “All Programs” and “MinGW” and 
+clicking properties.  Then add “–mintty” to the end of target so 
+that target reads “C:\MinGW\msys\1.0\msys.bat –mintty”.</p>
+
+<p>To ease the downloading of required software, wget can be copied to the C:\MinGW\bin directory.  The executable can be found in the “wget mingwPORT”:https://sourceforge.net/project/downloading.php?group_id=2435&amp;filename=wget-1.9.1-mingwPORT.tar.bz2&amp;a=85590697.  This step is optional; if you choose to skip it, you will have to download the prerequisite and GCC source code manually.</p>
 
 <p>The GMP, PPL, MPFR, and MPC libraries may be installed from source. The latest versions can be downloaded from:</p>
 
 <ul>
-<li><a href="http://gmplib.org/">GMP</a></li>
-
-<li><a href="http://bugseng.com/products/ppl/download">PPL</a></li>
-
-<li><a href="http://www.mpfr.org/">MPFR</a></li>
-
-<li><a href="http://www.multiprecision.org/">MPC</a></li>
+  <li><a href="http://gmplib.org/">GMP</a></li>
+  <li><a href="http://bugseng.com/products/ppl/download">PPL</a></li>
+  <li><a href="http://www.mpfr.org/">MPFR</a></li>
+  <li><a href="http://www.multiprecision.org/">MPC</a></li>
 </ul>
 
-<p>Once you download the source, enter the following commands in the Terminal. Replace the version values with the version you download.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>export </span><span class='nv'>GMP_VERSION</span><span class='o'>=</span>5.1.2
-<span class='c'>#If you use ppl-1.0, you need to use GMP 5.0.x</span>
-<span class='nb'>export </span><span class='nv'>PPL_VERSION</span><span class='o'>=</span>1.1pre9
-<span class='nb'>export </span><span class='nv'>MPFR_VERSION</span><span class='o'>=</span>3.1.2
-<span class='nb'>export </span><span class='nv'>MPC_VERSION</span><span class='o'>=</span>1.0.1
-<span class='nb'>export </span><span class='nv'>TOOLSPATH</span><span class='o'>=</span>/usr/local/CoActionOS
+<p>Once you download the source, enter the following commands in the 
+Terminal.  Replace the version values with the version you download.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">export </span><span class="nv">GMP_VERSION</span><span class="o">=</span>5.1.2
+<span class="c">#If you use ppl-1.0, you need to use GMP 5.0.x</span>
+<span class="nb">export </span><span class="nv">PPL_VERSION</span><span class="o">=</span>1.1pre9
+<span class="nb">export </span><span class="nv">MPFR_VERSION</span><span class="o">=</span>3.1.2
+<span class="nb">export </span><span class="nv">MPC_VERSION</span><span class="o">=</span>1.0.1
+<span class="nb">export </span><span class="nv">TOOLSPATH</span><span class="o">=</span>/usr/local/CoActionOS
 mkdir -p gmp
 mkdir -p ppl
 mkdir -p mpfr
 mkdir -p mpc
-<span class='nb'>cd </span>gmp
-../gmp-<span class='nv'>$GMP_VERSION</span>/configure --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span>  --enable-cxx
+<span class="nb">cd </span>gmp
+../gmp-<span class="nv">$GMP_VERSION</span>/configure --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span>  --enable-cxx
 make
 make install
-<span class='nb'>cd</span> ../ppl
-<span class='c'>#on mingw add: --disable-shared --enable-static --disable-debugging</span>
-../ppl-<span class='nv'>$PPL_VERSION</span>/configure --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> --with-gmp<span class='o'>=</span><span class='nv'>$TOOLSPATH</span>
+<span class="nb">cd</span> ../ppl
+<span class="c">#on mingw add: --disable-shared --enable-static --disable-debugging</span>
+../ppl-<span class="nv">$PPL_VERSION</span>/configure --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span> --with-gmp<span class="o">=</span><span class="nv">$TOOLSPATH</span>
 make
 make install
-<span class='nb'>cd</span> ../mpfr
-../mpfr-<span class='nv'>$MPFR_VERSION</span>/configure --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> --with-gmp<span class='o'>=</span><span class='nv'>$TOOLSPATH</span>
+<span class="nb">cd</span> ../mpfr
+../mpfr-<span class="nv">$MPFR_VERSION</span>/configure --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span> --with-gmp<span class="o">=</span><span class="nv">$TOOLSPATH</span>
 make
 make install
-<span class='nb'>cd</span> ../mpc
-../mpc-<span class='nv'>$MPC_VERSION</span>/configure --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> --with-gmp<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> --enable-static --disable-shared
+<span class="nb">cd</span> ../mpc
+../mpc-<span class="nv">$MPC_VERSION</span>/configure --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span> --with-gmp<span class="o">=</span><span class="nv">$TOOLSPATH</span> --enable-static --disable-shared
 make
 make install
 </code></pre></div>
-<p>Now that all prerequisites are installed, binutils, gcc, and newlib can be compiled and installed using the following commands.</p>
-<div class='highlight'><pre><code class='bash'><span class='c'>#Define the desired versions</span>
-<span class='nb'>export </span><span class='nv'>BINUTILS_VERSION</span><span class='o'>=</span>2.23.1
-<span class='nb'>export </span><span class='nv'>GCC_VERSION</span><span class='o'>=</span>4.7.3
-<span class='nb'>export </span><span class='nv'>NEWLIB_VERSION</span><span class='o'>=</span>1.19.0
-<span class='nb'>export </span><span class='nv'>TOOLSPATH</span><span class='o'>=</span>/usr/local/CoActionOS
-<span class='nb'>export </span><span class='nv'>PROGPREFIX</span><span class='o'>=</span>arm-cm3-eabi-
-<span class='nb'>export </span><span class='nv'>ARCH</span><span class='o'>=</span>arm-cm3-eabi
+
+<p>Now that all prerequisites are installed, binutils, gcc, and newlib 
+can be compiled and installed using the following commands.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="c">#Define the desired versions</span>
+<span class="nb">export </span><span class="nv">BINUTILS_VERSION</span><span class="o">=</span>2.23.1
+<span class="nb">export </span><span class="nv">GCC_VERSION</span><span class="o">=</span>4.7.3
+<span class="nb">export </span><span class="nv">NEWLIB_VERSION</span><span class="o">=</span>1.19.0
+<span class="nb">export </span><span class="nv">TOOLSPATH</span><span class="o">=</span>/usr/local/CoActionOS
+<span class="nb">export </span><span class="nv">PROGPREFIX</span><span class="o">=</span>arm-cm3-eabi-
+<span class="nb">export </span><span class="nv">ARCH</span><span class="o">=</span>arm-cm3-eabi
 mkdir binutils
 mkdir gcc
 mkdir newlib
-<span class='c'>#Download and extract the source</span>
-<span class='nv'>$GET</span> ftp://mirrors.kernel.org/gnu/binutils/binutils-<span class='nv'>$BINUTILS_VERSION</span>.tar.gz
-tar -zxvf binutils-<span class='nv'>$BINUTILS_VERSION</span>.tar.gz
-<span class='nv'>$GET</span> ftp://mirrors.kernel.org/gnu/gcc/gcc-<span class='nv'>$GCC_VERSION</span>/gcc-<span class='nv'>$GCC_VERSION</span>.tar.gz
-tar -zxvf gcc-<span class='nv'>$GCC_VERSION</span>.tar.gz
-<span class='nv'>$GET</span> ftp://sources.redhat.com/pub/newlib/newlib-<span class='nv'>$NEWLIB_VERSION</span>.tar.gz
-tar -zxvf newlib-<span class='nv'>$NEWLIB_VERSION</span>.tar.gz
+<span class="c">#Download and extract the source</span>
+<span class="nv">$GET</span> ftp://mirrors.kernel.org/gnu/binutils/binutils-<span class="nv">$BINUTILS_VERSION</span>.tar.gz
+tar -zxvf binutils-<span class="nv">$BINUTILS_VERSION</span>.tar.gz
+<span class="nv">$GET</span> ftp://mirrors.kernel.org/gnu/gcc/gcc-<span class="nv">$GCC_VERSION</span>/gcc-<span class="nv">$GCC_VERSION</span>.tar.gz
+tar -zxvf gcc-<span class="nv">$GCC_VERSION</span>.tar.gz
+<span class="nv">$GET</span> ftp://sources.redhat.com/pub/newlib/newlib-<span class="nv">$NEWLIB_VERSION</span>.tar.gz
+tar -zxvf newlib-<span class="nv">$NEWLIB_VERSION</span>.tar.gz
 </code></pre></div>
-<p>The binutils source needs to be built first. Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the MinGW shell:</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd </span>binutils
-../binutils-<span class='nv'>$BINUTILS_VERSION</span>/configure <span class='se'>\</span>
-  --program-prefix<span class='o'>=</span><span class='nv'>$PROGPREFIX</span> <span class='se'>\</span>
-  --target<span class='o'>=</span><span class='nv'>$ARCH</span> <span class='se'>\</span>
-  --disable-nls <span class='se'>\</span>
-  --disable-werror <span class='se'>\</span>
-  --with-cpu<span class='o'>=</span>cortex-m3 <span class='se'>\</span>
-  --with-no-thumb-interwork <span class='se'>\</span>
-  --with-mode<span class='o'>=</span>thumb <span class='se'>\</span>
-  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
-  --with-gnu-as <span class='se'>\</span>
+
+<p>The binutils source needs to be built first.  Again in the same 
+directory where the binutils source was extracted, 
+type (or copy and paste) the following commands in the MinGW shell:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>binutils
+../binutils-<span class="nv">$BINUTILS_VERSION</span>/configure <span class="se">\</span>
+  --program-prefix<span class="o">=</span><span class="nv">$PROGPREFIX</span> <span class="se">\</span>
+  --target<span class="o">=</span><span class="nv">$ARCH</span> <span class="se">\</span>
+  --disable-nls <span class="se">\</span>
+  --disable-werror <span class="se">\</span>
+  --with-cpu<span class="o">=</span>cortex-m3 <span class="se">\</span>
+  --with-no-thumb-interwork <span class="se">\</span>
+  --with-mode<span class="o">=</span>thumb <span class="se">\</span>
+  --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span> <span class="se">\</span>
+  --with-gnu-as <span class="se">\</span>
   --with-gnu-ld
 make
 make install
-<span class='nb'>export </span><span class='nv'>PATH</span><span class='o'>=</span><span class='nv'>$TOOLSPATH</span>/bin:<span class='nv'>$PATH</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$TOOLSPATH</span>/bin:<span class="nv">$PATH</span>
 </code></pre></div>
+
 <p>After binutils is built, GCC is next:</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../gcc
-../gcc-<span class='nv'>$GCC_VERSION</span>/configure <span class='se'>\</span>
-     --disable-werror <span class='se'>\</span>
-     --target<span class='o'>=</span><span class='nv'>$ARCH</span> <span class='se'>\</span>
-     --with-cpu<span class='o'>=</span>cortex-m3 <span class='se'>\</span>
-     --with-mode<span class='o'>=</span>thumb <span class='se'>\</span>
-     --disable-multilib <span class='se'>\</span>
-     --with-float<span class='o'>=</span>soft <span class='se'>\</span>
-     --with-newlib <span class='se'>\</span>
-     --enable-languages<span class='o'>=</span><span class='s2'>&quot;c,c++&quot;</span> <span class='se'>\</span>
-     --disable-shared <span class='se'>\</span>
-     --with-gnu-as <span class='se'>\</span>
-     --with-gnu-ld <span class='se'>\</span>
-     --program-prefix<span class='o'>=</span><span class='nv'>$PROGPREFIX</span> <span class='se'>\</span>
-     --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
-     --with-no-thumb-interwork <span class='se'>\</span>
-     --disable-libssp <span class='se'>\</span>
-     --with-gmp<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
-     --with-ppl<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ../gcc
+../gcc-<span class="nv">$GCC_VERSION</span>/configure <span class="se">\</span>
+     --disable-werror <span class="se">\</span>
+     --target<span class="o">=</span><span class="nv">$ARCH</span> <span class="se">\</span>
+     --with-cpu<span class="o">=</span>cortex-m3 <span class="se">\</span>
+     --with-mode<span class="o">=</span>thumb <span class="se">\</span>
+     --disable-multilib <span class="se">\</span>
+     --with-float<span class="o">=</span>soft <span class="se">\</span>
+     --with-newlib <span class="se">\</span>
+     --enable-languages<span class="o">=</span><span class="s2">&quot;c,c++&quot;</span> <span class="se">\</span>
+     --disable-shared <span class="se">\</span>
+     --with-gnu-as <span class="se">\</span>
+     --with-gnu-ld <span class="se">\</span>
+     --program-prefix<span class="o">=</span><span class="nv">$PROGPREFIX</span> <span class="se">\</span>
+     --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span> <span class="se">\</span>
+     --with-no-thumb-interwork <span class="se">\</span>
+     --disable-libssp <span class="se">\</span>
+     --with-gmp<span class="o">=</span><span class="nv">$TOOLSPATH</span> <span class="se">\</span>
+     --with-ppl<span class="o">=</span><span class="nv">$TOOLSPATH</span> <span class="se">\</span>
      --enable-target-optspace
 make all-gcc
 make install-gcc
 </code></pre></div>
-<p>Now, we need to build newlib. In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions. The <strong>BUFSIZ</strong> definition specifies what size buffer to use with printf() and file I/O. Smaller values mean slower performance using less RAM. To build newlib, type (or copy and paste) the following in a terminal window:</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../newlib
-../newlib-<span class='nv'>$NEWLIB_VERSION</span>/configure <span class='se'>\</span>
-  --target<span class='o'>=</span><span class='nv'>$ARCH</span> <span class='se'>\</span>
-  --disable-multilib <span class='se'>\</span>
-  --disable-werror <span class='se'>\</span>
-  --with-gnu-as <span class='se'>\</span>
-  --with-gnu-ld <span class='se'>\</span>
-  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span> <span class='se'>\</span>
-  --disable-newlib-supplied-syscalls <span class='se'>\</span>
-  --disable-nls <span class='se'>\</span>
-  --enable-target-optspace <span class='se'>\</span>
-  --disable-libssp <span class='se'>\</span>
-  --enable-newlib-reent-small <span class='se'>\</span>
-  --enable-newlib-multithread <span class='se'>\</span>
+
+<p>Now, we need to build newlib.  In order to get newlib to build the 
+floating point libraries correctly, we pass 
+the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN 
+definitions.  The <strong>BUFSIZ</strong> definition specifies what size buffer 
+to use with printf() and file I/O.  Smaller values mean slower 
+performance using less RAM.  To build newlib, 
+type (or copy and paste) the following in a terminal window:</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ../newlib
+../newlib-<span class="nv">$NEWLIB_VERSION</span>/configure <span class="se">\</span>
+  --target<span class="o">=</span><span class="nv">$ARCH</span> <span class="se">\</span>
+  --disable-multilib <span class="se">\</span>
+  --disable-werror <span class="se">\</span>
+  --with-gnu-as <span class="se">\</span>
+  --with-gnu-ld <span class="se">\</span>
+  --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span> <span class="se">\</span>
+  --disable-newlib-supplied-syscalls <span class="se">\</span>
+  --disable-nls <span class="se">\</span>
+  --enable-target-optspace <span class="se">\</span>
+  --disable-libssp <span class="se">\</span>
+  --enable-newlib-reent-small <span class="se">\</span>
+  --enable-newlib-multithread <span class="se">\</span>
   --disable-libgloss
-make <span class='nv'>CFLAGS_FOR_TARGET</span><span class='o'>=</span><span class='s2'>&quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;</span>
+make <span class="nv">CFLAGS_FOR_TARGET</span><span class="o">=</span><span class="s2">&quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;</span>
 sudo make install
 </code></pre></div>
+
 <p>Finally, we finish building GCC.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../gcc
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ../gcc
 make
 make install
 </code></pre></div>
-<p>The final step is add the executables to the MinGW Shell path. This can be done by typing the following in a MinGW Shell then restarting the shell.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>echo</span> <span class='s1'>&#39;export PATH=/usr/local/CoActionOS/bin:$PATH&#39;</span> &gt;&gt; /usr/etc/profile
+
+<p>The final step is add the executables to the MinGW Shell path. This 
+can be done by typing the following in a MinGW Shell then restarting 
+the shell.</p>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">echo</span> <span class="s1">&#39;export PATH=/usr/local/CoActionOS/bin:$PATH&#39;</span> &gt;&gt; /usr/etc/profile
 </code></pre></div>
-<p>That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in C:\MinGW\msys\1.0\local\CoActionOS.</p>
+
+<p>That’s it.  If all went well, a dedicated ARM Cortex M3 compiler is 
+now installed in C:\MinGW\msys\1.0\local\CoActionOS.</p>
+
+
 				</div>
 			</div>
 

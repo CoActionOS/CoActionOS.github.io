@@ -90,107 +90,122 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<h2 id="from_development_to_production">From Development to Production</h2>
+					<h2 id="from-development-to-production">From Development to Production</h2>
 
 <p>There are two approaches to deploying CoActionOS.</p>
 
 <ol>
-<li>As Is</li>
-
-<li>Stripped Down</li>
+  <li>As Is</li>
+  <li>Stripped Down</li>
 </ol>
 
-<h3 id="deploy_as_is">Deploy As Is</h3>
+<h3 id="deploy-as-is">Deploy As Is</h3>
 
-<p>The first option is to deploy CoActionOS as is without stripping away any part of the OS. This method has the following advantages.</p>
+<p>The first option is to deploy CoActionOS as is without stripping away any part of the OS.  This method has the following advantages.</p>
 
 <ul>
-<li>User Upgradeable Firmware (Applications and Kernel)</li>
-
-<li>User Installable Apps (3rd Parties can innovate on your product!)</li>
+  <li>User Upgradeable Firmware (Applications and Kernel)</li>
+  <li>User Installable Apps (3rd Parties can innovate on your product!)</li>
 </ul>
 
 <p>The disadvantages:</p>
 
 <ul>
-<li>Larger ROM size</li>
-
-<li>Security (Users can install code on your device)</li>
+  <li>Larger ROM size</li>
+  <li>Security (Users can install code on your device)</li>
 </ul>
 
-<h3 id="deploy_a_stripped_down_version">Deploy a Stripped Down Version</h3>
+<h3 id="deploy-a-stripped-down-version">Deploy a Stripped Down Version</h3>
 
-<p>If the cons for the As Is deployment option outweight the pros, you can also deploy a stripped down version of CoActionOS. You can strip away any part of the OS that you don’t need.</p>
+<p>If the cons for the As Is deployment option outweight the pros, you can also deploy a stripped down version of CoActionOS.  You can strip 
+away any part of the OS that you don’t need.</p>
 
-<h4 id="exclude_unused_drivers">Exclude Unused Drivers</h4>
+<h4 id="exclude-unused-drivers">Exclude Unused Drivers</h4>
 
-<p>The easiest way to shrink the ROM size is to remove device drivers or filesystems that are not needed. If you look at the files in the <a href="https://github.com/CoActionOS/CoActionOS-HW">board support packages</a>, you will find a file called devices.c. This file references the device drivers and filesystems that will be available to applications. You just need to comment out anything you are not using to exclude those items from the binary. For example, the following lines are commented out to exclude the I2C drivers.</p>
-<div class='highlight'><pre><code class='cpp'><span class='c1'>//DEVICE_PERIPH(&quot;i2c0&quot;, hwpl_i2c, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
-<span class='c1'>//DEVICE_PERIPH(&quot;i2c1&quot;, hwpl_i2c, 1, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
-<span class='c1'>//DEVICE_PERIPH(&quot;i2c2&quot;, hwpl_i2c, 2, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
+<p>The easiest way to shrink the ROM size is to remove device drivers or filesystems that are not needed.  If you look at the files in the <a href="https://github.com/CoActionOS/CoActionOS-HW">board
+support packages</a>, you will find a file called devices.c.  This file references the device drivers
+and filesystems that will be available to applications.  You just need to comment out anything you are not using to exclude those items
+from the binary.  For example, the following lines are commented out to exclude the I2C drivers.</p>
+
+<div class="highlight"><pre><code class="cpp"><span class="c1">//DEVICE_PERIPH(&quot;i2c0&quot;, hwpl_i2c, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
+<span class="c1">//DEVICE_PERIPH(&quot;i2c1&quot;, hwpl_i2c, 1, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
+<span class="c1">//DEVICE_PERIPH(&quot;i2c2&quot;, hwpl_i2c, 2, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
 </code></pre></div>
+
 <p>If you aren’t using the CoActionOS flash filesystem, that can also be excluded.</p>
-<div class='highlight'><pre><code class='cpp'><span class='k'>const</span> <span class='kt'>sysfs_t</span> <span class='k'>const</span> <span class='n'>sysfs_list</span><span class='p'>[]</span> <span class='o'>=</span> <span class='p'>{</span>
-	<span class='c1'>//the folder for ram/flash applications</span>
-	<span class='n'>SYSFS_APP</span><span class='p'>(</span><span class='s'>&quot;/app&quot;</span><span class='p'>,</span> <span class='o'>&amp;</span><span class='p'>(</span><span class='n'>devices</span><span class='p'>[</span><span class='n'>MEM_DEV</span><span class='p'>]),</span> <span class='n'>SYSFS_ALL_ACCESS</span><span class='p'>),</span>
-	<span class='n'>SYSFS_DEV</span><span class='p'>(</span><span class='s'>&quot;/dev&quot;</span><span class='p'>,</span> <span class='n'>devices</span><span class='p'>,</span> <span class='n'>SYSFS_READONLY_ACCESS</span><span class='p'>),</span> <span class='c1'>//devices</span>
-	<span class='c1'>//CAFS_LITE(&quot;/home&quot;, &amp;cafs_lite_cfg, SYSFS_ALL_ACCESS), //user files</span>
-	<span class='n'>SYSFS_ROOT</span><span class='p'>(</span><span class='s'>&quot;/&quot;</span><span class='p'>,</span> <span class='n'>sysfs_list</span><span class='p'>,</span> <span class='n'>SYSFS_READONLY_ACCESS</span><span class='p'>),</span> <span class='c1'>//root</span>
-	<span class='n'>SYSFS_TERMINATOR</span>
-<span class='p'>};</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="k">const</span> <span class="kt">sysfs_t</span> <span class="k">const</span> <span class="n">sysfs_list</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="c1">//the folder for ram/flash applications</span>
+	<span class="n">SYSFS_APP</span><span class="p">(</span><span class="s">&quot;/app&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">devices</span><span class="p">[</span><span class="n">MEM_DEV</span><span class="p">]),</span> <span class="n">SYSFS_ALL_ACCESS</span><span class="p">),</span>
+	<span class="n">SYSFS_DEV</span><span class="p">(</span><span class="s">&quot;/dev&quot;</span><span class="p">,</span> <span class="n">devices</span><span class="p">,</span> <span class="n">SYSFS_READONLY_ACCESS</span><span class="p">),</span> <span class="c1">//devices</span>
+	<span class="c1">//CAFS_LITE(&quot;/home&quot;, &amp;cafs_lite_cfg, SYSFS_ALL_ACCESS), //user files</span>
+	<span class="n">SYSFS_ROOT</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">,</span> <span class="n">sysfs_list</span><span class="p">,</span> <span class="n">SYSFS_READONLY_ACCESS</span><span class="p">),</span> <span class="c1">//root</span>
+	<span class="n">SYSFS_TERMINATOR</span>
+<span class="p">};</span>
 </code></pre></div>
-<h4 id="exclude_unused_cposix_functions">Exclude Unused C/POSIX functions</h4>
 
-<p>To remove unsed portions of the standard C library or POSIX functions, you need to do a custom build of <a href="https://github.com/CoActionOS/CoActionOS-Public">CoActionOS</a>. The file you want to modify is src/sys/symbols.c. This file contains a list of all the functions that, if not used by the kernel, are still included in the build so that they are available to applications. It ensures that if an application links to printf() (see src/crt/crt_symbols.S), then the printf() code will be part of the kernel. However, if none of your deployed applications use printf(), you don’t need it in the kernel. To exclude a function, place a zero in the table (don’t delete the line or simply comment it out!).</p>
-<div class='highlight'><pre><code class='cpp'><span class='kt'>uint32_t</span> <span class='k'>const</span> <span class='n'>symbols_table</span><span class='p'>[]</span> <span class='o'>=</span> <span class='p'>{</span>
-	<span class='c1'>//...</span>
-	<span class='mi'>0</span><span class='p'>,</span> <span class='c1'>//(uint32_t)fprintf,</span>
-	<span class='mi'>0</span><span class='p'>,</span> <span class='c1'>//(uint32_t)printf,</span>
-	<span class='mi'>0</span><span class='p'>,</span> <span class='c1'>//(uint32_t)snprintf,</span>
-	<span class='p'>(</span><span class='kt'>uint32_t</span><span class='p'>)</span><span class='n'>vfprintf</span><span class='p'>,</span>
-	<span class='p'>(</span><span class='kt'>uint32_t</span><span class='p'>)</span><span class='n'>sprintf</span><span class='p'>,</span>
-	<span class='p'>(</span><span class='kt'>uint32_t</span><span class='p'>)</span><span class='n'>vprintf</span><span class='p'>,</span>
-	<span class='p'>(</span><span class='kt'>uint32_t</span><span class='p'>)</span><span class='n'>vsnprintf</span><span class='p'>,</span>
-	<span class='p'>(</span><span class='kt'>uint32_t</span><span class='p'>)</span><span class='n'>vsprintf</span><span class='p'>,</span>
-	<span class='c1'>//...</span>
+<h4 id="exclude-unused-cposix-functions">Exclude Unused C/POSIX functions</h4>
 
-<span class='p'>};</span>
+<p>To remove unsed portions of the standard C library or POSIX functions, you need to do a custom build of <a href="https://github.com/CoActionOS/CoActionOS-Public">CoActionOS</a>.  The file you want to modify is src/sys/symbols.c.  This file contains a list of all the functions that, if
+not used by the kernel, are still included in the build so that they are available to applications.  It ensures that if an application links
+to printf() (see src/crt/crt_symbols.S), then the printf() code will be part of the kernel.  However, if none of your deployed applications use printf(), you don’t need it in the kernel.  To exclude a function, place a zero in the table (don’t delete the line or simply comment it out!).</p>
+
+<div class="highlight"><pre><code class="cpp"><span class="kt">uint32_t</span> <span class="k">const</span> <span class="n">symbols_table</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="c1">//...</span>
+	<span class="mi">0</span><span class="p">,</span> <span class="c1">//(uint32_t)fprintf,</span>
+	<span class="mi">0</span><span class="p">,</span> <span class="c1">//(uint32_t)printf,</span>
+	<span class="mi">0</span><span class="p">,</span> <span class="c1">//(uint32_t)snprintf,</span>
+	<span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">vfprintf</span><span class="p">,</span>
+	<span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">sprintf</span><span class="p">,</span>
+	<span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">vprintf</span><span class="p">,</span>
+	<span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">vsnprintf</span><span class="p">,</span>
+	<span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">vsprintf</span><span class="p">,</span>
+	<span class="c1">//...</span>
+
+<span class="p">};</span>
 </code></pre></div>
-<h4 id="unify_kernel_and_application">Unify Kernel and Application</h4>
 
-<p>If you still need to make the binary smaller, you can compile the application with the kernel. In this case, you will want to exclude src/sys/symbols.c from the build entirely. In the CoActionOS kernel library, the first thread is called intial_thread() and is weakly bound. You can add this function to your board support package to override the version in the kernel library. The default initial thread function is shown below extracted from src/sys/intial_thread.c. Instead of initializing the link functionality (link_init() and link_update()), you can call the main() function to your application and add the applicatoin source code directly to the board support package in Eclipse.</p>
-<div class='highlight'><pre><code class='cpp'><span class='kt'>void</span> <span class='o'>*</span> <span class='nf'>initial_thread</span><span class='p'>(</span><span class='kt'>void</span> <span class='o'>*</span> <span class='n'>arg</span><span class='p'>){</span>
+<h4 id="unify-kernel-and-application">Unify Kernel and Application</h4>
 
-	<span class='n'>hwpl_core_privcall</span><span class='p'>(</span><span class='n'>priv_check_reset_source</span><span class='p'>,</span> <span class='nb'>NULL</span><span class='p'>);</span>
+<p>If you still need to make the binary smaller, you can compile the application with the kernel.  In this case, you will want to exclude src/sys/symbols.c from the build entirely.  In the CoActionOS kernel library, the first thread is called intial_thread() and is weakly bound.  You can
+add this function to your board support package to override the version in the kernel library.  The default initial thread function is shown below extracted from src/sys/intial_thread.c.  Instead of initializing the link functionality (link_init() and link_update()), you can call the main() function to your application and add the applicatoin source code directly to the board support package in Eclipse.</p>
 
-	<span class='c1'>//Initialize the file systems</span>
-	<span class='k'>if</span> <span class='p'>(</span> <span class='n'>init_fs</span><span class='p'>()</span> <span class='o'>&lt;</span> <span class='mi'>0</span> <span class='p'>){</span>
-		<span class='p'>;</span>
-	<span class='p'>}</span>
+<div class="highlight"><pre><code class="cpp"><span class="kt">void</span> <span class="o">*</span> <span class="nf">initial_thread</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span> <span class="n">arg</span><span class="p">){</span>
 
-	<span class='c1'>//Initialize the CoActionOS Link interface</span>
-	<span class='k'>if</span> <span class='p'>(</span> <span class='n'>link_init</span><span class='p'>()</span> <span class='o'>&lt;</span> <span class='mi'>0</span> <span class='p'>){</span>
-		<span class='n'>hwpl_core_privcall</span><span class='p'>(</span><span class='n'>gled_priv_error</span><span class='p'>,</span> <span class='mi'>0</span><span class='p'>);</span>
-	<span class='p'>}</span>
+	<span class="n">hwpl_core_privcall</span><span class="p">(</span><span class="n">priv_check_reset_source</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
-	<span class='n'>startup_fs</span><span class='p'>();</span>
+	<span class="c1">//Initialize the file systems</span>
+	<span class="k">if</span> <span class="p">(</span> <span class="n">init_fs</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">){</span>
+		<span class="p">;</span>
+	<span class="p">}</span>
 
-	<span class='n'>open</span><span class='p'>(</span><span class='s'>&quot;/dev/rtc&quot;</span><span class='p'>,</span> <span class='n'>O_RDWR</span><span class='p'>);</span>
+	<span class="c1">//Initialize the CoActionOS Link interface</span>
+	<span class="k">if</span> <span class="p">(</span> <span class="n">link_init</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">){</span>
+		<span class="n">hwpl_core_privcall</span><span class="p">(</span><span class="n">gled_priv_error</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+	<span class="p">}</span>
 
-	<span class='n'>usleep</span><span class='p'>(</span><span class='mi'>100</span><span class='o'>*</span><span class='mi'>1000</span><span class='p'>);</span>
-	<span class='n'>led_startup</span><span class='p'>();</span>
-	<span class='n'>link_update</span><span class='p'>(</span><span class='nb'>NULL</span><span class='p'>);</span> 	<span class='c1'>//Run the link update thread--never returns</span>
+	<span class="n">startup_fs</span><span class="p">();</span>
 
-	<span class='k'>return</span> <span class='nb'>NULL</span><span class='p'>;</span>
-<span class='p'>}</span>
+	<span class="n">open</span><span class="p">(</span><span class="s">&quot;/dev/rtc&quot;</span><span class="p">,</span> <span class="n">O_RDWR</span><span class="p">);</span>
+
+	<span class="n">usleep</span><span class="p">(</span><span class="mi">100</span><span class="o">*</span><span class="mi">1000</span><span class="p">);</span>
+	<span class="n">led_startup</span><span class="p">();</span>
+	<span class="n">link_update</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span> 	<span class="c1">//Run the link update thread--never returns</span>
+
+	<span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<h4 id="remove_the_bootloader">Remove the Bootloader</h4>
 
-<p>On the CoAction-Hero, the bootloader is installed at address 0x0 while the kernel is installed at 0x40000 (at the 256K boundary of the 512K device). If you don’t need the bootloader, you can tell Eclipse to compile the kernel to execute at address 0x0 instead of 0x40000 (see Eclipse Project Properties-&gt;C/C++ Build-&gt;Build Variables-&gt;START_ADDR) and then use a JTAG or UART install tool to load the kernel.</p>
+<h4 id="remove-the-bootloader">Remove the Bootloader</h4>
 
-<h2 id="take_away">Take Away</h2>
+<p>On the CoAction-Hero, the bootloader is installed at address 0x0 while the kernel is installed at 0x40000 (at the 256K boundary of the 512K device).  If you don’t need the bootloader, you can tell Eclipse to compile the kernel to execute at address 0x0 instead of 0x40000 (see Eclipse Project Properties-&gt;C/C++ Build-&gt;Build Variables-&gt;START_ADDR) and then use a JTAG or UART install tool to load the kernel.</p>
 
-<p>The easiest way to shrink the size of CoActionOS is to exclude used drivers. You can do this and still allow users to install custom apps and upgrade the kernel. You can further reduce the kernel size by limited the C/POSIX functions that are available to applications by modifying the symbol table in the CoActionOS kernel library. Finally, you can disregard the kernel symbol table and just compile the application and kernel in a unified binary.</p>
+<h2 id="take-away">Take Away</h2>
+
+<p>The easiest way to shrink the size of CoActionOS is to exclude used drivers.  You can do this and still allow users to install custom apps and
+upgrade the kernel.  You can further reduce the kernel size by limited the C/POSIX functions that are available to applications by modifying the symbol table in the CoActionOS kernel library.  Finally, you can disregard the kernel symbol table and just compile the application and kernel in a unified binary.</p>
+
+
 				</div>
 			</div>
 

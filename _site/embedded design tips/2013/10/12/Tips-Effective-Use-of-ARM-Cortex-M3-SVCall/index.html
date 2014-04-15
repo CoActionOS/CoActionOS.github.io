@@ -93,64 +93,70 @@
 					<p>The ARM Cortex-M3 service call (SVCall) can be a tricky feature to integrate in to your system software. It is useful for two things:</p>
 
 <ul>
-<li>Allowing a piece of code to execute without interruption</li>
-
-<li>Jumping to privileged mode from unprivileged mode</li>
+  <li>Allowing a piece of code to execute without interruption</li>
+  <li>Jumping to privileged mode from unprivileged mode</li>
 </ul>
 
-<h2 id="svcall_introduction">SVCall Introduction</h2>
+<h2 id="svcall-introduction">SVCall Introduction</h2>
 
 <p>The SVCall (contraction of service call) is a software triggered interrupt. It is useful for several reasons. First, depending on interrupt priorities, the handler can be uninterruptible by one interrupt but interruptible by another. For example, if you have a piece of code that should not be interrupted by the timer but can be interrupted by the UART, you can set the interrupt priorities on the ARM Cortex-M3 in such a fashion to have the SVCall interrupt priority be higher than the timer but lower than the UART. Second, if you are using the MPU or privileged mode on the ARM Cortex-M3, the SVCall provides the code executing in unprivileged mode a way to access privileged resources.</p>
 
 <p>The SVC instruction invokes the service call interrupt. The bottom 8-bits of the SVC instruction can be set to any value and then interpreted by the interrupt handler. This essentially allows the user a way to execute 256 different types of service calls. Alternatively, parameters can be placed on the stack and then extracted by the interrupt handler to provide unlimited service calls with up to three parameters. The sample code below shows how to do this using two parameters.</p>
 
-<h2 id="svcall_sample_code">SVCall Sample Code</h2>
+<h2 id="svcall-sample-code">SVCall Sample Code</h2>
 
 <p>To effectively use the service call interrupt, we pass two arguments to a function which immediately invokes the SVC instruction. The arguments are a pointer to a function to execute in privileged mode and a pointer to a data structure that the function can use to read/write data in the caller’s context. The following code shows the prototype and body of the function.</p>
-<div class='highlight'><pre><code class='cpp'><span class='c1'>//we need to decrease the optimization so the the compiler</span>
-<span class='c1'>//does not ignore func and args</span>
-<span class='kt'>void</span> <span class='nf'>service_call</span><span class='p'>(</span><span class='kt'>void</span> <span class='p'>(</span><span class='o'>*</span><span class='n'>func</span><span class='p'>)(</span><span class='kt'>void</span><span class='o'>*</span><span class='p'>),</span> <span class='kt'>void</span><span class='o'>*</span> <span class='n'>args</span><span class='p'>)</span> <span class='n'>__attribute__</span><span class='p'>((</span><span class='n'>optimize</span><span class='p'>(</span><span class='s'>&quot;1&quot;</span><span class='p'>));</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="c1">//we need to decrease the optimization so the the compiler</span>
+<span class="c1">//does not ignore func and args</span>
+<span class="kt">void</span> <span class="nf">service_call</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">func</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">),</span> <span class="kt">void</span><span class="o">*</span> <span class="n">args</span><span class="p">)</span> <span class="n">__attribute__</span><span class="p">((</span><span class="n">optimize</span><span class="p">(</span><span class="s">&quot;1&quot;</span><span class="p">));</span>
  
-<span class='kt'>void</span> <span class='nf'>service_call</span><span class='p'>(</span><span class='kt'>void</span> <span class='p'>(</span><span class='o'>*</span><span class='n'>func</span><span class='p'>)(</span><span class='kt'>void</span><span class='o'>*</span><span class='p'>),</span> <span class='kt'>void</span><span class='o'>*</span> <span class='n'>args</span><span class='p'>){</span>
-     <span class='c1'>//by convention func is in r0 and args is in r1</span>
-     <span class='k'>asm</span> <span class='k'>volatile</span><span class='p'>(</span><span class='s'>&quot;svc 0&quot;</span><span class='p'>);</span>
-<span class='p'>}</span>
+<span class="kt">void</span> <span class="nf">service_call</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">func</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">),</span> <span class="kt">void</span><span class="o">*</span> <span class="n">args</span><span class="p">){</span>
+     <span class="c1">//by convention func is in r0 and args is in r1</span>
+     <span class="k">asm</span> <span class="k">volatile</span><span class="p">(</span><span class="s">&quot;svc 0&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
+
 <p>When SVC is executed, the NVIC immediately stacks various registers including r0 and r1 and then executes the interrupt handler. The interrupt handler then needs to grab the values of r0 and r1 from the stack. The value in r0 is the function pointer while r1 is a pointer to some data in the caller’s context. The r0 value is type casted as a function and executed with a single argument, the value of r1.</p>
-<div class='highlight'><pre><code class='cpp'><span class='k'>typedef</span> <span class='nf'>void</span> <span class='p'>(</span><span class='o'>*</span><span class='kt'>svcall_t</span><span class='p'>)(</span><span class='kt'>void</span><span class='o'>*</span><span class='p'>);</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="k">typedef</span> <span class="nf">void</span> <span class="p">(</span><span class="o">*</span><span class="kt">svcall_t</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">);</span>
  
-<span class='kt'>void</span> <span class='nf'>svcall_handler</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>){</span>
-  <span class='k'>register</span> <span class='kt'>uint32_t</span> <span class='o'>*</span> <span class='n'>frame</span><span class='p'>;</span>
-  <span class='k'>register</span> <span class='kt'>svcall_t</span> <span class='n'>call</span><span class='p'>;</span>
-  <span class='k'>register</span> <span class='kt'>void</span> <span class='o'>*</span> <span class='n'>args</span><span class='p'>;</span>
-  <span class='k'>asm</span> <span class='k'>volatile</span> <span class='p'>(</span><span class='s'>&quot;MRS %0, psp</span><span class='se'>\n\t</span><span class='s'>&quot;</span> <span class='o'>:</span> <span class='s'>&quot;=r&quot;</span> <span class='p'>(</span><span class='n'>frame</span><span class='p'>)</span> <span class='p'>);</span> <span class='c1'>//assumes PSP in use when service_call() invoked</span>
-  <span class='n'>call</span> <span class='o'>=</span> <span class='p'>(</span><span class='kt'>svcall_t</span><span class='p'>)</span><span class='n'>frame</span><span class='p'>[</span><span class='mi'>0</span><span class='p'>];</span>
-  <span class='n'>args</span> <span class='o'>=</span> <span class='p'>(</span><span class='kt'>void</span><span class='o'>*</span><span class='p'>)(</span><span class='n'>frame</span><span class='p'>[</span><span class='mi'>1</span><span class='p'>]);</span>
-  <span class='n'>call</span><span class='p'>(</span><span class='n'>args</span><span class='p'>);</span>
-<span class='p'>}</span>
+<span class="kt">void</span> <span class="nf">svcall_handler</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+  <span class="k">register</span> <span class="kt">uint32_t</span> <span class="o">*</span> <span class="n">frame</span><span class="p">;</span>
+  <span class="k">register</span> <span class="kt">svcall_t</span> <span class="n">call</span><span class="p">;</span>
+  <span class="k">register</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">args</span><span class="p">;</span>
+  <span class="k">asm</span> <span class="k">volatile</span> <span class="p">(</span><span class="s">&quot;MRS %0, psp</span><span class="se">\n\t</span><span class="s">&quot;</span> <span class="o">:</span> <span class="s">&quot;=r&quot;</span> <span class="p">(</span><span class="n">frame</span><span class="p">)</span> <span class="p">);</span> <span class="c1">//assumes PSP in use when service_call() invoked</span>
+  <span class="n">call</span> <span class="o">=</span> <span class="p">(</span><span class="kt">svcall_t</span><span class="p">)</span><span class="n">frame</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+  <span class="n">args</span> <span class="o">=</span> <span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="p">)(</span><span class="n">frame</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+  <span class="n">call</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
+
 <p>Finally, to make a privileged call:</p>
-<div class='highlight'><pre><code class='cpp'><span class='kt'>void</span> <span class='nf'>my_priv_func</span><span class='p'>(</span><span class='kt'>void</span> <span class='o'>*</span> <span class='n'>data</span><span class='p'>){</span>
-    <span class='kt'>int</span> <span class='o'>*</span> <span class='n'>my_int</span><span class='p'>;</span>
-    <span class='n'>my_int</span> <span class='o'>=</span> <span class='n'>data</span><span class='p'>;</span>
-    <span class='k'>if</span> <span class='p'>(</span><span class='o'>*</span><span class='n'>my_int</span> <span class='o'>==</span> <span class='mi'>10</span> <span class='p'>){</span>
-        <span class='o'>*</span><span class='n'>my_int</span> <span class='o'>=</span> <span class='mi'>0</span><span class='p'>;</span>
-    <span class='p'>}</span>
-<span class='p'>}</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="kt">void</span> <span class="nf">my_priv_func</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span> <span class="n">data</span><span class="p">){</span>
+    <span class="kt">int</span> <span class="o">*</span> <span class="n">my_int</span><span class="p">;</span>
+    <span class="n">my_int</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">my_int</span> <span class="o">==</span> <span class="mi">10</span> <span class="p">){</span>
+        <span class="o">*</span><span class="n">my_int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
  
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>){</span>
-    <span class='kt'>int</span> <span class='n'>var</span><span class='p'>;</span>
-    <span class='n'>var</span> <span class='o'>=</span> <span class='mi'>10</span><span class='p'>;</span>
-    <span class='n'>service_call</span><span class='p'>(</span><span class='n'>my_priv_func</span><span class='p'>,</span> <span class='o'>&amp;</span><span class='n'>var</span><span class='p'>);</span> <span class='c1'>//executes my_priv_func() in interrupt mode</span>
-    <span class='k'>if</span><span class='p'>(</span> <span class='n'>var</span> <span class='o'>==</span> <span class='mi'>0</span> <span class='p'>){</span>
-        <span class='c1'>//if this is true, that means everything worked</span>
-    <span class='p'>}</span>
-    <span class='k'>return</span> <span class='mi'>0</span><span class='p'>;</span>
-<span class='p'>}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+    <span class="kt">int</span> <span class="n">var</span><span class="p">;</span>
+    <span class="n">var</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">service_call</span><span class="p">(</span><span class="n">my_priv_func</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">var</span><span class="p">);</span> <span class="c1">//executes my_priv_func() in interrupt mode</span>
+    <span class="k">if</span><span class="p">(</span> <span class="n">var</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">){</span>
+        <span class="c1">//if this is true, that means everything worked</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
+
 <h2 id="conclusion">Conclusion</h2>
 
 <p>This very simple code sample provides a powerful and effective mechanism for using the ARM Cortex-CM3 SVCall (service call) interrupt. It allows an arbitrary function to be executed uninterrupted in privileged mode. The code is both re-entrant and thread-safe (as long as the context-switch can’t interrupt the service call handler).</p>
+
 				</div>
 			</div>
 

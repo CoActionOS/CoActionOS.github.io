@@ -90,60 +90,91 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p><img class='post_image' src='/images/currentsense.png' /></p>
+					<p><img class="post_image" src="/images/currentsense.png" />
+This is a simple, low-cost way to measure the current output at the power 
+source of an embedded system using a microcontroller’s ADC input.</p>
 
-<p>This is a simple, low-cost way to measure the current output at the power source of an embedded system using a microcontroller’s ADC input.</p>
+<p>The above sensor circuit measures the current at the power source of an embedded system.  The power source shown is a battery but can be any DC supply source.  The above schematic shows VCC as both the battery voltage and the op-amp voltage.  However, the battery voltage can be any value, and the circuit will still work.  The key components of the circuit are the sensor resistor (RSENSE) and the amplifier (U1).  The voltage input to U1 (the negative terminal of the battery) will always be a negative voltage with respect to ground.  For this reason, U1 is configured as an inverting amplifier where:</p>
 
-<p>The above sensor circuit measures the current at the power source of an embedded system. The power source shown is a battery but can be any DC supply source. The above schematic shows VCC as both the battery voltage and the op-amp voltage. However, the battery voltage can be any value, and the circuit will still work. The key components of the circuit are the sensor resistor (RSENSE) and the amplifier (U1). The voltage input to U1 (the negative terminal of the battery) will always be a negative voltage with respect to ground. For this reason, U1 is configured as an inverting amplifier where:</p>
+<p><img class="post_equation" src="/images/current-sense-formula1.svg" /></p>
 
-<p><img class='post_equation' src='/images/current-sense-formula1.svg' /></p>
+<h2 id="analog-and-digital-filtering">Analog and Digital Filtering</h2>
 
-<h2 id="analog_and_digital_filtering">Analog and Digital Filtering</h2>
+<p>The output of the amplifier is then passed through a low pass filter (LPF) consisting 
+of R3 and C1.  The filter has a cutoff frequency of:</p>
 
-<p>The output of the amplifier is then passed through a low pass filter (LPF) consisting of R3 and C1. The filter has a cutoff frequency of:</p>
+<p><img class="post_equation" src="/images/current-sense-formula2.svg" /></p>
 
-<p><img class='post_equation' src='/images/current-sense-formula2.svg' /></p>
+<p>The purpose of the filter is to decrease the amount of noise that is measured at 
+the ADC input.  For best results, the microcontroller should sample the ADC input 
+at double the cutoff frequency of the low pass filter (read more about the Nyquist 
+frequency).  If the signal is still too noisy, digital filtering can be used to 
+smooth it out after it is sampled.  An effective digital filter, that is 
+easy-to-implement on resource constrained systems, is represented by the following 
+equation which calculates an exponential moving average (this is a type of 
+infinite impulse response, or IIR, LPF).  The “x” value is read from the 
+microcontroller ADC, the “y” value is the average, and alpha is a constant 
+between zero (infinite averaging) and one (no averaging).</p>
 
-<p>The purpose of the filter is to decrease the amount of noise that is measured at the ADC input. For best results, the microcontroller should sample the ADC input at double the cutoff frequency of the low pass filter (read more about the Nyquist frequency). If the signal is still too noisy, digital filtering can be used to smooth it out after it is sampled. An effective digital filter, that is easy-to-implement on resource constrained systems, is represented by the following equation which calculates an exponential moving average (this is a type of infinite impulse response, or IIR, LPF). The “x” value is read from the microcontroller ADC, the “y” value is the average, and alpha is a constant between zero (infinite averaging) and one (no averaging).</p>
-
-<p><img class='post_equation' src='/images/filter-formula2.svg' /></p>
+<p><img class="post_equation" src="/images/filter-formula2.svg" /></p>
 
 <p>The following code implements the above equation using 32-bit fixed point math.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#define DSP_EMA_I32_ALPHA(x) ( (uint16_t)(x * 65535) )</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#define DSP_EMA_I32_ALPHA(x) ( (uint16_t)(x * 65535) )</span>
  
-<span class='kt'>int32_t</span> <span class='nf'>dsp_ema_i32</span><span class='p'>(</span><span class='kt'>int32_t</span> <span class='n'>in</span><span class='p'>,</span> <span class='kt'>int32_t</span> <span class='n'>average</span><span class='p'>,</span> <span class='kt'>uint16_t</span> <span class='n'>alpha</span><span class='p'>){</span>
-  <span class='k'>if</span> <span class='p'>(</span> <span class='n'>alpha</span> <span class='o'>==</span> <span class='mi'>65535</span> <span class='p'>)</span> <span class='k'>return</span> <span class='n'>in</span><span class='p'>;</span>
-  <span class='kt'>int64_t</span> <span class='n'>tmp0</span><span class='p'>;</span>
-  <span class='n'>tmp0</span> <span class='o'>=</span> <span class='p'>(</span><span class='kt'>int64_t</span><span class='p'>)</span><span class='n'>in</span> <span class='o'>*</span> <span class='p'>(</span><span class='n'>alpha</span><span class='o'>+</span><span class='mi'>1</span><span class='p'>)</span> <span class='o'>+</span> <span class='n'>average</span> <span class='o'>*</span> <span class='p'>(</span><span class='mi'>65536</span> <span class='o'>-</span> <span class='n'>alpha</span><span class='p'>);</span>
-  <span class='k'>return</span> <span class='p'>(</span><span class='kt'>int32_t</span><span class='p'>)((</span><span class='n'>tmp0</span> <span class='o'>+</span> <span class='mi'>32768</span><span class='p'>)</span> <span class='o'>/</span> <span class='mi'>65536</span><span class='p'>);</span>
-<span class='p'>}</span>
+<span class="kt">int32_t</span> <span class="nf">dsp_ema_i32</span><span class="p">(</span><span class="kt">int32_t</span> <span class="n">in</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">average</span><span class="p">,</span> <span class="kt">uint16_t</span> <span class="n">alpha</span><span class="p">){</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="n">alpha</span> <span class="o">==</span> <span class="mi">65535</span> <span class="p">)</span> <span class="k">return</span> <span class="n">in</span><span class="p">;</span>
+  <span class="kt">int64_t</span> <span class="n">tmp0</span><span class="p">;</span>
+  <span class="n">tmp0</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)</span><span class="n">in</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">average</span> <span class="o">*</span> <span class="p">(</span><span class="mi">65536</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">);</span>
+  <span class="k">return</span> <span class="p">(</span><span class="kt">int32_t</span><span class="p">)((</span><span class="n">tmp0</span> <span class="o">+</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">/</span> <span class="mi">65536</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
+
 <p>The code below is an example of how to use the above function.</p>
-<div class='highlight'><pre><code class='cpp'><span class='kt'>int32_t</span> <span class='nf'>my_avg_func</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>){</span>
-     <span class='k'>static</span> <span class='kt'>int32_t</span> <span class='n'>average</span> <span class='o'>=</span> <span class='mi'>0</span><span class='p'>;</span>
-     <span class='kt'>int32_t</span> <span class='n'>adc_value</span><span class='p'>;</span>    
-     <span class='n'>adc_value</span> <span class='o'>=</span> <span class='n'>read_the_current_sense_adc_value</span><span class='p'>();</span>
-     <span class='n'>average</span> <span class='o'>=</span> <span class='n'>dsp_ema_i32</span><span class='p'>(</span><span class='n'>adc_value</span><span class='p'>,</span> <span class='n'>average</span><span class='p'>,</span> <span class='n'>DSP_EMA_I32_ALPHA</span><span class='p'>(</span><span class='mf'>0.1</span><span class='p'>));</span>
-     <span class='k'>return</span> <span class='n'>average</span><span class='p'>;</span>
-<span class='p'>}</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="kt">int32_t</span> <span class="nf">my_avg_func</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
+     <span class="k">static</span> <span class="kt">int32_t</span> <span class="n">average</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+     <span class="kt">int32_t</span> <span class="n">adc_value</span><span class="p">;</span>    
+     <span class="n">adc_value</span> <span class="o">=</span> <span class="n">read_the_current_sense_adc_value</span><span class="p">();</span>
+     <span class="n">average</span> <span class="o">=</span> <span class="n">dsp_ema_i32</span><span class="p">(</span><span class="n">adc_value</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">DSP_EMA_I32_ALPHA</span><span class="p">(</span><span class="mf">0.1</span><span class="p">));</span>
+     <span class="k">return</span> <span class="n">average</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>For the sensing circuit to be useful, the output of the digital filter needs to be converted to amps (or milliamps). The first step to do that is to convert the input of the ADC (ie the output of the digital filter) to voltage as shown in the following equation where X is the input value, VREF is the voltage reference for the ADC, and XMAX is the maximum ADC value:</p>
 
-<p><img class='post_equation' src='/images/current-sense-formula3.svg' /></p>
+<p>For the sensing circuit to be useful, the output of the digital filter needs to be 
+converted to amps (or milliamps).  The first step to do that is to convert the 
+input of the ADC (ie the output of the digital filter) to voltage as shown in 
+the following equation where X is the input value, VREF is the voltage reference 
+for the ADC, and XMAX is the maximum ADC value:</p>
 
-<p>The next step is to find the value of the voltage at the negative battery terminal. To do this, solve the amplifier voltage output equation for the input voltage, where the output voltage is the same value as VADC.</p>
+<p><img class="post_equation" src="/images/current-sense-formula3.svg" /></p>
 
-<p><img class='post_equation' src='/images/current-sense-formula4.svg' /></p>
+<p>The next step is to find the value of the voltage at the negative battery 
+terminal.  To do this, solve the amplifier voltage output equation for the 
+input voltage, where the output voltage is the same value as VADC.</p>
 
-<p>Ohm’s law describes the current flow between GND and the negative terminal of the battery where VIN (input to the op-amp) is the voltage at the negative terminal of the battery:</p>
+<p><img class="post_equation" src="/images/current-sense-formula4.svg" /></p>
 
-<p><img class='post_equation' src='/images/current-sense-formula5.svg' /></p>
+<p>Ohm’s law describes the current flow between GND and the negative terminal 
+of the battery where VIN (input to the op-amp) is the voltage at the negative 
+terminal of the battery:</p>
 
-<p>Because the value of VIN is always less than zero, the final equation will give the positive number of amps flowing out of the positive terminal of the battery and in to the negative terminal. This value can be converted to milliamps by multiplying by 1000.</p>
+<p><img class="post_equation" src="/images/current-sense-formula5.svg" /></p>
+
+<p>Because the value of VIN is always less than zero, the final equation will 
+give the positive number of amps flowing out of the positive terminal of the 
+battery and in to the negative terminal.  This value can be converted to 
+milliamps by multiplying by 1000.</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Sensing current in embedded designs is a challenge. This method uses a precision resistor and an operational amplifier at the power source. This approach is inexpensive but slightly decreases the power efficiency of the system. The current signal must be filtered before and after it is digitally sampled in order for the data to be useful.</p>
+<p>Sensing current in embedded designs is a challenge.  This method uses a precision 
+resistor and an operational amplifier at the power source.  This approach is 
+inexpensive but slightly decreases the power efficiency of the system.  The current 
+signal must be filtered before and after it is digitally sampled in order for the 
+data to be useful.</p>
+
+
 				</div>
 			</div>
 

@@ -90,82 +90,95 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p><img class='post_image' src='/images/cdoxygen-arch.png' /></p>
+					<p><img class="post_image" src="/images/cdoxygen-arch.png" />
+Doxygen is a free source code documentation tool.  It automatically 
+decomposes a software design when using an object-oriented programming 
+language such as C++ or Java.  When using C, however, there is no natural 
+break-down of the code so the developer must create groups (or modules) within 
+Doxygen to show a definitive decomposition of the design.</p>
 
-<p>Doxygen is a free source code documentation tool. It automatically decomposes a software design when using an object-oriented programming language such as C++ or Java. When using C, however, there is no natural break-down of the code so the developer must create groups (or modules) within Doxygen to show a definitive decomposition of the design.</p>
+<p>The first step in using Doxygen to document C code is to create a software 
+design.  Embedded systems fit well into a layered software design with the 
+lowest layer being the MCU’s peripheral drivers.  The device driver layer 
+is on top of the peripheral drivers and provides an API to external 
+devices.  Other software libraries may also exist independent of the 
+hardware layers.  The highest layer is typically the application.  A sample, 
+layered architecture diagram is shown above.</p>
 
-<p>The first step in using Doxygen to document C code is to create a software design. Embedded systems fit well into a layered software design with the lowest layer being the MCU’s peripheral drivers. The device driver layer is on top of the peripheral drivers and provides an API to external devices. Other software libraries may also exist independent of the hardware layers. The highest layer is typically the application. A sample, layered architecture diagram is shown above.</p>
+<p>Once the design is done, each bit of functionality is assigned to a Doxygen 
+group.  The groups are then grouped together.  For example, functions in the UART driver are 
+part of the UART group, and the UART group is part of the PERIPHERAL group as shown below:</p>
 
-<p>Once the design is done, each bit of functionality is assigned to a Doxygen group. The groups are then grouped together. For example, functions in the UART driver are part of the UART group, and the UART group is part of the PERIPHERAL group as shown below:</p>
-<div class='highlight'><pre><code class='cpp'><span class='cm'>/*! \addtogroup UART UART Driver</span>
-<span class='cm'> *</span>
-<span class='cm'> * \ingroup PERIPHERAL</span>
-<span class='cm'> * @{</span>
-<span class='cm'> * \details This is the UART perhipheral driver.</span>
-<span class='cm'> *</span>
-<span class='cm'> */</span>
+<div class="highlight"><pre><code class="cpp"><span class="cm">/*! \addtogroup UART UART Driver</span>
+<span class="cm"> *</span>
+<span class="cm"> * \ingroup PERIPHERAL</span>
+<span class="cm"> * @{</span>
+<span class="cm"> * \details This is the UART perhipheral driver.</span>
+<span class="cm"> *</span>
+<span class="cm"> */</span>
  
-<span class='cm'>/*! \file</span>
-<span class='cm'> * \details This file is the UART peripheral driver header file.</span>
-<span class='cm'> */</span>
+<span class="cm">/*! \file</span>
+<span class="cm"> * \details This file is the UART peripheral driver header file.</span>
+<span class="cm"> */</span>
  
-<span class='cp'>#ifndef UART_H_</span>
-<span class='cp'>#define UART_H_</span>
+<span class="cp">#ifndef UART_H_</span>
+<span class="cp">#define UART_H_</span>
  
-<span class='cm'>/*! \details This function opens the specified UART port.</span>
-<span class='cm'> * \return Zero if the port opened successfully.</span>
-<span class='cm'> */</span>
-<span class='kt'>int</span> <span class='nf'>uart_open</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to open */</span><span class='p'>,</span> <span class='kt'>int</span> <span class='n'>mode</span> <span class='cm'>/*! The mode for the UART */</span><span class='p'>);</span>
+<span class="cm">/*! \details This function opens the specified UART port.</span>
+<span class="cm"> * \return Zero if the port opened successfully.</span>
+<span class="cm"> */</span>
+<span class="kt">int</span> <span class="nf">uart_open</span><span class="p">(</span><span class="kt">int</span> <span class="n">port</span> <span class="cm">/*! The port to open */</span><span class="p">,</span> <span class="kt">int</span> <span class="n">mode</span> <span class="cm">/*! The mode for the UART */</span><span class="p">);</span>
  
-<span class='cm'>/*! \details This function opens the specified UART port.</span>
-<span class='cm'> * \return The number of bytes read</span>
-<span class='cm'> */</span>
-<span class='kt'>int</span> <span class='nf'>uart_rd</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to read */</span><span class='p'>,</span> 
-     <span class='kt'>void</span> <span class='o'>*</span> <span class='n'>dest</span> <span class='cm'>/*! A pointer to the destination memory */</span><span class='p'>,</span> 
-     <span class='kt'>int</span> <span class='n'>size</span> <span class='cm'>/*! The number of bytes to read */</span><span class='p'>);</span>
+<span class="cm">/*! \details This function opens the specified UART port.</span>
+<span class="cm"> * \return The number of bytes read</span>
+<span class="cm"> */</span>
+<span class="kt">int</span> <span class="nf">uart_rd</span><span class="p">(</span><span class="kt">int</span> <span class="n">port</span> <span class="cm">/*! The port to read */</span><span class="p">,</span> 
+     <span class="kt">void</span> <span class="o">*</span> <span class="n">dest</span> <span class="cm">/*! A pointer to the destination memory */</span><span class="p">,</span> 
+     <span class="kt">int</span> <span class="n">size</span> <span class="cm">/*! The number of bytes to read */</span><span class="p">);</span>
  
-<span class='cm'>/*! \details This function opens the specified UART port.</span>
-<span class='cm'> * \return The number of bytes written</span>
-<span class='cm'> */</span>
-<span class='kt'>int</span> <span class='nf'>uart_wr</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to write */</span><span class='p'>,</span> 
-     <span class='kt'>void</span> <span class='o'>*</span> <span class='n'>src</span> <span class='cm'>/*! A pointer to the source memory */</span><span class='p'>,</span> 
-     <span class='kt'>int</span> <span class='n'>size</span> <span class='cm'>/*! The number of bytes to write */</span><span class='p'>);</span>
+<span class="cm">/*! \details This function opens the specified UART port.</span>
+<span class="cm"> * \return The number of bytes written</span>
+<span class="cm"> */</span>
+<span class="kt">int</span> <span class="nf">uart_wr</span><span class="p">(</span><span class="kt">int</span> <span class="n">port</span> <span class="cm">/*! The port to write */</span><span class="p">,</span> 
+     <span class="kt">void</span> <span class="o">*</span> <span class="n">src</span> <span class="cm">/*! A pointer to the source memory */</span><span class="p">,</span> 
+     <span class="kt">int</span> <span class="n">size</span> <span class="cm">/*! The number of bytes to write */</span><span class="p">);</span>
  
-<span class='cm'>/*! \details This function opens the specified UART port.</span>
-<span class='cm'> */</span>
-<span class='kt'>void</span> <span class='nf'>uart_close</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>port</span> <span class='cm'>/*! The port to close */</span><span class='p'>);</span>
+<span class="cm">/*! \details This function opens the specified UART port.</span>
+<span class="cm"> */</span>
+<span class="kt">void</span> <span class="nf">uart_close</span><span class="p">(</span><span class="kt">int</span> <span class="n">port</span> <span class="cm">/*! The port to close */</span><span class="p">);</span>
  
-<span class='cp'>#endif</span>
+<span class="cp">#endif</span>
 </code></pre></div>
-<p>To complete the design hierarchy, the PERIPHERAL group is part of a top group called SYSTEM. To document all of the modules shown in the architecture diagram above, the following groups are needed:</p>
+
+<p>To complete the design hierarchy, the PERIPHERAL group is part of a top group 
+called SYSTEM.  To document all of the modules shown in the architecture diagram 
+above, the following groups are needed:</p>
 
 <ul>
-<li>SYSTEM
-<ul>
-<li>COMMAND_MANAGER</li>
-
-<li>SOFTWARE
-<ul>
-<li>PID</li>
-</ul>
-</li>
-
-<li>DEVICE_DRIVERS
-<ul>
-<li>MOTOR_DRIVER</li>
-</ul>
-</li>
-
-<li>PERIPHERAL</li>
-
-<li>UART</li>
-
-<li>PWM</li>
-</ul>
-</li>
+  <li>SYSTEM
+    <ul>
+      <li>COMMAND_MANAGER</li>
+      <li>SOFTWARE
+        <ul>
+          <li>PID</li>
+        </ul>
+      </li>
+      <li>DEVICE_DRIVERS
+        <ul>
+          <li>MOTOR_DRIVER</li>
+        </ul>
+      </li>
+      <li>PERIPHERAL</li>
+      <li>UART</li>
+      <li>PWM</li>
+    </ul>
+  </li>
 </ul>
 
-<p>The <a href="/coactionos/html/">CoActionOS documentation</a> includes many examples of the techniques described herein.</p>
+<p>The <a href="/coactionos/html/">CoActionOS documentation</a> includes many examples 
+of the techniques described herein.</p>
+
+
 				</div>
 			</div>
 

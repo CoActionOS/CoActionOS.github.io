@@ -93,83 +93,86 @@
 					<p>The C language preprocesses all code before compilation. Within the program, preprocessor directives give special instructions to the preprocessor. Preprocessor directives in C start with the hash symbol (#). This tutorial describes the basic function of preprocessor directives in C. The following directives are available:</p>
 
 <ul>
-<li>#include: include another file in the source</li>
-
-<li>#define: define a symbol to be replaced during preprocessing</li>
-
-<li>#undef: un-define a previously defined symbol</li>
-
-<li>#if, #ifdef, #ifndef, #else, #endif: tell the preprocessor to conditionally compile parts of the code</li>
-
-<li>#pragma: give a special instruction to the compiler</li>
-
-<li>#error: specify a user-defined error</li>
-
-<li>#warning: specifiy a user-define warning</li>
-
-<li>#include</li>
+  <li>#include: include another file in the source</li>
+  <li>#define: define a symbol to be replaced during preprocessing</li>
+  <li>#undef: un-define a previously defined symbol</li>
+  <li>#if, #ifdef, #ifndef, #else, #endif: tell the preprocessor to conditionally compile parts of the code</li>
+  <li>#pragma: give a special instruction to the compiler</li>
+  <li>#error: specify a user-defined error</li>
+  <li>#warning: specifiy a user-define warning</li>
+  <li>#include</li>
 </ul>
 
 <p>When the preprocessor encounters the #include directive, it replaces the #include line with the contents of the included file. Local files are included using quotation marks while system files are included using less/greater than symbols.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;stdlib.h&gt;</span><span class='c1'>//This is a system file </span>
-<span class='cp'>#include &quot;local.h&quot; </span><span class='c1'>//This is a local include file </span>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdlib.h&gt;</span><span class="c1">//This is a system file </span>
+<span class="cp">#include &quot;local.h&quot; </span><span class="c1">//This is a local include file </span>
 </code></pre></div>
-<h3 id="define_and_undef">#define and #undef</h3>
+
+<h3 id="define-and-undef">#define and #undef</h3>
 
 <p>When the preprocessor encounters the #define directive, it replaces the symbol with the specified definition. As a matter of convention, defined symbols are written in all capital letters using underscores to separate words. The #undef directive can be used to remove the definition of a previous #define. The following program shows the basic usage of #define.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;stdio.h&gt;</span>
-<span class='cp'>#include &lt;stdlib.h&gt;</span>
-<span class='cp'>#define INIT_X_VALUE 10 </span>
-<span class='cp'>#define INIT_Y_VALUE 100 </span>
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span> 
-     <span class='kt'>int</span> <span class='n'>x</span><span class='p'>,</span> <span class='n'>y</span><span class='p'>;</span> 
-     <span class='n'>x</span> <span class='o'>=</span> <span class='n'>INIT_X_VALUE</span><span class='p'>;</span> 
-     <span class='n'>y</span> <span class='o'>=</span> <span class='n'>INIT_Y_VALUE</span><span class='p'>;</span> 
-     <span class='n'>printf</span><span class='p'>(</span><span class='s'>&quot;X is %d, Y is %d</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>,</span> <span class='n'>x</span><span class='p'>,</span> <span class='n'>y</span><span class='p'>);</span> 
-     <span class='n'>exit</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>);</span>
-<span class='p'>}</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="cp">#include &lt;stdlib.h&gt;</span>
+<span class="cp">#define INIT_X_VALUE 10 </span>
+<span class="cp">#define INIT_Y_VALUE 100 </span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span> 
+     <span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">;</span> 
+     <span class="n">x</span> <span class="o">=</span> <span class="n">INIT_X_VALUE</span><span class="p">;</span> 
+     <span class="n">y</span> <span class="o">=</span> <span class="n">INIT_Y_VALUE</span><span class="p">;</span> 
+     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;X is %d, Y is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span> 
+     <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
-<h3 id="if_ifdef_ifndef_else_endif">#if, #ifdef, #ifndef, #else, #endif</h3>
+
+<h3 id="if-ifdef-ifndef-else-endif">#if, #ifdef, #ifndef, #else, #endif</h3>
 
 <p>The conditional directives tell the compiler to omit or include certain code snippets based on various criteria. Let’s start with a program example.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;stdio.h&gt;</span>
-<span class='cp'>#include &lt;stdlib.h&gt;</span>
-<span class='cp'>#define DEBUG 1</span>
-<span class='cp'>#ifdef DEBUG</span>
-<span class='cp'>#define debug_printf(...) printf(__VA_ARGS) </span>
-<span class='cp'>#else </span>
-<span class='cp'>#define debug_printf(...) </span>
-<span class='cp'>#endif </span>
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span> 
-     <span class='n'>debug_printf</span><span class='p'>(</span><span class='s'>&quot;This is a debug message</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span> 
-     <span class='n'>exit</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>);</span> 
-<span class='p'>}</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="cp">#include &lt;stdlib.h&gt;</span>
+<span class="cp">#define DEBUG 1</span>
+<span class="cp">#ifdef DEBUG</span>
+<span class="cp">#define debug_printf(...) printf(__VA_ARGS) </span>
+<span class="cp">#else </span>
+<span class="cp">#define debug_printf(...) </span>
+<span class="cp">#endif </span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span> 
+     <span class="n">debug_printf</span><span class="p">(</span><span class="s">&quot;This is a debug message</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span> 
+     <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
+<span class="p">}</span>
 </code></pre></div>
+
 <p>The preceding program illustrates one way to enable and disable debugging messages in a program. It uses the #ifdef directive to tell the compiler to use printf() if DEBUG is defined and just use an empty statement if it is not.</p>
 
 <p>One standard use of the #ifndef directive is called a header guard. If a single program includes the same header more than once, this can sometimes cause problems because some types may be defined more than one time. A header guard prevents these problems by defining a new symbol and only including the header if the new symbol has not yet been defined. This ensures the preprocessor only includes the file one time.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#ifndef MY_HEADER_FILE_H_</span>
-<span class='cp'>#define MY_HEADER_FILE_H_</span>
-<span class='k'>typedef</span> <span class='kt'>int</span> <span class='n'>my_int_type</span><span class='p'>;</span>
-<span class='kt'>int</span> <span class='nf'>my_function_prototype</span><span class='p'>(</span><span class='kt'>void</span><span class='p'>);</span>
-<span class='cp'>#endif </span><span class='c1'>//end if for MY_HEADER_FILE_H_</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#ifndef MY_HEADER_FILE_H_</span>
+<span class="cp">#define MY_HEADER_FILE_H_</span>
+<span class="k">typedef</span> <span class="kt">int</span> <span class="n">my_int_type</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">my_function_prototype</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="cp">#endif </span><span class="c1">//end if for MY_HEADER_FILE_H_</span>
 </code></pre></div>
-<h3 id="error_and_warning">#error and #warning</h3>
+
+<h3 id="error-and-warning">#error and #warning</h3>
 
 <p>The #error and #warning directives allow for user defined errors and warnings that the compiler picks uThe utility of these directives is in making sure the program is configured correctly if there are limits on what conditions the program may compile. The following program illustrates how these directives may be used.</p>
-<div class='highlight'><pre><code class='cpp'><span class='cp'>#include &lt;stdio.h&gt;</span>
-<span class='cp'>#include &lt;stdlib.h&gt;</span>
-<span class='cp'>#define DEBUG 1 </span>
-<span class='cp'>#if DEBUG != 0 </span>
-<span class='cp'>#define debug_printf(...) printf(__VA_ARGS) </span>
-<span class='cp'>#warning &quot;Debugging is turned on&quot; </span>
-<span class='cp'>#else #define debug_printf(...) </span>
-<span class='cp'>#endif </span>
-<span class='kt'>int</span> <span class='nf'>main</span><span class='p'>(</span><span class='kt'>int</span> <span class='n'>argc</span><span class='p'>,</span> <span class='kt'>char</span> <span class='o'>*</span> <span class='n'>argv</span><span class='p'>[]){</span> 
-     <span class='n'>debug_printf</span><span class='p'>(</span><span class='s'>&quot;This is a debug message</span><span class='se'>\n</span><span class='s'>&quot;</span><span class='p'>);</span> 
-     <span class='n'>exit</span><span class='p'>(</span><span class='mi'>0</span><span class='p'>);</span> 
-<span class='p'>}</span>
+
+<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="cp">#include &lt;stdlib.h&gt;</span>
+<span class="cp">#define DEBUG 1 </span>
+<span class="cp">#if DEBUG != 0 </span>
+<span class="cp">#define debug_printf(...) printf(__VA_ARGS) </span>
+<span class="cp">#warning &quot;Debugging is turned on&quot; </span>
+<span class="cp">#else #define debug_printf(...) </span>
+<span class="cp">#endif </span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span> 
+     <span class="n">debug_printf</span><span class="p">(</span><span class="s">&quot;This is a debug message</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span> 
+     <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
+<span class="p">}</span>
 </code></pre></div>
+
 <p>The program above uses a preprocessor directive that causes the compiler to warn the user if debugging is enabled. In other situations, #error might be more appropriate. For example, if the user has defined a value that is not in a valid range.</p>
 
 <h3 id="pragma">#pragma</h3>
@@ -178,9 +181,11 @@
 
 <p>The GNU GCC compiler, which is a popular compiler for various embedded architectures such as ARM and AVR, also uses attributes as an alternative syntax to the #pragma directive.</p>
 
-<h3 id="take_away">Take Away</h3>
+<h3 id="take-away">Take Away</h3>
 
-<p>C language compilers always preprocess the code and execute any preprocessor directives during that stage. The most commonly used preprocessor directives (especially among beginners) are #include and #define. #include is simple to use; you just need to remember quotes for local files and less/greater than symbols for system files. #define is handy for code maintenance. If a value is fixed, it should be defined as a macro so that if it needs to be changed, it only needs to be changed in one location. Lastly, if you create your own header file, it is imperative that you use a header guard of the form: #ifndef NAME_H_, #define NAME_H_, … #endif.</p>
+<p>C language compilers always preprocess the code and execute any preprocessor directives during that stage. The most commonly used preprocessor directives (especially among beginners) are #include and #define. #include is simple to use; you just need to remember quotes for local files and less/greater than symbols for system files. #define is handy for code maintenance. If a value is fixed, it should be defined as a macro so that if it needs to be changed, it only needs to be changed in one location. Lastly, if you create your own header file, it is imperative that you use a header guard of the form: #ifndef NAME_H<em>, #define NAME_H</em>, … #endif.</p>
+
+
 				</div>
 			</div>
 

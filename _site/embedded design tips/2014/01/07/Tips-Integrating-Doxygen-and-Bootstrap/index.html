@@ -90,90 +90,119 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p><img class='post_image' src='/images/doxygen-and-bootstrap.png' /></p>
+					<p><img class="post_image" src="/images/doxygen-and-bootstrap.png" />
+Doxygen is a great tool for documenting embedded projects.  Twitter Bootstrap is
+an elegant, HTML5 framework that works great on both desktop and mobile browsers.  Using
+jquery and javascript, the two technologies can be easily integrated.</p>
 
-<p>Doxygen is a great tool for documenting embedded projects. Twitter Bootstrap is an elegant, HTML5 framework that works great on both desktop and mobile browsers. Using jquery and javascript, the two technologies can be easily integrated.</p>
+<h2 id="customizing-doxygen-output">Customizing Doxygen Output</h2>
 
-<h2 id="customizing_doxygen_output">Customizing Doxygen Output</h2>
+<p>Doxygen provides for a handful of ways to <a href="http://www.stack.nl/~dimitri/doxygen/manual/customize.html">customize the output</a>.  If
+you want full control over all of the Doxygen objects, you can have Doxygen output XML and then
+write your own output generator to do anything you want.  The drawback of doing this is that
+it requires a substantial effort.  It is much easier to simply customize the Doxygen HTML
+output.</p>
 
-<p>Doxygen provides for a handful of ways to <a href="http://www.stack.nl/~dimitri/doxygen/manual/customize.html">customize the output</a>. If you want full control over all of the Doxygen objects, you can have Doxygen output XML and then write your own output generator to do anything you want. The drawback of doing this is that it requires a substantial effort. It is much easier to simply customize the Doxygen HTML output.</p>
+<p>Doxygen allows you to customize the HTML output by modifying the master HTML header, footer, and
+stylesheet.  The following command will generate the default Doxygen HTML files.</p>
 
-<p>Doxygen allows you to customize the HTML output by modifying the master HTML header, footer, and stylesheet. The following command will generate the default Doxygen HTML files.</p>
-<div class='highlight'><pre><code class='bash'>doxygen -w html header.html footer.html customdoxygen.css 
+<div class="highlight"><pre><code class="bash">doxygen -w html header.html footer.html customdoxygen.css 
 </code></pre></div>
-<p>Modifying these files alone is not enough to get good Twitter Bootstrap integration. Bootstrap requires that certain classes be applied within the body of the HTML. For example, a Bootstrap “table” needs to have a class called “table” in order to apply the Bootstrap table formatting. Doxygen does a good job of applying classes to different objects. We just need to augment those classes with the Bootstrap classes. To do this, we use javascript and jquery. The code below will add Bootstrap formatting to various Doxygen tables.</p>
-<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span> <span class='nb'>document</span> <span class='p'>).</span><span class='nx'>ready</span><span class='p'>(</span><span class='kd'>function</span><span class='p'>()</span> <span class='p'>{</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.params&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.directory&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table table-striped&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.fieldtable&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table&quot;</span><span class='p'>);</span>	
-<span class='p'>});</span>
-</code></pre></div>
-<p>For this to work well, we need to modify doxygen’s default stylesheet and remove almost all formatting. We leave the code highlighting formatting in place since this doesn’t affect any of the Bootstrap formatting, but pretty much all other Doxygen formatting is removed.<br />We also modify the HTML header or footer to load the Bootstrap css/javascript and our custom javascript (doxy-boot.js).</p>
-<div class='highlight'><pre><code class='html'><span class='nt'>&lt;link</span> <span class='na'>href=</span><span class='s'>&quot;bootstrap3/css/bootstrap.min.css&quot;</span> <span class='na'>rel=</span><span class='s'>&quot;stylesheet&quot;</span><span class='nt'>&gt;</span>
-<span class='nt'>&lt;script </span><span class='na'>src=</span><span class='s'>&quot;bootstrap3/js/jquery-2.0.3.min.js&quot;</span><span class='nt'>&gt;&lt;/script&gt;</span>
-<span class='nt'>&lt;script </span><span class='na'>src=</span><span class='s'>&quot;bootstrap3/js/bootstrap.min.js&quot;</span><span class='nt'>&gt;&lt;/script&gt;</span>
-<span class='nt'>&lt;script </span><span class='na'>type=</span><span class='s'>&quot;text/javascript&quot;</span> <span class='na'>src=</span><span class='s'>&quot;doxy-boot.js&quot;</span><span class='nt'>&gt;&lt;/script&gt;</span>
-</code></pre></div>
-<p>The following code shows the full contents of doxy-boot.js used on the <a href="/coactionos/html/">CoActionOS documentation</a>.</p>
-<div class='highlight'><pre><code class='javascript'><span class='nx'>$</span><span class='p'>(</span> <span class='nb'>document</span> <span class='p'>).</span><span class='nx'>ready</span><span class='p'>(</span><span class='kd'>function</span><span class='p'>()</span> <span class='p'>{</span>
 
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.headertitle&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;page-header&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.title&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;h1&quot;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;index.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-cog&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;index.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>text</span><span class='p'>(</span><span class='s2'>&quot;CoActionOS&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;modules.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-square&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;namespaces.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-bars&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;annotated.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-list-ul&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;classes.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-book&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;inherits.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-sitemap&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;functions.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;functions_func.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;functions_vars.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;functions_enum.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;li &gt; a[href=&quot;functions_eval.html&quot;] &gt; span&#39;</span><span class='p'>).</span><span class='nx'>before</span><span class='p'>(</span><span class='s2'>&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;img[src=&quot;ftv2ns.png&quot;]&#39;</span><span class='p'>).</span><span class='nx'>replaceWith</span><span class='p'>(</span><span class='s1'>&#39;&lt;span class=&quot;label label-danger&quot;&gt;N&lt;/span&gt; &#39;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s1'>&#39;img[src=&quot;ftv2cl.png&quot;]&#39;</span><span class='p'>).</span><span class='nx'>replaceWith</span><span class='p'>(</span><span class='s1'>&#39;&lt;span class=&quot;label label-danger&quot;&gt;C&lt;/span&gt; &#39;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;ul.tablist&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;nav nav-pills nav-justified&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;ul.tablist&quot;</span><span class='p'>).</span><span class='nx'>css</span><span class='p'>(</span><span class='s2'>&quot;margin-top&quot;</span><span class='p'>,</span> <span class='s2'>&quot;0.5em&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;ul.tablist&quot;</span><span class='p'>).</span><span class='nx'>css</span><span class='p'>(</span><span class='s2'>&quot;margin-bottom&quot;</span><span class='p'>,</span> <span class='s2'>&quot;0.5em&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;li.current&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;active&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;iframe&quot;</span><span class='p'>).</span><span class='nx'>attr</span><span class='p'>(</span><span class='s2'>&quot;scrolling&quot;</span><span class='p'>,</span> <span class='s2'>&quot;yes&quot;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;#nav-path &gt; ul&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;breadcrumb&quot;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.params&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.ingroups&quot;</span><span class='p'>).</span><span class='nx'>wrapInner</span><span class='p'>(</span><span class='s2'>&quot;&lt;small&gt;&lt;/small&gt;&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.levels&quot;</span><span class='p'>).</span><span class='nx'>css</span><span class='p'>(</span><span class='s2'>&quot;margin&quot;</span><span class='p'>,</span> <span class='s2'>&quot;0.5em&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.levels &gt; span&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;btn btn-default btn-xs&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.levels &gt; span&quot;</span><span class='p'>).</span><span class='nx'>css</span><span class='p'>(</span><span class='s2'>&quot;margin-right&quot;</span><span class='p'>,</span> <span class='s2'>&quot;0.25em&quot;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.directory&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table table-striped&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.summary &gt; a&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;btn btn-default btn-xs&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.fieldtable&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;.fragment&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;well&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;.memitem&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;panel panel-default&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;.memproto&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;panel-heading&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;.memdoc&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;panel-body&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;span.mlabel&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;label label-info&quot;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.memberdecls&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;table&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;[class^=memitem]&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;active&quot;</span><span class='p'>);</span>
-	
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.ah&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;btn btn-default&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;span.mlabels&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;pull-right&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;table.mlabels&quot;</span><span class='p'>).</span><span class='nx'>css</span><span class='p'>(</span><span class='s2'>&quot;width&quot;</span><span class='p'>,</span> <span class='s2'>&quot;100%&quot;</span><span class='p'>)</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;td.mlabels-right&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;pull-right&quot;</span><span class='p'>);</span>
+<p>Modifying these files alone is not enough to get good Twitter Bootstrap integration.  Bootstrap 
+requires that certain classes be applied within the body of the HTML.  For example, 
+a Bootstrap “table” needs to have a class called “table” in order
+to apply the Bootstrap table formatting.  Doxygen does a good job of applying classes
+to different objects.  We just need to augment those classes with the Bootstrap classes.  To
+do this, we use javascript and jquery.  The code below will add Bootstrap formatting
+to various Doxygen tables.</p>
 
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.ttc&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;panel panel-info&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.ttname&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;panel-heading&quot;</span><span class='p'>);</span>
-	<span class='nx'>$</span><span class='p'>(</span><span class='s2'>&quot;div.ttdef,div.ttdoc,div.ttdeci&quot;</span><span class='p'>).</span><span class='nx'>addClass</span><span class='p'>(</span><span class='s2'>&quot;panel-body&quot;</span><span class='p'>);</span>
-<span class='p'>});</span>
+<div class="highlight"><pre><code class="javascript"><span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.params&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.directory&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table table-striped&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.fieldtable&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">);</span>	
+<span class="p">});</span>
 </code></pre></div>
+
+<p>For this to work well, we need to modify doxygen’s default stylesheet and remove almost all
+formatting.  We leave the code highlighting formatting in place since this doesn’t affect
+any of the Bootstrap formatting, but pretty much all other Doxygen formatting is removed.<br />
+We also modify the HTML header or footer to load the Bootstrap css/javascript and 
+our custom javascript (doxy-boot.js).</p>
+
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">&quot;bootstrap3/css/bootstrap.min.css&quot;</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;bootstrap3/js/jquery-2.0.3.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;bootstrap3/js/bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;doxy-boot.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div>
+
+<p>The following code shows the full contents of doxy-boot.js used on the 
+<a href="/coactionos/html/">CoActionOS documentation</a>.</p>
+
+<div class="highlight"><pre><code class="javascript"><span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.headertitle&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;page-header&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.title&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;h1&quot;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;index.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-cog&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;index.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">text</span><span class="p">(</span><span class="s2">&quot;CoActionOS&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;modules.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-square&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;namespaces.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-bars&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;annotated.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-list-ul&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;classes.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-book&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;inherits.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-sitemap&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;functions.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;functions_func.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;functions_vars.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;functions_enum.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;li &gt; a[href=&quot;functions_eval.html&quot;] &gt; span&#39;</span><span class="p">).</span><span class="nx">before</span><span class="p">(</span><span class="s2">&quot;&lt;i class=&#39;fa fa-list&#39;&gt;&lt;/i&gt; &quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img[src=&quot;ftv2ns.png&quot;]&#39;</span><span class="p">).</span><span class="nx">replaceWith</span><span class="p">(</span><span class="s1">&#39;&lt;span class=&quot;label label-danger&quot;&gt;N&lt;/span&gt; &#39;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s1">&#39;img[src=&quot;ftv2cl.png&quot;]&#39;</span><span class="p">).</span><span class="nx">replaceWith</span><span class="p">(</span><span class="s1">&#39;&lt;span class=&quot;label label-danger&quot;&gt;C&lt;/span&gt; &#39;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;ul.tablist&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;nav nav-pills nav-justified&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;ul.tablist&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;margin-top&quot;</span><span class="p">,</span> <span class="s2">&quot;0.5em&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;ul.tablist&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;margin-bottom&quot;</span><span class="p">,</span> <span class="s2">&quot;0.5em&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;li.current&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;active&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;iframe&quot;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s2">&quot;scrolling&quot;</span><span class="p">,</span> <span class="s2">&quot;yes&quot;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#nav-path &gt; ul&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;breadcrumb&quot;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.params&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.ingroups&quot;</span><span class="p">).</span><span class="nx">wrapInner</span><span class="p">(</span><span class="s2">&quot;&lt;small&gt;&lt;/small&gt;&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.levels&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;margin&quot;</span><span class="p">,</span> <span class="s2">&quot;0.5em&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.levels &gt; span&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;btn btn-default btn-xs&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.levels &gt; span&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;margin-right&quot;</span><span class="p">,</span> <span class="s2">&quot;0.25em&quot;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.directory&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table table-striped&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.summary &gt; a&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;btn btn-default btn-xs&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.fieldtable&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.fragment&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;well&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.memitem&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;panel panel-default&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.memproto&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;panel-heading&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.memdoc&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;panel-body&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;span.mlabel&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;label label-info&quot;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.memberdecls&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;table&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;[class^=memitem]&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;active&quot;</span><span class="p">);</span>
+	
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.ah&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;btn btn-default&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;span.mlabels&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;pull-right&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;table.mlabels&quot;</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s2">&quot;width&quot;</span><span class="p">,</span> <span class="s2">&quot;100%&quot;</span><span class="p">)</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;td.mlabels-right&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;pull-right&quot;</span><span class="p">);</span>
+
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.ttc&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;panel panel-info&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.ttname&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;panel-heading&quot;</span><span class="p">);</span>
+	<span class="nx">$</span><span class="p">(</span><span class="s2">&quot;div.ttdef,div.ttdoc,div.ttdeci&quot;</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="s2">&quot;panel-body&quot;</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div>
+
 <h2 id="conclusion">Conclusion</h2>
 
-<p>There are various ways to customize the Doxygen output. The easiest way to integrate Doxygen and Twitter Bootstrap is to use a few lines of javascript/jquery code to apply the desired Bootstrap classes to the already well documented Doxygen output. This results in fully responsive, mobile-ready code documentation.</p>
+<p>There are various ways to customize the Doxygen output.  The easiest way to integrate
+Doxygen and Twitter Bootstrap is to use a few lines of javascript/jquery code to apply the desired
+Bootstrap classes to the already well documented Doxygen output.  This results in
+fully responsive, mobile-ready code documentation.</p>
+
 				</div>
 			</div>
 

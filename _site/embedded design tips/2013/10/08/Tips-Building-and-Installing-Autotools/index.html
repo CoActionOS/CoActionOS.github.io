@@ -90,46 +90,57 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>Autotools is a set of tools used to build and manage software builds on multiple platforms.</p>
+					<p>Autotools is a set of tools used to build and manage software builds on 
+multiple platforms.</p>
 
 <p>To build and install, first use ftp (on Mac OS X) or wget (on Windows Mingw) to download the sources.</p>
-<div class='highlight'><pre><code class='bash'><span class='c'>#Define the desired versions</span>
-<span class='nb'>export </span><span class='nv'>AUTOMAKE_VERSION</span><span class='o'>=</span>1.12.6
-<span class='nb'>export </span><span class='nv'>AUTOCONF_VERSION</span><span class='o'>=</span>2.68
-<span class='nb'>export </span><span class='nv'>LIBTOOL_VERSION</span><span class='o'>=</span>2.4.2
-<span class='nb'>export </span><span class='nv'>TOOLSPATH</span><span class='o'>=</span>/usr/local/CoActionOS
+
+<div class="highlight"><pre><code class="bash"><span class="c">#Define the desired versions</span>
+<span class="nb">export </span><span class="nv">AUTOMAKE_VERSION</span><span class="o">=</span>1.12.6
+<span class="nb">export </span><span class="nv">AUTOCONF_VERSION</span><span class="o">=</span>2.68
+<span class="nb">export </span><span class="nv">LIBTOOL_VERSION</span><span class="o">=</span>2.4.2
+<span class="nb">export </span><span class="nv">TOOLSPATH</span><span class="o">=</span>/usr/local/CoActionOS
 mkdir -p automake
 mkdir -p autoconf
 mkdir -p libtool
-<span class='c'>#Download and extract the source</span>
-ftp http://ftp.gnu.org/gnu/automake/automake-<span class='nv'>$AUTOMAKE_VERSION</span>.tar.gz
-tar -zxvf automake-<span class='nv'>$AUTOMAKE_VERSION</span>.tar.gz
-ftp http://ftp.gnu.org/gnu/autoconf/autoconf-<span class='nv'>$AUTOCONF_VERSION</span>.tar.gz
-tar -zxvf autoconf-<span class='nv'>$AUTOCONF_VERSION</span>.tar.gz
-ftp http://ftp.gnu.org/gnu/libtool/libtool-<span class='nv'>$LIBTOOL_VERSION</span>.tar.gz
-tar -zxvf libtool-<span class='nv'>$LIBTOOL_VERSION</span>.tar.gz
+<span class="c">#Download and extract the source</span>
+ftp http://ftp.gnu.org/gnu/automake/automake-<span class="nv">$AUTOMAKE_VERSION</span>.tar.gz
+tar -zxvf automake-<span class="nv">$AUTOMAKE_VERSION</span>.tar.gz
+ftp http://ftp.gnu.org/gnu/autoconf/autoconf-<span class="nv">$AUTOCONF_VERSION</span>.tar.gz
+tar -zxvf autoconf-<span class="nv">$AUTOCONF_VERSION</span>.tar.gz
+ftp http://ftp.gnu.org/gnu/libtool/libtool-<span class="nv">$LIBTOOL_VERSION</span>.tar.gz
+tar -zxvf libtool-<span class="nv">$LIBTOOL_VERSION</span>.tar.gz
 </code></pre></div>
+
 <p>Now configure and build the sources. For Windows Mingw, the “sudo” is not used. Autoconf must be built first.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd </span>autoconf
-../autoconf-<span class='nv'>$AUTOCONF_VERSION</span>/configure <span class='se'>\</span>
-  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd </span>autoconf
+../autoconf-<span class="nv">$AUTOCONF_VERSION</span>/configure <span class="se">\</span>
+  --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span>
 make
 sudo make install
 </code></pre></div>
+
 <p>Now build Automake. The configure script may complain that the correct version of Autoconf is not installed. If this is the case, the PATH variable needs to be updated to include TOOLSPATH before any other directories that might have an older version of Autoconf.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../automake../automake-<span class='nv'>$AUTOMAKE_VERSION</span>/configure <span class='se'>\</span>
-  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ../automake../automake-<span class="nv">$AUTOMAKE_VERSION</span>/configure <span class="se">\</span>
+  --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span>
 make
 sudo make install
 </code></pre></div>
+
 <p>The following commands are used to build libtool.</p>
-<div class='highlight'><pre><code class='bash'><span class='nb'>cd</span> ../libtool
-../libtool-<span class='nv'>$LIBTOOL_VERSION</span>/configure <span class='se'>\</span>
-  --prefix<span class='o'>=</span><span class='nv'>$TOOLSPATH</span>
+
+<div class="highlight"><pre><code class="bash"><span class="nb">cd</span> ../libtool
+../libtool-<span class="nv">$LIBTOOL_VERSION</span>/configure <span class="se">\</span>
+  --prefix<span class="o">=</span><span class="nv">$TOOLSPATH</span>
 make
 sudo make install
 </code></pre></div>
+
 <p>The Autotools binaries should now be available in TOOLSPATH/bin.</p>
+
+
 				</div>
 			</div>
 

@@ -90,23 +90,27 @@
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p>GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X. It is the compiler of choice for CoActionOS, and an excellent general purpose ARM Cortex-M3 compiler.</p>
+					<p>GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X.  It is 
+the compiler of choice for CoActionOS, and an excellent general purpose ARM Cortex-M3 compiler.</p>
 
-<p>To install GCC for the ARM Cortex M3 architecture on a computer running Mac OS X (10.5 or higher), you must have XCode installed. Also, ensure the following packages (or their equivalents are installed): flex, bison, libgmp3, libppl, libmpfr, autoconf, automake, texinfo, libmpc, and build-essential. These packages can be installed using Fink or Macports. Once the pre-requisite packages are installed, the binutils, GCC, and newlib source files must be downloaded and extracted.</p>
+<p>To install GCC for the ARM Cortex M3 architecture on a computer running Mac OS X (10.5 or higher), you 
+must have XCode installed.  Also, ensure the following packages (or their equivalents are installed): flex, 
+bison, libgmp3, libppl, libmpfr, autoconf, automake, texinfo, libmpc, and  build-essential.  These 
+packages can be installed using Fink or Macports.  Once the pre-requisite packages are installed, the 
+binutils, GCC, and newlib source files must be downloaded and extracted.</p>
 
 <p>The GMP, PPL, MPFR, and MPC libraries may be installed from source. The latest versions can be downloaded from:</p>
 
 <ul>
-<li><a href="https://gmplib.org/">GMP</a></li>
-
-<li><a href="http://bugseng.com/products/ppl/download">PPL</a></li>
-
-<li><a href="http://www.mpfr.org/">MPFR</a></li>
-
-<li><a href="http://www.multiprecision.org/">MPC</a></li>
+  <li><a href="https://gmplib.org/">GMP</a></li>
+  <li><a href="http://bugseng.com/products/ppl/download">PPL</a></li>
+  <li><a href="http://www.mpfr.org/">MPFR</a></li>
+  <li><a href="http://www.multiprecision.org/">MPC</a></li>
 </ul>
 
-<p>Once you download the source, enter the following commands in the Terminal. Replace the version values with the version you download.</p>
+<p>Once you download the source, enter the following commands in the Terminal.  Replace the version 
+values with the version you download.</p>
+
 <pre>
 export GMP_VERSION=5.1.2
 #If you use ppl-1.0, you need to use GMP 5.0.x
@@ -136,11 +140,15 @@ cd ../mpc
 make
 make install
 </pre>
+
 <p>Now specify the program to download the sources (or use a browser).</p>
+
 <pre>
 export GET=ftp
 </pre>
+
 <p>Now that all prerequisites are installed, binutils, gcc, and newlib can be compiled and installed using the following commands.</p>
+
 <pre>
 #Define the desired versions
 export BINUTILS_VERSION=2.23.1
@@ -160,7 +168,9 @@ tar -zxvf gcc-$GCC_VERSION.tar.gz
 $GET ftp://sources.redhat.com/pub/newlib/newlib-$NEWLIB_VERSION.tar.gz
 tar -zxvf newlib-$NEWLIB_VERSION.tar.gz
 </pre>
-<p>The binutils source needs to be built first. Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:</p>
+
+<p>The binutils source needs to be built first.  Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:</p>
+
 <pre>
 cd binutils
 ../binutils-$BINUTILS_VERSION/configure \
@@ -178,7 +188,9 @@ make
 sudo make install
 export PATH=$TOOLSPATH/bin:$PATH
 </pre>
+
 <p>After binutils is built, GCC is next:</p>
+
 <pre>
 cd ../gcc
 ../gcc-$GCC_VERSION/configure \
@@ -204,7 +216,9 @@ cd ../gcc
 make all-gcc
 sudo make install-gcc
 </pre>
-<p>Now, we need to build newlib. In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions. The <strong>BUFSIZ</strong> definition specifies what size buffer to use with printf() and file I/O. Smaller values mean slower performance using less RAM. To build newlib, type (or copy and paste) the following in a terminal window:</p>
+
+<p>Now, we need to build newlib.  In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions.  The <strong>BUFSIZ</strong> definition specifies what size buffer to use with printf() and file I/O.  Smaller values mean slower performance using less RAM.  To build newlib, type (or copy and paste) the following in a terminal window:</p>
+
 <pre>
 cd ../newlib
 ../newlib-$NEWLIB_VERSION/configure \
@@ -224,13 +238,18 @@ cd ../newlib
 make CFLAGS_FOR_TARGET="-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64"
 sudo make install
 </pre>
+
 <p>Finally, we need to finish building GCC.</p>
+
 <pre>
 cd ../gcc
 make
 sudo make install
 </pre>
-<p>That’s it. If all went well, a dedicated ARM Cortex M3 compiler is now installed in /usr/local/CoActionOS. To uninstall the compiler tools, delete the /usr/local/CoActionOS folder.</p>
+
+<p>That’s it.  If all went well, a dedicated ARM Cortex M3 compiler is now installed in /usr/local/CoActionOS.  To uninstall the compiler tools, delete the /usr/local/CoActionOS folder.</p>
+
+
 				</div>
 			</div>
 
