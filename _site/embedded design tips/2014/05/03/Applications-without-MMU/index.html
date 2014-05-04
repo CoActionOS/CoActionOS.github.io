@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>An Easy-to-Use Digital Filter</title> 
+<title>Applications without an MMU</title> 
 <meta name="author" content="CoActionOS, Inc">
 
 <!-- Enable responsive viewport -->
@@ -86,137 +86,73 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h1>
-						An Easy-to-Use Digital Filter <small>Embedded Design</small>
+						Applications without an MMU <small>Embedded Design</small>
 					</h1>
 				</div>
 				<div class="panel-body">
-					<p><img class="post_image_tall" src="/images/316px-Fourier_Series.png" />
-The exponential moving average (EMA) is a type of infinite impulse response (IIR) filter 
-that can be used in many embedded DSP applications.  It requires only a small amount 
-of RAM and computing power.</p>
+					<h2 id="why">Why?</h2>
 
-<h2 id="what-is-a-filter">What is a Filter?</h2>
+<p>One of CoActionOS’s biggest software challenges is providing the ability to install applications separately from the OS–without an MMU.  Overcoming this challenge contributes to both ease-of-use and portability.  By installing just the application, you save the programmer the work of integrating and compiling the OS with the application.  The programmer can also distribute the binary file to other devices running CoActionOS.  In the MMU-free world, these features are only available on uCLinux and now CoActionOS.</p>
 
-<p>Filters come in both analog and digital forms and exist to remove specific frequencies 
-from a signal.  A common analog filter is the low pass RC filter shown below.</p>
+<p>This begs the question:  why not just use ucLinux?  The RAM requirements for uCLinux, which are in the megabyte range (versus low KB range for CoActionOS), are too high for many small systems.  uCLinux also requires a Linux computer to compile programs.</p>
 
-<p><img class="post_image_tall" src="/images/lpf-1st-order.png" /></p>
+<h2 id="how">How</h2>
 
-<p>Analog filters are characterized by their frequency response; that is how much the 
-frequencies are attenuated (magnitude response) and shifted (phase response).  The 
-frequency response can be analyzed using a Laplace transform which defines a transfer 
-function in the S-domain.  For the above circuit, the transfer function is given by:</p>
+<p>Without an MMU, compiling and installing independent programs can be done using one of several approaches:</p>
 
-<p><img class="post_equation" src="/images/filter-formula1.svg" /></p>
+<ul>
+  <li>Implement an ELF parser in the embedded installer</li>
+  <li>Compile using position independent code/executables (PIC or PIE) and have the embedded installer update the global offset table when installing the firmware</li>
+  <li>Compile using relocatable code and translate the memory locations of the binary program using an embedded installer</li>
+</ul>
 
-<p>For R equals one kilo-ohm and C equals one microfarad, the magnitude response is 
-shown below.</p>
+<p>CoActionOS uses the last approach.  </p>
 
-<p><img class="post_image" src="/images/lpf-mag.png" /></p>
+<p>The disadvantage of using an ELF parser is that it requires more processing on the firmware side than the other options.  This means a larger portion of precious flash memory is dedicated to installing programs.  </p>
 
-<p>Note that the x-axis is logarithmic (every tick mark is 10 times greater than the last one).  The y-axis is in decibels (which is a logarithmic function of the output).  The “cutoff frequency” for this filter is 1000 rad/s or 160 Hz.  This is the point where less than half the power at a given frequency is transferred from the input to the output of the filter.</p>
+<p>Position independent code is a good solution but slightly degrades performance due to a layer of indirection using a global offset table.</p>
 
-<p>Analog filters must be used in embedded designs when sampling a signal using an 
-analog to digital converter (ADC).  The ADC only captures frequencies that are 
-up to half the sampling frequency.  For example, if the ADC acquires 320 samples 
-per second, the filter above (with a cutoff frequency of 160Hz) is placed between 
-the signal and the ADC input to prevent aliasing (which is a phenomena where higher 
-frequencies show up in the sampled signal as lower frequencies).</p>
+<p>Using relocatable code and translating the memory locations is simpler than an ELF parser and yields slightly better performance than position independent code.  </p>
 
-<h3 id="digital-filters">Digital Filters</h3>
+<h3 id="details">Details</h3>
 
-<p>Digital filters attenuate frequencies in software rather than using analog 
-components.  Their implementation includes sampling the analog signals with 
-an ADC then applying a software algorithm.  Two common design approaches to 
-digital filtering are FIR filters and IIR filters.</p>
+<p>The compiler, per se, does not create a relocatable binary.  Doing so requires using a couple tricks such that the embedded installer can distinguish what parts of the program refer to memory addresses and what parts are instructions.  This is accomplished by doing two things:</p>
 
-<h3 id="fir-filters">FIR Filters</h3>
+<ol>
+  <li>Compile using mlong-calls in GCC</li>
+  <li>Link to an address space that does not coincide with any instruction</li>
+</ol>
 
-<p>Finite Impulse Response (FIR) filters use a finite number of samples to generate 
-the output.  A simple moving average is an example of a low pass FIR filter.  Higher 
-frequencies are attenuated because the averaging “smooths” out the signal.  The 
-filter is finite because the output of the filter is determined by a finite number 
-of input samples.  As an example, a 12 point moving average filter adds up the 12 most 
-recent samples then divides by 12.  The output of IIR filters is determined 
-by (up to) an infinite number of input samples.</p>
+<p>When using mlong-calls, GCC always loads the 32-bit address of a function from a literal pool to a register.  This makes it easier for the embedded installer to find addresses within the binary.  Linking to a region of memory distinct from any instruction allows the embedded installer to know which 32-bit words are instructions and which are memory addresses.</p>
 
-<h3 id="iir-filters">IIR Filters</h3>
+<p>For the ARMv7-M instruction set, the instruction 0xDExx is permanently undefined.  Therefore, if the program is linked to an address space starting at 0xDE000000, all instances of 0xDExxxxxx in the binary must be data rather than instructions.</p>
 
-<p>Infinite Impulse Response (IIR) filters are a type of digital filter where the 
-output is inifinetely–in theory anyway–influenced by an input.  The exponential 
-moving average is an example of a low pass IIR filter.</p>
+<p>The code below shows an excerpt from the CoActionOS Hello World program.  </p>
 
-<h2 id="exponential-moving-average-filter">Exponential Moving Average Filter</h2>
+<pre><code>de00004c &lt;main&gt;:
+de00004c:	b508      	push	{r3, lr}
+de00004e:	4802      	ldr	r0, [pc, #8]	; (de000058 &lt;main+0xc&gt;)
+de000050:	4b02      	ldr	r3, [pc, #8]	; (de00005c &lt;main+0x10&gt;)
+de000052:	4798      	blx	r3
+de000054:	2000      	movs	r0, #0
+de000056:	bd08      	pop	{r3, pc}
+de000058:	de00003c 	.word	0xde00003c
+de00005c:	deff826d 	.word	0xdeff826d
+</code></pre>
 
-<p>An exponential moving average (EMA) applies exponential weights to each sample 
-in order to compute an average.  Though this seems complicated, the 
-equation–known in digital filtering parlance as the difference equation–to 
-compute the output is simple.  In the equation below, y is the output; x is 
-the input; and alpha is a constant that sets the cutoff frequency.</p>
+<p>When this program is installed, the value 0xdeff826d (penultimate line) is changed to the location of the printf() function (a system call) and 0xde00003c (last line) is changed to the location of the “Hello World\n” string.  The instructions (0xb500, 0x4b02, etc) are not changed.</p>
 
-<p><img class="post_equation" src="/images/filter-formula2.svg" /></p>
+<h2 id="limitations">Limitations</h2>
 
-<p>To analyze how this filter impacts the frequency of the output, the Z-domain transfer 
-function is used. </p>
+<p>This approach has two limitations.  First, the program (flash and RAM) must be less than 16MB (not a problem for most microcontroller applications).  Second, if the program uses data between 0xDE000000 and 0xDEFFFFFF (integers between 3.72 billion and 3.74 billion), the embedded installer will modify the data even if it does not refer to a memory location.  For example, the embedded installer will mistake the following variable for a memory address and translate it to a new location.</p>
 
-<p><img class="post_equation" src="/images/filter-formula3.svg" /></p>
-
-<p>The magnitude response is shown below for alpha equal 0.5.</p>
-
-<p><img class="post_image" src="/images/dig-mag.png" /></p>
-
-<p>The y-axis is, again, shown in decibels.  The x-axis is logarithmic from 0.001 to 
-pi.  The real-world frequency maps to the x-axis with zero being the DC voltage 
-and pi being equal to half the sampling frequency.  Any frequencies that are 
-greater than half the sampling frequency will be “aliased”. As mentioned, an 
-analog filter can ensure practically all frequencies in the digital signal are 
-below half the sampling frequency.</p>
-
-<p>The EMA filter is beneficial in embedded designs for two reasons.  First, it is 
-easy to adjust the cutoff frequency.  Decreasing the value of alpha will lower 
-the cutoff frequency of the filter as illustrated by comparing the above 
-alpha = 0.5 plot to the below plot where alpha = 0.1.</p>
-
-<p><img class="post_image" src="/images/dig-mag2.png" /></p>
-
-<p>Second, the EMA is easy to code and requires only a small amount of computing power 
-and memory.  The code implementation of the filter uses the difference equation.  There 
-are two multiply operations and one addition operation for each output–this ignores 
-the operations required for rounding fixed point math.  Only the most recent sample 
-must be stored in RAM.  This is substantially less than using a simple moving average 
-filter with N points which requires N multiply and addition operations as well as N 
-samples to be stored in RAM.  The following code implements the EMA filter using 32-bit 
-fixed point math.</p>
-
-<div class="highlight"><pre><code class="cpp"><span class="cp">#define DSP_EMA_I32_ALPHA(x) ( (uint16_t)(x * 65535) )</span>
- 
-<span class="kt">int32_t</span> <span class="nf">dsp_ema_i32</span><span class="p">(</span><span class="kt">int32_t</span> <span class="n">in</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">average</span><span class="p">,</span> <span class="kt">uint16_t</span> <span class="n">alpha</span><span class="p">){</span>
-  <span class="k">if</span> <span class="p">(</span> <span class="n">alpha</span> <span class="o">==</span> <span class="mi">65535</span> <span class="p">)</span> <span class="k">return</span> <span class="n">in</span><span class="p">;</span>
-  <span class="kt">int64_t</span> <span class="n">tmp0</span><span class="p">;</span>
-  <span class="n">tmp0</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int64_t</span><span class="p">)</span><span class="n">in</span> <span class="o">*</span> <span class="p">(</span><span class="n">alpha</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">average</span> <span class="o">*</span> <span class="p">(</span><span class="mi">65536</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">);</span>
-  <span class="k">return</span> <span class="p">(</span><span class="kt">int32_t</span><span class="p">)((</span><span class="n">tmp0</span> <span class="o">+</span> <span class="mi">32768</span><span class="p">)</span> <span class="o">/</span> <span class="mi">65536</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
-
-<p>The code below is an example of how to use the above function.</p>
-
-<div class="highlight"><pre><code class="cpp"><span class="kt">int32_t</span> <span class="nf">my_avg_func</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-     <span class="k">static</span> <span class="kt">int32_t</span> <span class="n">average</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-     <span class="kt">int32_t</span> <span class="n">adc_value</span><span class="p">;</span>    
-     <span class="n">adc_value</span> <span class="o">=</span> <span class="n">read_the_adc_value</span><span class="p">();</span>
-     <span class="n">average</span> <span class="o">=</span> <span class="n">dsp_ema_i32</span><span class="p">(</span><span class="n">adc_value</span><span class="p">,</span> <span class="n">average</span><span class="p">,</span> <span class="n">DSP_EMA_I32_ALPHA</span><span class="p">(</span><span class="mf">0.1</span><span class="p">));</span>
-     <span class="k">return</span> <span class="n">average</span><span class="p">;</span>
+<div class="highlight"><pre><code class="cpp"><span class="kt">uint32_t</span> <span class="n">world_population_1970</span> <span class="o">=</span> <span class="mi">3733996830</span><span class="p">;</span> <span class="c1">//0xDE90451E</span>
 </code></pre></div>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Filters, both analog and digital, are an essential part of embedded designs.  They 
-allow developers to get rid of unwanted frequencies when analyzing sensor input.  For 
-digital filters to be useful, analog filters must remove all frequencies above half 
-the sampling frequency.  Digital IIR filters can be powerful tools in embedded design 
-where resources are limited.  The exponential moving average (EMA) is an example of 
-such a filter that works well in embedded designs because of the low memory and 
-computing power requirements.</p>
+<p>Implementing an embedded installer that can dynamically relocate code has been well worth it.  Users can easily compile and install CoActionOS applications without worrying about compiling or installing the OS.  It also allows firmware application portability between different
+boards running CoActionOS.</p>
 
 
 				</div>
@@ -232,13 +168,13 @@ computing power requirements.</p>
      
     	<li><a href="/tags.html#embedded-ref">embedded <span class="badge">35</span></a></li>
      
-    	<li><a href="/tags.html#filter-ref">filter <span class="badge">3</span></a></li>
+    	<li><a href="/tags.html#microcontroller-ref">microcontroller <span class="badge">7</span></a></li>
      
-    	<li><a href="/tags.html#iir-ref">iir <span class="badge">1</span></a></li>
+    	<li><a href="/tags.html#arm-ref">arm <span class="badge">1</span></a></li>
      
-    	<li><a href="/tags.html#programming-ref">programming <span class="badge">9</span></a></li>
+    	<li><a href="/tags.html#cortex-m3-ref">cortex-m3 <span class="badge">4</span></a></li>
      
-    	<li><a href="/tags.html#popular-ref">popular <span class="badge">11</span></a></li>
+    	<li><a href="/tags.html#coaction-ref">coaction <span class="badge">22</span></a></li>
     
   
 
@@ -249,7 +185,7 @@ computing power requirements.</p>
 			<div class="pagination">
 				<center>
 					 
-						<a href="/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table" type="button" class="btn btn-primary"
+						<a href="/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS" type="button" class="btn btn-primary"
 							data-toggle="tooltip" data-placement="left" title="" data-original-title="Previous Post"
 							>
 							<i class="fa fa-arrow-left"></i>
@@ -265,13 +201,7 @@ computing power requirements.</p>
 					>
 						<i class="fa fa-folder-open"></i>
 					</a> 
-					 
-						<a href="/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows" type="button" class="btn btn-primary"
-							data-toggle="tooltip" data-placement="right" title="" data-original-title="Next Post"
-							>
-							<i class="fa fa-arrow-right"></i>
-						</a>
-					
+					 <a href="#" type="button" class="disabled btn btn-primary"><i class="fa fa-arrow-right"></i></a> 
 				</center>
 			</div>
 				
@@ -314,7 +244,7 @@ computing power requirements.</p>
     
       
       	
-      	<li class='active tagged embedded filter iir programming popular'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter" class="active">An Easy-to-Use Digital Filter</a></li>
+      	<li class='tagged embedded filter iir programming popular'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a></li>
       	
       
     
@@ -490,7 +420,7 @@ computing power requirements.</p>
     
       
       	
-      	<li class='tagged embedded microcontroller arm cortex-m3 coaction'><a href="/embedded%20design%20tips/2014/05/03/Applications-without-MMU">Applications without an MMU</a></li>
+      	<li class='active tagged embedded microcontroller arm cortex-m3 coaction'><a href="/embedded%20design%20tips/2014/05/03/Applications-without-MMU" class="active">Applications without an MMU</a></li>
       	
       
     
