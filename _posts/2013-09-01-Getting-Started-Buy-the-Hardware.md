@@ -47,3 +47,18 @@ Link.</div>
 
 
 CoActionOS also supports running the mbed with the [Xively jumpstart kit](https://xively.com/dev/kits/).
+
+## Installing on mbed
+
+CoActionOS can be installed on mbed by dragging and dropping [the binary file]({{ BASE_PATH }}/files/Coaction-mbed.bin)
+on the MBED drive.  After the file is copied to the drive, just push the mbed reset button to start running CoActionOS.
+
+## Installing on mbed with Xively
+
+[This binary file]({{ BASE_PATH }}/files/Coaction-mbed-xively.bin) can be dropped on the 
+on the MBED drive mounted on a Xively board.  After the file is copied to the drive, the USB cable needs to be re-connected directly
+to the Xively board to access CoActionOS.
+
+Once CoActionOS is installed and running, you can install and run applications using CoActionOS Link.
+
+

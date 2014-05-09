@@ -4,7 +4,7 @@
  <title>CoActionOS</title>
  <link href="http://coactionos.com/" rel="self"/>
  <link href="http://coactionos.com"/>
- <updated>2014-05-03T22:50:44-06:00</updated>
+ <updated>2014-05-08T22:59:31-06:00</updated>
  <id>http://coactionos.com</id>
  <author>
    <name>CoActionOS, Inc</name>
@@ -17,9 +17,7 @@
    <link href="http://coactionos.com/embedded%20design%20tips/2014/05/03/Applications-without-MMU"/>
    <updated>2014-05-03T00:00:00-06:00</updated>
    <id>http://coactionos.com/embedded%20design%20tips/2014/05/03/Applications-without-MMU</id>
-   <content type="html">&lt;h2 id=&quot;why&quot;&gt;Why?&lt;/h2&gt;
-
-&lt;p&gt;One of CoActionOS’s biggest software challenges is providing the ability to install applications separately from the OS–without an MMU.  Overcoming this challenge contributes to both ease-of-use and portability.  By installing just the application, you save the programmer the work of integrating and compiling the OS with the application.  The programmer can also distribute the binary file to other devices running CoActionOS.  In the MMU-free world, these features are only available on uCLinux and now CoActionOS.&lt;/p&gt;
+   <content type="html">&lt;p&gt;One of CoActionOS’s biggest software challenges is providing the ability to install applications separately from the OS–without an MMU.  Overcoming this challenge contributes to both ease-of-use and portability.  By installing just the application, you save the programmer the work of integrating and compiling the OS with the application.  The programmer can also distribute the binary file to other devices running CoActionOS.  In the MMU-free world, these features are only available on uCLinux and now CoActionOS.&lt;/p&gt;
 
 &lt;p&gt;This begs the question:  why not just use ucLinux?  The RAM requirements for uCLinux, which are in the megabyte range (versus low KB range for CoActionOS), are too high for many small systems.  uCLinux also requires a Linux computer to compile programs.&lt;/p&gt;
 
@@ -6903,6 +6901,18 @@ Link.&lt;/div&gt;
 &lt;p&gt;&lt;img class=&quot;post_image&quot; src=&quot;/images/mbed-xively-kit.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;CoActionOS also supports running the mbed with the &lt;a href=&quot;https://xively.com/dev/kits/&quot;&gt;Xively jumpstart kit&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-on-mbed&quot;&gt;Installing on mbed&lt;/h2&gt;
+
+&lt;p&gt;CoActionOS can be installed on mbed by dragging and dropping &lt;a href=&quot;/files/Coaction-mbed.bin&quot;&gt;the binary file&lt;/a&gt;
+on the MBED drive.  After the file is copied to the drive, just push the mbed reset button to start running CoActionOS.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-on-mbed-with-xively&quot;&gt;Installing on mbed with Xively&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;/files/Coaction-mbed-xively.bin&quot;&gt;This binary file&lt;/a&gt; can be dropped on the 
+on the MBED drive mounted on a Xively board.  After the file is copied to the drive, the USB cable needs to be re-connected directly
+to the Xively board to access CoActionOS.&lt;/p&gt;
+
 </content>
  </entry>
  
