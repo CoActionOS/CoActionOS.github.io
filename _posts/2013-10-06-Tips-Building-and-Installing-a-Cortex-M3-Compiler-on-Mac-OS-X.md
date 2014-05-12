@@ -44,15 +44,15 @@ cd ../ppl
 #on mingw add: --disable-shared --enable-static --disable-debugging
 ../ppl-$PPL_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
 make
-make install
+sudo make install
 cd ../mpfr
 ../mpfr-$MPFR_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
 make
-make install
+sudo make install
 cd ../mpc
 ../mpc-$MPC_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH --enable-static --disable-shared
 make
-make install
+sudo make install
 </pre>
 
 Now specify the program to download the sources (or use a browser).
