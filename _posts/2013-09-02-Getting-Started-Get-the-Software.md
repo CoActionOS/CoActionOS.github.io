@@ -16,20 +16,20 @@ We also recommend downloading [Eclipse IDE for C/C++ Developers](http://www.ecli
 ## Windows
 
 * [CoActionOS Compiler Installer GCC 4.7.3 CoActionOS 1.3.1](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/win/CoActionOS-Compiler-Installer-4.7.3-1.3.1.exe)
-* [CoActionOS Link 1.3.1](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/win/CoActionOS-Link-Installer-1.3.1.exe)
+* [CoActionOS Link](https://github.com/CoActionOS/CoActionOS-Desktop/releases)
 
 Please be sure to read [Installing Windows Device Drivers]({% post_url 2013-12-20-CoActionOS-User-Guide-Installing-Windows-Device-Drivers %}).
 
 ## Mac OS X
 
 * [CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.3.1](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.3-1.3.1.pkg)
-* [CoActionOS Link 1.3.1](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Link-1.3.1.dmg)
+* [CoActionOS Link](https://github.com/CoActionOS/CoActionOS-Desktop/releases)
 
 ## Ubuntu Linux
 
 * [CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.2.7](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/linux/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz) ([more info](https://www.coactionos.com/redmine/boards/3/topics/5))
 * Even though the Linux distribution is not as up to date, you can always download the code and build/install from [source](https://github.com/CoActionOS/CoActionOS) using Eclipse.
-* CoActionOS Link: currently only available in [source form](https://github.com/CoActionOS/CoActionOS-Desktop). You need to install Qt 5.0.2 in order to build the binary.
+* CoActionOS Link: currently only available in [source form](https://github.com/CoActionOS/CoActionOS-Desktop). You need to install Qt 5.1.0 in order to build the binary.
 
 You can install the compiler using the following commands. This assumes the tar file is downloaded to the ~/Downloads directory.
 
