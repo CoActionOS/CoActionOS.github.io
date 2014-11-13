@@ -19,6 +19,8 @@ CoActionOS is designed for maximum ease of use.  Unlike other microcontroller RT
 you don't have to integrate your application with the operating system.  You just compile your 
 application using the free SDK and install it on any system running CoActionOS.
 
+For support, please submit issues on [Github](https://github.com/CoActionOS) under the relevant project.  For general inquires, please email contact at coactionos.com.
+
 <ul>
 {% assign pages_list = site.categories.["getting started"] | sort:"name" %} {% include JB/pages_list %}
 </ul>
