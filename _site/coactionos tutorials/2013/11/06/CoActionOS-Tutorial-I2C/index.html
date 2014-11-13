@@ -136,7 +136,7 @@ normal I2C transfer to handle these devices. The chronology of a normal I2C read
 For more details on using the I2C, please see the 
 <a href="/coactionos-applib/html/class_i2c.html">I2C Applib documentation</a>.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;cstdio&gt; </span><span class="c1">//For printf and perror</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;cstdio&gt; </span><span class="c1">//For printf and perror</span>
 <span class="cp">#include &lt;applib/I2c.hpp&gt; </span><span class="c1">//For the I2C class</span>
  
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
@@ -157,8 +157,7 @@ For more details on using the I2C, please see the
   <span class="n">i2c</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
  
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 				</div>
 			</div>
@@ -221,7 +220,7 @@ For more details on using the I2C, please see the
 			<h3>CoActionOS Tutorials</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -229,79 +228,7 @@ For more details on using the I2C, please see the
     
       
       	
-      	<li class='tagged coaction tutorial control popular'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial uart'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial spi'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged coaction tutorial serial i2c'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C" class="active">I2C Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial control pwm'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm">PWM Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial signals'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	<li class='tagged coaction tutorial control threads'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control">Motor Control Tutorial</a></li>
       	
       
     
@@ -317,7 +244,79 @@ For more details on using the I2C, please see the
     
       
       	
-      	<li class='tagged coaction tutorial control threads'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control">Motor Control Tutorial</a></li>
+      	<li class='tagged coaction tutorial signals'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control pwm'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm">PWM Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged coaction tutorial serial i2c'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C" class="active">I2C Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial spi'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial uart'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control popular'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
       	
       
     

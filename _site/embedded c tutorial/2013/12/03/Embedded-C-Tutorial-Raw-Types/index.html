@@ -94,7 +94,7 @@
 
 <p>Programs are created to do something useful–in embedded systems, to make a device or gadget do something useful. As a means to an end, the program uses data and operations. For example, a motor’s position is represented as data in a program; the motor’s speed, also represented as data, can be calculated using various operations given the change in motor positions for a given period of time. This tutorial introduces C raw data types. The following code snippet illustrates how to use data in C and introduces the raw data type int.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdlib.h&gt; </span><span class="c1">//this declares exit()</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;stdlib.h&gt; </span><span class="c1">//this declares exit()</span>
 <span class="cp">#include &lt;unistd.h&gt; </span><span class="c1">//this contains usleep()</span>
 <span class="cp">#include &quot;motor.h&quot; </span><span class="c1">//this is a fictitious header than contains get_motor_position()</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
@@ -111,8 +111,7 @@
      <span class="c1">//now use the positions values and some operators to calculate the speed</span>
      <span class="n">motor_speed</span> <span class="o">=</span> <span class="p">(</span><span class="n">motor_pos1</span> <span class="o">-</span> <span class="n">motor_pos0</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">;</span>
      <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="c1">//exit the program</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <h2 id="data-types">Data Types</h2>
 
@@ -241,7 +240,7 @@
 			<h3>Embedded C Tutorial</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -249,63 +248,7 @@
     
       
       	
-      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types" class="active">Raw Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
       	
       
     
@@ -321,7 +264,63 @@
     
       
       	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types" class="active">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
       	
       
     

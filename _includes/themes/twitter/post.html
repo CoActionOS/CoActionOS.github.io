@@ -58,14 +58,14 @@
 			<h3>{{ page.category }}</h3>
 			<ul class="nav nav-pills nav-stacked">
 				{% assign category = page.category | downcase %}
-				{% assign pages_list = site.categories[category] | sort:"name" %}  
+				{% assign pages_list = site.categories[category] %}
 				{% include JB/pages_list %}
 			</ul>
 			
 			{% if category == "embedded design tips" %}
 				<h3>Embedded C Tutorial</h3>
 				<ul class="nav nav-pills nav-stacked">
-					{% assign pages_list = site.categories["embedded c tutorial"] | sort:"name" %}  
+					{% assign pages_list = site.categories["embedded c tutorial"] %}  
 					{% include JB/pages_list %}
 				</ul>
 			

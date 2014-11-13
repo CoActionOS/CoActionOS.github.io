@@ -135,13 +135,12 @@ status, to allow the context switcher to selectively execute
 tasks.  The following code shows an example of a structure that can 
 be used for an entry in the task table:</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
      <span class="kt">void</span> <span class="o">*</span> <span class="n">sp</span><span class="p">;</span> <span class="c1">//The task&#39;s current stack pointer</span>
      <span class="kt">int</span> <span class="n">flags</span><span class="p">;</span> <span class="c1">//Status flags includes activity status, parent task, etc</span>
 <span class="p">}</span> <span class="kt">task_table_t</span><span class="p">;</span>
 <span class="kt">int</span> <span class="n">current_task</span><span class="p">;</span>
-<span class="kt">task_table_t</span> <span class="n">task_table</span><span class="p">[</span><span class="n">MAX_TASKS</span><span class="p">];</span>
-</code></pre></div>
+<span class="kt">task_table_t</span> <span class="n">task_table</span><span class="p">[</span><span class="n">MAX_TASKS</span><span class="p">];</span></code></pre></div>
 
 <p>The sp member stores the value of the task’s stack pointer, while 
 flags holds the task status. In this example, the task uses two 
@@ -162,7 +161,7 @@ the other to specify whether or not to execute the task.</p>
 <p>The following code is an example of a context switcher, preceded by some 
 helper functions, and the interrupt handlers.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="k">static</span> <span class="kt">uint32_t</span> <span class="o">*</span> <span class="n">stack</span><span class="p">;</span> <span class="c1">//This is stored on the heap rather than the stack</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">static</span> <span class="kt">uint32_t</span> <span class="o">*</span> <span class="n">stack</span><span class="p">;</span> <span class="c1">//This is stored on the heap rather than the stack</span>
  
 <span class="cp">#define MAIN_RETURN 0xFFFFFFF9  </span><span class="c1">//Tells the handler to return using the MSP</span>
 <span class="cp">#define THREAD_RETURN 0xFFFFFFFD </span><span class="c1">//Tells the handler to return using the PSP</span>
@@ -220,15 +219,14 @@ helper functions, and the interrupt handlers.</p>
 <span class="c1">//This writes the PSP so that the task table stack pointer can be used again</span>
 <span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">wr_thread_stack_ptr</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span> <span class="n">ptr</span><span class="p">){</span>
     <span class="k">asm</span> <span class="k">volatile</span> <span class="p">(</span><span class="s">&quot;MSR psp, %0</span><span class="se">\n\t</span><span class="s">&quot;</span> <span class="o">:</span> <span class="o">:</span> <span class="s">&quot;r&quot;</span> <span class="p">(</span><span class="n">ptr</span><span class="p">)</span> <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>This is the function for the actual context switcher. This context 
 switcher uses the MSP for task 0 (assumed to be the kernel) and the 
 PSP for other tasks.  It is also possible to use the PSP for the 
 kernel and just use the MSP during interrupt handling.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="c1">//This is the context switcher</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">//This is the context switcher</span>
 <span class="kt">void</span> <span class="nf">context_switcher</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
    <span class="n">task_table</span><span class="p">[</span><span class="n">current_task</span><span class="p">].</span><span class="n">sp</span> <span class="o">=</span> <span class="n">rd_proc_stack_ptr</span><span class="p">();</span> <span class="c1">//Save the current task&#39;s stack pointer</span>
    <span class="k">do</span> <span class="p">{</span>
@@ -244,8 +242,7 @@ kernel and just use the MSP during interrupt handling.</p>
       <span class="p">}</span>
    <span class="p">}</span> <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
    <span class="n">wr_proc_stack_ptr</span><span class="p">(</span> <span class="n">task_table</span><span class="p">[</span><span class="n">current_task</span><span class="p">].</span><span class="n">sp</span> <span class="p">);</span> <span class="c1">//write the value of the PSP to the new task</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>The following diagram shows the chronology of the stack pointer when a 
 switch happens between task one and task two. Note that because this 
@@ -262,8 +259,7 @@ than MAIN_RETURN above.</p>
 <p>The first thing that must be done is to initialize the main stack’s 
 task table entry.</p>
 
-<div class="highlight"><pre><code class="cpp"> 
-<span class="c1">//This defines the stack frame that is saved  by the hardware</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">//This defines the stack frame that is saved  by the hardware</span>
 <span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
   <span class="kt">uint32_t</span> <span class="n">r0</span><span class="p">;</span>
   <span class="kt">uint32_t</span> <span class="n">r1</span><span class="p">;</span>
@@ -295,8 +291,7 @@ task table entry.</p>
      <span class="p">....</span>
     <span class="c1">//The systick needs to be configured to the desired round-robin time</span>
     <span class="c1">//..when the systick interrupt fires, context switching will begin</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <h3 id="creating-a-new-task">Creating a New Task</h3>
 
@@ -304,7 +299,7 @@ task table entry.</p>
 to start new tasks. Starting a new task involves finding an available 
 entry in the task table and initializing the new task’s stack.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="kt">int</span> <span class="nf">new_task</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">),</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">arg</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">stackaddr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">stack_size</span><span class="p">){</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">int</span> <span class="nf">new_task</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="p">(</span><span class="o">*</span><span class="n">p</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">),</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">arg</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span> <span class="n">stackaddr</span><span class="p">,</span> <span class="kt">int</span> <span class="n">stack_size</span><span class="p">){</span>
     <span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">;</span>
     <span class="kt">void</span> <span class="o">*</span> <span class="n">mem</span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="o">*</span> <span class="n">argp</span><span class="p">;</span>
@@ -346,8 +341,7 @@ entry in the task table and initializing the new task’s stack.</p>
   <span class="n">task_table</span><span class="p">[</span><span class="n">current_task_index</span><span class="p">].</span><span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">//clear the in use and exec flags</span>
   <span class="n">SCB</span><span class="o">-&gt;</span><span class="n">ICSR</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="mi">28</span><span class="p">);</span> <span class="c1">//switch the context</span>
   <span class="k">while</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">//once the context changes, the program will no longer return to this thread</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <h3 id="conclusion">Conclusion</h3>
 
@@ -424,7 +418,7 @@ Cortex-M3 technical reference manual from ARM.</p>
 			<h3>Embedded Design Tips</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -432,199 +426,7 @@ Cortex-M3 technical reference manual from ARM.</p>
     
       
       	
-      	<li class='tagged embedded microcontroller popular'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded fifo uart serial microcontroller programming popular'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded adc lookup-table c programming'><a href="/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table">ADC Thermistor Circuit and Lookup Table</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded filter iir programming popular'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gcc compiler windows'><a href="/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows">Building and Installing a Cortex-M3 Compiler in Windows</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gcc compiler linux'><a href="/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu">Building and Installing a Cortex-M3 Compiler on Ubuntu</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded compiler gcc'><a href="/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools">Building and Installing Autotools</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged embedded cortex-m3 threads popular'><a href="/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3" class="active">Context Switching on the Cortex-M3</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit power popular'><a href="/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors">Decoupling Capacitors (and Other Power Rules of Thumb)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded cortex-m3'><a href="/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall">Effective Use of ARM Cortex-M3 SVCall</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded cortex-m3 fft filter popular'><a href="/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3">FFT on the ARM Cortex M3</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded control pwm pid motor programming circuit popular'><a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID">Motor Control using PWM and PID</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded c programming popular'><a href="/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs">RAM/Flash Usage in Embedded C Programs</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit sensor filter adc programming'><a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application">Sensing the Source Current in an Embedded Application</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded usb programming microcontroller serial'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gpio circuit microcontroller popular'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged doxygen javascript bootstrap'><a href="/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap">Integrating Doxygen and Bootstrap</a></li>
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M4 Compiler on Mac OS X</a></li>
       	
       
     
@@ -640,7 +442,199 @@ Cortex-M3 technical reference manual from ARM.</p>
     
       
       	
-      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M4 Compiler on Mac OS X</a></li>
+      	<li class='tagged doxygen javascript bootstrap'><a href="/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap">Integrating Doxygen and Bootstrap</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gpio circuit microcontroller popular'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded usb programming microcontroller serial'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit sensor filter adc programming'><a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application">Sensing the Source Current in an Embedded Application</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c programming popular'><a href="/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs">RAM/Flash Usage in Embedded C Programs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control pwm pid motor programming circuit popular'><a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID">Motor Control using PWM and PID</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3 fft filter popular'><a href="/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3">FFT on the ARM Cortex M3</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3'><a href="/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall">Effective Use of ARM Cortex-M3 SVCall</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit power popular'><a href="/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors">Decoupling Capacitors (and Other Power Rules of Thumb)</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded cortex-m3 threads popular'><a href="/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3" class="active">Context Switching on the Cortex-M3</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded compiler gcc'><a href="/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools">Building and Installing Autotools</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler linux'><a href="/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu">Building and Installing a Cortex-M3 Compiler on Ubuntu</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler windows'><a href="/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows">Building and Installing a Cortex-M3 Compiler in Windows</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded filter iir programming popular'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded adc lookup-table c programming'><a href="/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table">ADC Thermistor Circuit and Lookup Table</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded fifo uart serial microcontroller programming popular'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller popular'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
       	
       
     
@@ -661,63 +655,7 @@ Cortex-M3 technical reference manual from ARM.</p>
     
       
       	
-      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
       	
       
     
@@ -733,7 +671,63 @@ Cortex-M3 technical reference manual from ARM.</p>
     
       
       	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
       	
       
     

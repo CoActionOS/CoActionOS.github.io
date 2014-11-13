@@ -121,11 +121,10 @@ the top level state machine and <a href="/coactionos-applib/html/class_state.htm
 each individual state.  Each state is implemented as it’s own class which 
 inherits <a href="/coactionos-applib/html/class_state.html">State</a> and re-implements:</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="nf">name</span><span class="p">();</span>  <span class="c1">//unique state name</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span> <span class="nf">name</span><span class="p">();</span>  <span class="c1">//unique state name</span>
 <span class="kt">bool</span> <span class="nf">entry_action</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span> <span class="c1">//action to execute when entering the state</span>
 <span class="kt">bool</span> <span class="nf">action</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span> <span class="c1">//action to execute while state is active</span>
-<span class="n">State</span> <span class="o">*</span> <span class="nf">exit_condition</span><span class="p">(</span><span class="n">State</span> <span class="o">*</span> <span class="n">slist</span><span class="p">[]);</span> <span class="c1">//Executing to see if state should transition</span>
-</code></pre></div>
+<span class="n">State</span> <span class="o">*</span> <span class="nf">exit_condition</span><span class="p">(</span><span class="n">State</span> <span class="o">*</span> <span class="n">slist</span><span class="p">[]);</span> <span class="c1">//Executing to see if state should transition</span></code></pre></div>
 
 <p>The methods above fit in to the state diagram above as noted below.</p>
 
@@ -135,11 +134,11 @@ inherits <a href="/coactionos-applib/html/class_state.html">State</a> and re-imp
 
 <p>This means the “home” state class looks like this:</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;applib/State.hpp&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;applib/State.hpp&gt;</span>
 <span class="cp">#include &lt;applib/Pin.hpp&gt;</span>
 
 <span class="k">class</span> <span class="nc">HomeState</span> <span class="o">:</span> <span class="k">public</span> <span class="n">State</span> <span class="p">{</span>
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
 	<span class="n">HomeState</span><span class="p">()</span> <span class="o">:</span> <span class="n">State</span><span class="p">()</span> <span class="p">{};</span>
 
 	<span class="c1">//The name of the state</span>
@@ -162,8 +161,7 @@ inherits <a href="/coactionos-applib/html/class_state.html">State</a> and re-imp
 		<span class="p">}</span>
 		<span class="k">return</span> <span class="n">next</span><span class="p">;</span>
 	<span class="p">}</span>
-<span class="p">};</span>
-</code></pre></div>
+<span class="p">};</span></code></pre></div>
 
 <p>The “timer” and “alarm” states are similarly defined.  The “timer” state’s name() method must return “timer” in order to the home state to find the state in the list.  Next we will look at how the state machine is executed using SMach.</p>
 
@@ -171,18 +169,17 @@ inherits <a href="/coactionos-applib/html/class_state.html">State</a> and re-imp
 
 <p>The state machine is a special type of state that contains a list of states that define the machine.  It is declared quite similarly to a State.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;applib/SMach.hpp&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;applib/SMach.hpp&gt;</span>
 <span class="k">class</span> <span class="nc">Machine</span> <span class="o">:</span> <span class="k">public</span> <span class="n">SMach</span> <span class="p">{</span>
-<span class="nl">public:</span>
+<span class="k">public</span><span class="o">:</span>
 	<span class="n">Machine</span><span class="p">();</span>
 	<span class="kt">void</span> <span class="nf">run</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 	<span class="kt">bool</span> <span class="nf">action</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<span class="p">};</span>
-</code></pre></div>
+<span class="p">};</span></code></pre></div>
 
 <p>The run() method will be used to execute the state machine.  The action() method is optional.  It allows the state machine to execute some action whenever any state within the machine is active.  For example, if you want to delay 10ms between executing state actions for all states, it can be done using the action() method as in the example below.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;applib/Timer.hpp&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;applib/Timer.hpp&gt;</span>
 <span class="cp">#include &quot;Machine.hpp&quot;</span>
 
 <span class="cp">#include &quot;HomeState.hpp&quot;</span>
@@ -212,8 +209,7 @@ inherits <a href="/coactionos-applib/html/class_state.html">State</a> and re-imp
 	<span class="n">Timer</span><span class="o">::</span><span class="n">wait_msec</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
 	<span class="c1">//Now call the parent action to execute the action within the active state</span>
 	<span class="k">return</span> <span class="n">SMach</span><span class="o">::</span><span class="n">action</span><span class="p">();</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>As you can see in the action() method, we delay for 10ms.  This will be called in the “home”, “timer”, and “alarm” states.  Call it a “global” action.  If a global state machine action is not used, you don’t need to re-implement the action() method at all.</p>
 
@@ -286,7 +282,7 @@ makes doing so quick and easy.</p>
 			<h3>User Guides</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -294,39 +290,7 @@ makes doing so quick and easy.</p>
     
       
       	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged coaction user-guide'><a href="/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines" class="active">Designing Applications using State Machines</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS">Deploying CoActionOS</a></li>
       	
       
     
@@ -342,7 +306,39 @@ makes doing so quick and easy.</p>
     
       
       	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS">Deploying CoActionOS</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged coaction user-guide'><a href="/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines" class="active">Designing Applications using State Machines</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
       	
       
     

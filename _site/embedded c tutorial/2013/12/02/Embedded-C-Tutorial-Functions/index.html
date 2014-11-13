@@ -92,7 +92,7 @@
 				<div class="panel-body">
 					<p>A function is a collection of C statements that can be utilized many times throughout a program or packaged into a module and re-used throughout many programs. The anatomy of a C function includes the prototype, the return type, the parameters, the name, and the body. Here is an example:</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
 <span class="cp">#include &lt;stdlib.h&gt;</span>
 <span class="kt">int</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">);</span> <span class="c1">//this is the prototype</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
@@ -110,8 +110,7 @@
      <span class="n">sum</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">;</span>
      <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
      <span class="k">return</span> <span class="n">sum</span><span class="p">;</span> <span class="c1">//tells the compiler to return the int x+y to the caller</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>The code above demonstrates my_first_function(). The prototype is always the return type, name, and parameters followed by a semi-colon. In most cases, the prototype is part of a header file so that the function can be used in many different source files. This is the case for printf() whose prototype is part of the stdio.h header file. The compiler gives a warning if a function is used, but a prototype is not found. It is important for the compiler to know function prototypes so that it can verify the number and types of the parameters passed to a function are compatible. It also checks that the return type is used correctly.</p>
 
@@ -131,7 +130,7 @@ well as not be a <a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutoria
 
 <p>The body of a function includes any number of C statements (separted by semicolons) within curly brackets. The return keyword is used to exit the function. If the return type is void, using return is optional. Also, return does not have to come at the end of the function. A function may conditionally return before it reaches the end. Here are a few examples to illustrate using return.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="kt">void</span> <span class="nf">print_output</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">){</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="nf">print_output</span><span class="p">(</span><span class="kt">int</span> <span class="n">value</span><span class="p">){</span>
      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Output is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">);</span>
      <span class="c1">//because the return type is void, return is optional here</span>
 <span class="p">}</span>
@@ -140,8 +139,7 @@ well as not be a <a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutoria
           <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">//conditionally return early if a is less than 0</span>
      <span class="p">}</span>
      <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">;</span> <span class="c1">//return the sum (as an int)</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <h2 id="take-away">Take Away</h2>
 
@@ -204,7 +202,7 @@ well as not be a <a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutoria
 			<h3>Embedded C Tutorial</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -212,63 +210,7 @@ well as not be a <a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutoria
     
       
       	
-      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions" class="active">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
       	
       
     
@@ -284,7 +226,63 @@ well as not be a <a href="/embedded%20c%20tutorial/2013/12/10/Embedded-C-Tutoria
     
       
       	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions" class="active">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
       	
       
     

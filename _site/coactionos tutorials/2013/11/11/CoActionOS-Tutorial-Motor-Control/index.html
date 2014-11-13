@@ -105,7 +105,7 @@ the value of the ADC. It uses this value to calculate the speed set point. It me
 the speed of the motor by taking the number of encoder counts and dividing by the elapsed time. 
 These values are fed in to the PID algorithm which computes the PWM value to apply to the motor.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;unistd.h&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;unistd.h&gt;</span>
 <span class="cp">#include &lt;stdio.h&gt;</span>
 <span class="cp">#include &lt;applib/Pwm.hpp&gt;</span>
 <span class="cp">#include &lt;applib/Tmr.hpp&gt;</span>
@@ -232,8 +232,7 @@ These values are fed in to the PID algorithm which computes the PWM value to app
   <span class="c1">//This runs in run mode -- one output is switching the other is high</span>
   <span class="n">pwm</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">PWM_CHAN_HIGH</span><span class="p">,</span>  <span class="n">PWM_TOP</span> <span class="o">-</span> <span class="n">duty</span><span class="p">);</span>
   <span class="n">pwm</span><span class="p">.</span><span class="n">set</span><span class="p">(</span><span class="n">PWM_CHAN_LOW</span><span class="p">,</span> <span class="n">PWM_TOP</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <div align="center" class="flex-video">
 	<iframe src="//www.youtube.com/embed/V6nnVzJFD_Q?rel=0" frameborder="0"> </iframe>
@@ -317,7 +316,7 @@ print("output.png", "-dpng");
 			<h3>CoActionOS Tutorials</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -325,79 +324,7 @@ print("output.png", "-dpng");
     
       
       	
-      	<li class='tagged coaction tutorial control popular'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial uart'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial spi'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial i2c'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C">I2C Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial control pwm'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm">PWM Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial signals'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	<li class='active tagged coaction tutorial control threads'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control" class="active">Motor Control Tutorial</a></li>
       	
       
     
@@ -413,7 +340,79 @@ print("output.png", "-dpng");
     
       
       	
-      	<li class='active tagged coaction tutorial control threads'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control" class="active">Motor Control Tutorial</a></li>
+      	<li class='tagged coaction tutorial signals'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control pwm'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm">PWM Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial i2c'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C">I2C Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial spi'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial uart'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control popular'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
       	
       
     

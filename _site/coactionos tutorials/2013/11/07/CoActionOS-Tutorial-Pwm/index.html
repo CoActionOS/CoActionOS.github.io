@@ -105,7 +105,7 @@ apply a variable voltage to a motor.</p>
 <p>The following program demonstrates using a PWM output. For more details on 
 using PWM, please see the <a href="/coactionos-applib/html/class_pwm.html">PWM Applib documentation</a>.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;cstdio&gt; </span><span class="c1">//for printf</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;cstdio&gt; </span><span class="c1">//for printf</span>
 <span class="cp">#include &lt;applib/Pwm.hpp&gt;</span><span class="c1">//for PWM class</span>
 <span class="cp">#include &lt;applib/Timer.hpp&gt;</span>
  
@@ -130,8 +130,7 @@ using PWM, please see the <a href="/coactionos-applib/html/class_pwm.html">PWM A
   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Duty Cycle Update Complete</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
   <span class="n">pwm</span><span class="p">.</span><span class="n">close</span><span class="p">();</span>
   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 
 				</div>
@@ -195,7 +194,7 @@ using PWM, please see the <a href="/coactionos-applib/html/class_pwm.html">PWM A
 			<h3>CoActionOS Tutorials</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -203,79 +202,7 @@ using PWM, please see the <a href="/coactionos-applib/html/class_pwm.html">PWM A
     
       
       	
-      	<li class='tagged coaction tutorial control popular'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial uart'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial spi'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial serial i2c'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C">I2C Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged coaction tutorial control pwm'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm" class="active">PWM Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction tutorial signals'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	<li class='tagged coaction tutorial control threads'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control">Motor Control Tutorial</a></li>
       	
       
     
@@ -291,7 +218,79 @@ using PWM, please see the <a href="/coactionos-applib/html/class_pwm.html">PWM A
     
       
       	
-      	<li class='tagged coaction tutorial control threads'><a href="/coactionos%20tutorials/2013/11/11/CoActionOS-Tutorial-Motor-Control">Motor Control Tutorial</a></li>
+      	<li class='tagged coaction tutorial signals'><a href="/coactionos%20tutorials/2013/11/10/CoActionOS-Tutorial-Signals">Signals Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/09/CoActionOS-Tutorial-AIO">AIO Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/08/CoActionOS-Tutorial-Strings">Strings Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged coaction tutorial control pwm'><a href="/coactionos%20tutorials/2013/11/07/CoActionOS-Tutorial-Pwm" class="active">PWM Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial i2c'><a href="/coactionos%20tutorials/2013/11/06/CoActionOS-Tutorial-I2C">I2C Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial spi'><a href="/coactionos%20tutorials/2013/11/05/CoActionOS-Tutorial-Spi">SPI Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial serial uart'><a href="/coactionos%20tutorials/2013/11/04/CoActionOS-Tutorial-Uart">UART Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial'><a href="/coactionos%20tutorials/2013/11/03/CoActionOS-Tutorial-Files">Files Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control'><a href="/coactionos%20tutorials/2013/11/02/CoActionOS-Tutorial-Pio">PIO Tutorial</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction tutorial control popular'><a href="/coactionos%20tutorials/2013/11/01/CoActionOS-Tutorial-First-Project">First Project</a></li>
       	
       
     

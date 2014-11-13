@@ -127,22 +127,20 @@ support packages</a>, you will find a file called devices.c.  This file referenc
 and filesystems that will be available to applications.  You just need to comment out anything you are not using to exclude those items
 from the binary.  For example, the following lines are commented out to exclude the I2C drivers.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="c1">//DEVICE_PERIPH(&quot;i2c0&quot;, hwpl_i2c, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">//DEVICE_PERIPH(&quot;i2c0&quot;, hwpl_i2c, 0, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
 <span class="c1">//DEVICE_PERIPH(&quot;i2c1&quot;, hwpl_i2c, 1, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
-<span class="c1">//DEVICE_PERIPH(&quot;i2c2&quot;, hwpl_i2c, 2, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span>
-</code></pre></div>
+<span class="c1">//DEVICE_PERIPH(&quot;i2c2&quot;, hwpl_i2c, 2, 0666, USER_ROOT, GROUP_ROOT, S_IFCHR),</span></code></pre></div>
 
 <p>If you aren’t using the CoActionOS flash filesystem, that can also be excluded.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="k">const</span> <span class="kt">sysfs_t</span> <span class="k">const</span> <span class="n">sysfs_list</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">const</span> <span class="kt">sysfs_t</span> <span class="k">const</span> <span class="n">sysfs_list</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="c1">//the folder for ram/flash applications</span>
 	<span class="n">SYSFS_APP</span><span class="p">(</span><span class="s">&quot;/app&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="p">(</span><span class="n">devices</span><span class="p">[</span><span class="n">MEM_DEV</span><span class="p">]),</span> <span class="n">SYSFS_ALL_ACCESS</span><span class="p">),</span>
 	<span class="n">SYSFS_DEV</span><span class="p">(</span><span class="s">&quot;/dev&quot;</span><span class="p">,</span> <span class="n">devices</span><span class="p">,</span> <span class="n">SYSFS_READONLY_ACCESS</span><span class="p">),</span> <span class="c1">//devices</span>
 	<span class="c1">//CAFS_LITE(&quot;/home&quot;, &amp;cafs_lite_cfg, SYSFS_ALL_ACCESS), //user files</span>
 	<span class="n">SYSFS_ROOT</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">,</span> <span class="n">sysfs_list</span><span class="p">,</span> <span class="n">SYSFS_READONLY_ACCESS</span><span class="p">),</span> <span class="c1">//root</span>
 	<span class="n">SYSFS_TERMINATOR</span>
-<span class="p">};</span>
-</code></pre></div>
+<span class="p">};</span></code></pre></div>
 
 <h4 id="exclude-unused-cposix-functions">Exclude Unused C/POSIX functions</h4>
 
@@ -150,7 +148,7 @@ from the binary.  For example, the following lines are commented out to exclude 
 not used by the kernel, are still included in the build so that they are available to applications.  It ensures that if an application links
 to printf() (see src/crt/crt_symbols.S), then the printf() code will be part of the kernel.  However, if none of your deployed applications use printf(), you don’t need it in the kernel.  To exclude a function, place a zero in the table (don’t delete the line or simply comment it out!).</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="kt">uint32_t</span> <span class="k">const</span> <span class="n">symbols_table</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">uint32_t</span> <span class="k">const</span> <span class="n">symbols_table</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="c1">//...</span>
 	<span class="mi">0</span><span class="p">,</span> <span class="c1">//(uint32_t)fprintf,</span>
 	<span class="mi">0</span><span class="p">,</span> <span class="c1">//(uint32_t)printf,</span>
@@ -162,15 +160,14 @@ to printf() (see src/crt/crt_symbols.S), then the printf() code will be part of 
 	<span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">vsprintf</span><span class="p">,</span>
 	<span class="c1">//...</span>
 
-<span class="p">};</span>
-</code></pre></div>
+<span class="p">};</span></code></pre></div>
 
 <h4 id="unify-kernel-and-application">Unify Kernel and Application</h4>
 
 <p>If you still need to make the binary smaller, you can compile the application with the kernel.  In this case, you will want to exclude src/sys/symbols.c from the build entirely.  In the CoActionOS kernel library, the first thread is called intial_thread() and is weakly bound.  You can
 add this function to your board support package to override the version in the kernel library.  The default initial thread function is shown below extracted from src/sys/intial_thread.c.  Instead of initializing the link functionality (link_init() and link_update()), you can call the main() function to your application and add the applicatoin source code directly to the board support package in Eclipse.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="kt">void</span> <span class="o">*</span> <span class="nf">initial_thread</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span> <span class="n">arg</span><span class="p">){</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="kt">void</span> <span class="o">*</span> <span class="nf">initial_thread</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span> <span class="n">arg</span><span class="p">){</span>
 
 	<span class="n">hwpl_core_privcall</span><span class="p">(</span><span class="n">priv_check_reset_source</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
@@ -193,8 +190,7 @@ add this function to your board support package to override the version in the k
 	<span class="n">link_update</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span> 	<span class="c1">//Run the link update thread--never returns</span>
 
 	<span class="k">return</span> <span class="nb">NULL</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <h4 id="remove-the-bootloader">Remove the Bootloader</h4>
 
@@ -263,7 +259,7 @@ upgrade the kernel.  You can further reduce the kernel size by limited the C/POS
 			<h3>User Guides</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -271,39 +267,7 @@ upgrade the kernel.  You can further reduce the kernel size by limited the C/POS
     
       
       	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines">Designing Applications using State Machines</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
+      	<li class='active tagged coaction user-guide'><a href="/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS" class="active">Deploying CoActionOS</a></li>
       	
       
     
@@ -319,7 +283,39 @@ upgrade the kernel.  You can further reduce the kernel size by limited the C/POS
     
       
       	
-      	<li class='active tagged coaction user-guide'><a href="/user%20guides/2014/04/15/CoActionOS-User-Guide-Deploying-CoActionOS" class="active">Deploying CoActionOS</a></li>
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/18/CoActionOS-User-Guide-Device-Driver-Development">Device Driver Development</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/17/CoActionOS-User-Guide-Designing-Applications-using-State-Machines">Designing Applications using State Machines</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/16/CoActionOS-User-Guide-CoActionOS-and-Eclipse">Developing on CoActionOS using Eclipse</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/15/CoActionOS-User-Guide-Building-and-Installing-CoActionOS">Building and Installing CoActionOS</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged coaction user-guide'><a href="/user%20guides/2013/12/14/CoActionOS-User-Guide-Getting-Started">Getting Started</a></li>
       	
       
     

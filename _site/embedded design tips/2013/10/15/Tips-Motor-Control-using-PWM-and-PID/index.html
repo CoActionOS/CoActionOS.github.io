@@ -145,7 +145,7 @@ and capacitor in series across the terminals of the motor as shown below.</p>
 
 <p>The following code is a PID loop implementation using floating point variables.  The structure (pid_f_t) is first initialized using pid_init_f() with the minimum and maximum values for the manipulated variable accepted as parameters.  The minimum is useful if the motor requires some minimum PWM duty cycle to make it turn while the maximum ensures the PID algorithm does not try to exceed 100% duty cycle.  The pid_update_f() function uses the current set point and the process variable as well as the constants stored in the pid_f_t structure to compute the manipulated variable.  The application loop includes a function to measure the motor current or speed, call pid_update_f(), and set the PWM value according to the manipulated variable.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="k">struct</span><span class="p">{</span>
   <span class="kt">float</span> <span class="n">max</span> <span class="cm">/*! Max manipulated value */</span><span class="p">;</span>
   <span class="kt">float</span> <span class="n">min</span> <span class="cm">/*! Miniumum manipulated value */</span><span class="p">;</span>
   <span class="kt">float</span> <span class="n">e</span> <span class="cm">/*! Error value */</span><span class="p">;</span>
@@ -190,8 +190,7 @@ and capacitor in series across the terminals of the motor as shown below.</p>
     <span class="n">manp</span> <span class="o">=</span> <span class="n">ptr</span><span class="o">-&gt;</span><span class="n">min</span><span class="p">;</span>
   <span class="p">}</span>
   <span class="k">return</span> <span class="n">manp</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>It is important to properly apply the manipulated variable to the process.  In the H-bridge shown above, Q5 inverts the PWM signal which means the software needs to invert the PWM value before applying it.  Also while switching Q2 and Q4, the states of Q1 and Q3 determine the motor direction; this affects how the sign of the manipulated variable is interpreted.  These nuances in the circuit can make debugging a PID loop tricky but can be overcome with sound analysis as well as trial and error.</p>
 
@@ -221,7 +220,7 @@ and capacitor in series across the terminals of the motor as shown below.</p>
 
 <p>The source code uses a PID loop to control the motor speed. First, it reads the ADC to calculate a speed setting from 1500RPM to 10,000RPM which is set by the user using the potentiometer. After the ADC is sampled, it is filtered using an exponential moving average, low-pass filter. This prevents noise on the ADC from causing changes to the speed setting. The code then calculates the motor speed in revolutions per minute. It measures the rising edges of the rotary encoder (200 counts per revolution) using the timer clock input. It then uses the POSIX function (provided by CoActionOS) clock_gettime() to calculate the change in time since the last measurement. The current speed is then the change in number of revolutions divided by the change in time. The current speed and the set point speed are then passed to the PID calculation which returns the duty cycle which is applied to the PWM output.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
 <span class="cp">#include &lt;applib/pwm.h&gt;</span>
 <span class="cp">#include &lt;applib/tmr.h&gt;</span>
 <span class="cp">#include &lt;applib/adc.h&gt;</span>
@@ -446,8 +445,7 @@ and capacitor in series across the terminals of the motor as shown below.</p>
     <span class="n">req</span><span class="p">.</span><span class="n">channel</span> <span class="o">=</span> <span class="n">PWM_CHAN_LOW</span><span class="p">;</span>
     <span class="n">pwm_set</span><span class="p">(</span><span class="n">PWM_PORT</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">req</span><span class="p">);</span>
   <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <h3 id="results">Results</h3>
 
@@ -547,7 +545,7 @@ print("output.png", "-dpng");
 			<h3>Embedded Design Tips</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -555,199 +553,7 @@ print("output.png", "-dpng");
     
       
       	
-      	<li class='tagged embedded microcontroller popular'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded fifo uart serial microcontroller programming popular'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded adc lookup-table c programming'><a href="/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table">ADC Thermistor Circuit and Lookup Table</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded filter iir programming popular'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gcc compiler windows'><a href="/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows">Building and Installing a Cortex-M3 Compiler in Windows</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gcc compiler linux'><a href="/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu">Building and Installing a Cortex-M3 Compiler on Ubuntu</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded compiler gcc'><a href="/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools">Building and Installing Autotools</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded cortex-m3 threads popular'><a href="/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3">Context Switching on the Cortex-M3</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit power popular'><a href="/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors">Decoupling Capacitors (and Other Power Rules of Thumb)</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded cortex-m3'><a href="/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall">Effective Use of ARM Cortex-M3 SVCall</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded cortex-m3 fft filter popular'><a href="/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3">FFT on the ARM Cortex M3</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged embedded control pwm pid motor programming circuit popular'><a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID" class="active">Motor Control using PWM and PID</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded c programming popular'><a href="/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs">RAM/Flash Usage in Embedded C Programs</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit sensor filter adc programming'><a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application">Sensing the Source Current in an Embedded Application</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded usb programming microcontroller serial'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded gpio circuit microcontroller popular'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged doxygen javascript bootstrap'><a href="/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap">Integrating Doxygen and Bootstrap</a></li>
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M4 Compiler on Mac OS X</a></li>
       	
       
     
@@ -763,7 +569,199 @@ print("output.png", "-dpng");
     
       
       	
-      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M4 Compiler on Mac OS X</a></li>
+      	<li class='tagged doxygen javascript bootstrap'><a href="/embedded%20design%20tips/2014/01/07/Tips-Integrating-Doxygen-and-Bootstrap">Integrating Doxygen and Bootstrap</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit'><a href="/embedded%20design%20tips/2013/10/27/Tips-Using-Op-Amps-in-Embedded-Design">Using Op Amps in Embedded Design</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded control gpio'><a href="/embedded%20design%20tips/2013/10/26/Tips-Controlling-a-Solenoid">Controlling a Solenoid</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gpio circuit microcontroller popular'><a href="/embedded%20design%20tips/2013/10/25/Tips-Using-Pull-Up-and-Pull-Down-Resistors">Using Pull-Up and Pull-Down Resistors</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit led control'><a href="/embedded%20design%20tips/2013/10/24/Tips-Using-LEDs-in-Embedded-Designs">Using LEDs in Embedded Designs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c doxygen programming'><a href="/embedded%20design%20tips/2013/10/23/Tips-Using-Doxygen-with-C">Using Doxygen with C</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded usb programming microcontroller serial'><a href="/embedded%20design%20tips/2013/10/22/Tips-USB-Virtual-Serial-Port-Firmware">USB Virtual Serial Port Firmware</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller gpio programming'><a href="/embedded%20design%20tips/2013/10/21/Tips-Understanding-Microcontroller-Pin-Input-Output-Modes">Understanding Microcontroller Pin Input/Output Modes</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit sensor filter adc programming'><a href="/embedded%20design%20tips/2013/10/19/Tips-Sensing-the-Source-Current-in-an-Embedded-Application">Sensing the Source Current in an Embedded Application</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded c programming popular'><a href="/embedded%20design%20tips/2013/10/18/Tips-RAM-Flash-Usage-in-Embedded-C-Programs">RAM/Flash Usage in Embedded C Programs</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='active tagged embedded control pwm pid motor programming circuit popular'><a href="/embedded%20design%20tips/2013/10/15/Tips-Motor-Control-using-PWM-and-PID" class="active">Motor Control using PWM and PID</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller circuit'><a href="/embedded%20design%20tips/2013/10/14/Tips-How-Microcontrollers-Work">How Microcontrollers Work</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3 fft filter popular'><a href="/embedded%20design%20tips/2013/10/13/Tips-FFT-on-the-ARM-Cortex-M3">FFT on the ARM Cortex M3</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3'><a href="/embedded%20design%20tips/2013/10/12/Tips-Effective-Use-of-ARM-Cortex-M3-SVCall">Effective Use of ARM Cortex-M3 SVCall</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded macosx qt'><a href="/embedded%20design%20tips/2013/10/11/Tips-Deploying-Qt-Applications-on-Mac-OSX">Deploying Qt Applications on Mac OSX</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded circuit power popular'><a href="/embedded%20design%20tips/2013/10/10/Tips-Decoupling-Capacitors">Decoupling Capacitors (and Other Power Rules of Thumb)</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded cortex-m3 threads popular'><a href="/embedded%20design%20tips/2013/10/09/Tips-Context-Switching-on-the-Cortex-M3">Context Switching on the Cortex-M3</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded compiler gcc'><a href="/embedded%20design%20tips/2013/10/08/Tips-Building-and-Installing-Autotools">Building and Installing Autotools</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler linux'><a href="/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu">Building and Installing a Cortex-M3 Compiler on Ubuntu</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler macosx'><a href="/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">Building and Installing a Cortex-M3 Compiler on Mac OS X</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded gcc compiler windows'><a href="/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows">Building and Installing a Cortex-M3 Compiler in Windows</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded filter iir programming popular'><a href="/embedded%20design%20tips/2013/10/04/Tips-An-Easy-to-Use-Digital-Filter">An Easy-to-Use Digital Filter</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded adc lookup-table c programming'><a href="/embedded%20design%20tips/2013/10/03/Tips-ADC-Thermistor-Circuit-and-Lookup-Table">ADC Thermistor Circuit and Lookup Table</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded fifo uart serial microcontroller programming popular'><a href="/embedded%20design%20tips/2013/10/02/Tips-A-FIFO-Buffer-Implementation">A FIFO Buffer Implementation</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded microcontroller popular'><a href="/embedded%20design%20tips/2013/10/01/Tips-8-vs-16-vs-32-Bit-Microcontrollers">8 vs 16 vs 32 Bit Microcontrollers--A Case Study</a></li>
       	
       
     
@@ -784,63 +782,7 @@ print("output.png", "-dpng");
     
       
       	
-      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
       	
       
     
@@ -856,7 +798,63 @@ print("output.png", "-dpng");
     
       
       	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
       	
       
     

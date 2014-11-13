@@ -104,7 +104,7 @@
 
 <p>Of these types the struct is the most commonly used. In programming design, related data is combined in a struct. The C language, per se, does not define any struct’s. However, the C standard library defines a number of them. A good example of this is struct tm which is the data structure for storing calendar time. The following code segment shows how the structure is defined (part of the time.h header).</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="k">struct</span> <span class="n">tm</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">struct</span> <span class="n">tm</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">tm_sec</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">tm_min</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">tm_hour</span><span class="p">;</span>
@@ -114,12 +114,11 @@
     <span class="kt">int</span> <span class="n">tm_wday</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">tm_yday</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">tm_isdst</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>The program below shows how to access (read and write) members of a struct using the period (.) syntax to access members.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
 <span class="cp">#include &lt;stdlib.h&gt;</span>
 <span class="cp">#include &lt;time.h&gt;  </span><span class="c1">//&quot;struct tm&quot; is defined here </span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span> 
@@ -129,8 +128,7 @@
      <span class="n">t</span><span class="p">.</span><span class="n">tm_hour</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span> <span class="c1">//assign 10 to the tm_hour member </span>
      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;time is %d:%d:%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">t</span><span class="p">.</span><span class="n">tm_hour</span><span class="p">,</span> <span class="n">t</span><span class="p">.</span><span class="n">tm_min</span><span class="p">,</span> <span class="n">t</span><span class="p">.</span><span class="n">tm_sec</span><span class="p">);</span> 
      <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>This program ouputs:</p>
 
@@ -149,7 +147,7 @@ union
 
 <p>Compound data types (specifically, unions and structs) can be combined in various ways. There can be unions within structs, vice versa, and almost any other combination. The following code shows a couple of examples.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;stdio.h&gt;</span>
 <span class="cp">#include &lt;stdint.h&gt;</span>
 <span class="cp">#include &lt;stdlib.h&gt;</span>
 <span class="k">struct</span> <span class="n">point</span> <span class="p">{</span> 
@@ -177,8 +175,7 @@ union
      <span class="n">p0</span><span class="p">.</span><span class="n">color</span><span class="p">.</span><span class="n">rgb</span><span class="p">.</span><span class="n">alpha</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span> 
      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d,%d,%d %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">p0</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">p0</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="n">p0</span><span class="p">.</span><span class="n">z</span><span class="p">,</span> <span class="n">p0</span><span class="p">.</span><span class="n">color</span><span class="p">.</span><span class="n">rgba</span><span class="p">);</span> 
      <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> 
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>In this example, there is a struct within a union within a struct. When p0 is assigned memory, it has the following layout assuming int is four bytes:</p>
 
@@ -188,7 +185,7 @@ union
 
 <p>Users (C Programmers) can define types using any raw or compound data type as well as previously defined user types. The stdint.h header is a good example of user-defined types using purely raw data types. The code snippet below shows a partial, simplied implemenation of stdint.h on a 32-bit processor.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#ifndef _STDINT_H  </span><span class="c1">//this is the header guard</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#ifndef _STDINT_H  </span><span class="c1">//this is the header guard</span>
 <span class="cp">#define _STDINT_H</span>
 <span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">int</span> <span class="kt">uint32_t</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="kt">signed</span> <span class="kt">int</span> <span class="kt">int32_t</span><span class="p">;</span>
@@ -196,12 +193,11 @@ union
 <span class="k">typedef</span> <span class="kt">signed</span> <span class="kt">char</span> <span class="kt">int8_t</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="kt">unsigned</span> <span class="kt">short</span> <span class="kt">uint16_t</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="kt">signed</span> <span class="kt">short</span> <span class="kt">int16_t</span><span class="p">;</span>
-<span class="cp">#endif</span>
-</code></pre></div>
+<span class="cp">#endif</span></code></pre></div>
 
 <p>Since this is a header file, the first thing is the header guard as mentioned in the preprocessor directives lesson. Next, the typedef keyword is introduced which defines a new data type than can be declared just like any other data type. The example then uses raw types to define the C99 integers in stdint.h. The code below illustrates the use of these types alongside raw types; it also introduces a new C keyword: sizeof.</p>
 
-<div class="highlight"><pre><code class="cpp"><span class="cp">#include &lt;stdlib.h&gt;</span>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include &lt;stdlib.h&gt;</span>
 <span class="cp">#include &lt;stdio.h&gt;  </span>
 <span class="cp">#include &lt;stdint.h</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span> 
@@ -212,8 +208,7 @@ union
 	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;sizeof(x) is %d, sizeof(y) is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">y</span><span class="p">));</span> 
 	<span class="n">printf</span><span class="p">(</span><span class="s">&quot;sizeof(w) is %d, sizeof(z) is %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">w</span><span class="p">),</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">z</span><span class="p">));</span> 
 	<span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>
+<span class="p">}</span></code></pre></div>
 
 <p>As shown, uint8_t can be used just like unsigned char after the typedef unsigned char uint8_t line which is located in stdint.h. The program has the following output showing that the uint8_t/unsigned char types use one byte in memory while the int32_t/int types use four bytes in memory.</p>
 
@@ -286,7 +281,7 @@ sizeof(w) is 4, sizeof(z) is 4
 			<h3>Embedded C Tutorial</h3>
 			<ul class="nav nav-pills nav-stacked">
 				
-				  
+				
 				
 
 
@@ -294,63 +289,7 @@ sizeof(w) is 4, sizeof(z) is 4
     
       
       	
-      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li class='active tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types" class="active">Compound Data Types</a></li>
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
       	
       
     
@@ -366,7 +305,63 @@ sizeof(w) is 4, sizeof(z) is 4
     
       
       	
-      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/11/Embedded-C-Tutorial-Order-of-Operations">Order of Operations Reference</a></li>
+      	<li class='active tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/09/Embedded-C-Tutorial-Compound-Data-Types" class="active">Compound Data Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/08/Embedded-C-Tutorial-Preprocessor">Preprocessor Directives</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/07/Embedded-C-Tutorial-Pointers-and-Arrays">Pointers and Arrays</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/05/Embedded-C-Tutorial-Flow-Control">Flow Control</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/04/Embedded-C-Tutorial-Operators">Operators</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/03/Embedded-C-Tutorial-Raw-Types">Raw Types</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial'><a href="/embedded%20c%20tutorial/2013/12/02/Embedded-C-Tutorial-Functions">Functions</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class='tagged embedded tutorial popular'><a href="/embedded%20c%20tutorial/2013/12/01/Embedded-C-Tutorial-Hello-World">Hello World</a></li>
       	
       
     
