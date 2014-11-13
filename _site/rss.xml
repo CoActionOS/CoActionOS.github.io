@@ -5,10 +5,109 @@
         <description>CoActionOS - CoActionOS, Inc</description>
         <link>http://coactionos.com</link>
         <link>http://coactionos.com</link>
-        <lastBuildDate>2014-06-03T09:32:09-06:00</lastBuildDate>
-        <pubDate>2014-06-03T09:32:09-06:00</pubDate>
+        <lastBuildDate>2014-11-13T11:35:36-07:00</lastBuildDate>
+        <pubDate>2014-11-13T11:35:36-07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Building and Installing a Cortex-M4 Compiler on Mac OS X</title>
+                <description>&lt;p&gt;Before you build the Cortex-M3 compiler, please follow the &lt;a href=&quot;/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X&quot;&gt;instructions to download the source and install the pre-requisites&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;These environment variables need to be changed from the Cortex-M3 settings:&lt;/p&gt;
+
+&lt;pre&gt;
+#Define the desired versions
+export PROGPREFIX=arm-cm4-eabi-
+export ARCH=arm-cm4-eabi
+&lt;/pre&gt;
+
+&lt;p&gt;The binutils source needs to be built first.  Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:&lt;/p&gt;
+
+&lt;pre&gt;
+cd binutils
+../binutils-$BINUTILS_VERSION/configure \
+  --program-prefix=$PROGPREFIX \
+  --target=$ARCH \
+  --disable-nls \
+  --disable-werror \
+  --with-cpu=cortex-m4 \
+  --with-no-thumb-interwork \
+  --with-mode=thumb \
+  --prefix=$TOOLSPATH \
+  --with-gnu-as \
+  --with-gnu-ld CC=clang
+make
+sudo make install
+export PATH=$TOOLSPATH/bin:$PATH
+&lt;/pre&gt;
+
+&lt;p&gt;After binutils is built, GCC is next:&lt;/p&gt;
+
+&lt;pre&gt;
+cd ../gcc
+../gcc-$GCC_VERSION/configure \
+     --disable-werror \
+     --target=$ARCH \
+     --with-cpu=cortex-m4 \
+     --with-mode=thumb \
+     --disable-multilib \
+     --with-float=hard \
+     --with-fpu=fpv4-sp-d16 \
+     --with-newlib \
+     --enable-languages=&quot;c,c++&quot; \
+     --disable-shared \
+     --with-gnu-as \
+     --with-gnu-ld \
+     --program-prefix=$PROGPREFIX \
+     --prefix=$TOOLSPATH \
+     --with-gmp=$TOOLSPATH \
+     --with-ppl=$TOOLSPATH \
+     --with-no-thumb-interwork \
+     --enable-target-optspace \
+     --disable-libssp \
+     CC=clang 
+make all-gcc
+sudo make install-gcc
+&lt;/pre&gt;
+
+&lt;p&gt;Now, we need to build newlib.  In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions.  The &lt;strong&gt;BUFSIZ&lt;/strong&gt; definition specifies what size buffer to use with printf() and file I/O.  Smaller values mean slower performance using less RAM.  To build newlib, type (or copy and paste) the following in a terminal window:&lt;/p&gt;
+
+&lt;pre&gt;
+cd ../newlib
+../newlib-$NEWLIB_VERSION/configure \
+  --target=$ARCH \
+  --disable-multilib \
+  --disable-werror \
+  --with-gnu-as \
+  --with-gnu-ld \
+  --prefix=$TOOLSPATH \
+  --disable-newlib-supplied-syscalls \
+  --disable-nls \
+  --enable-target-optspace \
+  --disable-libssp \
+  --enable-newlib-reent-small \
+  --enable-newlib-multithread \
+  --disable-libgloss
+make CFLAGS_FOR_TARGET=&quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;
+sudo make install
+&lt;/pre&gt;
+
+&lt;p&gt;Finally, we need to finish building GCC.&lt;/p&gt;
+
+&lt;pre&gt;
+cd ../gcc
+make
+sudo make install
+&lt;/pre&gt;
+
+&lt;p&gt;That’s it.  If all went well, a dedicated ARM Cortex M4 compiler is now installed in /usr/local/CoActionOS.  To uninstall the compiler tools, delete the /usr/local/CoActionOS folder.&lt;/p&gt;
+
+</description>
+                <link>http://coactionos.com/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X</link>
+                <guid>http://coactionos.com/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X</guid>
+                <pubDate>2014-10-05T00:00:00-06:00</pubDate>
+        </item>
 
         <item>
                 <title>Applications without an MMU</title>
@@ -5827,101 +5926,11 @@ installed on Ubuntu.  It is the compiler of choice for CoActionOS.&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;wget
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;Now that all prerequisites are installed, binutils, gcc, and newlib can be compiled and installed using the following commands.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#Define the desired versions&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;BINUTILS_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2.23.1
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GCC_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4.7.3
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;NEWLIB_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.19.0
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TOOLSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local/CoActionOS
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PROGPREFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-cm3-eabi-
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ARCH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-cm3-eabi
-mkdir binutils
-mkdir gcc
-mkdir newlib
-&lt;span class=&quot;c&quot;&gt;#Download and extract the source&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$GET&lt;/span&gt; ftp://mirrors.kernel.org/gnu/binutils/binutils-&lt;span class=&quot;nv&quot;&gt;$BINUTILS_VERSION&lt;/span&gt;.tar.gz
-tar -zxvf binutils-&lt;span class=&quot;nv&quot;&gt;$BINUTILS_VERSION&lt;/span&gt;.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$GET&lt;/span&gt; ftp://mirrors.kernel.org/gnu/gcc/gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;/gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;.tar.gz
-tar -zxvf gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$GET&lt;/span&gt; ftp://sources.redhat.com/pub/newlib/newlib-&lt;span class=&quot;nv&quot;&gt;$NEWLIB_VERSION&lt;/span&gt;.tar.gz
-tar -zxvf newlib-&lt;span class=&quot;nv&quot;&gt;$NEWLIB_VERSION&lt;/span&gt;.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The binutils source needs to be built first.  Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;binutils
-../binutils-&lt;span class=&quot;nv&quot;&gt;$BINUTILS_VERSION&lt;/span&gt;/configure &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --program-prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PROGPREFIX&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --target&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ARCH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-nls &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-werror &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-cpu&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cortex-m3 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-no-thumb-interwork &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-mode&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;thumb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-as &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-ld
-make
-sudo make install
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt;/bin:&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;After binutils is built, GCC is next:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../gcc
-../gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;/configure &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-werror &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --target&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ARCH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-cpu&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cortex-m3 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-mode&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;thumb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-multilib &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-float&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;soft &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-newlib &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --enable-languages&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;c,c++&amp;quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-shared &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-gnu-as &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-gnu-ld &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --program-prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PROGPREFIX&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-no-thumb-interwork &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --enable-target-optspace &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-libssp
-make all-gcc
-sudo make install-gcc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Next, we need to build newlib.  In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_BIG_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions.  The &lt;strong&gt;BUFSIZ&lt;/strong&gt; definition specifies what size buffer to use with printf() and file I/O.  Smaller values mean slower performance using less RAM.  To build newlib, type (or copy and paste) the following in a terminal window:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../newlib
-../newlib-&lt;span class=&quot;nv&quot;&gt;$NEWLIB_VERSION&lt;/span&gt;/configure &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --target&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ARCH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-multilib &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-werror &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-as &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-ld &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-newlib-supplied-syscalls &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-nls &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --enable-target-optspace &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-libssp &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --enable-newlib-reent-small &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --enable-newlib-multithread &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-libgloss
-make &lt;span class=&quot;nv&quot;&gt;CFLAGS_FOR_TARGET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;-D__IEEE_BIG_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&amp;quot;&lt;/span&gt;
-sudo make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Finally, we finish building GCC.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../gcc
-make
-sudo make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;That’s it.  If all went well, a dedicated ARM Cortex M3 compiler 
-is now installed in /usr/local/arm-cm3-eabi.&lt;/p&gt;
-
+&lt;p&gt;Now that all prerequisites are installed, binutils, gcc, and newlib 
+can be compiled and installed using the same directions for &lt;a href=&quot;/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X&quot;&gt;Mac OS X&lt;/a&gt;.  The only
+exception is that the for Mac you specify “CC=clang” and on Ubuntu, you omit this.
+]
+You can also follow the directions for &lt;a href=&quot;/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X&quot;&gt;installing an ARM cortex-M4 compiler&lt;/a&gt;.&lt;/p&gt;
 </description>
                 <link>http://coactionos.com/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu</link>
                 <guid>http://coactionos.com/embedded%20design%20tips/2013/10/07/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Ubuntu</guid>
@@ -5952,11 +5961,11 @@ binutils, GCC, and newlib source files must be downloaded and extracted.&lt;/p&g
 values with the version you download.&lt;/p&gt;
 
 &lt;pre&gt;
-export GMP_VERSION=5.1.2
+export GMP_VERSION=6.0.0
 #If you use ppl-1.0, you need to use GMP 5.0.x
-export PPL_VERSION=1.1pre9
+export PPL_VERSION=1.1
 export MPFR_VERSION=3.1.2
-export MPC_VERSION=1.0.1
+export MPC_VERSION=1.0.2
 export TOOLSPATH=/usr/local/CoActionOS
 mkdir -p gmp
 mkdir -p ppl
@@ -5970,14 +5979,17 @@ cd ../ppl
 #on mingw add: --disable-shared --enable-static --disable-debugging
 ../ppl-$PPL_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
 make
+#dont use sudo on Windows
 sudo make install
 cd ../mpfr
 ../mpfr-$MPFR_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
 make
+#dont use sudo on Windows
 sudo make install
 cd ../mpc
 ../mpc-$MPC_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH --enable-static --disable-shared
 make
+#dont use sudo on Windows
 sudo make install
 &lt;/pre&gt;
 
@@ -5991,8 +6003,8 @@ export GET=ftp
 
 &lt;pre&gt;
 #Define the desired versions
-export BINUTILS_VERSION=2.23.1
-export GCC_VERSION=4.7.3
+export BINUTILS_VERSION=2.24
+export GCC_VERSION=4.7.4
 export NEWLIB_VERSION=1.19.0
 export TOOLSPATH=/usr/local/CoActionOS
 export PROGPREFIX=arm-cm3-eabi-
@@ -6025,6 +6037,7 @@ cd binutils
   --with-gnu-as \
   --with-gnu-ld CC=clang
 make
+#dont use sudo on Windows
 sudo make install
 export PATH=$TOOLSPATH/bin:$PATH
 &lt;/pre&gt;
@@ -6054,6 +6067,7 @@ cd ../gcc
      --disable-libssp \
      CC=clang 
 make all-gcc
+#dont use sudo on Windows
 sudo make install-gcc
 &lt;/pre&gt;
 
@@ -6076,6 +6090,7 @@ cd ../newlib
   --enable-newlib-multithread \
   --disable-libgloss
 make CFLAGS_FOR_TARGET=&quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;
+#dont use sudo on Windows
 sudo make install
 &lt;/pre&gt;
 
@@ -6084,6 +6099,7 @@ sudo make install
 &lt;pre&gt;
 cd ../gcc
 make
+#dont use sudo on Windows
 sudo make install
 &lt;/pre&gt;
 
@@ -6133,162 +6149,12 @@ shortcut in the “Start Menu” under “All Programs” and “MinGW” and
 clicking properties.  Then add “–mintty” to the end of target so 
 that target reads “C:\MinGW\msys\1.0\msys.bat –mintty”.&lt;/p&gt;
 
-&lt;p&gt;To ease the downloading of required software, wget can be copied to the C:\MinGW\bin directory.  The executable can be found in the “wget mingwPORT”:https://sourceforge.net/project/downloading.php?group_id=2435&amp;amp;filename=wget-1.9.1-mingwPORT.tar.bz2&amp;amp;a=85590697.  This step is optional; if you choose to skip it, you will have to download the prerequisite and GCC source code manually.&lt;/p&gt;
+&lt;p&gt;To ease the downloading of required software, wget can be copied to the C:\MinGW\bin directory.  The executable can be found in the 
+&lt;a href=&quot;https://sourceforge.net/project/downloading.php?group_id=2435&amp;amp;filename=wget-1.9.1-mingwPORT.tar.bz2&amp;amp;a=85590697&quot;&gt;wget mingwPORT&lt;/a&gt;.  This step is optional; if you choose to skip it, you will have to download the prerequisite and GCC source code manually.&lt;/p&gt;
 
-&lt;p&gt;The GMP, PPL, MPFR, and MPC libraries may be installed from source. The latest versions can be downloaded from:&lt;/p&gt;
+&lt;p&gt;Once the build system is install, you can build and install the compiler using the same directions for &lt;a href=&quot;/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X&quot;&gt;Mac OS X&lt;/a&gt;.  The only exception is that the for Mac you specify “CC=clang” and on Windows, you omit this.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://gmplib.org/&quot;&gt;GMP&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://bugseng.com/products/ppl/download&quot;&gt;PPL&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.mpfr.org/&quot;&gt;MPFR&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.multiprecision.org/&quot;&gt;MPC&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Once you download the source, enter the following commands in the 
-Terminal.  Replace the version values with the version you download.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GMP_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;5.1.2
-&lt;span class=&quot;c&quot;&gt;#If you use ppl-1.0, you need to use GMP 5.0.x&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PPL_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.1pre9
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPFR_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;3.1.2
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;MPC_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.0.1
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TOOLSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local/CoActionOS
-mkdir -p gmp
-mkdir -p ppl
-mkdir -p mpfr
-mkdir -p mpc
-&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;gmp
-../gmp-&lt;span class=&quot;nv&quot;&gt;$GMP_VERSION&lt;/span&gt;/configure --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt;  --enable-cxx
-make
-make install
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../ppl
-&lt;span class=&quot;c&quot;&gt;#on mingw add: --disable-shared --enable-static --disable-debugging&lt;/span&gt;
-../ppl-&lt;span class=&quot;nv&quot;&gt;$PPL_VERSION&lt;/span&gt;/configure --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; --with-gmp&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt;
-make
-make install
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../mpfr
-../mpfr-&lt;span class=&quot;nv&quot;&gt;$MPFR_VERSION&lt;/span&gt;/configure --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; --with-gmp&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt;
-make
-make install
-&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../mpc
-../mpc-&lt;span class=&quot;nv&quot;&gt;$MPC_VERSION&lt;/span&gt;/configure --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; --with-gmp&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; --enable-static --disable-shared
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Now that all prerequisites are installed, binutils, gcc, and newlib 
-can be compiled and installed using the following commands.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#Define the desired versions&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;BINUTILS_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;2.23.1
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;GCC_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;4.7.3
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;NEWLIB_VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1.19.0
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;TOOLSPATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/local/CoActionOS
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PROGPREFIX&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-cm3-eabi-
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ARCH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;arm-cm3-eabi
-mkdir binutils
-mkdir gcc
-mkdir newlib
-&lt;span class=&quot;c&quot;&gt;#Download and extract the source&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$GET&lt;/span&gt; ftp://mirrors.kernel.org/gnu/binutils/binutils-&lt;span class=&quot;nv&quot;&gt;$BINUTILS_VERSION&lt;/span&gt;.tar.gz
-tar -zxvf binutils-&lt;span class=&quot;nv&quot;&gt;$BINUTILS_VERSION&lt;/span&gt;.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$GET&lt;/span&gt; ftp://mirrors.kernel.org/gnu/gcc/gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;/gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;.tar.gz
-tar -zxvf gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;.tar.gz
-&lt;span class=&quot;nv&quot;&gt;$GET&lt;/span&gt; ftp://sources.redhat.com/pub/newlib/newlib-&lt;span class=&quot;nv&quot;&gt;$NEWLIB_VERSION&lt;/span&gt;.tar.gz
-tar -zxvf newlib-&lt;span class=&quot;nv&quot;&gt;$NEWLIB_VERSION&lt;/span&gt;.tar.gz
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The binutils source needs to be built first.  Again in the same 
-directory where the binutils source was extracted, 
-type (or copy and paste) the following commands in the MinGW shell:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;binutils
-../binutils-&lt;span class=&quot;nv&quot;&gt;$BINUTILS_VERSION&lt;/span&gt;/configure &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --program-prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PROGPREFIX&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --target&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ARCH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-nls &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-werror &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-cpu&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cortex-m3 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-no-thumb-interwork &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-mode&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;thumb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-as &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-ld
-make
-make install
-&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt;/bin:&lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;After binutils is built, GCC is next:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../gcc
-../gcc-&lt;span class=&quot;nv&quot;&gt;$GCC_VERSION&lt;/span&gt;/configure &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-werror &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --target&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ARCH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-cpu&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;cortex-m3 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-mode&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;thumb &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-multilib &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-float&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;soft &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-newlib &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --enable-languages&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;c,c++&amp;quot;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-shared &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-gnu-as &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-gnu-ld &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --program-prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PROGPREFIX&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-no-thumb-interwork &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --disable-libssp &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-gmp&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --with-ppl&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-     --enable-target-optspace
-make all-gcc
-make install-gcc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Now, we need to build newlib.  In order to get newlib to build the 
-floating point libraries correctly, we pass 
-the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN 
-definitions.  The &lt;strong&gt;BUFSIZ&lt;/strong&gt; definition specifies what size buffer 
-to use with printf() and file I/O.  Smaller values mean slower 
-performance using less RAM.  To build newlib, 
-type (or copy and paste) the following in a terminal window:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../newlib
-../newlib-&lt;span class=&quot;nv&quot;&gt;$NEWLIB_VERSION&lt;/span&gt;/configure &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --target&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$ARCH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-multilib &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-werror &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-as &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --with-gnu-ld &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --prefix&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$TOOLSPATH&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-newlib-supplied-syscalls &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-nls &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --enable-target-optspace &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-libssp &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --enable-newlib-reent-small &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --enable-newlib-multithread &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
-  --disable-libgloss
-make &lt;span class=&quot;nv&quot;&gt;CFLAGS_FOR_TARGET&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&amp;quot;&lt;/span&gt;
-sudo make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Finally, we finish building GCC.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ../gcc
-make
-make install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The final step is add the executables to the MinGW Shell path. This 
-can be done by typing the following in a MinGW Shell then restarting 
-the shell.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;export PATH=/usr/local/CoActionOS/bin:$PATH&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; /usr/etc/profile
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;That’s it.  If all went well, a dedicated ARM Cortex M3 compiler is 
-now installed in C:\MinGW\msys\1.0\local\CoActionOS.&lt;/p&gt;
-
+&lt;p&gt;You can also follow the directions for &lt;a href=&quot;/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X&quot;&gt;installing an ARM cortex-M4 compiler&lt;/a&gt;.&lt;/p&gt;
 </description>
                 <link>http://coactionos.com/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows</link>
                 <guid>http://coactionos.com/embedded%20design%20tips/2013/10/05/Tips-Building-and-Installing-a-Cortex-M3-Compiler-in-Windows</guid>
@@ -6820,6 +6686,7 @@ standpoint, replace 8-bit systems without a cost increase and with a boost in RA
 &lt;h2 id=&quot;mac-os-x&quot;&gt;Mac OS X&lt;/h2&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.4-1.6.0.pkg&quot;&gt;CoActionOS Compiler Installer GCC 4.7.4 (cm4 and cm3), CoActionOS 1.6.0&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.3-1.3.1.pkg&quot;&gt;CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.3.1&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://github.com/CoActionOS/CoActionOS-Desktop/releases&quot;&gt;CoActionOS Link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;

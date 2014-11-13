@@ -59,8 +59,8 @@ title: CoActionOS Docs
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;     <span class="keywordtype">int</span> init(<span class="keywordtype">int</span> pinassign);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;     <span class="keywordtype">int</span> exit(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;     <span class="keywordtype">int</span> open(<span class="keywordtype">int</span> crystal);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keywordtype">int</span> close(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;     <span class="keywordtype">int</span> <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a>(<span class="keywordtype">int</span> crystal);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keywordtype">int</span> <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;     <span class="keywordtype">int</span> writemem(uint32_t loc, <span class="keyword">const</span> <span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte, uint32_t sector);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keywordtype">void</span> set_ram_buffer(uint32_t addr);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;     <span class="keywordtype">int</span> readmem(uint32_t loc, <span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
@@ -73,15 +73,15 @@ title: CoActionOS Docs
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     <span class="keywordtype">int</span> echo_on(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keywordtype">int</span> wr_ram(uint32_t ram_dest ,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;               <span class="keywordtype">void</span> * src ,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;               uint32_t size );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;               uint32_t <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a> );</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;     uint32_t rd_mem(<span class="keywordtype">void</span> * dest ,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;               uint32_t src_addr ,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;               uint32_t size );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;               uint32_t <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a> );</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;     <span class="keywordtype">int</span> prep_sector(uint32_t start ,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;               uint32_t end );</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;     <span class="keywordtype">int</span> cpy_ram_to_flash(uint32_t flash_addr ,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;               uint32_t ram_addr ,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;               uint32_t size );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;               uint32_t <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a> );</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;     <span class="keywordtype">int</span> go(uint32_t addr ,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;               <span class="keywordtype">char</span> mode );</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;     <span class="keywordtype">int</span> erase_sector(uint32_t start ,</div>
@@ -92,7 +92,7 @@ title: CoActionOS Docs
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;     uint32_t rd_boot_version(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;     <span class="keywordtype">int</span> memcmp(uint32_t addr0 ,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;               uint32_t addr1 ,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;               uint32_t size );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;               uint32_t <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a> );</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;     <span class="keywordtype">char</span> echo;</div>
@@ -100,8 +100,8 @@ title: CoActionOS Docs
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;     <a class="code" href="class_pin.html">Pin</a> * ispreq;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;     <a class="code" href="class_pin.html">Pin</a> * rst;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;     uint32_t ram_buffer;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     int32_t lpc_write_data(<span class="keywordtype">void</span> * src, uint32_t size);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;     int32_t lpc_read_data(<span class="keywordtype">void</span> * dest, uint32_t size);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;     int32_t lpc_write_data(<span class="keywordtype">void</span> * src, uint32_t <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;     int32_t lpc_read_data(<span class="keywordtype">void</span> * dest, uint32_t <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;     <span class="keywordtype">int</span> get_line(<span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte, <span class="keywordtype">int</span> max_wait);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;     <span class="keywordtype">int</span> lpc_rd_return_code(uint16_t timeout);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;     <span class="keywordtype">int</span> lpc_wait_response(<span class="keyword">const</span> <span class="keywordtype">char</span> * response, uint16_t timeout);</div>
@@ -119,6 +119,9 @@ title: CoActionOS Docs
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LPCISP_HPP_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="class_pin_html"><div class="ttname"><a href="class_pin.html">Pin</a></div><div class="ttdoc">Pin class. </div><div class="ttdef"><b>Definition:</b> <a href="_pin_8hpp_source.html#l00048">Pin.hpp:48</a></div></div>
+<div class="ttc" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_html_gaacad1d135ca2779b583623678e36db7c"><div class="ttname"><a href="../../coactionos/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gaacad1d135ca2779b583623678e36db7c">close</a></div><div class="ttdeci">int close(int fildes)</div></div>
+<div class="ttc" id="group___u_n_i___f_i_l_e___a_c_c_e_s_s_html_gac843f2e35e60c3bbf1da47d84306f29b"><div class="ttname"><a href="../../coactionos/html/group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#gac843f2e35e60c3bbf1da47d84306f29b">open</a></div><div class="ttdeci">int open(const char *name, int flags,...)</div></div>
+<div class="ttc" id="group___h_i_o_html_ga8c8b174df5216f23cff4e09dba1984fc"><div class="ttname"><a href="../../coactionos/html/group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">size</a></div><div class="ttdeci">uint16_t size</div></div>
 <div class="ttc" id="_uart_8hpp_html"><div class="ttname"><a href="_uart_8hpp.html">Uart.hpp</a></div></div>
 <div class="ttc" id="_pin_8hpp_html"><div class="ttname"><a href="_pin_8hpp.html">Pin.hpp</a></div></div>
 <div class="ttc" id="class_uart_html"><div class="ttname"><a href="class_uart.html">Uart</a></div><div class="ttdoc">UART Class. </div><div class="ttdef"><b>Definition:</b> <a href="_uart_8hpp_source.html#l00043">Uart.hpp:43</a></div></div>

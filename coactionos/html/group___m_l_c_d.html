@@ -32,8 +32,7 @@ title: CoActionOS Docs
 <div class="dynheader">
 Collaboration diagram for Mono LCD:</div>
 <div class="dyncontent">
-<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group___m_l_c_d.svg" width="211" height="35"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group___m_l_c_d.svg" width="211" height="35"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </td></tr></table></center>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -46,7 +45,7 @@ Collaboration diagram for Mono LCD:</div>
 <div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_MCLD_GETATTR, &amp;attr);</div>
 <div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___m_l_c_d.html#ga53769052c69cde35a0d953a4d88a4346">I_MLCD_HOLD</a>, &amp;attr);</div>
 <div class="line"> <span class="comment">//attr.mem can be directly modified</span></div>
-<div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, <a class="code" href="group___m_l_c_d.html#gac6a472e2c4f41d2be154c436e5de1f08">I_MLCD_RELEASE</a>, &amp;attr);</div>
+<div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fd, I_MLCD_RELEASE, &amp;attr);</div>
 <div class="line"> <span class="comment">//the display will refresh based on the value of attr.freq (usually in the tens of hertz range)</span></div>
 </div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -63,8 +62,8 @@ Macros</h2></td></tr>
 <tr class="separator:gadcb7eae821312000c0ac21557f32ad00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53769052c69cde35a0d953a4d88a4346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#ga53769052c69cde35a0d953a4d88a4346">I_MLCD_HOLD</a></td></tr>
 <tr class="separator:ga53769052c69cde35a0d953a4d88a4346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6a472e2c4f41d2be154c436e5de1f08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#gac6a472e2c4f41d2be154c436e5de1f08">I_MLCD_RELEASE</a></td></tr>
-<tr class="separator:gac6a472e2c4f41d2be154c436e5de1f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52aac77a924a9f90c652b7b5d0a53a85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#ga52aac77a924a9f90c652b7b5d0a53a85">I_MLCD_TOUCH</a></td></tr>
+<tr class="separator:ga52aac77a924a9f90c652b7b5d0a53a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gace1ad40a5aefcc1727b6780bd078cf0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#gace1ad40a5aefcc1727b6780bd078cf0c">I_MLCD_INIT</a></td></tr>
 <tr class="separator:gace1ad40a5aefcc1727b6780bd078cf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98d29c309fa0ed30652024889a01d468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#ga98d29c309fa0ed30652024889a01d468">I_MLCD_ON</a></td></tr>
@@ -74,17 +73,17 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:gaba01db17f4a2bfbc3db60dc172972a25"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="group___m_l_c_d.html#ggaba01db17f4a2bfbc3db60dc172972a25abc6a5c49706e01ea43bcd645cd4e4350">ORIENT_TOP</a>, 
+<tr class="memitem:ga6b7b47dd702d9e331586d485013fd1ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="group___m_l_c_d.html#gga6b7b47dd702d9e331586d485013fd1eaabc6a5c49706e01ea43bcd645cd4e4350">ORIENT_TOP</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___m_l_c_d.html#ggaba01db17f4a2bfbc3db60dc172972a25a0b6b1d7c12042c6687460ddb1efc25ec">ORIENT_BOTTOM</a>, 
+&#160;&#160;<a class="el" href="group___m_l_c_d.html#gga6b7b47dd702d9e331586d485013fd1eaa0b6b1d7c12042c6687460ddb1efc25ec">ORIENT_BOTTOM</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___m_l_c_d.html#ggaba01db17f4a2bfbc3db60dc172972a25a27b44fa8ad85dca1ca04bfed2d39d159">ORIENT_LEFT</a>, 
+&#160;&#160;<a class="el" href="group___m_l_c_d.html#gga6b7b47dd702d9e331586d485013fd1eaa27b44fa8ad85dca1ca04bfed2d39d159">ORIENT_LEFT</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___m_l_c_d.html#ggaba01db17f4a2bfbc3db60dc172972a25ad4a45c8a3c05365edb073979a5f60391">ORIENT_RIGHT</a>
+&#160;&#160;<a class="el" href="group___m_l_c_d.html#gga6b7b47dd702d9e331586d485013fd1eaad4a45c8a3c05365edb073979a5f60391">ORIENT_RIGHT</a>
 <br/>
  }</td></tr>
-<tr class="separator:gaba01db17f4a2bfbc3db60dc172972a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga6b7b47dd702d9e331586d485013fd1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -96,18 +95,18 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#ga7d9a0fe81ef67774c333b075c38dec90">mlcd_attr_t::h</a></td></tr>
 <tr class="memdesc:ga7d9a0fe81ef67774c333b075c38dec90"><td class="mdescLeft">&#160;</td><td class="mdescRight">LCD height in pixels. <br/></td></tr>
 <tr class="separator:ga7d9a0fe81ef67774c333b075c38dec90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ece5c909ca053710660bdc49292d3b8"><td class="memItemLeft" ><a class="anchor" id="ga7aec3e57e8c279de09c1df3e5ec0b7f9"></a>
+<tr class="memitem:ga8dab3b6fc69ab8fcbc7be4f751569264"><td class="memItemLeft" ><a class="anchor" id="ga7aec3e57e8c279de09c1df3e5ec0b7f9"></a>
 void *&#160;&#160;&#160;<a class="el" href="group___m_l_c_d.html#ga7aec3e57e8c279de09c1df3e5ec0b7f9">mlcd_attr_t::mem</a></td></tr>
-<tr class="memdesc:ga7ece5c909ca053710660bdc49292d3b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the shared LCD memory which is mapped to the screen. <br/></td></tr>
-<tr class="separator:ga7ece5c909ca053710660bdc49292d3b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf13adf2cb0b62cbd7f75347125c79b40"><td class="memItemLeft" ><a class="anchor" id="ga09293e934cf8e1c1cab17494c749ad45"></a>
+<tr class="memdesc:ga8dab3b6fc69ab8fcbc7be4f751569264"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to the shared LCD memory which is mapped to the screen. <br/></td></tr>
+<tr class="separator:ga8dab3b6fc69ab8fcbc7be4f751569264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74c0143b90bae13e2ee1e48a355a6d56"><td class="memItemLeft" ><a class="anchor" id="ga09293e934cf8e1c1cab17494c749ad45"></a>
 uint8_t *&#160;&#160;&#160;<a class="el" href="group___m_l_c_d.html#ga09293e934cf8e1c1cab17494c749ad45">mlcd_attr_t::mem8</a></td></tr>
-<tr class="memdesc:gaf13adf2cb0b62cbd7f75347125c79b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to shared LCD memory (unsigned char) <br/></td></tr>
-<tr class="separator:gaf13adf2cb0b62cbd7f75347125c79b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef45d61be183e82aa5f51deb07b78ee3"><td class="memItemLeft" ><a class="anchor" id="ga6752498c1ff4e2bdb060b0fa129763e1"></a>
+<tr class="memdesc:ga74c0143b90bae13e2ee1e48a355a6d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to shared LCD memory (unsigned char) <br/></td></tr>
+<tr class="separator:ga74c0143b90bae13e2ee1e48a355a6d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab683596116f4ca7b01e6e44ab79bf1ca"><td class="memItemLeft" ><a class="anchor" id="ga6752498c1ff4e2bdb060b0fa129763e1"></a>
 uint32_t *&#160;&#160;&#160;<a class="el" href="group___m_l_c_d.html#ga6752498c1ff4e2bdb060b0fa129763e1">mlcd_attr_t::mem32</a></td></tr>
-<tr class="memdesc:gaef45d61be183e82aa5f51deb07b78ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to shared LCD memory (unsigned 32 bit) <br/></td></tr>
-<tr class="separator:gaef45d61be183e82aa5f51deb07b78ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gab683596116f4ca7b01e6e44ab79bf1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer to shared LCD memory (unsigned 32 bit) <br/></td></tr>
+<tr class="separator:gab683596116f4ca7b01e6e44ab79bf1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffeb18a15aed248c9bf19b82cf88d3d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaffeb18a15aed248c9bf19b82cf88d3d8"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_l_c_d.html#gaffeb18a15aed248c9bf19b82cf88d3d8">mlcd_attr_t::size</a></td></tr>
 <tr class="memdesc:gaffeb18a15aed248c9bf19b82cf88d3d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of <em>mem</em> in bytes (typically w*h/8) <br/></td></tr>
@@ -225,23 +224,23 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="g
 </div><!-- fragment --> 
 </div>
 </div>
-<a class="anchor" id="gac6a472e2c4f41d2be154c436e5de1f08"></a>
+<a class="anchor" id="ga52aac77a924a9f90c652b7b5d0a53a85"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define I_MLCD_RELEASE</td>
+          <td class="memname">#define I_MLCD_TOUCH</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This request tells the system that an application is done modifying the video memory. This will decrement the hold count. When the hold count hits zero the screen will fresh on the next scheduled timer event.</p>
+<p>This request tells the system that an application has modified the video memory. The new memory will be written to the LCD on the next refresh event.</p>
 <p>Example: </p>
-<div class="fragment"><div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fildes, <a class="code" href="group___m_l_c_d.html#gac6a472e2c4f41d2be154c436e5de1f08">I_MLCD_RELEASE</a>);</div>
+<div class="fragment"><div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fildes, <a class="code" href="group___m_l_c_d.html#ga52aac77a924a9f90c652b7b5d0a53a85">I_MLCD_TOUCH</a>);</div>
 </div><!-- fragment --> 
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="gaba01db17f4a2bfbc3db60dc172972a25"></a>
+<a class="anchor" id="ga6b7b47dd702d9e331586d485013fd1ea"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -251,16 +250,16 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="g
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggaba01db17f4a2bfbc3db60dc172972a25abc6a5c49706e01ea43bcd645cd4e4350"></a>ORIENT_TOP</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaabc6a5c49706e01ea43bcd645cd4e4350"></a>ORIENT_TOP</em>&#160;</td><td class="fielddoc">
 <p>Memory is mapped to the LCD from top (y=0) to bottom. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaba01db17f4a2bfbc3db60dc172972a25a0b6b1d7c12042c6687460ddb1efc25ec"></a>ORIENT_BOTTOM</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa0b6b1d7c12042c6687460ddb1efc25ec"></a>ORIENT_BOTTOM</em>&#160;</td><td class="fielddoc">
 <p>Memory is mapped to the LCD from bottom (y=0) to top. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaba01db17f4a2bfbc3db60dc172972a25a27b44fa8ad85dca1ca04bfed2d39d159"></a>ORIENT_LEFT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaa27b44fa8ad85dca1ca04bfed2d39d159"></a>ORIENT_LEFT</em>&#160;</td><td class="fielddoc">
 <p>Memory is mapped to the LCD from left to right. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ggaba01db17f4a2bfbc3db60dc172972a25ad4a45c8a3c05365edb073979a5f60391"></a>ORIENT_RIGHT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga6b7b47dd702d9e331586d485013fd1eaad4a45c8a3c05365edb073979a5f60391"></a>ORIENT_RIGHT</em>&#160;</td><td class="fielddoc">
 <p>Memory is mapped to the LCD from left to right. </p>
 </td></tr>
 </table>

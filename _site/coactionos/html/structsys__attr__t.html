@@ -117,7 +117,7 @@
 <div class="dynheader">
 Collaboration diagram for sys_attr_t:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structsys__attr__t__coll__graph.svg" width="131" height="206"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structsys__attr__t__coll__graph.svg" width="131" height="232"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This structure defines the system attributes. </p>
@@ -126,8 +126,12 @@ Collaboration diagram for sys_attr_t:</div>
 Data Fields</h2></td></tr>
 <tr class="memitem:a9a0ca1776b9909befa954eb172e8b999"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a0ca1776b9909befa954eb172e8b999"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a9a0ca1776b9909befa954eb172e8b999">version</a> [8]</td></tr>
-<tr class="memdesc:a9a0ca1776b9909befa954eb172e8b999"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OS Version. <br/></td></tr>
+<tr class="memdesc:a9a0ca1776b9909befa954eb172e8b999"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OS (kernel) Version. <br/></td></tr>
 <tr class="separator:a9a0ca1776b9909befa954eb172e8b999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a82e59a0696cb5c19fc624469faa321"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a82e59a0696cb5c19fc624469faa321"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a0a82e59a0696cb5c19fc624469faa321">sys_version</a> [8]</td></tr>
+<tr class="memdesc:a0a82e59a0696cb5c19fc624469faa321"><td class="mdescLeft">&#160;</td><td class="mdescRight">The System (board) Version. <br/></td></tr>
+<tr class="separator:a0a82e59a0696cb5c19fc624469faa321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35ce7db55a8a6cca5fe3477baa4ff0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa35ce7db55a8a6cca5fe3477baa4ff0b"></a>
 char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#aa35ce7db55a8a6cca5fe3477baa4ff0b">arch</a> [8]</td></tr>
 <tr class="memdesc:aa35ce7db55a8a6cca5fe3477baa4ff0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target architecture (lpc17xx, lpc13xx, etc) <br/></td></tr>
@@ -148,14 +152,26 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a9c54fcab6d3a2a1cfe27cd390b77960f">sys_mem_size</a></td></tr>
 <tr class="memdesc:a9c54fcab6d3a2a1cfe27cd390b77960f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in RAM shared across OS and other processes. <br/></td></tr>
 <tr class="separator:a9c54fcab6d3a2a1cfe27cd390b77960f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d93bc22b5041b5b85a6c3639464709"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4d93bc22b5041b5b85a6c3639464709"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#af4d93bc22b5041b5b85a6c3639464709">stdout_name</a> [NAME_MAX]</td></tr>
-<tr class="memdesc:af4d93bc22b5041b5b85a6c3639464709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value for the standard output. <br/></td></tr>
-<tr class="separator:af4d93bc22b5041b5b85a6c3639464709"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db0e27ebef300bec4b61defc05c608d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8db0e27ebef300bec4b61defc05c608d"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a8db0e27ebef300bec4b61defc05c608d">stdin_name</a> [NAME_MAX]</td></tr>
-<tr class="memdesc:a8db0e27ebef300bec4b61defc05c608d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value for the standard output. <br/></td></tr>
-<tr class="separator:a8db0e27ebef300bec4b61defc05c608d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fbdc0f8f83a407eeccc305243a45de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67fbdc0f8f83a407eeccc305243a45de"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a67fbdc0f8f83a407eeccc305243a45de">stdout_name</a> [LINK_NAME_MAX]</td></tr>
+<tr class="memdesc:a67fbdc0f8f83a407eeccc305243a45de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value for the standard output. <br/></td></tr>
+<tr class="separator:a67fbdc0f8f83a407eeccc305243a45de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8c5ec67a149dacdb35f52ae149e164"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abb8c5ec67a149dacdb35f52ae149e164"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#abb8c5ec67a149dacdb35f52ae149e164">stdin_name</a> [LINK_NAME_MAX]</td></tr>
+<tr class="memdesc:abb8c5ec67a149dacdb35f52ae149e164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value for the standard output. <br/></td></tr>
+<tr class="separator:abb8c5ec67a149dacdb35f52ae149e164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3be3ee13ac5a8c2d4a82d9b6d3b330"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d3be3ee13ac5a8c2d4a82d9b6d3b330"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a5d3be3ee13ac5a8c2d4a82d9b6d3b330">name</a> [LINK_NAME_MAX]</td></tr>
+<tr class="memdesc:a5d3be3ee13ac5a8c2d4a82d9b6d3b330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Name. <br/></td></tr>
+<tr class="separator:a5d3be3ee13ac5a8c2d4a82d9b6d3b330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2c6b3f04c6275a43f6b24b64c4b15f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab2c6b3f04c6275a43f6b24b64c4b15f"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#aab2c6b3f04c6275a43f6b24b64c4b15f">serial</a> [4]</td></tr>
+<tr class="memdesc:aab2c6b3f04c6275a43f6b24b64c4b15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device Serial number. <br/></td></tr>
+<tr class="separator:aab2c6b3f04c6275a43f6b24b64c4b15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b782bebbf6dbc5a89bb9b63c1f0c5d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b782bebbf6dbc5a89bb9b63c1f0c5d7"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structsys__attr__t.html#a9b782bebbf6dbc5a89bb9b63c1f0c5d7">flags</a></td></tr>
+<tr class="memdesc:a9b782bebbf6dbc5a89bb9b63c1f0c5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">System flags. <br/></td></tr>
+<tr class="separator:a9b782bebbf6dbc5a89bb9b63c1f0c5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 

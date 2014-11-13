@@ -163,6 +163,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gab18399788c0a6653e37c6b51ab2fa796"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gab18399788c0a6653e37c6b51ab2fa796">I_CORE_SETCLKOUT</a></td></tr>
 <tr class="memdesc:gab18399788c0a6653e37c6b51ab2fa796"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gab18399788c0a6653e37c6b51ab2fa796">More...</a><br/></td></tr>
 <tr class="separator:gab18399788c0a6653e37c6b51ab2fa796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad37592d62d290851b1a3d7d402f744bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_o_r_e.html#gad37592d62d290851b1a3d7d402f744bb">I_CORE_SETCLKDIVIDE</a></td></tr>
+<tr class="memdesc:gad37592d62d290851b1a3d7d402f744bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gad37592d62d290851b1a3d7d402f744bb">More...</a><br/></td></tr>
+<tr class="separator:gad37592d62d290851b1a3d7d402f744bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -256,7 +259,7 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<a class="el" href="group___c_o_r_e.html#gga0cdc50382b3b72c2e4b983c2f2a6f99ba98c6d5dac50c9029dd73bb8abc6a22f8">CORE_PERIPH_EMC</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___c_o_r_e.html#gga0cdc50382b3b72c2e4b983c2f2a6f99baa860bac08ddd76af05febb50f74ac13f">CORE_PERIPH_SDC</a>, 
+&#160;&#160;<a class="el" href="group___c_o_r_e.html#gga0cdc50382b3b72c2e4b983c2f2a6f99ba2b2d98ea99723279af9358388624482e">CORE_PERIPH_MCI</a>, 
 <br/>
 &#160;&#160;<a class="el" href="group___c_o_r_e.html#gga0cdc50382b3b72c2e4b983c2f2a6f99ba168c3d648d5e845a45fe3165d37adf61">CORE_PERIPH_SSP</a>, 
 <br/>
@@ -281,6 +284,20 @@ Enumerations</h2></td></tr>
 <tr class="separator:gae362c5b04fb1b6ea07f8bdaa21bc51f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gad37592d62d290851b1a3d7d402f744bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_CORE_SETCLKDIVIDE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This configures the main clock divide functionality. This can be used to reduce power consumption. This main clock is divided but the peripheral clock stays constant. The CPU clock can't be divided below the peripheral clock. </p>
+<div class="fragment"><div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(core_fd, <a class="code" href="group___c_o_r_e.html#gad37592d62d290851b1a3d7d402f744bb">I_CORE_SETCLKDIVIDE</a>, 4);</div>
+</div><!-- fragment --> 
+</div>
+</div>
 <a class="anchor" id="gab18399788c0a6653e37c6b51ab2fa796"></a>
 <div class="memitem">
 <div class="memproto">
@@ -447,10 +464,10 @@ Enumerations</h2></td></tr>
 <p>LCD </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba98c6d5dac50c9029dd73bb8abc6a22f8"></a>CORE_PERIPH_EMC</em>&#160;</td><td class="fielddoc">
-<p>Externa Memory Controller </p>
+<p>External Memory Controller </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99baa860bac08ddd76af05febb50f74ac13f"></a>CORE_PERIPH_SDC</em>&#160;</td><td class="fielddoc">
-<p>SD Card </p>
+<tr><td class="fieldname"><em><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba2b2d98ea99723279af9358388624482e"></a>CORE_PERIPH_MCI</em>&#160;</td><td class="fielddoc">
+<p>Multimedia Card Interface </p>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="gga0cdc50382b3b72c2e4b983c2f2a6f99ba168c3d648d5e845a45fe3165d37adf61"></a>CORE_PERIPH_SSP</em>&#160;</td><td class="fielddoc">
 <p>SSP </p>

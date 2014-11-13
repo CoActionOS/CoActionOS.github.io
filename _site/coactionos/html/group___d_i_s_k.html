@@ -100,6 +100,7 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Disk<div class="ingroups"><a class="el" href="group___s_y_s.html">System</a></div></div>  </div>
@@ -114,6 +115,12 @@ Collaboration diagram for Disk:</div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This is the interface for accessing disks. The disk can be any external storage device such as an SD card, serial flash chip, etc. Disks are always read/write block devices. </p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdisk__attr__t.html">disk_attr_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disk attributes.  <a href="structdisk__attr__t.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga9baa43dfcd6232dc973ece1c409a581d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_i_s_k.html#ga9baa43dfcd6232dc973ece1c409a581d">I_DISK_PROTECT</a></td></tr>
@@ -136,8 +143,27 @@ Macros</h2></td></tr>
 <tr class="separator:gad99e96c1a82c1d74924b9e6c55224739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2490bed8315b72874e4f34ffdda768fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_i_s_k.html#ga2490bed8315b72874e4f34ffdda768fa">I_DISK_GETDEVICEERASETIME</a></td></tr>
 <tr class="separator:ga2490bed8315b72874e4f34ffdda768fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42c325c785ec20a7562e62c54126e072"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_i_s_k.html#ga42c325c785ec20a7562e62c54126e072">I_DISK_ERASEBLOCKS</a></td></tr>
+<tr class="separator:ga42c325c785ec20a7562e62c54126e072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7373ba5dc7f66a9ce1b90d27cc5995fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_i_s_k.html#ga7373ba5dc7f66a9ce1b90d27cc5995fa">I_DISK_GETATTR</a></td></tr>
+<tr class="separator:ga7373ba5dc7f66a9ce1b90d27cc5995fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d7c15f0a2b32fa9141d0f8355c56f7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_i_s_k.html#ga0d7c15f0a2b32fa9141d0f8355c56f7d">I_DISK_BUSY</a></td></tr>
+<tr class="separator:ga0d7c15f0a2b32fa9141d0f8355c56f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga0d7c15f0a2b32fa9141d0f8355c56f7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DISK_BUSY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>See if the disk is busy. This ioctl call will return greater than one if the device is busy and 0 if disk is not busy. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga714c9f18f86d8a3fc01e7e598af00a4e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -153,6 +179,19 @@ Macros</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
+<a class="anchor" id="ga42c325c785ec20a7562e62c54126e072"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DISK_ERASEBLOCKS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This request erases the blocks specified in disk_erase_block_t </p>
+
+</div>
+</div>
 <a class="anchor" id="ga172ebb6426469f5c5e80bedde4b21184"></a>
 <div class="memitem">
 <div class="memproto">
@@ -166,6 +205,19 @@ Macros</h2></td></tr>
 <p>Example: </p>
 <div class="fragment"><div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(fildes, <a class="code" href="group___d_i_s_k.html#ga172ebb6426469f5c5e80bedde4b21184">I_DISK_ERASEDEVICE</a>);</div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="ga7373ba5dc7f66a9ce1b90d27cc5995fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_DISK_GETATTR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Request the disk attributes. </p>
+
 </div>
 </div>
 <a class="anchor" id="gad99e96c1a82c1d74924b9e6c55224739"></a>

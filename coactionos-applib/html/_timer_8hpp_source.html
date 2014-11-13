@@ -39,7 +39,7 @@ title: CoActionOS Docs
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;     <a class="code" href="class_timer.html">Timer</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef __HWPL_ONLY__</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>     <span class="keyword">static</span> <span class="keywordtype">int</span> init(Tmr::port_t port);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>     <span class="keyword">static</span> <span class="keywordtype">int</span> init(Tmr::port_t port, uint32_t heartbeat = 10000);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_timer.html#a3c0897b8fa666c552509e761fc424808">wait_sec</a>(uint32_t timeout);</div>

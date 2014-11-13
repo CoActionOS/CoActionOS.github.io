@@ -132,18 +132,18 @@ Inheritance diagram for Rle:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad8996bac3373bf472d530238c89583b9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rle.html#ad8996bac3373bf472d530238c89583b9">encode</a> (void *dest, int &amp;dest_size, const void *src, int src_size)</td></tr>
-<tr class="memdesc:ad8996bac3373bf472d530238c89583b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a chunk of data.  <a href="#ad8996bac3373bf472d530238c89583b9">More...</a><br/></td></tr>
-<tr class="separator:ad8996bac3373bf472d530238c89583b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adff2aa3b4737ee6cdf8efeb198d05688"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rle.html#adff2aa3b4737ee6cdf8efeb198d05688">decode</a> (void *dest, int &amp;dest_size, const void *src, int src_size)</td></tr>
-<tr class="memdesc:adff2aa3b4737ee6cdf8efeb198d05688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a chunk of data.  <a href="#adff2aa3b4737ee6cdf8efeb198d05688">More...</a><br/></td></tr>
-<tr class="separator:adff2aa3b4737ee6cdf8efeb198d05688"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251dd943671179909ef43b1b1f32a683"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rle.html#a251dd943671179909ef43b1b1f32a683">encode</a> (void *dest, ssize_t &amp;dest_size, const void *src, ssize_t src_size)</td></tr>
+<tr class="memdesc:a251dd943671179909ef43b1b1f32a683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode a chunk of data.  <a href="#a251dd943671179909ef43b1b1f32a683">More...</a><br/></td></tr>
+<tr class="separator:a251dd943671179909ef43b1b1f32a683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64bae53bd15672524b288ab03d320eae"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rle.html#a64bae53bd15672524b288ab03d320eae">decode</a> (void *dest, ssize_t &amp;dest_size, const void *src, ssize_t src_size)</td></tr>
+<tr class="memdesc:a64bae53bd15672524b288ab03d320eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode a chunk of data.  <a href="#a64bae53bd15672524b288ab03d320eae">More...</a><br/></td></tr>
+<tr class="separator:a64bae53bd15672524b288ab03d320eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0cf740617bb39af01905336f4684ab3"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_rle.html#ac0cf740617bb39af01905336f4684ab3">size</a> (const void *src, int nbyte)</td></tr>
 <tr class="memdesc:ac0cf740617bb39af01905336f4684ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the size of the encoded data.  <a href="#ac0cf740617bb39af01905336f4684ab3">More...</a><br/></td></tr>
 <tr class="separator:ac0cf740617bb39af01905336f4684ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="adff2aa3b4737ee6cdf8efeb198d05688"></a>
+<a class="anchor" id="a64bae53bd15672524b288ab03d320eae"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -159,7 +159,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">ssize_t &amp;&#160;</td>
           <td class="paramname"><em>dest_size</em>, </td>
         </tr>
         <tr>
@@ -171,7 +171,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">ssize_t&#160;</td>
           <td class="paramname"><em>src_size</em>&#160;</td>
         </tr>
         <tr>
@@ -200,7 +200,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad8996bac3373bf472d530238c89583b9"></a>
+<a class="anchor" id="a251dd943671179909ef43b1b1f32a683"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -216,7 +216,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramtype">ssize_t &amp;&#160;</td>
           <td class="paramname"><em>dest_size</em>, </td>
         </tr>
         <tr>
@@ -228,7 +228,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">ssize_t&#160;</td>
           <td class="paramname"><em>src_size</em>&#160;</td>
         </tr>
         <tr>

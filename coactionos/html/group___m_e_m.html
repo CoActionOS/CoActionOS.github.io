@@ -71,15 +71,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="group___m_e_m.html#gga16af7b253440dadd46a80a4b9fddba4dace2f63f226d25f9614d12001b7832b6a">MEM_PAGEINFO_TYPE_QUERY</a>, 
+<tr class="memitem:ga80155586fa275b28773c9b203f52caba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="group___m_e_m.html#gga80155586fa275b28773c9b203f52cabaace2f63f226d25f9614d12001b7832b6a">MEM_PAGEINFO_TYPE_QUERY</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___m_e_m.html#gga16af7b253440dadd46a80a4b9fddba4dae3db254b91a6adcdbb87eb9c978d8af3">MEM_PAGEINFO_TYPE_RAM</a>, 
+&#160;&#160;<a class="el" href="group___m_e_m.html#gga80155586fa275b28773c9b203f52cabaae3db254b91a6adcdbb87eb9c978d8af3">MEM_PAGEINFO_TYPE_RAM</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___m_e_m.html#gga16af7b253440dadd46a80a4b9fddba4da093faf180cdabc3b7693234a8068c553">MEM_PAGEINFO_TYPE_FLASH</a>
+&#160;&#160;<a class="el" href="group___m_e_m.html#gga80155586fa275b28773c9b203f52cabaa093faf180cdabc3b7693234a8068c553">MEM_PAGEINFO_TYPE_FLASH</a>
 <br/>
  }</td></tr>
-<tr class="separator:ga16af7b253440dadd46a80a4b9fddba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga80155586fa275b28773c9b203f52caba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gab2ec1764b978fcab0076286541120600"></a>
@@ -116,7 +116,7 @@ Enumerations</h2></td></tr>
 <div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(mem_fd, I_MEM_GET_PAGEINFO, &amp;pageinfo );</div>
 </div><!-- fragment --><p>Or to lookup based on the address:</p>
 <div class="fragment"><div class="line"><a class="code" href="structmem__pageinfo__t.html">mem_pageinfo_t</a> pageinfo;</div>
-<div class="line">pageinfo.<a class="code" href="structmem__pageinfo__t.html#a2815c969da0de60ae30a6ea6e9029ab8">type</a> = <a class="code" href="group___m_e_m.html#gga16af7b253440dadd46a80a4b9fddba4dace2f63f226d25f9614d12001b7832b6a">MEM_PAGEINFO_TYPE_QUERY</a>;</div>
+<div class="line">pageinfo.<a class="code" href="structmem__pageinfo__t.html#a2815c969da0de60ae30a6ea6e9029ab8">type</a> = <a class="code" href="group___m_e_m.html#gga80155586fa275b28773c9b203f52cabaace2f63f226d25f9614d12001b7832b6a">MEM_PAGEINFO_TYPE_QUERY</a>;</div>
 <div class="line">paginfo.addr = 0x00001000;</div>
 <div class="line"><span class="comment">//This will get the size and address of flash page 0</span></div>
 <div class="line"><a class="code" href="group___u_n_i___f_i_l_e___a_c_c_e_s_s.html#ga1e7463f2ee53d9da5a2ee24121aed25d">ioctl</a>(mem_fd, <a class="code" href="group___m_e_m.html#gabb04a1fd016958755d71ee89d93e4082">I_MEM_GETPAGEINFO</a>, &amp;pageinfo );</div>
@@ -138,7 +138,7 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga16af7b253440dadd46a80a4b9fddba4d"></a>
+<a class="anchor" id="ga80155586fa275b28773c9b203f52caba"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -149,13 +149,13 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <p>This lists each type of page. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga16af7b253440dadd46a80a4b9fddba4dace2f63f226d25f9614d12001b7832b6a"></a>MEM_PAGEINFO_TYPE_QUERY</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaace2f63f226d25f9614d12001b7832b6a"></a>MEM_PAGEINFO_TYPE_QUERY</em>&#160;</td><td class="fielddoc">
 <p>Query the page type </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga16af7b253440dadd46a80a4b9fddba4dae3db254b91a6adcdbb87eb9c978d8af3"></a>MEM_PAGEINFO_TYPE_RAM</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaae3db254b91a6adcdbb87eb9c978d8af3"></a>MEM_PAGEINFO_TYPE_RAM</em>&#160;</td><td class="fielddoc">
 <p>RAM </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga16af7b253440dadd46a80a4b9fddba4da093faf180cdabc3b7693234a8068c553"></a>MEM_PAGEINFO_TYPE_FLASH</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga80155586fa275b28773c9b203f52cabaa093faf180cdabc3b7693234a8068c553"></a>MEM_PAGEINFO_TYPE_FLASH</em>&#160;</td><td class="fielddoc">
 <p>Flash </p>
 </td></tr>
 </table>

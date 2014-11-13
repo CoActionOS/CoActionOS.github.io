@@ -21,7 +21,8 @@ We also recommend downloading [Eclipse IDE for C/C++ Developers](http://www.ecli
 Please be sure to read [Installing Windows Device Drivers]({% post_url 2013-12-20-CoActionOS-User-Guide-Installing-Windows-Device-Drivers %}).
 
 ## Mac OS X
-
+ 
+* [CoActionOS Compiler Installer GCC 4.7.4 (cm4 and cm3), CoActionOS 1.6.0](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.4-1.6.0.pkg)
 * [CoActionOS Compiler Installer GCC 4.7.3, CoActionOS 1.3.1](https://dl.dropboxusercontent.com/u/33863234/CoActionOS/macosx/CoActionOS-Compiler-4.7.3-1.3.1.pkg)
 * [CoActionOS Link](https://github.com/CoActionOS/CoActionOS-Desktop/releases)
 

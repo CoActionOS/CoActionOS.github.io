@@ -110,7 +110,6 @@
 <div class="header">
   <div class="summary">
 <a href="class_state-members.html">List of all members</a> &#124;
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
@@ -125,24 +124,19 @@
 <div class="dynheader">
 Inheritance diagram for State:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_state__inherit__graph.svg" width="136" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_state__inherit__graph.svg" width="174" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="_state_8hpp_source.html#l00008">8</a> of file <a class="el" href="_state_8hpp_source.html">State.hpp</a>.</p>
+<p>Definition at line <a class="el" href="_state_8hpp_source.html#l00007">7</a> of file <a class="el" href="_state_8hpp_source.html">State.hpp</a>.</p>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_state_1_1transition__t.html">transition_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit condition list entry.  <a href="struct_state_1_1transition__t.html#details">More...</a><br/></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a93ce76eaaad6df48b52b26c10d03d12e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93ce76eaaad6df48b52b26c10d03d12e"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a93ce76eaaad6df48b52b26c10d03d12e">name</a> ()</td></tr>
-<tr class="memdesc:a93ce76eaaad6df48b52b26c10d03d12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of a state. <br/></td></tr>
-<tr class="separator:a93ce76eaaad6df48b52b26c10d03d12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b6db43435a72c1fc1fe83e444d18ce5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b6db43435a72c1fc1fe83e444d18ce5"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a4b6db43435a72c1fc1fe83e444d18ce5">name</a> () const </td></tr>
+<tr class="memdesc:a4b6db43435a72c1fc1fe83e444d18ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of a state. <br/></td></tr>
+<tr class="separator:a4b6db43435a72c1fc1fe83e444d18ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae107bc361dc278478a4082c99f2c0c30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae107bc361dc278478a4082c99f2c0c30"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#ae107bc361dc278478a4082c99f2c0c30">entry_action</a> (void)</td></tr>
 <tr class="memdesc:ae107bc361dc278478a4082c99f2c0c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action called when entering state. <br/></td></tr>
@@ -155,14 +149,11 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#aeee9412da28fa82bac9021258c8e2944">exit_condition</a> (<a class="el" href="class_state.html">State</a> *list[])</td></tr>
 <tr class="memdesc:aeee9412da28fa82bac9021258c8e2944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if it is time to exit the state (optionally executes an exit action) <br/></td></tr>
 <tr class="separator:aeee9412da28fa82bac9021258c8e2944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d23ae354f507cc74fa6362ad818b511"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#a2d23ae354f507cc74fa6362ad818b511">transition</a> (const char *<a class="el" href="class_state.html#a93ce76eaaad6df48b52b26c10d03d12e">name</a>)</td></tr>
-<tr class="memdesc:a2d23ae354f507cc74fa6362ad818b511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when exiting to the state specified by <em>name</em>.  <a href="#a2d23ae354f507cc74fa6362ad818b511">More...</a><br/></td></tr>
-<tr class="separator:a2d23ae354f507cc74fa6362ad818b511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae413bdd737c0b19fb53f3ef31540506b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae413bdd737c0b19fb53f3ef31540506b"></a>
-static <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#ae413bdd737c0b19fb53f3ef31540506b">find</a> (<a class="el" href="class_state.html">State</a> *list[], const char *<a class="el" href="class_state.html#a93ce76eaaad6df48b52b26c10d03d12e">name</a>)</td></tr>
+static <a class="el" href="class_state.html">State</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_state.html#ae413bdd737c0b19fb53f3ef31540506b">find</a> (<a class="el" href="class_state.html">State</a> *list[], const char *<a class="el" href="class_state.html#a4b6db43435a72c1fc1fe83e444d18ce5">name</a>)</td></tr>
 <tr class="memdesc:ae413bdd737c0b19fb53f3ef31540506b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches a state <em>list</em> for <em>name</em>. <br/></td></tr>
 <tr class="separator:ae413bdd737c0b19fb53f3ef31540506b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75cb2536a7f76ce051a28c575677c96c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75cb2536a7f76ce051a28c575677c96c"></a>
@@ -174,41 +165,6 @@ static <a class="el" href="class_state.html">State</a> *&#160;</td><td class="me
 <tr class="memdesc:a60d0697b93bebcf4f56f1795ad177a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to an invalid state. <br/></td></tr>
 <tr class="separator:a60d0697b93bebcf4f56f1795ad177a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2d23ae354f507cc74fa6362ad818b511"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool State::transition </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>This is called when the state is about to exit.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>Name of target state </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><em>true</em> if it is OK to proceed with transition and <em>false</em> to abort transition </dd></dl>
-
-<p>Definition at line <a class="el" href="_state_8hpp_source.html#l00049">49</a> of file <a class="el" href="_state_8hpp_source.html">State.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 
 			</div>

@@ -221,89 +221,90 @@
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_UART_REGS { (LPC_UART_TypeDef *)LPC_UART0, (LPC_UART_TypeDef *)LPC_UART1, LPC_UART2, LPC_UART3 }</span></div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_TMR_PORTS 4</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_EINT_PORTS 4</span></div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_FLASH_PORTS 1</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_MEM_PORTS 1</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_ADC_PORTS 1</span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_DAC_PORTS 1</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_QEI_PORTS 1</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_RTC_PORTS 1</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_USB_PORTS 1</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_PWM_PORTS 2</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_PWM_REGS { 0, LPC_PWM1 }</span></div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#define HWPL_START_OF_SRAM 0x10000000</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_START_OF_AHB_SRAM 0x2007C000</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga68a49833a9171fa9accb8911628b67e3">  286</a></span>&#160;<span class="preprocessor"> #define __ADC0_PINASSIGN_PORT0_23_24_25_26_30_31 (0)</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga196bd8fd5c9380206a286c26a7d6e43d">  289</a></span>&#160;<span class="preprocessor"> #define __DAC0_PINASSIGN_PORT0_26 (0)</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gad60f12ef8e59526479790d435ea28221">  292</a></span>&#160;<span class="preprocessor"> #define __EINT0_PINASSIGN_PORT2_10 (0)</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga67022d15e74b840b0eeb29785a180f72">  294</a></span>&#160;<span class="preprocessor"> #define __EINT1_PINASSIGN_PORT2_11 (0)</span></div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga4473082c25fe1918d65412cb480b96c4">  296</a></span>&#160;<span class="preprocessor"> #define __EINT2_PINASSIGN_PORT2_12 (0)</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga1aba30b8c4482968c04327ee02d7be2c">  298</a></span>&#160;<span class="preprocessor"> #define __EINT3_PINASSIGN_PORT2_13 (0)</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00301"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gaa510b0e23bd5358dc63e7822cdbff3fb">  301</a></span>&#160;<span class="preprocessor">#define __I2C0_PINASSIGN_PORT0_27_28 (0)</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga75726c425c8b55c84f42d998ac7edcce">  303</a></span>&#160;<span class="preprocessor">#define __I2C1_PINASSIGN_PORT0_0_1 (0)</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gab56a45fd3cb867908b59a62c831f92db">  305</a></span>&#160;<span class="preprocessor">#define __I2C1_PINASSIGN_PORT1_19_20 (1)</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga0a3d93ade4c2f4361d4b34797ed4d504">  307</a></span>&#160;<span class="preprocessor">#define __I2C2_PINASSIGN_PORT0_10_11 (0)</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga876dd876753f0b9e42f2f87906bbb20d">  310</a></span>&#160;<span class="preprocessor">#define __PWM1_PINASSIGN_PORT0_18_20_21_23_24_26 (0)</span></div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga33139a75021ccd48ed59e1a66abc7027">  312</a></span>&#160;<span class="preprocessor">#define __PWM1_PINASSIGN_PORT2_0_1_2_3_4_5 (1)</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga9a58ee006ba9bcdccb534b34bdf7db82">  315</a></span>&#160;<span class="preprocessor">#define __QEI0_PINASSIGN_PORT0_20_23_24 (0)</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga7182e76068f3716fd6edd90c8211941b">  318</a></span>&#160;<span class="preprocessor">#define __SPI0_PINASSIGN_PORT0_15_17_18 (0)</span></div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00320"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga5ab68f2969d4a687f36acbc460a8b518">  320</a></span>&#160;<span class="preprocessor">#define __SPI0_PINASSIGN_PORT1_20_23_24 (1)</span></div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga6845a9075c1adb1abd4ba296b3146fcc">  322</a></span>&#160;<span class="preprocessor">#define __SPI1_PINASSIGN_PORT0_7_8_9 (0)</span></div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gafb9fc5c2a1d5895bcec4185c550be4ab">  324</a></span>&#160;<span class="preprocessor">#define __SPI2_PINASSIGN_PORT0_15_16_18 (0)</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00327"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gab9368900f36b1553efae1131c7d8208e">  327</a></span>&#160;<span class="preprocessor">#define __TMR0_PINASSIGN_PORT1_26_27_28_29 (0)</span></div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga9735d4d661ac91f5b640a7b1c1a870fe">  329</a></span>&#160;<span class="preprocessor"> #define __TMR0_PINASSIGN_PORT3_25_26 (1)</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gacf8b77e6cfeeec47b534eedff71f386e">  331</a></span>&#160;<span class="preprocessor"> #define __TMR1_PINASSIGN_PORT3_22_25 (0)</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga4f1a5272d52e36b4bc8d14f9141e7888">  333</a></span>&#160;<span class="preprocessor"> #define __TMR2_PINASSIGN_PORT0_4_5_6_7_8_9 (0)</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00335"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gafdddc182f5cdb6e399ea38f094b40a67">  335</a></span>&#160;<span class="preprocessor">  #define __TMR2_PINASSIGN_PORT4_28_29 (1)</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gafd80c3ee7d05a333a924f397bd5bc730">  337</a></span>&#160;<span class="preprocessor"> #define __TMR3_PINASSIGN_PORT0_10_11 (0)</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gaa1e2abf3a0e5cde1c9f13f539728d82c">  340</a></span>&#160;<span class="preprocessor">#define __UART0_PINASSIGN_PORT0_2_3 (0)</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga142574bb3c539f19622b5609a5b2daf0">  342</a></span>&#160;<span class="preprocessor"> #define __UART1_PINASSIGN_PORT0_15_16 (0)</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga32079f7354c64417e0e414564a855bdd">  344</a></span>&#160;<span class="preprocessor"> #define __UART1_PINASSIGN_PORT2_0_1 (1)</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00346"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga1994057bce6c6e5d09ef3b7e6973e0de">  346</a></span>&#160;<span class="preprocessor"> #define __UART2_PINASSIGN_PORT0_0_11 (0)</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga95e0f3e3b301bffb7259e19df7ae9f14">  348</a></span>&#160;<span class="preprocessor"> #define __UART2_PINASSIGN_PORT2_8_9 (1)</span></div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga3a9811900c299784307d22580ec8e8c5">  350</a></span>&#160;<span class="preprocessor"> #define __UART3_PINASSIGN_PORT0_0_1 (0)</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00352"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga5127f9f5834d9a60371247ade6d03dfd">  352</a></span>&#160;<span class="preprocessor"> #define __UART3_PINASSIGN_PORT0_25_26 (1)</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga1fc45f6fba9edfb54359ae1d9edb5e4d">  354</a></span>&#160;<span class="preprocessor"> #define __UART3_PINASSIGN_PORT4_28_29 (2)</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">//Pin mapping differences between 17xx and 177x_8x</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#define HWPL_ADC_CHANNEL6_PIN 3</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_ADC_CHANNEL7_PIN 2</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LPC17XX_DEVICES_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_ENET_PORTS 1</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_FLASH_PORTS 1</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_MEM_PORTS 1</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_ADC_PORTS 1</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_DAC_PORTS 1</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_QEI_PORTS 1</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_RTC_PORTS 1</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_USB_PORTS 1</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_PWM_PORTS 2</span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_PWM_REGS { 0, LPC_PWM1 }</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor">#define HWPL_START_OF_SRAM 0x10000000</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_START_OF_AHB_SRAM 0x2007C000</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga68a49833a9171fa9accb8911628b67e3">  287</a></span>&#160;<span class="preprocessor"> #define __ADC0_PINASSIGN_PORT0_23_24_25_26_30_31 (0)</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga196bd8fd5c9380206a286c26a7d6e43d">  290</a></span>&#160;<span class="preprocessor"> #define __DAC0_PINASSIGN_PORT0_26 (0)</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gad60f12ef8e59526479790d435ea28221">  293</a></span>&#160;<span class="preprocessor"> #define __EINT0_PINASSIGN_PORT2_10 (0)</span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga67022d15e74b840b0eeb29785a180f72">  295</a></span>&#160;<span class="preprocessor"> #define __EINT1_PINASSIGN_PORT2_11 (0)</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga4473082c25fe1918d65412cb480b96c4">  297</a></span>&#160;<span class="preprocessor"> #define __EINT2_PINASSIGN_PORT2_12 (0)</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga1aba30b8c4482968c04327ee02d7be2c">  299</a></span>&#160;<span class="preprocessor"> #define __EINT3_PINASSIGN_PORT2_13 (0)</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gaa510b0e23bd5358dc63e7822cdbff3fb">  302</a></span>&#160;<span class="preprocessor">#define __I2C0_PINASSIGN_PORT0_27_28 (0)</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga75726c425c8b55c84f42d998ac7edcce">  304</a></span>&#160;<span class="preprocessor">#define __I2C1_PINASSIGN_PORT0_0_1 (0)</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gab56a45fd3cb867908b59a62c831f92db">  306</a></span>&#160;<span class="preprocessor">#define __I2C1_PINASSIGN_PORT1_19_20 (1)</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga0a3d93ade4c2f4361d4b34797ed4d504">  308</a></span>&#160;<span class="preprocessor">#define __I2C2_PINASSIGN_PORT0_10_11 (0)</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga876dd876753f0b9e42f2f87906bbb20d">  311</a></span>&#160;<span class="preprocessor">#define __PWM1_PINASSIGN_PORT0_18_20_21_23_24_26 (0)</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga33139a75021ccd48ed59e1a66abc7027">  313</a></span>&#160;<span class="preprocessor">#define __PWM1_PINASSIGN_PORT2_0_1_2_3_4_5 (1)</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga9a58ee006ba9bcdccb534b34bdf7db82">  316</a></span>&#160;<span class="preprocessor">#define __QEI0_PINASSIGN_PORT0_20_23_24 (0)</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga7182e76068f3716fd6edd90c8211941b">  319</a></span>&#160;<span class="preprocessor">#define __SPI0_PINASSIGN_PORT0_15_17_18 (0)</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00321"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga5ab68f2969d4a687f36acbc460a8b518">  321</a></span>&#160;<span class="preprocessor">#define __SPI0_PINASSIGN_PORT1_20_23_24 (1)</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga6845a9075c1adb1abd4ba296b3146fcc">  323</a></span>&#160;<span class="preprocessor">#define __SPI1_PINASSIGN_PORT0_7_8_9 (0)</span></div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gafb9fc5c2a1d5895bcec4185c550be4ab">  325</a></span>&#160;<span class="preprocessor">#define __SPI2_PINASSIGN_PORT0_15_16_18 (0)</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gab9368900f36b1553efae1131c7d8208e">  328</a></span>&#160;<span class="preprocessor">#define __TMR0_PINASSIGN_PORT1_26_27_28_29 (0)</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga9735d4d661ac91f5b640a7b1c1a870fe">  330</a></span>&#160;<span class="preprocessor"> #define __TMR0_PINASSIGN_PORT3_25_26 (1)</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gacf8b77e6cfeeec47b534eedff71f386e">  332</a></span>&#160;<span class="preprocessor"> #define __TMR1_PINASSIGN_PORT3_22_25 (0)</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00334"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga4f1a5272d52e36b4bc8d14f9141e7888">  334</a></span>&#160;<span class="preprocessor"> #define __TMR2_PINASSIGN_PORT0_4_5_6_7_8_9 (0)</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00336"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gafdddc182f5cdb6e399ea38f094b40a67">  336</a></span>&#160;<span class="preprocessor">  #define __TMR2_PINASSIGN_PORT4_28_29 (1)</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gafd80c3ee7d05a333a924f397bd5bc730">  338</a></span>&#160;<span class="preprocessor"> #define __TMR3_PINASSIGN_PORT0_10_11 (0)</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00341"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#gaa1e2abf3a0e5cde1c9f13f539728d82c">  341</a></span>&#160;<span class="preprocessor">#define __UART0_PINASSIGN_PORT0_2_3 (0)</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga142574bb3c539f19622b5609a5b2daf0">  343</a></span>&#160;<span class="preprocessor"> #define __UART1_PINASSIGN_PORT0_15_16 (0)</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga32079f7354c64417e0e414564a855bdd">  345</a></span>&#160;<span class="preprocessor"> #define __UART1_PINASSIGN_PORT2_0_1 (1)</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00347"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga1994057bce6c6e5d09ef3b7e6973e0de">  347</a></span>&#160;<span class="preprocessor"> #define __UART2_PINASSIGN_PORT0_0_11 (0)</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga95e0f3e3b301bffb7259e19df7ae9f14">  349</a></span>&#160;<span class="preprocessor"> #define __UART2_PINASSIGN_PORT2_8_9 (1)</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00351"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga3a9811900c299784307d22580ec8e8c5">  351</a></span>&#160;<span class="preprocessor"> #define __UART3_PINASSIGN_PORT0_0_1 (0)</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga5127f9f5834d9a60371247ade6d03dfd">  353</a></span>&#160;<span class="preprocessor"> #define __UART3_PINASSIGN_PORT0_25_26 (1)</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="group___l_p_c17_x_x_d_e_v.html#ga1fc45f6fba9edfb54359ae1d9edb5e4d">  355</a></span>&#160;<span class="preprocessor"> #define __UART3_PINASSIGN_PORT4_28_29 (2)</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">//Pin mapping differences between 17xx and 177x_8x</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="preprocessor">#define HWPL_ADC_CHANNEL6_PIN 3</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HWPL_ADC_CHANNEL7_PIN 2</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* LPC17XX_DEVICES_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="group___l_p_c17_x_x_d_e_v_html_gafca6496338c7821c25bd946055328197"><div class="ttname"><a href="group___l_p_c17_x_x_d_e_v.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a></div><div class="ttdeci">uint32_t pio_sample_t</div><div class="ttdoc">This defines the type of a PIO sample for reading/writing the PIO. </div><div class="ttdef"><b>Definition:</b> lpc17xx.h:194</div></div>
 <div class="ttc" id="group___l_p_c17_x_x_d_e_v_html_gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6"><div class="ttname"><a href="group___l_p_c17_x_x_d_e_v.html#gaa86e40d0d6ad1ae2b4c27cdddf5e2bd6">pwm_duty_t</a></div><div class="ttdeci">uint32_t pwm_duty_t</div><div class="ttdoc">This defines the type for the PWM duty cycle for reading/writing the PWM. </div><div class="ttdef"><b>Definition:</b> lpc17xx.h:199</div></div>
 <div class="ttc" id="group___l_p_c17_x_x_d_e_v_html_gga4446c5622012374fdca172a8600b6b53abdea007dfb0805e6b7d76851d216d992"><div class="ttname"><a href="group___l_p_c17_x_x_d_e_v.html#gga4446c5622012374fdca172a8600b6b53abdea007dfb0805e6b7d76851d216d992">TMR_ACTION_CHANNEL_OC1</a></div><div class="ttdef"><b>Definition:</b> lpc17xx.h:222</div></div>

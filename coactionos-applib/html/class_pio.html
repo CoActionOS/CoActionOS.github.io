@@ -44,7 +44,7 @@ title: CoActionOS Docs
 <div class="dynheader">
 Inheritance diagram for Pio:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_pio__inherit__graph.svg" width="110" height="1027"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_pio__inherit__graph.svg" width="110" height="987"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -54,14 +54,14 @@ Inheritance diagram for Pio:</div>
 <div class="line"><a class="code" href="class_pio.html">Pio</a> pio(2); <span class="comment">//use pio port 2</span></div>
 <div class="line"></div>
 <div class="line">     <span class="comment">//This opens the port and sets the attributes -- same as pio.open(); pio.setattr(1&lt;&lt;10, PIO_MODE_OUTPUT);</span></div>
-<div class="line">pio.init(1&lt;&lt;10, PIO_MODE_OUTPUT);</div>
+<div class="line">pio.init(1&lt;&lt;10, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#ggaf822c507345363a31e1e4d5fb54f6ab6a2bea82834493634f2a1eb09f3b469a3c">PIO_MODE_OUTPUT</a>);</div>
 <div class="line"></div>
 <div class="line">     <span class="comment">//Bits can be manipulated using clrmask() and setmask()</span></div>
 <div class="line">pio.clrmask(1&lt;&lt;10); <span class="comment">//clear bit 10 of port 2</span></div>
 <div class="line">pio.setmask(1&lt;&lt;10); <span class="comment">//set bit 10</span></div>
 <div class="line"></div>
 <div class="line">  <span class="comment">//the pin can be reconfigured as an input</span></div>
-<div class="line">pio.setattr(1&lt;&lt;10, PIO_MODE_INPUT | PIO_MODE_PULLDOWN); <span class="comment">//set as an input with internal pulldown</span></div>
+<div class="line">pio.setattr(1&lt;&lt;10, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#ggaf822c507345363a31e1e4d5fb54f6ab6ad07098aeb1a97c62f7d0cd844402def5">PIO_MODE_INPUT</a> | <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#ggaf822c507345363a31e1e4d5fb54f6ab6a083e5177f03913050981025692020df6">PIO_MODE_PULLDOWN</a>); <span class="comment">//set as an input with internal pulldown</span></div>
 <div class="line"></div>
 <div class="line">     <span class="comment">//get() is used to read the port</span></div>
 <div class="line"><span class="keywordflow">if</span>( pio.get() &amp; (1&lt;&lt;10) ){</div>
@@ -75,59 +75,64 @@ Inheritance diagram for Pio:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac50f2eeb5b98ac0795bf69960d2a06ea"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa666d223d960769b6dfff4a8d1808f2a4">INPUT</a> = PIO_MODE_INPUT, 
+<tr class="memitem:af949be7b23eca12a904f99f2417a71cb"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cba666d223d960769b6dfff4a8d1808f2a4">INPUT</a> = PIO_MODE_INPUT, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2">OUTPUT</a> = PIO_MODE_OUTPUT, 
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cbaa7b10066b381df8aaf85ae57e55a25d2">OUTPUT</a> = PIO_MODE_OUTPUT, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa9b5ea72b66c7ddc5c5c5ca8687d94750">FLOAT</a> = PIO_MODE_FLOAT, 
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cba9b5ea72b66c7ddc5c5c5ca8687d94750">FLOAT</a> = PIO_MODE_FLOAT, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaace3ae088db51e122112febfc2b55df6e">PULLUP</a> = PIO_MODE_PULLUP, 
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cbace3ae088db51e122112febfc2b55df6e">PULLUP</a> = PIO_MODE_PULLUP, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaaa6bfc67568f2278da6154ca250ea0d1f">PULLDOWN</a> = PIO_MODE_PULLDOWN, 
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cbaa6bfc67568f2278da6154ca250ea0d1f">PULLDOWN</a> = PIO_MODE_PULLDOWN, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa61621c27f137b31066378c0c87f9df9f">OPENDRAIN</a> = PIO_MODE_OPENDRAIN, 
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cba61621c27f137b31066378c0c87f9df9f">OPENDRAIN</a> = PIO_MODE_OPENDRAIN, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaa83cd96a470a6b7ae56226b70a2e42e92">REPEATER</a> = PIO_MODE_REPEATER, 
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cba83cd96a470a6b7ae56226b70a2e42e92">REPEATER</a> = PIO_MODE_REPEATER, 
 <br/>
-&#160;&#160;<a class="el" href="class_pio.html#ac50f2eeb5b98ac0795bf69960d2a06eaadb86d3a08bc8c2e0e4f30b4aa0a5ab62">HYSTERESIS</a> = PIO_MODE_HYSTERESIS
+&#160;&#160;<a class="el" href="class_pio.html#af949be7b23eca12a904f99f2417a71cbadb86d3a08bc8c2e0e4f30b4aa0a5ab62">HYSTERESIS</a> = PIO_MODE_HYSTERESIS
 <br/>
  }</td></tr>
-<tr class="separator:ac50f2eeb5b98ac0795bf69960d2a06ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:af949be7b23eca12a904f99f2417a71cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_phy"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_phy')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_phy.html">Phy</a></td></tr>
-<tr class="memitem:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
+<tr class="memitem:afde53270f75bb10570a2c4b9adc840cb inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba4fb31825719b76c08ceb9c9609d1c9e6">RDONLY</a> = LINK_O_RDONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba887ffa2b66708e3bf0263cc8b77d336f">READONLY</a> = LINK_O_RDONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba216e159bf8649b089fcb196d29d6577c">WRONLY</a> = LINK_O_WRONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624af5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cbaf5c682c804f97b13ed31f7757b56042c">WRITEONLY</a> = LINK_O_WRONLY, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba45c8f15f453486f5200a029a688bed2f">CREATE</a> = LINK_O_CREAT, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba09ecf701c003c46811fa3f5e84d1db4e">CREAT</a> = LINK_O_CREAT, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba105bc0e573922e4cf2ac97d202759fef">TRUNCATE</a> = LINK_O_TRUNC, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba76cdc8a37f544ca8af842a64d45933e2">TRUNC</a> = LINK_O_TRUNC, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba05b5867b250b8d97de06f123b27f2755">APPEND</a> = LINK_O_APPEND, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba6aaa3fa91dbbcbb85522eac3f9f374a7">EXCLUSIVE</a> = LINK_O_EXCL, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba8be81fa06a57099dae52cc931514b472">EXCL</a> = LINK_O_EXCL, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba4c46263f451ff5a514089f9abf1d251b">READWRITE</a> = LINK_O_RDWR, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba8f430a16adb1ee503b2c9cf17f44be42">RDWR</a> = LINK_O_RDWR, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624ab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cbab6e41ce684f49049fe2a6d34758d164c">NONBLOCK</a> = LINK_O_NONBLOCK, 
 <br/>
-&#160;&#160;<a class="el" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba66221a887abf931fd971201d80522126">NDELAY</a> = LINK_O_NONBLOCK, 
+<br/>
+&#160;&#160;<a class="el" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba28da8c70ded52606a33faae6dc28d3b6">ACCMODE</a> = LINK_O_ACCMODE
 <br/>
  }</td></tr>
-<tr class="separator:a7ebb9fb3d1f27dea80705b8386b10624 inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:afde53270f75bb10570a2c4b9adc840cb inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63df692a4516f398fe3503ceea2cc0d9 inherit pub_types_class_phy"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memdesc:a63df692a4516f398fe3503ceea2cc0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="class_phy.html#a63df692a4516f398fe3503ceea2cc0d9">More...</a><br/></td></tr>
+<tr class="separator:a63df692a4516f398fe3503ceea2cc0d9 inherit pub_types_class_phy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -135,15 +140,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa86c90a998b5a12894d339867051790a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="#aa86c90a998b5a12894d339867051790a">More...</a><br/></td></tr>
 <tr class="separator:aa86c90a998b5a12894d339867051790a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9733ed7aacd8477482499ec387277ead"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9733ed7aacd8477482499ec387277ead"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#a9733ed7aacd8477482499ec387277ead">getattr</a> (pio_attr_t *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#a9733ed7aacd8477482499ec387277ead">getattr</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structpio__attr__t.html">pio_attr_t</a> *attr)</td></tr>
 <tr class="memdesc:a9733ed7aacd8477482499ec387277ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attributes for the port. <br/></td></tr>
 <tr class="separator:a9733ed7aacd8477482499ec387277ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07abbc1b81437ebf38b16d5f65b8142f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07abbc1b81437ebf38b16d5f65b8142f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#a07abbc1b81437ebf38b16d5f65b8142f">setattr</a> (const pio_attr_t *attr)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#a07abbc1b81437ebf38b16d5f65b8142f">setattr</a> (const <a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structpio__attr__t.html">pio_attr_t</a> *attr)</td></tr>
 <tr class="memdesc:a07abbc1b81437ebf38b16d5f65b8142f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the attributes for the port. <br/></td></tr>
 <tr class="separator:a07abbc1b81437ebf38b16d5f65b8142f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fe04b9c7aaf641eedef0c00acf1e81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8fe04b9c7aaf641eedef0c00acf1e81"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#ae8fe04b9c7aaf641eedef0c00acf1e81">setaction</a> (const pio_action_t *action)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#ae8fe04b9c7aaf641eedef0c00acf1e81">setaction</a> (const <a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gae81bb61000df2a5fa0a1f319bf463e9d">pio_action_t</a> *action)</td></tr>
 <tr class="memdesc:ae8fe04b9c7aaf641eedef0c00acf1e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the action for the port. <br/></td></tr>
 <tr class="separator:ae8fe04b9c7aaf641eedef0c00acf1e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c7555820de1e65045671913e1bc5605"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c7555820de1e65045671913e1bc5605"></a>
@@ -167,16 +172,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:adfee9fa1961951a69767b02b7bfaf0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the port. <br/></td></tr>
 <tr class="separator:adfee9fa1961951a69767b02b7bfaf0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1227386c1aafe8cc46ca7b7b8a0335f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1227386c1aafe8cc46ca7b7b8a0335f"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#af1227386c1aafe8cc46ca7b7b8a0335f">setattr</a> (pio_sample_t mask, int mode)</td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#af1227386c1aafe8cc46ca7b7b8a0335f">setattr</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a> mask, int mode)</td></tr>
 <tr class="memdesc:af1227386c1aafe8cc46ca7b7b8a0335f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the attributes for the port. <br/></td></tr>
 <tr class="separator:af1227386c1aafe8cc46ca7b7b8a0335f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3c369e2de4f6c4ef739526735ef3771"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#aa3c369e2de4f6c4ef739526735ef3771">init</a> (pio_sample_t mask, int mode)</td></tr>
+<tr class="memitem:aa3c369e2de4f6c4ef739526735ef3771"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#aa3c369e2de4f6c4ef739526735ef3771">init</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a> mask, int mode)</td></tr>
 <tr class="memdesc:aa3c369e2de4f6c4ef739526735ef3771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the port.  <a href="#aa3c369e2de4f6c4ef739526735ef3771">More...</a><br/></td></tr>
 <tr class="separator:aa3c369e2de4f6c4ef739526735ef3771"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99663665d468faffe16bfb7413e8351"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#ac99663665d468faffe16bfb7413e8351">setoutput</a> (pio_sample_t mask, int mode=0)</td></tr>
+<tr class="memitem:ac99663665d468faffe16bfb7413e8351"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#ac99663665d468faffe16bfb7413e8351">setoutput</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a> mask, int mode=0)</td></tr>
 <tr class="memdesc:ac99663665d468faffe16bfb7413e8351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a single pin as an output.  <a href="#ac99663665d468faffe16bfb7413e8351">More...</a><br/></td></tr>
 <tr class="separator:ac99663665d468faffe16bfb7413e8351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9177826157cca6af08c9f04878555282"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#a9177826157cca6af08c9f04878555282">setinput</a> (pio_sample_t mask, int mode=0)</td></tr>
+<tr class="memitem:a9177826157cca6af08c9f04878555282"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pio.html#a9177826157cca6af08c9f04878555282">setinput</a> (<a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a> mask, int mode=0)</td></tr>
 <tr class="memdesc:a9177826157cca6af08c9f04878555282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a single pin as an input.  <a href="#a9177826157cca6af08c9f04878555282">More...</a><br/></td></tr>
 <tr class="separator:a9177826157cca6af08c9f04878555282"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_periph"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_periph')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_periph.html">Periph</a></td></tr>
@@ -184,6 +189,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_periph.html#a6ed8eb546d8a9a65933d5a0a1ea641de">read</a> (void *buf, int nbyte)</td></tr>
 <tr class="memdesc:a6ed8eb546d8a9a65933d5a0a1ea641de inherit pub_methods_class_periph"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads the device. <br/></td></tr>
 <tr class="separator:a6ed8eb546d8a9a65933d5a0a1ea641de inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10f789c7d1d533081c949b25ec02806 inherit pub_methods_class_periph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac10f789c7d1d533081c949b25ec02806"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_periph.html#ac10f789c7d1d533081c949b25ec02806">read</a> (int loc, void *buf, int nbyte)</td></tr>
+<tr class="memdesc:ac10f789c7d1d533081c949b25ec02806 inherit pub_methods_class_periph"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads the device at the location <br/></td></tr>
+<tr class="separator:ac10f789c7d1d533081c949b25ec02806 inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45b8b82a61cb357582e4678ebee75c32 inherit pub_methods_class_periph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45b8b82a61cb357582e4678ebee75c32"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_periph.html#a45b8b82a61cb357582e4678ebee75c32">write</a> (int loc, const void *buf, int nbyte)</td></tr>
+<tr class="memdesc:a45b8b82a61cb357582e4678ebee75c32 inherit pub_methods_class_periph"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the device at the location <br/></td></tr>
+<tr class="separator:a45b8b82a61cb357582e4678ebee75c32 inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c56749bad195736171ed237cb39c77d inherit pub_methods_class_periph"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c56749bad195736171ed237cb39c77d"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_periph.html#a0c56749bad195736171ed237cb39c77d">readline</a> (char *buf, int nbyte, int timeout=10, char term= '\n')</td></tr>
 <tr class="memdesc:a0c56749bad195736171ed237cb39c77d inherit pub_methods_class_periph"><td class="mdescLeft">&#160;</td><td class="mdescRight">reads a line from the device <br/></td></tr>
@@ -213,7 +226,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a0bfb698dfa396193b3f4f465fdf2c671 inherit pub_methods_class_periph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06ea"></a>
+<a class="anchor" id="af949be7b23eca12a904f99f2417a71cb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -223,28 +236,28 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaa666d223d960769b6dfff4a8d1808f2a4"></a>INPUT</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cba666d223d960769b6dfff4a8d1808f2a4"></a>INPUT</em>&#160;</td><td class="fielddoc">
 <p>Input mode </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaaa7b10066b381df8aaf85ae57e55a25d2"></a>OUTPUT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cbaa7b10066b381df8aaf85ae57e55a25d2"></a>OUTPUT</em>&#160;</td><td class="fielddoc">
 <p>Output mode </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaa9b5ea72b66c7ddc5c5c5ca8687d94750"></a>FLOAT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cba9b5ea72b66c7ddc5c5c5ca8687d94750"></a>FLOAT</em>&#160;</td><td class="fielddoc">
 <p>Input mode floating (| with INPUT) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaace3ae088db51e122112febfc2b55df6e"></a>PULLUP</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cbace3ae088db51e122112febfc2b55df6e"></a>PULLUP</em>&#160;</td><td class="fielddoc">
 <p>Input mode pullup (| with INPUT) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaaa6bfc67568f2278da6154ca250ea0d1f"></a>PULLDOWN</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cbaa6bfc67568f2278da6154ca250ea0d1f"></a>PULLDOWN</em>&#160;</td><td class="fielddoc">
 <p>Input mode pulldown (| with INPUT) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaa61621c27f137b31066378c0c87f9df9f"></a>OPENDRAIN</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cba61621c27f137b31066378c0c87f9df9f"></a>OPENDRAIN</em>&#160;</td><td class="fielddoc">
 <p>Output mode open drain (| with OUTPUT) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaa83cd96a470a6b7ae56226b70a2e42e92"></a>REPEATER</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cba83cd96a470a6b7ae56226b70a2e42e92"></a>REPEATER</em>&#160;</td><td class="fielddoc">
 <p>Input mode repeater (| with INPUT) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="ac50f2eeb5b98ac0795bf69960d2a06eaadb86d3a08bc8c2e0e4f30b4aa0a5ab62"></a>HYSTERESIS</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="af949be7b23eca12a904f99f2417a71cbadb86d3a08bc8c2e0e4f30b4aa0a5ab62"></a>HYSTERESIS</em>&#160;</td><td class="fielddoc">
 <p>Use hysteresis (| with INPUT) </p>
 </td></tr>
 </table>
@@ -264,7 +277,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         <tr>
           <td class="memname">int Pio::init </td>
           <td>(</td>
-          <td class="paramtype">pio_sample_t&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -287,7 +300,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 </div><div class="memdoc">
 <p>This method opens the port then sets the attributes using the specified mask and mode. </p>
 <div class="fragment"><div class="line"><a class="code" href="class_pio.html">Pio</a> p(0);</div>
-<div class="line">p.init((1&lt;&lt;10)|(1&lt;&lt;5), PIO_MODE_OUTPUT)); <span class="comment">//pins 0.5 and 0.10 are outputs</span></div>
+<div class="line">p.init((1&lt;&lt;10)|(1&lt;&lt;5), <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#ggaf822c507345363a31e1e4d5fb54f6ab6a2bea82834493634f2a1eb09f3b469a3c">PIO_MODE_OUTPUT</a>)); <span class="comment">//pins 0.5 and 0.10 are outputs</span></div>
 </div><!-- fragment --> 
 <p>Definition at line <a class="el" href="_pio_8hpp_source.html#l00078">78</a> of file <a class="el" href="_pio_8hpp_source.html">Pio.hpp</a>.</p>
 
@@ -330,7 +343,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         <tr>
           <td class="memname">int Pio::setinput </td>
           <td>(</td>
-          <td class="paramtype">pio_sample_t&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -360,7 +373,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="fragment"><div class="line">  <span class="comment">//configure as open input with pullup enabled</span></div>
 <div class="line"><a class="code" href="class_pio.html">Pio</a> p(0);</div>
 <div class="line">p.open();</div>
-<div class="line">p.setinput(1&lt;&lt;10, PIO_MODE_PULLUP);</div>
+<div class="line">p.setinput(1&lt;&lt;10, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#ggaf822c507345363a31e1e4d5fb54f6ab6abc2aaf94b4e3b911f3dbe6143c26d242">PIO_MODE_PULLUP</a>);</div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_pio.html#a07abbc1b81437ebf38b16d5f65b8142f" title="Set the attributes for the port. ">setattr()</a>, <a class="el" href="class_pio.html#aa3c369e2de4f6c4ef739526735ef3771" title="Initialize the port. ">init()</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_pio_8hpp_source.html#l00130">130</a> of file <a class="el" href="_pio_8hpp_source.html">Pio.hpp</a>.</p>
@@ -377,7 +390,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
         <tr>
           <td class="memname">int Pio::setoutput </td>
           <td>(</td>
-          <td class="paramtype">pio_sample_t&#160;</td>
+          <td class="paramtype"><a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#gafca6496338c7821c25bd946055328197">pio_sample_t</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -407,7 +420,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <div class="fragment"><div class="line">  <span class="comment">//configure as open drain output</span></div>
 <div class="line"><a class="code" href="class_pio.html">Pio</a> p(0);</div>
 <div class="line">p.open();</div>
-<div class="line">p.setoutput(1&lt;&lt;10, PIO_MODE_OPENDRAIN);</div>
+<div class="line">p.setoutput(1&lt;&lt;10, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___p_i_o.html#ggaf822c507345363a31e1e4d5fb54f6ab6ae53278871dfc1db6cc6e28ff59ce30d4">PIO_MODE_OPENDRAIN</a>);</div>
 </div><!-- fragment --><dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_pio.html#a07abbc1b81437ebf38b16d5f65b8142f" title="Set the attributes for the port. ">setattr()</a>, <a class="el" href="class_pio.html#aa3c369e2de4f6c4ef739526735ef3771" title="Initialize the port. ">init()</a> </dd></dl>
 
 <p>Definition at line <a class="el" href="_pio_8hpp_source.html#l00106">106</a> of file <a class="el" href="_pio_8hpp_source.html">Pio.hpp</a>.</p>

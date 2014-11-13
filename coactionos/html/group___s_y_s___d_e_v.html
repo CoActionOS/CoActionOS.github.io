@@ -96,6 +96,8 @@ Macros</h2></td></tr>
 <tr class="memitem:ga984e40321cd06b5f9674d79659e5b197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga984e40321cd06b5f9674d79659e5b197">I_LED_SET</a></td></tr>
 <tr class="memdesc:ga984e40321cd06b5f9674d79659e5b197"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below.  <a href="#ga984e40321cd06b5f9674d79659e5b197">More...</a><br/></td></tr>
 <tr class="separator:ga984e40321cd06b5f9674d79659e5b197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98c40f68ce18efe96809c27ac330c7ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___s_y_s___d_e_v.html#ga98c40f68ce18efe96809c27ac330c7ae">SDSPI_DEVICE</a>(device_name, port_number, pin_assign_value, cs_port_value, cs_pin_value, bitrate_value, cfg_ptr, state_ptr, mode_value, uid_value, gid_value)</td></tr>
+<tr class="separator:ga98c40f68ce18efe96809c27ac330c7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ga984e40321cd06b5f9674d79659e5b197"></a>
@@ -303,6 +305,103 @@ Macros</h2></td></tr>
     <tr><td class="paramname">pio_pin2</td><td>The pin for channel 2 (use LED_DEVICE_UNUSED if not used) </td></tr>
     <tr><td class="paramname">pio_port3</td><td>The port for channel 3 (use LED_DEVICE_UNUSED if not used) </td></tr>
     <tr><td class="paramname">pio_pin3</td><td>The pin for channel 3 (use LED_DEVICE_UNUSED if not used) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga98c40f68ce18efe96809c27ac330c7ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SDSPI_DEVICE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">device_name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">port_number, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pin_assign_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cs_port_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cs_pin_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">bitrate_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cfg_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">state_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mode_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">uid_value, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">gid_value&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This defines the configuration values for a SD SPI device in the device table.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device_name</td><td>The name of the device (e.g "disk0") </td></tr>
+    <tr><td class="paramname">port_number</td><td>The SPI peripheral port number </td></tr>
+    <tr><td class="paramname">pin_assign_value</td><td>The GPIO configuration to use with the SPI bus </td></tr>
+    <tr><td class="paramname">cs_port_value</td><td>The GPIO port used for the chip select </td></tr>
+    <tr><td class="paramname">cs_pin_value</td><td>The GPIO pin used for the chip select </td></tr>
+    <tr><td class="paramname">bitrate_value</td><td>The maximum allowable bitrate for the SST25VF </td></tr>
+    <tr><td class="paramname">cfg_ptr</td><td>A pointer to the configuration structure (const sst25vf_cfg_t *) </td></tr>
+    <tr><td class="paramname">state_ptr</td><td>A pointer to the state structure (sst25vf_state_t *) </td></tr>
+    <tr><td class="paramname">mode_value</td><td>The access mode (usually 0666) </td></tr>
+    <tr><td class="paramname">uid_value</td><td>The User ID </td></tr>
+    <tr><td class="paramname">gid_value</td><td>The Group ID </td></tr>
   </table>
   </dd>
 </dl>

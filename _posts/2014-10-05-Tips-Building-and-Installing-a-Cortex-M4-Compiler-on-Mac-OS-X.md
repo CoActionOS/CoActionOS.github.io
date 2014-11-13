@@ -6,81 +6,14 @@ tagline: Embedded Design
 tags : [embedded, gcc, compiler, macosx]
 ---
 
-GCC is a open source C compiler which can be downloaded, compiled, and installed on Mac OS X.  It is 
-the compiler of choice for CoActionOS, and an excellent general purpose ARM Cortex-M4 compiler.
- 
-To install GCC for the ARM Cortex M4 architecture on a computer running Mac OS X (10.5 or higher), you 
-must have XCode installed.  Also, ensure the following packages (or their equivalents are installed): flex, 
-bison, libgmp3, libppl, libmpfr, autoconf, automake, texinfo, libmpc, and  build-essential.  These 
-packages can be installed using Fink or Macports.  Once the pre-requisite packages are installed, the 
-binutils, GCC, and newlib source files must be downloaded and extracted.
+Before you build the Cortex-M3 compiler, please follow the [instructions to download the source and install the pre-requisites]({% post_url 2013-10-06-Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X %}).
 
-The GMP, PPL, MPFR, and MPC libraries may be installed from source. The latest versions can be downloaded from:
-
-- [GMP](https://gmplib.org/)
-- [PPL](http://bugseng.com/products/ppl/download)
-- [MPFR](http://www.mpfr.org/)
-- [MPC](http://www.multiprecision.org/)
-
-Once you download the source, enter the following commands in the Terminal.  Replace the version 
-values with the version you download.
-
-<pre>
-export GMP_VERSION=5.1.2
-#If you use ppl-1.0, you need to use GMP 5.0.x
-export PPL_VERSION=1.1pre9
-export MPFR_VERSION=3.1.2
-export MPC_VERSION=1.0.1
-export TOOLSPATH=/usr/local/CoActionOS
-mkdir -p gmp
-mkdir -p ppl
-mkdir -p mpfr
-mkdir -p mpc
-cd gmp
-../gmp-$GMP_VERSION/configure --prefix=$TOOLSPATH  --enable-cxx
-make
-make install
-cd ../ppl
-#on mingw add: --disable-shared --enable-static --disable-debugging
-../ppl-$PPL_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
-make
-sudo make install
-cd ../mpfr
-../mpfr-$MPFR_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
-make
-sudo make install
-cd ../mpc
-../mpc-$MPC_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH --enable-static --disable-shared
-make
-sudo make install
-</pre>
-
-Now specify the program to download the sources (or use a browser).
-
-<pre>
-export GET=ftp
-</pre>
-
-Now that all prerequisites are installed, binutils, gcc, and newlib can be compiled and installed using the following commands.
+These environment variables need to be changed from the Cortex-M3 settings:
 
 <pre>
 #Define the desired versions
-export BINUTILS_VERSION=2.23.1
-export GCC_VERSION=4.7.3
-export NEWLIB_VERSION=1.19.0
-export TOOLSPATH=/usr/local/CoActionOS
 export PROGPREFIX=arm-cm4-eabi-
 export ARCH=arm-cm4-eabi
-mkdir binutils
-mkdir gcc
-mkdir newlib
-#Download and extract the source
-$GET ftp://mirrors.kernel.org/gnu/binutils/binutils-$BINUTILS_VERSION.tar.gz
-tar -zxvf binutils-$BINUTILS_VERSION.tar.gz
-$GET ftp://mirrors.kernel.org/gnu/gcc/gcc-$GCC_VERSION/gcc-$GCC_VERSION.tar.gz
-tar -zxvf gcc-$GCC_VERSION.tar.gz
-$GET ftp://sources.redhat.com/pub/newlib/newlib-$NEWLIB_VERSION.tar.gz
-tar -zxvf newlib-$NEWLIB_VERSION.tar.gz
 </pre>
  
 The binutils source needs to be built first.  Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:
@@ -114,6 +47,7 @@ cd ../gcc
      --with-mode=thumb \
      --disable-multilib \
      --with-float=hard \
+     --with-fpu=fpv4-sp-d16 \
      --with-newlib \
      --enable-languages="c,c++" \
      --disable-shared \

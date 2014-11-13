@@ -46,9 +46,9 @@ title: CoActionOS Docs
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;     <a class="code" href="class_rle.html">Rle</a>();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_rle.html#ad8996bac3373bf472d530238c89583b9">encode</a>(<span class="keywordtype">void</span> * dest, <span class="keywordtype">int</span> &amp; dest_size, <span class="keyword">const</span> <span class="keywordtype">void</span> * src, <span class="keywordtype">int</span> src_size);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_rle.html#a251dd943671179909ef43b1b1f32a683">encode</a>(<span class="keywordtype">void</span> * dest, ssize_t &amp; dest_size, <span class="keyword">const</span> <span class="keywordtype">void</span> * src, ssize_t src_size);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_rle.html#adff2aa3b4737ee6cdf8efeb198d05688">decode</a>(<span class="keywordtype">void</span> * dest, <span class="keywordtype">int</span> &amp; dest_size, <span class="keyword">const</span> <span class="keywordtype">void</span> * src, <span class="keywordtype">int</span> src_size);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_rle.html#a64bae53bd15672524b288ab03d320eae">decode</a>(<span class="keywordtype">void</span> * dest, ssize_t &amp; dest_size, <span class="keyword">const</span> <span class="keywordtype">void</span> * src, ssize_t src_size);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;     <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_rle.html#ac0cf740617bb39af01905336f4684ab3">size</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> * src, <span class="keywordtype">int</span> nbyte);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
@@ -74,33 +74,36 @@ title: CoActionOS Docs
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_rle_file.html#a32aafa6a2a64ae01a5e28eff72b35ac0">read</a>(<span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <span class="keywordtype">char</span> buf[64];</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="class_rle_appfs.html">   97</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rle_appfs.html">RleAppfs</a> : <span class="keyword">public</span> <a class="code" href="class_rle.html">Rle</a>, <span class="keyword">public</span> <a class="code" href="class_appfs.html">Appfs</a> {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;     <a class="code" href="class_rle_appfs.html">RleAppfs</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_rle_appfs.html#ae341e573367491a345d6427ab338074f">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_rle_appfs.html#ade767dab4b76966accef23d3482f2115">read</a>(<span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RLE_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="class_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdoc">File Class. </div><div class="ttdef"><b>Definition:</b> <a href="_file_8hpp_source.html#l00050">File.hpp:50</a></div></div>
-<div class="ttc" id="class_rle_appfs_html"><div class="ttname"><a href="class_rle_appfs.html">RleAppfs</a></div><div class="ttdoc">Class for reading/writing compressed file data using Appfs. </div><div class="ttdef"><b>Definition:</b> <a href="_rle_8hpp_source.html#l00097">Rle.hpp:97</a></div></div>
-<div class="ttc" id="class_rle_html_adff2aa3b4737ee6cdf8efeb198d05688"><div class="ttname"><a href="class_rle.html#adff2aa3b4737ee6cdf8efeb198d05688">Rle::decode</a></div><div class="ttdeci">static int decode(void *dest, int &amp;dest_size, const void *src, int src_size)</div><div class="ttdoc">Decode a chunk of data. </div></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     <span class="keyword">enum</span> {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          BUF_SIZE = 256</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;     };</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;     <span class="keywordtype">char</span> buf[BUF_SIZE];</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="class_rle_appfs.html">  100</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rle_appfs.html">RleAppfs</a> : <span class="keyword">public</span> <a class="code" href="class_rle.html">Rle</a>, <span class="keyword">public</span> <a class="code" href="class_appfs.html">Appfs</a> {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;     <a class="code" href="class_rle_appfs.html">RleAppfs</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_rle_appfs.html#ae341e573367491a345d6427ab338074f">write</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;     <span class="keywordtype">int</span> <a class="code" href="class_rle_appfs.html#ade767dab4b76966accef23d3482f2115">read</a>(<span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RLE_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="class_file_html"><div class="ttname"><a href="class_file.html">File</a></div><div class="ttdoc">File Class. </div><div class="ttdef"><b>Definition:</b> <a href="_file_8hpp_source.html#l00047">File.hpp:47</a></div></div>
+<div class="ttc" id="class_rle_appfs_html"><div class="ttname"><a href="class_rle_appfs.html">RleAppfs</a></div><div class="ttdoc">Class for reading/writing compressed file data using Appfs. </div><div class="ttdef"><b>Definition:</b> <a href="_rle_8hpp_source.html#l00100">Rle.hpp:100</a></div></div>
 <div class="ttc" id="class_rle_html"><div class="ttname"><a href="class_rle.html">Rle</a></div><div class="ttdoc">Run Length Encoding Class. </div><div class="ttdef"><b>Definition:</b> <a href="_rle_8hpp_source.html#l00020">Rle.hpp:20</a></div></div>
 <div class="ttc" id="_file_8hpp_html"><div class="ttname"><a href="_file_8hpp.html">File.hpp</a></div></div>
 <div class="ttc" id="class_appfs_html"><div class="ttname"><a href="class_appfs.html">Appfs</a></div><div class="ttdoc">Class for accessing Application file system (Flash/RAM) </div><div class="ttdef"><b>Definition:</b> <a href="_appfs_8hpp_source.html#l00035">Appfs.hpp:35</a></div></div>
 <div class="ttc" id="class_rle_file_html_a32aafa6a2a64ae01a5e28eff72b35ac0"><div class="ttname"><a href="class_rle_file.html#a32aafa6a2a64ae01a5e28eff72b35ac0">RleFile::read</a></div><div class="ttdeci">int read(void *buf, int nbyte)</div></div>
 <div class="ttc" id="class_rle_file_html_a00a90cb8a59293639fae2678143707ed"><div class="ttname"><a href="class_rle_file.html#a00a90cb8a59293639fae2678143707ed">RleFile::write</a></div><div class="ttdeci">int write(const void *buf, int nbyte)</div><div class="ttdoc">Encode and write data to a file. </div></div>
 <div class="ttc" id="class_rle_appfs_html_ade767dab4b76966accef23d3482f2115"><div class="ttname"><a href="class_rle_appfs.html#ade767dab4b76966accef23d3482f2115">RleAppfs::read</a></div><div class="ttdeci">int read(void *buf, int nbyte)</div></div>
+<div class="ttc" id="class_rle_html_a64bae53bd15672524b288ab03d320eae"><div class="ttname"><a href="class_rle.html#a64bae53bd15672524b288ab03d320eae">Rle::decode</a></div><div class="ttdeci">static int decode(void *dest, ssize_t &amp;dest_size, const void *src, ssize_t src_size)</div><div class="ttdoc">Decode a chunk of data. </div></div>
 <div class="ttc" id="class_rle_appfs_html_ae341e573367491a345d6427ab338074f"><div class="ttname"><a href="class_rle_appfs.html#ae341e573367491a345d6427ab338074f">RleAppfs::write</a></div><div class="ttdeci">int write(const void *buf, int nbyte)</div><div class="ttdoc">Encode and write data to a file. </div></div>
+<div class="ttc" id="class_rle_html_a251dd943671179909ef43b1b1f32a683"><div class="ttname"><a href="class_rle.html#a251dd943671179909ef43b1b1f32a683">Rle::encode</a></div><div class="ttdeci">static int encode(void *dest, ssize_t &amp;dest_size, const void *src, ssize_t src_size)</div><div class="ttdoc">Encode a chunk of data. </div></div>
 <div class="ttc" id="_appfs_8hpp_html"><div class="ttname"><a href="_appfs_8hpp.html">Appfs.hpp</a></div></div>
 <div class="ttc" id="class_rle_html_ac0cf740617bb39af01905336f4684ab3"><div class="ttname"><a href="class_rle.html#ac0cf740617bb39af01905336f4684ab3">Rle::size</a></div><div class="ttdeci">static int size(const void *src, int nbyte)</div><div class="ttdoc">Calculate the size of the encoded data. </div></div>
 <div class="ttc" id="class_rle_file_html"><div class="ttname"><a href="class_rle_file.html">RleFile</a></div><div class="ttdoc">Class for reading/writing compressed file data. </div><div class="ttdef"><b>Definition:</b> <a href="_rle_8hpp_source.html#l00070">Rle.hpp:70</a></div></div>
-<div class="ttc" id="class_rle_html_ad8996bac3373bf472d530238c89583b9"><div class="ttname"><a href="class_rle.html#ad8996bac3373bf472d530238c89583b9">Rle::encode</a></div><div class="ttdeci">static int encode(void *dest, int &amp;dest_size, const void *src, int src_size)</div><div class="ttdoc">Encode a chunk of data. </div></div>
 </div><!-- fragment --></div><!-- contents -->

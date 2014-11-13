@@ -112,8 +112,7 @@
 <div class="dynheader">
 Collaboration diagram for Human Input/Output Device:</div>
 <div class="dyncontent">
-<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group___h_i_o.svg" width="267" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<center><table><tr><td><div class="center"><iframe scrolling="no" frameborder="0" src="group___h_i_o.svg" width="267" height="48"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </td></tr></table></center>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -132,54 +131,65 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:gaf332e758fecfa46dc5ce2c9160264d29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#gaf332e758fecfa46dc5ce2c9160264d29">I_HIO_GETATTR</a></td></tr>
 <tr class="separator:gaf332e758fecfa46dc5ce2c9160264d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f3a80a1ae8d5005f356272c4095ef58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga8f3a80a1ae8d5005f356272c4095ef58">I_HIO_SETREPORT</a></td></tr>
+<tr class="separator:ga8f3a80a1ae8d5005f356272c4095ef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac4a93a6c449fa863b55b43b888f23f33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#gac4a93a6c449fa863b55b43b888f23f33">I_HIO_REPORT</a></td></tr>
+<tr class="memdesc:gac4a93a6c449fa863b55b43b888f23f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gac4a93a6c449fa863b55b43b888f23f33">More...</a><br/></td></tr>
+<tr class="separator:gac4a93a6c449fa863b55b43b888f23f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25d5162af8864c63cac550b37aea0026"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga25d5162af8864c63cac550b37aea0026">I_HIO_INIT</a></td></tr>
 <tr class="memdesc:ga25d5162af8864c63cac550b37aea0026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the driver.  <a href="#ga25d5162af8864c63cac550b37aea0026">More...</a><br/></td></tr>
 <tr class="separator:ga25d5162af8864c63cac550b37aea0026"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga080862a21acf8856288ff50e0f800c52"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga080862a21acf8856288ff50e0f800c52">hio_data_type</a> { <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52acfb87fe9636054a27b0ef6e0b9cde341">HIO_TYPE_BIT</a>, 
+<tr class="memitem:ga7c6c8941505284f2e03ee28e0c3c80fc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga7c6c8941505284f2e03ee28e0c3c80fc">hio_data_t</a> { <br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fcacfb87fe9636054a27b0ef6e0b9cde341">HIO_TYPE_BIT</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52ace071cbafea00f0edbf397a3d02aae65">HIO_TYPE_UINT8</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fcace071cbafea00f0edbf397a3d02aae65">HIO_TYPE_UINT8</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52a88bddf3f661aa92b07f037a5ad7c35fd">HIO_TYPE_UINT16</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fca88bddf3f661aa92b07f037a5ad7c35fd">HIO_TYPE_UINT16</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52a5910f423ba41845fab280ef6216f0564">HIO_TYPE_UINT32</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fca5910f423ba41845fab280ef6216f0564">HIO_TYPE_UINT32</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52a36168f22a5f5a02de5423c29dafecaf6">HIO_TYPE_UINT64</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fca36168f22a5f5a02de5423c29dafecaf6">HIO_TYPE_UINT64</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52ac5f094cff3eeea9704f20fc666200b6f">HIO_TYPE_INT8</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fcac5f094cff3eeea9704f20fc666200b6f">HIO_TYPE_INT8</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52a6458b388ce8dc1961b9b6eb09efcf7f3">HIO_TYPE_INT16</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fca6458b388ce8dc1961b9b6eb09efcf7f3">HIO_TYPE_INT16</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52ab8c4874c992debf22ed010c3fba2bc1a">HIO_TYPE_INT32</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fcab8c4874c992debf22ed010c3fba2bc1a">HIO_TYPE_INT32</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52aef58bb506f189afffa88cf191a3047d7">HIO_TYPE_INT64</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fcaef58bb506f189afffa88cf191a3047d7">HIO_TYPE_INT64</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52a41ee28b64124bb1195ba4499005741bb">HIO_TYPE_FLOAT</a>, 
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fca41ee28b64124bb1195ba4499005741bb">HIO_TYPE_FLOAT</a>, 
 <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga080862a21acf8856288ff50e0f800c52ad2a163c0c3a14069a1a32871d37fc0c7">HIO_TYPE_DOUBLE</a>
-<br/>
- }</td></tr>
-<tr class="separator:ga080862a21acf8856288ff50e0f800c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8265d3a2752fbddaf9575d95c9593c21"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga8265d3a2752fbddaf9575d95c9593c21">hio_in_type</a> { <br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21a8589c54a0f4975971911d8a8175fbc94">HIO_EXTREMA</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21a651d5ab299b41d620a0078416ea18207">HIO_IN_BUTTON</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21a7ff15162da4aa3527911ee74f6cd03b0">HIO_IN_DPAD</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21a2634a649969bfd42534a290c54365105">HIO_IN_JOYSTICK</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21a43324255156cb55959471c870d0fd104">HIO_IN_SWITCH</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21a9ead10641bb4c546f278f00fc93df30f">HIO_IN_SELECTOR</a>, 
-<br/>
-&#160;&#160;<a class="el" href="group___h_i_o.html#gga8265d3a2752fbddaf9575d95c9593c21acb35f73142dc58a32b4da7c51f613ced">HIO_OUT_LED</a>
+&#160;&#160;<a class="el" href="group___h_i_o.html#gga7c6c8941505284f2e03ee28e0c3c80fcad2a163c0c3a14069a1a32871d37fc0c7">HIO_TYPE_DOUBLE</a>
 <br/>
  }</td></tr>
-<tr class="separator:ga8265d3a2752fbddaf9575d95c9593c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ga7c6c8941505284f2e03ee28e0c3c80fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">HIO data types.  <a href="group___h_i_o.html#ga7c6c8941505284f2e03ee28e0c3c80fc">More...</a><br/></td></tr>
+<tr class="separator:ga7c6c8941505284f2e03ee28e0c3c80fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba3f829ed128f9908e3ec1ce5ebdd3cd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#gaba3f829ed128f9908e3ec1ce5ebdd3cd">hio_io_type</a> { <br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda8589c54a0f4975971911d8a8175fbc94">HIO_EXTREMA</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda651d5ab299b41d620a0078416ea18207">HIO_IN_BUTTON</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda7ff15162da4aa3527911ee74f6cd03b0">HIO_IN_DPAD</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda2634a649969bfd42534a290c54365105">HIO_IN_JOYSTICK</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda43324255156cb55959471c870d0fd104">HIO_IN_SWITCH</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda9ead10641bb4c546f278f00fc93df30f">HIO_IN_SELECTOR</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cdacb35f73142dc58a32b4da7c51f613ced">HIO_OUT_LED</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cdac73f1f912de6c40ca630e8780eac5341">HIO_IN_STATUS</a>, 
+<br/>
+&#160;&#160;<a class="el" href="group___h_i_o.html#ggaba3f829ed128f9908e3ec1ce5ebdd3cda95d94a206b44822bf62a2748d8b7906c">HIO_OUT_STATUS</a>
+<br/>
+ }</td></tr>
+<tr class="memdesc:gaba3f829ed128f9908e3ec1ce5ebdd3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">HIO Input/Output types.  <a href="group___h_i_o.html#gaba3f829ed128f9908e3ec1ce5ebdd3cd">More...</a><br/></td></tr>
+<tr class="separator:gaba3f829ed128f9908e3ec1ce5ebdd3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa1434a7950ec810f3dd4a187f5204578"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#gaa1434a7950ec810f3dd4a187f5204578">hio_subtype</a> { <br/>
 &#160;&#160;<a class="el" href="group___h_i_o.html#ggaa1434a7950ec810f3dd4a187f5204578a6d0f621eb5a19b8f30e9fd0682e6827a">HIO_DPAD_UP</a>, 
 <br/>
@@ -200,6 +210,7 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group___h_i_o.html#ggaa1434a7950ec810f3dd4a187f5204578ab43f1363908026af41aeba156e9cc0d0">HIO_EXTREMA_MAX</a>
 <br/>
  }</td></tr>
+<tr class="memdesc:gaa1434a7950ec810f3dd4a187f5204578"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO subtypes.  <a href="group___h_i_o.html#gaa1434a7950ec810f3dd4a187f5204578">More...</a><br/></td></tr>
 <tr class="separator:gaa1434a7950ec810f3dd4a187f5204578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -224,6 +235,10 @@ const <a class="el" href="structhio__desc__t.html">hio_desc_t</a> *&#160;</td><t
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga1059a8fd88a0db39cc4b5a29a8861882">hio_attr_t::count</a></td></tr>
 <tr class="memdesc:ga1059a8fd88a0db39cc4b5a29a8861882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of total descriptor entries (<a class="el" href="structhio__desc__t.html" title="Descriptor entry. ">hio_desc_t</a>) <br/></td></tr>
 <tr class="separator:ga1059a8fd88a0db39cc4b5a29a8861882"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c8b174df5216f23cff4e09dba1984fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8c8b174df5216f23cff4e09dba1984fc"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___h_i_o.html#ga8c8b174df5216f23cff4e09dba1984fc">hio_attr_t::size</a></td></tr>
+<tr class="memdesc:ga8c8b174df5216f23cff4e09dba1984fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of the report. <br/></td></tr>
+<tr class="separator:ga8c8b174df5216f23cff4e09dba1984fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="gaf332e758fecfa46dc5ce2c9160264d29"></a>
@@ -251,88 +266,123 @@ uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This initializes the driver </p>
+<p>This initializes the driver. It is usually executed by the system and doesn't need initialization by any applications. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga080862a21acf8856288ff50e0f800c52"></a>
+<a class="anchor" id="gac4a93a6c449fa863b55b43b888f23f33"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___h_i_o.html#ga080862a21acf8856288ff50e0f800c52">hio_data_type</a></td>
+          <td class="memname">#define I_HIO_REPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This request gets the status of the report. This can be used to read the value of the inputs (such as a HIO_IN_BUTTON).</p>
+<p>The data format is according to the descriptor.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="structhio__desc__t.html" title="Descriptor entry. ">hio_desc_t</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8f3a80a1ae8d5005f356272c4095ef58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define I_HIO_SETREPORT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This request writes to outputs. For example, it can be used to turn an LED on and off if the descriptor contains a HIO_OUT_LED type.</p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="structhio__desc__t.html" title="Descriptor entry. ">hio_desc_t</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga7c6c8941505284f2e03ee28e0c3c80fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___h_i_o.html#ga7c6c8941505284f2e03ee28e0c3c80fc">hio_data_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52acfb87fe9636054a27b0ef6e0b9cde341"></a>HIO_TYPE_BIT</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fcacfb87fe9636054a27b0ef6e0b9cde341"></a>HIO_TYPE_BIT</em>&#160;</td><td class="fielddoc">
 <p>Unsigned 8-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52ace071cbafea00f0edbf397a3d02aae65"></a>HIO_TYPE_UINT8</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fcace071cbafea00f0edbf397a3d02aae65"></a>HIO_TYPE_UINT8</em>&#160;</td><td class="fielddoc">
 <p>Unsigned 8-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52a88bddf3f661aa92b07f037a5ad7c35fd"></a>HIO_TYPE_UINT16</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fca88bddf3f661aa92b07f037a5ad7c35fd"></a>HIO_TYPE_UINT16</em>&#160;</td><td class="fielddoc">
 <p>Unsigned 16-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52a5910f423ba41845fab280ef6216f0564"></a>HIO_TYPE_UINT32</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fca5910f423ba41845fab280ef6216f0564"></a>HIO_TYPE_UINT32</em>&#160;</td><td class="fielddoc">
 <p>Unsigned 32-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52a36168f22a5f5a02de5423c29dafecaf6"></a>HIO_TYPE_UINT64</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fca36168f22a5f5a02de5423c29dafecaf6"></a>HIO_TYPE_UINT64</em>&#160;</td><td class="fielddoc">
 <p>Unsigned 64-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52ac5f094cff3eeea9704f20fc666200b6f"></a>HIO_TYPE_INT8</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fcac5f094cff3eeea9704f20fc666200b6f"></a>HIO_TYPE_INT8</em>&#160;</td><td class="fielddoc">
 <p>Signed 8-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52a6458b388ce8dc1961b9b6eb09efcf7f3"></a>HIO_TYPE_INT16</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fca6458b388ce8dc1961b9b6eb09efcf7f3"></a>HIO_TYPE_INT16</em>&#160;</td><td class="fielddoc">
 <p>Signed 16-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52ab8c4874c992debf22ed010c3fba2bc1a"></a>HIO_TYPE_INT32</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fcab8c4874c992debf22ed010c3fba2bc1a"></a>HIO_TYPE_INT32</em>&#160;</td><td class="fielddoc">
 <p>Signed 32-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52aef58bb506f189afffa88cf191a3047d7"></a>HIO_TYPE_INT64</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fcaef58bb506f189afffa88cf191a3047d7"></a>HIO_TYPE_INT64</em>&#160;</td><td class="fielddoc">
 <p>Signed 64-bit value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52a41ee28b64124bb1195ba4499005741bb"></a>HIO_TYPE_FLOAT</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fca41ee28b64124bb1195ba4499005741bb"></a>HIO_TYPE_FLOAT</em>&#160;</td><td class="fielddoc">
 <p>Floating point value. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga080862a21acf8856288ff50e0f800c52ad2a163c0c3a14069a1a32871d37fc0c7"></a>HIO_TYPE_DOUBLE</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="gga7c6c8941505284f2e03ee28e0c3c80fcad2a163c0c3a14069a1a32871d37fc0c7"></a>HIO_TYPE_DOUBLE</em>&#160;</td><td class="fielddoc">
 <p>Double Floating point value. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a class="anchor" id="ga8265d3a2752fbddaf9575d95c9593c21"></a>
+<a class="anchor" id="gaba3f829ed128f9908e3ec1ce5ebdd3cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="group___h_i_o.html#ga8265d3a2752fbddaf9575d95c9593c21">hio_in_type</a></td>
+          <td class="memname">enum <a class="el" href="group___h_i_o.html#gaba3f829ed128f9908e3ec1ce5ebdd3cd">hio_io_type</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21a8589c54a0f4975971911d8a8175fbc94"></a>HIO_EXTREMA</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda8589c54a0f4975971911d8a8175fbc94"></a>HIO_EXTREMA</em>&#160;</td><td class="fielddoc">
 <p>Specifies the min/max of the previous type. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21a651d5ab299b41d620a0078416ea18207"></a>HIO_IN_BUTTON</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda651d5ab299b41d620a0078416ea18207"></a>HIO_IN_BUTTON</em>&#160;</td><td class="fielddoc">
 <p>Momentary push button. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21a7ff15162da4aa3527911ee74f6cd03b0"></a>HIO_IN_DPAD</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda7ff15162da4aa3527911ee74f6cd03b0"></a>HIO_IN_DPAD</em>&#160;</td><td class="fielddoc">
 <p>Directional pad (up, down, left, right, center) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21a2634a649969bfd42534a290c54365105"></a>HIO_IN_JOYSTICK</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda2634a649969bfd42534a290c54365105"></a>HIO_IN_JOYSTICK</em>&#160;</td><td class="fielddoc">
 <p>Analog joystick. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21a43324255156cb55959471c870d0fd104"></a>HIO_IN_SWITCH</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda43324255156cb55959471c870d0fd104"></a>HIO_IN_SWITCH</em>&#160;</td><td class="fielddoc">
 <p>Switch (stays in one position) </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21a9ead10641bb4c546f278f00fc93df30f"></a>HIO_IN_SELECTOR</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda9ead10641bb4c546f278f00fc93df30f"></a>HIO_IN_SELECTOR</em>&#160;</td><td class="fielddoc">
 <p>Selects one of several positions. </p>
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="gga8265d3a2752fbddaf9575d95c9593c21acb35f73142dc58a32b4da7c51f613ced"></a>HIO_OUT_LED</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cdacb35f73142dc58a32b4da7c51f613ced"></a>HIO_OUT_LED</em>&#160;</td><td class="fielddoc">
 <p>LED. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cdac73f1f912de6c40ca630e8780eac5341"></a>HIO_IN_STATUS</em>&#160;</td><td class="fielddoc">
+<p>Catch all status input. </p>
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ggaba3f829ed128f9908e3ec1ce5ebdd3cda95d94a206b44822bf62a2748d8b7906c"></a>HIO_OUT_STATUS</em>&#160;</td><td class="fielddoc">
+<p>Catch all status output. </p>
 </td></tr>
 </table>
 

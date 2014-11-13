@@ -26,11 +26,11 @@ Once you download the source, enter the following commands in the Terminal.  Rep
 values with the version you download.
 
 <pre>
-export GMP_VERSION=5.1.2
+export GMP_VERSION=6.0.0
 #If you use ppl-1.0, you need to use GMP 5.0.x
-export PPL_VERSION=1.1pre9
+export PPL_VERSION=1.1
 export MPFR_VERSION=3.1.2
-export MPC_VERSION=1.0.1
+export MPC_VERSION=1.0.2
 export TOOLSPATH=/usr/local/CoActionOS
 mkdir -p gmp
 mkdir -p ppl
@@ -44,14 +44,17 @@ cd ../ppl
 #on mingw add: --disable-shared --enable-static --disable-debugging
 ../ppl-$PPL_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
 make
+#dont use sudo on Windows
 sudo make install
 cd ../mpfr
 ../mpfr-$MPFR_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH
 make
+#dont use sudo on Windows
 sudo make install
 cd ../mpc
 ../mpc-$MPC_VERSION/configure --prefix=$TOOLSPATH --with-gmp=$TOOLSPATH --enable-static --disable-shared
 make
+#dont use sudo on Windows
 sudo make install
 </pre>
 
@@ -65,8 +68,8 @@ Now that all prerequisites are installed, binutils, gcc, and newlib can be compi
 
 <pre>
 #Define the desired versions
-export BINUTILS_VERSION=2.23.1
-export GCC_VERSION=4.7.3
+export BINUTILS_VERSION=2.24
+export GCC_VERSION=4.7.4
 export NEWLIB_VERSION=1.19.0
 export TOOLSPATH=/usr/local/CoActionOS
 export PROGPREFIX=arm-cm3-eabi-
@@ -99,6 +102,7 @@ cd binutils
   --with-gnu-as \
   --with-gnu-ld CC=clang
 make
+#dont use sudo on Windows
 sudo make install
 export PATH=$TOOLSPATH/bin:$PATH
 </pre>
@@ -128,6 +132,7 @@ cd ../gcc
      --disable-libssp \
      CC=clang 
 make all-gcc
+#dont use sudo on Windows
 sudo make install-gcc
 </pre>
  
@@ -150,6 +155,7 @@ cd ../newlib
   --enable-newlib-multithread \
   --disable-libgloss
 make CFLAGS_FOR_TARGET="-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64"
+#dont use sudo on Windows
 sudo make install
 </pre>
 
@@ -158,6 +164,7 @@ Finally, we need to finish building GCC.
 <pre>
 cd ../gcc
 make
+#dont use sudo on Windows
 sudo make install
 </pre>
 

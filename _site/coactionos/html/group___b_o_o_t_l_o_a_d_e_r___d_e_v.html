@@ -120,12 +120,18 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__attr__t.html">bootloader_attr_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootloader attributes.  <a href="structbootloader__attr__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__attr__14x__t.html">bootloader_attr_14x_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootloader attributes.  <a href="structbootloader__attr__14x__t.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbootloader__writepage__t.html">bootloader_writepage_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">See details below.  <a href="structbootloader__writepage__t.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga4b845038708ed164cb9a1f3cc89313be"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga4b845038708ed164cb9a1f3cc89313be">BOOTLOADER_HARDWARE_ID_OFFSET</a></td></tr>
+<tr class="memdesc:ga4b845038708ed164cb9a1f3cc89313be"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga4b845038708ed164cb9a1f3cc89313be">More...</a><br/></td></tr>
+<tr class="separator:ga4b845038708ed164cb9a1f3cc89313be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga19c84e227663f805698c397c2d4399a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga19c84e227663f805698c397c2d4399a7"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga19c84e227663f805698c397c2d4399a7">BOOTLOADER_WRITEPAGESIZE</a></td></tr>
 <tr class="memdesc:ga19c84e227663f805698c397c2d4399a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the size of a bootloader flash page. <br/></td></tr>
@@ -136,6 +142,10 @@ Macros</h2></td></tr>
 <tr class="memitem:ga028418a856d6fbcedcdd26f0db7d602a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga028418a856d6fbcedcdd26f0db7d602a">I_BOOTLOADER_GETATTR</a></td></tr>
 <tr class="memdesc:ga028418a856d6fbcedcdd26f0db7d602a"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#ga028418a856d6fbcedcdd26f0db7d602a">More...</a><br/></td></tr>
 <tr class="separator:ga028418a856d6fbcedcdd26f0db7d602a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga504d2040cf0c847b633a481331c94ac3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga504d2040cf0c847b633a481331c94ac3"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#ga504d2040cf0c847b633a481331c94ac3">I_BOOTLOADER_GETATTR_14X</a></td></tr>
+<tr class="memdesc:ga504d2040cf0c847b633a481331c94ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access attr for version 1.4.x. <br/></td></tr>
+<tr class="separator:ga504d2040cf0c847b633a481331c94ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6bdf82ba5bb14fd967bb360a754ecd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_o_o_t_l_o_a_d_e_r___d_e_v.html#gad6bdf82ba5bb14fd967bb360a754ecd6">I_BOOTLOADER_RESET</a></td></tr>
 <tr class="memdesc:gad6bdf82ba5bb14fd967bb360a754ecd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">See below for details.  <a href="#gad6bdf82ba5bb14fd967bb360a754ecd6">More...</a><br/></td></tr>
 <tr class="separator:gad6bdf82ba5bb14fd967bb360a754ecd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,6 +154,19 @@ Macros</h2></td></tr>
 <tr class="separator:ga026e3631b0b5db5caebf1a8470aaea58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga4b845038708ed164cb9a1f3cc89313be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOTLOADER_HARDWARE_ID_OFFSET</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This specifies where in the image the hardware ID value resides. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga9282030ab69b36c283952c3b72136895"></a>
 <div class="memitem">
 <div class="memproto">

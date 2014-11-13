@@ -134,7 +134,7 @@ Modules</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1c6d5de492ac61ad29aec7aa9a436bbf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;&quot;1.3.2&quot;</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#ga1c6d5de492ac61ad29aec7aa9a436bbf">VERSION</a>&#160;&#160;&#160;&quot;1.6.0&quot;</td></tr>
 <tr class="memdesc:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version. <br/></td></tr>
 <tr class="separator:ga1c6d5de492ac61ad29aec7aa9a436bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -148,6 +148,12 @@ Functions</h2></td></tr>
 <tr class="separator:gad20ba7632740ffd6129845b9028a0d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga822cdf991a028966eb7656caefacae21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#ga822cdf991a028966eb7656caefacae21">mkfs</a> (const char *path)</td></tr>
 <tr class="separator:ga822cdf991a028966eb7656caefacae21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03c0afc4d1b734bd2edfc7e5937b716a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#ga03c0afc4d1b734bd2edfc7e5937b716a">mount</a> (const char *path)</td></tr>
+<tr class="separator:ga03c0afc4d1b734bd2edfc7e5937b716a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedcfb39a22d2dddb718d1d4e188f52de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#gaedcfb39a22d2dddb718d1d4e188f52de">unmount</a> (const char *path)</td></tr>
+<tr class="separator:gaedcfb39a22d2dddb718d1d4e188f52de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc9329e4560429d90c47c99b9b2c7fba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#gacc9329e4560429d90c47c99b9b2c7fba">launch</a> (const char *path, char *exec_dest, const char *args, int options, int ram_size, int(*update_progress)(int, int), char *const envp[])</td></tr>
+<tr class="separator:gacc9329e4560429d90c47c99b9b2c7fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4393cbea94379cda8f528b741b5d49c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___c_a_o_s.html#ga4393cbea94379cda8f528b741b5d49c2">signal_callback</a> (void *context, const void *data)</td></tr>
 <tr class="separator:ga4393cbea94379cda8f528b741b5d49c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -193,6 +199,95 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gacc9329e4560429d90c47c99b9b2c7fba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int launch </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>exec_dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>args</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>options</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ram_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int(*)(int, int)&#160;</td>
+          <td class="paramname"><em>update_progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *const&#160;</td>
+          <td class="paramname"><em>envp</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Launch an application from a data file system.</p>
+<p>The options are:</p>
+<ul>
+<li>LINK_APPFS_EXEC_OPTIONS_REPLACE</li>
+<li>LINK_APPFS_EXEC_OPTIONS_FLASH</li>
+<li>LINK_APPFS_EXEC_OPTIONS_STARTUP (only with LINK_APPFS_EXEC_OPTIONS_FLASH)</li>
+<li>LINK_APPFS_EXEC_OPTIONS_REPLACE</li>
+<li>LINK_APPFS_EXEC_OPTIONS_ORPHAN</li>
+</ul>
+<p>Here is an example of launching a new application: </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="caos_8h.html">caos.h</a>&gt;</span></div>
+<div class="line"></div>
+<div class="line">pid_t p;</div>
+<div class="line"><span class="keywordtype">int</span> status;</div>
+<div class="line"><span class="keywordtype">char</span> exec_path[PATH_MAX];</div>
+<div class="line"></div>
+<div class="line">p = <a class="code" href="group___c_a_o_s.html#gacc9329e4560429d90c47c99b9b2c7fba">launch</a>(<span class="stringliteral">&quot;/home/HelloWorld&quot;</span>, exec_path, 0, LINK_APPFS_EXEC_OPTIONS_FLASH, 0, 0, 0);</div>
+<div class="line"></div>
+<div class="line">wait(&amp;status); <span class="comment">//wait until hello world is done running</span></div>
+<div class="line">unlink(exec_path); <span class="comment">//delete the installed image (or just leave it there to run again)</span></div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Path to launch binary </td></tr>
+    <tr><td class="paramname">exec_dest</td><td>The path to store the path where the binary is installed (e.g. /app/flash/0-HelloWorld) </td></tr>
+    <tr><td class="paramname">args</td><td>Pointer to the arguments for launch </td></tr>
+    <tr><td class="paramname">options</td><td>Install options mask (flash, startup, etc) </td></tr>
+    <tr><td class="paramname">ram_size</td><td>The amount of RAM that will be allocated to stack/heap (excludes code even if running from RAM), set to zero for default RAM size </td></tr>
+    <tr><td class="paramname">update_progress</td><td>Callback to show progress of install/launch </td></tr>
+    <tr><td class="paramname">envp</td><td>Null for this version </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga822cdf991a028966eb7656caefacae21"></a>
 <div class="memitem">
 <div class="memproto">
@@ -207,6 +302,30 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Format the filesystem that is mounted at <em>path</em>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga03c0afc4d1b734bd2edfc7e5937b716a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mount the filesystem specified at <em>path</em> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to the filesystem (specified at build time) </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
 
 </div>
@@ -279,6 +398,30 @@ Functions</h2></td></tr>
 <div class="line">sig.keep = 0;</div>
 <div class="line">intr.setaction(0, <a class="code" href="group___e_i_n_t.html#ggadd1257260f1ba401df43dd34fa2d28d5a91493ba0ea96049f046b9cfeebf42d81">EINT_ACTION_EVENT_FALLING</a>, <a class="code" href="group___c_a_o_s.html#ga4393cbea94379cda8f528b741b5d49c2">signal_callback</a>, &amp;sig);</div>
 </div><!-- fragment --> 
+</div>
+</div>
+<a class="anchor" id="gaedcfb39a22d2dddb718d1d4e188f52de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int unmount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unmount the filesystem specified at <em>path</em> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>The path to the filesystem (specified at build time) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Zero on success </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->

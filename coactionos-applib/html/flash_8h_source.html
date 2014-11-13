@@ -33,7 +33,7 @@ title: CoActionOS Docs
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define APPLIB_FLASH_H_</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;dev/flash.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;<a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/flash_8h.html">dev/flash.h</a>&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="periph_8h.html">periph.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
@@ -49,8 +49,8 @@ title: CoActionOS Docs
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> flash_erasepage(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <span class="keywordtype">int</span> page);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> flash_getpage(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, uint32_t addr);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> flash_getsize(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> flash_getpageinfo(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, flash_pageinfo_t * info);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> flash_writepage(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, flash_writepage_t * wattr);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> flash_getpageinfo(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structflash__pageinfo__t.html">flash_pageinfo_t</a> * info);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> flash_writepage(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <a class="codeRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/structflash__writepage__t.html">flash_writepage_t</a> * wattr);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> flash_read(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <span class="keywordtype">int</span> loc, <span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> flash_write(<a class="code" href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a> port, <span class="keywordtype">int</span> loc, <span class="keyword">const</span> <span class="keywordtype">void</span> * buf, <span class="keywordtype">int</span> nbyte);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
@@ -59,6 +59,9 @@ title: CoActionOS Docs
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* APPLIB_FLASH_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="structflash__pageinfo__t_html"><div class="ttname"><a href="../../coactionos/html/structflash__pageinfo__t.html">flash_pageinfo_t</a></div></div>
 <div class="ttc" id="periph_8h_html"><div class="ttname"><a href="periph_8h.html">periph.h</a></div></div>
 <div class="ttc" id="group___p_e_r_i_p_h_html_ga5d29779155d58d67a2f85c1d953352ba"><div class="ttname"><a href="group___p_e_r_i_p_h.html#ga5d29779155d58d67a2f85c1d953352ba">port_t</a></div><div class="ttdeci">unsigned int port_t</div><div class="ttdoc">Port type definition. </div><div class="ttdef"><b>Definition:</b> <a href="periph_8h_source.html#l00069">periph.h:69</a></div></div>
+<div class="ttc" id="structflash__writepage__t_html"><div class="ttname"><a href="../../coactionos/html/structflash__writepage__t.html">flash_writepage_t</a></div></div>
+<div class="ttc" id="flash_8h_html"><div class="ttname"><a href="../../coactionos/html/flash_8h.html">flash.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

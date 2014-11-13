@@ -43,7 +43,8 @@ title: CoActionOS Docs
 <div class="dynheader">
 Inheritance diagram for Appfs:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_appfs__inherit__graph.svg" width="104" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_appfs__inherit__graph.svg" width="104" height="288"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class provides an interface for installing programs in the Flash/RAM as well as for saving data to the flash.</p>
@@ -57,16 +58,16 @@ Inheritance diagram for Appfs:</div>
 <div class="line"><span class="preprocessor">#include &lt;applib/Appfs.hpp&gt;</span></div>
 <div class="line"><span class="keywordtype">char</span> my_user_data[16];</div>
 <div class="line"><a class="code" href="class_file.html">File</a> f;</div>
-<div class="line">f.<a class="code" href="class_file.html#a6ece57bb555d15dea686455b3c1e4ee1">open</a>(<span class="stringliteral">&quot;/app/flash/my_data&quot;</span>, <a class="code" href="class_phy.html#a7ebb9fb3d1f27dea80705b8386b10624a4fb31825719b76c08ceb9c9609d1c9e6">File::RDONLY</a>); <span class="comment">//only the file read only</span></div>
-<div class="line">f.<a class="code" href="class_file.html#a5ca872d9a6529f1aec8595df7c8766b1">seek</a>( <a class="code" href="class_appfs.html#a4608e82e302024724ff178c82da94515">Appfs::offset</a>() ); <span class="comment">//seek to the start of user data</span></div>
-<div class="line">f.<a class="code" href="class_file.html#a2dad00847aaa2cc561960d9a6ca31deb">read</a>(my_user_data, 16); <span class="comment">//read 16 bytes of user data</span></div>
+<div class="line">f.<a class="code" href="class_file.html#a6ece57bb555d15dea686455b3c1e4ee1">open</a>(<span class="stringliteral">&quot;/app/flash/my_data&quot;</span>, <a class="code" href="class_phy.html#afde53270f75bb10570a2c4b9adc840cba4fb31825719b76c08ceb9c9609d1c9e6">File::RDONLY</a>); <span class="comment">//only the file read only</span></div>
+<div class="line">f.<a class="code" href="class_file.html#a5505c66a6ddfd762f9feb53259c95294">seek</a>( <a class="code" href="class_appfs.html#a4608e82e302024724ff178c82da94515">Appfs::offset</a>() ); <span class="comment">//seek to the start of user data</span></div>
+<div class="line">f.<a class="code" href="class_file.html#a84df899bddb9530e2b98d9a3199ca636">read</a>(my_user_data, 16); <span class="comment">//read 16 bytes of user data</span></div>
 <div class="line">f.<a class="code" href="class_file.html#a8a9e635800826a95f83d3a9d6f8089a2">close</a>();  <span class="comment">//free resources</span></div>
 </div><!-- fragment --> 
 <p>Definition at line <a class="el" href="_appfs_8hpp_source.html#l00035">35</a> of file <a class="el" href="_appfs_8hpp_source.html">Appfs.hpp</a>.</p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa90afe33a9e6b50fc7f5ce3bbd1624e1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_appfs.html#aa90afe33a9e6b50fc7f5ce3bbd1624e1">create</a> (const char *name, const void *buf, int nbyte, const char *mount=&quot;/app&quot;, link_phy_t h=LINK_PHY_OPEN_ERROR)</td></tr>
+<tr class="memitem:aa90afe33a9e6b50fc7f5ce3bbd1624e1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_appfs.html#aa90afe33a9e6b50fc7f5ce3bbd1624e1">create</a> (const char *name, const void *buf, int nbyte, const char *<a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___c_a_o_s.html#ga03c0afc4d1b734bd2edfc7e5937b716a">mount</a>=&quot;/app&quot;, link_phy_t <a class="elRef" doxygen="/Users/tgil/git/CoActionOS.github.io/coactionos/html/CoActionOS.tag:../../coactionos/html" href="../../coactionos/html/group___m_l_c_d.html#ga7d9a0fe81ef67774c333b075c38dec90">h</a>=LINK_PHY_OPEN_ERROR)</td></tr>
 <tr class="memdesc:aa90afe33a9e6b50fc7f5ce3bbd1624e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a data file in the flash memory.  <a href="#aa90afe33a9e6b50fc7f5ce3bbd1624e1">More...</a><br/></td></tr>
 <tr class="separator:aa90afe33a9e6b50fc7f5ce3bbd1624e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4608e82e302024724ff178c82da94515"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_appfs.html#a4608e82e302024724ff178c82da94515">offset</a> ()</td></tr>
