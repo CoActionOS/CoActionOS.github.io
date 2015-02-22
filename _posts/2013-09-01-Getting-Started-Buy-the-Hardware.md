@@ -6,29 +6,6 @@ tagline: Getting Started
 tags: [coaction]
 ---
 
-## CoAction Hero
-
-<img class="post_image" src="{{ BASE_PATH }}/images/coaction-hero.jpg" />
-
-The CoAction Hero features:
-
-- 120MHz, 512KB flash, 64KB ram LPC1769 ARM Cortex M3 microcontroller
-- USB device
-- 1MB serial flash chip for storing user files
-- Pre-installed with CoActionOS and CoActionOS Bootloader
-- Easiest way to get started developing CoActionOS applications
-
-More info:
-- [Datasheet]({{ BASE_PATH }}/files/coaction-hero-datasheet-A.pdf)
-- [Schematic]({{ BASE_PATH }}/files/CoAction-Hero-Microcomputer-Schematic.pdf)
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-<input type="hidden" name="cmd" value="_s-xclick" />
-<input type="hidden" name="hosted_button_id" value="NY8QYJ9Z8ZCW2" />
-<button type="submit" class="btn btn-success" name="submit">Buy Now $49 (free Shipping)</button>
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-
 ## mbed
 
 CoActionOS can also run on the [mbed LPC1768](http://mbed.org/platforms/mbed-LPC1768/)
