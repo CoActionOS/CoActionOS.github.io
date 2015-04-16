@@ -10,6 +10,8 @@ Installing a compiler for the ARM Cortex M4 is similiar to the CM3.  The followi
 
 <pre>
 export CPU=cm4
+export FLOAT=hard
+export FPU=--with-fpu=fpv4-sp-d1
 </pre>
 
 Other than that change, just follow the [instructions for installing a CM3 compiler]({% post_url 2013-10-06-Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X %}).

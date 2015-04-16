@@ -69,6 +69,8 @@ Now that all prerequisites are installed, binutils, gcc, and newlib can be compi
 <pre>
 #Define the desired versions
 export CPU=cm3
+export FLOAT=soft
+export FPU=
 export BINUTILS_VERSION=2.24
 export GCC_VERSION=4.7.4
 export NEWLIB_VERSION=1.19.0
@@ -118,7 +120,8 @@ cd ../gcc
      --with-cpu=cortex-$CPU \
      --with-mode=thumb \
      --disable-multilib \
-     --with-float=soft \
+     --with-float=$FLOAT \
+     $FPU \
      --with-newlib \
      --enable-languages="c,c++" \
      --disable-shared \
