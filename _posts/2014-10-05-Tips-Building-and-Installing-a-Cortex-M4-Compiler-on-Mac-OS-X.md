@@ -6,7 +6,7 @@ tagline: Embedded Design
 tags : [embedded, gcc, compiler, macosx]
 ---
 
-Installing a compiler for the ARM Cortex M4 is similiar to the M3.  These environment variable needs to be changed from the Cortex-M3 settings:
+Installing a compiler for the ARM Cortex M4 is similiar to the CM3.  The following environment variable needs to be changed from the Cortex-M3 settings:
 
 <pre>
 export CPU=cm4
