@@ -164,7 +164,7 @@ Finally, we need to finish building GCC.
 
 <pre>
 cd ../gcc
-make
+make CXXFLAGS="-fbracket-depth=1024"
 #dont use sudo on Windows
 sudo make install
 </pre>
