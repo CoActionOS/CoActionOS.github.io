@@ -68,12 +68,13 @@ Now that all prerequisites are installed, binutils, gcc, and newlib can be compi
 
 <pre>
 #Define the desired versions
+export CPU=cm3
 export BINUTILS_VERSION=2.24
 export GCC_VERSION=4.7.4
 export NEWLIB_VERSION=1.19.0
 export TOOLSPATH=/usr/local/CoActionOS
-export PROGPREFIX=arm-cm3-eabi-
-export ARCH=arm-cm3-eabi
+export ARCH=arm-$CPU-eabi
+export PROGPREFIX=$ARCH-
 mkdir binutils
 mkdir gcc
 mkdir newlib
@@ -95,7 +96,7 @@ cd binutils
   --target=$ARCH \
   --disable-nls \
   --disable-werror \
-  --with-cpu=cortex-m3 \
+  --with-cpu=cortex-$CPU \
   --with-no-thumb-interwork \
   --with-mode=thumb \
   --prefix=$TOOLSPATH \
@@ -114,7 +115,7 @@ cd ../gcc
 ../gcc-$GCC_VERSION/configure \
      --disable-werror \
      --target=$ARCH \
-     --with-cpu=cortex-m3 \
+     --with-cpu=cortex-$CPU \
      --with-mode=thumb \
      --disable-multilib \
      --with-float=soft \
@@ -131,7 +132,7 @@ cd ../gcc
      --enable-target-optspace \
      --disable-libssp \
      CC=clang 
-make all-gcc
+make CXXFLAGS="-fbracket-depth=1024" all-gcc
 #dont use sudo on Windows
 sudo make install-gcc
 </pre>
