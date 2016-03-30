@@ -4,7 +4,7 @@
  <title>CoActionOS</title>
  <link href="http://coactionos.com/" rel="self"/>
  <link href="http://coactionos.com"/>
- <updated>2014-12-20T21:46:24-07:00</updated>
+ <updated>2016-03-29T19:06:53-06:00</updated>
  <id>http://coactionos.com</id>
  <author>
    <name>CoActionOS, Inc</name>
@@ -17,96 +17,15 @@
    <link href="http://coactionos.com/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X"/>
    <updated>2014-10-05T00:00:00-06:00</updated>
    <id>http://coactionos.com/embedded%20design%20tips/2014/10/05/Tips-Building-and-Installing-a-Cortex-M4-Compiler-on-Mac-OS-X</id>
-   <content type="html">&lt;p&gt;Before you build the Cortex-M3 compiler, please follow the &lt;a href=&quot;/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X&quot;&gt;instructions to download the source and install the pre-requisites&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;These environment variables need to be changed from the Cortex-M3 settings:&lt;/p&gt;
+   <content type="html">&lt;p&gt;Installing a compiler for the ARM Cortex M4 is similiar to the CM3.  The following environment variable needs to be changed from the Cortex-M3 settings:&lt;/p&gt;
 
 &lt;pre&gt;
-#Define the desired versions
-export PROGPREFIX=arm-cm4-eabi-
-export ARCH=arm-cm4-eabi
+export CPU=cm4
+export FLOAT=hard
+export FPU=--with-fpu=fpv4-sp-d16
 &lt;/pre&gt;
 
-&lt;p&gt;The binutils source needs to be built first.  Again in the same directory where the binutils source was extracted, type (or copy and paste) the following commands in the terminal:&lt;/p&gt;
-
-&lt;pre&gt;
-cd binutils
-../binutils-$BINUTILS_VERSION/configure \
-  --program-prefix=$PROGPREFIX \
-  --target=$ARCH \
-  --disable-nls \
-  --disable-werror \
-  --with-cpu=cortex-m4 \
-  --with-no-thumb-interwork \
-  --with-mode=thumb \
-  --prefix=$TOOLSPATH \
-  --with-gnu-as \
-  --with-gnu-ld CC=clang
-make
-sudo make install
-export PATH=$TOOLSPATH/bin:$PATH
-&lt;/pre&gt;
-
-&lt;p&gt;After binutils is built, GCC is next:&lt;/p&gt;
-
-&lt;pre&gt;
-cd ../gcc
-../gcc-$GCC_VERSION/configure \
-     --disable-werror \
-     --target=$ARCH \
-     --with-cpu=cortex-m4 \
-     --with-mode=thumb \
-     --disable-multilib \
-     --with-float=hard \
-     --with-fpu=fpv4-sp-d16 \
-     --with-newlib \
-     --enable-languages=&quot;c,c++&quot; \
-     --disable-shared \
-     --with-gnu-as \
-     --with-gnu-ld \
-     --program-prefix=$PROGPREFIX \
-     --prefix=$TOOLSPATH \
-     --with-gmp=$TOOLSPATH \
-     --with-ppl=$TOOLSPATH \
-     --with-no-thumb-interwork \
-     --enable-target-optspace \
-     --disable-libssp \
-     CC=clang 
-make all-gcc
-sudo make install-gcc
-&lt;/pre&gt;
-
-&lt;p&gt;Now, we need to build newlib.  In order to get newlib to build the floating point libraries correctly, we pass the -D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN definitions.  The &lt;strong&gt;BUFSIZ&lt;/strong&gt; definition specifies what size buffer to use with printf() and file I/O.  Smaller values mean slower performance using less RAM.  To build newlib, type (or copy and paste) the following in a terminal window:&lt;/p&gt;
-
-&lt;pre&gt;
-cd ../newlib
-../newlib-$NEWLIB_VERSION/configure \
-  --target=$ARCH \
-  --disable-multilib \
-  --disable-werror \
-  --with-gnu-as \
-  --with-gnu-ld \
-  --prefix=$TOOLSPATH \
-  --disable-newlib-supplied-syscalls \
-  --disable-nls \
-  --enable-target-optspace \
-  --disable-libssp \
-  --enable-newlib-reent-small \
-  --enable-newlib-multithread \
-  --disable-libgloss
-make CFLAGS_FOR_TARGET=&quot;-D__IEEE_LITTLE_ENDIAN -D__IEEE_BYTES_LITTLE_ENDIAN -D__BUFSIZ__=64&quot;
-sudo make install
-&lt;/pre&gt;
-
-&lt;p&gt;Finally, we need to finish building GCC.&lt;/p&gt;
-
-&lt;pre&gt;
-cd ../gcc
-make
-sudo make install
-&lt;/pre&gt;
-
-&lt;p&gt;That’s it.  If all went well, a dedicated ARM Cortex M4 compiler is now installed in /usr/local/CoActionOS.  To uninstall the compiler tools, delete the /usr/local/CoActionOS folder.&lt;/p&gt;
+&lt;p&gt;Other than that change, just follow the &lt;a href=&quot;/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X&quot;&gt;instructions for installing a CM3 compiler&lt;/a&gt;.&lt;/p&gt;
 
 </content>
  </entry>
@@ -5888,12 +5807,15 @@ export GET=ftp
 
 &lt;pre&gt;
 #Define the desired versions
+export CPU=cm3
+export FLOAT=soft
+export FPU=
 export BINUTILS_VERSION=2.24
 export GCC_VERSION=4.7.4
 export NEWLIB_VERSION=1.19.0
 export TOOLSPATH=/usr/local/CoActionOS
-export PROGPREFIX=arm-cm3-eabi-
-export ARCH=arm-cm3-eabi
+export ARCH=arm-$CPU-eabi
+export PROGPREFIX=$ARCH-
 mkdir binutils
 mkdir gcc
 mkdir newlib
@@ -5915,7 +5837,7 @@ cd binutils
   --target=$ARCH \
   --disable-nls \
   --disable-werror \
-  --with-cpu=cortex-m3 \
+  --with-cpu=cortex-$CPU \
   --with-no-thumb-interwork \
   --with-mode=thumb \
   --prefix=$TOOLSPATH \
@@ -5934,10 +5856,11 @@ cd ../gcc
 ../gcc-$GCC_VERSION/configure \
      --disable-werror \
      --target=$ARCH \
-     --with-cpu=cortex-m3 \
+     --with-cpu=cortex-$CPU \
      --with-mode=thumb \
      --disable-multilib \
-     --with-float=soft \
+     --with-float=$FLOAT \
+     $FPU \
      --with-newlib \
      --enable-languages=&quot;c,c++&quot; \
      --disable-shared \
@@ -5951,7 +5874,7 @@ cd ../gcc
      --enable-target-optspace \
      --disable-libssp \
      CC=clang 
-make all-gcc
+make CXXFLAGS=&quot;-fbracket-depth=1024&quot; all-gcc
 #dont use sudo on Windows
 sudo make install-gcc
 &lt;/pre&gt;
@@ -5983,7 +5906,7 @@ sudo make install
 
 &lt;pre&gt;
 cd ../gcc
-make
+make CXXFLAGS=&quot;-fbracket-depth=1024&quot;
 #dont use sudo on Windows
 sudo make install
 &lt;/pre&gt;
@@ -6600,32 +6523,7 @@ sudo tar -xvf ~/Downloads/CoActionOS-Compiler-4.7.3-1.2.7.tar.gz
    <link href="http://coactionos.com/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware"/>
    <updated>2013-09-01T00:00:00-06:00</updated>
    <id>http://coactionos.com/getting%20started/2013/09/01/Getting-Started-Buy-the-Hardware</id>
-   <content type="html">&lt;h2 id=&quot;coaction-hero&quot;&gt;CoAction Hero&lt;/h2&gt;
-
-&lt;p&gt;&lt;img class=&quot;post_image&quot; src=&quot;/images/coaction-hero.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The CoAction Hero features:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;120MHz, 512KB flash, 64KB ram LPC1769 ARM Cortex M3 microcontroller&lt;/li&gt;
-  &lt;li&gt;USB device&lt;/li&gt;
-  &lt;li&gt;1MB serial flash chip for storing user files&lt;/li&gt;
-  &lt;li&gt;Pre-installed with CoActionOS and CoActionOS Bootloader&lt;/li&gt;
-  &lt;li&gt;Easiest way to get started developing CoActionOS applications&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;More info:
-- &lt;a href=&quot;/files/coaction-hero-datasheet-A.pdf&quot;&gt;Datasheet&lt;/a&gt;
-- &lt;a href=&quot;/files/CoAction-Hero-Microcomputer-Schematic.pdf&quot;&gt;Schematic&lt;/a&gt;&lt;/p&gt;
-
-&lt;form action=&quot;https://www.paypal.com/cgi-bin/webscr&quot; method=&quot;post&quot; target=&quot;_blank&quot;&gt;
-&lt;input type=&quot;hidden&quot; name=&quot;cmd&quot; value=&quot;_s-xclick&quot; /&gt;
-&lt;input type=&quot;hidden&quot; name=&quot;hosted_button_id&quot; value=&quot;NY8QYJ9Z8ZCW2&quot; /&gt;
-&lt;button type=&quot;submit&quot; class=&quot;btn btn-success&quot; name=&quot;submit&quot;&gt;Buy Now $49 (free Shipping)&lt;/button&gt;
-&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;https://www.paypalobjects.com/en_US/i/scr/pixel.gif&quot; width=&quot;1&quot; height=&quot;1&quot; /&gt;
-&lt;/form&gt;
-
-&lt;h2 id=&quot;mbed&quot;&gt;mbed&lt;/h2&gt;
+   <content type="html">&lt;h2 id=&quot;mbed&quot;&gt;mbed&lt;/h2&gt;
 
 &lt;p&gt;CoActionOS can also run on the &lt;a href=&quot;http://mbed.org/platforms/mbed-LPC1768/&quot;&gt;mbed LPC1768&lt;/a&gt;
 board.&lt;/p&gt;

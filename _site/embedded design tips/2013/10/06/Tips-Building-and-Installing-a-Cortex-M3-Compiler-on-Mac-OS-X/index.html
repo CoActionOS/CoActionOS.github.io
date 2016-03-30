@@ -1,6 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<meta http-equiv="refresh" content="0; url=http://stratifylabs.co/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X">
+<link rel="canonical" href="http://stratifylabs.co/embedded%20design%20tips/2013/10/06/Tips-Building-and-Installing-a-Cortex-M3-Compiler-on-Mac-OS-X" />
 <head>
 <meta charset="utf-8">
 <title>Building and Installing a Cortex-M3 Compiler on Mac OS X</title> 
@@ -172,12 +174,15 @@ export GET=ftp
 
 <pre>
 #Define the desired versions
+export CPU=cm3
+export FLOAT=soft
+export FPU=
 export BINUTILS_VERSION=2.24
 export GCC_VERSION=4.7.4
 export NEWLIB_VERSION=1.19.0
 export TOOLSPATH=/usr/local/CoActionOS
-export PROGPREFIX=arm-cm3-eabi-
-export ARCH=arm-cm3-eabi
+export ARCH=arm-$CPU-eabi
+export PROGPREFIX=$ARCH-
 mkdir binutils
 mkdir gcc
 mkdir newlib
@@ -199,7 +204,7 @@ cd binutils
   --target=$ARCH \
   --disable-nls \
   --disable-werror \
-  --with-cpu=cortex-m3 \
+  --with-cpu=cortex-$CPU \
   --with-no-thumb-interwork \
   --with-mode=thumb \
   --prefix=$TOOLSPATH \
@@ -218,10 +223,11 @@ cd ../gcc
 ../gcc-$GCC_VERSION/configure \
      --disable-werror \
      --target=$ARCH \
-     --with-cpu=cortex-m3 \
+     --with-cpu=cortex-$CPU \
      --with-mode=thumb \
      --disable-multilib \
-     --with-float=soft \
+     --with-float=$FLOAT \
+     $FPU \
      --with-newlib \
      --enable-languages="c,c++" \
      --disable-shared \
@@ -235,7 +241,7 @@ cd ../gcc
      --enable-target-optspace \
      --disable-libssp \
      CC=clang 
-make all-gcc
+make CXXFLAGS="-fbracket-depth=1024" all-gcc
 #dont use sudo on Windows
 sudo make install-gcc
 </pre>
@@ -267,7 +273,7 @@ sudo make install
 
 <pre>
 cd ../gcc
-make
+make CXXFLAGS="-fbracket-depth=1024"
 #dont use sudo on Windows
 sudo make install
 </pre>
@@ -671,7 +677,7 @@ sudo make install
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-1 col-md-9">
-					<p>&copy; 2014 CoActionOS, Inc</p>
+					<p>&copy; 2016 CoActionOS, Inc</p>
 				</div>
 			</div>
 		</div>
