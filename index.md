@@ -20,19 +20,3 @@ you don't have to integrate your application with the operating system.  You jus
 application using the free SDK and install it on any system running CoActionOS.
 
 For support, please submit issues on [Github](https://github.com/CoActionOS) under the relevant project.  For general inquires, please email contact at coactionos.com.
-
-<ul>
-{% assign pages_list = site.categories.["getting started"] | sort:"name" %} {% include JB/pages_list %}
-</ul>
-
-### Tutorials
-
-<ul>
-{% assign pages_list = site.categories.["coactionos tutorials"] | sort:"name" %} {% include JB/pages_list %}
-</ul>
-
-### User Guides
-
-<ul>
-{% assign pages_list = site.categories.["user guides"] | sort:"name" %} {% include JB/pages_list %}
-</ul>
